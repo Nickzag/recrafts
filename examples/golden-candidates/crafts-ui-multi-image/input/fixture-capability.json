@@ -1,0 +1,17 @@
+{
+  "fixture_capability": {
+    "macro_layout": "supported",
+    "surface_hierarchy": "supported",
+    "broad_color_family": "supported",
+    "state_detection": "partial",
+    "typography_measurement": "unsupported",
+    "micro_spacing": "unsupported",
+    "icon_geometry": "unsupported",
+    "pixel_fidelity": "unsupported"
+  },
+  "fine_detail_route": {
+    "status": "planned",
+    "preferred_method": "local irreversible region redaction or a newly captured non-sensitive UI fixture",
+    "constraint": "The current blurred fixture cannot accept exact typography, spacing, icon or pixel-fidelity claims."
+  }
+}

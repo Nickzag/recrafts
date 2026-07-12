@@ -43,16 +43,16 @@ test("golden candidate passes the public validator CLI", () => {
 const negativeCases = [
   ["raw screenshot tracked", (cwd) => writeFileSync(path.join(cwd, fixtureRelative, "local-raw-sources", "raw.png"), "raw")],
   ["secret-like string", (cwd) => writeFileSync(path.join(cwd, fixtureRelative, "README.md"), "sk-abcdefghijklmnopqrstuvwxyz123456")],
-  ["unclassified region", (cwd) => mutateJson(cwd, `${fixtureRelative}/source-manifest.json`, (x) => { x.sources[0].regions[0].class = ""; })],
-  ["missing evidence ref", (cwd) => mutateJson(cwd, `${fixtureRelative}/evidence-map.json`, (x) => { delete x.evidence[0].region_id; })],
-  ["user-content green promoted globally", (cwd) => mutateJson(cwd, `${fixtureRelative}/design-contract.json`, (x) => { x.tokens.push({ id: "global.color.accent", value: "#00C878", scope: "global", status: "observed", source_class: "user-generated-content", evidence_refs: ["ev-document-artwork"] }); })],
-  ["marketing blue promoted globally", (cwd) => mutateJson(cwd, `${fixtureRelative}/design-contract.json`, (x) => { x.tokens.push({ id: "global.color.surface", value: "#87CEEB", scope: "global", status: "observed", source_class: "marketing-surface", evidence_refs: ["ev-imagine-background"] }); })],
-  ["inferred value marked confirmed", (cwd) => mutateJson(cwd, `${fixtureRelative}/evidence-map.json`, (x) => { x.evidence.find((e) => e.status === "inferred").status = "confirmed"; })],
-  ["duplicate source id", (cwd) => mutateJson(cwd, `${fixtureRelative}/source-manifest.json`, (x) => { x.sources[1].source_id = x.sources[0].source_id; })],
-  ["stale hash", (cwd) => mutateJson(cwd, `${fixtureRelative}/source-manifest.json`, (x) => { x.sources[0].sha256 = "0".repeat(64); })],
-  ["missing source", (cwd) => mutateJson(cwd, `${fixtureRelative}/source-manifest.json`, (x) => { x.sources[0].file = "sources/missing.png"; })],
+  ["unclassified region", (cwd) => mutateJson(cwd, `${fixtureRelative}/input/source-manifest.json`, (x) => { x.sources[0].regions[0].class = ""; })],
+  ["missing evidence ref", (cwd) => mutateJson(cwd, `${fixtureRelative}/oracle/evidence-map.json`, (x) => { delete x.evidence[0].region_id; })],
+  ["user-content green promoted globally", (cwd) => mutateJson(cwd, `${fixtureRelative}/oracle/design-contract.json`, (x) => { x.tokens.push({ id: "global.color.accent", value: "#00C878", scope: "global", status: "observed", source_class: "user-generated-content", evidence_refs: ["ev-document-artwork"] }); })],
+  ["marketing blue promoted globally", (cwd) => mutateJson(cwd, `${fixtureRelative}/oracle/design-contract.json`, (x) => { x.tokens.push({ id: "global.color.surface", value: "#87CEEB", scope: "global", status: "observed", source_class: "marketing-surface", evidence_refs: ["ev-imagine-background"] }); })],
+  ["inferred value marked confirmed", (cwd) => mutateJson(cwd, `${fixtureRelative}/oracle/evidence-map.json`, (x) => { x.evidence.find((e) => e.status === "inferred").status = "confirmed"; })],
+  ["duplicate source id", (cwd) => mutateJson(cwd, `${fixtureRelative}/input/source-manifest.json`, (x) => { x.sources[1].source_id = x.sources[0].source_id; })],
+  ["stale hash", (cwd) => mutateJson(cwd, `${fixtureRelative}/input/source-manifest.json`, (x) => { x.sources[0].sha256 = "0".repeat(64); })],
+  ["missing source", (cwd) => mutateJson(cwd, `${fixtureRelative}/input/source-manifest.json`, (x) => { x.sources[0].file = "sources/missing.png"; })],
   ["direct Layoutcrafts import", (cwd) => writeFileSync(path.join(cwd, "runtime", "forbidden.mjs"), "import x from '/apps/layoutcrafts/src/x.js';\n")],
-  ["final claim without review", (cwd) => writeFileSync(path.join(cwd, fixtureRelative, "output", "design-draft.md"), readFileSync(path.join(cwd, fixtureRelative, "output", "design-draft.md"), "utf8").replace("status: draft", "status: final"))],
+  ["final claim without review", (cwd) => writeFileSync(path.join(cwd, fixtureRelative, "oracle", "design-draft.md"), readFileSync(path.join(cwd, fixtureRelative, "oracle", "design-draft.md"), "utf8").replace("status: draft", "status: final"))],
 ];
 
 for (const [name, mutate] of negativeCases) {

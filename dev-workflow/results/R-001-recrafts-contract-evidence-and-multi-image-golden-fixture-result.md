@@ -65,4 +65,14 @@ R-001 已建立独立 Recrafts 的契约、provenance、Scoped Design Contract �
 
 提交独立评审并取得 `PASS` 或完成 `PASS WITH CHANGES` 后，再授权 R-002；在此之前不进入视觉实现。
 
+## PASS WITH CHANGES Remediation Addendum
+
+- Initial baseline commit: `6e32c10b17944199e5397e8834484d6f9685cd1d`
+- Baseline tag: `recrafts-r001-baseline`
+- Clean-checkout evidence: `dev-workflow/evidence/r-001/`
+- Oracle moved under `oracle/`; runtime input is restricted to `input/`; generated runtime evidence is written to `generated/`.
+- Fixture capability and fine-detail route are explicit in `input/fixture-capability.json`.
+- Sanitization evidence now records raw/sanitized hashes, command/version, metadata result, scan refs, reviewer status, irreversibility and intended capability.
+- Region validation covers bounds, unique IDs, area ratios, oversized warnings and excluded-region inference blocking.
+
 > R-001 establishes the Recrafts evidence, provenance, scoped Design Contract and sanitized multi-image Golden Candidate foundation. It does not prove visual realization quality, component implementation, website cloning, fidelity verification, CraftsOS integration or production readiness.

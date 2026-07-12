@@ -1,6 +1,7 @@
 {
   "version": "1.0.0",
   "evidence_type": "fixture",
+  "fixture_capability_ref": "fixture-capability.json",
   "sources": [
     {
       "source_id": "library-card-view",

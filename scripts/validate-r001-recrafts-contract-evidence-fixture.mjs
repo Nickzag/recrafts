@@ -16,6 +16,7 @@ const skipGitCheck = args.includes("--skip-git-check");
 const fixture = path.join(root, "examples/golden-candidates/crafts-ui-multi-image");
 const failures = [];
 const checks = [];
+const warnings = [];
 
 function pass(message) { checks.push(message); }
 function fail(message) { failures.push(message); }
@@ -65,15 +66,16 @@ for (const schema of contractFiles.filter((file) => file.startsWith("schemas/"))
 if (!failures.some((x) => x.includes("schema") || x.includes("JSON"))) pass("Schemas parse and declare dialect, id and root type");
 
 const rel = "examples/golden-candidates/crafts-ui-multi-image";
-const manifest = json(`${rel}/source-manifest.json`);
-const classification = json(`${rel}/expected-source-classification.json`);
-const sanitization = json(`${rel}/sanitization-manifest.json`);
-const evidenceMap = json(`${rel}/evidence-map.json`);
-const designContract = json(`${rel}/design-contract.json`);
-const components = json(`${rel}/expected-component-inventory.json`);
-const expectedSections = json(`${rel}/expected-design-contract-sections.json`);
-const designDraftPath = required(`${rel}/output/design-draft.md`);
+const manifest = json(`${rel}/input/source-manifest.json`);
+const classification = json(`${rel}/oracle/expected-source-classification.json`);
+const sanitization = json(`${rel}/input/sanitization-manifest.json`);
+const evidenceMap = json(`${rel}/oracle/evidence-map.json`);
+const designContract = json(`${rel}/oracle/design-contract.json`);
+const components = json(`${rel}/oracle/expected-component-inventory.json`);
+const expectedSections = json(`${rel}/oracle/expected-design-contract-sections.json`);
+const designDraftPath = required(`${rel}/oracle/design-draft.md`);
 const designDraft = existsSync(designDraftPath) ? readFileSync(designDraftPath, "utf8") : "";
+const fixtureCapability = json(`${rel}/input/fixture-capability.json`);
 
 const expectedIds = ["library-card-view","library-list-view","library-masonry-view","editor-insert-inspector","editor-format-inspector","editor-style-inspector","style-gallery-modal","page-info-inspector","imagine-onboarding","appearance-settings","premium-pricing-modal","shared-empty-state","editor-focus-view"];
 if (manifest) {
@@ -82,7 +84,7 @@ if (manifest) {
   if (new Set(ids).size !== ids.length) fail("duplicate source id");
   for (const id of expectedIds) if (!ids.includes(id)) fail(`missing source id: ${id}`);
   for (const source of manifest.sources ?? []) {
-    const file = path.join(fixture, source.file ?? "");
+    const file = path.join(fixture, "input", source.file ?? "");
     if (!existsSync(file)) { fail(`missing source file: ${source.file}`); continue; }
     const buffer = readFileSync(file);
     const hash = createHash("sha256").update(buffer).digest("hex");
@@ -91,9 +93,18 @@ if (manifest) {
     if (!dimensions || dimensions.width !== source.dimensions?.width || dimensions.height !== source.dimensions?.height) fail(`dimension mismatch: ${source.source_id}`);
     if (source.sanitized !== true || !source.sanitization_ref) fail(`unsanitized source: ${source.source_id}`);
     if (!Array.isArray(source.regions) || source.regions.length === 0) fail(`unclassified source: ${source.source_id}`);
+    const regionIds = new Set();
     for (const region of source.regions ?? []) {
       if (!region.id || !region.class || !Array.isArray(region.bbox) || region.bbox.length !== 4) fail(`unclassified region: ${source.source_id}`);
+      if (regionIds.has(region.id)) fail(`duplicate region id: ${source.source_id}/${region.id}`);
+      regionIds.add(region.id);
+      const [x, y, width, height] = region.bbox;
+      if ([x, y, width, height].some((value) => !Number.isFinite(value) || value < 0) || x + width > source.dimensions.width || y + height > source.dimensions.height) fail(`out-of-bounds region: ${source.source_id}/${region.id}`);
+      const areaRatio = (width * height) / (source.dimensions.width * source.dimensions.height);
+      if (areaRatio > 0.8 && ["canonical-product-ui", "user-generated-content"].includes(region.class)) warnings.push(`oversized region: ${source.source_id}/${region.id}`);
     }
+    const inferable = source.regions.filter((region) => !["excluded-sensitive-content", "rejected"].includes(region.class));
+    if (!inferable.length) fail(`source has no inferable key region: ${source.source_id}`);
   }
   if (!failures.some((x) => /source|hash|dimension|region|sanit/.test(x))) pass("13 sources, hashes, dimensions and region classifications are valid");
 }
@@ -102,7 +113,15 @@ if (classification && classification.sources?.length !== 13) fail("expected clas
 if (sanitization) {
   if (sanitization.secret_scan?.status !== "passed" || sanitization.secret_scan?.findings !== 0 || sanitization.entries?.length !== 13) fail("sanitization evidence is incomplete");
   if (sanitization.entries?.some((entry) => !entry.sanitized || entry.raw_tracked || !entry.private_text_redacted || !entry.metadata_removed)) fail("sanitization entry failed closed");
+  for (const entry of sanitization.entries ?? []) {
+    for (const field of ["raw_sha256","sanitized_sha256","transformation_command","transformation_version","metadata_removal_result","pre_scan_ref","post_scan_ref","reviewer_status","reversible","intended_fixture_capability"]) {
+      if (entry[field] === undefined || entry[field] === null || entry[field] === "") fail(`sanitization evidence missing ${field}: ${entry.source_id}`);
+    }
+    if (entry.reversible !== false) fail(`sanitization must be irreversible: ${entry.source_id}`);
+  }
 }
+const expectedCapability = { macro_layout: "supported", surface_hierarchy: "supported", broad_color_family: "supported", state_detection: "partial", typography_measurement: "unsupported", micro_spacing: "unsupported", icon_geometry: "unsupported", pixel_fidelity: "unsupported" };
+for (const [key, value] of Object.entries(expectedCapability)) if (fixtureCapability?.fixture_capability?.[key] !== value) fail(`fixture capability mismatch: ${key}`);
 
 const rawDir = path.join(fixture, "local-raw-sources");
 const rawFiles = walk(rawDir).filter((file) => path.basename(file) !== ".gitkeep");
@@ -173,3 +192,4 @@ if (failures.length) {
 
 console.log(`R-001 validation passed (${checks.length} check groups)`);
 for (const check of checks) console.log(`- ${check}`);
+for (const warning of warnings) console.log(`- warning: ${warning}`);
