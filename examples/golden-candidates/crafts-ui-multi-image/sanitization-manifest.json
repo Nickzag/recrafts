@@ -1,0 +1,117 @@
+{
+  "version": "1.0.0",
+  "source_location": "gitignored external/local evidence only",
+  "method": "ffmpeg boxblur=6:2 with metadata removed",
+  "secret_scan": {
+    "engine": "Apple Vision OCR + deterministic credential patterns",
+    "status": "passed",
+    "findings": 0,
+    "scanned": 13
+  },
+  "entries": [
+    {
+      "id": "san-library-card-view",
+      "source_id": "library-card-view",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-library-list-view",
+      "source_id": "library-list-view",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-library-masonry-view",
+      "source_id": "library-masonry-view",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-editor-insert-inspector",
+      "source_id": "editor-insert-inspector",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-editor-format-inspector",
+      "source_id": "editor-format-inspector",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-editor-style-inspector",
+      "source_id": "editor-style-inspector",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-style-gallery-modal",
+      "source_id": "style-gallery-modal",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-page-info-inspector",
+      "source_id": "page-info-inspector",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-imagine-onboarding",
+      "source_id": "imagine-onboarding",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-appearance-settings",
+      "source_id": "appearance-settings",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-premium-pricing-modal",
+      "source_id": "premium-pricing-modal",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-shared-empty-state",
+      "source_id": "shared-empty-state",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    },
+    {
+      "id": "san-editor-focus-view",
+      "source_id": "editor-focus-view",
+      "raw_tracked": false,
+      "sanitized": true,
+      "private_text_redacted": true,
+      "metadata_removed": true
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "version": "1.0.0",
+  "evidence_type": "manually-authored-expected-fixture",
+  "sources": [
+    {
+      "source_id": "library-card-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            678,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            678,
+            0,
+            2246,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2924,
+            0,
+            642,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3566,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "library-list-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            681,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            681,
+            0,
+            2256,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2937,
+            0,
+            645,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3582,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "library-masonry-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            681,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            681,
+            0,
+            2256,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3582,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "editor-insert-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2256,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2936,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3580,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "style-gallery-modal",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "feature-specific-ui",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "user-generated-content",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "overlay",
+          "class": "state-evidence",
+          "bbox": [
+            1073,
+            336,
+            1431,
+            1568
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "page-info-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "imagine-onboarding",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "marketing-surface",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "feature-specific-ui",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "appearance-settings",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "feature-specific-ui",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "premium-pricing-modal",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "marketing-surface",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "shared-empty-state",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            679,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "state-evidence",
+          "bbox": [
+            679,
+            0,
+            2252,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3574,
+            2240
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "editor-focus-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            679,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            679,
+            0,
+            2253,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2932,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3576,
+            2240
+          ]
+        }
+      ]
+    }
+  ]
+}

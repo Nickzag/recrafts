@@ -1,0 +1,23 @@
+# Design Contract
+
+status: draft
+readiness: partial
+
+## Metadata
+## Source Summary
+## Source Classification
+## Rights / Use Mode
+## Observed / Inferred / Suggested
+## System Scope
+## Visual Direction
+## Tokens
+## Layout Grammar
+## Component Inventory
+## State Matrix
+## Motion unknowns
+## Accessibility unknowns
+## Content Isolation
+## Open Questions
+## Preview Plan
+## Known Limitations
+## Change Log

@@ -1,0 +1,776 @@
+{
+  "version": "1.0.0",
+  "evidence_type": "fixture",
+  "sources": [
+    {
+      "source_id": "library-card-view",
+      "file": "sources/library-card-view.png",
+      "sha256": "6bab60b9d7dcae75193f5a46730dd35fc8620ff55f98848902d4eedd644975eb",
+      "dimensions": {
+        "width": 3566,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-library-card-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            678,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            678,
+            0,
+            2246,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2924,
+            0,
+            642,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3566,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for workspace-library; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "library-list-view",
+      "file": "sources/library-list-view.png",
+      "sha256": "cc3ca02fb6f7b8de2d0de5c443bb0ffe6abb0d61e7e99723c0e33cc726c0a63b",
+      "dimensions": {
+        "width": 3582,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3582x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-library-list-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            681,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            681,
+            0,
+            2256,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2937,
+            0,
+            645,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3582,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for workspace-library; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "library-masonry-view",
+      "file": "sources/library-masonry-view.png",
+      "sha256": "d7af20148d492e30b0484693f542eb1ef1e1947ce906aa5f949de56ac55fd8cb",
+      "dimensions": {
+        "width": 3582,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3582x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-library-masonry-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            681,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            681,
+            0,
+            2256,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3582,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for workspace-library; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "editor-insert-inspector",
+      "file": "sources/editor-insert-inspector.png",
+      "sha256": "2c296aad4d1014d90c98d2466736679aabe0795ef2395fdd4eafa3307867f24a",
+      "dimensions": {
+        "width": 3580,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3580x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-editor-insert-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2256,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2936,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3580,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for layoutcrafts-workbench; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "file": "sources/editor-format-inspector.png",
+      "sha256": "a42fabdb65bb7520989810d545533eb84d7b8f41e1b7cf73ba6bac7b68824175",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3578x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-editor-format-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for inspector; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "file": "sources/editor-style-inspector.png",
+      "sha256": "74fd845d662d2692b3812f0d7e8e9670f92e6120103ad0c870d9ca39571a2a62",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3578x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-editor-style-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for inspector; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "style-gallery-modal",
+      "file": "sources/style-gallery-modal.png",
+      "sha256": "27f02c5a2b2d7f9b97c79968314315374cde138c61c2f681ccea3ddcdfc7c935",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3578x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-style-gallery-modal",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "feature-specific-ui",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "user-generated-content",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "overlay",
+          "class": "state-evidence",
+          "bbox": [
+            1073,
+            336,
+            1431,
+            1568
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for modal; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "page-info-inspector",
+      "file": "sources/page-info-inspector.png",
+      "sha256": "735247267ffa30e280e88f60c6d88c47fb47041d2722a455bfe79b012b54bc5e",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3578x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-page-info-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for inspector; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "imagine-onboarding",
+      "file": "sources/imagine-onboarding.png",
+      "sha256": "7a5290fd7538a4770ed11524d4b02185f648b02975cb249363025b036caa5f61",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3578x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-imagine-onboarding",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "marketing-surface",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "feature-specific-ui",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for marketing; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "appearance-settings",
+      "file": "sources/appearance-settings.png",
+      "sha256": "17c57163627ec6b69f4042b114752d0917ab08ae876bcbf285efba2c1f452307",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3578x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-appearance-settings",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "feature-specific-ui",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for settings; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "premium-pricing-modal",
+      "file": "sources/premium-pricing-modal.png",
+      "sha256": "391cd569f049d8c1ee92e3e59cdd9e996a48044cfa26d61a3455da3a1263a146",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3578x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-premium-pricing-modal",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "marketing-surface",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for marketing; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "shared-empty-state",
+      "file": "sources/shared-empty-state.png",
+      "sha256": "6ffd334fa21be0ca87f1983805efd9fe3cba5786413af958cbd936aad91b662d",
+      "dimensions": {
+        "width": 3574,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3574x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-shared-empty-state",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            679,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "state-evidence",
+          "bbox": [
+            679,
+            0,
+            2252,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3574,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for workspace-library; manually prepared expected data, not model-extraction proof."
+    },
+    {
+      "source_id": "editor-focus-view",
+      "file": "sources/editor-focus-view.png",
+      "sha256": "874a7a4fb09de164da4885e2cd9f5b47d83ff7a3e16fbbdb7339613c01536eb2",
+      "dimensions": {
+        "width": 3576,
+        "height": 2240
+      },
+      "source_type": "sanitized-screenshot",
+      "capture_date": "2026-07-11",
+      "platform": "macOS desktop",
+      "viewport": "3576x2240",
+      "sanitized": true,
+      "sanitization_ref": "san-editor-focus-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            679,
+            2240
+          ]
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            679,
+            0,
+            2253,
+            2240
+          ]
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2932,
+            0,
+            644,
+            2240
+          ]
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3576,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped"
+        }
+      ],
+      "priority": "golden-candidate",
+      "notes": "Fixture evidence for layoutcrafts-workbench; manually prepared expected data, not model-extraction proof."
+    }
+  ]
+}

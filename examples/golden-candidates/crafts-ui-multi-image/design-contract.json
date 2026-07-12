@@ -1,0 +1,36 @@
+{
+  "status": "draft",
+  "readiness": "partial",
+  "scopes": [
+    "global",
+    "workspace-library",
+    "layoutcrafts-workbench",
+    "inspector",
+    "settings",
+    "modal",
+    "marketing",
+    "document-content"
+  ],
+  "tokens": [
+    {
+      "id": "settings.surface.group",
+      "value": "neutral-translucent",
+      "scope": "settings",
+      "status": "inferred",
+      "source_class": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ]
+    },
+    {
+      "id": "marketing.imagine.background",
+      "value": "soft-blue-cloud-field",
+      "scope": "marketing",
+      "status": "observed",
+      "source_class": "marketing-surface",
+      "evidence_refs": [
+        "ev-imagine-background"
+      ]
+    }
+  ]
+}

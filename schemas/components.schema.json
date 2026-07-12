@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"recrafts/components","type":"object","required":["status","components"],"properties":{"status":{"const":"inventory-only"},"components":{"type":"array","minItems":29,"items":{"type":"object","required":["name","evidence_refs","states"]}}},"additionalProperties":false}

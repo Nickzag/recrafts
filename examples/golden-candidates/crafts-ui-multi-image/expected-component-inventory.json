@@ -1,0 +1,296 @@
+{
+  "status": "inventory-only",
+  "evidence_type": "manually-authored-expected-fixture",
+  "components": [
+    {
+      "name": "Button",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "IconButton",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "SegmentedControl",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "SearchField",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "Toggle",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "Divider",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "Badge",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "Popover",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "Modal",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "ScrollArea",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "NavigationRail",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "NavigationItem",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "FolderTreeItem",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "DocumentCard",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "DocumentListRow",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "ViewSwitcher",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "ToolbarGroup",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "InspectorPanel",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "InspectorSection",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "PropertyRow",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "EditorCanvas",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "FloatingControlIsland",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "SettingsRow",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "EmptyState",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "LoadingSkeleton",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "PricingCard",
+      "evidence_refs": [
+        "ev-app-shell"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    },
+    {
+      "name": "ThemePreviewCard",
+      "evidence_refs": [
+        "ev-neutral-surfaces"
+      ],
+      "states": [
+        "default",
+        "unknown"
+      ]
+    }
+  ]
+}

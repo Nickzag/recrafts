@@ -1,0 +1,22 @@
+{
+  "name": "recrafts",
+  "displayName": "Recrafts",
+  "version": "0.2.0",
+  "type": "skill",
+  "role": "foundation_skill",
+  "entry": "./runtime/local_adapter.mjs",
+  "standalone": true,
+  "craftsOSCompatible": true,
+  "canonicalDesignFilename": "design.md",
+  "compatibilityModes": ["uppercase-design-md-mirror"],
+  "schemas": {
+    "input": "./schemas/input.schema.json",
+    "output": "./schemas/output.schema.json",
+    "sourceManifest": "./schemas/source-manifest.schema.json",
+    "evidenceMap": "./schemas/evidence-map.schema.json",
+    "designContract": "./schemas/design-contract.schema.json",
+    "components": "./schemas/components.schema.json",
+    "validationReport": "./schemas/validation-report.schema.json"
+  },
+  "dependencies": []
+}

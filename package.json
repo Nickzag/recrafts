@@ -1,0 +1,10 @@
+{
+  "name": "recrafts",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate:r001": "node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs",
+    "test:r001": "node --test tests/r001-validator.test.mjs"
+  }
+}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"recrafts/validation-report","type":"object","required":["status","checks","limitations"],"properties":{"status":{"enum":["passed","failed","blocked"]},"checks":{"type":"array"},"limitations":{"type":"array"}},"additionalProperties":false}

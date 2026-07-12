@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "evidence": [
+    {
+      "evidence_id": "ev-app-shell",
+      "source_id": "editor-format-inspector",
+      "region_id": "navigation-shell",
+      "evidence_type": "visual-observation",
+      "observation": "Persistent navigation and inspector shell",
+      "candidate_rule": "Use stable shell regions around the editing surface",
+      "scope": "layoutcrafts-workbench",
+      "confidence": 0.96,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-document-artwork",
+      "source_id": "editor-format-inspector",
+      "region_id": "primary-surface",
+      "evidence_type": "content-isolation",
+      "observation": "Document artwork is user-generated content",
+      "candidate_rule": "Do not promote artwork colors or typography",
+      "scope": "document-content",
+      "confidence": 1,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-imagine-background",
+      "source_id": "imagine-onboarding",
+      "region_id": "primary-surface",
+      "evidence_type": "scope-boundary",
+      "observation": "Blue cloud field belongs to onboarding marketing surface",
+      "candidate_rule": "Keep feature background scoped to marketing",
+      "scope": "marketing",
+      "confidence": 0.98,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-neutral-surfaces",
+      "source_id": "appearance-settings",
+      "region_id": "primary-surface",
+      "evidence_type": "visual-inference",
+      "observation": "Settings uses quiet neutral grouped surfaces",
+      "candidate_rule": "Prefer neutral grouped settings surfaces",
+      "scope": "settings",
+      "confidence": 0.76,
+      "status": "inferred"
+    },
+    {
+      "evidence_id": "ev-spacing-suggestion",
+      "source_id": "library-card-view",
+      "region_id": "primary-surface",
+      "evidence_type": "design-suggestion",
+      "observation": "Card gutters appear regular",
+      "candidate_rule": "Test a 16px base gutter in preview",
+      "scope": "workspace-library",
+      "confidence": 0.55,
+      "status": "suggested"
+    }
+  ]
+}

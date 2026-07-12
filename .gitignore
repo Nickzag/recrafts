@@ -1,0 +1,6 @@
+recrafts-output/
+output/
+examples/**/local-raw-sources/*
+!examples/**/local-raw-sources/.gitkeep
+.DS_Store
+node_modules/

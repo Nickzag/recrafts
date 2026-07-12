@@ -1,0 +1,36 @@
+{
+  "name": "recrafts",
+  "displayName": "Recrafts",
+  "version": "0.2.0",
+  "type": "skill",
+  "role": "foundation_skill",
+  "description": "Builds provenance-backed visual-system contracts from authorized references.",
+  "entry": "./runtime/local_adapter.mjs",
+  "standalone": true,
+  "os_plugin": true,
+  "craftsOSCompatible": true,
+  "inputs": [
+    "brand.md",
+    "references",
+    "knowledge_pack",
+    "asset_pack",
+    "workspace_taste.md"
+  ],
+  "canonicalManifest": "./manifest.json",
+  "outputs": [
+    "design.md",
+    "design_tokens.json",
+    "layout_rules.json",
+    "components.json",
+    "template_patterns.json",
+    "preview.html",
+    "result.json",
+    "run_log.json"
+  ],
+  "dependencies": [],
+  "tags": [
+    "visual-system",
+    "design-md",
+    "foundation-skill"
+  ]
+}
