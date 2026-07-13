@@ -1,7 +1,7 @@
 {
   "name": "recrafts",
   "displayName": "Recrafts",
-  "version": "0.2.0",
+  "version": "0.3.0-rc.1",
   "type": "skill",
   "role": "foundation_skill",
   "description": "Builds provenance-backed visual-system contracts from authorized references.",

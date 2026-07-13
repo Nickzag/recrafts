@@ -1,0 +1,33 @@
+import assert from "node:assert/strict";
+import { cpSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import test from "node:test";
+import { fileURLToPath } from "node:url";
+import { handleEnvelope } from "../runtime/interop_contract.mjs";
+
+const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+test("prepare-analysis needs Host action and submit-analysis composes a package", async () => {
+  const root = mkdtempSync(path.join(os.tmpdir(), "recrafts-r005-analysis-"));
+  cpSync(path.join(repo, "fixtures/interop/sanitized-analysis-fixture.svg"), path.join(root, "fixture.svg"));
+  const base = { protocol_version: "1.0", host: { agent: "test", engine: "node", capabilities: ["files","structured-output"] }, working_root: root };
+  const prepared = await handleEnvelope({ ...base, request_id: "prepare", operation: "prepare-analysis", input: { sources: ["fixture.svg"] }, output_directory: "prepared" });
+  assert.equal(prepared.status, "needs_host_action");
+  assert.equal(prepared.error, null);
+  assert.equal(prepared.validation.semantic_analysis_completed, false);
+  const analysis = JSON.parse(readFileSync(path.join(repo, "fixtures/interop/host-analysis.fixture.json")));
+  analysis.prepared_analysis_id = prepared.validation.prepared_analysis_id;
+  writeFileSync(path.join(root, "host-analysis.json"), JSON.stringify(analysis));
+  const submitted = await handleEnvelope({ ...base, request_id: "submit", operation: "submit-analysis", input: { prepared_analysis_directory: "prepared", host_analysis_file: "host-analysis.json" }, output_directory: "package" });
+  assert.equal(submitted.status, "completed_with_warnings");
+  assert.match(readFileSync(path.join(root, "package/design.md"), "utf8"), /Host-submitted/);
+  const validated = await handleEnvelope({ ...base, request_id: "validate", operation: "validate-package", input: { package_directory: "package" } });
+  assert.equal(validated.validation.valid, true);
+  const realized = await handleEnvelope({ ...base, request_id: "realize", operation: "generate-realization", input: { package_directory: "package" }, output_directory: "realization" });
+  assert.equal(realized.status, "completed");
+  assert.ok(realized.validation.realization_id.startsWith("realization-"));
+  const invalid = { ...analysis, prepared_analysis_id: "wrong" };
+  writeFileSync(path.join(root, "invalid.json"), JSON.stringify(invalid));
+  const rejected = await handleEnvelope({ ...base, request_id: "bad", operation: "submit-analysis", input: { prepared_analysis_directory: "prepared", host_analysis_file: "invalid.json" }, output_directory: "bad-package" });
+  assert.equal(rejected.error.code, "HOST_ACTION_REQUIRED");
+});

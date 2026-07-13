@@ -1,17 +1,24 @@
 {
   "name": "recrafts",
-  "version": "0.2.0",
+  "version": "0.3.0-rc.1",
   "private": true,
   "type": "module",
   "bin": {
-    "recraft": "./runtime/recraft-cli.mjs"
+    "recraft": "./runtime/recraft-cli.mjs",
+    "recraft-interop": "./runtime/interop_cli.mjs"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "files": [
     "README.md",
     "SKILL.md",
     "manifest.json",
+    "skill_manifest.json",
     "runtime/",
     "realization/",
+    "contracts/",
+    "fixtures/interop/",
     "schemas/",
     "prompts/",
     "templates/",
@@ -19,7 +26,10 @@
     "scripts/compare-r002-normalized-output.mjs"
     ,"scripts/build-extraction-quality-summary.mjs",
     "scripts/run-r003-preflight.mjs",
-    "scripts/validate-r003-preflight.mjs"
+    "scripts/validate-r003-preflight.mjs",
+    "scripts/check-r003-token-compliance.mjs",
+    "scripts/validate-r003-realization.mjs",
+    "scripts/validate-r004-fidelity.mjs"
   ],
   "scripts": {
     "validate:r001": "node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs",
@@ -28,6 +38,8 @@
     "validate:r003-preflight": "node scripts/validate-r003-preflight.mjs",
     "validate:r003-realization": "node scripts/validate-r003-realization.mjs examples/golden-candidates/crafts-ui-multi-image/realizations/r003b-v2",
     "validate:r004": "node scripts/validate-r004-fidelity.mjs examples/golden-candidates/crafts-ui-multi-image/fidelity/r004-v2",
+    "build:r005": "node scripts/build-r005-release-candidate.mjs",
+    "validate:r005": "node scripts/validate-r005-release-candidate.mjs release-candidates/recrafts-0.3.0-rc.1",
     "test:r002": "node --test tests/r002-runtime.test.mjs tests/r002-validator.test.mjs",
     "test": "node --test tests/*.test.mjs"
   }

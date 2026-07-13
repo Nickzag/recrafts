@@ -1,10 +1,10 @@
 {
   "name": "recrafts",
   "displayName": "Recrafts",
-  "version": "0.2.0",
+  "version": "0.3.0-rc.1",
   "type": "skill",
   "role": "foundation_skill",
-  "entry": "./runtime/recraft-cli.mjs",
+  "entry": "./runtime/interop_cli.mjs",
   "standalone": true,
   "craftsOSCompatible": true,
   "canonicalDesignFilename": "design.md",

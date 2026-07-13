@@ -1,0 +1,25 @@
+{
+  "fixture_label": "deterministic interoperability fixture; not a live model result; not proof of visual quality",
+  "prepared_analysis_id": "PREPARED_ANALYSIS_ID",
+  "execution": {
+    "host_agent": "fixture-host",
+    "engine": "deterministic-interoperability-fixture",
+    "vision_capability": true,
+    "performed_at": "2026-07-13T00:00:00Z"
+  },
+  "findings": [
+    {"id":"finding-shell","observation":"Quiet neutral three-column desktop shell","scope":"surface","confidence":0.9,"evidence_refs":["source-1"]}
+  ],
+  "tokens": [
+    {"id":"app.background","value":"#F6F5F3","scope":"surface","status":"observed","confidence":0.9,"evidence_refs":["source-1"]},
+    {"id":"surface.primary","value":"#FFFFFF","scope":"surface","status":"observed","confidence":0.9,"evidence_refs":["source-1"]},
+    {"id":"text.primary","value":"#20201E","scope":"surface","status":"observed","confidence":0.9,"evidence_refs":["source-1"]},
+    {"id":"text.secondary","value":"#6F6E69","scope":"surface","status":"suggested","confidence":0.7,"evidence_refs":["source-1"]},
+    {"id":"border.subtle","value":"rgba(32,32,30,0.10)","scope":"surface","status":"suggested","confidence":0.7,"evidence_refs":["source-1"]}
+  ],
+  "components": [
+    {"name":"NavigationRail","scope":"surface","confidence":0.85,"evidence_refs":["source-1"]},
+    {"name":"EditorCanvas","scope":"surface","confidence":0.85,"evidence_refs":["source-1"]},
+    {"name":"InspectorPanel","scope":"surface","confidence":0.85,"evidence_refs":["source-1"]}
+  ]
+}
