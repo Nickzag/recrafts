@@ -19,7 +19,22 @@ submit-analysis
 validate-package
 generate-realization
 verify-fidelity
+submit-correction
+accept-artifacts
+rollback-package
 ```
+
+## Human Correction and Rollback
+
+```text
+candidate/blocked package
+→ submit-correction → new awaiting-review/blocked package
+→ accept-artifacts + project-owner decision → new accepted package
+→ later accepted package
+→ rollback-package → new accepted package restoring prior canonical hashes
+```
+
+Corrections、decisions 和 rollback events 只追加，不是 Evidence。每次操作必须写入新空目录并生成新的 `package_id`、`artifact_set_id` 和 lineage event；原 Evidence、Claims、initial extraction snapshot 与历史 Package 保持不变。
 
 ## Host Analysis Handoff
 
@@ -45,6 +60,7 @@ Artifact descriptor 只返回相对 output root 的路径、SHA-256、media type
 - `capabilities`: 无要求。
 - `prepare-analysis`: `files`。
 - `submit-analysis`: `files`, `structured-output`，并提交已执行的视觉 Host Analysis。
+- `submit-correction`、`accept-artifacts`、`rollback-package`: `files`, `structured-output`。
 - 其余操作: `files`。
 
 ## Safety and Claim

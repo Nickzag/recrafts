@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://recrafts.local/schemas/package-lineage-event.schema.json","type":"object","required":["event_id","event_type","package_id","parent_package_id","created_at","artifact_set_hash"]}

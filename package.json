@@ -37,6 +37,10 @@
     "scripts/validate-r006-url-lifecycle.mjs",
     "scripts/validate-r006-domain-provenance.mjs",
     "scripts/validate-r006-conflicts.mjs"
+    ,"scripts/validate-r007-corrections.mjs",
+    "scripts/validate-r007-acceptance.mjs",
+    "scripts/validate-r007-lineage.mjs",
+    "scripts/validate-r007-rollback.mjs"
   ],
   "scripts": {
     "validate:r001": "node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs",
@@ -48,6 +52,7 @@
     "build:r005": "node scripts/build-r005-release-candidate.mjs",
     "validate:r005": "node scripts/validate-r005-release-candidate.mjs release-candidates/recrafts-0.3.0-rc.1-build5",
     "validate:r006": "node --test tests/r006-evidence-truth.test.mjs",
+    "validate:r007": "node --test tests/r007-contracts.test.mjs tests/r007-package-evolution.test.mjs",
     "test:r002": "node --test tests/r002-runtime.test.mjs tests/r002-validator.test.mjs",
     "test": "node --test tests/*.test.mjs"
   }

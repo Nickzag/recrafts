@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://recrafts.local/schemas/artifact-decision-record.schema.json","type":"object","required":["decision_id","candidate_package_id","actor","actor_role","verdict","created_at"]}

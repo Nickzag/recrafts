@@ -22,7 +22,12 @@
     "realizationReadiness": "./schemas/realization-readiness.schema.json",
     "evidenceRecord": "./schemas/evidence-record.schema.json",
     "claimRecord": "./schemas/claim-record.schema.json",
-    "conflictRecord": "./schemas/conflict-record.schema.json"
+    "conflictRecord": "./schemas/conflict-record.schema.json",
+    "correctionEvent": "./schemas/correction-event.schema.json",
+    "artifactDecision": "./schemas/artifact-decision-record.schema.json",
+    "artifactSet": "./schemas/artifact-set-record.schema.json",
+    "packageLineage": "./schemas/package-lineage-event.schema.json",
+    "rollbackEvent": "./schemas/rollback-event.schema.json"
   },
   "dependencies": []
 }

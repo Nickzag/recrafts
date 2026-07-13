@@ -18,8 +18,8 @@
   ],
   "canonicalManifest": "./manifest.json",
   "protocol": "./contracts/envelope-request.schema.json",
-  "operations": ["capabilities", "prepare-analysis", "submit-analysis", "validate-package", "generate-realization", "verify-fidelity"],
-  "outputs": ["evidence-bundle", "claims.json", "design.md", "tokens.json", "components.json", "grid-rules.json", "layout-rules.json", "visual-grammar.json", "conflicts.json", "recrafts-package.json", "realization.json", "fidelity-readiness.json"],
+  "operations": ["capabilities", "prepare-analysis", "submit-analysis", "validate-package", "generate-realization", "verify-fidelity", "submit-correction", "accept-artifacts", "rollback-package"],
+  "outputs": ["evidence-bundle", "claims.json", "design.md", "tokens.json", "components.json", "grid-rules.json", "layout-rules.json", "visual-grammar.json", "conflicts.json", "artifact-set.json", "corrections.jsonl", "decisions.jsonl", "lineage.json", "recrafts-package.json", "realization.json", "fidelity-readiness.json"],
   "dependencies": [],
   "tags": [
     "visual-system",

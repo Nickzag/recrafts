@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://recrafts.local/schemas/rollback-event.schema.json","type":"object","required":["rollback_id","current_package_id","restore_target_package_id","actor","actor_role","reason","decision_id","created_at"]}

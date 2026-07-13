@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://recrafts.local/schemas/correction-event.schema.json","type":"object","required":["correction_id","base_package_id","actor","actor_role","created_at","reason","operations","decision_context"]}

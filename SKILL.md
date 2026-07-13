@@ -1,6 +1,6 @@
 # Recrafts
 
-Recrafts 是可独立安装和运行的视觉重构 Skill。它从获准使用的网站、图片和界面参考中建立可追溯证据，输出 lowercase `design.md`、结构化设计契约和验证报告。模型观察始终先作为运行证据，只有经过 Schema、来源、Scope 和人工决策校验后才能进入规范 Artifact。
+Recrafts 是可独立安装和运行的视觉重构 Skill。它从获准使用的网站、图片和界面参考中建立可追溯证据，输出 lowercase `design.md`、结构化设计契约和验证报告。来源派生内容是 Evidence；模型观察只进入 Claims。只有经过 Schema、来源、Scope、人工修正和项目所有者决策校验后，候选规则才能进入 accepted Artifact Set。
 
 ## 输入
 
@@ -34,11 +34,13 @@ Canonical RC entrypoint：
 printf '%s' '<JSON Envelope>' | recraft-interop
 ```
 
-Operation 为 `capabilities`、`prepare-analysis`、`submit-analysis`、`validate-package`、`generate-realization`、`verify-fidelity`。stdin 只能包含一个 Request JSON；stdout 只能包含一个 Response JSON；诊断写 stderr。Response 状态为 `completed`、`completed_with_warnings`、`needs_host_action`、`failed`。
+Operation 为 `capabilities`、`prepare-analysis`、`submit-analysis`、`validate-package`、`generate-realization`、`verify-fidelity`、`submit-correction`、`accept-artifacts`、`rollback-package`。stdin 只能包含一个 Request JSON；stdout 只能包含一个 Response JSON；诊断写 stderr。Response 状态为 `completed`、`completed_with_warnings`、`needs_host_action`、`failed`。
 
 Recrafts 不内置视觉模型。`prepare-analysis` 将脱敏来源复制到 Prepared Bundle，生成 Evidence Bundle 和 Host 指令，并返回 `needs_host_action`；视觉 Host 通过返回契约中的相对路径读取来源，完成语义分析后，通过 `submit-analysis` 提交满足 `contracts/host-analysis.schema.json` 的结构化结果。仅声明 vision capability 不能代替真实 Host Analysis。
 
 `submit-analysis` 只生成 `awaiting-owner-review` Candidate Package，不得伪造项目所有者 PASS。`generate-realization` 对待审核 Package 要求显式 Owner Decision import，并先生成新的已批准 `package_id`。确定性 interoperability fixture 必须通过专用 option 显式隔离，不能复用真实项目所有者身份。
+
+`submit-correction` 只能由项目所有者或授权评审者提交，并生成新候选 Package；Evidence、Claims 和 initial extraction snapshot 不可覆盖。`accept-artifacts` 通过显式 PASS 决策和 provenance/conflict/currentness Gate 生成新 accepted Package。`rollback-package` 只接受两个 accepted Package，并以新身份恢复目标 canonical hashes；任何历史目录均不可原地修改。
 
 Artifact path 必须相对 output root。Runtime 通过 realpath 拒绝 traversal、symlink escape、Oracle/expected、特殊文件、输入输出嵌套、非空输出和本地操作中的远程 URL。
 

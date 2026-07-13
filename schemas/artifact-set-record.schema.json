@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://recrafts.local/schemas/artifact-set-record.schema.json","type":"object","required":["artifact_set_id","package_id","status","artifacts","artifact_hashes"]}

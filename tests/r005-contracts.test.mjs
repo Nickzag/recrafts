@@ -10,7 +10,7 @@ const operations = ["capabilities","prepare-analysis","submit-analysis","validat
 test("R-005 contracts parse and declare exact operations/statuses", () => {
   const envelope = JSON.parse(readFileSync(path.join(root, "contracts/envelope-request.schema.json")));
   const response = JSON.parse(readFileSync(path.join(root, "contracts/envelope-response.schema.json")));
-  assert.deepEqual(envelope.properties.operation.enum, operations);
+  assert.deepEqual(envelope.properties.operation.enum.slice(0, operations.length), operations);
   assert.deepEqual(response.properties.status.enum, ["completed","completed_with_warnings","needs_host_action","failed"]);
   for (const operation of operations) {
     const schema = JSON.parse(readFileSync(path.join(root, `contracts/operations/${operation}.request.schema.json`)));

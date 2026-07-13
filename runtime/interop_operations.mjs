@@ -9,6 +9,8 @@ import { prepareEvidenceAnalysis, submitEvidenceAnalysis } from "./evidence_trut
 import { importOwnerDecision } from "./owner_decision_import.mjs";
 import { resolveSafeInput, resolveSafeOutput, toArtifactPath } from "./path_security.mjs";
 import { validateR006Package } from "./r006_validation.mjs";
+import { acceptArtifacts, rollbackPackage, submitCorrection } from "./package_evolution.mjs";
+import { validateR007Package } from "./r007_validation.mjs";
 
 const hashFile = async (file) => createHash("sha256").update(await readFile(file)).digest("hex");
 const artifact = async ({ type, file, outputRoot, mediaType, schemaVersion = "2.1.0" }) => ({ type, path: toArtifactPath({ file, outputRoot }), sha256: await hashFile(file), media_type: mediaType, schema_version: schemaVersion });
@@ -20,6 +22,9 @@ export const OPERATION_CAPABILITIES = {
   "validate-package": ["files"],
   "generate-realization": ["files"],
   "verify-fidelity": ["files"],
+  "submit-correction": ["files", "structured-output"],
+  "accept-artifacts": ["files", "structured-output"],
+  "rollback-package": ["files", "structured-output"],
 };
 
 export async function executeOperation(request, workingRoot) {
@@ -63,9 +68,32 @@ export async function executeOperation(request, workingRoot) {
   if (request.operation === "validate-package") {
     const directory = await resolveSafeInput({ value: input.package_directory, workingRoot, allowedTypes: ["directory"] });
     const candidate = JSON.parse(await readFile(path.join(directory, "recrafts-package.json"), "utf8"));
+    try { await readFile(path.join(directory, "artifact-set.json")); return { status: "completed", artifacts: [], validation: await validateR007Package(directory) }; } catch (error) { if (error.code !== "ENOENT") throw error; }
     if (candidate.schema_version === "3.0.0") return { status: "completed", artifacts: [], validation: await validateR006Package(directory) };
     const loaded = await loadExtractionPackage(directory);
     return { status: "completed", artifacts: [], validation: { package_id: loaded.manifest.package_id, schema_version: loaded.manifest.schema_version, valid: true } };
+  }
+  if (request.operation === "submit-correction") {
+    const base = await resolveSafeInput({ value: input.base_package_directory, workingRoot, allowedTypes: ["directory"] });
+    const correction = await resolveSafeInput({ value: input.correction_file, workingRoot, allowedTypes: ["file"] });
+    const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: [base, correction] });
+    const result = await submitCorrection({ basePackageDirectory: base, correctionFile: correction, outputDirectory: output });
+    return { status: "completed_with_warnings", artifacts: [await artifact({ type: "corrected-package", file: path.join(output, "recrafts-package.json"), outputRoot: output, mediaType: "application/json", schemaVersion: "3.0.0" })], validation: result, warnings: ["Corrected package still requires explicit artifact acceptance"] };
+  }
+  if (request.operation === "accept-artifacts") {
+    const candidate = await resolveSafeInput({ value: input.candidate_package_directory, workingRoot, allowedTypes: ["directory"] });
+    const decision = await resolveSafeInput({ value: input.decision_file, workingRoot, allowedTypes: ["file"] });
+    const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: [candidate, decision] });
+    const result = await acceptArtifacts({ candidatePackageDirectory: candidate, decisionFile: decision, outputDirectory: output });
+    return { status: "completed", artifacts: [await artifact({ type: "accepted-package", file: path.join(output, "recrafts-package.json"), outputRoot: output, mediaType: "application/json", schemaVersion: "3.0.0" })], validation: result };
+  }
+  if (request.operation === "rollback-package") {
+    const current = await resolveSafeInput({ value: input.current_package_directory, workingRoot, allowedTypes: ["directory"] });
+    const target = await resolveSafeInput({ value: input.restore_target_directory, workingRoot, allowedTypes: ["directory"] });
+    const decision = await resolveSafeInput({ value: input.decision_file, workingRoot, allowedTypes: ["file"] });
+    const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: [current, target, decision] });
+    const result = await rollbackPackage({ currentPackageDirectory: current, restoreTargetDirectory: target, decisionFile: decision, outputDirectory: output });
+    return { status: "completed", artifacts: [await artifact({ type: "rollback-package", file: path.join(output, "recrafts-package.json"), outputRoot: output, mediaType: "application/json", schemaVersion: "3.0.0" })], validation: result };
   }
   if (request.operation === "generate-realization") {
     const directory = await resolveSafeInput({ value: input.package_directory, workingRoot, allowedTypes: ["directory"] });
