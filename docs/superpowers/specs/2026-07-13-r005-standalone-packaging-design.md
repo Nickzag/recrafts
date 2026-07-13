@@ -1,8 +1,8 @@
 # R-005 Standalone Packaging, Agent Interoperability and MVP Release Candidate
 
-Status: approved with P0 contract corrections  
-Date: 2026-07-13  
-Repository: `/Users/Nick/Documents/Recrafts`  
+Status: approved with P0 contract corrections
+Date: 2026-07-13
+Repository: `/Users/Nick/Documents/Recrafts`
 Branch: `recrafts/r-005-mvp-release-candidate`
 
 ## 1. Goal
