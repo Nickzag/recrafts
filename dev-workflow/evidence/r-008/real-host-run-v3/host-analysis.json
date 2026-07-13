@@ -1,0 +1,32 @@
+{
+  "fixture_label": "r008-real-craft-public-homepage-final-vision-run",
+  "prepared_analysis_id": "prepared-8f7c5648c5134e85",
+  "execution": { "host_agent": "codex", "engine": "gpt-5", "vision_capability": true, "performed_at": "2026-07-13T14:24:08Z" },
+  "source_classifications": [{
+    "source_id": "source-1", "classification": "marketing-surface", "scope": "surface", "confidence": 0.99,
+    "evidence_refs": ["ev-e1946411aee48082", "ev-044b095c69ae7583"],
+    "regions": [
+      { "id": "floating-header", "classification": "marketing-surface", "scope": "selection", "confidence": 0.99, "evidence_refs": ["ev-879910db565abf8f", "ev-d135da596b1971c2"] },
+      { "id": "hero-headline", "classification": "marketing-surface", "scope": "selection", "confidence": 0.99, "evidence_refs": ["ev-1e168a1468984bae", "ev-e1946411aee48082"] },
+      { "id": "embedded-product-preview", "classification": "canonical-product-ui", "scope": "selection", "confidence": 0.75, "evidence_refs": ["ev-e1946411aee48082"] }
+    ]
+  }],
+  "findings": [
+    { "id": "hero-composition", "observation": "Centered serif headline and pill CTA overlay a rounded sky-blue paper collage; a product preview is bottom-anchored.", "scope": "surface", "confidence": 0.97, "evidence_refs": ["ev-e1946411aee48082", "ev-1e168a1468984bae"] },
+    { "id": "floating-navigation", "observation": "A narrow floating white pill contains logo, navigation, login and a black primary action.", "scope": "selection", "confidence": 0.98, "evidence_refs": ["ev-879910db565abf8f", "ev-d135da596b1971c2", "ev-5971412d36f42a03"] },
+    { "id": "marketing-boundary", "observation": "Campaign strip, collage and hero typography are marketing-specific; only the embedded preview is a bounded canonical-product-UI candidate.", "scope": "surface", "confidence": 0.95, "evidence_refs": ["ev-e1946411aee48082", "ev-044b095c69ae7583"] }
+  ],
+  "tokens": [
+    { "id": "color.hero-sky", "category": "color", "value": "light sky blue textured surface", "scope": "surface", "status": "observed", "confidence": 0.94, "evidence_refs": ["ev-e1946411aee48082"] },
+    { "id": "shape.hero-radius", "category": "radius", "value": "large rounded container", "scope": "surface", "status": "observed", "confidence": 0.96, "evidence_refs": ["ev-e1946411aee48082"] },
+    { "id": "typography.hero-display", "category": "typography", "value": "oversized centered black serif display", "scope": "surface", "status": "observed", "confidence": 0.98, "evidence_refs": ["ev-1e168a1468984bae", "ev-e1946411aee48082"] },
+    { "id": "typography.navigation", "category": "typography", "value": "UntitledSans/Inter sans-serif family", "scope": "selection", "status": "observed", "confidence": 0.93, "evidence_refs": ["ev-8f2775e1921d2df9", "ev-5971412d36f42a03"] }
+  ],
+  "components": [
+    { "name": "marketing-hero", "purpose": "Present the public product value proposition", "anatomy": ["promotion-strip", "navigation", "headline", "action", "collage", "product-preview"], "variants": ["desktop"], "states": ["default"], "scope": "surface", "confidence": 0.97, "evidence_refs": ["ev-e1946411aee48082", "ev-60ba87275d15538b"] },
+    { "name": "floating-navigation", "purpose": "Expose public navigation and conversion action", "anatomy": ["logo", "links", "login", "action"], "variants": ["desktop"], "states": ["default"], "scope": "selection", "confidence": 0.98, "evidence_refs": ["ev-879910db565abf8f", "ev-d135da596b1971c2"] },
+    { "name": "pill-action", "purpose": "Provide a high-contrast conversion control", "anatomy": ["label", "pill-surface", "shadow"], "variants": ["light", "dark"], "states": ["default"], "scope": "selection", "confidence": 0.96, "evidence_refs": ["ev-e1946411aee48082", "ev-879910db565abf8f"] }
+  ],
+  "grid_rules": [{ "id": "grid.marketing-hero", "rule_type": "centered-single-column-overlay", "constraints": { "viewport": "1440x900", "hero_alignment": "center", "navigation_width": "bounded", "product_preview_anchor": "bottom-center" }, "scope": "surface", "status": "observed", "confidence": 0.94, "evidence_refs": ["ev-e1946411aee48082", "ev-879910db565abf8f", "ev-1e168a1468984bae"] }],
+  "conflicts": []
+}

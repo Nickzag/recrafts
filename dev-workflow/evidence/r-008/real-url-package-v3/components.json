@@ -1,0 +1,91 @@
+{
+  "version": "3.0.0",
+  "components": [
+    {
+      "domain_id": "component.marketing-hero",
+      "component_id": "component.marketing-hero",
+      "scope": "surface",
+      "purpose": "Present the public product value proposition",
+      "anatomy": [
+        "promotion-strip",
+        "navigation",
+        "headline",
+        "action",
+        "collage",
+        "product-preview"
+      ],
+      "variants": [
+        "desktop"
+      ],
+      "states": [
+        "default"
+      ],
+      "status": "inferred",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-60ba87275d15538b"
+      ],
+      "claim_refs": [
+        "claim-marketing-hero"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "component.floating-navigation",
+      "component_id": "component.floating-navigation",
+      "scope": "selection",
+      "purpose": "Expose public navigation and conversion action",
+      "anatomy": [
+        "logo",
+        "links",
+        "login",
+        "action"
+      ],
+      "variants": [
+        "desktop"
+      ],
+      "states": [
+        "default"
+      ],
+      "status": "inferred",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-879910db565abf8f",
+        "ev-d135da596b1971c2"
+      ],
+      "claim_refs": [
+        "claim-floating-navigation-2"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "component.pill-action",
+      "component_id": "component.pill-action",
+      "scope": "selection",
+      "purpose": "Provide a high-contrast conversion control",
+      "anatomy": [
+        "label",
+        "pill-surface",
+        "shadow"
+      ],
+      "variants": [
+        "light",
+        "dark"
+      ],
+      "states": [
+        "default"
+      ],
+      "status": "inferred",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-879910db565abf8f"
+      ],
+      "claim_refs": [
+        "claim-pill-action"
+      ],
+      "conflict_refs": []
+    }
+  ]
+}

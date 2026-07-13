@@ -1,0 +1,9 @@
+{
+  "prepared_analysis_id": "prepared-8f7c5648c5134e85",
+  "stages": [
+    "intake",
+    "capture",
+    "evidence-export"
+  ],
+  "status": "complete"
+}

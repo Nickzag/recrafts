@@ -1,0 +1,15 @@
+{
+  "host_run_id": "host-run-r008-craft-do-20260713t142408z",
+  "host": { "agent": "codex", "engine": "gpt-5" },
+  "vision_capability": true,
+  "prompt_hash": "fdcc86d68582a09af2d22404b47256c332e8bc80285b3b50afe7d4a473360107",
+  "instruction_hash": "fdcc86d68582a09af2d22404b47256c332e8bc80285b3b50afe7d4a473360107",
+  "input_manifest_hash": "380ae4a29f092147a24a974b59b69179634ac01704ee3bdf1c582991f97dcb73",
+  "pixel_input_hash": "fd20101a3b5668ecb13dda4b1e6e657c06737436e4632aec822fa87032d0ca22",
+  "started_at": "2026-07-13T14:23:50Z",
+  "completed_at": "2026-07-13T14:24:08Z",
+  "raw_output_path": "raw-output.md",
+  "structured_claims_path": "host-analysis.json",
+  "human_edits_before_submission": [],
+  "human_edits_after_submission": []
+}

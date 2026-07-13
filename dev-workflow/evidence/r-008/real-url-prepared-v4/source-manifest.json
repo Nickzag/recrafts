@@ -1,0 +1,25 @@
+{
+  "version": "3.0.0",
+  "prepared_analysis_id": "prepared-8f7c5648c5134e85",
+  "sources": [
+    {
+      "source_id": "source-1",
+      "kind": "url",
+      "capture_id": "capture-bc557f13c1bc8520",
+      "status": "complete",
+      "url": "https://www.craft.do",
+      "routes": [
+        "/"
+      ],
+      "viewports": [
+        "1440x900"
+      ],
+      "controlled_fixture": false,
+      "real_browser_capture": true,
+      "browser": {
+        "name": "chromium",
+        "version": "149.0.7827.55"
+      }
+    }
+  ]
+}

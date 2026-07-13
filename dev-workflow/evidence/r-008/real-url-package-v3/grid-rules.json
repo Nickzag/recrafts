@@ -1,0 +1,28 @@
+{
+  "version": "3.0.0",
+  "grid_rules": [
+    {
+      "domain_id": "grid.marketing-hero",
+      "grid_rule_id": "grid.marketing-hero",
+      "scope": "surface",
+      "rule_type": "centered-single-column-overlay",
+      "constraints": {
+        "viewport": "1440x900",
+        "hero_alignment": "center",
+        "navigation_width": "bounded",
+        "product_preview_anchor": "bottom-center"
+      },
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-879910db565abf8f",
+        "ev-1e168a1468984bae"
+      ],
+      "claim_refs": [
+        "claim-grid.marketing-hero"
+      ],
+      "conflict_refs": []
+    }
+  ]
+}

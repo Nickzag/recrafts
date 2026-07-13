@@ -1,0 +1,34 @@
+{
+  "version": "3.0.0",
+  "prepared_analysis_id": "prepared-8f7c5648c5134e85",
+  "sources": [
+    {
+      "source_id": "source-1",
+      "kind": "url",
+      "capture_id": "capture-bc557f13c1bc8520",
+      "status": "complete",
+      "url": "https://www.craft.do",
+      "routes": [
+        "/"
+      ],
+      "viewports": [
+        "1440x900"
+      ],
+      "controlled_fixture": false,
+      "real_browser_capture": true,
+      "browser": {
+        "name": "chromium",
+        "version": "149.0.7827.55"
+      }
+    }
+  ],
+  "semantic_analysis_completed": false,
+  "schema_version": "3.0.0",
+  "protocol_version": "1.1",
+  "analysis_id": "analysis-994cc426b9dd6dac",
+  "package_id": "package-25d98ea540f91b93",
+  "skill_version": "0.4.0-rc.1",
+  "host_agent": "codex",
+  "model": "gpt-5",
+  "owner_decision_set_id": null
+}

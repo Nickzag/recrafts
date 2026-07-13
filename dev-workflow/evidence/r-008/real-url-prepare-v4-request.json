@@ -1,0 +1,7 @@
+{
+  "protocol_version": "1.1", "request_id": "r008-real-url-prepare-v4", "operation": "prepare-analysis",
+  "host": { "agent": "codex", "engine": "gpt-5", "capabilities": ["vision", "files", "structured-output"] },
+  "working_root": ".",
+  "input": { "sources": [{ "kind": "url", "url": "https://www.craft.do", "routes": ["/"], "viewports": ["1440x900"], "browser_capture_record": "dev-workflow/evidence/r-008/real-url-capture-v4/capture-record.json" }] },
+  "output_directory": "dev-workflow/evidence/r-008/real-url-prepared-v4"
+}

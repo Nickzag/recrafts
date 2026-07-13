@@ -1,0 +1,279 @@
+{
+  "version": "3.0.0",
+  "claims": [
+    {
+      "claim_id": "claim-classification-source-1",
+      "claim_type": "source-classification",
+      "scope": "surface",
+      "status": "inferred-claim",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-044b095c69ae7583"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-1-floating-header",
+      "claim_type": "source-classification",
+      "scope": "selection",
+      "status": "inferred-claim",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-879910db565abf8f",
+        "ev-d135da596b1971c2"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-1-hero-headline",
+      "claim_type": "source-classification",
+      "scope": "selection",
+      "status": "inferred-claim",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-1e168a1468984bae",
+        "ev-e1946411aee48082"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-1-embedded-product-preview",
+      "claim_type": "source-classification",
+      "scope": "selection",
+      "status": "inferred-claim",
+      "confidence": 0.75,
+      "evidence_refs": [
+        "ev-e1946411aee48082"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "canonical-product-ui"
+    },
+    {
+      "claim_id": "claim-hero-composition",
+      "claim_type": "visual-finding",
+      "scope": "surface",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-1e168a1468984bae"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "Centered serif headline and pill CTA overlay a rounded sky-blue paper collage; a product preview is bottom-anchored."
+    },
+    {
+      "claim_id": "claim-floating-navigation-1",
+      "claim_type": "visual-finding",
+      "scope": "selection",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-879910db565abf8f",
+        "ev-d135da596b1971c2",
+        "ev-5971412d36f42a03"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "A narrow floating white pill contains logo, navigation, login and a black primary action."
+    },
+    {
+      "claim_id": "claim-marketing-boundary",
+      "claim_type": "visual-finding",
+      "scope": "surface",
+      "status": "inferred-claim",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-044b095c69ae7583"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "Campaign strip, collage and hero typography are marketing-specific; only the embedded preview is a bounded canonical-product-UI candidate."
+    },
+    {
+      "claim_id": "claim-color.hero-sky",
+      "claim_type": "token-candidate",
+      "scope": "surface",
+      "status": "observed-claim",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-e1946411aee48082"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "light sky blue textured surface"
+    },
+    {
+      "claim_id": "claim-shape.hero-radius",
+      "claim_type": "token-candidate",
+      "scope": "surface",
+      "status": "observed-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-e1946411aee48082"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "large rounded container"
+    },
+    {
+      "claim_id": "claim-typography.hero-display",
+      "claim_type": "token-candidate",
+      "scope": "surface",
+      "status": "observed-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-1e168a1468984bae",
+        "ev-e1946411aee48082"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "oversized centered black serif display"
+    },
+    {
+      "claim_id": "claim-typography.navigation",
+      "claim_type": "token-candidate",
+      "scope": "selection",
+      "status": "observed-claim",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-8f2775e1921d2df9",
+        "ev-5971412d36f42a03"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "UntitledSans/Inter sans-serif family"
+    },
+    {
+      "claim_id": "claim-marketing-hero",
+      "claim_type": "component-candidate",
+      "scope": "surface",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-60ba87275d15538b"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "marketing-hero"
+    },
+    {
+      "claim_id": "claim-floating-navigation-2",
+      "claim_type": "component-candidate",
+      "scope": "selection",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-879910db565abf8f",
+        "ev-d135da596b1971c2"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "floating-navigation"
+    },
+    {
+      "claim_id": "claim-pill-action",
+      "claim_type": "component-candidate",
+      "scope": "selection",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-879910db565abf8f"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": "pill-action"
+    },
+    {
+      "claim_id": "claim-grid.marketing-hero",
+      "claim_type": "grid-rule-candidate",
+      "scope": "surface",
+      "status": "observed-claim",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-e1946411aee48082",
+        "ev-879910db565abf8f",
+        "ev-1e168a1468984bae"
+      ],
+      "host_identity": {
+        "agent": "codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-994cc426b9dd6dac",
+      "value": {
+        "viewport": "1440x900",
+        "hero_alignment": "center",
+        "navigation_width": "bounded",
+        "product_preview_anchor": "bottom-center"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "protocol_version": "1.1", "request_id": "r008-real-url-submit-v3", "operation": "submit-analysis",
+  "host": { "agent": "codex", "engine": "gpt-5", "capabilities": ["vision", "files", "structured-output"] }, "working_root": ".",
+  "input": { "prepared_analysis_directory": "dev-workflow/evidence/r-008/real-url-prepared-v4", "host_analysis_file": "dev-workflow/evidence/r-008/real-host-run-v3/host-analysis.json" },
+  "output_directory": "dev-workflow/evidence/r-008/real-url-package-v3"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "sources": [
+    {
+      "source_id": "source-1",
+      "status": "complete",
+      "missing_evidence": [],
+      "stale_reasons": [],
+      "reason": null
+    }
+  ]
+}
