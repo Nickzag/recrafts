@@ -157,8 +157,8 @@ export async function acceptArtifacts({ candidatePackageDirectory, decisionFile,
   const correctionEvents = (await readFile(path.join(candidatePackageDirectory, "corrections.jsonl"), "utf8").catch(() => "")).trim().split("\n").filter(Boolean).map(JSON.parse);
   for (const event of correctionEvents) { assertSchema(event, correctionSchema, "Correction history"); if (!Object.keys(event.decision_context ?? {}).length) fail("Correction history lacks decision context"); }
   const stale = state.evidence.evidence.some((item) => item.status === "stale");
-  const source = await readJson(candidatePackageDirectory, "source-manifest.json"); const blockedSource = (source.sources ?? []).some((item) => item.status === "blocked");
-  if (stale || blockedSource) fail("Stale or blocked mandatory source cannot be accepted", "REALIZATION_NOT_AUTHORIZED");
+  const source = await readJson(candidatePackageDirectory, "source-manifest.json"); const incompleteSource = (source.sources ?? []).some((item) => ["partial", "blocked", "stale"].includes(item.status));
+  if (stale || incompleteSource) fail("Partial, stale or blocked mandatory source cannot be accepted", "REALIZATION_NOT_AUTHORIZED");
   const riskByConflict = new Map(decision.accepted_risks.map((item) => [item.conflict_id, item]));
   for (const conflict of state.conflicts.conflicts.filter((item) => item.severity === "high" && item.status === "open")) {
     const risk = riskByConflict.get(conflict.conflict_id);

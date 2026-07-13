@@ -150,10 +150,11 @@ test("all remaining correction types create overlays without mutating raw extrac
   assert.ok(json(path.join(root, "corrected/tokens.json")).tokens[0].classification_overlay_refs.includes("correction-region"));
 });
 
-test("acceptance rejects stale Evidence, blocked sources, missing provenance and Host authority", async () => {
-  for (const mode of ["stale", "blocked", "provenance"]) {
+test("acceptance rejects stale Evidence, partial or blocked sources, missing provenance and Host authority", async () => {
+  for (const mode of ["stale", "partial", "blocked", "provenance"]) {
     const root = mkdtempSync(path.join(os.tmpdir(), `recrafts-r007-gate-${mode}-`)); const fixture = await createBlockedPackage(root);
     if (mode === "stale") { const value = json(path.join(root, "package-A/evidence-map.json")); value.evidence[0].status = "stale"; writeFileSync(path.join(root, "package-A/evidence-map.json"), JSON.stringify(value)); }
+    if (mode === "partial") { const value = json(path.join(root, "package-A/source-manifest.json")); value.sources[0].status = "partial"; writeFileSync(path.join(root, "package-A/source-manifest.json"), JSON.stringify(value)); }
     if (mode === "blocked") { const value = json(path.join(root, "package-A/source-manifest.json")); value.sources[0].status = "blocked"; writeFileSync(path.join(root, "package-A/source-manifest.json"), JSON.stringify(value)); }
     if (mode === "provenance") { const value = json(path.join(root, "package-A/tokens.json")); value.tokens[0].evidence_refs = []; writeFileSync(path.join(root, "package-A/tokens.json"), JSON.stringify(value)); }
     const risk = [{ conflict_id: "conflict-grid-review", risk_statement: "Explicit test risk", accepted_scope: "fixture" }];
