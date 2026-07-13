@@ -1,0 +1,21 @@
+{
+  "source_package_id": "package-bdbf56f23a7f7138",
+  "corrected_package_id": "package-26e19b9a0fef0064",
+  "token_count": {
+    "before": 2,
+    "after": 11
+  },
+  "component_count": {
+    "before": 3,
+    "after": 26
+  },
+  "confirmed": [
+    "accent.rule",
+    "shell.three-column"
+  ],
+  "rejected": [
+    "document-artwork-green-as-global-accent",
+    "imagine-blue-as-global-background",
+    "exact-typography-from-blurred-fixture"
+  ]
+}

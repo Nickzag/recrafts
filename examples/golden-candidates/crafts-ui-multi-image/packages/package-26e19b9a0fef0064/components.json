@@ -1,0 +1,948 @@
+{
+  "status": "candidate",
+  "components": [
+    {
+      "name": "Button",
+      "scope": "surface",
+      "purpose": "Evidence-bound Button preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "IconButton",
+      "scope": "surface",
+      "purpose": "Evidence-bound IconButton preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "scope": "surface",
+      "purpose": "Evidence-bound Tabs preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "SegmentedControl",
+      "scope": "surface",
+      "purpose": "Evidence-bound SegmentedControl preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "SearchField",
+      "scope": "surface",
+      "purpose": "Evidence-bound SearchField preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "Toggle",
+      "scope": "surface",
+      "purpose": "Evidence-bound Toggle preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "Divider",
+      "scope": "surface",
+      "purpose": "Evidence-bound Divider preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "Badge",
+      "scope": "surface",
+      "purpose": "Evidence-bound Badge preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "scope": "surface",
+      "purpose": "Evidence-bound Tooltip preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-style-gallery-modal-overlay",
+        "ev-premium-pricing-modal-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "Popover",
+      "scope": "surface",
+      "purpose": "Evidence-bound Popover preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-style-gallery-modal-overlay",
+        "ev-premium-pricing-modal-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "Modal",
+      "scope": "surface",
+      "purpose": "Evidence-bound Modal preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-style-gallery-modal-overlay",
+        "ev-premium-pricing-modal-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "ScrollArea",
+      "scope": "surface",
+      "purpose": "Evidence-bound ScrollArea preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "NavigationRail",
+      "scope": "surface",
+      "purpose": "Evidence-bound NavigationRail preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "NavigationItem",
+      "scope": "surface",
+      "purpose": "Evidence-bound NavigationItem preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "DocumentCard",
+      "scope": "workspace-library",
+      "purpose": "Evidence-bound DocumentCard preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "DocumentListRow",
+      "scope": "workspace-library",
+      "purpose": "Evidence-bound DocumentListRow preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "ViewSwitcher",
+      "scope": "surface",
+      "purpose": "Evidence-bound ViewSwitcher preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "ToolbarGroup",
+      "scope": "surface",
+      "purpose": "Evidence-bound ToolbarGroup preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "InspectorPanel",
+      "scope": "surface",
+      "purpose": "Evidence-bound InspectorPanel preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "InspectorSection",
+      "scope": "surface",
+      "purpose": "Evidence-bound InspectorSection preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "PropertyRow",
+      "scope": "surface",
+      "purpose": "Evidence-bound PropertyRow preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "EditorCanvas",
+      "scope": "surface",
+      "purpose": "Evidence-bound EditorCanvas preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "FloatingControlIsland",
+      "scope": "surface",
+      "purpose": "Evidence-bound FloatingControlIsland preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "SettingsRow",
+      "scope": "settings",
+      "purpose": "Evidence-bound SettingsRow preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "EmptyState",
+      "scope": "surface",
+      "purpose": "Evidence-bound EmptyState preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    },
+    {
+      "name": "LoadingSkeleton",
+      "scope": "surface",
+      "purpose": "Evidence-bound LoadingSkeleton preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ]
+    }
+  ]
+}

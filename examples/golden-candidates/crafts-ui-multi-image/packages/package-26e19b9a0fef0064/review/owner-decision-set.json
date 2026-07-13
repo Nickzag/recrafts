@@ -1,0 +1,30 @@
+{
+  "decision_set_id": "owner-decision-r002-pass",
+  "actor": "project-owner",
+  "verdict": "PASS",
+  "decided_at": "2026-07-13T10:30:00+08:00",
+  "source_package_id": "package-bdbf56f23a7f7138",
+  "classification_decision": "accepted for R-003 preview use within declared macro-evidence limits",
+  "scope_isolation_decision": "accepted; document artwork and marketing visuals remain isolated from global product tokens",
+  "visual_direction_decision": "accepted as a neutral, compact, softly rounded product-shell direction",
+  "component_coverage_decision": "existing two components are insufficient; accept the vision-run critical component candidates for R-003 preview contracts",
+  "confirmed_candidates": [
+    "accent.rule",
+    "shell.three-column"
+  ],
+  "rejected_candidates": [
+    "document-artwork-green-as-global-accent",
+    "imagine-blue-as-global-background",
+    "exact-typography-from-blurred-fixture"
+  ],
+  "accepted_preview_only_fallbacks": [
+    "text.secondary",
+    "border.subtle"
+  ],
+  "closed_questions": [
+    "scope-and-candidate-promotion"
+  ],
+  "limitations": [
+    "Owner PASS authorizes preview preparation, not fidelity or production readiness"
+  ]
+}

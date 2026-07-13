@@ -1,0 +1,72 @@
+{
+  "analysis_type": "vision-capable-host-agent-run",
+  "evidence_class": "codex-session-visual-analysis",
+  "host_agent": "Codex desktop session",
+  "execution_engine": "GPT-5",
+  "vision_capability": true,
+  "prompt_file": "prompts/primary-visual-analysis.md",
+  "skill_version": "0.3.0-preflight",
+  "analysis_timestamp": "2026-07-13T11:10:21+08:00",
+  "human_edits_before_export": [],
+  "human_edits_after_export": ["Project owner PASS decision applied as a separate Decision Set"],
+  "analysis_configuration": {
+    "fixture": "crafts-ui-multi-image",
+    "source_count": 13,
+    "input_capability": "macro-layout and broad visual-system analysis",
+    "forbidden_measurements": ["exact typography", "micro spacing", "icon geometry", "pixel fidelity"]
+  },
+  "visual_findings": [
+    {
+      "finding_id": "vf-neutral-product-shell",
+      "observation": "The product chrome is predominantly warm-neutral and low-contrast, with white or near-white working surfaces and dark neutral text.",
+      "scope": "surface",
+      "confidence": 0.9,
+      "evidence_refs": ["ev-appearance-settings-primary-surface", "ev-library-card-view-primary-surface", "ev-editor-format-inspector-navigation-shell"]
+    },
+    {
+      "finding_id": "vf-three-region-editor",
+      "observation": "Editor evidence consistently separates navigation/page context, a dominant central canvas, and a contextual inspector.",
+      "scope": "surface",
+      "confidence": 0.94,
+      "evidence_refs": ["ev-editor-format-inspector-navigation-shell", "ev-editor-format-inspector-primary-surface", "ev-editor-format-inspector-state-or-inspector"]
+    },
+    {
+      "finding_id": "vf-compact-rounded-controls",
+      "observation": "Controls, cards, modal panels and grouped settings use a compact rhythm with restrained soft rounding and subtle boundaries.",
+      "scope": "surface",
+      "confidence": 0.82,
+      "evidence_refs": ["ev-appearance-settings-primary-surface", "ev-style-gallery-modal-overlay", "ev-premium-pricing-modal-primary-surface"]
+    },
+    {
+      "finding_id": "vf-system-sans-direction",
+      "observation": "Application typography follows a neutral system-sans direction; exact family, weight metrics and micro tracking are not testable from blurred sources.",
+      "scope": "surface",
+      "confidence": 0.8,
+      "evidence_refs": ["ev-appearance-settings-primary-surface", "ev-library-list-view-primary-surface", "ev-page-info-inspector-state-or-inspector"]
+    },
+    {
+      "finding_id": "vf-content-isolation",
+      "observation": "Green document artwork, blue Imagine imagery and Premium illustration colors belong to document/marketing scopes and must not define global product tokens.",
+      "scope": "document-content",
+      "confidence": 0.98,
+      "evidence_refs": ["ev-editor-format-inspector-primary-surface", "ev-imagine-onboarding-primary-surface", "ev-premium-pricing-modal-primary-surface"]
+    }
+  ],
+  "token_candidates": [
+    {"id":"app.background","type":"color","scope":"surface","value":"#F6F5F3","status":"observed","confidence":0.82,"measurement_capability":"broad-color-family","evidence_refs":["ev-library-card-view-primary-surface","ev-appearance-settings-primary-surface"]},
+    {"id":"surface.primary","type":"color","scope":"surface","value":"#FFFFFF","status":"observed","confidence":0.92,"measurement_capability":"broad-color-family","evidence_refs":["ev-editor-format-inspector-primary-surface","ev-library-list-view-primary-surface"]},
+    {"id":"surface.secondary","type":"color","scope":"surface","value":"#F1F0EE","status":"observed","confidence":0.82,"measurement_capability":"broad-color-family","evidence_refs":["ev-appearance-settings-primary-surface","ev-page-info-inspector-state-or-inspector"]},
+    {"id":"text.primary","type":"color","scope":"surface","value":"#20201E","status":"observed","confidence":0.88,"measurement_capability":"broad-color-family","evidence_refs":["ev-library-list-view-primary-surface","ev-appearance-settings-primary-surface"]},
+    {"id":"text.secondary","type":"color","scope":"surface","value":"#6F6E69","status":"suggested","confidence":0.68,"measurement_capability":"preview-only-fallback","accepted_preview_only":true,"evidence_refs":["ev-library-list-view-primary-surface","ev-page-info-inspector-state-or-inspector"]},
+    {"id":"border.subtle","type":"border","scope":"surface","value":"rgba(32,32,30,0.10)","status":"suggested","confidence":0.66,"measurement_capability":"preview-only-fallback","accepted_preview_only":true,"evidence_refs":["ev-appearance-settings-primary-surface","ev-style-gallery-modal-overlay"]},
+    {"id":"accent.rule","type":"color-policy","scope":"global","value":"no-global-accent; selection accent remains preview-only","status":"confirmed","confidence":1,"measurement_capability":"human-decision","human_decision_ref":"owner-decision-r002-pass","evidence_refs":["ev-editor-format-inspector-primary-surface","ev-imagine-onboarding-primary-surface"]},
+    {"id":"radius.direction","type":"radius","scope":"surface","value":"soft-rounded","status":"observed","confidence":0.82,"measurement_capability":"direction-only","evidence_refs":["ev-style-gallery-modal-overlay","ev-premium-pricing-modal-primary-surface"]},
+    {"id":"spacing.direction","type":"spacing","scope":"surface","value":"compact-system-rhythm","status":"observed","confidence":0.8,"measurement_capability":"direction-only","evidence_refs":["ev-appearance-settings-primary-surface","ev-library-card-view-primary-surface"]},
+    {"id":"typography.direction","type":"typography","scope":"surface","value":"neutral-system-sans","status":"observed","confidence":0.8,"measurement_capability":"direction-only","evidence_refs":["ev-appearance-settings-primary-surface","ev-library-list-view-primary-surface"]},
+    {"id":"shell.three-column","type":"layout","scope":"surface","value":"left-rail / flexible-canvas / right-inspector","status":"confirmed","confidence":1,"measurement_capability":"human-decision","human_decision_ref":"owner-decision-r002-pass","evidence_refs":["ev-editor-format-inspector-navigation-shell","ev-editor-format-inspector-primary-surface","ev-editor-format-inspector-state-or-inspector"]}
+  ],
+  "component_candidates": [
+    "Button", "IconButton", "Tabs", "SegmentedControl", "SearchField", "Toggle", "Divider", "Badge", "Tooltip", "Popover", "Modal", "ScrollArea", "NavigationRail", "NavigationItem", "DocumentCard", "DocumentListRow", "ViewSwitcher", "ToolbarGroup", "InspectorPanel", "InspectorSection", "PropertyRow", "EditorCanvas", "FloatingControlIsland", "SettingsRow", "EmptyState", "LoadingSkeleton"
+  ],
+  "required_states": ["default", "selected-artboard", "selected-canvas-object", "inspector-active", "agent-suggestion-visible", "modal-open", "empty-project", "loading-recovery"]
+}

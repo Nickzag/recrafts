@@ -1,0 +1,18 @@
+{
+  "question_id": "scope-and-candidate-promotion",
+  "question": "Should colors and typography visible inside document artwork, Imagine onboarding and Premium marketing visuals be promoted into global product UI tokens?",
+  "affected_tokens": ["accent.rule", "app.background", "typography.direction"],
+  "affected_components": ["EditorCanvas", "MarketingPageSection", "ThemePreviewCard", "InspectorPanel"],
+  "affected_scopes": ["global", "surface", "marketing", "document-content"],
+  "source_evidence_refs": ["ev-editor-format-inspector-primary-surface", "ev-imagine-onboarding-primary-surface", "ev-premium-pricing-modal-primary-surface"],
+  "candidate_options": [
+    "Promote the visible colors/type direction globally",
+    "Keep document and marketing visuals scoped; define neutral product-shell tokens independently",
+    "Leave unresolved and block preview"
+  ],
+  "recommended_default": "Keep document and marketing visuals scoped; define neutral product-shell tokens independently",
+  "risk_if_unresolved": "A complete Surface could incorrectly inherit user artwork green, Imagine blue, Premium illustration colors or document typography as global application rules.",
+  "owner_decision": "Keep document and marketing visuals scoped; no global promotion",
+  "decision_ref": "owner-decision-r002-pass",
+  "status": "closed"
+}

@@ -46,6 +46,23 @@ npm test
 9. 是否存在任何 preview/screenshot/fidelity claim 绕过 gate？
 10. Recrafts 是否仍保持独立 Skill 边界？
 
-## Blocking Human Review
+## Initial Blocking Human Review (Historical)
 
-`review/extraction-review.md` 当前 Verdict 为 `PENDING`。在项目所有者审阅 primary artifacts 并记录决策前，任何 canonical System Board、Component Gallery、Surface 或 visual acceptance 都必须保持 blocked。
+提交初版 Packet 时，`review/extraction-review.md` Verdict 为 `PENDING`，因此 canonical visual generation 被正确阻止。后续 Owner PASS 状态见下节。
+
+## Owner PASS Update
+
+Owner Verdict 已更新为 `PASS`。原 high-impact Scope question 的完整内容、影响面、候选方案、默认建议、风险与关闭决定位于 `review/high-impact-scope-question.json`：用户内容/营销视觉不得晋升为 global product token。
+
+新的可审计视觉运行与 Package 链路：
+
+```text
+package-bdbf56f23a7f7138
+→ analysis-0aabae953c97172e
+→ owner-decision-r002-pass
+→ package-ffa63ca8b0ea69af
+→ critical-system-coverage: passed
+→ realization preflight: ready
+```
+
+Safe Contact Sheet、Region Overlays 与 Artifact Map 位于 audit bundle 的 `review-evidence/`。R-003B 已满足技术 Gate，但尚未生成视觉文件。

@@ -1,0 +1,539 @@
+{
+  "version": "2.1.0",
+  "evidence": [
+    {
+      "evidence_id": "ev-appearance-settings-navigation-shell",
+      "source_id": "appearance-settings",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-appearance-settings-primary-surface",
+      "source_id": "appearance-settings",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "feature-specific-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-appearance-settings-state-or-inspector",
+      "source_id": "appearance-settings",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-style-gallery-modal-navigation-shell",
+      "source_id": "style-gallery-modal",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-style-gallery-modal-primary-surface",
+      "source_id": "style-gallery-modal",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "feature-specific-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-style-gallery-modal-state-or-inspector",
+      "source_id": "style-gallery-modal",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-style-gallery-modal-overlay",
+      "source_id": "style-gallery-modal",
+      "region_id": "overlay",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-insert-inspector-navigation-shell",
+      "source_id": "editor-insert-inspector",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-insert-inspector-primary-surface",
+      "source_id": "editor-insert-inspector",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-insert-inspector-state-or-inspector",
+      "source_id": "editor-insert-inspector",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-premium-pricing-modal-navigation-shell",
+      "source_id": "premium-pricing-modal",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-premium-pricing-modal-primary-surface",
+      "source_id": "premium-pricing-modal",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "marketing-surface region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "marketing",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-premium-pricing-modal-state-or-inspector",
+      "source_id": "premium-pricing-modal",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-library-card-view-navigation-shell",
+      "source_id": "library-card-view",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-library-card-view-primary-surface",
+      "source_id": "library-card-view",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-library-card-view-state-or-inspector",
+      "source_id": "library-card-view",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-shared-empty-state-navigation-shell",
+      "source_id": "shared-empty-state",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-shared-empty-state-primary-surface",
+      "source_id": "shared-empty-state",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-page-info-inspector-navigation-shell",
+      "source_id": "page-info-inspector",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-page-info-inspector-primary-surface",
+      "source_id": "page-info-inspector",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-page-info-inspector-state-or-inspector",
+      "source_id": "page-info-inspector",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-style-inspector-navigation-shell",
+      "source_id": "editor-style-inspector",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-style-inspector-primary-surface",
+      "source_id": "editor-style-inspector",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-style-inspector-state-or-inspector",
+      "source_id": "editor-style-inspector",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-imagine-onboarding-navigation-shell",
+      "source_id": "imagine-onboarding",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-imagine-onboarding-primary-surface",
+      "source_id": "imagine-onboarding",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "marketing-surface region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "marketing",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-imagine-onboarding-state-or-inspector",
+      "source_id": "imagine-onboarding",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "feature-specific-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-focus-view-navigation-shell",
+      "source_id": "editor-focus-view",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-focus-view-primary-surface",
+      "source_id": "editor-focus-view",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-focus-view-state-or-inspector",
+      "source_id": "editor-focus-view",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-format-inspector-navigation-shell",
+      "source_id": "editor-format-inspector",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-format-inspector-primary-surface",
+      "source_id": "editor-format-inspector",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-editor-format-inspector-state-or-inspector",
+      "source_id": "editor-format-inspector",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-library-list-view-navigation-shell",
+      "source_id": "library-list-view",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-library-list-view-primary-surface",
+      "source_id": "library-list-view",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-library-list-view-state-or-inspector",
+      "source_id": "library-list-view",
+      "region_id": "state-or-inspector",
+      "evidence_type": "region-classification",
+      "observation": "state-evidence region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-library-masonry-view-navigation-shell",
+      "source_id": "library-masonry-view",
+      "region_id": "navigation-shell",
+      "evidence_type": "region-classification",
+      "observation": "canonical-product-ui region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "ev-library-masonry-view-primary-surface",
+      "source_id": "library-masonry-view",
+      "region_id": "primary-surface",
+      "evidence_type": "region-classification",
+      "observation": "user-generated-content region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "document-content",
+      "confidence": 0.65,
+      "status": "observed"
+    },
+    {
+      "evidence_id": "host-vf-neutral-product-shell",
+      "source_id": "multi-source-host-analysis",
+      "region_id": "cross-source",
+      "evidence_type": "vision-capable-host-analysis",
+      "observation": "The product chrome is predominantly warm-neutral and low-contrast, with white or near-white working surfaces and dark neutral text.",
+      "candidate_rule": "The product chrome is predominantly warm-neutral and low-contrast, with white or near-white working surfaces and dark neutral text.",
+      "scope": "surface",
+      "confidence": 0.9,
+      "status": "observed",
+      "source_evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-library-card-view-primary-surface",
+        "ev-editor-format-inspector-navigation-shell"
+      ]
+    },
+    {
+      "evidence_id": "host-vf-three-region-editor",
+      "source_id": "multi-source-host-analysis",
+      "region_id": "cross-source",
+      "evidence_type": "vision-capable-host-analysis",
+      "observation": "Editor evidence consistently separates navigation/page context, a dominant central canvas, and a contextual inspector.",
+      "candidate_rule": "Editor evidence consistently separates navigation/page context, a dominant central canvas, and a contextual inspector.",
+      "scope": "surface",
+      "confidence": 0.94,
+      "status": "observed",
+      "source_evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ]
+    },
+    {
+      "evidence_id": "host-vf-compact-rounded-controls",
+      "source_id": "multi-source-host-analysis",
+      "region_id": "cross-source",
+      "evidence_type": "vision-capable-host-analysis",
+      "observation": "Controls, cards, modal panels and grouped settings use a compact rhythm with restrained soft rounding and subtle boundaries.",
+      "candidate_rule": "Controls, cards, modal panels and grouped settings use a compact rhythm with restrained soft rounding and subtle boundaries.",
+      "scope": "surface",
+      "confidence": 0.82,
+      "status": "observed",
+      "source_evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-style-gallery-modal-overlay",
+        "ev-premium-pricing-modal-primary-surface"
+      ]
+    },
+    {
+      "evidence_id": "host-vf-system-sans-direction",
+      "source_id": "multi-source-host-analysis",
+      "region_id": "cross-source",
+      "evidence_type": "vision-capable-host-analysis",
+      "observation": "Application typography follows a neutral system-sans direction; exact family, weight metrics and micro tracking are not testable from blurred sources.",
+      "candidate_rule": "Application typography follows a neutral system-sans direction; exact family, weight metrics and micro tracking are not testable from blurred sources.",
+      "scope": "surface",
+      "confidence": 0.8,
+      "status": "observed",
+      "source_evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-library-list-view-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ]
+    },
+    {
+      "evidence_id": "host-vf-content-isolation",
+      "source_id": "multi-source-host-analysis",
+      "region_id": "cross-source",
+      "evidence_type": "vision-capable-host-analysis",
+      "observation": "Green document artwork, blue Imagine imagery and Premium illustration colors belong to document/marketing scopes and must not define global product tokens.",
+      "candidate_rule": "Green document artwork, blue Imagine imagery and Premium illustration colors belong to document/marketing scopes and must not define global product tokens.",
+      "scope": "document-content",
+      "confidence": 0.98,
+      "status": "observed",
+      "source_evidence_refs": [
+        "ev-editor-format-inspector-primary-surface",
+        "ev-imagine-onboarding-primary-surface",
+        "ev-premium-pricing-modal-primary-surface"
+      ]
+    },
+    {
+      "evidence_id": "rejected-1",
+      "source_id": "owner-decision",
+      "region_id": "cross-source",
+      "evidence_type": "owner-rejection",
+      "observation": "document-artwork-green-as-global-accent",
+      "candidate_rule": "document-artwork-green-as-global-accent",
+      "scope": "document-content",
+      "confidence": 1,
+      "status": "rejected",
+      "human_decision_ref": "owner-decision-r002-pass"
+    },
+    {
+      "evidence_id": "rejected-2",
+      "source_id": "owner-decision",
+      "region_id": "cross-source",
+      "evidence_type": "owner-rejection",
+      "observation": "imagine-blue-as-global-background",
+      "candidate_rule": "imagine-blue-as-global-background",
+      "scope": "marketing",
+      "confidence": 1,
+      "status": "rejected",
+      "human_decision_ref": "owner-decision-r002-pass"
+    },
+    {
+      "evidence_id": "rejected-3",
+      "source_id": "owner-decision",
+      "region_id": "cross-source",
+      "evidence_type": "owner-rejection",
+      "observation": "exact-typography-from-blurred-fixture",
+      "candidate_rule": "exact-typography-from-blurred-fixture",
+      "scope": "surface",
+      "confidence": 1,
+      "status": "rejected",
+      "human_decision_ref": "owner-decision-r002-pass"
+    }
+  ]
+}

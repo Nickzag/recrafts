@@ -32,7 +32,7 @@ const summary = {
   rejected_count: statuses.rejected ?? 0,
   not_testable_count: (design.match(/not-testable|unsupported/gi) ?? []).length,
   component_evidence_coverage: componentEvidence.length ? componentEvidence.filter((id) => evidenceIds.has(id)).length / componentEvidence.length : components.components.length ? 0 : 1,
-  open_high_impact_question_count: questions.split("\n").filter((line) => /^- /.test(line) && /global|scope|classification/i.test(line)).length,
+  open_high_impact_question_count: questions.split("\n").filter((line) => /^- /.test(line) && /\?|\[P0\]|unresolved-high-impact/i.test(line)).length,
   contamination_findings: tokens.tokens.filter((token) => token.scope === "global" && ["user-generated-content","marketing-surface"].includes(token.source_class)).length,
 };
 await mkdir(path.dirname(outputFile), { recursive: true });

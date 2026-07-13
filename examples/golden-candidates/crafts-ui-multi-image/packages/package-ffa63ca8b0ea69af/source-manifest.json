@@ -1,0 +1,833 @@
+{
+  "version": "2.1.0",
+  "capture_id": "capture-cd22687547cb5f95",
+  "analysis_id": "analysis-0aabae953c97172e",
+  "package_id": "package-ffa63ca8b0ea69af",
+  "mode": "multi-image",
+  "skill_version": "0.3.0-preflight",
+  "runtime_version": "r002-extraction-v2+owner-correction-v2",
+  "schema_version": "2.1.0",
+  "capture_adapter_version": "capture-v2",
+  "host_agent": "Codex desktop session",
+  "model": "GPT-5",
+  "prompt_hash": "f220b3dc5731c9ab538bd77d700f3b3d7dbd9441671da79c86615c0c9ac4fa32",
+  "configuration_hash": "0747b54e228ff199427f1cd8226398d0f9e07b4aa26e5ec34665b887086c5723",
+  "sources": [
+    {
+      "source_id": "appearance-settings",
+      "file": "appearance-settings.png",
+      "sha256": "17c57163627ec6b69f4042b114752d0917ab08ae876bcbf285efba2c1f452307",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "feature-specific-ui",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:appearance-settings:navigation-shell:redacted-private-text",
+        "high-overlap:appearance-settings:primary-surface:redacted-private-text",
+        "high-overlap:appearance-settings:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "style-gallery-modal",
+      "file": "style-gallery-modal.png",
+      "sha256": "27f02c5a2b2d7f9b97c79968314315374cde138c61c2f681ccea3ddcdfc7c935",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "feature-specific-ui",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "user-generated-content",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "overlay",
+          "class": "state-evidence",
+          "bbox": [
+            1073,
+            336,
+            1431,
+            1568
+          ],
+          "area_ratio": 0.2799608719955282
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:style-gallery-modal:navigation-shell:redacted-private-text",
+        "high-overlap:style-gallery-modal:primary-surface:overlay",
+        "high-overlap:style-gallery-modal:primary-surface:redacted-private-text",
+        "high-overlap:style-gallery-modal:state-or-inspector:redacted-private-text",
+        "high-overlap:style-gallery-modal:overlay:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "editor-insert-inspector",
+      "file": "editor-insert-inspector.png",
+      "sha256": "2c296aad4d1014d90c98d2466736679aabe0795ef2395fdd4eafa3307867f24a",
+      "dimensions": {
+        "width": 3580,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.18994413407821228
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2256,
+            2240
+          ],
+          "area_ratio": 0.6301675977653631
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2936,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17988826815642459
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3580,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:editor-insert-inspector:navigation-shell:redacted-private-text",
+        "high-overlap:editor-insert-inspector:primary-surface:redacted-private-text",
+        "high-overlap:editor-insert-inspector:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "premium-pricing-modal",
+      "file": "premium-pricing-modal.png",
+      "sha256": "391cd569f049d8c1ee92e3e59cdd9e996a48044cfa26d61a3455da3a1263a146",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "marketing-surface",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:premium-pricing-modal:navigation-shell:redacted-private-text",
+        "high-overlap:premium-pricing-modal:primary-surface:redacted-private-text",
+        "high-overlap:premium-pricing-modal:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "library-card-view",
+      "file": "library-card-view.png",
+      "sha256": "6bab60b9d7dcae75193f5a46730dd35fc8620ff55f98848902d4eedd644975eb",
+      "dimensions": {
+        "width": 3566,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            678,
+            2240
+          ],
+          "area_ratio": 0.19012899607403252
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            678,
+            0,
+            2246,
+            2240
+          ],
+          "area_ratio": 0.6298373527762199
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2924,
+            0,
+            642,
+            2240
+          ],
+          "area_ratio": 0.18003365114974762
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3566,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:library-card-view:navigation-shell:redacted-private-text",
+        "high-overlap:library-card-view:primary-surface:redacted-private-text",
+        "high-overlap:library-card-view:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "shared-empty-state",
+      "file": "shared-empty-state.png",
+      "sha256": "6ffd334fa21be0ca87f1983805efd9fe3cba5786413af958cbd936aad91b662d",
+      "dimensions": {
+        "width": 3574,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            679,
+            2240
+          ],
+          "area_ratio": 0.18998321208729715
+        },
+        {
+          "id": "primary-surface",
+          "class": "state-evidence",
+          "bbox": [
+            679,
+            0,
+            2252,
+            2240
+          ],
+          "area_ratio": 0.630106323447118
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3574,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:shared-empty-state:navigation-shell:redacted-private-text",
+        "high-overlap:shared-empty-state:primary-surface:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "page-info-inspector",
+      "file": "page-info-inspector.png",
+      "sha256": "735247267ffa30e280e88f60c6d88c47fb47041d2722a455bfe79b012b54bc5e",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:page-info-inspector:navigation-shell:redacted-private-text",
+        "high-overlap:page-info-inspector:primary-surface:redacted-private-text",
+        "high-overlap:page-info-inspector:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "file": "editor-style-inspector.png",
+      "sha256": "74fd845d662d2692b3812f0d7e8e9670f92e6120103ad0c870d9ca39571a2a62",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:editor-style-inspector:navigation-shell:redacted-private-text",
+        "high-overlap:editor-style-inspector:primary-surface:redacted-private-text",
+        "high-overlap:editor-style-inspector:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "imagine-onboarding",
+      "file": "imagine-onboarding.png",
+      "sha256": "7a5290fd7538a4770ed11524d4b02185f648b02975cb249363025b036caa5f61",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "marketing-surface",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "feature-specific-ui",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:imagine-onboarding:navigation-shell:redacted-private-text",
+        "high-overlap:imagine-onboarding:primary-surface:redacted-private-text",
+        "high-overlap:imagine-onboarding:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "editor-focus-view",
+      "file": "editor-focus-view.png",
+      "sha256": "874a7a4fb09de164da4885e2cd9f5b47d83ff7a3e16fbbdb7339613c01536eb2",
+      "dimensions": {
+        "width": 3576,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            679,
+            2240
+          ],
+          "area_ratio": 0.18987695749440717
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            679,
+            0,
+            2253,
+            2240
+          ],
+          "area_ratio": 0.6300335570469798
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2932,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.18008948545861297
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3576,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:editor-focus-view:navigation-shell:redacted-private-text",
+        "high-overlap:editor-focus-view:primary-surface:redacted-private-text",
+        "high-overlap:editor-focus-view:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "file": "editor-format-inspector.png",
+      "sha256": "a42fabdb65bb7520989810d545533eb84d7b8f41e1b7cf73ba6bac7b68824175",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:editor-format-inspector:navigation-shell:redacted-private-text",
+        "high-overlap:editor-format-inspector:primary-surface:redacted-private-text",
+        "high-overlap:editor-format-inspector:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "library-list-view",
+      "file": "library-list-view.png",
+      "sha256": "cc3ca02fb6f7b8de2d0de5c443bb0ffe6abb0d61e7e99723c0e33cc726c0a63b",
+      "dimensions": {
+        "width": 3582,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            681,
+            2240
+          ],
+          "area_ratio": 0.19011725293132328
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            681,
+            0,
+            2256,
+            2240
+          ],
+          "area_ratio": 0.6298157453936348
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2937,
+            0,
+            645,
+            2240
+          ],
+          "area_ratio": 0.1800670016750419
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3582,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:library-list-view:navigation-shell:redacted-private-text",
+        "high-overlap:library-list-view:primary-surface:redacted-private-text",
+        "high-overlap:library-list-view:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "library-masonry-view",
+      "file": "library-masonry-view.png",
+      "sha256": "d7af20148d492e30b0484693f542eb1ef1e1947ce906aa5f949de56ac55fd8cb",
+      "dimensions": {
+        "width": 3582,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            681,
+            2240
+          ],
+          "area_ratio": 0.19011725293132328
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            681,
+            0,
+            2256,
+            2240
+          ],
+          "area_ratio": 0.6298157453936348
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3582,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "priority": "golden-candidate",
+      "warnings": [
+        "high-overlap:library-masonry-view:navigation-shell:redacted-private-text",
+        "high-overlap:library-masonry-view:primary-surface:redacted-private-text"
+      ]
+    }
+  ],
+  "vision_capability": true,
+  "analysis_timestamp": "2026-07-13T11:10:21+08:00",
+  "human_edits_before_export": [],
+  "human_edits_after_export": [
+    "Project owner PASS decision applied as a separate Decision Set"
+  ],
+  "owner_decision_set_id": "owner-decision-r002-pass",
+  "correction_version": 2
+}

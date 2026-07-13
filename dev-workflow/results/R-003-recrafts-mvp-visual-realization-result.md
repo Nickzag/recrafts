@@ -2,7 +2,7 @@
 
 ## Conclusion
 
-R-003 的 repository branch、package loader、identity model、quality metrics、Host-Agent handshake、renderer contracts 和 non-visual validation scaffolding 已完成。Canonical System Board、Component Gallery、Complete Surface 与 screenshots 未生成，因为项目所有者 extraction review 仍为 `PENDING`，且一个 high-impact Scope 问题尚未关闭。当前状态为 `blocked-at-preflight`，不是 R-003 完成。
+R-003A 的 repository branch、package loader、identity model、quality metrics、Host-Agent handshake、renderer contracts 和 non-visual validation scaffolding 已完成。项目所有者现已 `PASS`，五项阻塞均已关闭，corrected package Preflight 为 `ready`。Canonical System Board、Component Gallery、Complete Surface 与 screenshots 尚未生成，因此 R-003B 仍未完成。
 
 ## R-002 Review Remediation
 
@@ -12,7 +12,7 @@ R-003 的 repository branch、package loader、identity model、quality metrics�
 - CHG-05: `extraction-quality-summary.json` 输出独立诊断指标，不生成统一分数。
 - CHG-06: `capability-handshake.json` 显式记录 required/recommended/provided/missing capabilities、状态与下一步。
 - CHG-07: Website adapter 支持最多三次同 Host、HTTP→HTTPS 或同源 canonical redirect；每跳重新做 DNS/private-network、download/checkout 和安全边界检查。
-- CHG-01: 项目所有者 extraction review 未完成，仍是 blocking condition。
+- CHG-01: 项目所有者 extraction review 已通过；Decision Set 与 corrected package 见本文末 Addendum。
 
 ## Identity Evidence
 
@@ -52,7 +52,7 @@ Primary fixture diagnostics:
 - `realization/component_renderer.mjs` 验证 Component evidence refs 并生成 trace contract。
 - `realization/surface_composer.mjs` 只声明三栏 CraftsOS Workbench 结构和八个 required states，状态为 `scaffold-only`。
 
-## Preflight Result
+## Initial Preflight Result (Historical)
 
 `realization-readiness.json`:
 
@@ -70,7 +70,7 @@ Validator 同时确认 canonical preview 目录不存在，避免绕过 gate。
 
 - `npm run validate:r001`: pass
 - `npm run validate:r002`: pass
-- `npm run validate:r003-preflight`: pass，确认 scaffolding ready 且 canonical generation blocked
+- `npm run validate:r003-preflight`: initial gate pass；Owner PASS 后的最新验证见 Addendum
 - `npm test`: 28/28 pass
 - Portable R-002 audit bundle command evidence: pass
 
@@ -93,4 +93,16 @@ Validator 同时确认 canonical preview 目录不存在，避免绕过 gate。
 - Independent review 尚未复现本地仓库；portable audit bundle 用于补足该缺口。
 - R-003 与 R-004 均未完成，不能声明 realization usefulness、fidelity、production components、complete website reconstruction、VIS、CraftsOS integration 或 production readiness。
 
-> R-003 preflight establishes gated realization contracts and audit evidence. It does not yet prove that a versioned Recrafts Design Contract can generate standalone visual previews because project-owner extraction review remains incomplete.
+> R-003 preflight establishes gated realization contracts and audit evidence. It does not yet prove that a versioned Recrafts Design Contract can generate standalone visual previews because R-003B visual artifacts have not been generated or reviewed.
+
+## Owner PASS And BLOCK-01–05 Closure Addendum
+
+- Owner review: `PASS`, recorded in `review/extraction-review.md` and immutable Decision Set `review/owner-decision-set-r002-pass.json`.
+- High-impact question: whether document artwork, Imagine and Premium visual colors/type should become global product tokens. Impacted global/surface/marketing/document scopes and EditorCanvas/Marketing/Inspector contracts. Owner chose strict isolation; record: `review/high-impact-scope-question.json`.
+- Auditable vision run: `analysis/primary-visual-analysis.json`, Host `Codex desktop session`, engine `GPT-5`, `vision_capability: true`, prompt file/hash, configuration hash, timestamp and human-edit history recorded.
+- Safe visual review index: redacted Contact Sheet, 13 Region Overlay SVGs and Artifact-to-Source Map added under `dev-workflow/evidence/r-002/audit-bundle/review-evidence/`.
+- Critical system coverage: all 13 gates pass, including background/surfaces/text/border/accent policy/radius/spacing/typography/three-column shell/components/states. `text.secondary` and `border.subtle` remain labeled preview-only fallbacks and are not canonically promoted.
+- Original package `package-bdbf56f23a7f7138` remains unchanged. Owner decisions produced corrected package `package-ffa63ca8b0ea69af`, with `analysis-0aabae953c97172e`, correction diff, rejected-candidate history and fresh validation.
+- Corrected package Preflight: `ready`, no blockers, `canonical_visual_generation_authorized: true`.
+
+R-003A is complete. R-003B is technically authorized, but visual files have not yet been generated; its visual design spec must be approved before implementation.

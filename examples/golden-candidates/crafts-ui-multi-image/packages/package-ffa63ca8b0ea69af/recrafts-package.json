@@ -1,0 +1,19 @@
+{
+  "package_id": "package-ffa63ca8b0ea69af",
+  "source_package_id": "package-bdbf56f23a7f7138",
+  "capture_id": "capture-cd22687547cb5f95",
+  "analysis_id": "analysis-0aabae953c97172e",
+  "decision_set_id": "owner-decision-r002-pass",
+  "correction_version": 2,
+  "status": "ready-for-r003b-preflight",
+  "artifacts": [
+    "source-manifest.json",
+    "source-classification.json",
+    "evidence-map.json",
+    "tokens.json",
+    "layout.json",
+    "components.json",
+    "design.md",
+    "open-questions.md"
+  ]
+}
