@@ -4,7 +4,7 @@ import { cp, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
-const output = path.resolve(process.argv[2] ?? "release-candidates/recrafts-0.3.0-rc.1-build2");
+const output = path.resolve(process.argv[2] ?? "release-candidates/recrafts-0.3.0-rc.1-build3");
 try { if ((await readdir(output)).length) throw new Error("RC output must be empty and is never overwritten"); } catch (error) { if (error.code !== "ENOENT") throw error; }
 await Promise.all(["artifacts", "bundle/contracts", "bundle/examples", "bundle/fixtures", "bundle/evidence", "validation"].map((relative) => mkdir(path.join(output, relative), { recursive: true })));
 const packResult = JSON.parse(execFileSync("npm", ["pack", "--json", "--pack-destination", path.join(output, "artifacts")], { cwd: root, encoding: "utf8" }))[0];
