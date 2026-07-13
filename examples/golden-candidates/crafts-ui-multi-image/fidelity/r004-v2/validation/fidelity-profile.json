@@ -1,0 +1,29 @@
+{
+  "target_id": "crafts-ui-multi-image-primary",
+  "source_package_id": "package-ffa63ca8b0ea69af",
+  "realization_id": "realization-84978bde0e3b2ccb",
+  "viewports": [
+    "2048x1280",
+    "1440x900",
+    "1280x800"
+  ],
+  "surfaces": [
+    "system-board",
+    "component-gallery",
+    "workbench-default",
+    "workbench-selected-object",
+    "workbench-agent-suggestion"
+  ],
+  "comparison_modes": [
+    "structure",
+    "token",
+    "region",
+    "visual"
+  ],
+  "capability_limits": [
+    "no exact typography from blurred fixture",
+    "no micro-spacing fidelity claim",
+    "no icon-geometry fidelity claim",
+    "no pixel-perfect claim"
+  ]
+}

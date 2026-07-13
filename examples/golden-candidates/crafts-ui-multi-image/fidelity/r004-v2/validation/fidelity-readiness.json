@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "profile_id": "crafts-ui-multi-image-primary",
+  "corrected_package_id": "package-0871eb099386710c",
+  "corrected_realization_id": "realization-b0362580ecc8a9d9",
+  "checks": {
+    "bounded_viewports": true,
+    "bounded_surfaces": true,
+    "comparison_modes": true,
+    "capability_limits": true,
+    "serialized_correction": true,
+    "new_package_identity": true,
+    "new_realization_identity": true,
+    "before_after": true,
+    "no_unsupported_claim": true,
+    "no_oracle": true,
+    "no_direct_integration": true,
+    "no_fallback_promotion": true
+  },
+  "failures": []
+}

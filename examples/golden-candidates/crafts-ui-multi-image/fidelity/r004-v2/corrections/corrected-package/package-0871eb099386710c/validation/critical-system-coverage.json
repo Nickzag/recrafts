@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "requirements": {
+    "app-background": true,
+    "primary-surface": true,
+    "secondary-surface": true,
+    "primary-text": true,
+    "secondary-text": true,
+    "subtle-border": true,
+    "accent-policy": true,
+    "radius-direction": true,
+    "spacing-direction": true,
+    "typography-direction": true,
+    "three-column-shell": true,
+    "minimum-component-contracts": true,
+    "required-state-contracts": true
+  },
+  "missing": [],
+  "preview_only_fallbacks": [
+    "text.secondary",
+    "border.subtle"
+  ],
+  "canonical_promotion_of_fallbacks": false
+}

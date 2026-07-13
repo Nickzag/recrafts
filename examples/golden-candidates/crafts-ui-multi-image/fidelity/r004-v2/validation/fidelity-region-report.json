@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "findings": [
+    {
+      "id": "REG-001",
+      "region": "navigation rail",
+      "verdict": "confirmed-match",
+      "dimensions": [
+        "hierarchy",
+        "density",
+        "quietness"
+      ]
+    },
+    {
+      "id": "REG-002",
+      "region": "document/library card zone",
+      "verdict": "confirmed-match",
+      "dimensions": [
+        "density",
+        "control compactness"
+      ]
+    },
+    {
+      "id": "REG-003",
+      "region": "canvas zone",
+      "verdict": "confirmed-match",
+      "dimensions": [
+        "hierarchy",
+        "surface contrast"
+      ]
+    },
+    {
+      "id": "REG-004",
+      "region": "inspector zone",
+      "verdict": "confirmed-match",
+      "dimensions": [
+        "density",
+        "spacing direction"
+      ]
+    },
+    {
+      "id": "REG-005",
+      "region": "toolbar / floating island",
+      "verdict": "acceptable-deviation",
+      "dimensions": [
+        "spacing direction",
+        "control compactness"
+      ]
+    },
+    {
+      "id": "REG-006",
+      "region": "agent suggestion card",
+      "verdict": "acceptable-deviation",
+      "evidence": "preview-only contract; exact production semantics remain unknown"
+    }
+  ]
+}
