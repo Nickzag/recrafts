@@ -1,12 +1,22 @@
 {
-  "version": "2.0.0",
-  "run_id": "run-de8d0f841708",
+  "version": "2.1.0",
+  "capture_id": "capture-e47840f2d893c842",
+  "analysis_id": "analysis-f46a7193ef2d25fb",
+  "package_id": "package-5297b88be437f3d8",
   "mode": "public-website",
+  "skill_version": "0.3.0-preflight",
+  "runtime_version": "r002-extraction-v2",
+  "schema_version": "2.1.0",
+  "capture_adapter_version": "capture-v2",
+  "host_agent": "codex-session",
+  "model": "GPT-5",
+  "prompt_hash": "684b51248ad8309079decc2a15413bd3b8c9d42266f888a1662bac873f5fe4e9",
+  "configuration_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
   "sources": [
     {
-      "source_id": "www-craft-do-ecbbfe1d",
+      "source_id": "www-craft-do-c12da846",
       "file": "website-capture.json",
-      "sha256": "153d4e43962f0a609c10c0bdcf03f36875692bcb3b381436c60c0245e881fb8d",
+      "sha256": "9f3e9cb5115e036dacd94d79cf22ae16b61e5d956a7fa7bc049ec2ebf49809a7",
       "dimensions": {
         "width": 1440,
         "height": 900

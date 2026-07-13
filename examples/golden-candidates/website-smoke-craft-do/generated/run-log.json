@@ -1,5 +1,7 @@
 {
-  "run_id": "run-de8d0f841708",
+  "capture_id": "capture-e47840f2d893c842",
+  "analysis_id": "analysis-f46a7193ef2d25fb",
+  "package_id": "package-5297b88be437f3d8",
   "mode": "public-website",
   "stages": [
     "intake",
@@ -13,8 +15,8 @@
   ],
   "inputs": [
     {
-      "source_id": "www-craft-do-ecbbfe1d",
-      "sha256": "153d4e43962f0a609c10c0bdcf03f36875692bcb3b381436c60c0245e881fb8d"
+      "source_id": "www-craft-do-c12da846",
+      "sha256": "9f3e9cb5115e036dacd94d79cf22ae16b61e5d956a7fa7bc049ec2ebf49809a7"
     }
   ]
 }

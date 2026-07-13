@@ -27,7 +27,7 @@ test("multi-image runtime consumes input only and emits extraction artifacts", (
 test("single-image runtime declares limited coverage", () => {
   const output = mkdtempSync(path.join(os.tmpdir(), "recraft-r002-single-"));
   const source = path.join(fixture, "input/sources/shared-empty-state.png");
-  const result = run(["analyze-image", "--input", source, "--output", output]);
+  const result = run(["analyze-image", "--input", source, "--output", output, "--host-capabilities", "files,structured-output,vision"]);
   assert.equal(result.status, 0, result.stderr);
   const design = readFileSync(path.join(output, "design.md"), "utf8");
   assert.match(design, /source_coverage: limited/);
@@ -63,8 +63,8 @@ test("same input is structurally repeatable and changed input changes output", (
   const source = path.join(fixture, "input/sources/shared-empty-state.png");
   const outA = mkdtempSync(path.join(os.tmpdir(), "recraft-r002-a-"));
   const outB = mkdtempSync(path.join(os.tmpdir(), "recraft-r002-b-"));
-  assert.equal(run(["analyze-image", "--input", source, "--output", outA]).status, 0);
-  assert.equal(run(["analyze-image", "--input", source, "--output", outB]).status, 0);
+  assert.equal(run(["analyze-image", "--input", source, "--output", outA, "--host-capabilities", "files,structured-output,vision"]).status, 0);
+  assert.equal(run(["analyze-image", "--input", source, "--output", outB, "--host-capabilities", "files,structured-output,vision"]).status, 0);
   assert.equal(readFileSync(path.join(outA, "design.md"), "utf8"), readFileSync(path.join(outB, "design.md"), "utf8"));
 
   const changed = mkdtempSync(path.join(os.tmpdir(), "recraft-r002-changed-"));
@@ -74,7 +74,7 @@ test("same input is structurally repeatable and changed input changes output", (
   bytes[bytes.length - 1] ^= 1;
   writeFileSync(changedSource, bytes);
   const outC = `${changed}-output`;
-  assert.equal(run(["analyze-image", "--input", changedSource, "--output", outC]).status, 0);
+  assert.equal(run(["analyze-image", "--input", changedSource, "--output", outC, "--host-capabilities", "files,structured-output,vision"]).status, 0);
   assert.notEqual(readFileSync(path.join(outA, "source-manifest.json"), "utf8"), readFileSync(path.join(outC, "source-manifest.json"), "utf8"));
 });
 

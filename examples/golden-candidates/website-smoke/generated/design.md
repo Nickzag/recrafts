@@ -6,7 +6,9 @@ preview_readiness: pending
 fidelity_readiness: not-started
 source_coverage: limited
 system_confidence: partial
-run_id: run-0d6592d5605b
+capture_id: capture-1f0ea4297e5a9e92
+analysis_id: analysis-e5bd1a32af1e163b
+package_id: package-e3f49b6c8d499694
 
 ## Metadata
 Host-Agent Skill Mode; deterministic composition from validated input evidence.

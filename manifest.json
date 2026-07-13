@@ -17,7 +17,9 @@
     "designContract": "./schemas/design-contract.schema.json",
     "components": "./schemas/components.schema.json",
     "validationReport": "./schemas/validation-report.schema.json"
-    ,"extractionOutput": "./schemas/extraction-output.schema.json"
+    ,"extractionOutput": "./schemas/extraction-output.schema.json",
+    "realizationPackage": "./schemas/realization-package.schema.json",
+    "realizationReadiness": "./schemas/realization-readiness.schema.json"
   },
   "dependencies": []
 }

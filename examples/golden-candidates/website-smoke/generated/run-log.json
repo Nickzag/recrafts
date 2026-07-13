@@ -1,5 +1,7 @@
 {
-  "run_id": "run-0d6592d5605b",
+  "capture_id": "capture-1f0ea4297e5a9e92",
+  "analysis_id": "analysis-e5bd1a32af1e163b",
+  "package_id": "package-e3f49b6c8d499694",
   "mode": "public-website",
   "stages": [
     "intake",

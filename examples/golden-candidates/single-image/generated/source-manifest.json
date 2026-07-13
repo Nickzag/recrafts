@@ -1,10 +1,20 @@
 {
-  "version": "2.0.0",
-  "run_id": "run-1ab3f76f7705",
+  "version": "2.1.0",
+  "capture_id": "capture-ca04213595567a87",
+  "analysis_id": "analysis-23e9b3da33cf0250",
+  "package_id": "package-645e1fba004963ec",
   "mode": "single-image",
+  "skill_version": "0.3.0-preflight",
+  "runtime_version": "r002-extraction-v2",
+  "schema_version": "2.1.0",
+  "capture_adapter_version": "capture-v2",
+  "host_agent": "codex-session",
+  "model": "GPT-5",
+  "prompt_hash": "684b51248ad8309079decc2a15413bd3b8c9d42266f888a1662bac873f5fe4e9",
+  "configuration_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
   "sources": [
     {
-      "source_id": "non-sensitive-empty-state-6ffd334f",
+      "source_id": "source-6ffd334fa21b",
       "file": "non-sensitive-empty-state.png",
       "sha256": "6ffd334fa21be0ca87f1983805efd9fe3cba5786413af958cbd936aad91b662d",
       "dimensions": {

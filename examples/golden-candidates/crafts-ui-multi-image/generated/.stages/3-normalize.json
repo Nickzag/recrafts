@@ -2,18 +2,18 @@
   "stage": "normalize",
   "status": "completed",
   "source_ids": [
-    "library-card-view",
-    "library-list-view",
-    "library-masonry-view",
-    "editor-insert-inspector",
-    "editor-format-inspector",
-    "editor-style-inspector",
-    "style-gallery-modal",
-    "page-info-inspector",
-    "imagine-onboarding",
     "appearance-settings",
+    "style-gallery-modal",
+    "editor-insert-inspector",
     "premium-pricing-modal",
+    "library-card-view",
     "shared-empty-state",
-    "editor-focus-view"
+    "page-info-inspector",
+    "editor-style-inspector",
+    "imagine-onboarding",
+    "editor-focus-view",
+    "editor-format-inspector",
+    "library-list-view",
+    "library-masonry-view"
   ]
 }

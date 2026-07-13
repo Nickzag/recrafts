@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "recrafts/realization-readiness",
+  "type": "object",
+  "required": ["status", "blockers", "canonical_visual_generation_authorized"],
+  "properties": {
+    "status": { "enum": ["ready", "ready-with-warnings", "blocked"] },
+    "blockers": { "type": "array", "items": { "type": "string" } },
+    "canonical_visual_generation_authorized": { "type": "boolean" }
+  },
+  "additionalProperties": false
+}

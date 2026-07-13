@@ -1,0 +1,21 @@
+{
+  "required_capabilities": [
+    "files",
+    "structured-output"
+  ],
+  "recommended_capabilities": [
+    "vision",
+    "browser",
+    "screenshot"
+  ],
+  "provided_capabilities": [
+    "browser",
+    "files",
+    "screenshot",
+    "structured-output",
+    "vision"
+  ],
+  "missing_capabilities": [],
+  "status": "ready",
+  "next_action": "Continue."
+}

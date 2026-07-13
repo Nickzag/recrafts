@@ -6,13 +6,15 @@ preview_readiness: pending
 fidelity_readiness: not-started
 source_coverage: limited
 system_confidence: partial
-run_id: run-de8d0f841708
+capture_id: capture-e47840f2d893c842
+analysis_id: analysis-f46a7193ef2d25fb
+package_id: package-5297b88be437f3d8
 
 ## Metadata
 Host-Agent Skill Mode; deterministic composition from validated input evidence.
 
 ## Source Summary
-1 source(s): www-craft-do-ecbbfe1d (153d4e43962f)
+1 source(s): www-craft-do-c12da846 (9f3e9cb5115e)
 
 ## Source Classification
 Region-level classes are stored in source-classification.json.

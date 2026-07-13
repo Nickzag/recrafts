@@ -1,0 +1,22 @@
+{
+  "required_capabilities": [
+    "files",
+    "structured-output"
+  ],
+  "recommended_capabilities": [
+    "vision",
+    "browser",
+    "screenshot"
+  ],
+  "provided_capabilities": [
+    "files",
+    "structured-output",
+    "vision"
+  ],
+  "missing_capabilities": [
+    "browser",
+    "screenshot"
+  ],
+  "status": "degraded",
+  "next_action": "Continue with declared degraded-mode limits."
+}

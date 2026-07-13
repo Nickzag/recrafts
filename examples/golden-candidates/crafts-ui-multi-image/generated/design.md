@@ -6,13 +6,15 @@ preview_readiness: pending
 fidelity_readiness: not-started
 source_coverage: multi-source
 system_confidence: evidence-bounded
-run_id: run-1f13a391f3f5
+capture_id: capture-cd22687547cb5f95
+analysis_id: analysis-01136c0c65ecaa81
+package_id: package-bdbf56f23a7f7138
 
 ## Metadata
 Host-Agent Skill Mode; deterministic composition from validated input evidence.
 
 ## Source Summary
-13 source(s): library-card-view (6bab60b9d7dc), library-list-view (cc3ca02fb6f7), library-masonry-view (d7af20148d49), editor-insert-inspector (2c296aad4d10), editor-format-inspector (a42fabdb65bb), editor-style-inspector (74fd845d662d), style-gallery-modal (27f02c5a2b2d), page-info-inspector (735247267ffa), imagine-onboarding (7a5290fd7538), appearance-settings (17c57163627e), premium-pricing-modal (391cd569f049), shared-empty-state (6ffd334fa21b), editor-focus-view (874a7a4fb09d)
+13 source(s): appearance-settings (17c57163627e), style-gallery-modal (27f02c5a2b2d), editor-insert-inspector (2c296aad4d10), premium-pricing-modal (391cd569f049), library-card-view (6bab60b9d7dc), shared-empty-state (6ffd334fa21b), page-info-inspector (735247267ffa), editor-style-inspector (74fd845d662d), imagine-onboarding (7a5290fd7538), editor-focus-view (874a7a4fb09d), editor-format-inspector (a42fabdb65bb), library-list-view (cc3ca02fb6f7), library-masonry-view (d7af20148d49)
 
 ## Source Classification
 Region-level classes are stored in source-classification.json.
@@ -27,6 +29,7 @@ App shell: multi-region; responsive behavior remains unknown.
 ## Component Candidates
 - ApplicationSurface: Organize persistent product regions
 - StateContainer: Represent an observed UI state
+- MarketingPageSection: Represent a bounded public marketing-page section
 
 ## Provenance
 Every observed candidate references evidence-map.json; excluded regions do not feed inference.

@@ -6,13 +6,15 @@ preview_readiness: pending
 fidelity_readiness: not-started
 source_coverage: limited
 system_confidence: partial
-run_id: run-1ab3f76f7705
+capture_id: capture-ca04213595567a87
+analysis_id: analysis-23e9b3da33cf0250
+package_id: package-645e1fba004963ec
 
 ## Metadata
 Host-Agent Skill Mode; deterministic composition from validated input evidence.
 
 ## Source Summary
-1 source(s): non-sensitive-empty-state-6ffd334f (6ffd334fa21b)
+1 source(s): source-6ffd334fa21b (6ffd334fa21b)
 
 ## Source Classification
 Region-level classes are stored in source-classification.json.

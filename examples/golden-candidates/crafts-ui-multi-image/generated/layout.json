@@ -2,117 +2,22 @@
   "app_shell": "multi-region",
   "region_hierarchy": [
     {
-      "source_id": "library-card-view",
+      "source_id": "appearance-settings",
       "region_id": "navigation-shell",
       "class": "canonical-product-ui"
     },
     {
-      "source_id": "library-card-view",
+      "source_id": "appearance-settings",
       "region_id": "primary-surface",
-      "class": "user-generated-content"
+      "class": "feature-specific-ui"
     },
     {
-      "source_id": "library-card-view",
+      "source_id": "appearance-settings",
       "region_id": "state-or-inspector",
       "class": "state-evidence"
     },
     {
-      "source_id": "library-card-view",
-      "region_id": "redacted-private-text",
-      "class": "excluded-sensitive-content"
-    },
-    {
-      "source_id": "library-list-view",
-      "region_id": "navigation-shell",
-      "class": "canonical-product-ui"
-    },
-    {
-      "source_id": "library-list-view",
-      "region_id": "primary-surface",
-      "class": "user-generated-content"
-    },
-    {
-      "source_id": "library-list-view",
-      "region_id": "state-or-inspector",
-      "class": "state-evidence"
-    },
-    {
-      "source_id": "library-list-view",
-      "region_id": "redacted-private-text",
-      "class": "excluded-sensitive-content"
-    },
-    {
-      "source_id": "library-masonry-view",
-      "region_id": "navigation-shell",
-      "class": "canonical-product-ui"
-    },
-    {
-      "source_id": "library-masonry-view",
-      "region_id": "primary-surface",
-      "class": "user-generated-content"
-    },
-    {
-      "source_id": "library-masonry-view",
-      "region_id": "redacted-private-text",
-      "class": "excluded-sensitive-content"
-    },
-    {
-      "source_id": "editor-insert-inspector",
-      "region_id": "navigation-shell",
-      "class": "canonical-product-ui"
-    },
-    {
-      "source_id": "editor-insert-inspector",
-      "region_id": "primary-surface",
-      "class": "user-generated-content"
-    },
-    {
-      "source_id": "editor-insert-inspector",
-      "region_id": "state-or-inspector",
-      "class": "state-evidence"
-    },
-    {
-      "source_id": "editor-insert-inspector",
-      "region_id": "redacted-private-text",
-      "class": "excluded-sensitive-content"
-    },
-    {
-      "source_id": "editor-format-inspector",
-      "region_id": "navigation-shell",
-      "class": "canonical-product-ui"
-    },
-    {
-      "source_id": "editor-format-inspector",
-      "region_id": "primary-surface",
-      "class": "user-generated-content"
-    },
-    {
-      "source_id": "editor-format-inspector",
-      "region_id": "state-or-inspector",
-      "class": "state-evidence"
-    },
-    {
-      "source_id": "editor-format-inspector",
-      "region_id": "redacted-private-text",
-      "class": "excluded-sensitive-content"
-    },
-    {
-      "source_id": "editor-style-inspector",
-      "region_id": "navigation-shell",
-      "class": "canonical-product-ui"
-    },
-    {
-      "source_id": "editor-style-inspector",
-      "region_id": "primary-surface",
-      "class": "user-generated-content"
-    },
-    {
-      "source_id": "editor-style-inspector",
-      "region_id": "state-or-inspector",
-      "class": "state-evidence"
-    },
-    {
-      "source_id": "editor-style-inspector",
+      "source_id": "appearance-settings",
       "region_id": "redacted-private-text",
       "class": "excluded-sensitive-content"
     },
@@ -142,62 +47,22 @@
       "class": "excluded-sensitive-content"
     },
     {
-      "source_id": "page-info-inspector",
+      "source_id": "editor-insert-inspector",
       "region_id": "navigation-shell",
       "class": "canonical-product-ui"
     },
     {
-      "source_id": "page-info-inspector",
+      "source_id": "editor-insert-inspector",
       "region_id": "primary-surface",
       "class": "user-generated-content"
     },
     {
-      "source_id": "page-info-inspector",
+      "source_id": "editor-insert-inspector",
       "region_id": "state-or-inspector",
       "class": "state-evidence"
     },
     {
-      "source_id": "page-info-inspector",
-      "region_id": "redacted-private-text",
-      "class": "excluded-sensitive-content"
-    },
-    {
-      "source_id": "imagine-onboarding",
-      "region_id": "navigation-shell",
-      "class": "canonical-product-ui"
-    },
-    {
-      "source_id": "imagine-onboarding",
-      "region_id": "primary-surface",
-      "class": "marketing-surface"
-    },
-    {
-      "source_id": "imagine-onboarding",
-      "region_id": "state-or-inspector",
-      "class": "feature-specific-ui"
-    },
-    {
-      "source_id": "imagine-onboarding",
-      "region_id": "redacted-private-text",
-      "class": "excluded-sensitive-content"
-    },
-    {
-      "source_id": "appearance-settings",
-      "region_id": "navigation-shell",
-      "class": "canonical-product-ui"
-    },
-    {
-      "source_id": "appearance-settings",
-      "region_id": "primary-surface",
-      "class": "feature-specific-ui"
-    },
-    {
-      "source_id": "appearance-settings",
-      "region_id": "state-or-inspector",
-      "class": "state-evidence"
-    },
-    {
-      "source_id": "appearance-settings",
+      "source_id": "editor-insert-inspector",
       "region_id": "redacted-private-text",
       "class": "excluded-sensitive-content"
     },
@@ -222,6 +87,26 @@
       "class": "excluded-sensitive-content"
     },
     {
+      "source_id": "library-card-view",
+      "region_id": "navigation-shell",
+      "class": "canonical-product-ui"
+    },
+    {
+      "source_id": "library-card-view",
+      "region_id": "primary-surface",
+      "class": "user-generated-content"
+    },
+    {
+      "source_id": "library-card-view",
+      "region_id": "state-or-inspector",
+      "class": "state-evidence"
+    },
+    {
+      "source_id": "library-card-view",
+      "region_id": "redacted-private-text",
+      "class": "excluded-sensitive-content"
+    },
+    {
       "source_id": "shared-empty-state",
       "region_id": "navigation-shell",
       "class": "canonical-product-ui"
@@ -233,6 +118,66 @@
     },
     {
       "source_id": "shared-empty-state",
+      "region_id": "redacted-private-text",
+      "class": "excluded-sensitive-content"
+    },
+    {
+      "source_id": "page-info-inspector",
+      "region_id": "navigation-shell",
+      "class": "canonical-product-ui"
+    },
+    {
+      "source_id": "page-info-inspector",
+      "region_id": "primary-surface",
+      "class": "user-generated-content"
+    },
+    {
+      "source_id": "page-info-inspector",
+      "region_id": "state-or-inspector",
+      "class": "state-evidence"
+    },
+    {
+      "source_id": "page-info-inspector",
+      "region_id": "redacted-private-text",
+      "class": "excluded-sensitive-content"
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "region_id": "navigation-shell",
+      "class": "canonical-product-ui"
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "region_id": "primary-surface",
+      "class": "user-generated-content"
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "region_id": "state-or-inspector",
+      "class": "state-evidence"
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "region_id": "redacted-private-text",
+      "class": "excluded-sensitive-content"
+    },
+    {
+      "source_id": "imagine-onboarding",
+      "region_id": "navigation-shell",
+      "class": "canonical-product-ui"
+    },
+    {
+      "source_id": "imagine-onboarding",
+      "region_id": "primary-surface",
+      "class": "marketing-surface"
+    },
+    {
+      "source_id": "imagine-onboarding",
+      "region_id": "state-or-inspector",
+      "class": "feature-specific-ui"
+    },
+    {
+      "source_id": "imagine-onboarding",
       "region_id": "redacted-private-text",
       "class": "excluded-sensitive-content"
     },
@@ -253,6 +198,61 @@
     },
     {
       "source_id": "editor-focus-view",
+      "region_id": "redacted-private-text",
+      "class": "excluded-sensitive-content"
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "region_id": "navigation-shell",
+      "class": "canonical-product-ui"
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "region_id": "primary-surface",
+      "class": "user-generated-content"
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "region_id": "state-or-inspector",
+      "class": "state-evidence"
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "region_id": "redacted-private-text",
+      "class": "excluded-sensitive-content"
+    },
+    {
+      "source_id": "library-list-view",
+      "region_id": "navigation-shell",
+      "class": "canonical-product-ui"
+    },
+    {
+      "source_id": "library-list-view",
+      "region_id": "primary-surface",
+      "class": "user-generated-content"
+    },
+    {
+      "source_id": "library-list-view",
+      "region_id": "state-or-inspector",
+      "class": "state-evidence"
+    },
+    {
+      "source_id": "library-list-view",
+      "region_id": "redacted-private-text",
+      "class": "excluded-sensitive-content"
+    },
+    {
+      "source_id": "library-masonry-view",
+      "region_id": "navigation-shell",
+      "class": "canonical-product-ui"
+    },
+    {
+      "source_id": "library-masonry-view",
+      "region_id": "primary-surface",
+      "class": "user-generated-content"
+    },
+    {
+      "source_id": "library-masonry-view",
       "region_id": "redacted-private-text",
       "class": "excluded-sensitive-content"
     }

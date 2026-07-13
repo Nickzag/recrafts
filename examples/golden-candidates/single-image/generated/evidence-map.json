@@ -2,8 +2,8 @@
   "version": "2.0.0",
   "evidence": [
     {
-      "evidence_id": "ev-non-sensitive-empty-state-6ffd334f-whole-source",
-      "source_id": "non-sensitive-empty-state-6ffd334f",
+      "evidence_id": "ev-source-6ffd334fa21b-whole-source",
+      "source_id": "source-6ffd334fa21b",
       "region_id": "whole-source",
       "evidence_type": "region-classification",
       "observation": "unknown region observed",

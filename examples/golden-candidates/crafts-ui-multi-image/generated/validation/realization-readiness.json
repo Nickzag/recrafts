@@ -1,0 +1,10 @@
+{
+  "status": "blocked",
+  "blockers": [
+    "open-high-impact-question",
+    "project-owner-extraction-review-pending"
+  ],
+  "canonical_visual_generation_authorized": false,
+  "package_id": "package-bdbf56f23a7f7138",
+  "owner_review_verdict": "PENDING"
+}
