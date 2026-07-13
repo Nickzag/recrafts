@@ -1,0 +1,11 @@
+{
+  "decision_set_id": "owner-decision-r004-pass",
+  "stage": "R-004",
+  "verdict": "PASS",
+  "accepted_package_id": "package-0871eb099386710c",
+  "accepted_realization_id": "realization-b0362580ecc8a9d9",
+  "accepted_claim": "bounded fidelity verification",
+  "authorized_next_stage": "R-005",
+  "source": "/Users/Nick/Downloads/Owner Verdict Pass Template.md",
+  "recorded_at": "2026-07-13T12:00:00+08:00"
+}

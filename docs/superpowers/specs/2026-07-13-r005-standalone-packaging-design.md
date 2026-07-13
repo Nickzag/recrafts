@@ -1,13 +1,13 @@
 # R-005 Standalone Packaging, Agent Interoperability and MVP Release Candidate
 
-Status: approved design awaiting written-spec review  
+Status: approved with P0 contract corrections  
 Date: 2026-07-13  
 Repository: `/Users/Nick/Documents/Recrafts`  
 Branch: `recrafts/r-005-mvp-release-candidate`
 
 ## 1. Goal
 
-Produce an auditable Recrafts MVP release candidate that can be installed outside the source repository, invoked by different Host Agents through a stable JSON Envelope over CLI stdin/stdout, and verified through a clean-install smoke flow.
+Produce an auditable Recrafts MVP release candidate that can be installed outside the source repository, coordinate external visual reasoning through a two-phase Host-Agent protocol over CLI stdin/stdout, and be verified through a clean-install smoke flow.
 
 R-005 proves standalone packaging and bounded Host interoperability. It does not publish to a public registry, implement MCP, provide a hosted service, claim compatibility with every Host Agent, generate a complete VIS, integrate directly with CraftsOS/Layoutcrafts private code or establish production readiness.
 
@@ -51,22 +51,35 @@ Response fields:
 Supported MVP operations:
 
 - `capabilities`: return the protocol version, operations and required/recommended capabilities without writing artifacts.
-- `analyze-image`: invoke the existing single-image runtime using an explicitly declared local input.
-- `analyze-images`: invoke the existing multi-image runtime using an explicitly declared input directory.
+- `prepare-analysis`: canonicalize and validate declared local sources, create an Evidence Bundle plus Host instructions and return `needs_host_action`. It performs no semantic visual interpretation.
+- `submit-analysis`: accept a structured Host Analysis, validate evidence references, Scope, confidence and Host execution identity, then compose `design.md`, Tokens, Components and a versioned Package.
 - `validate-package`: validate a declared extraction package without generating a realization.
 - `generate-realization`: create a new realization from an authorized package and refuse non-empty output.
 - `verify-fidelity`: validate a declared fidelity directory through the bounded R-004 validator.
 
-The envelope adapter composes existing runtime and validator modules. It must not duplicate extraction or realization business logic.
+The envelope adapter composes existing runtime and validator modules. It must not duplicate extraction or realization business logic. `analyze-image` and `analyze-images` are excluded from the MVP operation set because Recrafts does not embed a vision provider.
+
+The two-phase flow is:
+
+```text
+prepare-analysis
+→ Evidence Bundle + instructions + Host Analysis Schema
+→ needs_host_action
+→ Host Agent performs visual reasoning
+→ submit-analysis
+→ validated design.md / Tokens / Components / Package
+```
 
 ## 4. Capability Handshake
 
 Every operation declares required and recommended Host capabilities. The adapter returns provided, missing-required and missing-recommended capabilities.
 
+- `prepare-analysis` does not require Host vision because it only prepares evidence. Its response declares that the next Host action requires vision.
+- `submit-analysis` requires evidence that a vision-capable Host completed the supplied analysis; a capability string alone is not proof of execution.
 - Missing required capabilities fail closed before the operation starts.
 - Missing recommended capabilities return a warning only when the operation can still produce valid bounded output.
 - Host identity fields may be `unavailable`; they must never be fabricated.
-- Vision-dependent analysis requires an explicit vision capability declaration.
+- Recrafts never claims embedded vision inference. Development may use Codex/OpenAI vision, and CraftsOS may later provide OpenAI API vision, but standalone behavior depends on the integrating Host.
 
 ## 5. Security and Boundary Rules
 
@@ -80,6 +93,8 @@ The RC adapter must reject:
 - remote URLs for local-image operations;
 - unsupported fidelity, production-readiness or full-clone claims.
 
+Every local path is canonicalized with `realpath`. The adapter rejects `..` traversal, symlink escape from the declared working root, Oracle/expected paths after resolution, special devices/sockets/FIFOs, input/output containment in either direction, non-empty write targets and remote URLs for local-file operations. Response Artifact paths are relative to the output root and never expose machine-specific absolute paths.
+
 The package must contain no raw private sources, secrets, caches, `.DS_Store`, Playwright session files, historical failed outputs or unrelated development evidence.
 
 ## 6. Clean-install Flow
@@ -88,11 +103,15 @@ The verification script creates a new temporary directory, installs the generate
 
 1. CLI help/version check.
 2. `capabilities` Envelope handshake.
-3. One safe packaged example flow that produces deterministic structural output.
-4. Package-content and artifact checks.
-5. Invalid-envelope and output-collision negative checks.
+3. `prepare-analysis` using a sanitized packaged image and assert `needs_host_action`.
+4. `submit-analysis` using a packaged deterministic Host-analysis interoperability fixture.
+5. `validate-package` on the resulting Package.
+6. `generate-realization` into a new output directory.
+7. `verify-fidelity` against a packaged bounded example.
+8. Package-content and Artifact checks.
+9. Malformed-request, unsafe-path and output-collision negative checks.
 
-The smoke flow may use an included sanitized fixture. It must not depend on absolute paths inside `/Users/Nick/Documents/Recrafts` after installation.
+The Host-analysis fixture is labeled `deterministic interoperability fixture`, `not a live model result` and `not proof of visual quality`. The smoke flow must not depend on absolute paths inside `/Users/Nick/Documents/Recrafts` after installation.
 
 ## 7. Host Examples
 
@@ -103,11 +122,26 @@ The portable bundle includes examples for:
 - Claude Code-style Host metadata;
 - unavailable Host/model identity with explicit capability fields.
 
-These examples demonstrate protocol portability, not certification of external products. Example outputs are validated against the same response schema.
+These are protocol-shape examples only. They demonstrate Schema portability and do not claim verified compatibility with Codex, Claude Code or multiple external Host products. Example outputs are validated against the same response schema.
 
 ## 8. Schemas and Validation
 
-Add JSON Schemas for request, response and release manifest. The RC validator verifies:
+Add JSON Schemas for the envelope request, envelope response, Host Analysis, release manifest and each operation request:
+
+```text
+contracts/envelope-request.schema.json
+contracts/envelope-response.schema.json
+contracts/host-analysis.schema.json
+contracts/release-manifest.schema.json
+contracts/operations/capabilities.request.schema.json
+contracts/operations/prepare-analysis.request.schema.json
+contracts/operations/submit-analysis.request.schema.json
+contracts/operations/validate-package.request.schema.json
+contracts/operations/generate-realization.request.schema.json
+contracts/operations/verify-fidelity.request.schema.json
+```
+
+Each operation Schema declares accepted inputs, write behavior, output policy, capability requirements, status values, Artifact types and error codes. The RC validator verifies:
 
 - tarball exists and checksum matches;
 - only declared package files are present;
@@ -119,12 +153,17 @@ Add JSON Schemas for request, response and release manifest. The RC validator ve
 - required positive and fail-closed negative cases pass;
 - no private-path, Oracle, secret, raw-source or direct-integration leakage exists;
 - existing R-001 through R-004 validation remains green.
+- R-004 independent `ACCEPT`, Owner `PASS` and decision-set ID `owner-decision-r004-pass` are present in the release manifest.
 
 ## 9. Error Model
 
-Failures return a JSON response with `status: "failed"`, a stable machine-readable `error.code`, a concise message and no false Artifact claims. Exit codes are non-zero for malformed requests, protocol mismatch, capability failure, unsafe input, output collision and operation failure.
+Response statuses are `completed`, `completed_with_warnings`, `needs_host_action` and `failed`. `needs_host_action` is successful protocol progress, contains a `host_action` descriptor, has `error: null` and exits `0`. Failures return `status: "failed"`, a stable machine-readable `error.code`, a concise message and no false Artifact claims. Exit codes are non-zero for malformed requests, protocol mismatch, capability failure, unsafe input, output collision and operation failure.
 
-The adapter must not emit stack traces to stdout. Unexpected internal errors may write a redacted diagnostic to stderr while returning `INTERNAL_ERROR` in the response.
+Stable error codes include `INVALID_JSON`, `SCHEMA_VALIDATION_FAILED`, `PROTOCOL_VERSION_UNSUPPORTED`, `OPERATION_UNSUPPORTED`, `CAPABILITY_REQUIRED`, `HOST_ACTION_REQUIRED`, `UNSAFE_INPUT_PATH`, `UNSAFE_OUTPUT_PATH`, `OUTPUT_NOT_EMPTY`, `INPUT_NOT_FOUND`, `PACKAGE_INVALID`, `REALIZATION_NOT_AUTHORIZED`, `FIDELITY_SCOPE_UNSUPPORTED`, `VERSION_CONFLICT` and `INTERNAL_ERROR`.
+
+The adapter must not emit stack traces to stdout. Unexpected internal errors may write a redacted diagnostic to stderr while returning `INTERNAL_ERROR` in the response. Major protocol mismatches fail; a higher unsupported minor version fails with `supported_versions`; unknown operation fields are rejected; extra Host metadata is allowed only under `host.extensions`; response field order has no semantic meaning.
+
+Resource limits cover request bytes, image count, individual file bytes, total input bytes, operation timeout and generated Artifact count. Limit violations use stable errors rather than exhausting the process.
 
 ## 10. Output Structure
 
@@ -161,6 +200,8 @@ Positive coverage:
 
 - request/response Schema validation;
 - capability handshake;
+- `prepare-analysis` returns a complete `needs_host_action` contract without pretending visual analysis occurred;
+- `submit-analysis` validates a labeled Host fixture and rejects invalid evidence references;
 - every declared operation dispatches to the correct existing module;
 - deterministic response structure;
 - npm tarball generation;
@@ -174,6 +215,7 @@ Critical negative coverage:
 - unknown protocol version;
 - unsupported operation;
 - missing required Host capability;
+- Host capability declared without a submitted Host Analysis;
 - Oracle/expected path;
 - non-empty output collision;
 - direct CraftsOS/Layoutcrafts dependency;
@@ -183,6 +225,7 @@ Critical negative coverage:
 - missing packaged runtime/schema/template;
 - version or checksum mismatch;
 - unsupported fidelity/full-clone/production claim.
+- symlink escape, path traversal, input/output containment and special filesystem objects.
 
 ## 12. Acceptance Criteria
 
@@ -190,7 +233,9 @@ R-005 is mechanically ready for review when:
 
 - npm tarball and portable bundle are generated under a new RC identity;
 - clean installation succeeds in an isolated temporary directory;
+- R-004 independent review is `ACCEPT`, Owner Verdict is `PASS`, and `owner-decision-r004-pass` appears in the release manifest;
 - Host examples produce Schema-valid responses;
+- `prepare-analysis` returns `needs_host_action`; `submit-analysis` consumes only the explicitly labeled deterministic fixture during clean-install;
 - package contents and checksums validate;
 - fail-closed negative tests pass;
 - R-001 through R-004 regressions pass;
@@ -199,6 +244,6 @@ R-005 is mechanically ready for review when:
 
 The bounded claim is:
 
-> Recrafts can be packaged as an installable MVP release candidate and invoked through a stable JSON Envelope by capability-declaring Host Agents in a clean local environment.
+> Recrafts can be installed as a local MVP release candidate, coordinate visual analysis with a capability-declaring Host Agent through a versioned JSON Envelope, validate Host-supplied analysis, generate standalone visual realizations, and run bounded fidelity verification in a clean environment.
 
-This claim excludes public registry publication, universal Host compatibility, production service reliability, full VIS generation, direct CraftsOS integration and production readiness.
+This claim excludes embedded model inference, verified compatibility with every Host Agent, public registry publication, production service reliability, unrestricted website reconstruction, full VIS generation, direct CraftsOS integration and production readiness.
