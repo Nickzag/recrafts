@@ -1,0 +1,18 @@
+{
+  "protocol_version": "1.0",
+  "request_id": "claude-code-protocol-example.json",
+  "operation": "capabilities",
+  "host": {
+    "agent": "claude-code-protocol-example",
+    "engine": "unavailable",
+    "capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "extensions": {
+      "certification": false
+    }
+  },
+  "working_root": ".",
+  "input": {}
+}

@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "installed_tarball": "recrafts-0.3.0-rc.1.tgz",
+  "fixture_label": "deterministic interoperability fixture; not a live model result; not proof of visual quality",
+  "sandbox_policy": "temporary directory outside source repository",
+  "checks": [
+    {
+      "name": "help",
+      "passed": true
+    },
+    {
+      "name": "version",
+      "passed": true
+    },
+    {
+      "name": "capabilities",
+      "passed": true
+    },
+    {
+      "name": "prepare-analysis",
+      "passed": true
+    },
+    {
+      "name": "submit-analysis",
+      "passed": true
+    },
+    {
+      "name": "validate-package",
+      "passed": true
+    },
+    {
+      "name": "generate-realization",
+      "passed": true
+    },
+    {
+      "name": "verify-fidelity",
+      "passed": true
+    },
+    {
+      "name": "malformed-request",
+      "passed": true
+    },
+    {
+      "name": "unsafe-path",
+      "passed": true
+    },
+    {
+      "name": "output-collision",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rc_id": "recrafts-0.3.0-rc.1-build3",
+  "package_name": "recrafts",
+  "package_version": "0.3.0-rc.1",
+  "protocol_version": "1.0",
+  "skill_version": "0.3.0-rc.1",
+  "runtime_version": "r005-interop-v1",
+  "schema_version": "2.1.0",
+  "source_commit": "fa3e38cb66f7e604727b0d655acd66c1b7b357f1",
+  "r004_independent_review": "ACCEPT",
+  "r004_owner_verdict": "PASS",
+  "r004_decision_set_id": "owner-decision-r004-pass",
+  "node_engine": ">=20",
+  "supported_platforms": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "created_at": "2026-07-13T05:23:09.742Z",
+  "tarball": "artifacts/recrafts-0.3.0-rc.1.tgz",
+  "tarball_sha256": "ddce4dde31863aa8cf6801b221f35703c97f0ec0bfc9ab498bad072ab2952b47",
+  "public_registry_published": false,
+  "embedded_vision_provider": false
+}

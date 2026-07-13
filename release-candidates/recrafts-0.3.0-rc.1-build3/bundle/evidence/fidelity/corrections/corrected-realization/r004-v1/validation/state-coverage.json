@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "required_state_matrices": 12,
+  "rendered_state_matrices": 12,
+  "workbench_states": {
+    "default": true,
+    "selected-object": true,
+    "agent-suggestion": true
+  }
+}

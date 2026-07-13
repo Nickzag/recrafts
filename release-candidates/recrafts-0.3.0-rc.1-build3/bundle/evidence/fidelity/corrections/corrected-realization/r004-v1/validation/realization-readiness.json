@@ -1,0 +1,19 @@
+{
+  "realization_id": "realization-b0362580ecc8a9d9",
+  "package_id": "package-0871eb099386710c",
+  "status": "passed",
+  "checks": {
+    "artifact_files": true,
+    "required_screenshots": true,
+    "three_columns": true,
+    "no_global_header": true,
+    "oracle_input": true,
+    "remote_asset": true,
+    "direct_craftsos_import": true,
+    "fidelity_claim": true,
+    "token_compliance": true,
+    "component_coverage": true,
+    "state_coverage": true,
+    "traceability": true
+  }
+}

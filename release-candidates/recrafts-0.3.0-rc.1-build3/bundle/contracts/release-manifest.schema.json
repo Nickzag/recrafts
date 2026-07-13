@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://recrafts.local/contracts/release-manifest.schema.json","type":"object","required":["rc_id","package_name","package_version","protocol_version","source_commit","r004_decision_set_id","node_engine","created_at","tarball_sha256"]}
