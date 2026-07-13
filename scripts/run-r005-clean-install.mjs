@@ -31,7 +31,7 @@ const packageTest = spawnSync("npm", ["test"], { cwd: path.join(sandbox, "node_m
 const capabilities = run(base("capabilities")); checks.push({ name: "capabilities", passed: capabilities.exit_code === 0 && capabilities.response?.validation.embedded_vision_provider === false && capabilities.stdout_json_values === 1 });
 const prepared = run(base("prepare-analysis", { sources: ["fixture.svg"] }, "prepared")); checks.push({ name: "prepare-analysis", passed: prepared.exit_code === 0 && prepared.response?.status === "needs_host_action" && prepared.response?.error === null });
 const preparedSources = prepared.response?.host_action?.sources ?? [];
-const preparedSourceReadable = preparedSources.length === 1 && await Promise.all(preparedSources.map(async (source) => digest(path.join(work, "prepared", source.path)) === source.sha256)).then((results) => results.every(Boolean));
+const preparedSourceReadable = preparedSources.length === 1 && await Promise.all(preparedSources.map(async (source) => await digest(path.join(work, "prepared", source.path)) === source.sha256)).then((results) => results.every(Boolean));
 checks.push({ name: "prepared-source-contract", passed: preparedSourceReadable });
 const hostAnalysisFile = path.join(work, "host-analysis.json");
 const hostAnalysis = JSON.parse(await readFile(hostAnalysisFile, "utf8")); hostAnalysis.prepared_analysis_id = prepared.response?.validation.prepared_analysis_id; await writeFile(hostAnalysisFile, JSON.stringify(hostAnalysis));
