@@ -26,6 +26,7 @@
     "test:r001": "node --test tests/r001-validator.test.mjs",
     "validate:r002": "node scripts/validate-r002-mvp-extraction.mjs",
     "validate:r003-preflight": "node scripts/validate-r003-preflight.mjs",
+    "validate:r003-realization": "node scripts/validate-r003-realization.mjs examples/golden-candidates/crafts-ui-multi-image/realizations/r003b-v2",
     "test:r002": "node --test tests/r002-runtime.test.mjs tests/r002-validator.test.mjs",
     "test": "node --test tests/*.test.mjs"
   }

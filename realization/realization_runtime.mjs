@@ -1,0 +1,50 @@
+import { createHash } from "node:crypto";
+import { existsSync } from "node:fs";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { loadExtractionPackage } from "./package_loader.mjs";
+import { normalizeComponentContracts } from "./component_renderer.mjs";
+import { buildRuntimeAssets } from "./render_runtime_assets.mjs";
+import { renderSystemBoard } from "./render_system_board.mjs";
+import { renderComponentGallery } from "./render_component_gallery.mjs";
+import { renderWorkbench } from "./render_workbench.mjs";
+
+const RENDERER_VERSION = "r003b-vanilla-renderer-v1";
+const hash = (value) => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
+const json = async (file) => JSON.parse(await readFile(file, "utf8"));
+
+export async function createRealization({ packageDirectory, outputDirectory }) {
+  const output = path.resolve(outputDirectory);
+  if (existsSync(output) && (await readdir(output)).length) throw new Error("Realization output must be empty; prior output is never overwritten");
+  const packageData = await loadExtractionPackage(packageDirectory);
+  const artifacts = packageData.artifacts;
+  const manifest = artifacts["source-manifest.json"];
+  const tokens = artifacts["tokens.json"].tokens;
+  const evidence = artifacts["evidence-map.json"].evidence;
+  const evidenceIds = new Set(evidence.map((item) => item.evidence_id));
+  const components = normalizeComponentContracts(artifacts["components.json"].components, evidenceIds);
+  const layout = artifacts["layout.json"];
+  const decisions = await json(path.join(packageDirectory, "review/owner-decision-set.json"));
+  const metrics = await json(path.join(packageDirectory, "validation/extraction-quality-summary.json"));
+  const coverage = await json(path.join(packageDirectory, "validation/critical-system-coverage.json"));
+  const readiness = await json(path.join(packageDirectory, "validation/realization-readiness.json"));
+  if (readiness.canonical_visual_generation_authorized !== true || coverage.status !== "passed") throw new Error("Package is not authorized for canonical visual generation");
+  const realizationId = `realization-${hash({ package_id: manifest.package_id, renderer_version: RENDERER_VERSION }).slice(0, 16)}`;
+  const runtime = buildRuntimeAssets(tokens);
+  const agentFallback = components.some((component) => component.name === "AgentSuggestionCard") ? null : { name: "AgentSuggestionCard", contract_id: "component-agent-suggestion-card", scope: "surface", purpose: "Contextual preview-only suggestion contract", anatomy: ["diagnosis","expected-impact","accept","reject"], visible_variants: ["contextual"], visible_states: ["proposed","accepted","rejected","applied"], possible_interactions: ["preview-only"], token_dependencies: ["surface.primary","text.primary","border.subtle","accent.rule"], evidence_refs: ["ev-editor-format-inspector-navigation-shell","ev-editor-format-inspector-primary-surface","ev-editor-format-inspector-state-or-inspector"], confidence: 0.7, unknowns: ["production semantics","operation binding"], preview_fallback: true };
+  const previewFallbackComponents = agentFallback ? [agentFallback] : [];
+  const compiledContract = { realization_id: realizationId, renderer_version: RENDERER_VERSION, package_id: manifest.package_id, analysis_id: manifest.analysis_id, decision_set_id: manifest.owner_decision_set_id, capture_id: manifest.capture_id, token_variables: runtime.compiled.variables, preview_fallbacks: runtime.previewFallbacks, components, preview_fallback_components: previewFallbackComponents, states: layout.required_states, evidence_ids: [...evidenceIds], trace_fields: ["component_contract_id","token_ids","scope","state","evidence_refs","package_id","analysis_id","decision_set_id","preview_fallback_status"] };
+  await mkdir(path.join(output, "preview/runtime"), { recursive: true });
+  await mkdir(path.join(output, "preview/screenshots"), { recursive: true });
+  await mkdir(path.join(output, "validation"), { recursive: true });
+  for (const [filename, body] of Object.entries(runtime.files)) await writeFile(path.join(output, "preview/runtime", filename), body);
+  await writeFile(path.join(output, "preview/runtime/tokens.css"), runtime.files["tokens.css"]);
+  await writeFile(path.join(output, "preview/runtime/compiled-contract.json"), `${JSON.stringify(compiledContract, null, 2)}\n`);
+  await writeFile(path.join(output, "preview/system-board.html"), renderSystemBoard({ manifest, packageManifest: await json(path.join(packageDirectory, "recrafts-package.json")), tokens, components, evidence, layout, decisions, metrics, coverage, previewFallbacks: runtime.previewFallbacks }));
+  await writeFile(path.join(output, "preview/component-gallery.html"), renderComponentGallery({ manifest, components, previewFallbackComponent: agentFallback }));
+  await writeFile(path.join(output, "preview/surface-preview.html"), renderWorkbench({ manifest }));
+  await writeFile(path.join(output, "preview/index.html"), `<!doctype html><meta charset="utf-8"><title>Recrafts R-003B</title><style>body{font:16px system-ui;margin:40px}a{display:block;margin:12px 0}</style><h1>Recrafts R-003B</h1><a href="system-board.html">System Board</a><a href="component-gallery.html">Component Gallery</a><a href="surface-preview.html">Workbench Candidate</a>`);
+  const realizationManifest = { realization_id: realizationId, renderer_version: RENDERER_VERSION, package_id: manifest.package_id, analysis_id: manifest.analysis_id, decision_set_id: manifest.owner_decision_set_id, status: "generated-awaiting-mechanical-validation", artifacts: ["preview/system-board.html","preview/component-gallery.html","preview/surface-preview.html"], screenshots: [] };
+  await writeFile(path.join(output, "realization.json"), `${JSON.stringify(realizationManifest, null, 2)}\n`);
+  return { realization_id: realizationId, output };
+}

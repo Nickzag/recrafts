@@ -1,16 +1,16 @@
-# R-003 Preflight Review Packet
+# R-003B Visual Realization Review Packet
 
 ## Requested Verdict
 
-请 ChatGPT 评审 R-002 blocking changes 与 R-003 scaffolding，返回：
+请 ChatGPT 评审 R-003B visual realization，返回：
 
 ```text
-R-002 remediation: PASS / PASS WITH CHANGES / REWORK
-R-003 preflight scaffolding: PASS / PASS WITH CHANGES / REWORK
-Canonical visual generation: REMAIN BLOCKED / AUTHORIZED AFTER OWNER VERDICT
+Mechanical contract compliance: PASS / PASS WITH CHANGES / REWORK
+Visual-system usefulness: PASS / PASS WITH CHANGES / REWORK
+R-003B: ACCEPT / REVISE
 ```
 
-当前不请求视觉质量 Verdict，因为没有 canonical visual artifacts。
+项目所有者视觉 Verdict 当前为 `PENDING`；ChatGPT 可先完成独立评审，但不得将机械 PASS 等同为视觉保真结论。
 
 ## Review Inputs
 
@@ -65,4 +65,40 @@ package-bdbf56f23a7f7138
 → realization preflight: ready
 ```
 
-Safe Contact Sheet、Region Overlays 与 Artifact Map 位于 audit bundle 的 `review-evidence/`。R-003B 已满足技术 Gate，但尚未生成视觉文件。
+Safe Contact Sheet、Region Overlays 与 Artifact Map 位于 audit bundle 的 `review-evidence/`。R-003B 已满足技术 Gate。
+
+## R-003B Review Request
+
+请 ChatGPT 评审 `examples/golden-candidates/crafts-ui-multi-image/realizations/r003b-v2/`，返回：
+
+```text
+Mechanical contract compliance: PASS / PASS WITH CHANGES / REWORK
+Visual-system usefulness: PASS / PASS WITH CHANGES / REWORK
+R-003B: ACCEPT / REVISE
+```
+
+重点输入：
+
+- `preview/system-board.html`
+- `preview/component-gallery.html`
+- `preview/surface-preview.html`
+- `preview/screenshots/` 下五张截图
+- `validation/realization-readiness.json`
+- `validation/token-compliance.json`
+- `validation/component-coverage.json`
+- `validation/state-coverage.json`
+- `validation/traceability-report.json`
+- `realization.json`
+
+复现命令：
+
+```bash
+cd /Users/Nick/Documents/Recrafts
+npm run validate:r001
+npm run validate:r002
+npm run validate:r003-preflight
+npm run validate:r003-realization
+npm test
+```
+
+评审限制：`AgentSuggestionCard` 是显式 preview-only fallback；当前范围不包含 modal、empty-project、loading/recovery、settings、网站重建、生产组件封装、CraftsOS 集成或视觉保真声明。项目所有者视觉 Verdict 保持 `PENDING`。

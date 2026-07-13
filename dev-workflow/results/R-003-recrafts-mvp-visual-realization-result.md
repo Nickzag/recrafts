@@ -1,8 +1,8 @@
-# R-003 Result — Preflight Blocked
+# R-003 Result — R-003B Generated, Owner Visual Review Pending
 
 ## Conclusion
 
-R-003A 的 repository branch、package loader、identity model、quality metrics、Host-Agent handshake、renderer contracts 和 non-visual validation scaffolding 已完成。项目所有者现已 `PASS`，五项阻塞均已关闭，corrected package Preflight 为 `ready`。Canonical System Board、Component Gallery、Complete Surface 与 screenshots 尚未生成，因此 R-003B 仍未完成。
+R-003A 已完成，R-003B 已从授权包 `package-ffa63ca8b0ea69af` 生成独立 System Board、Component Gallery、三状态 Workbench 与五张规定截图。机械验证全部通过；项目所有者视觉 Verdict 仍为 `PENDING`，因此不声明视觉保真或生产就绪。
 
 ## R-002 Review Remediation
 
@@ -105,4 +105,34 @@ Validator 同时确认 canonical preview 目录不存在，避免绕过 gate。
 - Original package `package-bdbf56f23a7f7138` remains unchanged. Owner decisions produced corrected package `package-ffa63ca8b0ea69af`, with `analysis-0aabae953c97172e`, correction diff, rejected-candidate history and fresh validation.
 - Corrected package Preflight: `ready`, no blockers, `canonical_visual_generation_authorized: true`.
 
-R-003A is complete. R-003B is technically authorized, but visual files have not yet been generated; its visual design spec must be approved before implementation.
+R-003A is complete. The authorized R-003B visual artifacts are now generated and mechanically validated; owner visual review remains pending.
+
+## R-003B Visual Generation Addendum
+
+Canonical output directory: `examples/golden-candidates/crafts-ui-multi-image/realizations/r003b-v2/`
+
+```text
+package-ffa63ca8b0ea69af
+→ analysis-0aabae953c97172e
+→ owner-decision-r002-pass
+→ realization-84978bde0e3b2ccb
+```
+
+Generated artifacts:
+
+- `preview/system-board.html`: 14-section contract/evidence board.
+- `preview/component-gallery.html`: 27 component families and 12 priority state matrices.
+- `preview/surface-preview.html`: default, selected-object and agent-suggestion Workbench states with exactly three persistent columns and no global header.
+- `preview/screenshots/`: five declared desktop PNG screenshots with dimensions and SHA-256 hashes recorded in `realization.json`.
+- `validation/`: token compliance, component coverage, state coverage, traceability and readiness reports.
+
+Mechanical validation passed for artifact presence, five screenshot dimensions, three-column integrity, header exclusion, Oracle isolation, remote-resource exclusion, direct CraftsOS/Layoutcrafts import exclusion, fidelity-claim exclusion, token compliance, component/state coverage and evidence trace resolution. Negative tests prove fail-closed handling for each corresponding violation and output overwrite.
+
+The initial `r003b-v1` capture is retained as failed historical evidence: its `file://` screenshots were blank. The capture runtime was corrected to use a read-only localhost server, and valid output was regenerated into new directory `r003b-v2` without overwriting the failed version.
+
+Boundary confirmation:
+
+- 未修改 CraftsOS 或 Layoutcrafts 业务代码，未直接导入其私有实现。
+- 未使用 Oracle/expected 数据作为生成输入，未访问外部网站或远程资源。
+- `AgentSuggestionCard` 明确标记为 preview-only fallback；未写回 corrected package。
+- 当前只证明 contract-driven visual generation 与机械完整性；项目所有者视觉审阅仍待完成。
