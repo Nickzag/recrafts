@@ -12,7 +12,7 @@ package_version: 0.3.0-rc.1
 protocol_version: 1.0
 artifact_source_commit: 99fa18b2c6f9e565936507794c9336404ff3936c
 verified_build3_evidence_commit: 14117898bf0c1042d2d782c0610f918db048092f
-build4_evidence_commit: PENDING_POST_GENERATION_COMMIT
+build4_evidence_commit: 6eb23e07fe097f3c3479dc439d580a8c25530d88
 r004_decision_set_id: owner-decision-r004-pass
 tarball_sha256: 933045af5383838db6317b669b3b2a6af5a4dbd71a53a9f833facd9f27e84599
 ```
