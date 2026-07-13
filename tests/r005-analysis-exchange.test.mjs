@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { handleEnvelope } from "../runtime/interop_contract.mjs";
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const baseFor = (root) => ({ protocol_version: "1.0", host: { agent: "test", engine: "node", capabilities: ["files", "structured-output"] }, working_root: root });
+const baseFor = (root) => ({ protocol_version: "1.0", options: { compatibility_mode: "protocol-1.0" }, host: { agent: "test", engine: "node", capabilities: ["files", "structured-output"] }, working_root: root });
 const fixture = () => JSON.parse(readFileSync(path.join(repo, "fixtures/interop/host-analysis.fixture.json")));
 
 async function prepare(root, sources = ["fixture.svg"], output = "prepared") {
@@ -103,7 +103,7 @@ test("bounded fixture decision creates a new package and propagates decision ide
   writeFileSync(path.join(root, "owner-decision.json"), JSON.stringify(decision));
   const fixtureModeRequired = await handleEnvelope({ ...baseFor(root), request_id: "realize-unlabeled-fixture", operation: "generate-realization", input: { package_directory: "package", owner_decision_file: "owner-decision.json", approved_package_directory: "unlabeled-approved-package" }, output_directory: "unlabeled-realization" });
   assert.equal(fixtureModeRequired.error?.code, "HOST_ACTION_REQUIRED");
-  const realized = await handleEnvelope({ ...baseFor(root), request_id: "realize-approved", operation: "generate-realization", input: { package_directory: "package", owner_decision_file: "owner-decision.json", approved_package_directory: "approved-package" }, output_directory: "realization", options: { interoperability_fixture: true } });
+  const realized = await handleEnvelope({ ...baseFor(root), request_id: "realize-approved", operation: "generate-realization", input: { package_directory: "package", owner_decision_file: "owner-decision.json", approved_package_directory: "approved-package" }, output_directory: "realization", options: { compatibility_mode: "protocol-1.0", interoperability_fixture: true } });
   assert.equal(realized.status, "completed", JSON.stringify(realized));
   assert.notEqual(realized.validation.approved_package_id, submitted.validation.package_id);
   assert.ok(existsSync(path.join(root, "approved-package/recrafts-package.json")));

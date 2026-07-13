@@ -1,7 +1,7 @@
 {
   "name": "recrafts",
   "displayName": "Recrafts",
-  "version": "0.3.0-rc.1",
+  "version": "0.4.0-rc.1",
   "type": "skill",
   "role": "foundation_skill",
   "entry": "./runtime/interop_cli.mjs",
@@ -19,7 +19,10 @@
     "validationReport": "./schemas/validation-report.schema.json"
     ,"extractionOutput": "./schemas/extraction-output.schema.json",
     "realizationPackage": "./schemas/realization-package.schema.json",
-    "realizationReadiness": "./schemas/realization-readiness.schema.json"
+    "realizationReadiness": "./schemas/realization-readiness.schema.json",
+    "evidenceRecord": "./schemas/evidence-record.schema.json",
+    "claimRecord": "./schemas/claim-record.schema.json",
+    "conflictRecord": "./schemas/conflict-record.schema.json"
   },
   "dependencies": []
 }

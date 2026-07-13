@@ -18,7 +18,7 @@ const run = (request) => {
   try { response = JSON.parse(result.stdout); } catch {}
   return { exit_code: result.status, stdout_json_values: response ? 1 : 0, stderr: result.stderr, response };
 };
-const base = (operation, input = {}, output_directory) => ({ protocol_version: "1.0", request_id: `smoke-${operation}`, operation, host: { agent: "generic-shell-fixture", engine: "node", capabilities: ["files", "structured-output"] }, working_root: work, input, ...(output_directory ? { output_directory } : {}) });
+const base = (operation, input = {}, output_directory) => ({ protocol_version: "1.0", request_id: `smoke-${operation}`, operation, host: { agent: "generic-shell-fixture", engine: "node", capabilities: ["files", "structured-output"] }, working_root: work, input, options: { compatibility_mode: "protocol-1.0" }, ...(output_directory ? { output_directory } : {}) });
 const digest = async (file) => createHash("sha256").update(await readFile(file)).digest("hex");
 await cp(path.join(rcDirectory, "bundle/fixtures/sanitized-analysis-fixture.svg"), path.join(work, "fixture.svg"));
 await cp(path.join(rcDirectory, "bundle/fixtures/host-analysis.fixture.json"), path.join(work, "host-analysis.json"));

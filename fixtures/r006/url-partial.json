@@ -1,0 +1,8 @@
+{
+  "fixture_kind": "controlled-url-capture",
+  "captured_at": "2026-07-13T00:00:00.000Z",
+  "status": "partial",
+  "network": { "status": 200, "content_type": "text/html" },
+  "screenshots": [{ "viewport": "1440x900", "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" }],
+  "missing_evidence": ["computed-style", "font"]
+}

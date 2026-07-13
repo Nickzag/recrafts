@@ -1,4 +1,4 @@
-# Recrafts MVP RC
+# Recrafts MVP 0.4 development line
 
 Recrafts 是可独立安装的 Host-Agent 视觉重构 Skill。它不内置视觉模型；视觉理解由接入方提供的 Host Agent 完成。
 
@@ -7,7 +7,7 @@ Recrafts 是可独立安装的 Host-Agent 视觉重构 Skill。它不内置视�
 `recraft-interop` 从 stdin 读取一个 JSON Request，只向 stdout 写一个 JSON Response。诊断信息只写 stderr。
 
 ```bash
-printf '%s' '{"protocol_version":"1.0","request_id":"demo","operation":"capabilities","host":{"agent":"shell","engine":"unavailable","capabilities":[]},"working_root":".","input":{}}' | recraft-interop
+printf '%s' '{"protocol_version":"1.1","request_id":"demo","operation":"capabilities","host":{"agent":"shell","engine":"unavailable","capabilities":[]},"working_root":".","input":{}}' | recraft-interop
 ```
 
 MVP Operation：
@@ -24,12 +24,13 @@ verify-fidelity
 ## Host Analysis Handoff
 
 ```text
-prepare-analysis
-→ Evidence Bundle + copied prepared/sources + Host instructions
+prepare-analysis（typed image / image-set / url）
+→ source-derived Evidence Bundle + copied sources/capture lifecycle + Host instructions
 → status: needs_host_action
 → Host performs visual analysis
 → submit-analysis
-→ Schema-validated candidate Package awaiting-owner-review
+→ Schema-validated Claims + provenance-bearing domain candidates
+→ draft / partial / blocked / awaiting-review Package
 → explicit Owner Decision import
 → new approved package_id
 → generate-realization

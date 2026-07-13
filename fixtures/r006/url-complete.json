@@ -1,0 +1,14 @@
+{
+  "fixture_kind": "controlled-url-capture",
+  "captured_at": "2026-07-13T00:00:00.000Z",
+  "status": "complete",
+  "network": { "status": 200, "etag": "fixture-v1", "content_type": "text/html" },
+  "dom": [{ "selector": ".card", "text": "Sanitized card" }],
+  "css_rules": [{ "selector": ".card", "declarations": { "background": "#ffffff" } }],
+  "css_variables": [{ "name": "--surface", "value": "#ffffff" }],
+  "computed_styles": [{ "selector": ".card", "styles": { "background-color": "rgb(255, 255, 255)" } }],
+  "screenshots": [{ "viewport": "1440x900", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" }],
+  "screenshot_regions": [{ "screenshot_index": 0, "selector": ".card", "bbox": [0, 0, 400, 300] }],
+  "assets": [{ "url": "/logo.svg", "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" }],
+  "fonts": [{ "family": "Inter", "status": "available" }]
+}

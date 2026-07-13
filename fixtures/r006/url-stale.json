@@ -1,0 +1,8 @@
+{
+  "fixture_kind": "controlled-url-capture",
+  "captured_at": "2025-01-01T00:00:00.000Z",
+  "status": "stale",
+  "stale_reasons": ["capture-age-threshold", "etag-changed"],
+  "network": { "status": 200, "etag": "old" },
+  "dom": [{ "selector": "main", "text": "Old sanitized capture" }]
+}

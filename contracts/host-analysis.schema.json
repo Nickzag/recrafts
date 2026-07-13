@@ -72,6 +72,7 @@
         "required": ["id", "value", "scope", "status", "confidence", "evidence_refs"],
         "properties": {
           "id": { "type": "string", "minLength": 1 },
+          "category": { "type": "string", "minLength": 1 },
           "value": {},
           "scope": { "enum": ["workspace", "project", "surface", "selection", "block"] },
           "status": { "enum": ["observed", "inferred", "suggested", "confirmed"] },
@@ -88,9 +89,40 @@
         "required": ["name", "scope", "confidence", "evidence_refs"],
         "properties": {
           "name": { "type": "string", "minLength": 1 },
+          "purpose": { "type": "string", "minLength": 1 },
+          "anatomy": { "type": "array", "items": { "type": "string" } },
+          "variants": { "type": "array", "items": { "type": "string" } },
+          "states": { "type": "array", "items": { "type": "string" } },
           "scope": { "enum": ["workspace", "project", "surface", "selection", "block"] },
           "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
           "evidence_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "grid_rules": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "rule_type", "constraints", "scope", "status", "confidence", "evidence_refs"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 }, "rule_type": { "type": "string", "minLength": 1 }, "constraints": { "type": "object" },
+          "scope": { "enum": ["workspace", "project", "surface", "selection", "block"] }, "status": { "enum": ["observed", "inferred", "suggested"] },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }, "evidence_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "conflict_class", "domain", "severity", "impact", "candidate_refs", "evidence_refs"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "conflict_class": { "enum": ["dom-vs-screenshot", "css-vs-computed-style", "multi-image-token-conflict", "scope-conflict", "component-state-conflict", "grid-rule-conflict", "stale-vs-current"] },
+          "domain": { "enum": ["token", "component", "grid-rule", "layout-rule", "visual-grammar", "evidence"] },
+          "severity": { "enum": ["low", "medium", "high"] }, "impact": { "type": "string", "minLength": 1 },
+          "candidate_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+          "evidence_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } }
         }
       }
     }

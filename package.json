@@ -1,6 +1,6 @@
 {
   "name": "recrafts",
-  "version": "0.3.0-rc.1",
+  "version": "0.4.0-rc.1",
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
@@ -20,6 +20,7 @@
     "realization/",
     "contracts/",
     "fixtures/interop/",
+    "fixtures/r006/",
     "schemas/",
     "prompts/",
     "templates/",
@@ -31,7 +32,11 @@
     "scripts/check-r003-token-compliance.mjs",
     "scripts/validate-r003-realization.mjs",
     "scripts/validate-r004-fidelity.mjs"
-    ,"scripts/package-smoke.mjs"
+    ,"scripts/package-smoke.mjs",
+    "scripts/validate-r006-evidence-truth.mjs",
+    "scripts/validate-r006-url-lifecycle.mjs",
+    "scripts/validate-r006-domain-provenance.mjs",
+    "scripts/validate-r006-conflicts.mjs"
   ],
   "scripts": {
     "validate:r001": "node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs",
@@ -42,6 +47,7 @@
     "validate:r004": "node scripts/validate-r004-fidelity.mjs examples/golden-candidates/crafts-ui-multi-image/fidelity/r004-v2",
     "build:r005": "node scripts/build-r005-release-candidate.mjs",
     "validate:r005": "node scripts/validate-r005-release-candidate.mjs release-candidates/recrafts-0.3.0-rc.1-build5",
+    "validate:r006": "node --test tests/r006-evidence-truth.test.mjs",
     "test:r002": "node --test tests/r002-runtime.test.mjs tests/r002-validator.test.mjs",
     "test": "node --test tests/*.test.mjs"
   }

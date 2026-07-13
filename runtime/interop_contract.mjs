@@ -2,21 +2,23 @@ import { executeOperation, OPERATION_CAPABILITIES } from "./interop_operations.m
 import { resolveWorkingRoot } from "./path_security.mjs";
 import { assertSchema, loadSchema } from "./schema_validator.mjs";
 
-const PROTOCOL_VERSION = "1.0";
+const PROTOCOL_VERSION = "1.1";
 const envelopeRequestSchema = loadSchema(new URL("../contracts/envelope-request.schema.json", import.meta.url));
 const envelopeResponseSchema = loadSchema(new URL("../contracts/envelope-response.schema.json", import.meta.url));
 const operationSchemas = Object.fromEntries(Object.keys(OPERATION_CAPABILITIES).map((operation) => [operation, loadSchema(new URL(`../contracts/operations/${operation}.request.schema.json`, import.meta.url))]));
 const errorCodes = new Set(["INVALID_JSON","SCHEMA_VALIDATION_FAILED","PROTOCOL_VERSION_UNSUPPORTED","OPERATION_UNSUPPORTED","CAPABILITY_REQUIRED","HOST_ACTION_REQUIRED","UNSAFE_INPUT_PATH","UNSAFE_OUTPUT_PATH","OUTPUT_NOT_EMPTY","INPUT_NOT_FOUND","PACKAGE_INVALID","REALIZATION_NOT_AUTHORIZED","FIDELITY_SCOPE_UNSUPPORTED","VERSION_CONFLICT","INTERNAL_ERROR"]);
-const base = (request) => ({ protocol_version: PROTOCOL_VERSION, request_id: request?.request_id ?? "unavailable", operation: request?.operation ?? "unavailable", status: "failed", host_handshake: {}, host_action: null, artifacts: [], validation: {}, warnings: [], error: null });
+const effectiveVersion = (request) => request?.protocol_version === "1.0" && request?.options?.compatibility_mode === "protocol-1.0" ? "1.0" : PROTOCOL_VERSION;
+const base = (request) => ({ protocol_version: effectiveVersion(request), request_id: request?.request_id ?? "unavailable", operation: request?.operation ?? "unavailable", status: "failed", host_handshake: {}, host_action: null, artifacts: [], validation: {}, warnings: [], error: null });
 
 function assertRequest(request) {
   if (request && typeof request === "object" && typeof request.operation === "string" && !(request.operation in OPERATION_CAPABILITIES)) throw Object.assign(new Error("Unsupported operation"), { code: "OPERATION_UNSUPPORTED" });
-  if (request && typeof request === "object" && Object.hasOwn(request, "protocol_version") && request.protocol_version !== PROTOCOL_VERSION) throw Object.assign(new Error("Unsupported protocol version; supported_versions: 1.0"), { code: "PROTOCOL_VERSION_UNSUPPORTED" });
+  const compatibility = request?.protocol_version === "1.0" && request?.options?.compatibility_mode === "protocol-1.0";
+  if (request && typeof request === "object" && Object.hasOwn(request, "protocol_version") && request.protocol_version !== PROTOCOL_VERSION && !compatibility) throw Object.assign(new Error("Unsupported protocol version; supported_versions: 1.1 (1.0 requires explicit compatibility mode)"), { code: "PROTOCOL_VERSION_UNSUPPORTED" });
   assertSchema(request, envelopeRequestSchema, "Envelope request");
   if (!request || typeof request !== "object" || Array.isArray(request)) throw Object.assign(new Error("Request must be an object"), { code: "SCHEMA_VALIDATION_FAILED" });
   const allowed = new Set(["protocol_version","request_id","operation","host","working_root","input","output_directory","options"]);
   if (Object.keys(request).some((key) => !allowed.has(key))) throw Object.assign(new Error("Unknown top-level request field"), { code: "SCHEMA_VALIDATION_FAILED" });
-  if (request.protocol_version !== PROTOCOL_VERSION) throw Object.assign(new Error("Unsupported protocol version; supported_versions: 1.0"), { code: "PROTOCOL_VERSION_UNSUPPORTED" });
+  if (request.protocol_version !== PROTOCOL_VERSION && !compatibility) throw Object.assign(new Error("Unsupported protocol version"), { code: "PROTOCOL_VERSION_UNSUPPORTED" });
   if (!request.request_id || !request.operation || !request.host || !request.working_root || typeof request.input !== "object") throw Object.assign(new Error("Required envelope fields are missing"), { code: "SCHEMA_VALIDATION_FAILED" });
   if (!(request.operation in OPERATION_CAPABILITIES)) throw Object.assign(new Error("Unsupported operation"), { code: "OPERATION_UNSUPPORTED" });
   assertSchema(request, operationSchemas[request.operation], `${request.operation} request`);
@@ -47,4 +49,4 @@ export async function handleEnvelope(request) {
   return response;
 }
 
-export const protocolInfo = { protocol_version: PROTOCOL_VERSION, operations: Object.keys(OPERATION_CAPABILITIES), statuses: ["completed","completed_with_warnings","needs_host_action","failed"] };
+export const protocolInfo = { protocol_version: PROTOCOL_VERSION, compatible_versions: ["1.0"], operations: Object.keys(OPERATION_CAPABILITIES), statuses: ["completed","completed_with_warnings","needs_host_action","failed"] };

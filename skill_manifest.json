@@ -1,7 +1,7 @@
 {
   "name": "recrafts",
   "displayName": "Recrafts",
-  "version": "0.3.0-rc.1",
+  "version": "0.4.0-rc.1",
   "type": "skill",
   "role": "foundation_skill",
   "description": "Builds provenance-backed visual-system contracts from authorized references.",
@@ -19,7 +19,7 @@
   "canonicalManifest": "./manifest.json",
   "protocol": "./contracts/envelope-request.schema.json",
   "operations": ["capabilities", "prepare-analysis", "submit-analysis", "validate-package", "generate-realization", "verify-fidelity"],
-  "outputs": ["evidence-bundle", "design.md", "tokens.json", "components.json", "recrafts-package.json", "realization.json", "fidelity-readiness.json"],
+  "outputs": ["evidence-bundle", "claims.json", "design.md", "tokens.json", "components.json", "grid-rules.json", "layout-rules.json", "visual-grammar.json", "conflicts.json", "recrafts-package.json", "realization.json", "fidelity-readiness.json"],
   "dependencies": [],
   "tags": [
     "visual-system",
