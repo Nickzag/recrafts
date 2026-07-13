@@ -1,0 +1,20 @@
+{
+  "correction_id": "correction-r004-gallery-density",
+  "source_package_id": "package-ffa63ca8b0ea69af",
+  "source_realization_id": "realization-84978bde0e3b2ccb",
+  "finding_ids": [
+    "STR-004",
+    "VIS-002"
+  ],
+  "classification": "component-renderer",
+  "changes": [
+    {
+      "target": "realization renderer",
+      "property": "component gallery row/stage density",
+      "before": "26px row padding; 96px stage minimum; 18px stage padding",
+      "after": "18px row padding; 72px stage minimum; 12px stage padding"
+    }
+  ],
+  "upstream_extraction_error": false,
+  "preview_fallback_promotion": false
+}

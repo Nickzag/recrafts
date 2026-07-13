@@ -11,7 +11,7 @@ R-005: ACCEPT / REVISE
 ## Review Inputs
 
 - Result: `dev-workflow/results/R-005-recrafts-mvp-release-candidate-result.md`
-- RC: `release-candidates/recrafts-0.3.0-rc.1-build3/`
+- RC: `release-candidates/recrafts-0.3.0-rc.1-build4/`
 - Release manifest: `bundle/release-manifest.json`
 - Package inventory and RC readiness: `validation/`
 - Two-phase contracts: `bundle/contracts/`
@@ -23,11 +23,14 @@ R-005: ACCEPT / REVISE
 ```bash
 cd /Users/Nick/Documents/Recrafts
 npm run validate:r001
+npm run test:r001
 npm run validate:r002
+npm run test:r002
 npm run validate:r003-preflight
 npm run validate:r003-realization
 npm run validate:r004
 npm run validate:r005
+node --test tests/r005-*.test.mjs
 npm test
 ```
 
@@ -43,5 +46,8 @@ npm test
 8. Release Manifest 是否绑定 R-004 Owner PASS 与 Decision Set？
 9. stdout/stderr 和 Artifact 相对路径约束是否满足 Agent 集成？
 10. 最终 Release Claim 是否仍为 protocol-level RC，而非生产就绪？
+11. packaged README/SKILL、canonical manifest entry 与六个 Operation 是否一致？
+12. installed package-local `npm test` 是否执行真实协议检查而非零测试通过？
+13. artifact source、release evidence、declared/verified platforms 与分发条款是否表达准确？
 
 项目所有者 Release Verdict 当前为 `PENDING`。

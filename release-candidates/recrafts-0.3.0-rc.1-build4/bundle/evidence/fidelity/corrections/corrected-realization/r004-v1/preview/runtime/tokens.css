@@ -1,0 +1,27 @@
+:root {
+  --app-background: #F6F5F3;
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #F1F0EE;
+  --text-primary: #20201E;
+  --accent-rule: no-global-accent; selection accent remains preview-only;
+  --radius-direction: soft-rounded;
+  --spacing-direction: compact-system-rhythm;
+  --typography-direction: neutral-system-sans;
+  --shell-three-column: left-rail / flexible-canvas / right-inspector;
+  --preview-text-secondary: #6F6E69;
+  --preview-border-subtle: rgba(32,32,30,0.10);
+  --preview-interaction-accent: #3478F6;
+  --preview-accent-soft: #E8F0FF;
+  --preview-text-muted: #92918C;
+  --preview-text-disabled: #B8B7B2;
+  --preview-radius-control: 8px;
+  --preview-radius-card: 13px;
+  --preview-radius-modal: 18px;
+  --preview-space-1: 4px;
+  --preview-space-2: 8px;
+  --preview-space-3: 12px;
+  --preview-space-4: 16px;
+  --preview-space-6: 24px;
+  --preview-shadow-float: 0 18px 50px rgba(32,32,30,.14);
+  color-scheme: light;
+}

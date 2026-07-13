@@ -1,0 +1,31 @@
+{
+  "rc_id": "recrafts-0.3.0-rc.1-build4",
+  "package_name": "recrafts",
+  "package_version": "0.3.0-rc.1",
+  "protocol_version": "1.0",
+  "skill_version": "0.3.0-rc.1",
+  "runtime_version": "r005-interop-v1",
+  "schema_version": "2.1.0",
+  "artifact_source_commit": "99fa18b2c6f9e565936507794c9336404ff3936c",
+  "release_evidence_commit": "14117898bf0c1042d2d782c0610f918db048092f",
+  "release_evidence_commit_scope": "verified build3 evidence; build4 evidence commit is recorded in the R-005 Result after immutable generation",
+  "r004_independent_review": "ACCEPT",
+  "r004_owner_verdict": "PASS",
+  "r004_decision_set_id": "owner-decision-r004-pass",
+  "node_engine": ">=20",
+  "declared_platforms": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "verified_platforms": [
+    "darwin"
+  ],
+  "created_at": "2026-07-13T05:40:14.124Z",
+  "tarball": "artifacts/recrafts-0.3.0-rc.1.tgz",
+  "tarball_sha256": "933045af5383838db6317b669b3b2a6af5a4dbd71a53a9f833facd9f27e84599",
+  "public_registry_published": false,
+  "embedded_vision_provider": false,
+  "license": "UNLICENSED",
+  "distribution_scope": "internal evaluation only"
+}

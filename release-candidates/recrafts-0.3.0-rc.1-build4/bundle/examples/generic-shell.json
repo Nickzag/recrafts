@@ -1,0 +1,12 @@
+{
+  "protocol_version": "1.0",
+  "request_id": "generic-shell.json",
+  "operation": "capabilities",
+  "host": {
+    "agent": "generic-shell",
+    "engine": "unavailable",
+    "capabilities": []
+  },
+  "working_root": ".",
+  "input": {}
+}

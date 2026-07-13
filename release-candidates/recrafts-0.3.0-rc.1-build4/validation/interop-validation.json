@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "protocol_version": "1.0",
+  "operations": [
+    "capabilities",
+    "prepare-analysis",
+    "submit-analysis",
+    "validate-package",
+    "generate-realization",
+    "verify-fidelity"
+  ],
+  "embedded_vision_provider": false,
+  "host_examples_are_certification": false
+}

@@ -1,0 +1,46 @@
+{
+  "realization_id": "realization-b0362580ecc8a9d9",
+  "renderer_version": "r004-fidelity-renderer-v1",
+  "correction_id": "correction-r004-gallery-density",
+  "package_id": "package-0871eb099386710c",
+  "analysis_id": "analysis-0aabae953c97172e",
+  "decision_set_id": "owner-decision-r002-pass",
+  "status": "generated-awaiting-owner-visual-review",
+  "artifacts": [
+    "preview/system-board.html",
+    "preview/component-gallery.html",
+    "preview/surface-preview.html"
+  ],
+  "screenshots": [
+    {
+      "page": "system-board.html",
+      "viewport": "1440x900",
+      "file": "preview/screenshots/system-board-1440x900.png",
+      "sha256": "05031827574c993cf5427337a7b2fc90d905496c88a26a99efee43f0c7819074"
+    },
+    {
+      "page": "component-gallery.html",
+      "viewport": "1440x900",
+      "file": "preview/screenshots/component-gallery-1440x900.png",
+      "sha256": "782e1122af23b3be83c4fd8b30dd74ee5cc2e0d04cfcbe2e91d3b99a2ade90a9"
+    },
+    {
+      "page": "surface-preview.html",
+      "viewport": "2048x1280",
+      "file": "preview/screenshots/surface-preview-2048x1280.png",
+      "sha256": "0304d5d92ca40b86b8c0d173118b0099c081e770da3def72d28df99565ee9b23"
+    },
+    {
+      "page": "surface-preview.html",
+      "viewport": "1440x900",
+      "file": "preview/screenshots/surface-preview-1440x900.png",
+      "sha256": "0c244e683d6474eff4e2213bccda01240cbe23bce3d828844fb80bfbbaee18c2"
+    },
+    {
+      "page": "surface-preview.html",
+      "viewport": "1280x800",
+      "file": "preview/screenshots/surface-preview-1280x800.png",
+      "sha256": "f9969d591fe97632de6a32fc54a0f77077a64339719714f76f78cce2d4a739c9"
+    }
+  ]
+}

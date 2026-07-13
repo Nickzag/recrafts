@@ -1,0 +1,19 @@
+{
+  "rc_id": "recrafts-0.3.0-rc.1-build4",
+  "status": "passed",
+  "checks": {
+    "version_consistency": true,
+    "checksum": true,
+    "r004_gate": true,
+    "commit_identities": true,
+    "platform_claim": true,
+    "distribution_terms": true,
+    "no_embedded_vision": true,
+    "inventory": true,
+    "installed_scripts": true,
+    "required_files": true,
+    "no_private_inventory": true,
+    "clean_install": true
+  },
+  "failures": []
+}

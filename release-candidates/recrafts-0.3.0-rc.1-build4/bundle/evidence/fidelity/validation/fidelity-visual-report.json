@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "method": "design-aware screenshot review supported by side-by-side evidence; no aggregate pixel score",
+  "findings": [
+    {
+      "id": "VIS-001",
+      "subject": "overall visual quietness",
+      "verdict": "confirmed-match"
+    },
+    {
+      "id": "VIS-002",
+      "subject": "component gallery vertical density",
+      "verdict": "must-fix",
+      "classification": "component-renderer",
+      "linked_finding": "STR-004"
+    },
+    {
+      "id": "VIS-003",
+      "subject": "icon micro-geometry",
+      "verdict": "not-testable"
+    }
+  ]
+}
