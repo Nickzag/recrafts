@@ -29,5 +29,5 @@
     "packageLineage": "./schemas/package-lineage-event.schema.json",
     "rollbackEvent": "./schemas/rollback-event.schema.json"
   },
-  "dependencies": []
+  "dependencies": ["playwright@1.61.1", "Chromium browser binary (runtime prerequisite)"]
 }

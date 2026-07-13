@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { assertSchema, loadSchema } from "./schema_validator.mjs";
+import { validateBrowserCapture } from "./browser_capture.mjs";
 
 const hostSchema = loadSchema(new URL("../contracts/host-analysis.schema.json", import.meta.url));
 const sha = (value) => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
@@ -63,7 +64,29 @@ export async function prepareEvidenceAnalysis({ sources, outputDirectory }) {
     }
     sequence += 1; const sourceId = `source-${sequence}`; const unsafe = isUnsafeUrl(descriptor.url); let captureId = id("capture", { url: descriptor.url, routes: descriptor.routes ?? [], viewports: descriptor.viewports ?? [] });
     let fixture = null; let status = "blocked"; let reason = unsafe;
-    if (!unsafe && descriptor.fixture) {
+    if (!unsafe && descriptor.captureRecord) {
+      fixture = JSON.parse(await readFile(descriptor.captureRecord, "utf8"));
+      const captureDirectory = path.dirname(descriptor.captureRecord);
+      const validation = await validateBrowserCapture(fixture, captureDirectory, { expectedUrl: descriptor.url });
+      status = validation.status;
+      fixture.status = status;
+      fixture.missing_evidence = validation.missing_evidence;
+      for (const [index, screenshot] of (fixture.screenshots ?? []).entries()) {
+        const source = path.resolve(captureDirectory, screenshot.file);
+        const target = `sources/url-source-${sequence}-screenshot-${index + 1}${path.extname(source) || ".png"}`;
+        await copyFile(source, path.join(outputDirectory, target));
+        screenshot.prepared_source_path = target;
+      }
+      for (const [index, region] of (fixture.screenshot_regions ?? []).entries()) {
+        if (!region.file) continue;
+        const source = path.resolve(captureDirectory, region.file);
+        const target = `sources/url-source-${sequence}-region-${index + 1}${path.extname(source) || ".png"}`;
+        await copyFile(source, path.join(outputDirectory, target));
+        region.prepared_source_path = target;
+      }
+      captureId = id("capture", { url: descriptor.url, capture_sha256: sha(fixture), browser: fixture.browser });
+      allEvidence.push(...captureEvidence(fixture, sourceId, captureId));
+    } else if (!unsafe && descriptor.fixture) {
       fixture = JSON.parse(await readFile(descriptor.fixture, "utf8"));
       if (fixture.fixture_kind !== "controlled-url-capture" || !["complete", "partial", "stale", "blocked"].includes(fixture.status)) throw Object.assign(new Error("Invalid controlled URL capture fixture"), { code: "SCHEMA_VALIDATION_FAILED" });
       const sourceArrays = ["dom", "css_rules", "css_variables", "computed_styles", "screenshots", "screenshot_regions", "assets", "fonts"];
@@ -86,7 +109,7 @@ export async function prepareEvidenceAnalysis({ sources, outputDirectory }) {
         }
       } catch (error) { status = "blocked"; reason = `inaccessible-response:${error.name}`; }
     }
-    manifests.push({ source_id: sourceId, kind: "url", capture_id: captureId, status, url: descriptor.url, routes: descriptor.routes ?? [], viewports: descriptor.viewports ?? [], controlled_fixture: Boolean(descriptor.fixture) });
+    manifests.push({ source_id: sourceId, kind: "url", capture_id: captureId, status, url: descriptor.url, routes: descriptor.routes ?? [], viewports: descriptor.viewports ?? [], controlled_fixture: Boolean(descriptor.fixture), real_browser_capture: Boolean(descriptor.captureRecord), browser: fixture?.browser ?? null });
     lifecycle.push({ source_id: sourceId, status, missing_evidence: fixture?.missing_evidence ?? (status === "partial" ? ["computed-style", "screenshot", "font"] : []), stale_reasons: fixture?.stale_reasons ?? [], reason });
   }
   const preparedId = id("prepared", { manifests, evidence: allEvidence.map((item) => item.evidence_id) });

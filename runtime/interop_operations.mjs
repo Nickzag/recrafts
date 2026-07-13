@@ -29,7 +29,7 @@ export const OPERATION_CAPABILITIES = {
 
 export async function executeOperation(request, workingRoot) {
   const input = request.input ?? {};
-  if (request.operation === "capabilities") return { status: "completed", artifacts: [], validation: { protocol_version: "1.1", compatible_versions: ["1.0"], schema_version: "3.0.0", source_kinds: ["image","image-set","url"], operations: Object.keys(OPERATION_CAPABILITIES), response_statuses: ["completed","completed_with_warnings","needs_host_action","failed"], embedded_vision_provider: false } };
+  if (request.operation === "capabilities") return { status: "completed", artifacts: [], validation: { protocol_version: "1.1", compatible_versions: ["1.0"], schema_version: "3.0.0", source_kinds: ["image","image-set","url"], operations: Object.keys(OPERATION_CAPABILITIES), response_statuses: ["completed","completed_with_warnings","needs_host_action","failed"], embedded_vision_provider: false, browser_adapter: { command: "recraft-capture", engine: "playwright-chromium", browser_binary_prerequisite: "npx playwright install chromium" } } };
   if (request.operation === "prepare-analysis") {
     if (request.protocol_version === "1.1") {
       const typed = [];
@@ -37,10 +37,10 @@ export async function executeOperation(request, workingRoot) {
         if (!source || typeof source !== "object" || Array.isArray(source)) throw Object.assign(new Error("Protocol 1.1 requires typed source objects"), { code: "SCHEMA_VALIDATION_FAILED" });
         if (source.kind === "image") typed.push({ kind: "image", file: await resolveSafeInput({ value: source.path, workingRoot, allowedTypes: ["file"] }) });
         else if (source.kind === "image-set") typed.push({ kind: "image-set", files: await Promise.all((source.paths ?? []).map((value) => resolveSafeInput({ value, workingRoot, allowedTypes: ["file"] }))) });
-        else if (source.kind === "url") typed.push({ kind: "url", url: source.url, routes: source.routes, viewports: source.viewports, fixture: source.capture_fixture ? await resolveSafeInput({ value: source.capture_fixture, workingRoot, allowedTypes: ["file"] }) : null });
+        else if (source.kind === "url") typed.push({ kind: "url", url: source.url, routes: source.routes, viewports: source.viewports, fixture: source.capture_fixture ? await resolveSafeInput({ value: source.capture_fixture, workingRoot, allowedTypes: ["file"] }) : null, captureRecord: source.browser_capture_record ? await resolveSafeInput({ value: source.browser_capture_record, workingRoot, allowedTypes: ["file"] }) : null });
         else throw Object.assign(new Error("Input kind must be image, image-set or url"), { code: "SCHEMA_VALIDATION_FAILED" });
       }
-      const localInputs = typed.flatMap((source) => source.file ? [source.file] : source.files ? source.files : source.fixture ? [source.fixture] : []);
+      const localInputs = typed.flatMap((source) => source.file ? [source.file] : source.files ? source.files : source.fixture ? [source.fixture] : source.captureRecord ? [source.captureRecord] : []);
       const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: localInputs });
       const result = await prepareEvidenceAnalysis({ sources: typed, outputDirectory: output });
       const artifacts = await Promise.all(result.artifacts.map((file) => artifact({ type: path.basename(file, path.extname(file)), file: path.join(output, file), outputRoot: output, mediaType: file.endsWith(".md") ? "text/markdown" : "application/json", schemaVersion: "3.0.0" })));

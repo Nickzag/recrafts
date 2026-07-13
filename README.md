@@ -2,6 +2,17 @@
 
 Recrafts 是可独立安装的 Host-Agent 视觉重构 Skill。它不内置视觉模型；视觉理解由接入方提供的 Host Agent 完成。
 
+本包使用 `playwright@1.61.1` 提供公开 URL 浏览器采集适配器。首次使用 URL 采集前安装 Chromium；浏览器二进制是明确的运行时前置条件，不随 Tarball 内嵌：
+
+```bash
+npx playwright install chromium
+recraft-capture https://www.example.com browser-capture
+```
+
+`recraft-capture` 只接受公开 HTTPS URL，拒绝私网、下载及结算路径，并输出分离的 network、DOM、CSS、computed-style、viewport/full-page screenshot、region、asset 和 font 记录。采集结果只有在全部必需类别存在、PNG 尺寸与声明一致且记录无重复时才会标记为 `complete`。随后在 `prepare-analysis` 的 URL source 中通过 `browser_capture_record` 引用 `capture-record.json`。
+
+包内 `fixtures/interop` 与 `fixtures/r006` 是脱敏、受控、明确标注的协议示例；它们不代表实时视觉模型或真实公开 URL 运行。
+
 ## JSON Envelope
 
 `recraft-interop` 从 stdin 读取一个 JSON Request，只向 stdout 写一个 JSON Response。诊断信息只写 stderr。
@@ -66,6 +77,8 @@ Artifact descriptor 只返回相对 output root 的路径、SHA-256、media type
 ## Safety and Claim
 
 Runtime 通过 realpath 拒绝 traversal、symlink escape、Oracle/expected、特殊文件、输入输出嵌套和非空输出。此 RC 仅证明本地安装与协议级互操作；不证明 embedded inference、多 Host 产品认证、公共发布、pixel-perfect reconstruction、full VIS、CraftsOS 私有集成或生产就绪。
+
+许可证状态为 `UNLICENSED`；此内部 RC 不授权公开 npm 发布或再分发。
 
 ## Legacy Development CLI
 

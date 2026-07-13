@@ -1,0 +1,10 @@
+{
+  "target_id": "craft-do-public-homepage",
+  "url": "https://www.craft.do",
+  "route": "/",
+  "viewports": ["1440x900"],
+  "required_evidence_classes": ["capture-metadata", "network-response", "dom-node", "css-rule", "computed-style", "screenshot", "screenshot-region", "asset", "font"],
+  "freshness_threshold_hours": 24,
+  "capture_safety_policy": { "authenticated": false, "destructive_actions": false, "same_origin_navigation_only": true },
+  "owner_selection_source": "project-owner target supplied earlier in the development thread"
+}
