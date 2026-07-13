@@ -13,7 +13,7 @@ protocol_version: 1.0
 artifact_source_commit: 29368e5d64a9f4ca14c06a04368a5b33819a510a
 build4_evidence_commit: 6eb23e07fe097f3c3479dc439d580a8c25530d88
 post_review_evidence_commit: 15f38879a3688c6af492219a90225204070b3b91
-build5_evidence_commit: PENDING_POST_GENERATION_COMMIT
+build5_evidence_commit: 13f8d1fe3ebe2156ded68d3bef67f8ef27c1af69
 r004_decision_set_id: owner-decision-r004-pass
 tarball_sha256: 760377e2d2238c7169160f4d21e2fbc6782af6a5f157d09e0659e16448bec1c6
 ```

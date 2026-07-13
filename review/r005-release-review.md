@@ -7,7 +7,7 @@
 - Protocol: `1.0`
 - R-004 decision set: `owner-decision-r004-pass`
 - Artifact source commit: `29368e5d64a9f4ca14c06a04368a5b33819a510a`
-- Build 5 evidence commit: `PENDING_POST_GENERATION_COMMIT`
+- Build 5 evidence commit: `13f8d1fe3ebe2156ded68d3bef67f8ef27c1af69`
 - Tarball SHA-256: `760377e2d2238c7169160f4d21e2fbc6782af6a5f157d09e0659e16448bec1c6`
 
 ## Mechanical Evidence
