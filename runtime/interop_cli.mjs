@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readFile } from "node:fs/promises";
+import { readFileSync } from "node:fs";
 import { handleEnvelope, protocolInfo } from "./interop_contract.mjs";
 
 if (process.argv.includes("--help")) {
@@ -7,7 +7,7 @@ if (process.argv.includes("--help")) {
 } else if (process.argv.includes("--version")) {
   process.stdout.write("0.3.0-rc.1\n");
 } else {
-  const raw = await readFile(0, "utf8");
+  const raw = readFileSync(0, "utf8");
   let request;
   let response;
   try { request = JSON.parse(raw); response = await handleEnvelope(request); }

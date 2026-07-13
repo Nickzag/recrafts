@@ -26,7 +26,7 @@ export async function validateReleaseCandidate(directory, { writeReport = true }
 }
 
 if (process.argv[1]?.endsWith("validate-r005-release-candidate.mjs")) {
-  const directory = path.resolve(process.argv[2] ?? "release-candidates/recrafts-0.3.0-rc.1");
+  const directory = path.resolve(process.argv[2] ?? "release-candidates/recrafts-0.3.0-rc.1-build2");
   const report = await validateReleaseCandidate(directory);
   process.stdout.write(`${JSON.stringify(report, null, 2)}\n`);
   if (report.status !== "passed") process.exitCode = 1;

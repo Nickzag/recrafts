@@ -39,7 +39,7 @@
     "validate:r003-realization": "node scripts/validate-r003-realization.mjs examples/golden-candidates/crafts-ui-multi-image/realizations/r003b-v2",
     "validate:r004": "node scripts/validate-r004-fidelity.mjs examples/golden-candidates/crafts-ui-multi-image/fidelity/r004-v2",
     "build:r005": "node scripts/build-r005-release-candidate.mjs",
-    "validate:r005": "node scripts/validate-r005-release-candidate.mjs release-candidates/recrafts-0.3.0-rc.1",
+    "validate:r005": "node scripts/validate-r005-release-candidate.mjs release-candidates/recrafts-0.3.0-rc.1-build2",
     "test:r002": "node --test tests/r002-runtime.test.mjs tests/r002-validator.test.mjs",
     "test": "node --test tests/*.test.mjs"
   }

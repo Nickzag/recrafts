@@ -13,7 +13,7 @@ test("npm dry-run inventory contains interop runtime and excludes repository evi
   assert.ok(files.every((file) => !/(?:^|\/)(?:review|analysis|examples|release-candidates|dev-workflow|tests)(?:\/|$)|\.DS_Store|\.playwright-cli|oracle|expected-/i.test(file)));
 });
 test("generated RC passes readiness when present", async (context) => {
-  const directory = path.join(root, "release-candidates/recrafts-0.3.0-rc.1");
+  const directory = path.join(root, "release-candidates/recrafts-0.3.0-rc.1-build2");
   try { assert.equal((await validateReleaseCandidate(directory, { writeReport: false })).status, "passed"); }
   catch (error) { context.skip(`RC not generated yet: ${error.code ?? error.message}`); }
 });

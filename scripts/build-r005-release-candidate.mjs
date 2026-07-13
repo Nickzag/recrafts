@@ -4,7 +4,7 @@ import { cp, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
-const output = path.resolve(process.argv[2] ?? "release-candidates/recrafts-0.3.0-rc.1");
+const output = path.resolve(process.argv[2] ?? "release-candidates/recrafts-0.3.0-rc.1-build2");
 try { if ((await readdir(output)).length) throw new Error("RC output must be empty and is never overwritten"); } catch (error) { if (error.code !== "ENOENT") throw error; }
 await Promise.all(["artifacts", "bundle/contracts", "bundle/examples", "bundle/fixtures", "bundle/evidence", "validation"].map((relative) => mkdir(path.join(output, relative), { recursive: true })));
 const packResult = JSON.parse(execFileSync("npm", ["pack", "--json", "--pack-destination", path.join(output, "artifacts")], { cwd: root, encoding: "utf8" }))[0];
@@ -16,7 +16,7 @@ await cp(path.join(root, "contracts"), path.join(output, "bundle/contracts"), { 
 await cp(path.join(root, "fixtures/interop"), path.join(output, "bundle/fixtures"), { recursive: true });
 await cp(path.join(root, "examples/golden-candidates/crafts-ui-multi-image/fidelity/r004-v2"), path.join(output, "bundle/evidence/fidelity"), { recursive: true, filter: (source) => !source.endsWith(".DS_Store") });
 const commit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
-const manifest = { rc_id: "recrafts-0.3.0-rc.1", package_name: "recrafts", package_version: "0.3.0-rc.1", protocol_version: "1.0", skill_version: "0.3.0-rc.1", runtime_version: "r005-interop-v1", schema_version: "2.1.0", source_commit: commit, r004_independent_review: "ACCEPT", r004_owner_verdict: "PASS", r004_decision_set_id: "owner-decision-r004-pass", node_engine: ">=20", supported_platforms: ["darwin", "linux", "win32"], created_at: new Date().toISOString(), tarball: `artifacts/${packResult.filename}`, tarball_sha256: tarballHash, public_registry_published: false, embedded_vision_provider: false };
+const manifest = { rc_id: path.basename(output), package_name: "recrafts", package_version: "0.3.0-rc.1", protocol_version: "1.0", skill_version: "0.3.0-rc.1", runtime_version: "r005-interop-v1", schema_version: "2.1.0", source_commit: commit, r004_independent_review: "ACCEPT", r004_owner_verdict: "PASS", r004_decision_set_id: "owner-decision-r004-pass", node_engine: ">=20", supported_platforms: ["darwin", "linux", "win32"], created_at: new Date().toISOString(), tarball: `artifacts/${packResult.filename}`, tarball_sha256: tarballHash, public_registry_published: false, embedded_vision_provider: false };
 await writeFile(path.join(output, "bundle/release-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
 await writeFile(path.join(output, "bundle/checksums.sha256"), `${tarballHash}  artifacts/${packResult.filename}\n`);
 await writeFile(path.join(output, "bundle/README.md"), "# Recrafts MVP RC\n\nInstall the tarball locally, then invoke `recraft-interop` with one JSON Envelope on stdin. Visual analysis is two-phase: `prepare-analysis` returns `needs_host_action`; a vision-capable Host performs semantic analysis; `submit-analysis` validates that Host payload. Recrafts does not embed a vision provider. Host examples demonstrate protocol shape only and are not external-product certification.\n");
