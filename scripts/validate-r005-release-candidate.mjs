@@ -14,11 +14,15 @@ export async function validateReleaseCandidate(directory, { writeReport = true }
     version_consistency: manifest.package_version === "0.3.0-rc.1" && /recrafts-0\.3\.0-rc\.1\.tgz$/.test(manifest.tarball),
     checksum: hash === manifest.tarball_sha256,
     r004_gate: manifest.r004_independent_review === "ACCEPT" && manifest.r004_owner_verdict === "PASS" && manifest.r004_decision_set_id === "owner-decision-r004-pass",
+    commit_identities: /^[0-9a-f]{40}$/.test(manifest.artifact_source_commit) && /^[0-9a-f]{40}$/.test(manifest.release_evidence_commit),
+    platform_claim: manifest.declared_platforms.includes(process.platform) && manifest.verified_platforms.length === 1 && manifest.verified_platforms[0] === process.platform,
+    distribution_terms: manifest.license === "UNLICENSED" && manifest.distribution_scope === "internal evaluation only",
     no_embedded_vision: manifest.embedded_vision_provider === false,
     inventory: contents.status === "passed" && contents.forbidden.length === 0,
+    installed_scripts: contents.package_scripts?.test === "npm run smoke" && contents.package_scripts?.smoke === "node scripts/package-smoke.mjs" && Object.keys(contents.package_scripts).length === 2,
     required_files: ["SKILL.md","manifest.json","runtime/interop_cli.mjs","contracts/host-analysis.schema.json","fixtures/interop/host-analysis.fixture.json"].every((file) => inventoryText.includes(file)),
     no_private_inventory: !/(?:review\/|analysis\/|examples\/|release-candidates\/|dev-workflow\/|tests\/|\.DS_Store|\.playwright-cli|oracle|expected-)/i.test(inventoryText),
-    clean_install: clean.status === "passed" && clean.checks.every(({ passed }) => passed),
+    clean_install: clean.status === "passed" && clean.checks.every(({ passed }) => passed) && clean.checks.some(({ name }) => name === "package-local-test"),
   };
   const report = { rc_id: manifest.rc_id, status: Object.values(checks).every(Boolean) ? "passed" : "failed", checks, failures: Object.entries(checks).filter(([, value]) => !value).map(([key]) => key) };
   if (writeReport) await writeFile(path.join(directory, "validation/rc-readiness.json"), `${JSON.stringify(report, null, 2)}\n`);
@@ -26,7 +30,7 @@ export async function validateReleaseCandidate(directory, { writeReport = true }
 }
 
 if (process.argv[1]?.endsWith("validate-r005-release-candidate.mjs")) {
-  const directory = path.resolve(process.argv[2] ?? "release-candidates/recrafts-0.3.0-rc.1-build3");
+  const directory = path.resolve(process.argv[2] ?? "release-candidates/recrafts-0.3.0-rc.1-build4");
   const report = await validateReleaseCandidate(directory);
   process.stdout.write(`${JSON.stringify(report, null, 2)}\n`);
   if (report.status !== "passed") process.exitCode = 1;

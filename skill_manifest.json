@@ -5,7 +5,7 @@
   "type": "skill",
   "role": "foundation_skill",
   "description": "Builds provenance-backed visual-system contracts from authorized references.",
-  "entry": "./runtime/recraft-cli.mjs",
+  "entry": "./runtime/interop_cli.mjs",
   "standalone": true,
   "os_plugin": true,
   "craftsOSCompatible": true,
@@ -17,16 +17,9 @@
     "workspace_taste.md"
   ],
   "canonicalManifest": "./manifest.json",
-  "outputs": [
-    "design.md",
-    "design_tokens.json",
-    "layout_rules.json",
-    "components.json",
-    "template_patterns.json",
-    "preview.html",
-    "result.json",
-    "run_log.json"
-  ],
+  "protocol": "./contracts/envelope-request.schema.json",
+  "operations": ["capabilities", "prepare-analysis", "submit-analysis", "validate-package", "generate-realization", "verify-fidelity"],
+  "outputs": ["evidence-bundle", "design.md", "tokens.json", "components.json", "recrafts-package.json", "realization.json", "fidelity-readiness.json"],
   "dependencies": [],
   "tags": [
     "visual-system",

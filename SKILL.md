@@ -28,14 +28,20 @@ Recrafts 是可独立安装和运行的视觉重构 Skill。它从获准使用�
 
 ## 运行
 
+Canonical RC entrypoint：
+
 ```bash
-node runtime/recraft-cli.mjs analyze-image --input <image> --output <empty-output-dir>
-node runtime/recraft-cli.mjs analyze-images --input <input-dir> --output <empty-output-dir>
-node runtime/recraft-cli.mjs analyze-website --url <public-url> --output <empty-output-dir>
-npm run validate:r001
-npm run validate:r002
+printf '%s' '<JSON Envelope>' | recraft-interop
 ```
 
-Runtime 只能读取明确的 input path，拒绝 `oracle/` 和 `expected-*`。图片推理由 Host Agent 负责；脚本负责格式、hash、尺寸、region、provenance、Scope、阶段状态和 draft Artifact 的确定性组合。网站模式仅允许公开 HTTP(S) 页面，最多三个显式 route，不执行登录、验证码绕过、表单提交或破坏性 Action。
+Operation 为 `capabilities`、`prepare-analysis`、`submit-analysis`、`validate-package`、`generate-realization`、`verify-fidelity`。stdin 只能包含一个 Request JSON；stdout 只能包含一个 Response JSON；诊断写 stderr。Response 状态为 `completed`、`completed_with_warnings`、`needs_host_action`、`failed`。
+
+Recrafts 不内置视觉模型。`prepare-analysis` 只生成 Evidence Bundle 和 Host 指令，并返回 `needs_host_action`；视觉 Host 完成语义分析后，通过 `submit-analysis` 提交满足 `contracts/host-analysis.schema.json` 的结构化结果。仅声明 vision capability 不能代替真实 Host Analysis。
+
+Artifact path 必须相对 output root。Runtime 通过 realpath 拒绝 traversal、symlink escape、Oracle/expected、特殊文件、输入输出嵌套、非空输出和本地操作中的远程 URL。
+
+### Legacy / Development Compatibility
+
+`runtime/recraft-cli.mjs` 的 `analyze-image`、`analyze-images`、`analyze-website` 仅用于旧版仓库开发流程，不是 RC canonical entrypoint。图片语义仍由 Host Agent 提供；脚本不能把确定性 metadata composition 冒充为实时视觉分析。
 
 交互、分类、Design Contract、预览评审和修正流程分别由 `prompts/` 中的指南约束；模板位于 `templates/`。

@@ -25,6 +25,7 @@ await cp(path.join(rcDirectory, "bundle/evidence/fidelity"), path.join(work, "fi
 const checks = [];
 const help = spawnSync(cli, ["--help"], { encoding: "utf8" }); checks.push({ name: "help", passed: help.status === 0 && /one JSON request/.test(help.stdout) });
 const version = spawnSync(cli, ["--version"], { encoding: "utf8" }); checks.push({ name: "version", passed: version.status === 0 && version.stdout.trim() === "0.3.0-rc.1" });
+const packageTest = spawnSync("npm", ["test"], { cwd: path.join(sandbox, "node_modules/recrafts"), encoding: "utf8" }); checks.push({ name: "package-local-test", passed: packageTest.status === 0 && /1 protocol check/.test(packageTest.stdout) && !/0 tests/.test(packageTest.stdout) });
 const capabilities = run(base("capabilities")); checks.push({ name: "capabilities", passed: capabilities.exit_code === 0 && capabilities.response?.validation.embedded_vision_provider === false && capabilities.stdout_json_values === 1 });
 const prepared = run(base("prepare-analysis", { sources: ["fixture.svg"] }, "prepared")); checks.push({ name: "prepare-analysis", passed: prepared.exit_code === 0 && prepared.response?.status === "needs_host_action" && prepared.response?.error === null });
 const hostAnalysisFile = path.join(work, "host-analysis.json");
