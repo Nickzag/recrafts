@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { execFileSync, spawnSync } from "node:child_process";
 import { cp, mkdir, readFile, writeFile } from "node:fs/promises";
 import { mkdtempSync } from "node:fs";
@@ -17,7 +18,8 @@ const run = (request) => {
   try { response = JSON.parse(result.stdout); } catch {}
   return { exit_code: result.status, stdout_json_values: response ? 1 : 0, stderr: result.stderr, response };
 };
-const base = (operation, input = {}, output_directory) => ({ protocol_version: "1.0", request_id: `smoke-${operation}`, operation, host: { agent: "generic-shell-fixture", engine: "node", capabilities: ["files","structured-output"] }, working_root: work, input, ...(output_directory ? { output_directory } : {}) });
+const base = (operation, input = {}, output_directory) => ({ protocol_version: "1.0", request_id: `smoke-${operation}`, operation, host: { agent: "generic-shell-fixture", engine: "node", capabilities: ["files", "structured-output"] }, working_root: work, input, ...(output_directory ? { output_directory } : {}) });
+const digest = async (file) => createHash("sha256").update(await readFile(file)).digest("hex");
 await cp(path.join(rcDirectory, "bundle/fixtures/sanitized-analysis-fixture.svg"), path.join(work, "fixture.svg"));
 await cp(path.join(rcDirectory, "bundle/fixtures/host-analysis.fixture.json"), path.join(work, "host-analysis.json"));
 await cp(path.join(rcDirectory, "bundle/evidence/fidelity"), path.join(work, "fidelity"), { recursive: true });
@@ -28,16 +30,29 @@ const version = spawnSync(cli, ["--version"], { encoding: "utf8" }); checks.push
 const packageTest = spawnSync("npm", ["test"], { cwd: path.join(sandbox, "node_modules/recrafts"), encoding: "utf8" }); checks.push({ name: "package-local-test", passed: packageTest.status === 0 && /1 protocol check/.test(packageTest.stdout) && !/0 tests/.test(packageTest.stdout) });
 const capabilities = run(base("capabilities")); checks.push({ name: "capabilities", passed: capabilities.exit_code === 0 && capabilities.response?.validation.embedded_vision_provider === false && capabilities.stdout_json_values === 1 });
 const prepared = run(base("prepare-analysis", { sources: ["fixture.svg"] }, "prepared")); checks.push({ name: "prepare-analysis", passed: prepared.exit_code === 0 && prepared.response?.status === "needs_host_action" && prepared.response?.error === null });
+const preparedSources = prepared.response?.host_action?.sources ?? [];
+const preparedSourceReadable = preparedSources.length === 1 && await Promise.all(preparedSources.map(async (source) => digest(path.join(work, "prepared", source.path)) === source.sha256)).then((results) => results.every(Boolean));
+checks.push({ name: "prepared-source-contract", passed: preparedSourceReadable });
 const hostAnalysisFile = path.join(work, "host-analysis.json");
 const hostAnalysis = JSON.parse(await readFile(hostAnalysisFile, "utf8")); hostAnalysis.prepared_analysis_id = prepared.response?.validation.prepared_analysis_id; await writeFile(hostAnalysisFile, JSON.stringify(hostAnalysis));
-const submitted = run(base("submit-analysis", { prepared_analysis_directory: "prepared", host_analysis_file: "host-analysis.json" }, "package")); checks.push({ name: "submit-analysis", passed: submitted.exit_code === 0 && submitted.response?.status === "completed_with_warnings" });
+const invalidHostAnalysis = structuredClone(hostAnalysis); delete invalidHostAnalysis.findings[0].id; await writeFile(path.join(work, "invalid-host-analysis.json"), JSON.stringify(invalidHostAnalysis));
+const invalidSubmission = run(base("submit-analysis", { prepared_analysis_directory: "prepared", host_analysis_file: "invalid-host-analysis.json" }, "invalid-package")); checks.push({ name: "host-analysis-schema-negative", passed: invalidSubmission.exit_code !== 0 && invalidSubmission.response?.error.code === "SCHEMA_VALIDATION_FAILED" });
+const submitted = run(base("submit-analysis", { prepared_analysis_directory: "prepared", host_analysis_file: "host-analysis.json" }, "package")); checks.push({ name: "submit-analysis", passed: submitted.exit_code === 0 && submitted.response?.status === "completed_with_warnings" && submitted.response?.validation.package_status === "awaiting-owner-review" });
 const validated = run(base("validate-package", { package_directory: "package" })); checks.push({ name: "validate-package", passed: validated.exit_code === 0 && validated.response?.validation.valid === true });
-const realized = run(base("generate-realization", { package_directory: "package" }, "realization")); checks.push({ name: "generate-realization", passed: Boolean(realized.exit_code === 0 && realized.response?.validation.realization_id) });
+const blocked = run(base("generate-realization", { package_directory: "package" }, "blocked-realization")); checks.push({ name: "owner-gate-before-realization", passed: blocked.exit_code !== 0 && blocked.response?.error.code === "REALIZATION_NOT_AUTHORIZED" });
+const decision = { decision_set_id: "clean-install-fixture-decision", reviewed_package_id: submitted.response?.validation.package_id, verdict: "PASS", decision_status: "accepted", decision_source: "deterministic-interoperability-fixture", decided_at: "2026-07-13T00:00:00Z" };
+await writeFile(path.join(work, "owner-decision.json"), JSON.stringify(decision));
+const unlabeledFixture = run(base("generate-realization", { package_directory: "package", owner_decision_file: "owner-decision.json", approved_package_directory: "unlabeled-approved-package" }, "unlabeled-realization")); checks.push({ name: "fixture-mode-isolation", passed: unlabeledFixture.exit_code !== 0 && unlabeledFixture.response?.error.code === "HOST_ACTION_REQUIRED" });
+const realizedRequest = { ...base("generate-realization", { package_directory: "package", owner_decision_file: "owner-decision.json", approved_package_directory: "approved-package" }, "realization"), options: { interoperability_fixture: true } };
+const realized = run(realizedRequest); checks.push({ name: "generate-realization", passed: Boolean(realized.exit_code === 0 && realized.response?.validation.realization_id && realized.response?.validation.approved_package_id !== submitted.response?.validation.package_id) });
+const approvedManifest = JSON.parse(await readFile(path.join(work, "approved-package/source-manifest.json"), "utf8"));
+const realizationManifest = JSON.parse(await readFile(path.join(work, "realization/realization.json"), "utf8"));
+checks.push({ name: "decision-trace-propagation", passed: approvedManifest.owner_decision_set_id === decision.decision_set_id && realizationManifest.decision_set_id === decision.decision_set_id && realizationManifest.decision_source === decision.decision_source });
 const fidelity = run(base("verify-fidelity", { fidelity_directory: "fidelity" })); checks.push({ name: "verify-fidelity", passed: fidelity.exit_code === 0 && fidelity.response?.validation.status === "passed" });
 const malformed = run("not-json"); checks.push({ name: "malformed-request", passed: malformed.exit_code !== 0 && malformed.response?.error.code === "INVALID_JSON" });
 const unsafe = run(base("prepare-analysis", { sources: ["../escape.svg"] }, "unsafe")); checks.push({ name: "unsafe-path", passed: unsafe.exit_code !== 0 && unsafe.response?.error.code === "UNSAFE_INPUT_PATH" });
-const collision = run(base("generate-realization", { package_directory: "package" }, "realization")); checks.push({ name: "output-collision", passed: collision.exit_code !== 0 && collision.response?.error.code === "OUTPUT_NOT_EMPTY" });
-const report = { status: checks.every(({ passed }) => passed) ? "passed" : "failed", installed_tarball: path.basename(tarball), fixture_label: "deterministic interoperability fixture; not a live model result; not proof of visual quality", sandbox_policy: "temporary directory outside source repository", checks };
+const collision = run(base("generate-realization", { package_directory: "approved-package" }, "realization")); checks.push({ name: "output-collision", passed: collision.exit_code !== 0 && collision.response?.error.code === "OUTPUT_NOT_EMPTY" });
+const report = { status: checks.every(({ passed }) => passed) ? "passed" : "failed", installed_tarball: path.basename(tarball), fixture_label: "deterministic interoperability fixture; not a live model result; not proof of visual quality; not a project-owner decision", sandbox_policy: "temporary directory outside source repository", checks };
 await writeFile(path.join(rcDirectory, "validation/clean-install-report.json"), `${JSON.stringify(report, null, 2)}\n`);
 process.stdout.write(`${JSON.stringify(report, null, 2)}\n`);
 if (report.status !== "passed") process.exitCode = 1;

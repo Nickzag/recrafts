@@ -7,6 +7,18 @@
     "vision_capability": true,
     "performed_at": "2026-07-13T00:00:00Z"
   },
+  "source_classifications": [
+    {
+      "source_id": "source-1",
+      "classification": "canonical-product-ui",
+      "scope": "surface",
+      "confidence": 0.9,
+      "evidence_refs": ["source-1"],
+      "regions": [
+        {"id":"source-1-shell","classification":"canonical-product-ui","scope":"surface","confidence":0.9,"evidence_refs":["source-1"]}
+      ]
+    }
+  ],
   "findings": [
     {"id":"finding-shell","observation":"Quiet neutral three-column desktop shell","scope":"surface","confidence":0.9,"evidence_refs":["source-1"]}
   ],

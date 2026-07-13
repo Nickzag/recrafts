@@ -16,8 +16,12 @@ export function validateSchema(value, schema, location = "$") {
   if (Object.hasOwn(schema, "const") && !same(value, schema.const)) errors.push(`${location}: must equal declared const`);
   if (schema.enum && !schema.enum.some((item) => same(value, item))) errors.push(`${location}: value is not in enum`);
   if (typeof value === "string" && schema.minLength && value.length < schema.minLength) errors.push(`${location}: string is too short`);
+  if (typeof value === "string" && schema.pattern && !(new RegExp(schema.pattern).test(value))) errors.push(`${location}: string does not match pattern`);
+  if (typeof value === "number" && schema.minimum !== undefined && value < schema.minimum) errors.push(`${location}: number is below minimum`);
+  if (typeof value === "number" && schema.maximum !== undefined && value > schema.maximum) errors.push(`${location}: number is above maximum`);
   if (Array.isArray(value)) {
     if (schema.minItems && value.length < schema.minItems) errors.push(`${location}: array is too short`);
+    if (schema.maxItems && value.length > schema.maxItems) errors.push(`${location}: array is too long`);
     if (schema.uniqueItems && new Set(value.map((item) => JSON.stringify(item))).size !== value.length) errors.push(`${location}: array items must be unique`);
     if (schema.items) value.forEach((item, index) => errors.push(...validateSchema(item, schema.items, `${location}[${index}]`)));
   }

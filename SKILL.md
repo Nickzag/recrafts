@@ -36,7 +36,9 @@ printf '%s' '<JSON Envelope>' | recraft-interop
 
 Operation 为 `capabilities`、`prepare-analysis`、`submit-analysis`、`validate-package`、`generate-realization`、`verify-fidelity`。stdin 只能包含一个 Request JSON；stdout 只能包含一个 Response JSON；诊断写 stderr。Response 状态为 `completed`、`completed_with_warnings`、`needs_host_action`、`failed`。
 
-Recrafts 不内置视觉模型。`prepare-analysis` 只生成 Evidence Bundle 和 Host 指令，并返回 `needs_host_action`；视觉 Host 完成语义分析后，通过 `submit-analysis` 提交满足 `contracts/host-analysis.schema.json` 的结构化结果。仅声明 vision capability 不能代替真实 Host Analysis。
+Recrafts 不内置视觉模型。`prepare-analysis` 将脱敏来源复制到 Prepared Bundle，生成 Evidence Bundle 和 Host 指令，并返回 `needs_host_action`；视觉 Host 通过返回契约中的相对路径读取来源，完成语义分析后，通过 `submit-analysis` 提交满足 `contracts/host-analysis.schema.json` 的结构化结果。仅声明 vision capability 不能代替真实 Host Analysis。
+
+`submit-analysis` 只生成 `awaiting-owner-review` Candidate Package，不得伪造项目所有者 PASS。`generate-realization` 对待审核 Package 要求显式 Owner Decision import，并先生成新的已批准 `package_id`。确定性 interoperability fixture 必须通过专用 option 显式隔离，不能复用真实项目所有者身份。
 
 Artifact path 必须相对 output root。Runtime 通过 realpath 拒绝 traversal、symlink escape、Oracle/expected、特殊文件、输入输出嵌套、非空输出和本地操作中的远程 URL。
 

@@ -5,6 +5,7 @@ import { createRealization } from "../realization/realization_runtime.mjs";
 import { loadExtractionPackage } from "../realization/package_loader.mjs";
 import { validateFidelity } from "../scripts/validate-r004-fidelity.mjs";
 import { prepareAnalysis, submitAnalysis } from "./analysis_exchange.mjs";
+import { importOwnerDecision } from "./owner_decision_import.mjs";
 import { resolveSafeInput, resolveSafeOutput, toArtifactPath } from "./path_security.mjs";
 
 const hashFile = async (file) => createHash("sha256").update(await readFile(file)).digest("hex");
@@ -30,8 +31,9 @@ export async function executeOperation(request, workingRoot) {
       artifact({ type: "input-manifest", file: path.join(output, result.artifacts[0]), outputRoot: output, mediaType: "application/json" }),
       artifact({ type: "host-instructions", file: path.join(output, result.artifacts[1]), outputRoot: output, mediaType: "text/markdown" }),
       artifact({ type: "evidence-bundle", file: path.join(output, result.artifacts[2]), outputRoot: output, mediaType: "application/json" }),
+      ...result.sources.map((source) => artifact({ type: "prepared-source", file: path.join(output, source.path), outputRoot: output, mediaType: source.media_type })),
     ]);
-    return { status: "needs_host_action", artifacts, validation: { prepared_analysis_id: result.prepared_analysis_id, semantic_analysis_completed: false }, host_action: { type: "visual-analysis", instructions_file: result.artifacts[1], input_manifest: result.artifacts[0], response_schema: "contracts/host-analysis.schema.json", required_capabilities: ["vision", "structured-output"] } };
+    return { status: "needs_host_action", artifacts, validation: { prepared_analysis_id: result.prepared_analysis_id, semantic_analysis_completed: false }, host_action: { type: "visual-analysis", instructions_file: result.artifacts[1], input_manifest: result.artifacts[0], sources: result.sources, response_schema: "contracts/host-analysis.schema.json", required_capabilities: ["vision", "structured-output"] } };
   }
   if (request.operation === "submit-analysis") {
     const prepared = await resolveSafeInput({ value: input.prepared_analysis_directory, workingRoot, allowedTypes: ["directory"] });
@@ -47,9 +49,23 @@ export async function executeOperation(request, workingRoot) {
   }
   if (request.operation === "generate-realization") {
     const directory = await resolveSafeInput({ value: input.package_directory, workingRoot, allowedTypes: ["directory"] });
-    const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: [directory] });
-    const result = await createRealization({ packageDirectory: directory, outputDirectory: output });
-    return { status: "completed", artifacts: [await artifact({ type: "realization", file: path.join(output, "realization.json"), outputRoot: output, mediaType: "application/json" })], validation: { realization_id: result.realization_id } };
+    const readiness = JSON.parse(await readFile(path.join(directory, "validation/realization-readiness.json"), "utf8"));
+    let approvedDirectory = directory;
+    let approval = null;
+    const decisionInputsPresent = Boolean(input.owner_decision_file || input.approved_package_directory);
+    if (readiness.canonical_visual_generation_authorized !== true) {
+      if (!input.owner_decision_file || !input.approved_package_directory) throw Object.assign(new Error("Project-owner decision is required before realization"), { code: "REALIZATION_NOT_AUTHORIZED" });
+      const decisionFile = await resolveSafeInput({ value: input.owner_decision_file, workingRoot, allowedTypes: ["file"] });
+      approvedDirectory = await resolveSafeOutput({ value: input.approved_package_directory, workingRoot, inputs: [directory, decisionFile] });
+      approval = await importOwnerDecision({ packageDirectory: directory, decisionFile, approvedPackageDirectory: approvedDirectory, interoperabilityFixture: request.options?.interoperability_fixture === true });
+    } else if (decisionInputsPresent) {
+      throw Object.assign(new Error("An already-authorized package cannot import another decision during realization"), { code: "PACKAGE_INVALID" });
+    }
+    const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: [directory, approvedDirectory] });
+    const result = await createRealization({ packageDirectory: approvedDirectory, outputDirectory: output });
+    const artifacts = [await artifact({ type: "realization", file: path.join(output, "realization.json"), outputRoot: workingRoot, mediaType: "application/json" })];
+    if (approval) artifacts.unshift(await artifact({ type: "approved-extraction-package", file: path.join(approvedDirectory, "recrafts-package.json"), outputRoot: workingRoot, mediaType: "application/json" }));
+    return { status: "completed", artifacts, validation: { realization_id: result.realization_id, ...(approval ?? { approved_package_id: (await loadExtractionPackage(approvedDirectory)).manifest.package_id }) } };
   }
   if (request.operation === "verify-fidelity") {
     const directory = await resolveSafeInput({ value: input.fidelity_directory, workingRoot, allowedTypes: ["directory"] });

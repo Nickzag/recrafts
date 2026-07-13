@@ -70,6 +70,21 @@ prepare-analysis
 → validated design.md / Tokens / Components / Package
 ```
 
+Build 5 refines the flow to preserve the human gate:
+
+```text
+prepare-analysis
+→ bounded Prepared Bundle with copied sources
+→ needs_host_action
+→ submit-analysis with full Host Analysis Schema validation
+→ package awaiting-owner-review
+→ explicit Owner Decision import
+→ new approved package_id / decision_set_id
+→ generate-realization
+```
+
+`generate-realization` remains one of the six public Operations. For an awaiting package it requires `owner_decision_file` and `approved_package_directory`, imports the bounded decision, creates a new package identity, and realizes only the derived approved package. A fixture decision is accepted only when `options.interoperability_fixture` is explicitly true and its provenance is labeled as deterministic test evidence.
+
 ## 4. Capability Handshake
 
 Every operation declares required and recommended Host capabilities. The adapter returns provided, missing-required and missing-recommended capabilities.

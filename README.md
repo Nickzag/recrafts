@@ -25,14 +25,17 @@ verify-fidelity
 
 ```text
 prepare-analysis
-→ Evidence Bundle + Host instructions
+→ Evidence Bundle + copied prepared/sources + Host instructions
 → status: needs_host_action
 → Host performs visual analysis
 → submit-analysis
-→ validated design.md / Tokens / Components / Package
+→ Schema-validated candidate Package awaiting-owner-review
+→ explicit Owner Decision import
+→ new approved package_id
+→ generate-realization
 ```
 
-`needs_host_action` 不是错误，退出码为 0。Host Analysis 必须声明真实 Host/engine、vision capability、证据引用、Scope 和 confidence。声明 `host.capabilities: ["vision"]` 本身不能证明分析已经发生。
+`needs_host_action` 不是错误，退出码为 0。Host Analysis 必须声明真实 Host/engine、vision capability、证据引用、Scope、confidence 和来源/区域分类。声明 `host.capabilities: ["vision"]` 本身不能证明分析已经发生。`submit-analysis` 不产生 Owner PASS，也不授权 realization；`generate-realization` 只有在导入显式 Owner Decision 并生成新的批准 Package 后才能继续。确定性 fixture decision 只能在 `options.interoperability_fixture: true` 下使用，不能代表真实项目所有者审核。
 
 Artifact descriptor 只返回相对 output root 的路径、SHA-256、media type 和 Schema version。失败返回稳定 error code，退出码非 0。
 
