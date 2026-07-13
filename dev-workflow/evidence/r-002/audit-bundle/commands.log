@@ -1,0 +1,64 @@
+command: npm run validate:r001
+exit_code: 0
+
+> recrafts@0.2.0 validate:r001
+> node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs
+
+R-001 validation passed (4 check groups)
+- Skill contract files exist
+- Schemas parse and declare dialect, id and root type
+- 13 sources, hashes, dimensions and region classifications are valid
+- Repository text secret scan passed
+
+---
+command: npm run validate:r002
+exit_code: 0
+
+> recrafts@0.2.0 validate:r002
+> node scripts/validate-r002-mvp-extraction.mjs
+
+R-002 validation passed (4 runtime fixtures, 6 remediation evidence files)
+
+---
+command: npm test
+exit_code: 0
+
+> recrafts@0.2.0 test
+> node --test tests/*.test.mjs
+
+✔ golden candidate passes the public validator CLI (192.440087ms)
+✔ fails closed: raw screenshot tracked (410.346715ms)
+✔ fails closed: secret-like string (401.284416ms)
+✔ fails closed: unclassified region (409.379425ms)
+✔ fails closed: missing evidence ref (389.980075ms)
+✔ fails closed: user-content green promoted globally (370.715984ms)
+✔ fails closed: marketing blue promoted globally (377.947406ms)
+✔ fails closed: inferred value marked confirmed (405.323535ms)
+✔ fails closed: duplicate source id (439.018437ms)
+✔ fails closed: stale hash (376.058894ms)
+✔ fails closed: missing source (382.221948ms)
+✔ fails closed: direct Layoutcrafts import (410.385322ms)
+✔ fails closed: final claim without review (399.844544ms)
+✔ renaming and relocating identical image bytes preserves semantic output (28.200287ms)
+✔ manifest reorder and non-semantic source labels do not change candidates (115.232633ms)
+✔ sequential fixtures in one process do not leak candidates (104.386843ms)
+✔ unseen changed image produces a distinct capture identity (14.724719ms)
+✔ multi-image runtime consumes input only and emits extraction artifacts (167.358967ms)
+✔ single-image runtime declares limited coverage (111.608815ms)
+✔ runtime fails closed on oracle and expected paths (178.955623ms)
+✔ duplicate image hashes fail closed (101.471285ms)
+✔ unsupported and secret-like inputs fail closed (94.888875ms)
+✔ same input is structurally repeatable and changed input changes output (305.899335ms)
+✔ website adapter rejects unsafe scope before network access (432.994312ms)
+✔ R-002 repository validator accepts generated runtime evidence (118.665959ms)
+✔ normalized comparator accepts repeat runs (113.728989ms)
+✔ R-003 package loader rejects oracle inputs (1.707259ms)
+✔ R-003 canonical generation remains blocked while owner review is pending (11.320685ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5090.024333

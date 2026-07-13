@@ -1,0 +1,44 @@
+{
+  "version": "2.1.0",
+  "capture_id": "capture-1f0ea4297e5a9e92",
+  "analysis_id": "analysis-e5bd1a32af1e163b",
+  "package_id": "package-e3f49b6c8d499694",
+  "mode": "public-website",
+  "skill_version": "0.3.0-preflight",
+  "runtime_version": "r002-extraction-v2",
+  "schema_version": "2.1.0",
+  "capture_adapter_version": "capture-v2",
+  "host_agent": "codex-session",
+  "model": "GPT-5",
+  "prompt_hash": "684b51248ad8309079decc2a15413bd3b8c9d42266f888a1662bac873f5fe4e9",
+  "configuration_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "sources": [
+    {
+      "source_id": "captured-framer-website-d1bd16d1",
+      "file": "website-capture.json",
+      "sha256": "dec58d0f4b43f81386158f98b536f40d45c14bb3146b41a8f10f41475a05cb27",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      },
+      "source_type": "public-website",
+      "regions": [
+        {
+          "id": "captured-page",
+          "class": "marketing-surface",
+          "bbox": [
+            0,
+            0,
+            1440,
+            900
+          ],
+          "confidence": 0.7,
+          "reason": "Explicit public marketing homepage capture; Host Agent must refine subregions",
+          "evidence_refs": []
+        }
+      ],
+      "priority": "primary",
+      "warnings": []
+    }
+  ]
+}

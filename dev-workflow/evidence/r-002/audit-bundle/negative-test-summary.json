@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "coverage": [
+    "oracle-injection",
+    "expected-file-injection",
+    "raw-source",
+    "secret-like-input",
+    "duplicate-image",
+    "unsupported-image",
+    "missing-image",
+    "invalid-bbox",
+    "out-of-bounds-bbox",
+    "scope-contamination",
+    "missing-evidence",
+    "unsafe-website-scope",
+    "anti-hardcoding-rename",
+    "manifest-reorder",
+    "cross-run-isolation",
+    "unseen-input"
+  ]
+}

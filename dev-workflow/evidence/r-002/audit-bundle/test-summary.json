@@ -1,0 +1,6 @@
+{
+  "evidence_class": "deterministic-local-runtime",
+  "total": 28,
+  "passed": 28,
+  "failed": 0
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "artifacts_compared": 8,
+  "ignored_fields": [
+    "timestamp",
+    "generated_at"
+  ],
+  "identity_layers": [
+    "capture_id",
+    "analysis_id",
+    "package_id"
+  ]
+}
