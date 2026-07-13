@@ -1,8 +1,8 @@
-# R-004 Result — Bounded Fidelity Loop Complete, Owner Review Pending
+# R-004 Result — Accepted
 
 ## Conclusion
 
-R-004 已完成有界 fidelity profile、结构/Token/Region/Visual 四类比较、一个结构化修正请求、新 Package 与 Realization、前后对比图及 fail-closed 验证。机械流程通过；项目所有者 fidelity review 仍为 `PENDING`。
+R-004 已完成有界 fidelity profile、结构/Token/Region/Visual 四类比较、一个结构化修正请求、新 Package 与 Realization、前后对比图及 fail-closed 验证。独立评审与项目所有者 Verdict 均为 `PASS`，R-004 已接受。
 
 Canonical fidelity output: `examples/golden-candidates/crafts-ui-multi-image/fidelity/r004-v2/`
 
@@ -61,10 +61,10 @@ package-ffa63ca8b0ea69af
 - Blur fixture 不支持字体、微间距与图标几何精度结论。
 - 本轮仅执行一次修正，不支持无限自动迭代。
 - AgentSuggestionCard 仍是 preview-only contract，其生产语义未知。
-- 项目所有者尚未对 fidelity loop 给出最终 Verdict。
+- 独立评审和项目所有者均已接受该 fidelity loop。
 
 ## R-005 Recommendation
 
-仅在项目所有者对 R-004 返回 `PASS` 或完成 `PASS WITH CHANGES` 要求后，进入 R-005 standalone packaging、agent interoperability 与 MVP release candidate。
+R-005 standalone packaging、agent interoperability 与 MVP release candidate 已获授权。
 
 > R-004 proves that Recrafts can verify and refine realization quality within a declared fidelity scope. It does not prove unrestricted website cloning, pixel-perfect recreation, production component readiness, full VIS generation, direct CraftsOS integration or production readiness.

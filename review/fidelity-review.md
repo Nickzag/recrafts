@@ -18,6 +18,14 @@
 
 ## Project-owner Verdict
 
-`PENDING`
+`PASS`
 
-Allowed verdicts: `PASS`, `PASS WITH CHANGES`, `REWORK`.
+## Decisions
+
+- Fidelity profile accepted as bounded to five surfaces, three viewports and four comparison modes.
+- Finding taxonomy accepted; supported deviations, must-fix findings and not-testable precision remain distinct.
+- Gallery density accepted as a `component-renderer` issue.
+- Before/after improvement accepted without changing tokens, provenance or preview-only status.
+- MVP claim approved as “bounded fidelity verification”; unrestricted cloning, pixel-perfect recreation and production readiness remain excluded.
+
+R-004 is accepted. R-005 standalone packaging, agent interoperability and MVP release-candidate work is authorized.
