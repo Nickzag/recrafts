@@ -1,12 +1,15 @@
 # Recrafts
 
-Recrafts 是独立的视觉重构 foundation Skill。当前 R-001 基础提供来源/区域分类、脱敏证据、provenance、Scoped Design Contract、组件 inventory 和确定性校验；它不证明视觉生成或还原质量。
+Recrafts 是独立的视觉重构 foundation Skill。R-002 提供 Host-Agent MVP Extraction Runtime：真实消费单图、多图或公开网站证据，生成区域分类、provenance、Scoped Token candidates、Layout Grammar、Component candidates 和 draft `design.md`。
 
 ```bash
-npm run validate:r001
-npm run test:r001
+node runtime/recraft-cli.mjs analyze-image --input <image> --output <empty-dir>
+node runtime/recraft-cli.mjs analyze-images --input <input-dir> --output <empty-dir>
+node runtime/recraft-cli.mjs analyze-website --url <public-url> --output <empty-dir>
+npm test
+npm run validate:r002
 ```
 
-Golden Candidate 位于 `examples/golden-candidates/crafts-ui-multi-image/`。其中 13 张图片都是已模糊、去元数据的 fixture evidence，人工预填的 `expected-*` 数据会明确标注，不能当作模型提取证据。
+Runtime 拒绝 Oracle、expected 文件、重复图像、私网/非 HTTP 网站、登录墙、超过三条 route 和浏览器 Action。它不生成 Preview，不声明 fidelity、完整网站复刻、生产组件或生产就绪。
 
-`runtime/local_adapter.mjs` 仍是旧版 standalone mock，用于保留独立运行入口；它尚未消费 R-001 多来源契约，也不应被视为稳定运行时。
+Primary Fixture 的 `input/` 是 runtime 输入，`oracle/` 只允许在运行后比较，`generated/` 是 runtime evidence。当前模糊 Fixture 仅支持宏观布局、表面层级、宽泛色彩家族和部分状态识别；精确字体、微间距、Icon geometry 与 pixel fidelity 均为 unsupported。

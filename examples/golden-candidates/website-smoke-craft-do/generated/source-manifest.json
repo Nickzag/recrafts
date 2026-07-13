@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "run_id": "run-de8d0f841708",
+  "mode": "public-website",
+  "sources": [
+    {
+      "source_id": "www-craft-do-ecbbfe1d",
+      "file": "website-capture.json",
+      "sha256": "153d4e43962f0a609c10c0bdcf03f36875692bcb3b381436c60c0245e881fb8d",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      },
+      "source_type": "public-website",
+      "regions": [
+        {
+          "id": "captured-page",
+          "class": "marketing-surface",
+          "bbox": [
+            0,
+            0,
+            1440,
+            900
+          ],
+          "confidence": 0.7,
+          "reason": "Explicit public marketing homepage capture; Host Agent must refine subregions",
+          "evidence_refs": []
+        }
+      ],
+      "priority": "primary",
+      "warnings": []
+    }
+  ]
+}

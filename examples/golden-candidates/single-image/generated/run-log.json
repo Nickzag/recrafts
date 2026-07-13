@@ -1,0 +1,20 @@
+{
+  "run_id": "run-1ab3f76f7705",
+  "mode": "single-image",
+  "stages": [
+    "intake",
+    "capture",
+    "normalize",
+    "classify",
+    "extract",
+    "compose",
+    "validate",
+    "export-draft"
+  ],
+  "inputs": [
+    {
+      "source_id": "non-sensitive-empty-state-6ffd334f",
+      "sha256": "6ffd334fa21be0ca87f1983805efd9fe3cba5786413af958cbd936aad91b662d"
+    }
+  ]
+}

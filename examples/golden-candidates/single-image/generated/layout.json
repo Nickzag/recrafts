@@ -1,0 +1,22 @@
+{
+  "app_shell": "unknown",
+  "region_hierarchy": [
+    {
+      "source_id": "non-sensitive-empty-state-6ffd334f",
+      "region_id": "whole-source",
+      "class": "unknown"
+    }
+  ],
+  "column_rules": "inferred-from-regions",
+  "alignment": "not-testable",
+  "density": "broad-only",
+  "whitespace": "broad-only",
+  "relationships": "candidate",
+  "responsive_unknowns": [
+    "breakpoints",
+    "reflow"
+  ],
+  "platform_assumptions": [
+    "desktop screenshots unless manifest states otherwise"
+  ]
+}

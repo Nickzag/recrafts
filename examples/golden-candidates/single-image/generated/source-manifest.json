@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "run_id": "run-1ab3f76f7705",
+  "mode": "single-image",
+  "sources": [
+    {
+      "source_id": "non-sensitive-empty-state-6ffd334f",
+      "file": "non-sensitive-empty-state.png",
+      "sha256": "6ffd334fa21be0ca87f1983805efd9fe3cba5786413af958cbd936aad91b662d",
+      "dimensions": {
+        "width": 3574,
+        "height": 2240
+      },
+      "source_type": "image",
+      "regions": [
+        {
+          "id": "whole-source",
+          "class": "unknown",
+          "bbox": [
+            0,
+            0,
+            3574,
+            2240
+          ],
+          "confidence": 0.2,
+          "reason": "Host-agent classification required",
+          "evidence_refs": [],
+          "area_ratio": 1
+        }
+      ],
+      "priority": "primary",
+      "warnings": []
+    }
+  ]
+}

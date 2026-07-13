@@ -1,0 +1,29 @@
+command: npm run test:r001
+cwd: /var/folders/d_/cfp9lr2d7wq045x5qrj9djch0000gn/T/recrafts-r001-clean-CeepnE/checkout
+exit_code: 0
+
+
+> recrafts@0.2.0 test:r001
+> node --test tests/r001-validator.test.mjs
+
+✔ golden candidate passes the public validator CLI (149.661278ms)
+✔ fails closed: raw screenshot tracked (185.63278ms)
+✔ fails closed: secret-like string (177.73963ms)
+✔ fails closed: unclassified region (184.64884ms)
+✔ fails closed: missing evidence ref (180.961483ms)
+✔ fails closed: user-content green promoted globally (183.740747ms)
+✔ fails closed: marketing blue promoted globally (173.661273ms)
+✔ fails closed: inferred value marked confirmed (198.478516ms)
+✔ fails closed: duplicate source id (269.952367ms)
+✔ fails closed: stale hash (182.22743ms)
+✔ fails closed: missing source (181.431506ms)
+✔ fails closed: direct Layoutcrafts import (280.103123ms)
+✔ fails closed: final claim without review (170.489424ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2639.336584

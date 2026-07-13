@@ -1,0 +1,68 @@
+{
+  "run_id": "run-1f13a391f3f5",
+  "mode": "multi-image",
+  "stages": [
+    "intake",
+    "capture",
+    "normalize",
+    "classify",
+    "extract",
+    "compose",
+    "validate",
+    "export-draft"
+  ],
+  "inputs": [
+    {
+      "source_id": "library-card-view",
+      "sha256": "6bab60b9d7dcae75193f5a46730dd35fc8620ff55f98848902d4eedd644975eb"
+    },
+    {
+      "source_id": "library-list-view",
+      "sha256": "cc3ca02fb6f7b8de2d0de5c443bb0ffe6abb0d61e7e99723c0e33cc726c0a63b"
+    },
+    {
+      "source_id": "library-masonry-view",
+      "sha256": "d7af20148d492e30b0484693f542eb1ef1e1947ce906aa5f949de56ac55fd8cb"
+    },
+    {
+      "source_id": "editor-insert-inspector",
+      "sha256": "2c296aad4d1014d90c98d2466736679aabe0795ef2395fdd4eafa3307867f24a"
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "sha256": "a42fabdb65bb7520989810d545533eb84d7b8f41e1b7cf73ba6bac7b68824175"
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "sha256": "74fd845d662d2692b3812f0d7e8e9670f92e6120103ad0c870d9ca39571a2a62"
+    },
+    {
+      "source_id": "style-gallery-modal",
+      "sha256": "27f02c5a2b2d7f9b97c79968314315374cde138c61c2f681ccea3ddcdfc7c935"
+    },
+    {
+      "source_id": "page-info-inspector",
+      "sha256": "735247267ffa30e280e88f60c6d88c47fb47041d2722a455bfe79b012b54bc5e"
+    },
+    {
+      "source_id": "imagine-onboarding",
+      "sha256": "7a5290fd7538a4770ed11524d4b02185f648b02975cb249363025b036caa5f61"
+    },
+    {
+      "source_id": "appearance-settings",
+      "sha256": "17c57163627ec6b69f4042b114752d0917ab08ae876bcbf285efba2c1f452307"
+    },
+    {
+      "source_id": "premium-pricing-modal",
+      "sha256": "391cd569f049d8c1ee92e3e59cdd9e996a48044cfa26d61a3455da3a1263a146"
+    },
+    {
+      "source_id": "shared-empty-state",
+      "sha256": "6ffd334fa21be0ca87f1983805efd9fe3cba5786413af958cbd936aad91b662d"
+    },
+    {
+      "source_id": "editor-focus-view",
+      "sha256": "874a7a4fb09de164da4885e2cd9f5b47d83ff7a3e16fbbdb7339613c01536eb2"
+    }
+  ]
+}

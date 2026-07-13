@@ -29,8 +29,13 @@ Recrafts 是可独立安装和运行的视觉重构 Skill。它从获准使用�
 ## 运行
 
 ```bash
-node runtime/local_adapter.mjs input output
+node runtime/recraft-cli.mjs analyze-image --input <image> --output <empty-output-dir>
+node runtime/recraft-cli.mjs analyze-images --input <input-dir> --output <empty-output-dir>
+node runtime/recraft-cli.mjs analyze-website --url <public-url> --output <empty-output-dir>
 npm run validate:r001
+npm run validate:r002
 ```
+
+Runtime 只能读取明确的 input path，拒绝 `oracle/` 和 `expected-*`。图片推理由 Host Agent 负责；脚本负责格式、hash、尺寸、region、provenance、Scope、阶段状态和 draft Artifact 的确定性组合。网站模式仅允许公开 HTTP(S) 页面，最多三个显式 route，不执行登录、验证码绕过、表单提交或破坏性 Action。
 
 交互、分类、Design Contract、预览评审和修正流程分别由 `prompts/` 中的指南约束；模板位于 `templates/`。

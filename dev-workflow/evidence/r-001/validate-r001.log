@@ -1,0 +1,13 @@
+command: npm run validate:r001
+cwd: /var/folders/d_/cfp9lr2d7wq045x5qrj9djch0000gn/T/recrafts-r001-clean-CeepnE/checkout
+exit_code: 0
+
+
+> recrafts@0.2.0 validate:r001
+> node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs
+
+R-001 validation passed (4 check groups)
+- Skill contract files exist
+- Schemas parse and declare dialect, id and root type
+- 13 sources, hashes, dimensions and region classifications are valid
+- Repository text secret scan passed

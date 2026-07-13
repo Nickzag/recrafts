@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "recrafts/extraction-output",
+  "type": "object",
+  "required": ["status", "readiness", "preview_readiness", "fidelity_readiness", "source_manifest", "source_classification", "evidence_map", "tokens", "layout", "components", "design_md"],
+  "properties": {
+    "status": { "const": "draft" },
+    "readiness": { "const": "extraction-complete" },
+    "preview_readiness": { "const": "pending" },
+    "fidelity_readiness": { "const": "not-started" },
+    "source_manifest": { "type": "string" },
+    "source_classification": { "type": "string" },
+    "evidence_map": { "type": "string" },
+    "tokens": { "type": "string" },
+    "layout": { "type": "string" },
+    "components": { "type": "string" },
+    "design_md": { "const": "design.md" }
+  },
+  "additionalProperties": false
+}

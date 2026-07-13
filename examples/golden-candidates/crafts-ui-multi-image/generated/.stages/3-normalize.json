@@ -1,0 +1,19 @@
+{
+  "stage": "normalize",
+  "status": "completed",
+  "source_ids": [
+    "library-card-view",
+    "library-list-view",
+    "library-masonry-view",
+    "editor-insert-inspector",
+    "editor-format-inspector",
+    "editor-style-inspector",
+    "style-gallery-modal",
+    "page-info-inspector",
+    "imagine-onboarding",
+    "appearance-settings",
+    "premium-pricing-modal",
+    "shared-empty-state",
+    "editor-focus-view"
+  ]
+}

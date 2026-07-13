@@ -1,0 +1,20 @@
+{
+  "run_id": "run-de8d0f841708",
+  "mode": "public-website",
+  "stages": [
+    "intake",
+    "capture",
+    "normalize",
+    "classify",
+    "extract",
+    "compose",
+    "validate",
+    "export-draft"
+  ],
+  "inputs": [
+    {
+      "source_id": "www-craft-do-ecbbfe1d",
+      "sha256": "153d4e43962f0a609c10c0bdcf03f36875692bcb3b381436c60c0245e881fb8d"
+    }
+  ]
+}

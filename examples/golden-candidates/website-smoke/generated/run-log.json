@@ -1,0 +1,20 @@
+{
+  "run_id": "run-0d6592d5605b",
+  "mode": "public-website",
+  "stages": [
+    "intake",
+    "capture",
+    "normalize",
+    "classify",
+    "extract",
+    "compose",
+    "validate",
+    "export-draft"
+  ],
+  "inputs": [
+    {
+      "source_id": "captured-framer-website-d1bd16d1",
+      "sha256": "dec58d0f4b43f81386158f98b536f40d45c14bb3146b41a8f10f41475a05cb27"
+    }
+  ]
+}

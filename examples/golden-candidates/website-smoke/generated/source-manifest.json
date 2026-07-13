@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "run_id": "run-0d6592d5605b",
+  "mode": "public-website",
+  "sources": [
+    {
+      "source_id": "captured-framer-website-d1bd16d1",
+      "file": "website-capture.json",
+      "sha256": "dec58d0f4b43f81386158f98b536f40d45c14bb3146b41a8f10f41475a05cb27",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      },
+      "source_type": "public-website",
+      "regions": [
+        {
+          "id": "captured-page",
+          "class": "marketing-surface",
+          "bbox": [
+            0,
+            0,
+            1440,
+            900
+          ],
+          "confidence": 0.7,
+          "reason": "Explicit public marketing homepage capture; Host Agent must refine subregions",
+          "evidence_refs": []
+        }
+      ],
+      "priority": "primary",
+      "warnings": []
+    }
+  ]
+}

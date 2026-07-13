@@ -1,0 +1,1150 @@
+{
+  "url": "https://captured.framer.website/",
+  "final_url": "https://captured.framer.website/",
+  "status": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "html_sha256": "d1bd16d1facf776c12ff6f620b44fc1dab8601b61fd2fdba9b6567590cd9daed",
+  "routes": [],
+  "dom_summary": {
+    "title": "Samuel Spenser | Professional Photographer in London",
+    "headings": [
+      "ART IN FOCUS",
+      "ART IN FOCUS",
+      "I d o n ’ t j u s t t a k e p h o t o s",
+      "Ready to capture your moments?",
+      "Ready to capture your moments?",
+      "Ready to capture your moments?",
+      "What I can offer",
+      "Professional Headshots",
+      "Professional Headshots",
+      "Events",
+      "Events",
+      "Portrait Photography",
+      "Portrait Photography",
+      "Weddings",
+      "Weddings",
+      "Family Sessions",
+      "Family Sessions",
+      "Lifestyle Photography",
+      "Lifestyle Photography",
+      "Why choose me as your Photographer?",
+      "See the magic for yourself",
+      "Morning field trip",
+      "Morning field trip",
+      "Morning field trip",
+      "Posing on a chair",
+      "Posing on a chair",
+      "Posing on a chair",
+      "Annie and her dog Star",
+      "Annie and her dog Star",
+      "Annie and her dog Star"
+    ]
+  },
+  "css_variable_candidates": [
+    {
+      "name": "--token-2b0e121e-0368-44f6-b6fc-57cffb0ea05b",
+      "value": "#fff"
+    },
+    {
+      "name": "--token-f8c6fc17-6126-48ad-8306-922d51919d56",
+      "value": "#111112"
+    },
+    {
+      "name": "--token-d64fb00e-b5cb-4b79-a672-ed51c8d41600",
+      "value": "#f1f1f1"
+    },
+    {
+      "name": "--token-88d5059b-bc5d-4e0a-ad79-b21e9a2c4948",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "--infinity",
+      "value": "infinity"
+    },
+    {
+      "name": "--framer-will-change-override",
+      "value": "transform"
+    },
+    {
+      "name": "--framer-will-change-filter-override",
+      "value": "filter"
+    },
+    {
+      "name": "--text-decoration",
+      "value": "var(--framer-text-decoration-style,solid)var(--framer-text-decoration,none)var(--framer-text-decoration-color,currentcolor)var(--framer-text-decoration-thickness,auto)"
+    },
+    {
+      "name": "--text-decoration-skip-ink",
+      "value": "var(--framer-text-decoration-skip-ink)"
+    },
+    {
+      "name": "--text-underline-offset",
+      "value": "var(--framer-text-decoration-offset)"
+    },
+    {
+      "name": "--font-family",
+      "value": "var(--framer-font-family)"
+    },
+    {
+      "name": "--font-style",
+      "value": "var(--framer-font-style)"
+    },
+    {
+      "name": "--font-weight",
+      "value": "var(--framer-font-weight)"
+    },
+    {
+      "name": "--text-color",
+      "value": "var(--framer-text-color)"
+    },
+    {
+      "name": "--letter-spacing",
+      "value": "var(--framer-letter-spacing)"
+    },
+    {
+      "name": "--font-size",
+      "value": "var(--framer-font-size)"
+    },
+    {
+      "name": "--text-transform",
+      "value": "var(--framer-text-transform)"
+    },
+    {
+      "name": "--line-height",
+      "value": "var(--framer-line-height)"
+    },
+    {
+      "name": "--overflow-clip-fallback",
+      "value": "hidden"
+    },
+    {
+      "name": "--one-if-corner-shape-supported",
+      "value": "1"
+    },
+    {
+      "name": "--framer-aspect-ratio-supported",
+      "value": "auto"
+    },
+    {
+      "name": "--framer-aspect-ratio-supported",
+      "value": "auto"
+    },
+    {
+      "name": "--framer-will-change-override",
+      "value": "none"
+    },
+    {
+      "name": "--framer-will-change-override",
+      "value": "transform"
+    },
+    {
+      "name": "--framer-will-change-filter-override",
+      "value": "none"
+    },
+    {
+      "name": "--framer-will-change-filter-override",
+      "value": "filter"
+    },
+    {
+      "name": "--text-decoration",
+      "value": "var(--framer-text-decoration-style,solid)var(--framer-text-decoration,none)var(--framer-text-decoration-color,currentcolor)var(--framer-text-decoration-thickness,auto)"
+    },
+    {
+      "name": "--text-decoration-skip-ink",
+      "value": "var(--framer-text-decoration-skip-ink)"
+    },
+    {
+      "name": "--text-underline-offset",
+      "value": "var(--framer-text-decoration-offset)"
+    },
+    {
+      "name": "--font-family",
+      "value": "var(--framer-font-family)"
+    },
+    {
+      "name": "--font-style",
+      "value": "var(--framer-font-style)"
+    },
+    {
+      "name": "--font-weight",
+      "value": "var(--framer-font-weight)"
+    },
+    {
+      "name": "--text-color",
+      "value": "var(--framer-text-color)"
+    },
+    {
+      "name": "--letter-spacing",
+      "value": "var(--framer-letter-spacing)"
+    },
+    {
+      "name": "--font-size",
+      "value": "var(--framer-font-size)"
+    },
+    {
+      "name": "--text-transform",
+      "value": "var(--framer-text-transform)"
+    },
+    {
+      "name": "--line-height",
+      "value": "var(--framer-line-height)"
+    },
+    {
+      "name": "--font-family",
+      "value": "var(--framer-link-font-family,var(--framer-font-family))"
+    },
+    {
+      "name": "--font-style",
+      "value": "var(--framer-link-font-style,var(--framer-font-style))"
+    },
+    {
+      "name": "--font-weight",
+      "value": "var(--framer-link-font-weight,var(--framer-font-weight))"
+    },
+    {
+      "name": "--text-color",
+      "value": "var(--framer-link-text-color,var(--framer-text-color))"
+    },
+    {
+      "name": "--font-size",
+      "value": "var(--framer-link-font-size,var(--framer-font-size))"
+    },
+    {
+      "name": "--text-transform",
+      "value": "var(--framer-link-text-transform,var(--framer-text-transform))"
+    },
+    {
+      "name": "--text-decoration",
+      "value": "var(--framer-link-text-decoration-style,var(--framer-text-decoration-style,solid))var(--framer-link-text-decoration,var(--framer-text-decoration,none))var(--framer-link-text-decoration-color,var(--framer-text-decoration-color,currentcolor))var(--framer-link-text-decoration-thickness,var(--framer-text-decoration-thickness,auto))"
+    },
+    {
+      "name": "--text-decoration-skip-ink",
+      "value": "var(--framer-link-text-decoration-skip-ink,var(--framer-text-decoration-skip-ink))"
+    },
+    {
+      "name": "--text-underline-offset",
+      "value": "var(--framer-link-text-decoration-offset,var(--framer-text-decoration-offset))"
+    },
+    {
+      "name": "--font-family",
+      "value": "var(--framer-link-hover-font-family,var(--framer-link-font-family,var(--framer-font-family)))"
+    },
+    {
+      "name": "--font-style",
+      "value": "var(--framer-link-hover-font-style,var(--framer-link-font-style,var(--framer-font-style)))"
+    },
+    {
+      "name": "--font-weight",
+      "value": "var(--framer-link-hover-font-weight,var(--framer-link-font-weight,var(--framer-font-weight)))"
+    },
+    {
+      "name": "--text-color",
+      "value": "var(--framer-link-hover-text-color,var(--framer-link-text-color,var(--framer-text-color)))"
+    },
+    {
+      "name": "--font-size",
+      "value": "var(--framer-link-hover-font-size,var(--framer-link-font-size,var(--framer-font-size)))"
+    },
+    {
+      "name": "--text-transform",
+      "value": "var(--framer-link-hover-text-transform,var(--framer-link-text-transform,var(--framer-text-transform)))"
+    },
+    {
+      "name": "--text-decoration",
+      "value": "var(--framer-link-hover-text-decoration-style,var(--framer-link-text-decoration-style,var(--framer-text-decoration-style,solid)))var(--framer-link-hover-text-decoration,var(--framer-link-text-decoration,var(--framer-text-decoration,none)))var(--framer-link-hover-text-decoration-color,var(--framer-link-text-decoration-color,var(--framer-text-decoration-color,currentcolor)))var(--framer-link-hover-text-decoration-thickness,var(--framer-link-text-decoration-thickness,var(--framer-text-decoration-thickness,auto)))"
+    },
+    {
+      "name": "--text-decoration-skip-ink",
+      "value": "var(--framer-link-hover-text-decoration-skip-ink,var(--framer-link-text-decoration-skip-ink,var(--framer-text-decoration-skip-ink)))"
+    },
+    {
+      "name": "--text-underline-offset",
+      "value": "var(--framer-link-hover-text-decoration-offset,var(--framer-link-text-decoration-offset,var(--framer-text-decoration-offset)))"
+    },
+    {
+      "name": "--font-family",
+      "value": "var(--framer-link-current-font-family,var(--framer-link-font-family,var(--framer-font-family)))"
+    },
+    {
+      "name": "--font-style",
+      "value": "var(--framer-link-current-font-style,var(--framer-link-font-style,var(--framer-font-style)))"
+    },
+    {
+      "name": "--font-weight",
+      "value": "var(--framer-link-current-font-weight,var(--framer-link-font-weight,var(--framer-font-weight)))"
+    },
+    {
+      "name": "--text-color",
+      "value": "var(--framer-link-current-text-color,var(--framer-link-text-color,var(--framer-text-color)))"
+    },
+    {
+      "name": "--font-size",
+      "value": "var(--framer-link-current-font-size,var(--framer-link-font-size,var(--framer-font-size)))"
+    },
+    {
+      "name": "--text-transform",
+      "value": "var(--framer-link-current-text-transform,var(--framer-link-text-transform,var(--framer-text-transform)))"
+    },
+    {
+      "name": "--text-decoration",
+      "value": "var(--framer-link-current-text-decoration-style,var(--framer-link-text-decoration-style,var(--framer-text-decoration-style,solid)))var(--framer-link-current-text-decoration,var(--framer-link-text-decoration,var(--framer-text-decoration,none)))var(--framer-link-current-text-decoration-color,var(--framer-link-text-decoration-color,var(--framer-text-decoration-color,currentcolor)))var(--framer-link-current-text-decoration-thickness,var(--framer-link-text-decoration-thickness,var(--framer-text-decoration-thickness,auto)))"
+    },
+    {
+      "name": "--text-decoration-skip-ink",
+      "value": "var(--framer-link-current-text-decoration-skip-ink,var(--framer-link-text-decoration-skip-ink,var(--framer-text-decoration-skip-ink)))"
+    },
+    {
+      "name": "--text-underline-offset",
+      "value": "var(--framer-link-current-text-decoration-offset,var(--framer-link-text-decoration-offset,var(--framer-text-decoration-offset)))"
+    },
+    {
+      "name": "--framer-font-family",
+      "value": "Inter,Inter Placeholder,sans-serif"
+    },
+    {
+      "name": "--framer-font-style",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-weight",
+      "value": "500"
+    },
+    {
+      "name": "--framer-text-color",
+      "value": "#000"
+    },
+    {
+      "name": "--framer-font-size",
+      "value": "16px"
+    },
+    {
+      "name": "--framer-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--framer-text-transform",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-decoration",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-decoration-style",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-decoration-color",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-decoration-thickness",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-decoration-skip-ink",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-decoration-offset",
+      "value": "none"
+    },
+    {
+      "name": "--framer-line-height",
+      "value": "1.2em"
+    },
+    {
+      "name": "--framer-text-alignment",
+      "value": "start"
+    },
+    {
+      "name": "--framer-font-open-type-features",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-text-background-color",
+      "value": "initial"
+    },
+    {
+      "name": "--framer-text-background-radius",
+      "value": "initial"
+    },
+    {
+      "name": "--framer-text-background-corner-shape",
+      "value": "initial"
+    },
+    {
+      "name": "--framer-text-background-padding",
+      "value": "initial"
+    },
+    {
+      "name": "--list-style-type",
+      "value": "decimal"
+    },
+    {
+      "name": "--framer-font-family",
+      "value": "Inter,Inter Placeholder,sans-serif"
+    },
+    {
+      "name": "--framer-font-style",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-weight",
+      "value": "500"
+    },
+    {
+      "name": "--framer-text-color",
+      "value": "#000"
+    },
+    {
+      "name": "--framer-font-size",
+      "value": "16px"
+    },
+    {
+      "name": "--framer-letter-spacing",
+      "value": "0"
+    },
+    {
+      "name": "--framer-text-transform",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-decoration",
+      "value": "none"
+    },
+    {
+      "name": "--framer-line-height",
+      "value": "1.2em"
+    },
+    {
+      "name": "--framer-text-alignment",
+      "value": "start"
+    },
+    {
+      "name": "--framer-font-open-type-features",
+      "value": "normal"
+    },
+    {
+      "name": "--font-variation-settings",
+      "value": "normal"
+    },
+    {
+      "name": "--overflow-clip-fallback",
+      "value": "hidden"
+    },
+    {
+      "name": "--one-if-corner-shape-supported",
+      "value": "1"
+    },
+    {
+      "name": "--framer-aspect-ratio-supported",
+      "value": "auto"
+    },
+    {
+      "name": "--framer-aspect-ratio-supported",
+      "value": "auto"
+    },
+    {
+      "name": "--framer-aspect-ratio-supported",
+      "value": "auto"
+    },
+    {
+      "name": "--framer-aspect-ratio-supported",
+      "value": "auto"
+    },
+    {
+      "name": "--framer-aspect-ratio-supported",
+      "value": "auto"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-link-text-color",
+      "value": "#09f"
+    },
+    {
+      "name": "--framer-link-text-decoration",
+      "value": "underline"
+    },
+    {
+      "name": "--framer-link-text-color",
+      "value": "#09f"
+    },
+    {
+      "name": "--framer-link-text-decoration",
+      "value": "underline"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-text-wrap-override",
+      "value": "balance"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-text-wrap-override",
+      "value": "balance"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--border-bottom-width",
+      "value": "1px"
+    },
+    {
+      "name": "--border-color",
+      "value": "#ffffff1f"
+    },
+    {
+      "name": "--border-left-width",
+      "value": "0px"
+    },
+    {
+      "name": "--border-right-width",
+      "value": "0px"
+    },
+    {
+      "name": "--border-style",
+      "value": "solid"
+    },
+    {
+      "name": "--border-top-width",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--border-bottom-width",
+      "value": "0px"
+    },
+    {
+      "name": "--border-color",
+      "value": "var(--token-f8c6fc17-6126-48ad-8306-922d51919d56,#111112)"
+    },
+    {
+      "name": "--border-left-width",
+      "value": "0px"
+    },
+    {
+      "name": "--border-right-width",
+      "value": "0px"
+    },
+    {
+      "name": "--border-style",
+      "value": "solid"
+    },
+    {
+      "name": "--border-top-width",
+      "value": "2px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "0px"
+    },
+    {
+      "name": "--framer-font-family",
+      "value": "\"Inter\",\"Inter Placeholder\",sans-serif"
+    },
+    {
+      "name": "--framer-font-family-bold",
+      "value": "\"Inter\",\"Inter Placeholder\",sans-serif"
+    },
+    {
+      "name": "--framer-font-family-bold-italic",
+      "value": "\"Inter\",\"Inter Placeholder\",sans-serif"
+    },
+    {
+      "name": "--framer-font-family-italic",
+      "value": "\"Inter\",\"Inter Placeholder\",sans-serif"
+    },
+    {
+      "name": "--framer-font-open-type-features",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-size",
+      "value": "22px"
+    },
+    {
+      "name": "--framer-font-style",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-style-bold",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-style-bold-italic",
+      "value": "italic"
+    },
+    {
+      "name": "--framer-font-style-italic",
+      "value": "italic"
+    },
+    {
+      "name": "--framer-font-weight",
+      "value": "600"
+    },
+    {
+      "name": "--framer-font-weight-bold",
+      "value": "700"
+    },
+    {
+      "name": "--framer-font-weight-bold-italic",
+      "value": "700"
+    },
+    {
+      "name": "--framer-font-weight-italic",
+      "value": "600"
+    },
+    {
+      "name": "--framer-letter-spacing",
+      "value": "-.07em"
+    },
+    {
+      "name": "--framer-line-height",
+      "value": "1em"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "20px"
+    },
+    {
+      "name": "--framer-text-alignment",
+      "value": "right"
+    },
+    {
+      "name": "--framer-text-color",
+      "value": "#1111124d"
+    },
+    {
+      "name": "--framer-text-decoration",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-stroke-color",
+      "value": "initial"
+    },
+    {
+      "name": "--framer-text-stroke-width",
+      "value": "initial"
+    },
+    {
+      "name": "--framer-text-transform",
+      "value": "none"
+    },
+    {
+      "name": "--framer-font-family",
+      "value": "\"Inter\",\"Inter Placeholder\",sans-serif"
+    },
+    {
+      "name": "--framer-font-family-bold",
+      "value": "\"Inter\",\"Inter Placeholder\",sans-serif"
+    },
+    {
+      "name": "--framer-font-family-bold-italic",
+      "value": "\"Inter\",\"Inter Placeholder\",sans-serif"
+    },
+    {
+      "name": "--framer-font-family-italic",
+      "value": "\"Inter\",\"Inter Placeholder\",sans-serif"
+    },
+    {
+      "name": "--framer-font-open-type-features",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-size",
+      "value": "18px"
+    },
+    {
+      "name": "--framer-font-style",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-style-bold",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-style-bold-italic",
+      "value": "italic"
+    },
+    {
+      "name": "--framer-font-style-italic",
+      "value": "italic"
+    },
+    {
+      "name": "--framer-font-weight",
+      "value": "600"
+    },
+    {
+      "name": "--framer-font-weight-bold",
+      "value": "700"
+    },
+    {
+      "name": "--framer-font-weight-bold-italic",
+      "value": "700"
+    },
+    {
+      "name": "--framer-font-weight-italic",
+      "value": "600"
+    },
+    {
+      "name": "--framer-letter-spacing",
+      "value": "-.07em"
+    },
+    {
+      "name": "--framer-line-height",
+      "value": "1em"
+    },
+    {
+      "name": "--framer-paragraph-spacing",
+      "value": "20px"
+    },
+    {
+      "name": "--framer-text-alignment",
+      "value": "right"
+    },
+    {
+      "name": "--framer-text-color",
+      "value": "#1111124d"
+    },
+    {
+      "name": "--framer-text-decoration",
+      "value": "none"
+    },
+    {
+      "name": "--framer-text-stroke-color",
+      "value": "initial"
+    },
+    {
+      "name": "--framer-text-stroke-width",
+      "value": "initial"
+    },
+    {
+      "name": "--framer-text-transform",
+      "value": "none"
+    },
+    {
+      "name": "--framer-font-family",
+      "value": "\"Playfair Display\",\"Playfair Display Placeholder\",serif"
+    },
+    {
+      "name": "--framer-font-family-bold",
+      "value": "\"Playfair Display\",\"Playfair Display Placeholder\",serif"
+    },
+    {
+      "name": "--framer-font-family-bold-italic",
+      "value": "\"Playfair Display\",\"Playfair Display Placeholder\",serif"
+    },
+    {
+      "name": "--framer-font-family-italic",
+      "value": "\"Playfair Display\",\"Playfair Display Placeholder\",serif"
+    },
+    {
+      "name": "--framer-font-open-type-features",
+      "value": "normal"
+    },
+    {
+      "name": "--framer-font-size",
+      "value": "124px"
+    },
+    {
+      "name": "--framer-font-style",
+      "value": "italic"
+    },
+    {
+      "name": "--framer-font-style-bold",
+      "value": "italic"
+    },
+    {
+      "name": "--framer-font-style-bold-italic",
+      "value": "italic"
+    },
+    {
+      "name": "--framer-font-style-italic",
+      "value": "italic"
+    },
+    {
+      "name": "--framer-font-weight",
+      "value": "400"
+    },
+    {
+      "name": "--framer-font-weight-bold",
+      "value": "700"
+    }
+  ],
+  "assets_manifest": [
+    "https://framer.com/edit/init.mjs",
+    "https://framerusercontent.com/images/pLgbJKQjYbi1aq49T5RQNbeGxY.png",
+    "https://framerusercontent.com/images/pLgbJKQjYbi1aq49T5RQNbeGxY.png",
+    "https://framerusercontent.com/images/pLgbJKQjYbi1aq49T5RQNbeGxY.png",
+    "https://fonts.gstatic.com",
+    "https://captured.framer.website/",
+    "https://events.framer.com/script?v=2",
+    "./",
+    "tel:555-666-7777",
+    "mailto:hello@samuelspenser.com",
+    "https://x.com/bynneh",
+    "https://framerusercontent.com/images/cXM5l9kL1QGsxbsP05B5Cjlx6M.jpg?width=715&amp;height=408",
+    "./",
+    "./portfolio",
+    "./blog",
+    "./about",
+    "./contact",
+    "https://framerusercontent.com/images/Tz1vxZ3UYrst1X3xTGaa1v7qR8.jpg?width=977&amp;height=1463",
+    "./",
+    "tel:555-666-7777",
+    "mailto:hello@samuelspenser.com",
+    "https://x.com/bynneh",
+    "https://framerusercontent.com/images/cXM5l9kL1QGsxbsP05B5Cjlx6M.jpg?width=715&amp;height=408",
+    "./",
+    "./portfolio",
+    "./blog",
+    "./about",
+    "./contact",
+    "https://framerusercontent.com/images/Tz1vxZ3UYrst1X3xTGaa1v7qR8.jpg?width=977&amp;height=1463",
+    "./",
+    "tel:555-666-7777",
+    "mailto:hello@samuelspenser.com",
+    "https://x.com/bynneh",
+    "./",
+    "./portfolio",
+    "./blog",
+    "./about",
+    "./contact",
+    "#svg877845336_897",
+    "#svg877845336_897",
+    "#svg535972526_171",
+    "https://framerusercontent.com/images/ZxlgYDtOkO5BP3eNngIM1I2VKhk.jpg?width=1616&amp;height=1177",
+    "https://framerusercontent.com/images/6iUYtFYxD9DVLQ99fROmebaIbuE.jpg?width=1616&amp;height=1177",
+    "https://framerusercontent.com/images/D0l9JuVR6gYYc9Gp3lU7eYsfd5o.jpg?width=1920&amp;height=1506",
+    "#svg877845336_897",
+    "#svg535972526_171",
+    "https://framerusercontent.com/images/ZxlgYDtOkO5BP3eNngIM1I2VKhk.jpg?width=1616&amp;height=1177",
+    "https://framerusercontent.com/images/6iUYtFYxD9DVLQ99fROmebaIbuE.jpg?width=1616&amp;height=1177",
+    "https://framerusercontent.com/images/D0l9JuVR6gYYc9Gp3lU7eYsfd5o.jpg?width=1920&amp;height=1506",
+    "#svg-578069218_14154",
+    "#svg-578069218_14154",
+    "#svg-177543108_311",
+    "https://framerusercontent.com/images/XjakqaIw4qjfG9YUjZ9MhHfuwHA.png?width=1080&amp;height=1080",
+    "#svg-1515436770_3471",
+    "https://framerusercontent.com/images/PCGIsgllNQswFJo4vzrPNQLHaGE.jpg?width=1308&amp;height=930",
+    "./contact",
+    "https://framerusercontent.com/images/wOpnQdnx8iRACvTbKpT2LeQypc.png?width=128&amp;height=128",
+    "https://framerusercontent.com/images/Ret5SrEVGgDvgfztvFEFbR2g.jpg?width=747&amp;height=911",
+    "#svg-2113629869_900",
+    "./contact",
+    "https://framerusercontent.com/images/wOpnQdnx8iRACvTbKpT2LeQypc.png?width=128&amp;height=128",
+    "https://framerusercontent.com/images/Ret5SrEVGgDvgfztvFEFbR2g.jpg?width=747&amp;height=911",
+    "#svg-2113629869_900",
+    "./contact",
+    "https://framerusercontent.com/images/wOpnQdnx8iRACvTbKpT2LeQypc.png?width=128&amp;height=128",
+    "https://framerusercontent.com/images/Ret5SrEVGgDvgfztvFEFbR2g.jpg?width=747&amp;height=911",
+    "#svg-2113629869_900",
+    "./portfolio",
+    "#svg1992126621_925",
+    "./portfolio",
+    "#svg1992126621_925",
+    "./portfolio",
+    "#svg1992126621_925",
+    "./portfolio",
+    "#svg1874155288_345",
+    "./portfolio",
+    "#svg1874155288_345",
+    "./portfolio",
+    "#svg1874155288_345",
+    "https://framerusercontent.com/images/UsIEoETvoVXGgAKJCXaqqj4VQBg.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/UsIEoETvoVXGgAKJCXaqqj4VQBg.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/k9SLjyEIrGY28ceLdJnYwsLRGSE.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/k9SLjyEIrGY28ceLdJnYwsLRGSE.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/YwFaxQoY5gy0wGFVhlcC7xgnIY.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/YwFaxQoY5gy0wGFVhlcC7xgnIY.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/LXNoy3zHJms1H7wOIvSV1ikWos.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/LXNoy3zHJms1H7wOIvSV1ikWos.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/4ex9QBnjdLEgzZtOjVrRs160.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/4ex9QBnjdLEgzZtOjVrRs160.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/QjH4HYqV4qFqUWXZg4dqxiFik.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/QjH4HYqV4qFqUWXZg4dqxiFik.jpg?width=116&amp;height=116",
+    "https://framerusercontent.com/images/9arU7hFSFjeIGVlKdA58QFAneMw.jpg?width=1920&amp;height=1150",
+    "https://framerusercontent.com/images/9arU7hFSFjeIGVlKdA58QFAneMw.jpg?width=1920&amp;height=1150",
+    "https://framerusercontent.com/images/febsTulDmLM5GKKVYjsE85lLAk.svg?width=911&amp;height=475",
+    "https://framerusercontent.com/images/On7DByaeUqVOGU929BpvsKTAxs.jpg",
+    "https://framerusercontent.com/images/EOjMsPaT2h4XFmkR22uyUEGq8lQ.jpg",
+    "https://framerusercontent.com/images/fQ4gPIVnz2Aw6mxDo8FuW0Poqm0.jpg",
+    "https://framerusercontent.com/images/ha6WgzWi3wqUmiLC9XkimWk3Xw0.jpg",
+    "https://framerusercontent.com/images/l8pve5d3cZK1hp7VW1Rf0C1Ko.jpg",
+    "https://framerusercontent.com/images/ge8xybM3BWxRy8yakWX3oM8Qgc.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/NHSfMoAcWkeHoafytJaWApKNL4.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/rDv5Ef0WmWVeH9cUAciW5Ci1rk.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/TmQmWTuQrK2ykPetjf7h0IQesyE.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/sJa3m2FUFXWWPPXm46uYiZLg57w.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/esJH6iz80J8cUrIUxO2ZBMGA.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/ge8xybM3BWxRy8yakWX3oM8Qgc.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/ge8xybM3BWxRy8yakWX3oM8Qgc.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/NHSfMoAcWkeHoafytJaWApKNL4.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/rDv5Ef0WmWVeH9cUAciW5Ci1rk.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/TmQmWTuQrK2ykPetjf7h0IQesyE.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/sJa3m2FUFXWWPPXm46uYiZLg57w.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/esJH6iz80J8cUrIUxO2ZBMGA.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/ge8xybM3BWxRy8yakWX3oM8Qgc.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/3bipQ5ce8zxbvW9kSWd56C32DU.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/9fCAjqynCpuP1jaO83FgHwhYo.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/PpfDhCy5z5UdC9fEmoDQpMuUFC4.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/HIU5TxRAa7ST68edXZQl6lEwfs.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/Spj6vqPqeIWlTxvFlxzAx7AABvo.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/u2IQEsEFezHKy1e88mqTOJQELM.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/3bipQ5ce8zxbvW9kSWd56C32DU.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/3bipQ5ce8zxbvW9kSWd56C32DU.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/9fCAjqynCpuP1jaO83FgHwhYo.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/PpfDhCy5z5UdC9fEmoDQpMuUFC4.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/HIU5TxRAa7ST68edXZQl6lEwfs.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/Spj6vqPqeIWlTxvFlxzAx7AABvo.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/u2IQEsEFezHKy1e88mqTOJQELM.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/3bipQ5ce8zxbvW9kSWd56C32DU.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/37KDKRS3Q458M9hlrl4gHIcfJs.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/oBS1FbfGspYBtQuZR4Dgp3tm8pk.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/enKTb2oHqltROQ8zNwND2GtwHk.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/2RD75ma5sVKmeLpkrUoIKkZBw.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/OGbKX4iUaOXNFXqKhAxdA2OKmww.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/q3UhM4yIcWEp4LiUzgmI0mam3mE.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/37KDKRS3Q458M9hlrl4gHIcfJs.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/37KDKRS3Q458M9hlrl4gHIcfJs.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/oBS1FbfGspYBtQuZR4Dgp3tm8pk.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/enKTb2oHqltROQ8zNwND2GtwHk.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/2RD75ma5sVKmeLpkrUoIKkZBw.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/OGbKX4iUaOXNFXqKhAxdA2OKmww.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/q3UhM4yIcWEp4LiUzgmI0mam3mE.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/37KDKRS3Q458M9hlrl4gHIcfJs.jpg?width=276&amp;height=275",
+    "https://framerusercontent.com/images/XGH1BaVFaQm3bAYyAm7xW1cl6iw.jpg?width=905&amp;height=1085",
+    "https://framerusercontent.com/images/XGH1BaVFaQm3bAYyAm7xW1cl6iw.jpg?width=905&amp;height=1085",
+    "https://x.com/bynneh",
+    "#svg1874155288_345",
+    "https://x.com/bynneh",
+    "#svg1874155288_345",
+    "https://x.com/bynneh",
+    "#svg1874155288_345",
+    "#svg-1905738972_1361",
+    "https://framerusercontent.com/images/1eke1RGCYptw6m6PakhPopg.jpg?width=903&amp;height=713",
+    "https://framerusercontent.com/images/Big5Rj6XSM81dwmwed1f2Tpa7mI.png?width=312&amp;height=305",
+    "https://framerusercontent.com/images/Big5Rj6XSM81dwmwed1f2Tpa7mI.png?width=312&amp;height=305",
+    "https://framerusercontent.com/images/NuOYls4FYkkrbwcTJ08gku6HVg.jpg?width=903&amp;height=713",
+    "https://framerusercontent.com/images/NuOYls4FYkkrbwcTJ08gku6HVg.jpg?width=903&amp;height=713",
+    "https://framerusercontent.com/images/Qx5yBzgjmhI4ZhyOxhgNHDX4L5s.png",
+    "https://framerusercontent.com/images/GQOltmsmeeYSsbHJ9ijpOx0M.png",
+    "https://framerusercontent.com/images/zfw44Zk0QT7qeSVw95UW4nDofo.png",
+    "https://framerusercontent.com/images/tgyIqFImxk9E0TkgTI36r0dsss.png",
+    "https://framerusercontent.com/images/KD8DsR7ORqW8xwxhI2lelCIp2Y.png",
+    "#svg1825239606_3041",
+    "https://framerusercontent.com/images/5qYGDxtof07iTLjzWCtk0USKQA.jpg?width=890&amp;height=401",
+    "./portfolio/field-trip",
+    "https://framerusercontent.com/images/VWANEoPOoxmiTV28SpVTD1dlppo.jpg?width=1920&amp;height=1280",
+    "./portfolio/field-trip",
+    "https://framerusercontent.com/images/VWANEoPOoxmiTV28SpVTD1dlppo.jpg?width=1920&amp;height=1280",
+    "./portfolio/field-trip",
+    "https://framerusercontent.com/images/VWANEoPOoxmiTV28SpVTD1dlppo.jpg?width=1920&amp;height=1280",
+    "./portfolio/posing-on-a-chair",
+    "https://framerusercontent.com/images/WDVIVTNmUkbPsNO21pL6PpOmwhY.jpg?width=2100&amp;height=1419",
+    "./portfolio/posing-on-a-chair",
+    "https://framerusercontent.com/images/WDVIVTNmUkbPsNO21pL6PpOmwhY.jpg?width=2100&amp;height=1419",
+    "./portfolio/posing-on-a-chair",
+    "https://framerusercontent.com/images/WDVIVTNmUkbPsNO21pL6PpOmwhY.jpg?width=2100&amp;height=1419",
+    "./portfolio/annie-and-her-dog",
+    "https://framerusercontent.com/images/KkqOsNSG92mgs59ibVzpUq9PI.jpg?width=1920&amp;height=1280",
+    "./portfolio/annie-and-her-dog",
+    "https://framerusercontent.com/images/KkqOsNSG92mgs59ibVzpUq9PI.jpg?width=1920&amp;height=1280",
+    "./portfolio/annie-and-her-dog",
+    "https://framerusercontent.com/images/KkqOsNSG92mgs59ibVzpUq9PI.jpg?width=1920&amp;height=1280",
+    "./portfolio/bride-and-groom",
+    "https://framerusercontent.com/images/Y40etlFAotlnSWODdKks4NQ8k.jpg?width=1932&amp;height=1304",
+    "./portfolio/bride-and-groom",
+    "https://framerusercontent.com/images/Y40etlFAotlnSWODdKks4NQ8k.jpg?width=1932&amp;height=1304",
+    "./portfolio/bride-and-groom",
+    "https://framerusercontent.com/images/Y40etlFAotlnSWODdKks4NQ8k.jpg?width=1932&amp;height=1304",
+    "#svg1342576375_320",
+    "https://framerusercontent.com/images/phIvmDOlMOHhTYMoevyESHiuk.jpg",
+    "#svg-1515436770_3471",
+    "#svg1342576375_320",
+    "https://framerusercontent.com/images/phIvmDOlMOHhTYMoevyESHiuk.jpg",
+    "#svg-1515436770_3471",
+    "#svg1342576375_320",
+    "https://framerusercontent.com/images/phIvmDOlMOHhTYMoevyESHiuk.jpg",
+    "#svg-1515436770_3471",
+    "./contact",
+    "#svg1874155288_345",
+    "./contact",
+    "#svg1874155288_345",
+    "./contact",
+    "#svg1874155288_345",
+    "https://framerusercontent.com/images/27Ltow1f9i1xjFp4r36Q.jpg?width=1920&amp;height=1094",
+    "https://framerusercontent.com/images/EhvTGXjqxSNjTytJPHX7ST8svIQ.jpg",
+    "https://framerusercontent.com/images/EhvTGXjqxSNjTytJPHX7ST8svIQ.jpg",
+    "https://framerusercontent.com/images/EhvTGXjqxSNjTytJPHX7ST8svIQ.jpg",
+    "./contact",
+    "#svg1992126621_925",
+    "./contact",
+    "#svg1992126621_925",
+    "./contact",
+    "#svg1992126621_925",
+    "./blog",
+    "#svg1992126621_925",
+    "./blog",
+    "#svg1992126621_925",
+    "./blog",
+    "#svg1992126621_925",
+    "./blog/why-every-business-needs-professional-photography",
+    "#svg-1903232768_927",
+    "https://framerusercontent.com/images/jCsmDoPWn3Ss24hjhFLiKlu0eAM.jpg",
+    "./blog/why-every-business-needs-professional-photography",
+    "#svg-1903232768_927",
+    "https://framerusercontent.com/images/jCsmDoPWn3Ss24hjhFLiKlu0eAM.jpg",
+    "./blog/why-every-business-needs-professional-photography",
+    "#svg-1903232768_927",
+    "https://framerusercontent.com/images/jCsmDoPWn3Ss24hjhFLiKlu0eAM.jpg",
+    "./blog/feeling-awkward-or-nervous-during-a-photoshoot-you-re-not-alone",
+    "#svg-1903232768_927",
+    "https://framerusercontent.com/images/lNVL8XFXbIh6xY1q0aD0CLkNqY.jpg",
+    "./blog/feeling-awkward-or-nervous-during-a-photoshoot-you-re-not-alone",
+    "#svg-1903232768_927",
+    "https://framerusercontent.com/images/lNVL8XFXbIh6xY1q0aD0CLkNqY.jpg",
+    "./blog/feeling-awkward-or-nervous-during-a-photoshoot-you-re-not-alone",
+    "#svg-1903232768_927",
+    "https://framerusercontent.com/images/lNVL8XFXbIh6xY1q0aD0CLkNqY.jpg",
+    "https://unpkg.com/lenis@1.3.23/dist/lenis.css",
+    "#svg1150915785_13255",
+    "tel:555-666-7777",
+    "mailto:hello@samuelspenser.com",
+    "./",
+    "./portfolio",
+    "./blog",
+    "./about",
+    "./contact",
+    "https://x.com/bynneh",
+    "https://x.com/bynneh",
+    "#svg877845336_897",
+    "https://framerusercontent.com/images/9f4dBshdXiCKf5nHbxOfBstHAws.jpg?width=2880&amp;height=1982",
+    "#svg1150915785_13255",
+    "tel:555-666-7777",
+    "mailto:hello@samuelspenser.com",
+    "./",
+    "./portfolio",
+    "./blog",
+    "./about",
+    "./contact",
+    "https://x.com/bynneh",
+    "https://x.com/bynneh",
+    "#svg877845336_897",
+    "https://framerusercontent.com/images/9f4dBshdXiCKf5nHbxOfBstHAws.jpg?width=2880&amp;height=1982",
+    "#svg1150915785_13255",
+    "tel:555-666-7777",
+    "mailto:hello@samuelspenser.com",
+    "./",
+    "./portfolio",
+    "./blog",
+    "./about",
+    "./contact",
+    "https://x.com/bynneh",
+    "https://x.com/bynneh",
+    "https://framerusercontent.com/images/9f4dBshdXiCKf5nHbxOfBstHAws.jpg?width=2880&amp;height=1982",
+    "https://framerusercontent.com/images/1hCsT98DhZMOl0nWgoJGcX8uoo.jpg?width=100&amp;height=76",
+    "https://framerusercontent.com/images/1hCsT98DhZMOl0nWgoJGcX8uoo.jpg?width=100&amp;height=76",
+    "https://www.framer.com",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/react.D1LEOo9A.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/rolldown-runtime.DsXBSD_B.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/motion.BWNVBUr6.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/framer.Cp-yuXXZ.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/Phosphor.BnKrfOMX.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/rP_ujUt1v.BHKFplLX.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/Y4eex_aGW.D_-wGRWG.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/FRDnCmBOd.DwY8D333.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/OQFUDQG12.Bd___5hu.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/shared-lib.ClGD1XPo.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/jrBwqGEOh.B8P08_Q8.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/jsPFAj3P2.NnksD0_G.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/9BRzo5sXT6wcriBYJ5L-mg6Jzva1cqmjUA5ONZKpPJc.MVD-R88-.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/EEv3Nygkn.Ik23F89C.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/A7j4jyv2g.BtgNg3nO.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/Rcgs2l1OR.C5DS6kik.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/q8sExslWw.DbSLx6Bi.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/uX7HtuG5N.D2yJdZFe.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/Cv6kYmHpn.bgS2NCX6.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/Rt3Sh5gwq.w7Cm-gQ8.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/ei1YNJ1Ze.D885IT10.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/r4GnmA_r2.Cgkvcuw5.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/DXm77IWSL.cvjr66i3.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/augiA20Il.CAKIZuP7.mjs",
+    "https://framerusercontent.com/sites/4J8qusZ7kco8vxtiK3lprS/script_main.CkeIk-3t.mjs"
+  ],
+  "screenshot": "homepage-desktop.png"
+}

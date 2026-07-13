@@ -10,7 +10,7 @@ const evidence = path.join(root, "dev-workflow/evidence/r-001");
 const checkoutParent = mkdtempSync(path.join(os.tmpdir(), "recrafts-r001-clean-"));
 const checkout = path.join(checkoutParent, "checkout");
 mkdirSync(evidence, { recursive: true });
-execFileSync("git", ["clone", "--quiet", "--no-hardlinks", "--branch", "recrafts-r001-baseline", root, checkout]);
+execFileSync("git", ["clone", "--quiet", "--no-hardlinks", "--branch", "recrafts-r001-remediated", root, checkout]);
 
 function capture(file, command, args) {
   const result = spawnSync(command, args, { cwd: checkout, encoding: "utf8" });
@@ -24,11 +24,12 @@ capture("test-r001.log", "npm", ["run", "test:r001"]);
 capture("git-status.log", "git", ["status", "--short", "--branch"]);
 capture("tracked-files.log", "git", ["ls-files"]);
 
-const fixtureManifest = path.join(checkout, "examples/golden-candidates/crafts-ui-multi-image/source-manifest.json");
+const fixtureManifest = path.join(checkout, "examples/golden-candidates/crafts-ui-multi-image/input/source-manifest.json");
 const environment = {
   evidence_class: "clean-local-checkout-runtime-evidence",
   baseline_commit: execFileSync("git", ["rev-parse", "HEAD"], { cwd: checkout, encoding: "utf8" }).trim(),
-  baseline_tag: "recrafts-r001-baseline",
+  initial_baseline_tag: "recrafts-r001-baseline",
+  baseline_tag: "recrafts-r001-remediated",
   node: execFileSync("node", ["--version"], { encoding: "utf8" }).trim(),
   npm: execFileSync("npm", ["--version"], { encoding: "utf8" }).trim(),
   operating_system: `${os.type()} ${os.release()} ${os.arch()}`,

@@ -1,0 +1,5 @@
+command: git status --short --branch
+cwd: /var/folders/d_/cfp9lr2d7wq045x5qrj9djch0000gn/T/recrafts-r001-clean-CeepnE/checkout
+exit_code: 0
+
+## HEAD (no branch)

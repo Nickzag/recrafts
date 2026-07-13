@@ -1,0 +1,33 @@
+{
+  "status": "candidate",
+  "components": [
+    {
+      "name": "MarketingPageSection",
+      "scope": "marketing",
+      "purpose": "Represent a bounded public marketing-page section",
+      "anatomy": [
+        "content-region",
+        "media-region"
+      ],
+      "visible_variants": [
+        "homepage"
+      ],
+      "visible_states": [],
+      "possible_interactions": [
+        "navigation"
+      ],
+      "token_dependencies": [
+        "marketing.visual-family"
+      ],
+      "evidence_refs": [
+        "ev-www-craft-do-ecbbfe1d-captured-page"
+      ],
+      "confidence": 0.55,
+      "unknowns": [
+        "responsive variants",
+        "interaction motion",
+        "exact typography"
+      ]
+    }
+  ]
+}

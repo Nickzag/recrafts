@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "sources": [
+    {
+      "source_id": "captured-framer-website-d1bd16d1",
+      "regions": [
+        {
+          "id": "captured-page",
+          "class": "marketing-surface",
+          "bbox": [
+            0,
+            0,
+            1440,
+            900
+          ],
+          "confidence": 0.7,
+          "reason": "Explicit public marketing homepage capture; Host Agent must refine subregions",
+          "evidence_refs": []
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

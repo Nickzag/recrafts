@@ -5,7 +5,7 @@
   "type": "skill",
   "role": "foundation_skill",
   "description": "Builds provenance-backed visual-system contracts from authorized references.",
-  "entry": "./runtime/local_adapter.mjs",
+  "entry": "./runtime/recraft-cli.mjs",
   "standalone": true,
   "os_plugin": true,
   "craftsOSCompatible": true,

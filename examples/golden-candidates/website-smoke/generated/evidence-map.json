@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "evidence": [
+    {
+      "evidence_id": "ev-captured-framer-website-d1bd16d1-captured-page",
+      "source_id": "captured-framer-website-d1bd16d1",
+      "region_id": "captured-page",
+      "evidence_type": "region-classification",
+      "observation": "marketing-surface region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "marketing",
+      "confidence": 0.7,
+      "status": "observed"
+    }
+  ]
+}

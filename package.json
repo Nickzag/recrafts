@@ -3,8 +3,25 @@
   "version": "0.2.0",
   "private": true,
   "type": "module",
+  "bin": {
+    "recraft": "./runtime/recraft-cli.mjs"
+  },
+  "files": [
+    "README.md",
+    "SKILL.md",
+    "manifest.json",
+    "runtime/",
+    "schemas/",
+    "prompts/",
+    "templates/",
+    "scripts/validate-r002-mvp-extraction.mjs",
+    "scripts/compare-r002-normalized-output.mjs"
+  ],
   "scripts": {
     "validate:r001": "node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs",
-    "test:r001": "node --test tests/r001-validator.test.mjs"
+    "test:r001": "node --test tests/r001-validator.test.mjs",
+    "validate:r002": "node scripts/validate-r002-mvp-extraction.mjs",
+    "test:r002": "node --test tests/r002-runtime.test.mjs tests/r002-validator.test.mjs",
+    "test": "node --test tests/*.test.mjs"
   }
 }

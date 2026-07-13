@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "evidence": [
+    {
+      "evidence_id": "ev-non-sensitive-empty-state-6ffd334f-whole-source",
+      "source_id": "non-sensitive-empty-state-6ffd334f",
+      "region_id": "whole-source",
+      "evidence_type": "region-classification",
+      "observation": "unknown region observed",
+      "candidate_rule": "Host Agent must interpret this bounded region",
+      "scope": "surface",
+      "confidence": 0.2,
+      "status": "observed"
+    }
+  ]
+}

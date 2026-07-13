@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "sources": [
+    {
+      "source_id": "non-sensitive-empty-state-6ffd334f",
+      "regions": [
+        {
+          "id": "whole-source",
+          "class": "unknown",
+          "bbox": [
+            0,
+            0,
+            3574,
+            2240
+          ],
+          "confidence": 0.2,
+          "reason": "Host-agent classification required",
+          "evidence_refs": [],
+          "area_ratio": 1
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

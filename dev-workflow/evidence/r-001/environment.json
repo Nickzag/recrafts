@@ -1,0 +1,14 @@
+{
+  "evidence_class": "clean-local-checkout-runtime-evidence",
+  "baseline_commit": "83880e0991c9d38c44cd9e641350d9253eb0346f",
+  "initial_baseline_tag": "recrafts-r001-baseline",
+  "baseline_tag": "recrafts-r001-remediated",
+  "node": "v24.15.0",
+  "npm": "11.12.1",
+  "operating_system": "Darwin 25.6.0 x64",
+  "ffmpeg": "ffmpeg version 8.1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "ocr_method": "Apple Vision VNRecognizeTextRequest accurate mode; credential-pattern counts only; raw recognized text was not persisted",
+  "validator_commit_hash": "83880e0991c9d38c44cd9e641350d9253eb0346f",
+  "fixture_manifest_sha256": "ec933a02b8b227e46a0a904a0d503e5b7a2c3565b984506c4cabd972adbfcce2",
+  "checkout": "ephemeral local clone path intentionally omitted from durable evidence"
+}

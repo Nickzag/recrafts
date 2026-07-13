@@ -1,0 +1,65 @@
+{
+  "status": "candidate",
+  "components": [
+    {
+      "name": "ApplicationSurface",
+      "scope": "surface",
+      "purpose": "Organize persistent product regions",
+      "anatomy": [
+        "navigation-region",
+        "content-region",
+        "context-region"
+      ],
+      "visible_variants": [],
+      "visible_states": [],
+      "possible_interactions": [
+        "unknown"
+      ],
+      "token_dependencies": [
+        "surface.hierarchy.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-navigation-shell",
+        "ev-library-card-view-state-or-inspector",
+        "ev-library-list-view-navigation-shell",
+        "ev-library-list-view-state-or-inspector",
+        "ev-library-masonry-view-navigation-shell"
+      ],
+      "confidence": 0.6,
+      "unknowns": [
+        "exact spacing",
+        "icon geometry",
+        "typography"
+      ]
+    },
+    {
+      "name": "StateContainer",
+      "scope": "surface",
+      "purpose": "Represent an observed UI state",
+      "anatomy": [
+        "state-region"
+      ],
+      "visible_variants": [
+        "observed"
+      ],
+      "visible_states": [
+        "partial"
+      ],
+      "possible_interactions": [
+        "unknown"
+      ],
+      "token_dependencies": [],
+      "evidence_refs": [
+        "ev-library-card-view-navigation-shell",
+        "ev-library-card-view-primary-surface",
+        "ev-library-card-view-state-or-inspector",
+        "ev-library-list-view-navigation-shell"
+      ],
+      "confidence": 0.5,
+      "unknowns": [
+        "transition",
+        "semantics"
+      ]
+    }
+  ]
+}
