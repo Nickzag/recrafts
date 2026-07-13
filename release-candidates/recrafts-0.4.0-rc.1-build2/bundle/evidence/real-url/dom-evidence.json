@@ -1,0 +1,962 @@
+[
+  {
+    "selector": "#promo-banner-header",
+    "tag": "a",
+    "role": null,
+    "text": "Summer Sale → Get 40% off Craft Plus and Family→ Get 40% off Craft Plus and Family"
+  },
+  {
+    "selector": "#mobile-header-content",
+    "tag": "header",
+    "role": null,
+    "text": "ProductImagineCommunityPricingLearnDownloadLog inTry Craft FreeTry Craft Free"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > div:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(1)",
+    "tag": "nav",
+    "role": null,
+    "text": "ProductImagineCommunityPricingLearnDownload"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(1) > ul > li:nth-of-type(1) > button",
+    "tag": "button",
+    "role": null,
+    "text": "Product"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Imagine"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(1) > ul > li:nth-of-type(3) > button",
+    "tag": "button",
+    "role": null,
+    "text": "Community"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(1) > ul > li:nth-of-type(4) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Pricing"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(1) > ul > li:nth-of-type(5) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(1) > ul > li:nth-of-type(6) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Download"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(2)",
+    "tag": "nav",
+    "role": null,
+    "text": "Log inTry Craft Free"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Log in"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > nav:nth-of-type(2) > ul > li:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Try Craft Free"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > div:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Try Craft Free"
+  },
+  {
+    "selector": "#mobile-header-content > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main",
+    "tag": "main",
+    "role": null,
+    "text": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.craft.do/#organization\",\"name\":\"Craft Docs\",\"url\":\"https://www.craft.do\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://www.craft.do/logo.png\"},\"sameAs\":[\"h"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(1) > section",
+    "tag": "section",
+    "role": null,
+    "text": "Your space for notes, tasks, and big ideasTry Craft Free"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(1) > section > div:nth-of-type(2) > div > div:nth-of-type(3) > div:nth-of-type(1) > div > h1",
+    "tag": "h1",
+    "role": null,
+    "text": "Your space for notes, tasks, and big ideas"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(1) > section > div:nth-of-type(2) > div > div:nth-of-type(3) > div:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Try Craft Free"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(1)",
+    "tag": "section",
+    "role": null,
+    "text": "Craft isn’t just for one thing, it’s for your things.DocsTasksCalendarWhiteboardsDaily Notes"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Craft isn’t just for one thing, it’s for your things."
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(1) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "How people use Craft"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "From first thought to final form"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(3) > div > div:nth-of-type(3) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "From first thought to final form"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(3) > div > div:nth-of-type(5) > div:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(3) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Imagine the possibilities when everything's connected to Craft"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": "Claude"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": "ChatGPT"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": "Claude Code"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": "Windsurf"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(5)",
+    "tag": "a",
+    "role": null,
+    "text": "Cursor"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(6)",
+    "tag": "a",
+    "role": null,
+    "text": "Visual Studio Code"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(7)",
+    "tag": "a",
+    "role": null,
+    "text": "Raycast"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(8)",
+    "tag": "a",
+    "role": null,
+    "text": "Other MCP Clients"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": "Lovable"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": "Replit"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": "Apple Shortcuts"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": "Bolt"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(5)",
+    "tag": "a",
+    "role": null,
+    "text": "v0"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(6)",
+    "tag": "a",
+    "role": null,
+    "text": "Claude Code"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(7)",
+    "tag": "a",
+    "role": null,
+    "text": "Codex CLI"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(8)",
+    "tag": "a",
+    "role": null,
+    "text": "Other Tools"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": "Blog Publisher"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": "Reading Tracker"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": "Plant Dashboard"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": "Dream Journal"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Community200+ buildersExplore community templates"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(5)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(6)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(7)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(8)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "MCP Connections+–"
+  },
+  {
+    "selector": "#radix-«R4d95dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "MCP Connections+–"
+  },
+  {
+    "selector": "#radix-«Rcd95dtqnmnb» > div > div > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#radix-«Rcd95dtqnmnb» > div > div > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#radix-«Rcd95dtqnmnb» > div > div > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#radix-«Rcd95dtqnmnb» > div > div > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#radix-«Rcd95dtqnmnb» > div > div > a:nth-of-type(5)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#radix-«Rcd95dtqnmnb» > div > div > a:nth-of-type(6)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#radix-«Rcd95dtqnmnb» > div > div > a:nth-of-type(7)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#radix-«Rcd95dtqnmnb» > div > div > a:nth-of-type(8)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a:nth-of-type(5)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a:nth-of-type(6)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a:nth-of-type(7)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a:nth-of-type(8)",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(4) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "API Integrations+–"
+  },
+  {
+    "selector": "#radix-«R4l95dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "API Integrations+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(2) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": "Blog Publisher"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(2) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": "Reading Tracker"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(2) > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": "Plant Dashboard"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(2) > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": "Dream Journal"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(6) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Start Building+–"
+  },
+  {
+    "selector": "#radix-«R4t95dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Start Building+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(7) > a",
+    "tag": "a",
+    "role": null,
+    "text": "200+ buildersExplore templates"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(5) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(8) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Community+–"
+  },
+  {
+    "selector": "#radix-«R5595dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Community+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(2)",
+    "tag": "section",
+    "role": null,
+    "text": "App Store AwardMac App of the YearApple Design AwardsFinalistWebbyAwarded three times in various categoriesGerman Design AwardExcellent Communications Design Interactive UX"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(3) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Planning that doesn't feel like work"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Calendar+–"
+  },
+  {
+    "selector": "#radix-«R4b98dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Calendar+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(4) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Tasks+–"
+  },
+  {
+    "selector": "#radix-«R4j98dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Tasks+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(6) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Journal+–"
+  },
+  {
+    "selector": "#radix-«R4r98dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Journal+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(8) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Reminders+–"
+  },
+  {
+    "selector": "#radix-«R5398dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Reminders+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Tasks+–"
+  },
+  {
+    "selector": "#radix-«R4d98dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Tasks+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(4) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Reminders+–"
+  },
+  {
+    "selector": "#radix-«R4l98dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Reminders+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(6) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Journal+–"
+  },
+  {
+    "selector": "#radix-«R4t98dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Journal+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(7) > div > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(8) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Calendar+–"
+  },
+  {
+    "selector": "#radix-«R5598dtqnmnb»",
+    "tag": "button",
+    "role": null,
+    "text": "Calendar+–"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(3)",
+    "tag": "section",
+    "role": null,
+    "text": "OrganizeStructure That Adaptsto Your ThinkingChoose any approach that fits your mind: organize with spaces, folders and tags, or build rich databases with collectionsSpacesSwitch between work mode and personal modePersonal SpaceStarredWorko"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(3) > div:nth-of-type(2) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Structure That Adaptsto Your Thinking"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(4)",
+    "tag": "section",
+    "role": null,
+    "text": "CustomizationMake it unmistakably yoursLearn more"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(1) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Make it unmistakably yours"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(5)",
+    "tag": "section",
+    "role": null,
+    "text": "Stay in the loopJoin the community and learn how other people get the most out of Craft.r/craftdocsDiscuss, share, and exploreSlackGet the inside track on new features@craftdocsStay up to date on our latest releases@craftdocsTips, tutorials"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(5) > div:nth-of-type(1) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Stay in the loop"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(5) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": "r/craftdocsDiscuss, share, and explore"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(5) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": "SlackGet the inside track on new features"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(5) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": "@craftdocsStay up to date on our latest releases"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(5) > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": "@craftdocsTips, tutorials, and feature deep dives"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(6)",
+    "tag": "section",
+    "role": null,
+    "text": "PricingYour pace, your planUse it now and then, or integrate it into your daily flow.FreeFull access, great if you use it occasionally each week.$0 /monthGet StartedPlusDesigned to effortlessly fit into your everyday flow.$8.0$4.8 /monthUpg"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(6) > div:nth-of-type(1) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Your pace, your plan"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(6) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > h3:nth-of-type(1)",
+    "tag": "h3",
+    "role": null,
+    "text": "Free"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(6) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > h3:nth-of-type(2)",
+    "tag": "h3",
+    "role": null,
+    "text": "Full access, great if you use it occasionally each week."
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(6) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Get Started"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(6) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Designed to effortlessly fit into your everyday flow."
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(6) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Upgrade to Plus"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > section:nth-of-type(6) > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more about group discounts"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(10) > div:nth-of-type(2) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Let’s get started"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(10) > div:nth-of-type(3) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": "Continue on web"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > main > div > div:nth-of-type(2) > div:nth-of-type(10) > div:nth-of-type(3) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": "Download on the App Store"
+  },
+  {
+    "selector": "#footer-heading",
+    "tag": "h2",
+    "role": null,
+    "text": "Footer"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > ul > li:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Product Releases"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > ul > ul:nth-of-type(1) > li:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Write"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > ul > ul:nth-of-type(1) > li:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Plan"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > ul > ul:nth-of-type(1) > li:nth-of-type(3) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Organize"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > ul > ul:nth-of-type(1) > li:nth-of-type(4) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Customize"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > ul > li:nth-of-type(3) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Imagine With Craft"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > ul > li:nth-of-type(4) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Pricing"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > ul > ul:nth-of-type(2) > li > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Education Plan"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > ul > li:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Slack"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > ul > li:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Reddit Community"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > ul > li:nth-of-type(3) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "X / Twitter"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > ul > li:nth-of-type(4) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > ul > li:nth-of-type(5) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Getting Started Guide"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > ul > li:nth-of-type(6) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Template Gallery"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > ul > li:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Help Center"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > ul > li:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Contact Support"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > li:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "About us"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > li:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Blog"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > li:nth-of-type(3) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Careers"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > li:nth-of-type(4) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Affiliate Program"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > li:nth-of-type(5) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Media"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > ul > li:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Terms"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > ul > li:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Privacy Policy"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > ul > li:nth-of-type(3) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Security"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > ul > li:nth-of-type(4) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "ESG"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(4) > ul > ul > li:nth-of-type(5) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Responsible Disclosure"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > ul > li:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Craft for iPhone"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > ul > li:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Craft for iPad"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > ul > li:nth-of-type(3) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Craft for Mac"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > ul > li:nth-of-type(5) > li:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Windows x64"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > ul > li:nth-of-type(5) > li:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Windows ARM64"
+  },
+  {
+    "selector": "html > body > div:nth-of-type(2) > footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(6) > ul > li:nth-of-type(6) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Craft for Vision Pro"
+  }
+]

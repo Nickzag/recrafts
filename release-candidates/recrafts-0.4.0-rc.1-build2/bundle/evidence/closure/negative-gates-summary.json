@@ -1,0 +1,18 @@
+{
+  "raw_host_output_inserted": {
+    "status": "pass",
+    "error": "SCHEMA_VALIDATION_FAILED"
+  },
+  "domain_without_evidence": {
+    "status": "pass",
+    "error": "PACKAGE_INVALID"
+  },
+  "host_self_authorizes": {
+    "status": "pass",
+    "error": "SCHEMA_VALIDATION_FAILED"
+  },
+  "rollback_overwrites_target": {
+    "status": "pass",
+    "error": "UNSAFE_OUTPUT_PATH"
+  }
+}

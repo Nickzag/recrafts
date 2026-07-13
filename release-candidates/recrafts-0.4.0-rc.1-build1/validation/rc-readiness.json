@@ -1,0 +1,9 @@
+{
+  "rc_id": "recrafts-0.4.0-rc.1-build1",
+  "status": "blocked",
+  "artifact_source_commit": "b9532f66f18da6b4094bcacce62b3bd5c5c90cf3",
+  "tarball_sha256": "f6ea4f583f9297c38367a8f301d2a617b6640eb5089104332b5bc7bd69623f4c",
+  "blocking_failures": ["partial mandatory source could be accepted"],
+  "superseded_by": "recrafts-0.4.0-rc.1-build2",
+  "immutable": true
+}

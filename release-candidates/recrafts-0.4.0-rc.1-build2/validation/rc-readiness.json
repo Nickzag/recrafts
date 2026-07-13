@@ -1,0 +1,9 @@
+{
+  "rc_id": "recrafts-0.4.0-rc.1-build2",
+  "status": "blocked",
+  "passed": ["real public URL complete", "real Host run", "single-image accepted flow", "multi-image conflict/correction/acceptance/rollback", "URL partial/blocked/stale", "Evidence/Claim separation", "domain provenance", "conflict gate", "correction integrity", "accepted Artifact gate", "Darwin clean install", "package inventory", "R-001 through R-007 regression 90/90", "no CraftsOS/Layoutcrafts dependency"],
+  "blockers": ["Linux clean install not executed"],
+  "independent_review": "PENDING",
+  "project_owner_verdict": "PENDING",
+  "ready_for_owner_review": false
+}

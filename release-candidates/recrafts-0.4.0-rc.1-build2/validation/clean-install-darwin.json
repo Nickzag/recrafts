@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "operations": [
+    "capabilities",
+    "prepare-analysis",
+    "submit-analysis",
+    "validate-package",
+    "generate-realization",
+    "verify-fidelity",
+    "submit-correction",
+    "accept-artifacts",
+    "rollback-package"
+  ],
+  "tarball_installed": true,
+  "single": {
+    "prepared_analysis_id": "prepared-a046d4cfe2c5af63",
+    "accepted_package_id": "package-1e002655b84aa8c0",
+    "artifact_set_id": "artifact-set-5907a23fb36417bb",
+    "validation": "pass"
+  },
+  "multi": {
+    "prepared_analysis_id": "prepared-1aa57503feecb517",
+    "initial_package_id": "package-e2a5188bda0e49db",
+    "initial_conflicts": 3,
+    "blocked_error": "REALIZATION_NOT_AUTHORIZED",
+    "package_c": "package-630d059798d98669",
+    "artifact_set_c": "artifact-set-d4ee150fcf0d4500",
+    "package_f": "package-7a851d60780a0618",
+    "package_g": "package-5b691472ba1240c0",
+    "restored_from": "package-630d059798d98669",
+    "rollback_hashes_match": true,
+    "validation": "pass"
+  },
+  "real_url": {
+    "capture_status": "complete",
+    "prepared_analysis_id": "prepared-8ff8103746c9d586",
+    "accepted_package_id": "package-a6b2830ecd7731e6",
+    "artifact_set_id": "artifact-set-23bfb2353722489c",
+    "validation": "pass"
+  },
+  "lifecycle": {
+    "partial": "partial",
+    "partial_accept_error": "REALIZATION_NOT_AUTHORIZED",
+    "stale": "stale",
+    "blocked": "blocked"
+  },
+  "host_runs": {
+    "multi": "codex/gpt-5 direct visual inspection",
+    "real_url": "codex/gpt-5 direct visual inspection"
+  },
+  "independent_from_craftsos": true
+}

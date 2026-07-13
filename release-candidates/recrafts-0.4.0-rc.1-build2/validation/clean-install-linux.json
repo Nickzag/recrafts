@@ -1,0 +1,7 @@
+{
+  "status": "not-executed",
+  "required_platform": "linux",
+  "reason": "No Docker, Podman, Colima, Lima, OrbStack, nerdctl or Multipass executable is available; no external Linux CI runner is configured in this task.",
+  "gate_result": "blocked",
+  "tarball_sha256": "2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774"
+}

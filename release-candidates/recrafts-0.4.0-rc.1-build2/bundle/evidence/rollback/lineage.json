@@ -1,0 +1,18 @@
+{
+  "event_id": "lineage-49402815ae1fbd4b",
+  "event_type": "rollback-created",
+  "package_id": "package-5b691472ba1240c0",
+  "parent_package_id": "package-7a851d60780a0618",
+  "restored_from_package_id": "package-630d059798d98669",
+  "correction_ids": [
+    "correction-build2-multi-resolve",
+    "correction-build2-multi-later"
+  ],
+  "decision_ids": [
+    "decision-build2-multi-c",
+    "decision-build2-multi-f",
+    "decision-build2-multi-rollback"
+  ],
+  "created_at": "2026-07-13T16:05:00Z",
+  "artifact_set_hash": "4a7cb22c84ae65289bbce45ced18324701637f5471850b2ecbfd990796708232"
+}

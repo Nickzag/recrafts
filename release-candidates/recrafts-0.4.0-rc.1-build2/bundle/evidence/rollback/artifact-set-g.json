@@ -1,0 +1,90 @@
+{
+  "artifact_set_id": "artifact-set-c7bf818e5fc8ec48",
+  "package_id": "package-5b691472ba1240c0",
+  "parent_package_id": "package-7a851d60780a0618",
+  "source_capture_ids": [
+    "capture-8b9bef5ccbadd8df",
+    "capture-12d105b7eecb5bae"
+  ],
+  "analysis_ids": [
+    "analysis-7d6e4fac14304047"
+  ],
+  "correction_ids": [
+    "correction-build2-multi-resolve",
+    "correction-build2-multi-later"
+  ],
+  "decision_ids": [
+    "decision-build2-multi-c",
+    "decision-build2-multi-f",
+    "decision-build2-multi-rollback"
+  ],
+  "status": "accepted",
+  "artifacts": [
+    {
+      "type": "design",
+      "path": "design.md",
+      "media_type": "text/markdown",
+      "sha256": "be86507e756d2fa1f2dbd93a0360d214b0ef3a5195c199ea823bd7c10e3b1f38",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "tokens",
+      "path": "tokens.json",
+      "media_type": "application/json",
+      "sha256": "c10a488ce5efac580079bce8aeaa6209afda1db22118ab11e424dfc66057db0d",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "components",
+      "path": "components.json",
+      "media_type": "application/json",
+      "sha256": "e04593254c8b71ed2a8ba56510d0bbb7aff0bc63f2932ea2c2dd56d3c6a54a66",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "grid-rules",
+      "path": "grid-rules.json",
+      "media_type": "application/json",
+      "sha256": "4db57e3a389e24bc4f8264a2b7b1e6e57a1d561d155a4bfff055e3c88887e98d",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "layout-rules",
+      "path": "layout-rules.json",
+      "media_type": "application/json",
+      "sha256": "4ad69a512636a7334549a7ad9fa51c415010ac702d262f12e887b63c24c43d44",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "visual-grammar",
+      "path": "visual-grammar.json",
+      "media_type": "application/json",
+      "sha256": "809bdec6e1aaa6fd4ad44704e60b3d92dbc771e1cb636848d590e0a631e04a0c",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "conflicts",
+      "path": "conflicts.json",
+      "media_type": "application/json",
+      "sha256": "1935ab53ae4a01ededd1931410feaa8a099677076d305f8c84a33a2d21f0dad2",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    }
+  ],
+  "artifact_hashes": {
+    "design.md": "be86507e756d2fa1f2dbd93a0360d214b0ef3a5195c199ea823bd7c10e3b1f38",
+    "tokens.json": "c10a488ce5efac580079bce8aeaa6209afda1db22118ab11e424dfc66057db0d",
+    "components.json": "e04593254c8b71ed2a8ba56510d0bbb7aff0bc63f2932ea2c2dd56d3c6a54a66",
+    "grid-rules.json": "4db57e3a389e24bc4f8264a2b7b1e6e57a1d561d155a4bfff055e3c88887e98d",
+    "layout-rules.json": "4ad69a512636a7334549a7ad9fa51c415010ac702d262f12e887b63c24c43d44",
+    "visual-grammar.json": "809bdec6e1aaa6fd4ad44704e60b3d92dbc771e1cb636848d590e0a631e04a0c",
+    "conflicts.json": "1935ab53ae4a01ededd1931410feaa8a099677076d305f8c84a33a2d21f0dad2"
+  },
+  "created_at": "2026-07-13T16:05:00Z"
+}

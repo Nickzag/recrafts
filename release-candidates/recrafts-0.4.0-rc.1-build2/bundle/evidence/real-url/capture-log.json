@@ -1,0 +1,14 @@
+{
+  "stages": [
+    "navigate",
+    "network",
+    "dom",
+    "css",
+    "computed-style",
+    "screenshot",
+    "regions",
+    "assets",
+    "fonts"
+  ],
+  "status": "complete"
+}

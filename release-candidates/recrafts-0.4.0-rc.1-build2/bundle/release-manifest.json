@@ -1,0 +1,17 @@
+{
+  "rc_id": "recrafts-0.4.0-rc.1-build2",
+  "package_version": "0.4.0-rc.1",
+  "protocol_version": "1.1",
+  "schema_version": "3.0.0",
+  "artifact_source_commit": "8623a741c39ac25d91d6876d5a3648885f0d4bb6",
+  "release_evidence_commit": "2b8b4f862354904b9f0623c5c3127e3107a9b266",
+  "r006_review_decision_id": "sha256:6d869c352f58ecc5da47f9b10f928f043ddddffc052fcac2cea3baf18e1f1de9",
+  "r007_review_decision_id": "sha256:4f597a0ebb3f25a1aea9c72555816740acad85882ac055606f8818a8885d57b5",
+  "real_host_run_id": "host-run-installed-r008-build2-codex-gpt5",
+  "real_url_capture_id": "capture-b9caa911cb91f7ec",
+  "closure_matrix_id": "closure-matrix-r008-build2",
+  "tarball_sha256": "2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774",
+  "readiness": "blocked",
+  "blockers": ["linux clean-install qualification unavailable"],
+  "craftsos_dependency": false
+}

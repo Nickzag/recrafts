@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","required":["version","grid_rules"],"properties":{"version":{"const":"3.0.0"},"grid_rules":{"type":"array","items":{"type":"object","required":["domain_id","grid_rule_id","scope","rule_type","constraints","status","confidence","evidence_refs","claim_refs","conflict_refs"]}}}}

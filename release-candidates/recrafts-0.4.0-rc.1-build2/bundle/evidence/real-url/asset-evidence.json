@@ -1,0 +1,414 @@
+[
+  {
+    "kind": "link",
+    "url": "https://www.craft.do/_next/static/css/679a6a0dd0f9207b.css"
+  },
+  {
+    "kind": "link",
+    "url": "https://www.craft.do/_next/static/css/ea77ef2f421106c9.css"
+  },
+  {
+    "kind": "link",
+    "url": "https://www.craft.do/_next/static/css/029e81f4eb4569cb.css"
+  },
+  {
+    "kind": "link",
+    "url": "https://www.craft.do/_next/static/css/ee175f3cd852740e.css"
+  },
+  {
+    "kind": "link",
+    "url": "https://www.craft.do/_next/static/css/661e90584160d7c0.css"
+  },
+  {
+    "kind": "link",
+    "url": "https://www.craft.do/_next/static/css/13e7e6ab504d5b67.css"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/4bd1b696-56d68283fbd06ea3.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/9da6db1e-6aa507474b3cc205.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/1684-51bc775c593e52fb.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/main-app-9dc80fd5c62a2231.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/6990-23cb1ae56f5867cf.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/6160-2a99f03b96f0d3e9.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/3063-57ef64c1a5dd1b7b.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/1578-7e87454983defce8.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/1118-ddc7bb86f5fee056.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/9641-b36240abade64990.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/8250-3e3c49517230c2c8.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/7163-3d55c37b4e72b238.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/3931-382a2e3bcd112402.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/3185-1ddc3f968fe07e07.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/5969-de6d6e0ed589ee65.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/119-1324500b54a1bc0d.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/8102-151f6fbd15ea3427.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/8790-da1303046581b6c4.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/4830-25d7546d2f93fc37.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/polyfills-42372ed130431b0a.js"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=1920,quality=85,format=auto/_next/static/media/paper-texture.e3705234.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=640,quality=85,format=auto/_next/static/media/cloud.33739c9c.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=750,quality=85,format=auto/_next/static/media/paper-texture.a0b2b1ca.webp"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=640,quality=85,format=auto/_next/static/media/paper-black.dba476c7.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=828,quality=85,format=auto/_next/static/media/paper-texture.a0b2b1ca.webp"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_next/static/media/paper-notebook.9ae2b49a.webp"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=1200,quality=85,format=auto/_next/static/media/hero-screenshot-desktop-full.4be7130c.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/TomBackground.edb4083b.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/TomPodcaster.c1a5beed.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/AnaBackground.c048196a.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/Ana.9e19ce9a.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/GaganBackground.a86dffe4.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/Gagan.0b34f0dd.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/AmityBackground.24a97e2b.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/Amity.b95275af.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/AaronWriterBackground.db8ed086.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/AaronWriter.c1157736.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/SeoyoungBackgroundWithImage.2dc9f8ef.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/GianBackground.bd769816.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/GianSiteManager.5441fa47.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/StephenBackground.95ea0100.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/StephenDogDad.11e02d38.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/AaronStudentBackground.b6d6593f.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/AaronStudent.630b4b10.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=64,quality=85,format=auto/_next/static/media/tom.03901736.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-claude.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-chatgpt.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-claude-code.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-windsurf.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=96,quality=85,format=auto/images/showcase/icon-cursor.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=96,quality=85,format=auto/images/showcase/icon-vscode.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=96,quality=85,format=auto/images/showcase/icon-raycast.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=96,quality=85,format=auto/images/showcase/icon-mcp.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-lovable.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-replit.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-shortcuts.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-bolt.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=96,quality=85,format=auto/images/showcase/icon-v0.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=96,quality=85,format=auto/images/showcase/icon-codex.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=96,quality=85,format=auto/images/showcase/icon-api.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/awards-appstore.031705d7.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/awards-apple.a98fdf3e.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/awards-webby.05b8f2e6.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/awards-german.64156530.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=128,quality=85,format=auto/_next/static/media/amity_sensei.ed040fc9.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/mountain_purple_bg.4ef3b0bb.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/icon-sky.6eda7764.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/mountain_blue_bg.e77321cf.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/mountain_green_bg.39f82c71.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=828,quality=85,format=auto/_next/static/media/papers-combined-sm.f77de118.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/papers-combined-lg.c4bb9e28.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/papers-combined-2xl.9e55a7e3.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/a-blogger-from-philly.5990f3ab.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/the-tour.ebfda196.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/partners-in-crime.5bacc97c.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/morning.5bfc67a7.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/time-period.14572fa3.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/antiquities.b1fd961e.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/childhood.c6df019e.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/crimson-coil.61286530.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/writer.101bc4f9.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/shape-shift.9281730d.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/hopefully-sweet.3d34098f.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/little-world.199eee1a.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/blurry-bloom.4dbf923d.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/market-walks.c3e7dd37.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/start-of-the-day.62f52ad3.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/infinity-void.60d806c2.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/paper.9d316d59.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/_next/static/media/savoir-faire.e2a835c7.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=128,quality=85,format=auto/_next/static/media/leo_tohyama.4f8a33cb.png"
+  },
+  {
+    "kind": "img",
+    "url": "https://www.craft.do/_image/width=3840,quality=85,format=auto/images/cards/download-card-vector.png"
+  },
+  {
+    "kind": "script",
+    "url": "https://us-assets.i.posthog.com/array/phc_NflKLhxA1A2UKsUzmZerIq2c4BfXahQJZ621wUNOWBF/config.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.craft.do/_next/static/chunks/webpack-f4ea192f10724ef9.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
+  },
+  {
+    "kind": "script",
+    "url": "https://plausible.io/js/script.outbound-links.tagged-events.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://static.cloudflareinsights.com/beacon.min.js"
+  }
+]

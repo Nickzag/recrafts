@@ -1,0 +1,15 @@
+{
+  "host_run_id": "host-run-installed-r008-build2-codex-gpt5",
+  "host": { "agent": "codex", "engine": "gpt-5" },
+  "vision_capability": true,
+  "prompt_hash": "fdcc86d68582a09af2d22404b47256c332e8bc80285b3b50afe7d4a473360107",
+  "instruction_hash": "fdcc86d68582a09af2d22404b47256c332e8bc80285b3b50afe7d4a473360107",
+  "url_input_manifest_hash": "41dc95026d6d1d63020675785ccbc9e8ab80ccf68e2befb0c2667fa8c3ccc599",
+  "multi_input_manifest_hash": "15950f1f7997510f95bd3db2aed8219965efc7ea0995118ddf1ffcf6c714973f",
+  "started_at": "2026-07-13T15:07:30Z",
+  "completed_at": "2026-07-13T16:10:00Z",
+  "raw_output_paths": ["multi-real-host-raw-output.md", "url-real-host-raw-output.md"],
+  "structured_claims_paths": ["multi-analysis.json", "url-analysis.json"],
+  "human_edits_before_submission": ["Bound installed prepared_analysis_id and source-derived Evidence IDs to the visually derived observations"],
+  "human_edits_after_submission": []
+}

@@ -1,0 +1,818 @@
+[
+  {
+    "url": "https://www.craft.do/",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "document"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/17bab9cdfc7492fc-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"225237339647b6a73393dfda6bc79b85\"",
+    "last_modified": null,
+    "resource_type": "font"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/css/ea77ef2f421106c9.css",
+    "status": 200,
+    "content_type": "text/css",
+    "etag": "W/\"a2a6eb6456d00837a7325da29c743002\"",
+    "last_modified": null,
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/css/ee175f3cd852740e.css",
+    "status": 200,
+    "content_type": "text/css",
+    "etag": "W/\"df59969297c5622bb1648ad522081275\"",
+    "last_modified": null,
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/css/661e90584160d7c0.css",
+    "status": 200,
+    "content_type": "text/css",
+    "etag": "W/\"69bde4b508eb376e29cb545118262b99\"",
+    "last_modified": null,
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/css/029e81f4eb4569cb.css",
+    "status": 200,
+    "content_type": "text/css",
+    "etag": "W/\"6272939a64cce1b399544b1add854a20\"",
+    "last_modified": null,
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/css/679a6a0dd0f9207b.css",
+    "status": 200,
+    "content_type": "text/css",
+    "etag": "W/\"b4e5b8f1a4a2ced0124a683adf8e624e\"",
+    "last_modified": null,
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/css/13e7e6ab504d5b67.css",
+    "status": 200,
+    "content_type": "text/css",
+    "etag": "W/\"c39dc8ce47125f7000489c3d7cab7c8b\"",
+    "last_modified": null,
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://plausible.io/js/script.outbound-links.tagged-events.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://static.cloudflareinsights.com/beacon.min.js",
+    "status": 200,
+    "content_type": "text/javascript;charset=UTF-8",
+    "etag": "W/\"2026.6.0\"",
+    "last_modified": "Thu, 18 Jun 2026 14:05:09 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/53b3f18671e57845-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"828b37c0eba66153d1b6ca0ed7151d98\"",
+    "last_modified": null,
+    "resource_type": "font"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/47e2347cd80b3a40-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"df0bb417abdd06f2d86f27ff12316539\"",
+    "last_modified": null,
+    "resource_type": "font"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/83f63badea15e121-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"fa528adaab07a6fe482ad0271ede1ab1\"",
+    "last_modified": null,
+    "resource_type": "font"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/b7b43acee81d05a8-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"69edd442a4fd5b8a209ed3d43ca9c406\"",
+    "last_modified": null,
+    "resource_type": "font"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/ef6d3f52c547a6e3-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"d9258b53b619cd4d716c4eb869e2e758\"",
+    "last_modified": null,
+    "resource_type": "font"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/ba1b003af64f15ce-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"47995b18f460f9372fa05ef13a1ac781\"",
+    "last_modified": null,
+    "resource_type": "font"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/f92fe79ca479af4b-s.p.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"4576469e38d59a36558e82778904d57b\"",
+    "last_modified": null,
+    "resource_type": "font"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/1578-7e87454983defce8.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"df086a766dd56ac08d704ca8f149645e\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/webpack-f4ea192f10724ef9.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"f80491cea9d956a7f84f3b7d6b7dd884\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/6160-2a99f03b96f0d3e9.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"a929f6aeef7a15cd545e42977f14e41e\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/9da6db1e-6aa507474b3cc205.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"d6e0fe986dd0efbc2c32cfa84085ea72\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/4bd1b696-56d68283fbd06ea3.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"80c99e7e63f72780eb7275c9771d325a\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/3185-1ddc3f968fe07e07.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"8a59a0b2232def1f7cd31292f8cdd2fa\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/6990-23cb1ae56f5867cf.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"5963e6843f367ac0992e31ac5e3b00bb\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/8102-151f6fbd15ea3427.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"357e7c3af35f1b3e9de9e90a6b65b96a\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/5969-de6d6e0ed589ee65.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"84fcc699d443093484949b74069824f3\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/8790-da1303046581b6c4.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"75af6a15738f77917b84dfb22aeae646\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/1118-ddc7bb86f5fee056.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"e6b9abeea92ca9ad1a7674275bc72014\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/3931-382a2e3bcd112402.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"27408e166ddc18cd78c0507cbd7cec28\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/119-1324500b54a1bc0d.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"2223222f19b1f947f31f6a233b8535a0\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/7163-3d55c37b4e72b238.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"59e2496900f93c8f9ab430f2eb788d7a\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/4830-25d7546d2f93fc37.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"09f7a586e2d29a1ab1bf03ed74ac6608\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/paper-texture.a0b2b1ca.webp",
+    "status": 200,
+    "content_type": "image/webp",
+    "etag": "\"b0cd37660749d0c6f599c566d3753516\"",
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/3063-57ef64c1a5dd1b7b.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"385197879050b7bdff0c01a6e726dabf\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/9641-b36240abade64990.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"85a60a25a69c4035b49d8eb7a56bf16d\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/8250-3e3c49517230c2c8.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"c1e5543c2ca633753dbadedf9c4785e4\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/1684-51bc775c593e52fb.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"86b320ef491a16a8f4da61b93b463c7e\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/main-app-9dc80fd5c62a2231.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"7b9265f542c72a4bbb6c922b557349a8\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/media/paper-notebook.9ae2b49a.webp",
+    "status": 200,
+    "content_type": "image/webp",
+    "etag": "\"947b8a2b0fe9de01589f512710b71de2\"",
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/Gagan.0b34f0dd.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 22:02:00 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/AaronWriterBackground.db8ed086.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Sat, 13 Jun 2026 07:18:12 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/AaronWriter.c1157736.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Tue, 12 May 2026 07:26:47 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=640,quality=85,format=auto/_next/static/media/cloud.33739c9c.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 11 Jun 2026 18:10:57 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=1920,quality=85,format=auto/_next/static/media/paper-texture.e3705234.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 18 Jun 2026 08:46:57 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/GianBackground.bd769816.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Sat, 27 Jun 2026 18:20:44 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-windsurf.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/GianSiteManager.5441fa47.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 14:01:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=640,quality=85,format=auto/_next/static/media/paper-black.dba476c7.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Mon, 22 Jun 2026 19:27:47 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-bolt.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=828,quality=85,format=auto/_next/static/media/paper-texture.a0b2b1ca.webp",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Fri, 05 Jun 2026 09:53:43 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-chatgpt.png",
+    "status": 200,
+    "content_type": "image/webp",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-replit.png",
+    "status": 200,
+    "content_type": "image/webp",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-shortcuts.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=64,quality=85,format=auto/_next/static/media/tom.03901736.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/GaganBackground.a86dffe4.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 14:01:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/Amity.b95275af.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 14:01:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-lovable.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=750,quality=85,format=auto/_next/static/media/paper-texture.a0b2b1ca.webp",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 21 May 2026 19:12:35 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/AmityBackground.24a97e2b.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 14:01:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-claude-code.png",
+    "status": 200,
+    "content_type": "image/webp",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-claude.png",
+    "status": 200,
+    "content_type": "image/webp",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/SeoyoungBackgroundWithImage.2dc9f8ef.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 14:01:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/7971-790fcb2acd9510b5.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"8e0565a39d534f940631a3e7fa4f5127\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/2450-e1b6a8589a640912.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"b45d77e493b754b3062efc7fded6de80\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/5104-c1b7b6c69443e8ad.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"b2125eccbde1290e483976f2aeb750c9\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/7227-fd34b7323c78d4d2.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"54870196f042af50dfabdb06181951ca\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/5639-9c1f40844455baea.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"ad6960412c2c6ceb3c5605f146ee3fc1\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/app/error-575b09eedfebfc97.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"2d8c862e0ea66f9be4711a9e7e2d0b3a\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/385-34e3847c35d34fd8.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"6a6d64a5f020462eb517e3bbe9cdef51\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/app/%5Blocale%5D/(pages)/(home)/page-dbce7d1494e3470e.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"a20f0c1799f7ee3b93c275c947555622\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/6959-8bb6d52a651a9ae2.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"a52fa2fd7e821fb925788e82e5be3386\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/6351-afcc1b425a80f340.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"999e81c37ee9339d93556251e81b5625\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/6695-1a536fe66c7094b6.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"62e50f92c75b7700b4bd1271677f2c00\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/7409-1d05d2042f3f4a99.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"0e07d404b8632b0fe7fe5c9883278fc3\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/6901-3b294aa3f7b7287a.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"afd49c361ddf4150e35428329b7f9fdf\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/4867-f4d10451b358e468.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"9728d4b153fc7ec09b4eab3d0d0112c8\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/1737-95c63803b51832d6.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"78e53c6a856e40b7be4af0c229daed43\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/4461-c8aa997de993b073.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"2f64892338a199a84229fb39efe07e6f\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/app/%5Blocale%5D/(pages)/layout-d23a250200570dc9.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"056e96eeaf462f9cc59cbadeb8207469\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/app/%5Blocale%5D/layout-e4902447b470af73.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"a18d52fb5e6c6c739456ae1a32c08b06\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/dc07ed8c-512072593d544644.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"06c5e51379d78cc3b786950431f4695e\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/TomBackground.edb4083b.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Sat, 13 Jun 2026 12:15:16 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496",
+    "status": 200,
+    "content_type": "text/javascript;charset=UTF-8",
+    "etag": "W/\"2026.6.0\"",
+    "last_modified": "Thu, 18 Jun 2026 14:05:09 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://us-assets.i.posthog.com/array/phc_NflKLhxA1A2UKsUzmZerIq2c4BfXahQJZ621wUNOWBF/config.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "etag": null,
+    "last_modified": "Mon, 13 Jul 2026 15:16:13 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/TomPodcaster.c1a5beed.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Mon, 22 Jun 2026 19:27:47 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://us.i.posthog.com/flags/?v=2&config=true&ip=0&_=1783955976346&ver=1.347.2&compression=base64",
+    "status": 200,
+    "content_type": "application/json",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://www.craft.do/_next/static/chunks/110.31dacde66e346927.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "W/\"3532c565f379c53c2d1f8f5815897243\"",
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://cloudflareinsights.com/cdn-cgi/rum",
+    "status": 204,
+    "content_type": "text/plain",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "xhr"
+  },
+  {
+    "url": "https://www.craft.do/pricing?_rsc=1ly43",
+    "status": 200,
+    "content_type": "text/x-component",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/AnaBackground.c048196a.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 11 Jun 2026 16:24:07 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/download?_rsc=1ly43",
+    "status": 200,
+    "content_type": "text/x-component",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://www.craft.do/learn?_rsc=1ly43",
+    "status": 200,
+    "content_type": "text/x-component",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://www.craft.do/imagine?_rsc=1ly43",
+    "status": 200,
+    "content_type": "text/x-component",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=256,quality=85,format=auto/_next/static/media/Ana.9e19ce9a.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Fri, 19 Jun 2026 23:25:27 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=1200,quality=85,format=auto/_next/static/media/hero-screenshot-desktop-full.4be7130c.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 14:01:14 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-v0.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-codex.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:16 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-vscode.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-raycast.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-api.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-cursor.png",
+    "status": 200,
+    "content_type": "image/webp",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:13 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.craft.do/_image/width=48,quality=85,format=auto/images/showcase/icon-mcp.png",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Thu, 09 Jul 2026 15:12:16 GMT",
+    "resource_type": "image"
+  }
+]

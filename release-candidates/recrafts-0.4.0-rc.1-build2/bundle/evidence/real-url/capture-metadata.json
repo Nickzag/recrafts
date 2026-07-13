@@ -1,0 +1,15 @@
+{
+  "url": "https://www.craft.do/",
+  "captured_at": "2026-07-13T15:19:45.614Z",
+  "browser": {
+    "name": "chromium",
+    "version": "149.0.7827.55"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": "complete",
+  "missing_evidence": [],
+  "content_sha256": "331a6258f135a31aa19eaa47a6d4d513229e6c6103d7194c6af13b712b99f1c6"
+}

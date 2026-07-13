@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "initial_package_id": "package-e2a5188bda0e49db",
+  "open_high_impact_conflicts": 3,
+  "acceptance_error": "REALIZATION_NOT_AUTHORIZED",
+  "resolution_correction_id": "correction-build2-multi-resolve",
+  "accepted_package_id": "package-630d059798d98669",
+  "negative_gates": {
+    "raw_host_output_in_evidence": "SCHEMA_VALIDATION_FAILED",
+    "domain_without_evidence": "PACKAGE_INVALID",
+    "host_self_authorizes": "SCHEMA_VALIDATION_FAILED"
+  }
+}

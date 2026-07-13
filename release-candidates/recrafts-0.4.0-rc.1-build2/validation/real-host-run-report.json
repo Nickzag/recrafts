@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "host_run_id": "host-run-installed-r008-build2-codex-gpt5",
+  "host": { "agent": "codex", "engine": "gpt-5", "vision_capability": true },
+  "scenarios": ["installed multi-image set", "installed real public URL screenshot"],
+  "instruction_hash": "fdcc86d68582a09af2d22404b47256c332e8bc80285b3b50afe7d4a473360107",
+  "url_input_manifest_hash": "41dc95026d6d1d63020675785ccbc9e8ab80ccf68e2befb0c2667fa8c3ccc599",
+  "multi_input_manifest_hash": "15950f1f7997510f95bd3db2aed8219965efc7ea0995118ddf1ffcf6c714973f",
+  "raw_output_outside_evidence": true,
+  "claims_evidence_bound": true,
+  "human_edits_before_submission": ["prepared_analysis_id and source-derived Evidence IDs bound to the installed run"],
+  "human_edits_after_submission": []
+}

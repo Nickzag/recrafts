@@ -1,0 +1,16 @@
+[
+  {
+    "kind": "viewport",
+    "viewport": "1440x900",
+    "file": "viewport-1440x900.png",
+    "sha256": "9f5be314c5d5be52d0661b3e17fcc9cfa84104e09481628906bea551d0b4280a",
+    "bytes": 1052617
+  },
+  {
+    "kind": "full-page",
+    "viewport": "1440x11032",
+    "file": "full-page.png",
+    "sha256": "c1afd5c4337bee1a67f1986d1e11f7a274804ea856e98ffa62db37aa767a4f21",
+    "bytes": 5669678
+  }
+]

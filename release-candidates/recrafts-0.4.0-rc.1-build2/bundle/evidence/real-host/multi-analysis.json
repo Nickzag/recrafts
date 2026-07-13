@@ -1,0 +1,171 @@
+{
+  "fixture_label": "r008-build2-installed-multi-real-host",
+  "prepared_analysis_id": "prepared-1aa57503feecb517",
+  "execution": {
+    "host_agent": "codex",
+    "engine": "gpt-5",
+    "vision_capability": true,
+    "performed_at": "2026-07-13T15:08:00Z"
+  },
+  "source_classifications": [
+    {
+      "source_id": "source-1",
+      "classification": "canonical-product-ui",
+      "scope": "surface",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-cfffff8eeca80181"
+      ]
+    },
+    {
+      "source_id": "source-2",
+      "classification": "canonical-product-ui",
+      "scope": "surface",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-6e514a80ad954213"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "three-panel-a",
+      "observation": "Lighter three-panel surface with tighter radii",
+      "scope": "surface",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-cfffff8eeca80181"
+      ]
+    },
+    {
+      "id": "three-panel-b",
+      "observation": "Darker three-panel surface with wider left panel and larger radii",
+      "scope": "surface",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-6e514a80ad954213"
+      ]
+    }
+  ],
+  "tokens": [
+    {
+      "id": "color.canvas",
+      "category": "color",
+      "value": "#f6f5f3",
+      "scope": "surface",
+      "status": "observed",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-cfffff8eeca80181"
+      ]
+    },
+    {
+      "id": "color.canvas",
+      "category": "color",
+      "value": "#eeeae4",
+      "scope": "surface",
+      "status": "observed",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-6e514a80ad954213"
+      ]
+    },
+    {
+      "id": "radius.panel",
+      "category": "radius",
+      "value": "10px outer / 6px center",
+      "scope": "surface",
+      "status": "observed",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-cfffff8eeca80181"
+      ]
+    },
+    {
+      "id": "radius.panel",
+      "category": "radius",
+      "value": "16px outer / 12px center",
+      "scope": "surface",
+      "status": "observed",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-6e514a80ad954213"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "name": "three-panel-shell-a",
+      "purpose": "Bounded workspace structure",
+      "anatomy": [
+        "left",
+        "center",
+        "right"
+      ],
+      "variants": [
+        "tight"
+      ],
+      "states": [
+        "default"
+      ],
+      "scope": "surface",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-cfffff8eeca80181"
+      ]
+    },
+    {
+      "name": "three-panel-shell-b",
+      "purpose": "Bounded workspace structure",
+      "anatomy": [
+        "left",
+        "center",
+        "right"
+      ],
+      "variants": [
+        "wide-left"
+      ],
+      "states": [
+        "default"
+      ],
+      "scope": "surface",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-6e514a80ad954213"
+      ]
+    }
+  ],
+  "grid_rules": [
+    {
+      "id": "grid.workspace",
+      "rule_type": "three-panel",
+      "constraints": {
+        "left": 120,
+        "center": 300,
+        "right": 148
+      },
+      "scope": "surface",
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-cfffff8eeca80181"
+      ]
+    },
+    {
+      "id": "grid.workspace",
+      "rule_type": "three-panel",
+      "constraints": {
+        "left": 150,
+        "center": 270,
+        "right": 148
+      },
+      "scope": "surface",
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-6e514a80ad954213"
+      ]
+    }
+  ],
+  "conflicts": []
+}

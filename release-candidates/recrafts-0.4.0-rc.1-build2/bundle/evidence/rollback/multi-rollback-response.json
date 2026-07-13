@@ -1,0 +1,38 @@
+{
+  "protocol_version": "1.1",
+  "request_id": "build2-rollback-package-multi-package-g",
+  "operation": "rollback-package",
+  "status": "completed",
+  "host_handshake": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "provided_capabilities": [
+      "files",
+      "structured-output",
+      "vision"
+    ],
+    "missing_required": [],
+    "host_agent": "qualification-fixture",
+    "host_engine": "fixture-vision"
+  },
+  "host_action": null,
+  "artifacts": [
+    {
+      "type": "rollback-package",
+      "path": "recrafts-package.json",
+      "sha256": "0935e7771ccb2cf24351e85d6baf9690b16492241260124f8da73edfc2864f8a",
+      "media_type": "application/json",
+      "schema_version": "3.0.0"
+    }
+  ],
+  "validation": {
+    "package_id": "package-5b691472ba1240c0",
+    "package_status": "accepted",
+    "artifact_set_id": "artifact-set-c7bf818e5fc8ec48",
+    "restored_from_package_id": "package-630d059798d98669"
+  },
+  "warnings": [],
+  "error": null
+}

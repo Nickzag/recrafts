@@ -1,0 +1,88 @@
+{
+  "fixture_label": "r008-build2-installed-url-real-host",
+  "prepared_analysis_id": "prepared-8ff8103746c9d586",
+  "execution": {
+    "host_agent": "codex",
+    "engine": "gpt-5",
+    "vision_capability": true,
+    "performed_at": "2026-07-13T16:10:00Z"
+  },
+  "source_classifications": [
+    {
+      "source_id": "source-1",
+      "classification": "marketing-surface",
+      "scope": "surface",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-b0098785b5b829c8",
+        "ev-6717a31b9975a780"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "marketing-hero",
+      "observation": "Orange campaign strip, floating pill navigation, centered serif hero and bounded product preview",
+      "scope": "surface",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-b0098785b5b829c8",
+        "ev-495d48bb759f993f"
+      ]
+    }
+  ],
+  "tokens": [
+    {
+      "id": "color.hero-sky",
+      "category": "color",
+      "value": "sky-blue paper texture",
+      "scope": "surface",
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-b0098785b5b829c8"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "name": "marketing-hero",
+      "purpose": "Public product value proposition",
+      "anatomy": [
+        "navigation",
+        "headline",
+        "action",
+        "preview"
+      ],
+      "variants": [
+        "desktop"
+      ],
+      "states": [
+        "default"
+      ],
+      "scope": "surface",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-b0098785b5b829c8",
+        "ev-91419462b80b8c02"
+      ]
+    }
+  ],
+  "grid_rules": [
+    {
+      "id": "grid.marketing-hero",
+      "rule_type": "centered-overlay",
+      "constraints": {
+        "viewport": "1440x900"
+      },
+      "scope": "surface",
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-b0098785b5b829c8",
+        "ev-4546281693a015ef"
+      ]
+    }
+  ],
+  "conflicts": []
+}

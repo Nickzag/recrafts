@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "tarball_files": 113,
+  "tarball_bytes": 70066,
+  "unpacked_bytes": 279924,
+  "browser_adapter_present": true,
+  "fidelity_boundary_present": true,
+  "unlicensed_notice_present": true,
+  "bounded_sanitized_fixtures_present": true,
+  "excluded": ["dev-workflow", "release-candidates", "tests", "raw Host output", "private review", "browser state", "Oracle", "expected answers", "CraftsOS/Layoutcrafts source"],
+  "source_path_leakage": false
+}

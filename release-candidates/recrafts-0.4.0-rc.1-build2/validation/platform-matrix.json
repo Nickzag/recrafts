@@ -1,0 +1,19 @@
+{
+  "darwin": {
+    "status": "pass",
+    "os": "Darwin 25.6.0",
+    "architecture": "x86_64",
+    "node": "v24.15.0",
+    "npm": "11.12.1",
+    "browser_adapter": "playwright 1.61.1",
+    "browser": "Chromium 149.0.7827.55",
+    "tarball_sha256": "2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774",
+    "operation_results": {
+      "capabilities": "pass", "prepare-analysis": "pass", "submit-analysis": "pass", "validate-package": "pass",
+      "submit-correction": "pass", "accept-artifacts": "pass", "rollback-package": "pass", "verify-fidelity": "pass",
+      "generate-realization": "failed-closed: Schema 3 Artifact acceptance does not authorize out-of-scope visual generation"
+    }
+  },
+  "linux": { "status": "not-executed", "gate_result": "blocked", "reason": "No Linux runner or local container runtime available" },
+  "windows": { "status": "unverified" }
+}

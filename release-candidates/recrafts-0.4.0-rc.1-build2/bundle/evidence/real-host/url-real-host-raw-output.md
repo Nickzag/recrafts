@@ -1,0 +1,1 @@
+"Direct visual inspection of the installed Build 2 screenshot: orange campaign strip, floating white pill navigation, oversized centered serif headline, sky-blue collage, white pill CTA, and bottom product preview. Marketing elements remain surface-scoped; no workspace-global promotion.\n"

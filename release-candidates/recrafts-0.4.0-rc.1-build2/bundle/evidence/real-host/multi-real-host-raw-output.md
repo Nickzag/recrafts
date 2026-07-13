@@ -1,0 +1,1 @@
+"Direct visual inspection: both inputs are bounded three-panel surfaces. Image A is lighter with tighter radii; Image B is darker with a wider left panel and larger radii. These token/grid differences require correction. Neither input proves a complete system.\n"

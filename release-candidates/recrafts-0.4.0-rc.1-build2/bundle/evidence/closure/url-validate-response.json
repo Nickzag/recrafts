@@ -1,0 +1,32 @@
+{
+  "protocol_version": "1.1",
+  "request_id": "build2-validate-package-none",
+  "operation": "validate-package",
+  "status": "completed",
+  "host_handshake": {
+    "required_capabilities": [
+      "files"
+    ],
+    "provided_capabilities": [
+      "files",
+      "structured-output",
+      "vision"
+    ],
+    "missing_required": [],
+    "host_agent": "qualification-fixture",
+    "host_engine": "fixture-vision"
+  },
+  "host_action": null,
+  "artifacts": [],
+  "validation": {
+    "status": "pass",
+    "package_id": "package-a6b2830ecd7731e6",
+    "package_status": "accepted",
+    "artifact_set_id": "artifact-set-23bfb2353722489c",
+    "correction_count": 1,
+    "decision_count": 1,
+    "lineage_event_type": "accepted"
+  },
+  "warnings": [],
+  "error": null
+}

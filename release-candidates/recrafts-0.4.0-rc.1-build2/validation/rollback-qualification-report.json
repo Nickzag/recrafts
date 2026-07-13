@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "package_c": "package-630d059798d98669",
+  "package_f": "package-7a851d60780a0618",
+  "package_g": "package-5b691472ba1240c0",
+  "g_parent_is_f": true,
+  "g_restored_from_c": true,
+  "new_package_id": true,
+  "canonical_artifact_hashes_match_c": true,
+  "lineage_event": "rollback-created",
+  "target_overwrite_error": "UNSAFE_OUTPUT_PATH"
+}

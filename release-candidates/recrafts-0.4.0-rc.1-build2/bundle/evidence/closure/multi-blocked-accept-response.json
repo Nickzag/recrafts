@@ -1,0 +1,28 @@
+{
+  "protocol_version": "1.1",
+  "request_id": "build2-accept-artifacts-multi-blocked-output",
+  "operation": "accept-artifacts",
+  "status": "failed",
+  "host_handshake": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "provided_capabilities": [
+      "files",
+      "structured-output",
+      "vision"
+    ],
+    "missing_required": [],
+    "host_agent": "qualification-fixture",
+    "host_engine": "fixture-vision"
+  },
+  "host_action": null,
+  "artifacts": [],
+  "validation": {},
+  "warnings": [],
+  "error": {
+    "code": "REALIZATION_NOT_AUTHORIZED",
+    "message": "Open high-impact conflict blocks acceptance"
+  }
+}
