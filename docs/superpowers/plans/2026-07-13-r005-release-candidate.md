@@ -131,12 +131,12 @@
 
 ## Build 5 Review-correction Addendum
 
-- [ ] Copy sanitized sources to deterministic `prepared/sources/source-N.ext` paths and expose them through the returned Host contract.
-- [ ] Revalidate prepared source hashes during `submit-analysis` and keep duplicate basenames unambiguous.
-- [ ] Enforce the complete Host Analysis Schema before semantic checks; add all independent-review mutation cases.
-- [ ] Compose normal submissions as `awaiting-owner-review` with no fabricated PASS or realization authorization.
-- [ ] Add bounded Owner Decision import to `generate-realization`, requiring a new approved package identity before realization.
-- [ ] Isolate deterministic fixture approval behind `options.interoperability_fixture`.
-- [ ] Propagate decision ID, status and source through package and realization artifacts.
-- [ ] Preserve Host classifications; missing classification remains `unknown` and cannot become canonical.
-- [ ] Generate immutable `recrafts-0.3.0-rc.1-build5`, rerun clean install, focused negatives and R-001 through R-005 regression, then update Result and Review Packet while Owner Verdict remains `PENDING`.
+- [x] Copy sanitized sources to deterministic `prepared/sources/source-N.ext` paths and expose them through the returned Host contract.
+- [x] Revalidate prepared source hashes during `submit-analysis` and keep duplicate basenames unambiguous.
+- [x] Enforce the complete Host Analysis Schema before semantic checks; add all independent-review mutation cases.
+- [x] Compose normal submissions as `awaiting-owner-review` with no fabricated PASS or realization authorization.
+- [x] Add bounded Owner Decision import to `generate-realization`, requiring a new approved package identity before realization.
+- [x] Isolate deterministic fixture approval behind `options.interoperability_fixture`.
+- [x] Propagate decision ID, status and source through package and realization artifacts.
+- [x] Preserve Host classifications; missing classification remains `unknown` and cannot become canonical.
+- [x] Generate immutable `recrafts-0.3.0-rc.1-build5`, rerun clean install, focused negatives and R-001 through R-005 regression, then update Result and Review Packet while Owner Verdict remains `PENDING`.

@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "findings": [
+    {
+      "id": "TOK-001",
+      "subject": "neutral shell",
+      "verdict": "confirmed-match"
+    },
+    {
+      "id": "TOK-002",
+      "subject": "surface layering and borders",
+      "verdict": "acceptable-deviation",
+      "evidence": "preview-only subtle border remains visibly disclosed"
+    },
+    {
+      "id": "TOK-003",
+      "subject": "selection accent",
+      "verdict": "acceptable-deviation",
+      "evidence": "restrained system-blue remains interaction-scoped preview fallback"
+    },
+    {
+      "id": "TOK-004",
+      "subject": "content color isolation",
+      "verdict": "confirmed-match",
+      "evidence": "no user-content green or marketing colors appear in shell tokens"
+    },
+    {
+      "id": "TOK-005",
+      "subject": "exact typography metrics",
+      "verdict": "not-testable"
+    }
+  ]
+}

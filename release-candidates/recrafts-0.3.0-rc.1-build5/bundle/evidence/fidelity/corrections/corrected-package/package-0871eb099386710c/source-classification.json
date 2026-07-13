@@ -1,0 +1,709 @@
+{
+  "version": "2.0.0",
+  "sources": [
+    {
+      "source_id": "appearance-settings",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "feature-specific-ui",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:appearance-settings:navigation-shell:redacted-private-text",
+        "high-overlap:appearance-settings:primary-surface:redacted-private-text",
+        "high-overlap:appearance-settings:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "style-gallery-modal",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "feature-specific-ui",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "user-generated-content",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "overlay",
+          "class": "state-evidence",
+          "bbox": [
+            1073,
+            336,
+            1431,
+            1568
+          ],
+          "area_ratio": 0.2799608719955282
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:style-gallery-modal:navigation-shell:redacted-private-text",
+        "high-overlap:style-gallery-modal:primary-surface:overlay",
+        "high-overlap:style-gallery-modal:primary-surface:redacted-private-text",
+        "high-overlap:style-gallery-modal:state-or-inspector:redacted-private-text",
+        "high-overlap:style-gallery-modal:overlay:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "editor-insert-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.18994413407821228
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2256,
+            2240
+          ],
+          "area_ratio": 0.6301675977653631
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2936,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17988826815642459
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3580,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:editor-insert-inspector:navigation-shell:redacted-private-text",
+        "high-overlap:editor-insert-inspector:primary-surface:redacted-private-text",
+        "high-overlap:editor-insert-inspector:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "premium-pricing-modal",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "marketing-surface",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:premium-pricing-modal:navigation-shell:redacted-private-text",
+        "high-overlap:premium-pricing-modal:primary-surface:redacted-private-text",
+        "high-overlap:premium-pricing-modal:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "library-card-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            678,
+            2240
+          ],
+          "area_ratio": 0.19012899607403252
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            678,
+            0,
+            2246,
+            2240
+          ],
+          "area_ratio": 0.6298373527762199
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2924,
+            0,
+            642,
+            2240
+          ],
+          "area_ratio": 0.18003365114974762
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3566,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:library-card-view:navigation-shell:redacted-private-text",
+        "high-overlap:library-card-view:primary-surface:redacted-private-text",
+        "high-overlap:library-card-view:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "shared-empty-state",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            679,
+            2240
+          ],
+          "area_ratio": 0.18998321208729715
+        },
+        {
+          "id": "primary-surface",
+          "class": "state-evidence",
+          "bbox": [
+            679,
+            0,
+            2252,
+            2240
+          ],
+          "area_ratio": 0.630106323447118
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3574,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:shared-empty-state:navigation-shell:redacted-private-text",
+        "high-overlap:shared-empty-state:primary-surface:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "page-info-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:page-info-inspector:navigation-shell:redacted-private-text",
+        "high-overlap:page-info-inspector:primary-surface:redacted-private-text",
+        "high-overlap:page-info-inspector:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "editor-style-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:editor-style-inspector:navigation-shell:redacted-private-text",
+        "high-overlap:editor-style-inspector:primary-surface:redacted-private-text",
+        "high-overlap:editor-style-inspector:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "imagine-onboarding",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "marketing-surface",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "feature-specific-ui",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:imagine-onboarding:navigation-shell:redacted-private-text",
+        "high-overlap:imagine-onboarding:primary-surface:redacted-private-text",
+        "high-overlap:imagine-onboarding:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "editor-focus-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            679,
+            2240
+          ],
+          "area_ratio": 0.18987695749440717
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            679,
+            0,
+            2253,
+            2240
+          ],
+          "area_ratio": 0.6300335570469798
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2932,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.18008948545861297
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3576,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:editor-focus-view:navigation-shell:redacted-private-text",
+        "high-overlap:editor-focus-view:primary-surface:redacted-private-text",
+        "high-overlap:editor-focus-view:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "editor-format-inspector",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            680,
+            2240
+          ],
+          "area_ratio": 0.19005030743432086
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            680,
+            0,
+            2254,
+            2240
+          ],
+          "area_ratio": 0.6299608719955282
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2934,
+            0,
+            644,
+            2240
+          ],
+          "area_ratio": 0.17998882057015092
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3578,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:editor-format-inspector:navigation-shell:redacted-private-text",
+        "high-overlap:editor-format-inspector:primary-surface:redacted-private-text",
+        "high-overlap:editor-format-inspector:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "library-list-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            681,
+            2240
+          ],
+          "area_ratio": 0.19011725293132328
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            681,
+            0,
+            2256,
+            2240
+          ],
+          "area_ratio": 0.6298157453936348
+        },
+        {
+          "id": "state-or-inspector",
+          "class": "state-evidence",
+          "bbox": [
+            2937,
+            0,
+            645,
+            2240
+          ],
+          "area_ratio": 0.1800670016750419
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3582,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:library-list-view:navigation-shell:redacted-private-text",
+        "high-overlap:library-list-view:primary-surface:redacted-private-text",
+        "high-overlap:library-list-view:state-or-inspector:redacted-private-text"
+      ]
+    },
+    {
+      "source_id": "library-masonry-view",
+      "regions": [
+        {
+          "id": "navigation-shell",
+          "class": "canonical-product-ui",
+          "bbox": [
+            0,
+            0,
+            681,
+            2240
+          ],
+          "area_ratio": 0.19011725293132328
+        },
+        {
+          "id": "primary-surface",
+          "class": "user-generated-content",
+          "bbox": [
+            681,
+            0,
+            2256,
+            2240
+          ],
+          "area_ratio": 0.6298157453936348
+        },
+        {
+          "id": "redacted-private-text",
+          "class": "excluded-sensitive-content",
+          "bbox": [
+            0,
+            0,
+            3582,
+            2240
+          ],
+          "treatment": "whole-image box blur; metadata stripped",
+          "area_ratio": 1
+        }
+      ],
+      "warnings": [
+        "high-overlap:library-masonry-view:navigation-shell:redacted-private-text",
+        "high-overlap:library-masonry-view:primary-surface:redacted-private-text"
+      ]
+    }
+  ]
+}

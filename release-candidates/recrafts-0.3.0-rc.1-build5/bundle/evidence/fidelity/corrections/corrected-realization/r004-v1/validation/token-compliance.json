@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "allowed_preview_fallbacks": [
+    "--preview-text-secondary",
+    "--preview-border-subtle",
+    "--preview-interaction-accent",
+    "--preview-accent-soft",
+    "--preview-text-muted",
+    "--preview-text-disabled",
+    "--preview-radius-control",
+    "--preview-radius-card",
+    "--preview-radius-modal",
+    "--preview-space-1",
+    "--preview-space-2",
+    "--preview-space-3",
+    "--preview-space-4",
+    "--preview-space-6",
+    "--preview-shadow-float"
+  ],
+  "violations": []
+}

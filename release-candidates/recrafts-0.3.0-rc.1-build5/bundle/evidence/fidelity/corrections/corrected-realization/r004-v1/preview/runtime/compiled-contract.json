@@ -1,0 +1,1474 @@
+{
+  "realization_id": "realization-b0362580ecc8a9d9",
+  "renderer_version": "r004-fidelity-renderer-v1",
+  "correction_id": "correction-r004-gallery-density",
+  "package_id": "package-0871eb099386710c",
+  "analysis_id": "analysis-0aabae953c97172e",
+  "decision_set_id": "owner-decision-r002-pass",
+  "capture_id": "capture-cd22687547cb5f95",
+  "token_variables": [
+    {
+      "variable": "--app-background",
+      "token_id": "app.background",
+      "scope": "surface",
+      "value": "#F6F5F3",
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-appearance-settings-primary-surface"
+      ]
+    },
+    {
+      "variable": "--surface-primary",
+      "token_id": "surface.primary",
+      "scope": "surface",
+      "value": "#FFFFFF",
+      "evidence_refs": [
+        "ev-editor-format-inspector-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ]
+    },
+    {
+      "variable": "--surface-secondary",
+      "token_id": "surface.secondary",
+      "scope": "surface",
+      "value": "#F1F0EE",
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ]
+    },
+    {
+      "variable": "--text-primary",
+      "token_id": "text.primary",
+      "scope": "surface",
+      "value": "#20201E",
+      "evidence_refs": [
+        "ev-library-list-view-primary-surface",
+        "ev-appearance-settings-primary-surface"
+      ]
+    },
+    {
+      "variable": "--accent-rule",
+      "token_id": "accent.rule",
+      "scope": "global",
+      "value": "no-global-accent; selection accent remains preview-only",
+      "evidence_refs": [
+        "ev-editor-format-inspector-primary-surface",
+        "ev-imagine-onboarding-primary-surface"
+      ]
+    },
+    {
+      "variable": "--radius-direction",
+      "token_id": "radius.direction",
+      "scope": "surface",
+      "value": "soft-rounded",
+      "evidence_refs": [
+        "ev-style-gallery-modal-overlay",
+        "ev-premium-pricing-modal-primary-surface"
+      ]
+    },
+    {
+      "variable": "--spacing-direction",
+      "token_id": "spacing.direction",
+      "scope": "surface",
+      "value": "compact-system-rhythm",
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-library-card-view-primary-surface"
+      ]
+    },
+    {
+      "variable": "--typography-direction",
+      "token_id": "typography.direction",
+      "scope": "surface",
+      "value": "neutral-system-sans",
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ]
+    },
+    {
+      "variable": "--shell-three-column",
+      "token_id": "shell.three-column",
+      "scope": "surface",
+      "value": "left-rail / flexible-canvas / right-inspector",
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ]
+    }
+  ],
+  "preview_fallbacks": [
+    {
+      "variable": "--preview-text-secondary",
+      "token_id": "text.secondary",
+      "value": "#6F6E69",
+      "scope": "surface",
+      "evidence_refs": [
+        "ev-library-list-view-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "label": "preview-only fallback"
+    },
+    {
+      "variable": "--preview-border-subtle",
+      "token_id": "border.subtle",
+      "value": "rgba(32,32,30,0.10)",
+      "scope": "surface",
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-style-gallery-modal-overlay"
+      ],
+      "label": "preview-only fallback"
+    },
+    {
+      "variable": "--preview-interaction-accent",
+      "value": "#3478F6",
+      "label": "preview-only fallback",
+      "reason": "Interaction-scoped system-blue direction"
+    },
+    {
+      "variable": "--preview-accent-soft",
+      "value": "#E8F0FF",
+      "label": "preview-only fallback",
+      "reason": "Selected surface"
+    },
+    {
+      "variable": "--preview-text-muted",
+      "value": "#92918C",
+      "label": "preview-only fallback",
+      "reason": "Metadata hierarchy"
+    },
+    {
+      "variable": "--preview-text-disabled",
+      "value": "#B8B7B2",
+      "label": "preview-only fallback",
+      "reason": "Disabled state"
+    },
+    {
+      "variable": "--preview-radius-control",
+      "value": "8px",
+      "label": "preview-only fallback",
+      "reason": "Compact control radius"
+    },
+    {
+      "variable": "--preview-radius-card",
+      "value": "13px",
+      "label": "preview-only fallback",
+      "reason": "Moderate card radius"
+    },
+    {
+      "variable": "--preview-radius-modal",
+      "value": "18px",
+      "label": "preview-only fallback",
+      "reason": "Restrained large radius"
+    },
+    {
+      "variable": "--preview-space-1",
+      "value": "4px",
+      "label": "preview-only fallback",
+      "reason": "Compact rhythm projection"
+    },
+    {
+      "variable": "--preview-space-2",
+      "value": "8px",
+      "label": "preview-only fallback",
+      "reason": "Compact rhythm projection"
+    },
+    {
+      "variable": "--preview-space-3",
+      "value": "12px",
+      "label": "preview-only fallback",
+      "reason": "Compact rhythm projection"
+    },
+    {
+      "variable": "--preview-space-4",
+      "value": "16px",
+      "label": "preview-only fallback",
+      "reason": "Compact rhythm projection"
+    },
+    {
+      "variable": "--preview-space-6",
+      "value": "24px",
+      "label": "preview-only fallback",
+      "reason": "Section rhythm projection"
+    },
+    {
+      "variable": "--preview-shadow-float",
+      "value": "0 18px 50px rgba(32,32,30,.14)",
+      "label": "preview-only fallback",
+      "reason": "Floating surfaces only"
+    }
+  ],
+  "components": [
+    {
+      "name": "Button",
+      "scope": "surface",
+      "purpose": "Evidence-bound Button preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-button",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "IconButton",
+      "scope": "surface",
+      "purpose": "Evidence-bound IconButton preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-iconbutton",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "Tabs",
+      "scope": "surface",
+      "purpose": "Evidence-bound Tabs preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-tabs",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "SegmentedControl",
+      "scope": "surface",
+      "purpose": "Evidence-bound SegmentedControl preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-segmentedcontrol",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "SearchField",
+      "scope": "surface",
+      "purpose": "Evidence-bound SearchField preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-searchfield",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "Toggle",
+      "scope": "surface",
+      "purpose": "Evidence-bound Toggle preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-toggle",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "Divider",
+      "scope": "surface",
+      "purpose": "Evidence-bound Divider preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-divider",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "Badge",
+      "scope": "surface",
+      "purpose": "Evidence-bound Badge preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-badge",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "Tooltip",
+      "scope": "surface",
+      "purpose": "Evidence-bound Tooltip preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-style-gallery-modal-overlay",
+        "ev-premium-pricing-modal-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-tooltip",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-style-gallery-modal-overlay",
+          "ev-premium-pricing-modal-primary-surface"
+        ]
+      }
+    },
+    {
+      "name": "Popover",
+      "scope": "surface",
+      "purpose": "Evidence-bound Popover preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-style-gallery-modal-overlay",
+        "ev-premium-pricing-modal-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-popover",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-style-gallery-modal-overlay",
+          "ev-premium-pricing-modal-primary-surface"
+        ]
+      }
+    },
+    {
+      "name": "Modal",
+      "scope": "surface",
+      "purpose": "Evidence-bound Modal preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-style-gallery-modal-overlay",
+        "ev-premium-pricing-modal-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-modal",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-style-gallery-modal-overlay",
+          "ev-premium-pricing-modal-primary-surface"
+        ]
+      }
+    },
+    {
+      "name": "ScrollArea",
+      "scope": "surface",
+      "purpose": "Evidence-bound ScrollArea preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-scrollarea",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "NavigationRail",
+      "scope": "surface",
+      "purpose": "Evidence-bound NavigationRail preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-navigationrail",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-library-card-view-primary-surface",
+          "ev-library-list-view-primary-surface"
+        ]
+      }
+    },
+    {
+      "name": "NavigationItem",
+      "scope": "surface",
+      "purpose": "Evidence-bound NavigationItem preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-navigationitem",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-library-card-view-primary-surface",
+          "ev-library-list-view-primary-surface"
+        ]
+      }
+    },
+    {
+      "name": "DocumentCard",
+      "scope": "workspace-library",
+      "purpose": "Evidence-bound DocumentCard preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-documentcard",
+      "trace": {
+        "scope": "workspace-library",
+        "evidence_refs": [
+          "ev-library-card-view-primary-surface",
+          "ev-library-list-view-primary-surface"
+        ]
+      }
+    },
+    {
+      "name": "DocumentListRow",
+      "scope": "workspace-library",
+      "purpose": "Evidence-bound DocumentListRow preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-documentlistrow",
+      "trace": {
+        "scope": "workspace-library",
+        "evidence_refs": [
+          "ev-library-card-view-primary-surface",
+          "ev-library-list-view-primary-surface"
+        ]
+      }
+    },
+    {
+      "name": "ViewSwitcher",
+      "scope": "surface",
+      "purpose": "Evidence-bound ViewSwitcher preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-library-card-view-primary-surface",
+        "ev-library-list-view-primary-surface"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-viewswitcher",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-library-card-view-primary-surface",
+          "ev-library-list-view-primary-surface"
+        ]
+      }
+    },
+    {
+      "name": "ToolbarGroup",
+      "scope": "surface",
+      "purpose": "Evidence-bound ToolbarGroup preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-toolbargroup",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-editor-format-inspector-navigation-shell",
+          "ev-editor-format-inspector-primary-surface",
+          "ev-editor-format-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "InspectorPanel",
+      "scope": "surface",
+      "purpose": "Evidence-bound InspectorPanel preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-inspectorpanel",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-editor-format-inspector-navigation-shell",
+          "ev-editor-format-inspector-primary-surface",
+          "ev-editor-format-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "InspectorSection",
+      "scope": "surface",
+      "purpose": "Evidence-bound InspectorSection preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-inspectorsection",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-editor-format-inspector-navigation-shell",
+          "ev-editor-format-inspector-primary-surface",
+          "ev-editor-format-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "PropertyRow",
+      "scope": "surface",
+      "purpose": "Evidence-bound PropertyRow preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-propertyrow",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "EditorCanvas",
+      "scope": "surface",
+      "purpose": "Evidence-bound EditorCanvas preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-editorcanvas",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-editor-format-inspector-navigation-shell",
+          "ev-editor-format-inspector-primary-surface",
+          "ev-editor-format-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "FloatingControlIsland",
+      "scope": "surface",
+      "purpose": "Evidence-bound FloatingControlIsland preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-floatingcontrolisland",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-editor-format-inspector-navigation-shell",
+          "ev-editor-format-inspector-primary-surface",
+          "ev-editor-format-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "SettingsRow",
+      "scope": "settings",
+      "purpose": "Evidence-bound SettingsRow preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-settingsrow",
+      "trace": {
+        "scope": "settings",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "EmptyState",
+      "scope": "surface",
+      "purpose": "Evidence-bound EmptyState preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-emptystate",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    },
+    {
+      "name": "LoadingSkeleton",
+      "scope": "surface",
+      "purpose": "Evidence-bound LoadingSkeleton preview contract",
+      "anatomy": [
+        "container",
+        "content",
+        "state-layer"
+      ],
+      "visible_variants": [
+        "default"
+      ],
+      "visible_states": [
+        "default",
+        "active",
+        "disabled"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "radius.direction",
+        "spacing.direction"
+      ],
+      "evidence_refs": [
+        "ev-appearance-settings-primary-surface",
+        "ev-page-info-inspector-state-or-inspector"
+      ],
+      "confidence": 0.8,
+      "unknowns": [
+        "production semantics",
+        "exact geometry"
+      ],
+      "contract_id": "component-loadingskeleton",
+      "trace": {
+        "scope": "surface",
+        "evidence_refs": [
+          "ev-appearance-settings-primary-surface",
+          "ev-page-info-inspector-state-or-inspector"
+        ]
+      }
+    }
+  ],
+  "preview_fallback_components": [
+    {
+      "name": "AgentSuggestionCard",
+      "contract_id": "component-agent-suggestion-card",
+      "scope": "surface",
+      "purpose": "Contextual preview-only suggestion contract",
+      "anatomy": [
+        "diagnosis",
+        "expected-impact",
+        "accept",
+        "reject"
+      ],
+      "visible_variants": [
+        "contextual"
+      ],
+      "visible_states": [
+        "proposed",
+        "accepted",
+        "rejected",
+        "applied"
+      ],
+      "possible_interactions": [
+        "preview-only"
+      ],
+      "token_dependencies": [
+        "surface.primary",
+        "text.primary",
+        "border.subtle",
+        "accent.rule"
+      ],
+      "evidence_refs": [
+        "ev-editor-format-inspector-navigation-shell",
+        "ev-editor-format-inspector-primary-surface",
+        "ev-editor-format-inspector-state-or-inspector"
+      ],
+      "confidence": 0.7,
+      "unknowns": [
+        "production semantics",
+        "operation binding"
+      ],
+      "preview_fallback": true
+    }
+  ],
+  "states": [
+    "default",
+    "selected-artboard",
+    "selected-canvas-object",
+    "inspector-active",
+    "agent-suggestion-visible",
+    "modal-open",
+    "empty-project",
+    "loading-recovery"
+  ],
+  "evidence_ids": [
+    "ev-appearance-settings-navigation-shell",
+    "ev-appearance-settings-primary-surface",
+    "ev-appearance-settings-state-or-inspector",
+    "ev-style-gallery-modal-navigation-shell",
+    "ev-style-gallery-modal-primary-surface",
+    "ev-style-gallery-modal-state-or-inspector",
+    "ev-style-gallery-modal-overlay",
+    "ev-editor-insert-inspector-navigation-shell",
+    "ev-editor-insert-inspector-primary-surface",
+    "ev-editor-insert-inspector-state-or-inspector",
+    "ev-premium-pricing-modal-navigation-shell",
+    "ev-premium-pricing-modal-primary-surface",
+    "ev-premium-pricing-modal-state-or-inspector",
+    "ev-library-card-view-navigation-shell",
+    "ev-library-card-view-primary-surface",
+    "ev-library-card-view-state-or-inspector",
+    "ev-shared-empty-state-navigation-shell",
+    "ev-shared-empty-state-primary-surface",
+    "ev-page-info-inspector-navigation-shell",
+    "ev-page-info-inspector-primary-surface",
+    "ev-page-info-inspector-state-or-inspector",
+    "ev-editor-style-inspector-navigation-shell",
+    "ev-editor-style-inspector-primary-surface",
+    "ev-editor-style-inspector-state-or-inspector",
+    "ev-imagine-onboarding-navigation-shell",
+    "ev-imagine-onboarding-primary-surface",
+    "ev-imagine-onboarding-state-or-inspector",
+    "ev-editor-focus-view-navigation-shell",
+    "ev-editor-focus-view-primary-surface",
+    "ev-editor-focus-view-state-or-inspector",
+    "ev-editor-format-inspector-navigation-shell",
+    "ev-editor-format-inspector-primary-surface",
+    "ev-editor-format-inspector-state-or-inspector",
+    "ev-library-list-view-navigation-shell",
+    "ev-library-list-view-primary-surface",
+    "ev-library-list-view-state-or-inspector",
+    "ev-library-masonry-view-navigation-shell",
+    "ev-library-masonry-view-primary-surface",
+    "host-vf-neutral-product-shell",
+    "host-vf-three-region-editor",
+    "host-vf-compact-rounded-controls",
+    "host-vf-system-sans-direction",
+    "host-vf-content-isolation",
+    "rejected-1",
+    "rejected-2",
+    "rejected-3"
+  ],
+  "trace_fields": [
+    "component_contract_id",
+    "token_ids",
+    "scope",
+    "state",
+    "evidence_refs",
+    "package_id",
+    "analysis_id",
+    "decision_set_id",
+    "preview_fallback_status"
+  ]
+}

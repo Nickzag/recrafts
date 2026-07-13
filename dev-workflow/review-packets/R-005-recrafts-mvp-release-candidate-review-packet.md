@@ -1,4 +1,4 @@
-# R-005 MVP Release Candidate Review Packet
+# R-005 Build 5 Review Packet
 
 ## Requested Verdict
 
@@ -11,11 +11,12 @@ R-005: ACCEPT / REVISE
 ## Review Inputs
 
 - Result: `dev-workflow/results/R-005-recrafts-mvp-release-candidate-result.md`
-- RC: `release-candidates/recrafts-0.3.0-rc.1-build4/`
+- RC: `release-candidates/recrafts-0.3.0-rc.1-build5/`
 - Release manifest: `bundle/release-manifest.json`
 - Package inventory and RC readiness: `validation/`
-- Two-phase contracts: `bundle/contracts/`
+- Host and Owner Decision contracts: `bundle/contracts/`
 - Clean-install evidence: `validation/clean-install-report.json`
+- Build 4 independent review: `review/independent-r005-build4-review.md`
 - Owner review form: `review/r005-release-review.md`
 
 ## Reproduction
@@ -34,20 +35,17 @@ node --test tests/r005-*.test.mjs
 npm test
 ```
 
-## Highest-risk Questions
+## Build 5 Blocking-defect Checks
 
-1. `prepare-analysis → needs_host_action → submit-analysis` 是否准确表达 Host-Agent 视觉边界？
-2. Clean-install 是否完全脱离未打包仓库模块？
-3. Operation-specific Schemas、状态和错误码是否足够稳定？
-4. realpath、symlink、traversal、containment 和 collision 是否 fail closed？
-5. Host Fixture 是否明确不冒充实时模型结果或视觉质量证据？
-6. Codex/Claude Code 示例是否只表达协议形状而没有虚假认证？
-7. npm inventory 是否排除了 raw/private/repository-only 文件？
-8. Release Manifest 是否绑定 R-004 Owner PASS 与 Decision Set？
-9. stdout/stderr 和 Artifact 相对路径约束是否满足 Agent 集成？
+1. Host 是否能仅通过 returned contract 打开 `prepared/sources/source-N.ext`，且同名来源不歧义？
+2. Prepared source 是否在 `submit-analysis` 前重新绑定 ID 并验证 SHA-256？
+3. `host-analysis.schema.json` 的结构、状态、confidence、unknown field 和 evidence refs 是否真实 fail closed？
+4. 正常 `submit-analysis` 是否保持 `awaiting-owner-review`，不写入 PASS 或授权 realization？
+5. Owner Decision 是否产生新的 package identity，且旧 Candidate 不被原地修改？
+6. Fixture Decision 是否必须显式启用专用 option，并与 project-owner provenance 区分？
+7. Decision ID/status/source 是否进入 approved package、compiled contract 和 realization？
+8. 缺失或非 canonical classification 是否保持 blocked，不能默认升级为 `canonical-product-ui`？
+9. npm inventory、Clean-install、路径安全、平台和分发声明是否仍保持 Build 4 已通过的边界？
 10. 最终 Release Claim 是否仍为 protocol-level RC，而非生产就绪？
-11. packaged README/SKILL、canonical manifest entry 与六个 Operation 是否一致？
-12. installed package-local `npm test` 是否执行真实协议检查而非零测试通过？
-13. artifact source、release evidence、declared/verified platforms 与分发条款是否表达准确？
 
 项目所有者 Release Verdict 当前为 `PENDING`。

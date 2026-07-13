@@ -2,34 +2,33 @@
 
 ## Review Target
 
-- RC: `recrafts-0.3.0-rc.1-build4`
+- RC: `recrafts-0.3.0-rc.1-build5`
 - Package version: `0.3.0-rc.1`
 - Protocol: `1.0`
 - R-004 decision set: `owner-decision-r004-pass`
-- Artifact source commit: `99fa18b2c6f9e565936507794c9336404ff3936c`
-- Build 4 evidence commit: `6eb23e07fe097f3c3479dc439d580a8c25530d88`
-- Tarball SHA-256: `933045af5383838db6317b669b3b2a6af5a4dbd71a53a9f833facd9f27e84599`
+- Artifact source commit: `29368e5d64a9f4ca14c06a04368a5b33819a510a`
+- Build 5 evidence commit: `PENDING_POST_GENERATION_COMMIT`
+- Tarball SHA-256: `760377e2d2238c7169160f4d21e2fbc6782af6a5f157d09e0659e16448bec1c6`
 
 ## Mechanical Evidence
 
 - npm inventory allowlist: PASS
 - Tarball checksum: PASS
-- Clean install outside source repository: PASS
-- Installed package-local test: PASS, 1 protocol check
-- CLI help/version: PASS
-- capabilities: PASS
-- prepare-analysis → needs_host_action: PASS
-- submit-analysis with labeled deterministic fixture: PASS
-- validate-package / generate-realization / verify-fidelity: PASS
-- malformed request / unsafe path / output collision: PASS
-- operation/response Schema mutation tests: PASS
-- traversal / symlink escape / collision tests: PASS
+- Clean install outside source repository: PASS, 17/17
+- Package-local test: PASS, 1 protocol check
+- Six Operations: PASS
+- R-005 focused tests: PASS, 15/15
+- Full repository tests: PASS, 68/68
+- Prepared source contract and duplicate basenames: PASS
+- Host Analysis Schema negatives: PASS
+- Normal Owner Gate before realization: PASS
+- Fixture-mode isolation: PASS
+- New approved package identity: PASS
+- Decision trace propagation: PASS
+- Unknown classification canonical block: PASS
+- Build 4 preserved unchanged: PASS
 - Embedded vision provider: false
-- External Host certification claim: false
-- Declared platforms: darwin, linux, win32
-- Verified platform in this RC run: darwin
 - Distribution: UNLICENSED, internal evaluation only
-- Historical build3 preserved unchanged: PASS
 
 ## Project-owner Release Verdict
 

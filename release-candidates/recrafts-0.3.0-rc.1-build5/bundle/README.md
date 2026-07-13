@@ -1,0 +1,3 @@
+# Recrafts MVP RC
+
+Install the tarball locally, then invoke `recraft-interop` with one JSON Envelope on stdin. `prepare-analysis` copies sanitized sources into a bounded Prepared Bundle and returns `needs_host_action`; a vision-capable Host performs semantic analysis; `submit-analysis` validates that Host payload and produces an `awaiting-owner-review` candidate. Realization requires an explicit Owner Decision import that creates a new approved package identity. Recrafts does not embed a vision provider or fabricate project-owner approval. Host examples demonstrate protocol shape only and are not external-product certification.

@@ -1,90 +1,60 @@
-# R-005 Result — Build 4 Ready for Owner Release Verdict
+# R-005 Result — Build 5 Ready for Independent Review
 
 ## Conclusion
 
-R-005 已按独立评审意见生成不可变 build4。npm pack、隔离 clean install、六个 Operation、Schema mutation、路径安全及 R-001 → R-005 全量回归全部通过。build3 未被修改，继续作为已验证的历史 RC；项目所有者 Release Verdict 保持 `PENDING`。
+R-005 已根据 Build 4 独立评审生成不可变 build5。Prepared source handoff、完整 Host Analysis Schema 校验、项目所有者 Gate、Decision trace 和分类默认值均已修正。npm pack、隔离 clean install、六个 Operation、负例测试及 R-001 → R-005 全量回归全部通过；项目所有者 Release Verdict 保持 `PENDING`。
 
 ## RC Identity
 
 ```text
-rc_id: recrafts-0.3.0-rc.1-build4
+rc_id: recrafts-0.3.0-rc.1-build5
 package_version: 0.3.0-rc.1
 protocol_version: 1.0
-artifact_source_commit: 99fa18b2c6f9e565936507794c9336404ff3936c
-verified_build3_evidence_commit: 14117898bf0c1042d2d782c0610f918db048092f
+artifact_source_commit: 29368e5d64a9f4ca14c06a04368a5b33819a510a
 build4_evidence_commit: 6eb23e07fe097f3c3479dc439d580a8c25530d88
+post_review_evidence_commit: 15f38879a3688c6af492219a90225204070b3b91
+build5_evidence_commit: PENDING_POST_GENERATION_COMMIT
 r004_decision_set_id: owner-decision-r004-pass
-tarball_sha256: 933045af5383838db6317b669b3b2a6af5a4dbd71a53a9f833facd9f27e84599
+tarball_sha256: 760377e2d2238c7169160f4d21e2fbc6782af6a5f157d09e0659e16448bec1c6
 ```
 
-Canonical review target: `release-candidates/recrafts-0.3.0-rc.1-build4/`
+Canonical review target: `release-candidates/recrafts-0.3.0-rc.1-build5/`
 
-## Host-Agent Boundary
+## Build 4 Review Corrections
 
-Recrafts 不内置视觉模型。最终 Operation 是：
-
-```text
-capabilities
-prepare-analysis
-submit-analysis
-validate-package
-generate-realization
-verify-fidelity
-```
-
-`prepare-analysis` 只验证输入、建立 Evidence Bundle 和 Host 指令，并返回 `needs_host_action`。Host Agent 完成视觉理解后，`submit-analysis` 验证结构化 Host Analysis，再生成 Package。开发和 CraftsOS 可以接入 Codex/OpenAI Vision；独立 Skill 的能力取决于使用者接入的 Host。
-
-## Release Artifacts
-
-- `artifacts/recrafts-0.3.0-rc.1.tgz`
-- `bundle/release-manifest.json`
-- `bundle/checksums.sha256`
-- `bundle/contracts/`
-- `bundle/examples/`
-- `bundle/fixtures/`
-- `bundle/evidence/fidelity/`
-- `validation/package-contents.json`
-- `validation/interop-validation.json`
-- `validation/clean-install-report.json`
-- `validation/rc-readiness.json`
+- `prepare-analysis` 将来源复制到 `prepared/sources/source-N.ext`，Manifest 与 `host_action.sources` 返回无绝对路径的确定性相对路径。不同目录下的同名来源保持独立，`submit-analysis` 前重新验证 Prepared ID 与文件 SHA-256。
+- Runtime 在任何语义检查前加载并执行 `contracts/host-analysis.schema.json`。缺 finding ID/observation、未知字段、非法 token status、越界 confidence、空 evidence refs 和 `vision_capability: false` 均返回 `SCHEMA_VALIDATION_FAILED`；未知 evidence ref 和 ID 不一致分别 fail closed。
+- 正常 `submit-analysis` 只生成 `awaiting-owner-review` Candidate，Owner Verdict 为 `PENDING`，realization authorization 为 false。未提供 Owner Decision 时 `generate-realization` 返回 `REALIZATION_NOT_AUTHORIZED`。
+- `generate-realization` 通过受控 Decision import 生成新的 approved `package_id` 后再 realization。Fixture Decision 仅在 `options.interoperability_fixture: true` 下有效，不能代表项目所有者。
+- `owner_decision_set_id`、`decision_status`、`decision_source` 传入 approved source manifest、package manifest、compiled contract 和 realization manifest。
+- Host Analysis 支持 source/region classification。未分类来源保持 `unknown`、`canonical_promotion_blocked: true`，不能进入 canonical realization。
 
 ## Clean-install Result
 
-在源仓库外的临时目录安装 tarball 后，package-local `npm test` 实际执行 1 个协议检查，不存在零测试假通过。help/version 与六个 Operation 均通过；malformed JSON、路径穿越和输出碰撞均 fail closed。每次协议调用 stdout 只包含一个 JSON 值。
+在源仓库外安装 Tarball 后，17/17 checks 通过：package-local test、help/version、六个 Operation、Prepared source 实际打开与哈希核验、Host Analysis Schema 负例、Owner Gate、fixture 隔离、Decision trace、malformed request、unsafe path 和 output collision。
 
-Host Analysis Fixture 明确标记为：`deterministic interoperability fixture; not a live model result; not proof of visual quality`。
-
-## Security and Integrity
-
-- 所有本地路径通过 realpath 与 containment 检查。
-- 拒绝 traversal、symlink escape、Oracle/expected、特殊文件、输入输出嵌套、非空输出和远程 URL。
-- Artifact path 相对 output root，不回传机器绝对路径。
-- Tarball 排除 review、analysis、examples、dev-workflow、tests、历史输出、`.DS_Store` 和 Playwright 状态。
-- Release Manifest 包含 R-004 independent ACCEPT、Owner PASS 与 `owner-decision-r004-pass`。
-- `artifact_source_commit` 与 release evidence identity 分离；build4 的证据提交在不可变生成后记录于本 Result。
-- 平台声明区分 declared 与 verified：声明 `darwin/linux/win32`，本轮只验证 `darwin`。
-- 分发条款为 `UNLICENSED`、`internal evaluation only`。
+Fixture 标记为：`deterministic interoperability fixture; not a live model result; not proof of visual quality; not a project-owner decision`。
 
 ## Validation
 
-- `npm pack`: PASS，由 build4 构建器在隔离 staging 目录执行
-- Clean install + 六个 Operation: PASS，12/12 checks
-- R-005 定向测试：PASS，10/10
-- Schema mutation：PASS，六个 operation Schema、response status mutation 均 fail closed
-- 路径安全：PASS，traversal、symlink escape、collision 均 fail closed
+- `npm pack`: PASS，71 个文件，inventory allowlist 通过
+- `npm run validate:r005`: PASS，12 个 readiness checks
+- R-005 定向测试：PASS，15/15
+- Clean install：PASS，17/17
 - `npm run validate:r001`、`test:r001`、`validate:r002`、`test:r002`、`validate:r003-preflight`、`validate:r003-realization`、`validate:r004`、`validate:r005`: PASS
-- `npm test`: PASS，63/63
+- `npm test`: PASS，68/68
+- Build 4 Tarball 复核：`933045af5383838db6317b669b3b2a6af5a4dbd71a53a9f833facd9f27e84599`，未变化
 
-## Failed Historical Builds
+## Build History
 
-`build1` 暴露 Node stdin fd 读取问题；`build2` 暴露 clean-install report 的非布尔字段。`build3` 的 tarball SHA-256 在 build4 前后均为 `ddce4dde31863aa8cf6801b221f35703c97f0ec0bfc9ab498bad072ab2952b47`，未被修改，保留为已验证历史 RC。独立评审要求的 hardening 仅进入 build4。
+Build 4 保持不可变并保留独立评审 `REVISE`。Build 5 首次生成被 clean-install 测试脚本的异步 SHA 比较误判阻止；该失败目录保留为 `recrafts-0.3.0-rc.1-build5-attempt1-failed-prepared-source-check`，未覆盖、未作为 RC。修正证据脚本后从 source commit `29368e5...` 重新生成正式 build5。
 
 ## Boundaries
 
 - 未发布到公共 npm registry。
-- 未验证多个外部 Host 产品；Codex/Claude Code 文件仅为协议示例。
-- 未声明 embedded inference、universal Host compatibility、production service、full VIS、direct CraftsOS integration 或 production readiness。
-- 未修改 CraftsOS/Layoutcrafts 业务代码。
-- 未替项目所有者填写 Release Verdict；最终发布决定仍需项目所有者审阅 build4 后给出。
+- 仅在本轮 macOS 环境验证；Linux 独立验证属于下一轮评审输入。
+- 未声明 embedded inference、通用 Host 产品认证、production service、full VIS、直接 CraftsOS 集成或 production readiness。
+- 未修改 CraftsOS/Layoutcrafts 业务代码，未纳入工作区既有无关改动。
+- 项目所有者 Release Verdict 仍为 `PENDING`，不得由实现 Agent 自行填写 PASS。
 
-> Recrafts can be installed as a local MVP release candidate, coordinate visual analysis with a capability-declaring Host Agent through a versioned JSON Envelope, validate Host-supplied analysis, generate standalone visual realizations, and run bounded fidelity verification in a clean environment.
+> Recrafts can be installed as a local MVP release candidate, hand bounded prepared sources to a vision-capable Host, validate Host-supplied analysis, preserve project-owner approval as a mandatory gate, derive a new approved package identity, generate a standalone visual realization and run bounded fidelity verification in a clean environment.

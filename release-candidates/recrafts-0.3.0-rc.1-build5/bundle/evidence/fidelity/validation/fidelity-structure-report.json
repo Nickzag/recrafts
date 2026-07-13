@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "findings": [
+    {
+      "id": "STR-001",
+      "subject": "three-column workbench",
+      "verdict": "confirmed-match",
+      "evidence": "exactly three persistent columns; no global header"
+    },
+    {
+      "id": "STR-002",
+      "subject": "canvas priority",
+      "verdict": "confirmed-match",
+      "evidence": "center canvas remains flexible and visually dominant at all declared viewports"
+    },
+    {
+      "id": "STR-003",
+      "subject": "agent placement",
+      "verdict": "confirmed-match",
+      "evidence": "contextual center-workflow card; no permanent chat column"
+    },
+    {
+      "id": "STR-004",
+      "subject": "component gallery density",
+      "verdict": "must-fix",
+      "classification": "component-renderer",
+      "evidence": "96px state stages and 26px row padding weaken the compact desktop-native direction"
+    }
+  ]
+}
