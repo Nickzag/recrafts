@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "gates": [
+    {
+      "name": "raw-host-output-in-evidence",
+      "status": "failed-closed",
+      "error_code": "PACKAGE_INVALID"
+    },
+    {
+      "name": "domain-without-evidence-refs",
+      "status": "failed-closed",
+      "error_code": "PACKAGE_INVALID"
+    },
+    {
+      "name": "host-self-authorization",
+      "status": "failed-closed",
+      "error_code": "SCHEMA_VALIDATION_FAILED"
+    },
+    {
+      "name": "open-high-impact-conflict-acceptance",
+      "status": "failed-closed",
+      "error_code": "REALIZATION_NOT_AUTHORIZED"
+    },
+    {
+      "name": "partial-source-acceptance",
+      "status": "failed-closed",
+      "error_code": "REALIZATION_NOT_AUTHORIZED"
+    },
+    {
+      "name": "stale-source-acceptance",
+      "status": "failed-closed",
+      "error_code": "REALIZATION_NOT_AUTHORIZED"
+    },
+    {
+      "name": "rollback-output-overwrite",
+      "status": "failed-closed",
+      "error_code": "OUTPUT_NOT_EMPTY"
+    },
+    {
+      "name": "path-traversal",
+      "status": "failed-closed",
+      "error_code": "UNSAFE_INPUT_PATH"
+    },
+    {
+      "name": "symlink-escape",
+      "status": "failed-closed",
+      "error_code": "UNSAFE_INPUT_PATH"
+    },
+    {
+      "name": "output-collision",
+      "status": "failed-closed",
+      "error_code": "OUTPUT_NOT_EMPTY"
+    },
+    {
+      "name": "blocked-source-acceptance",
+      "status": "failed-closed",
+      "error_code": "HOST_ACTION_REQUIRED",
+      "semantic_analysis_completed": false
+    }
+  ]
+}

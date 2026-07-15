@@ -1,13 +1,14 @@
 {
   "closure_matrix_id": "closure-matrix-r008-build2",
-  "status": "blocked",
+  "status": "pass",
   "rows": [
     { "scenario": "single-image", "status": "pass", "prepared_analysis_id": "prepared-a046d4cfe2c5af63", "accepted_package_id": "package-1e002655b84aa8c0", "artifact_set_id": "artifact-set-5907a23fb36417bb", "validation": "pass", "rollback": "covered by installed multi-image system rollback" },
     { "scenario": "multi-image-set", "status": "pass", "prepared_analysis_id": "prepared-1aa57503feecb517", "initial_package_id": "package-e2a5188bda0e49db", "high_conflicts": 3, "correction_id": "correction-build2-multi-resolve", "accepted_package_c": "package-630d059798d98669", "accepted_package_f": "package-7a851d60780a0618", "rollback_package_g": "package-5b691472ba1240c0", "rollback_hashes_match": true },
     { "scenario": "real-public-url-complete", "status": "pass", "capture_id": "capture-b9caa911cb91f7ec", "prepared_analysis_id": "prepared-8ff8103746c9d586", "accepted_package_id": "package-a6b2830ecd7731e6", "artifact_set_id": "artifact-set-23bfb2353722489c", "validation": "pass" },
     { "scenario": "url-partial", "status": "pass", "capture_status": "partial", "acceptance_error": "REALIZATION_NOT_AUTHORIZED" },
     { "scenario": "url-blocked", "status": "pass", "capture_status": "blocked", "domain_extraction": "prohibited", "acceptance": "prohibited" },
-    { "scenario": "url-stale", "status": "pass", "capture_status": "stale", "acceptance_error": "REALIZATION_NOT_AUTHORIZED" }
+    { "scenario": "url-stale", "status": "pass", "capture_status": "stale", "acceptance_error": "REALIZATION_NOT_AUTHORIZED" },
+    { "scenario": "linux-installed-rc", "status": "pass", "workflow_run_id": "29388978971", "head_sha": "9448ebfb391b73ba00e794ec1e6baf12efd985dc", "runner": "GitHub Actions ubuntu-latest", "tarball_sha256": "2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774", "operation_count": 9, "real_url_capture_status": "complete", "rollback_hashes_match": true, "negative_gates": "11/11 failed closed", "evidence_validator": "pass" }
   ],
-  "blocking_platform_row": "linux clean install not executed"
+  "blocking_platform_row": null
 }

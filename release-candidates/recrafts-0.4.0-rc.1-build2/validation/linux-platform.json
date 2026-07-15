@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "platform": "linux",
+  "os": "Linux 6.17.0-1018-azure",
+  "architecture": "x64",
+  "node": "v24.18.0",
+  "npm": "11.16.0",
+  "playwright": "1.61.1",
+  "chromium": "149.0.7827.55",
+  "installed_package_version": "0.4.0-rc.1",
+  "protocol_version": "1.1",
+  "schema_version": "3.0.0"
+}

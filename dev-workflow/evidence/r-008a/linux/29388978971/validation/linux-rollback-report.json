@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "lineage_event_type": "rollback-created",
+  "current_package_id": "package-5b3675d7710f50dc",
+  "restore_target_package_id": "package-cc4d02570d36e44e",
+  "rollback_package_id": "package-147b1cd350ab0d1e",
+  "hashes_restored": true,
+  "target_artifact_hashes": {
+    "design.md": "d694fefcdaed423dbff716cbde347bcd5d771c962c2a5881b2db8255f69d12b1",
+    "tokens.json": "1552b685bf107cd475dd29d158355458d09385996dc0c410d7fbc2ad95337801",
+    "components.json": "bcec4cfdf07152e6199c0e8776aefa5a1078071c2aba1bb1fb099e65a774c350",
+    "grid-rules.json": "6d53c93669235bb2a66c172b65c300d2277273bc192823713639e8abf0c98679",
+    "layout-rules.json": "4ad69a512636a7334549a7ad9fa51c415010ac702d262f12e887b63c24c43d44",
+    "visual-grammar.json": "809bdec6e1aaa6fd4ad44704e60b3d92dbc771e1cb636848d590e0a631e04a0c",
+    "conflicts.json": "379f38f44f380944368365c168cd2e1507148031765acc0fed6f5d43de68013c"
+  },
+  "rollback_artifact_hashes": {
+    "design.md": "d694fefcdaed423dbff716cbde347bcd5d771c962c2a5881b2db8255f69d12b1",
+    "tokens.json": "1552b685bf107cd475dd29d158355458d09385996dc0c410d7fbc2ad95337801",
+    "components.json": "bcec4cfdf07152e6199c0e8776aefa5a1078071c2aba1bb1fb099e65a774c350",
+    "grid-rules.json": "6d53c93669235bb2a66c172b65c300d2277273bc192823713639e8abf0c98679",
+    "layout-rules.json": "4ad69a512636a7334549a7ad9fa51c415010ac702d262f12e887b63c24c43d44",
+    "visual-grammar.json": "809bdec6e1aaa6fd4ad44704e60b3d92dbc771e1cb636848d590e0a631e04a0c",
+    "conflicts.json": "379f38f44f380944368365c168cd2e1507148031765acc0fed6f5d43de68013c"
+  }
+}

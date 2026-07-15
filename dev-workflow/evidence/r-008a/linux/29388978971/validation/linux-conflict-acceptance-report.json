@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "fixture_label": "deterministic-non-live-host-analysis",
+  "fixture_is_live_model_result": false,
+  "fixture_is_visual_quality_proof": false,
+  "fixture_is_project_owner_decision": false,
+  "high_impact_conflicts": 1,
+  "acceptance_before_correction": {
+    "status": "blocked",
+    "error_code": "REALIZATION_NOT_AUTHORIZED"
+  },
+  "correction": {
+    "status": "passed",
+    "correction_id": "r008a-correction-1"
+  },
+  "acceptance_after_correction": {
+    "status": "passed",
+    "package_id": "package-cc4d02570d36e44e"
+  },
+  "darwin_real_host_evidence_remains_authoritative": true
+}

@@ -1,0 +1,89 @@
+{
+  "evidence_kind": "local-non-linux-qualification-diagnostic",
+  "canonical_linux_release_evidence": false,
+  "recorded_at": "2026-07-13T16:10:00.000Z",
+  "branch": "recrafts/r-008-independent-mvp-closure",
+  "base_commit": "255bf69a8745e15bde6c23255d5122fa8d535b15",
+  "rc_id": "recrafts-0.4.0-rc.1-build2",
+  "tarball_sha256": "2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774",
+  "local_environment": {
+    "platform": "darwin",
+    "os": "Darwin 25.6.0",
+    "architecture": "x64",
+    "node": "v24.15.0",
+    "npm": "11.12.1",
+    "playwright": "1.61.1",
+    "chromium": "149.0.7827.55"
+  },
+  "installed_rc_diagnostic": {
+    "package_local_npm_test": "passed",
+    "operation_count": 9,
+    "operation_results": {
+      "capabilities": "passed",
+      "prepare-analysis": "passed",
+      "submit-analysis": "passed",
+      "validate-package": "passed",
+      "generate-realization": "failed-closed:REALIZATION_NOT_AUTHORIZED",
+      "verify-fidelity": "passed",
+      "submit-correction": "passed",
+      "accept-artifacts": "passed",
+      "rollback-package": "passed"
+    },
+    "real_url": {
+      "target": "https://www.craft.do",
+      "viewport": "1440x900",
+      "capture_status": "complete",
+      "captured_at": "2026-07-13T16:02:30.419Z",
+      "evidence_count": 789,
+      "mandatory_classes_present": true,
+      "evidence_hashes_verified": true,
+      "dom_css_and_screenshot_separate": true
+    },
+    "conflict_correction_acceptance": "passed",
+    "rollback_created_new_package": true,
+    "rollback_canonical_hashes_restored": true,
+    "negative_gates": "11/11 failed closed",
+    "source_runtime_imports": [],
+    "npm_link_used": false
+  },
+  "validator_result": {
+    "status": "expected-fail",
+    "reason": "The diagnostic ran on Darwin and is deliberately ineligible for the Linux release gate.",
+    "errors": [
+      "Linux clean-install status must be passed",
+      "Linux platform report status must be passed",
+      "Linux platform identity is missing or invalid",
+      "Workflow runner OS is not Linux"
+    ]
+  },
+  "repository_validation": {
+    "npm_test": "103/103 passed",
+    "r001": "passed",
+    "r002": "passed",
+    "r003_preflight": "passed",
+    "r003_realization": "passed",
+    "r004": "passed",
+    "r005": "passed",
+    "r006": "7/7 passed",
+    "r007": "10/10 passed",
+    "workflow_yaml_parse": "passed",
+    "git_diff_check": "passed"
+  },
+  "external_runner_state": {
+    "git_remote_configured": false,
+    "github_cli_authenticated": true,
+    "matching_github_repository_discovered": false,
+    "canonical_workflow_status": "not-executed",
+    "workflow_run_id": null,
+    "artifact_id": null
+  },
+  "release_effect": {
+    "build2_modified": false,
+    "rc_readiness_updated": false,
+    "r008_result_updated": false,
+    "r008_review_packet_updated": false,
+    "independent_review": "PENDING",
+    "project_owner_verdict": "PENDING",
+    "craftsos_holding": "PENDING"
+  }
+}

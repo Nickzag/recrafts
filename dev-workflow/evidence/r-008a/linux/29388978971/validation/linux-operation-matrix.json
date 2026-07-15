@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "operations": {
+    "capabilities": {
+      "status": "passed",
+      "response_status": "completed"
+    },
+    "prepare-analysis": {
+      "status": "passed",
+      "response_status": "needs_host_action"
+    },
+    "submit-analysis": {
+      "status": "passed",
+      "response_status": "completed_with_warnings"
+    },
+    "validate-package": {
+      "status": "passed",
+      "response_status": "completed"
+    },
+    "submit-correction": {
+      "status": "passed",
+      "response_status": "completed_with_warnings"
+    },
+    "accept-artifacts": {
+      "status": "passed",
+      "response_status": "completed"
+    },
+    "rollback-package": {
+      "status": "passed",
+      "response_status": "completed"
+    },
+    "generate-realization": {
+      "status": "failed-closed",
+      "error_code": "REALIZATION_NOT_AUTHORIZED"
+    },
+    "verify-fidelity": {
+      "status": "passed",
+      "response_status": "completed"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+[1] npm install --no-audit --no-fund /home/runner/work/_temp/recrafts-r008a-input/recrafts-0.4.0-rc.1.tgz
+exit=0 signal=none response_status=n/a error_code=none
+[2] npm test
+exit=0 signal=none response_status=n/a error_code=none
+[3] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs --help
+exit=0 signal=none response_status=n/a error_code=none
+[4] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs --version
+exit=0 signal=none response_status=n/a error_code=none
+[5] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed error_code=none
+[6] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=needs_host_action error_code=none
+[7] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed_with_warnings error_code=none
+[8] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed error_code=none
+[9] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=needs_host_action error_code=none
+[10] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed_with_warnings error_code=none
+[11] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=REALIZATION_NOT_AUTHORIZED
+[12] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed_with_warnings error_code=none
+[13] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed error_code=none
+[14] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed_with_warnings error_code=none
+[15] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed error_code=none
+[16] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed error_code=none
+[17] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed error_code=none
+[18] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=REALIZATION_NOT_AUTHORIZED
+[19] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed error_code=none
+[20] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/browser_capture_cli.mjs https://www.craft.do /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/url-capture
+exit=0 signal=none response_status=complete error_code=none
+[21] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=needs_host_action error_code=none
+[22] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=needs_host_action error_code=none
+[23] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed_with_warnings error_code=none
+[24] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=REALIZATION_NOT_AUTHORIZED
+[25] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=needs_host_action error_code=none
+[26] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed_with_warnings error_code=none
+[27] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=REALIZATION_NOT_AUTHORIZED
+[28] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=0 signal=none response_status=completed_with_warnings error_code=none
+[29] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=PACKAGE_INVALID
+[30] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=PACKAGE_INVALID
+[31] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=SCHEMA_VALIDATION_FAILED
+[32] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=OUTPUT_NOT_EMPTY
+[33] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=UNSAFE_INPUT_PATH
+[34] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=UNSAFE_INPUT_PATH
+[35] node /home/runner/work/_temp/recrafts-r008a-work-ZEyqqM/node_modules/recrafts/runtime/interop_cli.mjs
+exit=1 signal=none response_status=failed error_code=OUTPUT_NOT_EMPTY
+[36] npm --version
+exit=0 signal=none response_status=n/a error_code=none

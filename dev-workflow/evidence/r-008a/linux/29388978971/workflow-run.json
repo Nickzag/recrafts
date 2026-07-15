@@ -1,0 +1,12 @@
+{
+  "workflow_name": "Recrafts R-008A Linux Qualification",
+  "run_id": "29388978971",
+  "run_attempt": "1",
+  "repository_commit": "9448ebfb391b73ba00e794ec1e6baf12efd985dc",
+  "runner_os": "Linux",
+  "runner_architecture": "X64",
+  "started_at": "2026-07-15T04:27:07.260Z",
+  "completed_at": "2026-07-15T04:27:22.229Z",
+  "artifact_checksum_scope": "checksums.sha256",
+  "artifact_checksum": "121abcfa04f66f00a3927a57a37feb0773bd7baad91168308b9d71a7ce2fad8f"
+}

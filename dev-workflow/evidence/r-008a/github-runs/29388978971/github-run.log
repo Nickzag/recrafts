@@ -1,0 +1,497 @@
+Qualify immutable Build 2 on Linux	Set up job	﻿2026-07-15T04:26:35.9868043Z Current runner version: '2.335.1'
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9895178Z ##[group]Runner Image Provisioner
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9896223Z Hosted Compute Agent
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9896845Z Version: 20260624.560
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9897698Z Commit: 925d229a51159bc391ae97e54a2dd1fe20af789d
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9898514Z Build Date: 2026-06-24T18:26:47Z
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9899186Z Worker ID: {e1ed243e-afca-4eea-b945-24aa0388ce83}
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9900016Z Azure Region: westus
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9900637Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9902484Z ##[group]Operating System
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9903239Z Ubuntu
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9903758Z 24.04.4
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9904233Z LTS
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9904869Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9905414Z ##[group]Runner Image
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9906053Z Image: ubuntu-24.04
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9906637Z Version: 20260705.232.1
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9907942Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260705.232/images/ubuntu/Ubuntu2404-Readme.md
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9909768Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260705.232
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9910686Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9911863Z ##[group]GITHUB_TOKEN Permissions
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9913969Z Contents: read
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9914757Z Metadata: read
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9915303Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9918365Z Secret source: Actions
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:35.9919414Z Prepare workflow directory
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:36.0335911Z Prepare all required actions
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:36.0376526Z Getting action download info
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:36.3880526Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:36.4736343Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:36.5604073Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+Qualify immutable Build 2 on Linux	Set up job	2026-07-15T04:26:36.7689897Z Complete job name: Qualify immutable Build 2 on Linux
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	﻿2026-07-15T04:26:36.8469347Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8478733Z ##[group]Run actions/checkout@v4
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8479479Z with:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8479932Z   repository: Nickzag/recrafts
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8483651Z   token: ***
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8484069Z   ssh-strict: true
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8484493Z   ssh-user: git
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8484922Z   persist-credentials: true
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8485392Z   clean: true
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8485819Z   sparse-checkout-cone-mode: true
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8486327Z   fetch-depth: 1
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8486739Z   fetch-tags: false
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8487357Z   show-progress: true
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8487795Z   lfs: false
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8488212Z   submodules: false
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8488679Z   set-safe-directory: true
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8489392Z env:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8490096Z   EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8490943Z   TARGET_URL: https://www.craft.do
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.8491449Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9562648Z Syncing repository: Nickzag/recrafts
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9565356Z ##[group]Getting Git version info
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9566536Z Working directory is '/home/runner/work/recrafts/recrafts'
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9568728Z [command]/usr/bin/git version
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9668785Z git version 2.54.0
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9698917Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9707757Z Temporarily overriding HOME='/home/runner/work/_temp/08d71603-c15b-4833-a59f-3a1263d3923f' before making global git config changes
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9710099Z Adding repository directory to the temporary git global config as a safe directory
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9714400Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/recrafts/recrafts
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9770691Z Deleting the contents of '/home/runner/work/recrafts/recrafts'
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9774685Z ##[group]Initializing the repository
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9780677Z [command]/usr/bin/git init /home/runner/work/recrafts/recrafts
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9882859Z hint: Using 'master' as the name for the initial branch. This default branch name
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9885113Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9886663Z hint: to use in all of your new repositories, which will suppress this warning,
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9888436Z hint: call:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9889249Z hint:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9890044Z hint: 	git config --global init.defaultBranch <name>
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9891014Z hint:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9891915Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9893494Z hint: 'development'. The just-created branch can be renamed via this command:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9894781Z hint:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9895433Z hint: 	git branch -m <name>
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9896158Z hint:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9897325Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9899271Z Initialized empty Git repository in /home/runner/work/recrafts/recrafts/.git/
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9902218Z [command]/usr/bin/git remote add origin https://github.com/Nickzag/recrafts
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9951368Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9952807Z ##[group]Disabling automatic garbage collection
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9955534Z [command]/usr/bin/git config --local gc.auto 0
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9990434Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9991581Z ##[group]Setting up auth
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:36.9999197Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.0042764Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.0421660Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.0466333Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.0758194Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.0807324Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.1074178Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.1134432Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.1136349Z ##[group]Fetching the repository
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:37.1149087Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9448ebfb391b73ba00e794ec1e6baf12efd985dc:refs/remotes/origin/recrafts/r-008-independent-mvp-closure
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4472206Z From https://github.com/Nickzag/recrafts
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4475991Z  * [new ref]         9448ebfb391b73ba00e794ec1e6baf12efd985dc -> origin/recrafts/r-008-independent-mvp-closure
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4510286Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4512561Z ##[group]Determining the checkout info
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4514956Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4520487Z [command]/usr/bin/git sparse-checkout disable
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4588313Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4622640Z ##[group]Checking out the ref
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.4629641Z [command]/usr/bin/git checkout --progress --force -B recrafts/r-008-independent-mvp-closure refs/remotes/origin/recrafts/r-008-independent-mvp-closure
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.7387677Z Switched to a new branch 'recrafts/r-008-independent-mvp-closure'
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.7390045Z branch 'recrafts/r-008-independent-mvp-closure' set up to track 'origin/recrafts/r-008-independent-mvp-closure'.
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.7410411Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.7467239Z [command]/usr/bin/git log -1 --format=%H
+Qualify immutable Build 2 on Linux	Checkout qualification inputs	2026-07-15T04:26:38.7494351Z 9448ebfb391b73ba00e794ec1e6baf12efd985dc
+Qualify immutable Build 2 on Linux	Set up Node.js	﻿2026-07-15T04:26:38.7741368Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7743302Z ##[group]Run actions/setup-node@v4
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7743623Z with:
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7743870Z   node-version: 24
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7744137Z   always-auth: false
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7744418Z   check-latest: false
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7746889Z   token: ***
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7747334Z env:
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7747789Z   EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7748327Z   TARGET_URL: https://www.craft.do
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.7748644Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.9234995Z (node:2305) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.9236515Z Found in cache @ /opt/hostedtoolcache/node/24.18.0/x64
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.9238098Z ##[group]Environment details
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:38.9239841Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:39.3148907Z node: v24.18.0
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:39.3150625Z npm: 11.16.0
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:39.3151011Z yarn: 1.22.22
+Qualify immutable Build 2 on Linux	Set up Node.js	2026-07-15T04:26:39.3152356Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	﻿2026-07-15T04:26:39.3285225Z ##[group]Run set -euo pipefail
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3285685Z [36;1mset -euo pipefail[0m
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3286206Z [36;1mtarball="release-candidates/recrafts-0.4.0-rc.1-build2/artifacts/recrafts-0.4.0-rc.1.tgz"[0m
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3286852Z [36;1mactual="$(sha256sum "$tarball" | awk '{print $1}')"[0m
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3287738Z [36;1mtest "$actual" = "$EXPECTED_TARBALL_SHA256"[0m
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3454343Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3454840Z env:
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3455334Z   EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3455988Z   TARGET_URL: https://www.craft.do
+Qualify immutable Build 2 on Linux	Verify immutable Build 2 tarball	2026-07-15T04:26:39.3456339Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	﻿2026-07-15T04:26:39.3599775Z ##[group]Run set -euo pipefail
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3600189Z [36;1mset -euo pipefail[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3600502Z [36;1minput="$RUNNER_TEMP/recrafts-r008a-input"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3600882Z [36;1moutput="$RUNNER_TEMP/recrafts-r008a-output"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3601221Z [36;1mmkdir -p "$input" "$output"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3601805Z [36;1mcp "release-candidates/recrafts-0.4.0-rc.1-build2/artifacts/recrafts-0.4.0-rc.1.tgz" "$input/recrafts-0.4.0-rc.1.tgz"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3602757Z [36;1mcp "release-candidates/recrafts-0.4.0-rc.1-build2/bundle/examples/multi-image-secondary.svg" "$input/multi-image-secondary.svg"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3603628Z [36;1mcp -R "examples/golden-candidates/crafts-ui-multi-image/fidelity/r004-v2" "$input/fidelity-r004-v2"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3604353Z [36;1mcp "scripts/run-r008-linux-qualification.mjs" "$input/run-r008-linux-qualification.mjs"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3605059Z [36;1mcp "scripts/validate-r008a-linux-evidence.mjs" "$input/validate-r008a-linux-evidence.mjs"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3605612Z [36;1mecho "input=$input" >> "$GITHUB_OUTPUT"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3605950Z [36;1mecho "output=$output" >> "$GITHUB_OUTPUT"[0m
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3639861Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3640251Z env:
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3640630Z   EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3641377Z   TARGET_URL: https://www.craft.do
+Qualify immutable Build 2 on Linux	Copy allowed inputs outside checkout	2026-07-15T04:26:39.3641658Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	﻿2026-07-15T04:26:39.3861249Z ##[group]Run npx --yes playwright@1.61.1 install --with-deps chromium
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:39.3861822Z [36;1mnpx --yes playwright@1.61.1 install --with-deps chromium[0m
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:39.3895727Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:39.3896108Z env:
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:39.3896488Z   EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:39.3897320Z   TARGET_URL: https://www.craft.do
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:39.3897639Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1307751Z ╔═══════════════════════════════════════════════════════════════════════════════╗
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1310052Z ║ WARNING: It looks like you are running 'npx playwright install' without first ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1311064Z Installing dependencies...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1312687Z ║ installing your project's dependencies.                                       ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1314225Z ║                                                                               ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1315962Z ║ To avoid unexpected behavior, please install your dependencies first, and     ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1318225Z ║ then run Playwright's install command:                                        ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1319713Z ║                                                                               ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1321212Z ║     npm install                                                               ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1322692Z ║     npx playwright install                                                    ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1324272Z ║                                                                               ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1325646Z ║ If your project does not yet depend on Playwright, first install the          ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1327426Z ║ applicable npm package (most commonly @playwright/test), and                  ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1329006Z ║ then run Playwright's install command to download the browsers:               ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1330440Z ║                                                                               ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1331679Z ║     npm install @playwright/test                                              ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1333129Z ║     npx playwright install                                                    ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1334331Z ║                                                                               ║
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1335669Z ╚═══════════════════════════════════════════════════════════════════════════════╝
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.1409823Z Switching to root user to install dependencies...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.2821934Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.3019065Z Get:6 https://packages.microsoft.com/repos/azure-cli noble InRelease [3564 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.3138105Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.3149297Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.3169657Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.3204163Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.3229203Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.3278432Z Get:8 https://dl.google.com/linux/chrome-stable/deb stable InRelease [1825 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.3943447Z Get:9 https://packages.microsoft.com/repos/azure-cli noble/main amd64 Packages [2314 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5044655Z Get:10 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [224 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5103784Z Get:11 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [11.7 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5158240Z Get:12 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [191 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5702899Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1096 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5763903Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [270 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5788240Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [180 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5828940Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1661 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5918335Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [328 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5941004Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.5977990Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1229 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.6048198Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [278 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.6059051Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.6502383Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5744 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.6942916Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [10.5 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7258622Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [835 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7289473Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [188 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7309875Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [44.9 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7326273Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [11.9 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7368372Z Get:28 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1177 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7455529Z Get:29 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [232 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7473254Z Get:30 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.2 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7485134Z Get:31 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [24.2 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7522326Z Get:32 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1139 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.7583634Z Get:33 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [260 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:42.8097286Z Get:34 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1221 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:47.8158934Z Fetched 10.3 MB in 1s (7655 kB/s)
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.5562424Z Reading package lists...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.5805515Z Reading package lists...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.7615974Z Building dependency tree...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.7627082Z Reading state information...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9153276Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9154409Z libatk-bridge2.0-0t64 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9155098Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9155721Z libatk1.0-0t64 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9156355Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9157307Z libatspi2.0-0t64 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9158102Z libcairo2 is already the newest version (1.18.0-3build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9158670Z libcairo2 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9159361Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9159991Z libcups2t64 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9160583Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9161157Z libdbus-1-3 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9161765Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9162349Z libdrm2 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9163487Z libgbm1 is already the newest version (25.2.8-0ubuntu0.24.04.2).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9164439Z libgbm1 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9165044Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.8).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9165642Z libglib2.0-0t64 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9166239Z libnspr4 is already the newest version (2:4.35-1.1build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9166785Z libnspr4 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9167530Z libnss3 is already the newest version (2:3.98-1ubuntu0.2).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9168062Z libnss3 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9168648Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9169249Z libpango-1.0-0 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9169816Z libx11-6 is already the newest version (2:1.8.7-1build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9170218Z libx11-6 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9170597Z libxcb1 is already the newest version (1.15-1ubuntu2).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9170971Z libxcb1 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9171403Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9171926Z libxcomposite1 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9172353Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9172749Z libxdamage1 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9173147Z libxext6 is already the newest version (2:1.3.4-1build2).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9173520Z libxext6 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9173909Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9174293Z libxfixes3 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9174688Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9175080Z libxkbcommon0 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9175480Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9175854Z libxrandr2 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9176255Z xvfb is already the newest version (2:21.1.12-1ubuntu1.6).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9176800Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9177510Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9177931Z libfontconfig1 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9178368Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.1).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9178794Z libfreetype6 set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9179205Z fonts-liberation is already the newest version (1:2.1.5-3).
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9179617Z fonts-liberation set to manually installed.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9180017Z The following additional packages will be installed:
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9180422Z   libasound2-data xfonts-encodings xfonts-utils
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9180736Z Suggested packages:
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9180993Z   alsa-utils libasound2-plugins
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9181278Z Recommended packages:
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9181705Z   fonts-ipafont-mincho fonts-tlwg-loma alsa-ucm-conf alsa-topology-conf
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9377885Z The following NEW packages will be installed:
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9378708Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9384443Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9384942Z   xfonts-utils
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9388963Z The following packages will be upgraded:
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9394211Z   libasound2-data libasound2t64
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9563929Z 2 upgraded, 9 newly installed, 0 to remove and 51 not upgraded.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9564426Z Need to get 21.5 MB of archives.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9564873Z After this operation, 79.5 MB of additional disk space will be used.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:48.9565392Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:49.0413178Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:49.4754670Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:49.9800049Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:50.0525428Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:50.4175446Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:50.9945592Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libasound2t64 amd64 1.2.11-1ubuntu0.3 [398 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.1377769Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libasound2-data all 1.2.11-1ubuntu0.3 [21.4 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.2081308Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.3555157Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.4278825Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.5720791Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.8963805Z Fetched 21.5 MB in 3s (7972 kB/s)
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9193501Z Selecting previously unselected package fonts-ipafont-gothic.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9469555Z (Reading database ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9469987Z (Reading database ... 5%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9470417Z (Reading database ... 10%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9470754Z (Reading database ... 15%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9471123Z (Reading database ... 20%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9472051Z (Reading database ... 25%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9472511Z (Reading database ... 30%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9472930Z (Reading database ... 35%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9473330Z (Reading database ... 40%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9473775Z (Reading database ... 45%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9474186Z (Reading database ... 50%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:51.9508689Z (Reading database ... 55%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:52.0714143Z (Reading database ... 60%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:52.2362313Z (Reading database ... 65%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:52.4252029Z (Reading database ... 70%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:52.4835876Z (Reading database ... 75%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:52.5837705Z (Reading database ... 80%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:52.8018273Z (Reading database ... 85%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:52.9245428Z (Reading database ... 90%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.0906021Z (Reading database ... 95%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.0906554Z (Reading database ... 100%
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.0907493Z (Reading database ... 202701 files and directories currently installed.)
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.0952360Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.1063075Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.3375875Z Selecting previously unselected package fonts-freefont-ttf.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.3501243Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.3512375Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.4362249Z Selecting previously unselected package fonts-tlwg-loma-otf.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.4488082Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.4497855Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.4709890Z Selecting previously unselected package fonts-unifont.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.4835847Z Preparing to unpack .../03-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.4847505Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.5909806Z Selecting previously unselected package fonts-wqy-zenhei.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.6044951Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:53.6151762Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.0992686Z Preparing to unpack .../05-libasound2t64_1.2.11-1ubuntu0.3_amd64.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.1723223Z Unpacking libasound2t64:amd64 (1.2.11-1ubuntu0.3) over (1.2.11-1ubuntu0.2) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.2418463Z Preparing to unpack .../06-libasound2-data_1.2.11-1ubuntu0.3_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.2448893Z Unpacking libasound2-data (1.2.11-1ubuntu0.3) over (1.2.11-1ubuntu0.2) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.3918329Z Selecting previously unselected package xfonts-encodings.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.4046325Z Preparing to unpack .../07-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.4056772Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.4362635Z Selecting previously unselected package xfonts-utils.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.4488591Z Preparing to unpack .../08-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.4499212Z Unpacking xfonts-utils (1:7.7+6build3) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.4881112Z Selecting previously unselected package xfonts-cyrillic.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.5006138Z Preparing to unpack .../09-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.5018372Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.5402198Z Selecting previously unselected package xfonts-scalable.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.5526517Z Preparing to unpack .../10-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.5537732Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.5964763Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6100801Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6128086Z Setting up libasound2-data (1.2.11-1ubuntu0.3) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6155526Z Setting up libasound2t64:amd64 (1.2.11-1ubuntu0.3) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6184167Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6214357Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6244178Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6320153Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6342444Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6373794Z Setting up xfonts-utils (1:7.7+6build3) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6423151Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.6727229Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.7011966Z Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.7348156Z Processing triggers for man-db (2.12.0-4build2) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.7372919Z Not building database; man-db/auto-update is not 'true'.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:54.7387525Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4533811Z
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4534666Z Running kernel seems to be up-to-date.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4535148Z
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4535468Z No services need to be restarted.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4535863Z
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4536168Z No containers need to be restarted.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4536584Z
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4537324Z No user sessions are running outdated binaries.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4537837Z
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:55.4538469Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:56.3806679Z Downloading Chrome for Testing 149.0.7827.55 (playwright chromium v1228) from https://cdn.playwright.dev/builds/cft/149.0.7827.55/linux64/chrome-linux64.zip
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:57.4317919Z |                                                                                |   0% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:57.5831094Z |■■■■■■■■                                                                        |  10% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:57.6848778Z |■■■■■■■■■■■■■■■■                                                                |  20% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:57.8206123Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:57.9340914Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:58.0468086Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:58.1434163Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:58.2476387Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:58.3800866Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:58.5082784Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:26:58.6328747Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 177 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:01.7572897Z Chrome for Testing 149.0.7827.55 (playwright chromium v1228) downloaded to /home/runner/.cache/ms-playwright/chromium-1228
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:01.7578010Z Downloading FFmpeg (playwright ffmpeg v1011) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.7788652Z |                                                                                |   0% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.7843364Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.7917354Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.7939941Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.7958888Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.7976315Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.8036006Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.8063027Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.8080716Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.8094276Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.8106478Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.8748637Z FFmpeg (playwright ffmpeg v1011) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:02.8752193Z Downloading Chrome Headless Shell 149.0.7827.55 (playwright chromium-headless-shell v1228) from https://cdn.playwright.dev/builds/cft/149.0.7827.55/linux64/chrome-headless-shell-linux64.zip
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:03.9226116Z |                                                                                |   0% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.0592247Z |■■■■■■■■                                                                        |  10% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.1289291Z |■■■■■■■■■■■■■■■■                                                                |  20% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.2112829Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.3091699Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.3836556Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.4503934Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.5246344Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.6001801Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.6741378Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:04.7878282Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 114.2 MiB
+Qualify immutable Build 2 on Linux	Install Playwright Chromium and Linux prerequisites	2026-07-15T04:27:07.1470177Z Chrome Headless Shell 149.0.7827.55 (playwright chromium-headless-shell v1228) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1228
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	﻿2026-07-15T04:27:07.2211830Z ##[group]Run set -euo pipefail
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2212197Z [36;1mset -euo pipefail[0m
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2212656Z [36;1mnode "/home/runner/work/_temp/recrafts-r008a-input/run-r008-linux-qualification.mjs" \[0m
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2213308Z [36;1m  --tarball "/home/runner/work/_temp/recrafts-r008a-input/recrafts-0.4.0-rc.1.tgz" \[0m
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2214006Z [36;1m  --secondary-fixture "/home/runner/work/_temp/recrafts-r008a-input/multi-image-secondary.svg" \[0m
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2214692Z [36;1m  --fidelity-fixture "/home/runner/work/_temp/recrafts-r008a-input/fidelity-r004-v2" \[0m
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2215260Z [36;1m  --output "/home/runner/work/_temp/recrafts-r008a-output" \[0m
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2215661Z [36;1m  --expected-sha "$EXPECTED_TARBALL_SHA256" \[0m
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2215979Z [36;1m  --target-url "$TARGET_URL"[0m
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2250453Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2250811Z env:
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2251181Z   EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2251704Z   TARGET_URL: https://www.craft.do
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:07.2251966Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Execute installed-RC Linux qualification	2026-07-15T04:27:22.2328676Z {"status":"passed","rc_id":"recrafts-0.4.0-rc.1-build2","tarball_sha256":"2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774","output":"/home/runner/work/_temp/recrafts-r008a-output"}
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	﻿2026-07-15T04:27:22.2394877Z ##[group]Run node "/home/runner/work/_temp/recrafts-r008a-input/validate-r008a-linux-evidence.mjs" "/home/runner/work/_temp/recrafts-r008a-output"
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2396167Z [36;1mnode "/home/runner/work/_temp/recrafts-r008a-input/validate-r008a-linux-evidence.mjs" "/home/runner/work/_temp/recrafts-r008a-output"[0m
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2431036Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2431391Z env:
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2431766Z   EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2432267Z   TARGET_URL: https://www.craft.do
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2432533Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2864494Z {
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2864970Z   "status": "pass",
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2865286Z   "errors": [],
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2865750Z   "evidence_root": "/home/runner/work/_temp/recrafts-r008a-output",
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2866281Z   "release_state_validated": false
+Qualify immutable Build 2 on Linux	Validate portable Linux evidence	2026-07-15T04:27:22.2866629Z }
+Qualify immutable Build 2 on Linux	Upload qualification evidence	﻿2026-07-15T04:27:22.2968306Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2969673Z ##[group]Run actions/upload-artifact@v4
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2969962Z with:
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2970238Z   name: recrafts-r008a-linux-qualification-29388978971
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2971296Z   path: /home/runner/work/_temp/recrafts-r008a-output/validation/
+Qualify immutable Build 2 on Linux	Upload qualification evidence	/home/runner/work/_temp/recrafts-r008a-output/logs/
+Qualify immutable Build 2 on Linux	Upload qualification evidence	/home/runner/work/_temp/recrafts-r008a-output/checksums.sha256
+Qualify immutable Build 2 on Linux	Upload qualification evidence	/home/runner/work/_temp/recrafts-r008a-output/workflow-run.json
+Qualify immutable Build 2 on Linux	Upload qualification evidence
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2972294Z   if-no-files-found: warn
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2972526Z   retention-days: 30
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2972747Z   compression-level: 6
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2972962Z   overwrite: false
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2973173Z   include-hidden-files: false
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2973448Z env:
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2973804Z   EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2974278Z   TARGET_URL: https://www.craft.do
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.2974527Z ##[endgroup]
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.4636400Z (node:3681) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.4638283Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.4772647Z Multiple search paths detected. Calculating the least common ancestor of all paths
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.4775709Z The least common ancestor is /home/runner/work/_temp/recrafts-r008a-output. This will be the root directory of the artifact
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.4776894Z With the provided path, there will be 11 files uploaded
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.4787716Z Artifact name is valid!
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.4789049Z Root directory input is valid!
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.8113107Z Beginning upload of artifact content to blob storage
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:22.8516163Z (node:3681) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:23.2999753Z Uploaded bytes 46427
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:23.3896844Z Finished uploading artifact content to blob storage!
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:23.3898446Z SHA256 digest of uploaded artifact zip is 12bade357ee6837385eb6b173a0d006e6c7116757beb71070aca54f1663932f6
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:23.3899695Z Finalizing artifact upload
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:23.6108604Z Artifact recrafts-r008a-linux-qualification-29388978971.zip successfully finalized. Artifact ID 8332495924
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:23.6111355Z Artifact recrafts-r008a-linux-qualification-29388978971 has been successfully uploaded! Final size is 46427 bytes. Artifact ID is 8332495924
+Qualify immutable Build 2 on Linux	Upload qualification evidence	2026-07-15T04:27:23.6117235Z Artifact download URL: https://github.com/Nickzag/recrafts/actions/runs/29388978971/artifacts/8332495924
+Qualify immutable Build 2 on Linux	Post Set up Node.js	﻿2026-07-15T04:27:23.6292283Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Qualify immutable Build 2 on Linux	Post Set up Node.js	2026-07-15T04:27:23.6293800Z Post job cleanup.
+Qualify immutable Build 2 on Linux	Post Set up Node.js	2026-07-15T04:27:23.7515625Z (node:3694) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Qualify immutable Build 2 on Linux	Post Set up Node.js	2026-07-15T04:27:23.7517211Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	﻿2026-07-15T04:27:23.7700405Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.7702639Z Post job cleanup.
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.8675001Z [command]/usr/bin/git version
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.8730905Z git version 2.54.0
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.8813022Z Temporarily overriding HOME='/home/runner/work/_temp/664c2f0c-ce71-4189-b56c-369c615f64a3' before making global git config changes
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.8820688Z Adding repository directory to the temporary git global config as a safe directory
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.8824497Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/recrafts/recrafts
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.8895487Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.8941019Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.9288203Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.9329194Z http.https://github.com/.extraheader
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.9354755Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.9404406Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.9738143Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Qualify immutable Build 2 on Linux	Post Checkout qualification inputs	2026-07-15T04:27:23.9778970Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Qualify immutable Build 2 on Linux	Complete job	﻿2026-07-15T04:27:24.0158727Z Cleaning up orphan processes
+Qualify immutable Build 2 on Linux	Complete job	2026-07-15T04:27:24.0479469Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

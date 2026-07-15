@@ -2,44 +2,38 @@
 
 ## Review status
 
-`BLOCKED — implementation ready; canonical Linux evidence absent`.
+`READY`.
 
-This packet is ready for implementation review but not for Linux qualification acceptance. There is no GitHub Actions run ID, uploaded artifact or Linux runner identity because the local repository has no configured remote.
+GitHub Actions Run `29388978971` completed successfully on `ubuntu-latest`. The downloaded portable Evidence passed the R-008A Validator before release metadata was updated and passed again with the final Build 2 release state.
 
-## Files in review scope
+## Evidence to inspect
 
-- `.github/workflows/recrafts-r008a-linux-qualification.yml`
-- `scripts/run-r008-linux-qualification.mjs`
-- `scripts/validate-r008a-linux-evidence.mjs`
-- `tests/r008a-linux-evidence.test.mjs`
-- `dev-workflow/evidence/r-008a/local-qualification-diagnostic.json`
-- `dev-workflow/results/R-008A-linux-installed-rc-qualification-result.md`
+- `dev-workflow/evidence/r-008a/github-runs/29388978971/github-run.json`: immutable run identity, attempt, Head SHA, timestamps and URL.
+- `dev-workflow/evidence/r-008a/github-runs/29388978971/github-artifacts.json`: artifact ID `8332495924` and GitHub digest `sha256:12bade357ee6837385eb6b173a0d006e6c7116757beb71070aca54f1663932f6`.
+- `dev-workflow/evidence/r-008a/github-runs/29388978971/github-run.log`: full GitHub job log.
+- `dev-workflow/evidence/r-008a/linux/29388978971/`: downloaded reports, command log, payload checksum manifest and workflow metadata.
+- `release-candidates/recrafts-0.4.0-rc.1-build2/validation/`: evidence-only Linux reports, platform matrix, closure matrix and readiness.
 
-## Reviewer checks completed locally
+## Verified facts
 
-- Frozen Build 2 SHA-256 matches `2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774`.
-- The wrapper imports only Node standard-library modules and has no source runtime/realization/fidelity import.
-- The workflow has `contents: read`, manual dispatch, `ubuntu-latest`, timeout, concurrency, no publish/release step, and executes copied inputs from `RUNNER_TEMP`.
-- The non-Linux diagnostic proves the installed-Tarball orchestration works but is marked `diagnostic-only`; the validator refuses it as Linux evidence.
-- Required mutation tests and complete repository regression pass.
-- Build 1, Build 2, product runtime/contracts and CraftsOS/Layoutcrafts remain unchanged.
+- Frozen Build 2 SHA-256 is `2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774` before install, in the clean-install report and in package isolation evidence.
+- Linux runner identity is recorded as Linux `6.17.0-1018-azure` x64 with Node `v24.18.0`, npm `11.16.0`, Playwright `1.61.1` and Chromium `149.0.7827.55`.
+- The installed package came from the Tarball and ran outside the checkout without `npm link` or source runtime imports.
+- All nine Operations are present; `generate-realization` asserted the accepted stable fail-closed result.
+- The live Craft URL capture is complete with all mandatory Evidence classes, valid hashes/freshness, separate DOM/CSS and screenshot records, and no raw Host output.
+- Conflict blocking, authorized correction, Artifact acceptance, later acceptance and rollback-as-new-package passed. Seven canonical restore hashes match.
+- Partial, blocked and stale lifecycle checks passed; 11 negative gates failed closed.
+- Portable and release-aware Evidence validation, `103/103` repository tests and R-001 through R-007 validators passed.
 
-## Required canonical evidence before acceptance
+## Boundary confirmation
 
-After a remote is configured, push the branch and dispatch `.github/workflows/recrafts-r008a-linux-qualification.yml`. The reviewer must require:
+Build 1, the Build 2 Tarball, Build 2 runtime/contracts, Darwin Evidence, product capabilities, CraftsOS and Layoutcrafts are unchanged. The project-owner release form and CraftsOS holding decision remain untouched.
 
-1. A successful `ubuntu-latest` workflow run and immutable run ID.
-2. An artifact named `recrafts-r008a-linux-qualification-<run-id>` containing only reports, logs, checksum manifest and workflow metadata.
-3. `validate-r008a-linux-evidence.mjs` passing on the downloaded artifact.
-4. The exact Build 2 SHA-256 in install, platform and isolation reports.
-5. All nine Operations accounted for, complete real Craft URL Evidence, restored rollback hashes and all negative gates failed closed.
-6. A separate evidence-only update that marks Linux passed and Build 2 ready for owner review without altering the Tarball or Darwin evidence.
+## Required next review state
 
-## Current verdict boundary
+- R-008A: `PASS`
+- Independent Review: `READY`
+- Project-owner Verdict: `PENDING`
+- CraftsOS Holding: `PENDING`
 
-- R-008A: `BLOCKED`, not failed and not passed.
-- Independent Review: `PENDING`.
-- Project-owner Verdict: `PENDING`.
-- CraftsOS Holding: `PENDING`.
-
-The only blocking input is a push-capable Git remote/runner path. No additional Recrafts product capability is requested.
+This packet authorizes review of the evidence; it does not itself supply the final independent verdict, Owner Verdict or CraftsOS holding release decision.

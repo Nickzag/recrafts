@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "install_source": {
+    "type": "tarball",
+    "filename": "recrafts-0.4.0-rc.1.tgz",
+    "sha256": "2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774"
+  },
+  "package_lock_resolved_from_file_tarball": true,
+  "package_runtime_source": "installed-node_modules",
+  "installed_inside_temporary_work_root": true,
+  "qualification_outside_checkout": true,
+  "npm_link_used": false,
+  "source_repository_imports": [],
+  "checkout_dependency": false,
+  "allowed_checkout_inputs": [
+    "immutable-tarball",
+    "portable-sanitized-secondary-fixture",
+    "portable-fidelity-fixture",
+    "qualification-wrapper",
+    "evidence-validator"
+  ],
+  "installed_tree_contains_symlink": false
+}
