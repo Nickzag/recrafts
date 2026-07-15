@@ -1,0 +1,88 @@
+name: Recrafts R-008A Linux Qualification
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recrafts-r008a-linux-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  qualify-build2:
+    name: Qualify immutable Build 2 on Linux
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      EXPECTED_TARBALL_SHA256: 2371abab0d9a1549765f3f123c8ba55ac416c06a2b5e986cc6516d1fa5f7f774
+      TARGET_URL: https://www.craft.do
+    steps:
+      - name: Checkout qualification inputs
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Verify immutable Build 2 tarball
+        shell: bash
+        run: |
+          set -euo pipefail
+          tarball="release-candidates/recrafts-0.4.0-rc.1-build2/artifacts/recrafts-0.4.0-rc.1.tgz"
+          actual="$(sha256sum "$tarball" | awk '{print $1}')"
+          test "$actual" = "$EXPECTED_TARBALL_SHA256"
+
+      - name: Copy allowed inputs outside checkout
+        id: inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          input="$RUNNER_TEMP/recrafts-r008a-input"
+          output="$RUNNER_TEMP/recrafts-r008a-output"
+          mkdir -p "$input" "$output"
+          cp "release-candidates/recrafts-0.4.0-rc.1-build2/artifacts/recrafts-0.4.0-rc.1.tgz" "$input/recrafts-0.4.0-rc.1.tgz"
+          cp "release-candidates/recrafts-0.4.0-rc.1-build2/bundle/examples/multi-image-secondary.svg" "$input/multi-image-secondary.svg"
+          cp -R "examples/golden-candidates/crafts-ui-multi-image/fidelity/r004-v2" "$input/fidelity-r004-v2"
+          cp "scripts/run-r008-linux-qualification.mjs" "$input/run-r008-linux-qualification.mjs"
+          cp "scripts/validate-r008a-linux-evidence.mjs" "$input/validate-r008a-linux-evidence.mjs"
+          echo "input=$input" >> "$GITHUB_OUTPUT"
+          echo "output=$output" >> "$GITHUB_OUTPUT"
+
+      - name: Install Playwright Chromium and Linux prerequisites
+        shell: bash
+        working-directory: ${{ runner.temp }}
+        run: npx --yes playwright@1.61.1 install --with-deps chromium
+
+      - name: Execute installed-RC Linux qualification
+        shell: bash
+        working-directory: ${{ runner.temp }}
+        run: |
+          set -euo pipefail
+          node "${{ steps.inputs.outputs.input }}/run-r008-linux-qualification.mjs" \
+            --tarball "${{ steps.inputs.outputs.input }}/recrafts-0.4.0-rc.1.tgz" \
+            --secondary-fixture "${{ steps.inputs.outputs.input }}/multi-image-secondary.svg" \
+            --fidelity-fixture "${{ steps.inputs.outputs.input }}/fidelity-r004-v2" \
+            --output "${{ steps.inputs.outputs.output }}" \
+            --expected-sha "$EXPECTED_TARBALL_SHA256" \
+            --target-url "$TARGET_URL"
+
+      - name: Validate portable Linux evidence
+        shell: bash
+        working-directory: ${{ runner.temp }}
+        run: node "${{ steps.inputs.outputs.input }}/validate-r008a-linux-evidence.mjs" "${{ steps.inputs.outputs.output }}"
+
+      - name: Upload qualification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recrafts-r008a-linux-qualification-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/recrafts-r008a-output/validation/
+            ${{ runner.temp }}/recrafts-r008a-output/logs/
+            ${{ runner.temp }}/recrafts-r008a-output/checksums.sha256
+            ${{ runner.temp }}/recrafts-r008a-output/workflow-run.json
+          if-no-files-found: warn
+          retention-days: 30
