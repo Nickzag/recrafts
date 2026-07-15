@@ -1,3 +1,4 @@
+# Qualification-only workflow for the immutable Build 2 tarball.
 name: Recrafts R-008A Linux Qualification
 
 on:
