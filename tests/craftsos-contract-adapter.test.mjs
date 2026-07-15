@@ -21,7 +21,7 @@ async function fixture(change = async () => {}) {
   const hashes = Object.fromEntries(canonical.map((name) => [name, sha(values[name])]));
   const manifest = { protocol_version: "1.1", schema_version: "3.0.0", package_id: "package-fixture", artifact_set_id: "artifact-set-fixture", status: "accepted" };
   const artifactSet = { artifact_set_id: "artifact-set-fixture", package_id: "package-fixture", status: "accepted", source_capture_ids: ["capture-1"], correction_ids: ["correction-1"], decision_ids: ["decision-1"], artifact_hashes: hashes };
-  const source = { sources: [{ source_id: "source-1", status: "complete" }] };
+  const source = { sources: [{ source_id: "source-1", kind: "image", status: "ready" }] };
   const evidence = { evidence: [{ evidence_id: "ev-1" }] };
   await change({ root, values, hashes, manifest, artifactSet, source, evidence });
   for (const [name, value] of [["recrafts-package.json", manifest], ["artifact-set.json", artifactSet], ["source-manifest.json", source], ["evidence-map.json", evidence]]) await writeFile(path.join(root, name), JSON.stringify(value));
@@ -32,6 +32,10 @@ test("exports an accepted Schema 3 Artifact Set without Layoutcrafts dependency"
   const output = await loadCraftsOSArtifactSet(await fixture());
   assert.equal(output.schema_version, "3.0.0"); assert.equal(output.tokens.length, 1); assert.equal(output.unsupported_fields.length, 3);
   assert.equal(output.workspace_promotion, false); assert.equal(output.production_ready, false);
+});
+test("accepts complete URL evidence as well as ready image evidence", async () => {
+  const output = await loadCraftsOSArtifactSet(await fixture(({ source }) => { source.sources[0] = { source_id: "source-1", kind: "url", status: "complete" }; }));
+  assert.equal(output.status, "accepted");
 });
 test("rejects incomplete sources, broken identity, evidence refs, and artifact hashes", async () => {
   const cases = [
