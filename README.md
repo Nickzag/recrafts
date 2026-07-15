@@ -1,5 +1,17 @@
 # Recrafts
 
+## Task 023 portable Artifact Set
+
+Generate a validated design-system artifact set without CraftsOS or Layoutcrafts:
+
+```bash
+npm install
+npm run task023:run -- --manifest /absolute/path/to/source-manifest.json --output /absolute/path/to/output
+npm run task023:validate -- --output /absolute/path/to/output
+```
+
+The manifest preserves source hashes, provenance, domain confidence, conflicts, and append-only corrections. Output includes `design.md`, Design Contract, tokens, components, evidence, conflicts, structured HTML preview, validation report, and hashes. Confidence is not an accuracy score, and generated output is not marked production-ready.
+
 Recrafts 是独立的视觉重构 foundation Skill。R-002 提供 Host-Agent MVP Extraction Runtime：真实消费单图、多图或公开网站证据，生成区域分类、provenance、Scoped Token candidates、Layout Grammar、Component candidates 和 draft `design.md`。
 
 ```bash
