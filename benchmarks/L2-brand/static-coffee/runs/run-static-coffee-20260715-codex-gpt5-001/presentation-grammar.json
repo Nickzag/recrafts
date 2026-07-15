@@ -1,0 +1,15 @@
+{
+  "status": "candidate",
+  "contract_status": "benchmark-only-not-runtime-contract",
+  "section_sequence": ["system-defining hero", "application range", "packaging detail variants", "editorial and signage applications", "spatial close", "graphic ending"],
+  "hero_pattern": "Full-field expressive identity mark over a high-contrast graphic treatment.",
+  "concept_application_progression": "Moves from core identity cues into increasingly specific physical and digital applications.",
+  "image_scale_rhythm": "Alternates broad montage scenes with focused object or detail frames.",
+  "page_density": "Dense application groups are separated by narrow copy or graphic transition modules.",
+  "alternation_pattern": "Graphic fields and warm photographic mockups alternate throughout the sequence.",
+  "caption_behavior": "Small utility labels sit at edges while display messages remain dominant.",
+  "mockup_grouping": "Related packaging or touchpoint variants are grouped to expose consistency and controlled variation.",
+  "ending_pattern": "Spatial storefront evidence resolves into minimal graphic separators.",
+  "confidence": 0.89,
+  "evidence_refs": ["ev-863027be96b90182", "ev-e0db96392cba6da9", "ev-53a75eb8e0cfe31e", "ev-1bd1ae37a556bf88", "ev-d45c42b93ce8b159", "ev-39887c8c6c70a364", "ev-4a683209a5cae856"]
+}

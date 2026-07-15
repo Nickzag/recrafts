@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/benchmarks/schemas/capability-requirements.schema.json",
+  "type": "object", "additionalProperties": false, "required": ["version", "capabilities"],
+  "properties": {
+    "version": { "type": "string" },
+    "capabilities": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["capability_id", "required", "minimum_evidence_count", "allowed_output_artifacts", "human_review_required"], "properties": {
+      "capability_id": { "type": "string", "minLength": 1 }, "required": { "const": true }, "minimum_evidence_count": { "type": "integer", "minimum": 1 },
+      "allowed_output_artifacts": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true }, "human_review_required": { "type": "boolean" }
+    } } }
+  }
+}

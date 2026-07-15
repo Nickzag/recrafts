@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/benchmarks/schemas/regression-report.schema.json",
+  "type": "object", "additionalProperties": false, "required": ["status", "overall_change", "module_changes", "reasons"],
+  "properties": {
+    "status": { "enum": ["pass", "regression", "blocked"] }, "overall_change": { "type": "number" },
+    "module_changes": { "type": "array", "items": { "type": "object", "required": ["module_id", "change"] } },
+    "reasons": { "type": "array", "items": { "type": "string" } }
+  }
+}

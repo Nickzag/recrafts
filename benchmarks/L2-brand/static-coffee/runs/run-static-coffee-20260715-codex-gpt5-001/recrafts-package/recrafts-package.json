@@ -1,0 +1,20 @@
+{
+  "version": "3.0.0",
+  "protocol_version": "1.1",
+  "schema_version": "3.0.0",
+  "package_id": "package-a5adf72a7eecac57",
+  "analysis_id": "analysis-259adf6c6158297c",
+  "status": "awaiting-review",
+  "artifacts": [
+    "source-manifest.json",
+    "evidence-map.json",
+    "claims.json",
+    "tokens.json",
+    "components.json",
+    "grid-rules.json",
+    "layout-rules.json",
+    "visual-grammar.json",
+    "conflicts.json",
+    "design.md"
+  ]
+}

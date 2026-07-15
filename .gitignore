@@ -5,5 +5,6 @@ examples/**/local-raw-sources/*
 .DS_Store
 node_modules/
 .playwright-cli/
+.local-benchmark-sources/
 examples/**/generated/page.html
 examples/**/generated-v*/

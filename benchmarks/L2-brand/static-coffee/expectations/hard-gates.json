@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "gates": [
+    "no-raw-host-output-as-evidence", "canonical-provenance", "scope-isolation", "no-oracle", "source-integrity", "reviewer-identity",
+    "no-open-high-conflict-in-accepted-artifact", "source-pack-immutability", "installed-package-runtime", "auditable-vision-host"
+  ]
+}

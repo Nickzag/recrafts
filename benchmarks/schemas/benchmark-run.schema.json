@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/benchmarks/schemas/benchmark-run.schema.json",
+  "type": "object", "additionalProperties": true,
+  "required": ["run_id", "corpus_id", "corpus_version", "rubric_version", "source_pack_id", "source_pack_hash", "runtime", "host", "instruction_hash", "status"],
+  "properties": {
+    "run_id": { "type": "string" }, "corpus_id": { "type": "string" }, "corpus_version": { "type": "string" }, "rubric_version": { "type": "string" },
+    "source_pack_id": { "type": "string" }, "source_pack_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }, "instruction_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "runtime": { "type": "object", "required": ["version", "protocol_version", "schema_version"] },
+    "host": { "type": "object", "required": ["agent", "engine", "vision_capability"] },
+    "status": { "enum": ["needs-host-action", "awaiting-human-correction-and-acceptance", "baseline-established", "blocked"] }
+  }
+}

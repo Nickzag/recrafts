@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/benchmarks/schemas/region-manifest.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["corpus_id", "regions", "excluded_regions"],
+  "properties": {
+    "corpus_id": { "type": "string", "minLength": 1 },
+    "regions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/region" } },
+    "excluded_regions": { "type": "array", "items": { "$ref": "#/$defs/exclusion" } }
+  },
+  "$defs": {
+    "classification": { "enum": ["canonical-brand-system", "brand-application", "packaging", "signage-spatial", "photography", "editorial-layout", "case-study-presentation", "descriptive-copy", "mockup-environment", "unknown"] },
+    "region": {
+      "type": "object", "additionalProperties": false,
+      "required": ["region_id", "source_id", "section_ref", "classification", "confidence", "review_status", "evidence_hash"],
+      "properties": {
+        "region_id": { "type": "string", "minLength": 1 }, "source_id": { "type": "string", "minLength": 1 }, "section_ref": { "type": "string", "minLength": 1 },
+        "classification": { "$ref": "#/$defs/classification" }, "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "review_status": { "enum": ["candidate", "reviewed", "excluded"] }, "evidence_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "exclusion": {
+      "type": "object", "additionalProperties": false, "required": ["exclusion_id", "class", "reason"],
+      "properties": { "exclusion_id": { "type": "string" }, "class": { "type": "string" }, "reason": { "type": "string" } }
+    }
+  }
+}

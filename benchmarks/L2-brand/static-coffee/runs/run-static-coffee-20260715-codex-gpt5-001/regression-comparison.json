@@ -1,0 +1,6 @@
+{
+  "status": "baseline-no-comparison",
+  "baseline_run_id": null,
+  "latest_run_id": null,
+  "reasons": ["The candidate run has not completed human correction, acceptance or project-owner review, so no baseline is established and no fictional previous comparison is created."]
+}

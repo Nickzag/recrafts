@@ -1,0 +1,156 @@
+{
+  "status": "pending-human-review",
+  "score": 70,
+  "maximum_score": 75,
+  "modules": [
+    {
+      "module_id": "evidence-completeness",
+      "weight": 15,
+      "score": 15,
+      "mechanism": "Cross-reference current Package Evidence with Source and Region manifests across eight required coverage categories",
+      "evidence": [
+        "source:source-1",
+        "source:source-2",
+        "source:source-3",
+        "source:source-4",
+        "source:source-5",
+        "source:source-6",
+        "source:source-7",
+        "source:source-8",
+        "source:source-9",
+        "source:source-10",
+        "source:source-11",
+        "source:source-12",
+        "source:source-13",
+        "source:source-14",
+        "source:source-15",
+        "source:source-16",
+        "source:source-17",
+        "source:source-18",
+        "source:source-19",
+        "source:source-20",
+        "region:region-01-system",
+        "region:region-01-presentation",
+        "region:region-02-packaging",
+        "region:region-02-photography",
+        "region:region-02-mockup",
+        "region:region-03-packaging",
+        "region:region-03-editorial",
+        "region:region-04-application",
+        "region:region-04-photography",
+        "region:region-05-application",
+        "region:region-05-mockup",
+        "region:region-06-editorial",
+        "region:region-06-presentation",
+        "region:region-07-copy",
+        "region:region-08-application",
+        "region:region-09-photography",
+        "region:region-09-packaging",
+        "region:region-10-editorial",
+        "region:region-10-packaging",
+        "region:region-11-packaging",
+        "region:region-12-packaging",
+        "region:region-13-packaging",
+        "region:region-14-packaging",
+        "region:region-15-application",
+        "region:region-15-signage",
+        "region:region-16-application",
+        "region:region-16-editorial",
+        "region:region-17-editorial",
+        "region:region-17-signage",
+        "region:region-17-mockup",
+        "region:region-18-signage",
+        "region:region-18-photography",
+        "region:region-19-presentation",
+        "region:region-19-unknown",
+        "region:region-20-presentation",
+        "category:brand-application",
+        "category:typography",
+        "category:color",
+        "category:packaging",
+        "category:photography",
+        "category:case-study-presentation"
+      ]
+    },
+    {
+      "module_id": "evidence-claim-separation",
+      "weight": 10,
+      "score": 10,
+      "mechanism": "Reject raw Host output, possible intent and rationale in Evidence",
+      "evidence": []
+    },
+    {
+      "module_id": "domain-coverage",
+      "weight": 15,
+      "score": 10,
+      "mechanism": "Count populated MVP domain artifacts without requiring exact answers; an empty Conflict array is a valid investigated outcome",
+      "evidence": [
+        "tokens.json",
+        "components.json",
+        "grid-rules.json",
+        "conflicts.json"
+      ]
+    },
+    {
+      "module_id": "provenance-traceability",
+      "weight": 15,
+      "score": 15,
+      "mechanism": "Validate domain Evidence, Claim and Conflict references plus Conflict Candidate/Evidence references",
+      "evidence": [
+        "token.color.primary-coffee",
+        "token.color.pale-pink",
+        "token.color.cream",
+        "token.color.cyan-accent",
+        "token.type.expressive-wordmark",
+        "token.type.editorial-serif",
+        "token.type.utility-mono",
+        "token.type.handwritten-accent",
+        "token.image.halftone-floral",
+        "token.image.moody-warm-photo",
+        "component.brand-wordmark-lockup",
+        "component.halftone-organic-field",
+        "component.coffee-packaging-label",
+        "component.editorial-menu-panel",
+        "component.signage-message-lockup",
+        "component.application-montage",
+        "grid.hero-full-bleed",
+        "grid.editorial-asymmetric-split",
+        "grid.application-sequence",
+        "conflict-mockup-context-scope"
+      ]
+    },
+    {
+      "module_id": "scope-isolation",
+      "weight": 10,
+      "score": 10,
+      "mechanism": "Detect platform, copy, thumbnail and mockup promotion into global scopes",
+      "evidence": []
+    },
+    {
+      "module_id": "conflict-quality",
+      "weight": 10,
+      "score": 10,
+      "mechanism": "Require conflicts artifact and block accepted Packages with open high-impact conflicts",
+      "evidence": [
+        "conflict-mockup-context-scope"
+      ]
+    }
+  ],
+  "hard_gates": {
+    "status": "pass",
+    "failures": []
+  },
+  "traceability": {
+    "domain_count": 19,
+    "conflict_count": 1,
+    "failed_domain_ids": []
+  },
+  "scope_isolation": {
+    "status": "pass",
+    "findings": []
+  },
+  "conflicts": {
+    "total": 1,
+    "open_high_impact": 0
+  }
+}

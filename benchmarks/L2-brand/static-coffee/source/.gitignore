@@ -1,0 +1,4 @@
+*
+!.gitignore
+!source-manifest.json
+!region-manifest.json

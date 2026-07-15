@@ -1,0 +1,30 @@
+{
+  "run_id": "run-static-coffee-20260715-codex-gpt5-001",
+  "corpus_id": "l2-brand-static-coffee-v1",
+  "corpus_version": "1.0.0",
+  "rubric_version": "1.0.0",
+  "source_pack_id": "static-coffee-source-pack-v1",
+  "source_pack_hash": "ad51dbbbf6618ad9bf5cbd1ffc579e493b58636f8b1ee05eb64116b9b9832f7b",
+  "runtime": {
+    "version": "0.4.0-rc.1",
+    "protocol_version": "1.1",
+    "schema_version": "3.0.0"
+  },
+  "host": {
+    "agent": "Codex",
+    "engine": "GPT-5",
+    "vision_capability": true,
+    "capabilities": [
+      "files",
+      "structured-output",
+      "vision"
+    ]
+  },
+  "instruction_hash": "fdcc86d68582a09af2d22404b47256c332e8bc80285b3b50afe7d4a473360107",
+  "installed_package_manifest": "/Users/Nick/.config/superpowers/worktrees/Recrafts/r-009-golden-corpus-static-coffee/.local-benchmark-sources/installed-build2/node_modules/recrafts/package.json",
+  "recraft_interop_bin": "/Users/Nick/.config/superpowers/worktrees/Recrafts/r-009-golden-corpus-static-coffee/.local-benchmark-sources/installed-build2/node_modules/.bin/recraft-interop",
+  "prepared_analysis_path": ".local-benchmark-sources/static-coffee-v1-isolated-v3/execution/run-static-coffee-20260715-codex-gpt5-001/prepared",
+  "package_path": "/Users/Nick/.config/superpowers/worktrees/Recrafts/r-009-golden-corpus-static-coffee/benchmarks/L2-brand/static-coffee/runs/run-static-coffee-20260715-codex-gpt5-001/recrafts-package",
+  "status": "awaiting-human-correction-and-acceptance",
+  "host_analysis_sha256": "533c5b136982faf5087549b797ae030a33c7459bdad379b545908f2bbb1eb4bb"
+}

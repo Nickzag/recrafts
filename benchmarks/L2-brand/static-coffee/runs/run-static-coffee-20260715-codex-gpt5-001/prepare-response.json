@@ -1,0 +1,81 @@
+{
+  "protocol_version": "1.1",
+  "request_id": "run-static-coffee-20260715-codex-gpt5-001-prepare",
+  "operation": "prepare-analysis",
+  "status": "needs_host_action",
+  "host_handshake": {
+    "required_capabilities": [
+      "files"
+    ],
+    "provided_capabilities": [
+      "files",
+      "structured-output",
+      "vision"
+    ],
+    "missing_required": [],
+    "host_agent": "Codex",
+    "host_engine": "GPT-5"
+  },
+  "host_action": {
+    "type": "visual-analysis",
+    "instructions_file": "analysis/host-instructions.md",
+    "input_manifest": "analysis/input-manifest.json",
+    "evidence_bundle": "analysis/evidence-bundle.json",
+    "response_schema": "contracts/host-analysis.schema.json",
+    "required_capabilities": [
+      "vision",
+      "structured-output"
+    ]
+  },
+  "artifacts": [
+    {
+      "type": "source-manifest",
+      "path": "source-manifest.json",
+      "sha256": "2ad63109caf2e23caaae8d69b00215c9d71d1a57ccd6061352afa57752f248a8",
+      "media_type": "application/json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "type": "capture-status",
+      "path": "capture-status.json",
+      "sha256": "697da07756652e52ab76804f8b755fa9c8f101b6311738c3327b8809ac8dae0c",
+      "media_type": "application/json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "type": "run-log",
+      "path": "run-log.json",
+      "sha256": "a54d3a5af363edcb04e53a55619283e852dd7220f064769814599ce50482429e",
+      "media_type": "application/json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "type": "input-manifest",
+      "path": "analysis/input-manifest.json",
+      "sha256": "555e94b98af537e0664603051f46925352985c995e75496a646ea879195f68a9",
+      "media_type": "application/json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "type": "host-instructions",
+      "path": "analysis/host-instructions.md",
+      "sha256": "fdcc86d68582a09af2d22404b47256c332e8bc80285b3b50afe7d4a473360107",
+      "media_type": "text/markdown",
+      "schema_version": "3.0.0"
+    },
+    {
+      "type": "evidence-bundle",
+      "path": "analysis/evidence-bundle.json",
+      "sha256": "65ea3293e14aa1f1788459d0fc519ec5f8826a52dfee2e1ae8fa3c75ae3b41f1",
+      "media_type": "application/json",
+      "schema_version": "3.0.0"
+    }
+  ],
+  "validation": {
+    "prepared_analysis_id": "prepared-07caa84904e9ca19",
+    "capture_status": "complete",
+    "semantic_analysis_completed": false
+  },
+  "warnings": [],
+  "error": null
+}

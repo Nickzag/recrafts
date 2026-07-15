@@ -1,0 +1,18 @@
+{
+  "rubric_id": "brand-system-v1",
+  "version": "1.0.0",
+  "no_oracle": true,
+  "automatic_modules": [
+    { "module_id": "evidence-completeness", "weight": 15, "mode": "automatic" },
+    { "module_id": "evidence-claim-separation", "weight": 10, "mode": "automatic-hard-gate" },
+    { "module_id": "domain-coverage", "weight": 15, "mode": "automatic" },
+    { "module_id": "provenance-traceability", "weight": 15, "mode": "automatic-hard-gate" },
+    { "module_id": "scope-isolation", "weight": 10, "mode": "automatic-hard-gate" },
+    { "module_id": "conflict-quality", "weight": 10, "mode": "automatic" }
+  ],
+  "human_modules": [
+    "brand-system-coherence", "typography-system-interpretation", "color-system-interpretation", "cross-application-consistency",
+    "visual-grammar-usefulness", "presentation-grammar-usefulness", "possible-intent-discipline", "overall-usefulness"
+  ],
+  "thresholds": { "pass": 75, "strong_pass": 85, "minimum_module_ratio": 0.6, "overall_regression": -5, "module_regression": -10 }
+}

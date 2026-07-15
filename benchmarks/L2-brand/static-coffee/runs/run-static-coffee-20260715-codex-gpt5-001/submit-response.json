@@ -1,0 +1,48 @@
+{
+  "protocol_version": "1.1",
+  "request_id": "run-static-coffee-20260715-codex-gpt5-001-submit",
+  "operation": "submit-analysis",
+  "status": "completed_with_warnings",
+  "host_handshake": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "provided_capabilities": [
+      "files",
+      "structured-output",
+      "vision"
+    ],
+    "missing_required": [],
+    "host_agent": "Codex",
+    "host_engine": "GPT-5"
+  },
+  "host_action": null,
+  "artifacts": [
+    {
+      "type": "design-contract",
+      "path": "design.md",
+      "sha256": "07d6ec85f304f0a71c88b6984e68ba683544dda79bc327efcb43d7d7f5054d88",
+      "media_type": "text/markdown",
+      "schema_version": "2.1.0"
+    },
+    {
+      "type": "extraction-package",
+      "path": "recrafts-package.json",
+      "sha256": "80ca754da37a87983183691e06a3e900a586080f1c3594406481ddd70e532dfb",
+      "media_type": "application/json",
+      "schema_version": "2.1.0"
+    }
+  ],
+  "validation": {
+    "package_id": "package-a5adf72a7eecac57",
+    "analysis_id": "analysis-259adf6c6158297c",
+    "package_status": "awaiting-review",
+    "canonical_visual_generation_authorized": false,
+    "conflict_count": 1
+  },
+  "warnings": [
+    "Host-supplied analysis remains subject to project-owner visual review"
+  ],
+  "error": null
+}

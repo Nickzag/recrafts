@@ -1,0 +1,11 @@
+{
+  "corpus_id": "l2-brand-static-coffee-v1",
+  "version": "1.0.0",
+  "level": "L2-brand",
+  "domain": "brand-identity",
+  "status": "candidate",
+  "source_pack_id": "static-coffee-source-pack-v1",
+  "rubric_version": "1.0.0",
+  "baseline_run_id": null,
+  "latest_run_id": null
+}
