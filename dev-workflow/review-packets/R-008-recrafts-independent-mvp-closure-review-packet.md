@@ -34,4 +34,4 @@ Requested verdicts:
 - Installed RC and rollback: PASS / PASS WITH CHANGES / REWORK
 - R-008: ACCEPT / REVISE
 
-All frozen mechanical gates are now satisfied. R-008 is ready for final independent review and project-owner closure review. The project-owner release form and CraftsOS holding decision remain `PENDING`; this packet does not synthesize either decision.
+All frozen mechanical gates are satisfied. The subsequent independent review recorded `R-008: ACCEPT`, the project owner recorded `PASS`, and the CraftsOS holding condition was `RELEASED`. Those later decisions are archived under `dev-workflow/reviews/`; this packet remains the evidence handoff that preceded them.

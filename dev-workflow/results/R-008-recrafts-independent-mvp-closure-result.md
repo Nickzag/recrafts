@@ -39,13 +39,15 @@ Darwin x86_64 clean install passed with Node `v24.15.0`, npm `11.12.1`, Playwrig
 
 ## Review state
 
-- Independent review: `READY`
-- Project-owner release verdict: `PENDING`
-- CraftsOS holding: `PENDING`
+- Independent review: `ACCEPT`
+- Project-owner release verdict: `PASS`
+- Recrafts independent MVP loop: `COMPLETE`
+- CraftsOS Recrafts prerequisite: `SATISFIED`
+- CraftsOS holding: `RELEASED`
 - CraftsOS/Layoutcrafts changes: none
 
-Build 2 is ready for final independent and project-owner closure review. This result does not claim public npm publication, embedded inference, unrestricted website cloning, complete VIS, pixel-perfect fidelity, production readiness, an Owner Verdict or a CraftsOS holding decision.
+Build 2 has completed final independent and project-owner closure review. The frozen RC snapshot remains unchanged; the later independent review, Owner Verdict and holding release are recorded under `dev-workflow/reviews/`. This result does not claim public npm publication, embedded inference, unrestricted website cloning, complete VIS, pixel-perfect fidelity or production readiness.
 
 > R-008 proves that Recrafts can independently execute the frozen MVP loop across image, image-set and real public URL inputs; separate source Evidence from Host Claims; produce traceable Token, Component and Grid domains; block unresolved high-impact conflicts; preserve immutable human correction history; create validated accepted Artifact Sets; and rollback through a new immutable package, all from an installed release candidate without CraftsOS. It does not prove unrestricted website reconstruction, pixel-perfect fidelity, embedded inference, full VIS generation or production readiness.
 
-The quoted proof is now established for the same immutable Build 2 Tarball on Darwin and Linux. No Owner Verdict or CraftsOS holding decision has been synthesized.
+The quoted proof is established for the same immutable Build 2 Tarball on Darwin and Linux. Project-owner decision `r008-owner-pass-20260715` records `PASS`; CraftsOS holding decision `craftsos-recrafts-holding-release-20260715` records `RELEASED`.
