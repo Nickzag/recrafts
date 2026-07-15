@@ -12,7 +12,7 @@ Task 023 functionality was reconciled onto current Recrafts `main` without cherr
 | old Artifact Set `1.0.0` | replaced by Schema `3.0.0` | Current main has accepted/lineage-bound Artifact Sets and canonical hashes. |
 | old confidence enum | mapped through current Claims/status/confidence/evidence model | Current main preserves numeric confidence, claim class, source evidence and conflict state without aggregate accuracy. |
 | independent CLI | kept current `recraft`, `recraft-interop`, `recraft-capture` | Current installed RC already qualifies image, image-set, URL, correction, acceptance and rollback. |
-| Layoutcrafts import shape | merged as `runtime/craftsos_contract_adapter.mjs` | Thin accepted-package reader validates identity, complete sources, provenance and all canonical hashes without importing Layoutcrafts. |
+| Layoutcrafts import shape | merged as `runtime/craftsos_contract_adapter.mjs` | Thin accepted-package reader validates identity, ready image/complete URL sources, provenance and all canonical hashes without importing Layoutcrafts. |
 
 No newer mainline module, test, schema, package artifact or release evidence was removed. No old implementation remains beside its newer equivalent.
 
@@ -24,14 +24,14 @@ State: `live-url-smoke: passed`; `universal-url-accuracy: not-established`; webs
 
 ## Validation
 
-- Final implementation commit: `e9ca1d17cbe2d00f841490742d22404bd765cda5`.
-- `npm test`: 105 passed, 0 failed, 0 skipped.
-- `npm run validate:023a-craftsos`: 2 passed, including accepted export and incomplete/hash/evidence/identity negative cases.
+- Adapter implementation commits: `e9ca1d17cbe2d00f841490742d22404bd765cda5`, `1119915`.
+- `npm test` at `1119915`: 106 passed, 0 failed, 0 skipped.
+- `npm run validate:023a-craftsos`: 3 passed, including ready image/complete URL export and incomplete/hash/evidence/identity negative cases.
 - Live URL capture: complete, missing evidence 0.
 - Recrafts dependency on Layoutcrafts: none.
 - Workspace promotion: false; production ready: false.
 
-The old Task 023 branch had 38 tests because it started before R-003B through R-008. Current main had 103 tests; 023A adds 2, producing 105. This is a superset rather than a reduced suite.
+The old Task 023 branch had 38 tests because it started before R-003B through R-008. Current main had 103 tests; 023A adds 3, producing 106. The third regression test was added after the real CraftsOS dogfood exposed that image sources use `ready` while complete URL captures use `complete`. Partial, blocked and stale sources remain rejected. This is a superset rather than a reduced suite.
 
 ## Remaining Limits
 

@@ -8,7 +8,7 @@ Verify that Task 023 was reconciled by preserving current R-008 authority instea
 
 1. Newer Recrafts behavior lost during port.
 2. Old and new Artifact Set implementations coexist.
-3. The adapter accepts partial sources, broken evidence, stale identity or bad hashes.
+3. The adapter confuses valid `ready` image evidence with valid `complete` URL evidence, or accepts partial/blocked/stale sources, broken evidence, stale identity or bad hashes.
 4. Live URL smoke is mislabeled as universal accuracy.
 5. Recrafts gains a Layoutcrafts dependency.
 
