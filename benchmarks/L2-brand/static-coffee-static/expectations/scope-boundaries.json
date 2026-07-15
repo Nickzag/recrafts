@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "excluded_classes": [
+    "behance-platform-ui",
+    "behance-navigation",
+    "creator-profile-ui",
+    "social-metrics",
+    "recommendation-ui",
+    "browser-chrome",
+    "unrelated-thumbnail",
+    "advertising"
+  ],
+  "conditional_classes": [
+    "mockup-environment",
+    "descriptive-copy"
+  ],
+  "global_promotion_requires_scope_justification": true,
+  "rules": [
+    "Mockup environment is context, not an automatic Brand Token source.",
+    "Descriptive copy may support a Claim but is not visual Evidence.",
+    "Only isolated public project modules are analysis sources."
+  ]
+}

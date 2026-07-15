@@ -1,0 +1,35 @@
+{
+  "correction_id": "correction-r009a-static-coffee-owner-001",
+  "base_package_id": "package-a5adf72a7eecac57",
+  "package_id": "package-25f37a4ded85f7bd",
+  "operations": [
+    {
+      "operation_id": "resolve-mockup-context-scope-001",
+      "type": "resolve-conflict",
+      "target_id": "conflict-mockup-context-scope",
+      "before": {
+        "status": "open"
+      },
+      "after": {
+        "status": "resolved",
+        "selected_candidate": "token.image.moody-warm-photo",
+        "rejected_candidates": [],
+        "accepted_scope": "project-scoped photography direction",
+        "excluded_context": [
+          "cafe interiors",
+          "wood frames",
+          "platform-like controls"
+        ]
+      },
+      "evidence_refs": [
+        "ev-23046c00f866069e",
+        "ev-2fd7c73c4313ae4b",
+        "ev-e3ac1885f5d23653"
+      ],
+      "claim_refs": [
+        "claim-token.image.moody-warm-photo"
+      ],
+      "reason": "The repeated warm low-key photography is useful at project scope, while the surrounding mockup environment is contextual and must not become a global visual token."
+    }
+  ]
+}

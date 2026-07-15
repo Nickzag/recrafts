@@ -1,0 +1,42 @@
+{
+  "version": "3.0.0",
+  "conflicts": [
+    {
+      "conflict_id": "conflict-mockup-context-scope",
+      "conflict_class": "scope-conflict",
+      "domain": "token",
+      "severity": "medium",
+      "impact": "Cafe interiors, wood frames and platform-like controls could be mistaken for global visual tokens unless retained as contextual mockup evidence.",
+      "candidate_refs": [
+        "token.image.moody-warm-photo"
+      ],
+      "evidence_refs": [
+        "ev-23046c00f866069e",
+        "ev-2fd7c73c4313ae4b",
+        "ev-e3ac1885f5d23653"
+      ],
+      "status": "resolved",
+      "resolution": {
+        "status": "resolved",
+        "selected_candidate": "token.image.moody-warm-photo",
+        "rejected_candidates": [],
+        "accepted_scope": "project-scoped photography direction",
+        "excluded_context": [
+          "cafe interiors",
+          "wood frames",
+          "platform-like controls"
+        ]
+      },
+      "resolver": "Nick",
+      "decision_id": "correction-r009a-static-coffee-owner-001",
+      "selected_candidate": "token.image.moody-warm-photo",
+      "rejected_candidates": [],
+      "accepted_scope": "project-scoped photography direction",
+      "excluded_context": [
+        "cafe interiors",
+        "wood frames",
+        "platform-like controls"
+      ]
+    }
+  ]
+}

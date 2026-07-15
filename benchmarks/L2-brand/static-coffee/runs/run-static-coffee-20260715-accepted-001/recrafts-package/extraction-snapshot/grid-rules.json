@@ -1,0 +1,69 @@
+{
+  "version": "3.0.0",
+  "grid_rules": [
+    {
+      "domain_id": "grid.hero-full-bleed",
+      "grid_rule_id": "grid.hero-full-bleed",
+      "scope": "project",
+      "rule_type": "hero-composition",
+      "constraints": {
+        "dominant_element": "oversized wordmark",
+        "field": "full-bleed graphic image",
+        "supporting_copy": "small peripheral label"
+      },
+      "status": "inferred",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-863027be96b90182"
+      ],
+      "claim_refs": [
+        "claim-grid.hero-full-bleed"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "grid.editorial-asymmetric-split",
+      "grid_rule_id": "grid.editorial-asymmetric-split",
+      "scope": "project",
+      "rule_type": "editorial-composition",
+      "constraints": {
+        "structure": "asymmetric split or layered cards",
+        "hierarchy": "large serif headline plus compact utility rows"
+      },
+      "status": "inferred",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-e0db96392cba6da9",
+        "ev-153c52025c306ec0",
+        "ev-e3ac1885f5d23653"
+      ],
+      "claim_refs": [
+        "claim-grid.editorial-asymmetric-split"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "grid.application-sequence",
+      "grid_rule_id": "grid.application-sequence",
+      "scope": "project",
+      "rule_type": "presentation-sequence",
+      "constraints": {
+        "progression": "system hero to applications to detail variants to spatial close",
+        "rhythm": "alternate broad montage and focused object"
+      },
+      "status": "inferred",
+      "confidence": 0.89,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-e0db96392cba6da9",
+        "ev-1bd1ae37a556bf88",
+        "ev-d45c42b93ce8b159",
+        "ev-4a683209a5cae856"
+      ],
+      "claim_refs": [
+        "claim-grid.application-sequence"
+      ],
+      "conflict_refs": []
+    }
+  ]
+}

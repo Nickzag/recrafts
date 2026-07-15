@@ -1,0 +1,7 @@
+{
+  "status": "awaiting-review",
+  "canonical_visual_generation_authorized": false,
+  "blockers": [
+    "r007-human-acceptance-not-implemented"
+  ]
+}

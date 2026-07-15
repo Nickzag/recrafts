@@ -1,0 +1,147 @@
+{
+  "version": "1.0.0",
+  "capabilities": [
+    {
+      "capability_id": "brand-identity-narrative",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "design.md",
+        "visual-grammar.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "logo-wordmark-system",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "components.json",
+        "visual-grammar.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "typography-system",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "tokens.json",
+        "visual-grammar.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "editorial-hierarchy",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "grid-rules.json",
+        "layout-rules.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "color-system",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "tokens.json",
+        "visual-grammar.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "halftone-image-treatment",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "tokens.json",
+        "components.json",
+        "visual-grammar.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "floral-texture-pattern",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "components.json",
+        "visual-grammar.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "packaging-system",
+      "required": true,
+      "minimum_evidence_count": 3,
+      "allowed_output_artifacts": [
+        "components.json",
+        "layout-rules.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "signage-spatial-system",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "components.json",
+        "layout-rules.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "photography-direction",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "tokens.json",
+        "visual-grammar.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "editorial-composition",
+      "required": true,
+      "minimum_evidence_count": 2,
+      "allowed_output_artifacts": [
+        "grid-rules.json",
+        "layout-rules.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "presentation-sequence",
+      "required": true,
+      "minimum_evidence_count": 3,
+      "allowed_output_artifacts": [
+        "layout-rules.json",
+        "presentation-grammar.json"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "brand-visual-grammar",
+      "required": true,
+      "minimum_evidence_count": 3,
+      "allowed_output_artifacts": [
+        "visual-grammar.json",
+        "design.md"
+      ],
+      "human_review_required": true
+    },
+    {
+      "capability_id": "cross-application-consistency",
+      "required": true,
+      "minimum_evidence_count": 3,
+      "allowed_output_artifacts": [
+        "components.json",
+        "visual-grammar.json",
+        "design.md"
+      ],
+      "human_review_required": true
+    }
+  ]
+}

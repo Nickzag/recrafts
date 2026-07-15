@@ -1,0 +1,105 @@
+{
+  "artifact_set_id": "artifact-set-464ed6215fbd6867",
+  "package_id": "package-802e3e7ea40c3e99",
+  "parent_package_id": "package-25f37a4ded85f7bd",
+  "source_capture_ids": [
+    "capture-31f1581054aa1ff3",
+    "capture-370af4aed4dc5816",
+    "capture-af9d71886e13d4d3",
+    "capture-5b725cf7dc3e3b22",
+    "capture-72d006380f7e6de5",
+    "capture-b513ff8cef50849a",
+    "capture-ff30ad959d33ba4f",
+    "capture-a3e2209f8279986b",
+    "capture-14e3c7514e0db659",
+    "capture-44767a9efd681d07",
+    "capture-e1e51b30883ffcff",
+    "capture-e00d88fd7349e100",
+    "capture-e2812623f05dc70e",
+    "capture-5bbca49f546771bf",
+    "capture-e0951bba3c94ea7f",
+    "capture-6799bb9c4b93fa9d",
+    "capture-a12704762048d92b",
+    "capture-79e90e567be31fb8",
+    "capture-679152e2959df283",
+    "capture-11720e600390fba8"
+  ],
+  "analysis_ids": [
+    "analysis-259adf6c6158297c"
+  ],
+  "correction_ids": [
+    "correction-r009a-static-coffee-owner-001"
+  ],
+  "decision_ids": [
+    "decision-r009a-static-coffee-owner-001"
+  ],
+  "status": "accepted",
+  "artifacts": [
+    {
+      "type": "design",
+      "path": "design.md",
+      "media_type": "text/markdown",
+      "sha256": "aff9f636f9ab86b8c847701bec439f429311e1a9ded6806054b606d9a487b5c5",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "tokens",
+      "path": "tokens.json",
+      "media_type": "application/json",
+      "sha256": "a36435534ac4abe932c809f8291d31dc8b245ec3c81d37b31a7a752563672b4e",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "components",
+      "path": "components.json",
+      "media_type": "application/json",
+      "sha256": "225d4c350ca22b5b29642f71f83c3a807f741c67cd417d22721960db13d40315",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "grid-rules",
+      "path": "grid-rules.json",
+      "media_type": "application/json",
+      "sha256": "0a5511448efdb7d4b81ee09cf4e3f0c7fb087e9a6206b231efeec2d6993d5738",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "layout-rules",
+      "path": "layout-rules.json",
+      "media_type": "application/json",
+      "sha256": "4ad69a512636a7334549a7ad9fa51c415010ac702d262f12e887b63c24c43d44",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "visual-grammar",
+      "path": "visual-grammar.json",
+      "media_type": "application/json",
+      "sha256": "809bdec6e1aaa6fd4ad44704e60b3d92dbc771e1cb636848d590e0a631e04a0c",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    },
+    {
+      "type": "conflicts",
+      "path": "conflicts.json",
+      "media_type": "application/json",
+      "sha256": "1a61cfc61a8e632ae70e2b667ef4da3c1eb5a3eda594789da9b5bc01b63dcb3c",
+      "schema_version": "3.0.0",
+      "status": "accepted"
+    }
+  ],
+  "artifact_hashes": {
+    "design.md": "aff9f636f9ab86b8c847701bec439f429311e1a9ded6806054b606d9a487b5c5",
+    "tokens.json": "a36435534ac4abe932c809f8291d31dc8b245ec3c81d37b31a7a752563672b4e",
+    "components.json": "225d4c350ca22b5b29642f71f83c3a807f741c67cd417d22721960db13d40315",
+    "grid-rules.json": "0a5511448efdb7d4b81ee09cf4e3f0c7fb087e9a6206b231efeec2d6993d5738",
+    "layout-rules.json": "4ad69a512636a7334549a7ad9fa51c415010ac702d262f12e887b63c24c43d44",
+    "visual-grammar.json": "809bdec6e1aaa6fd4ad44704e60b3d92dbc771e1cb636848d590e0a631e04a0c",
+    "conflicts.json": "1a61cfc61a8e632ae70e2b667ef4da3c1eb5a3eda594789da9b5bc01b63dcb3c"
+  },
+  "created_at": "2026-07-15T19:15:00+08:00"
+}

@@ -1,0 +1,11 @@
+{
+  "decision_id": "decision-r009a-static-coffee-owner-001",
+  "candidate_package_id": "package-25f37a4ded85f7bd",
+  "actor": "Nick",
+  "actor_role": "project-owner",
+  "verdict": "PASS",
+  "created_at": "2026-07-15T19:15:00+08:00",
+  "accepted_risks": [],
+  "resolved_conflicts": ["conflict-mockup-context-scope"],
+  "notes": "结果如预期。项目所有者确认修正提案并授权接受修正后的产物。"
+}

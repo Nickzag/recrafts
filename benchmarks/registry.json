@@ -13,6 +13,24 @@
       "rubric_version": "1.0.0",
       "baseline_run_id": null,
       "latest_run_id": null
+    },
+    {
+      "corpus_id": "l2-brand-static-coffee-static-v1",
+      "level": "L2-brand",
+      "domain": "brand-identity",
+      "status": "candidate",
+      "scope": "static brand identity and case-study presentation",
+      "excluded_capabilities": [
+        "motion-presentation-grammar"
+      ],
+      "source_type": "public-case-study",
+      "source_reference": "https://www.behance.net/gallery/251828539/Static-Coffee-Brand-Identity",
+      "source_pack_required": true,
+      "source_pack_status": "stable-static",
+      "redistribution_policy": "metadata-and-hashes-only",
+      "rubric_version": "1.0.0",
+      "baseline_run_id": null,
+      "latest_run_id": null
     }
   ]
 }

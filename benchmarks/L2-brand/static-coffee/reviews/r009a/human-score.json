@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "reviewer_name": "Nick",
+  "reviewer_role": "Project Owner",
+  "review_date": "2026-07-15",
+  "corpus_id": "l2-brand-static-coffee-static-v1",
+  "corpus_version": "1.0.0",
+  "source_pack_id": "static-coffee-static-source-pack-v1",
+  "source_pack_version": "1.0.0",
+  "candidate_run_id": "run-static-coffee-20260715-codex-gpt5-001",
+  "review_environment": "local R-009A side-by-side workspace",
+  "source_pack_hash_verified": true,
+  "correction_proposals_reviewed": true,
+  "correction_decision": {
+    "verdict": "CONFIRM",
+    "reason": "结果如预期"
+  },
+  "scores": [
+    { "module_id": "brand-system-coherence", "score": 5, "reason": "结果如预期", "artifact_refs": [], "evidence_refs": [] },
+    { "module_id": "typography-system-interpretation", "score": 5, "reason": "结果如预期", "artifact_refs": [], "evidence_refs": [] },
+    { "module_id": "color-system-interpretation", "score": 5, "reason": "结果如预期", "artifact_refs": [], "evidence_refs": [] },
+    { "module_id": "cross-application-consistency", "score": 5, "reason": "结果如预期", "artifact_refs": [], "evidence_refs": [] },
+    { "module_id": "visual-grammar-usefulness", "score": 5, "reason": "结果如预期", "artifact_refs": [], "evidence_refs": [] },
+    { "module_id": "presentation-grammar-usefulness", "score": 5, "reason": "结果如预期", "artifact_refs": [], "evidence_refs": [] },
+    { "module_id": "possible-intent-discipline", "score": 5, "reason": "结果如预期", "artifact_refs": [], "evidence_refs": [] },
+    { "module_id": "overall-usefulness", "score": 5, "reason": "结果如预期", "artifact_refs": [], "evidence_refs": [] }
+  ]
+}

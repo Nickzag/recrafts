@@ -1,0 +1,12 @@
+{
+  "status": "first-baseline-no-previous-comparison",
+  "candidate_run_id": "run-static-coffee-20260715-codex-gpt5-001",
+  "accepted_run_id": "run-static-coffee-20260715-accepted-001",
+  "candidate_package_id": "package-a5adf72a7eecac57",
+  "corrected_package_id": "package-25f37a4ded85f7bd",
+  "accepted_package_id": "package-802e3e7ea40c3e99",
+  "corrections": ["correction-r009a-static-coffee-owner-001"],
+  "decisions": ["decision-r009a-static-coffee-owner-001"],
+  "material_change": "Resolved the mockup-context scope conflict while preserving project-scoped photography direction.",
+  "previous_baseline_run_id": null
+}

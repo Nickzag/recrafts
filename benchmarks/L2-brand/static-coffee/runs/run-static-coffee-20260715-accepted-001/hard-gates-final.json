@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "failures": [],
+  "checks": {
+    "source_pack_stability": "pass",
+    "no_oracle": "pass",
+    "human_score": "pass",
+    "normal_correction": "pass",
+    "artifact_acceptance": "pass",
+    "accepted_package_validation": "pass",
+    "candidate_immutability": "pass"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "run-static-coffee-20260715-accepted-001",
+  "candidate_run_id": "run-static-coffee-20260715-codex-gpt5-001",
+  "corpus_id": "l2-brand-static-coffee-static-v1",
+  "corpus_version": "1.0.0",
+  "source_pack_id": "static-coffee-static-source-pack-v1",
+  "source_pack_version": "1.0.0",
+  "source_pack_sha256": "b6de73c402521f9ca7545562b8e4522a64c0c734ddc03866fa9f946c98a7aba7",
+  "rubric_version": "1.0.0",
+  "runtime": { "version": "0.4.0-rc.1", "protocol_version": "1.1", "schema_version": "3.0.0" },
+  "host": { "agent": "Codex", "engine": "GPT-5", "vision_capability": true },
+  "status": "baseline-established",
+  "accepted_package_id": "package-802e3e7ea40c3e99",
+  "artifact_set_id": "artifact-set-464ed6215fbd6867",
+  "established_at": "2026-07-15T19:15:00+08:00"
+}

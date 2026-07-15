@@ -10,7 +10,9 @@
     "level": { "enum": ["L1-image", "L2-brand", "L3-website", "L4-product"] },
     "domain": { "type": "string", "minLength": 1 },
     "status": { "enum": ["candidate", "reviewed", "golden", "deprecated"] },
+    "scope": { "type": "string", "minLength": 1 },
     "source_pack_id": { "type": "string", "minLength": 1 },
+    "source_pack_status": { "enum": ["complete", "stable-static", "partial", "failed"] },
     "rubric_version": { "type": "string", "minLength": 1 },
     "baseline_run_id": { "type": ["string", "null"] },
     "latest_run_id": { "type": ["string", "null"] }

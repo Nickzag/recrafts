@@ -1,0 +1,207 @@
+{
+  "version": "3.0.0",
+  "components": [
+    {
+      "domain_id": "component.brand-wordmark-lockup",
+      "component_id": "component.brand-wordmark-lockup",
+      "scope": "project",
+      "purpose": "Primary identity mark used at hero, packaging, apparel and signage scales.",
+      "anatomy": [
+        "expressive wordmark",
+        "optional utility line",
+        "optional small symbol"
+      ],
+      "variants": [
+        "hero",
+        "compact",
+        "storefront"
+      ],
+      "states": [
+        "dark-on-pink",
+        "pink-on-dark",
+        "dark-on-glass"
+      ],
+      "status": "inferred",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-2fd7c73c4313ae4b",
+        "ev-dc0ffe63c54938b8",
+        "ev-d45c42b93ce8b159"
+      ],
+      "claim_refs": [
+        "claim-brand-wordmark-lockup"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "component.halftone-organic-field",
+      "component_id": "component.halftone-organic-field",
+      "scope": "project",
+      "purpose": "Repeatable graphic texture that binds backgrounds, crops and application surfaces.",
+      "anatomy": [
+        "organic silhouette",
+        "coarse dot field",
+        "cropped edge"
+      ],
+      "variants": [
+        "full-field",
+        "corner-crop",
+        "separator"
+      ],
+      "states": [
+        "pink-on-cream",
+        "cream-on-pink",
+        "pink-on-white"
+      ],
+      "status": "inferred",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-22f3017ccbbf764c",
+        "ev-e0db96392cba6da9",
+        "ev-e3ac1885f5d23653",
+        "ev-4a683209a5cae856"
+      ],
+      "claim_refs": [
+        "claim-halftone-organic-field"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "component.coffee-packaging-label",
+      "component_id": "component.coffee-packaging-label",
+      "scope": "project",
+      "purpose": "Packaging hierarchy shared by coffee bag variants.",
+      "anatomy": [
+        "wordmark",
+        "product name",
+        "origin or process facts",
+        "utility labels",
+        "halftone field"
+      ],
+      "variants": [
+        "blend",
+        "espresso",
+        "filter"
+      ],
+      "states": [
+        "pink",
+        "cyan",
+        "cream"
+      ],
+      "status": "inferred",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-1bd1ae37a556bf88",
+        "ev-bff9e512d48c7f90",
+        "ev-808dab253285cf78",
+        "ev-4d4c56d1930a659b"
+      ],
+      "claim_refs": [
+        "claim-coffee-packaging-label"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "component.editorial-menu-panel",
+      "component_id": "component.editorial-menu-panel",
+      "scope": "project",
+      "purpose": "Information-dense menu and announcement layout with display headline and utility rows.",
+      "anatomy": [
+        "display headline",
+        "section labels",
+        "item rows",
+        "utility footer",
+        "color tab"
+      ],
+      "variants": [
+        "menu",
+        "announcement",
+        "social post"
+      ],
+      "states": [
+        "cream",
+        "pink",
+        "cyan"
+      ],
+      "status": "inferred",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-e0db96392cba6da9",
+        "ev-153c52025c306ec0",
+        "ev-c3afd618cdc3adc6",
+        "ev-e3ac1885f5d23653"
+      ],
+      "claim_refs": [
+        "claim-editorial-menu-panel"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "component.signage-message-lockup",
+      "component_id": "component.signage-message-lockup",
+      "scope": "project",
+      "purpose": "Storefront and pavement-sign composition combining mark, opening hours and a short message.",
+      "anatomy": [
+        "wordmark or headline",
+        "supporting message",
+        "hours",
+        "small symbol"
+      ],
+      "variants": [
+        "window",
+        "pavement sign",
+        "interior sign"
+      ],
+      "states": [
+        "pink field",
+        "glass overlay",
+        "cream field"
+      ],
+      "status": "inferred",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-174b4293fb348783",
+        "ev-e3ac1885f5d23653",
+        "ev-d45c42b93ce8b159"
+      ],
+      "claim_refs": [
+        "claim-signage-message-lockup"
+      ],
+      "conflict_refs": []
+    },
+    {
+      "domain_id": "component.application-montage",
+      "component_id": "component.application-montage",
+      "scope": "project",
+      "purpose": "Groups several branded touchpoints to demonstrate cross-application consistency.",
+      "anatomy": [
+        "application objects",
+        "photographic context",
+        "graphic field"
+      ],
+      "variants": [
+        "packaging",
+        "merchandise",
+        "digital"
+      ],
+      "states": [
+        "single-scene",
+        "multi-panel"
+      ],
+      "status": "inferred",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-22f3017ccbbf764c",
+        "ev-2fd7c73c4313ae4b",
+        "ev-e0db96392cba6da9",
+        "ev-dc0ffe63c54938b8"
+      ],
+      "claim_refs": [
+        "claim-application-montage"
+      ],
+      "conflict_refs": []
+    }
+  ]
+}

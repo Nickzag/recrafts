@@ -1,0 +1,152 @@
+{
+  "corpus_id": "l2-brand-static-coffee-static-v1",
+  "source_pack_id": "static-coffee-static-source-pack-v1",
+  "status": "reviewable",
+  "capabilities": [
+    {
+      "capability_id": "brand-identity-narrative",
+      "reviewable": true,
+      "region_refs": [
+        "region-01-system",
+        "region-06-presentation",
+        "region-19-presentation",
+        "region-20-presentation"
+      ]
+    },
+    {
+      "capability_id": "logo-wordmark-system",
+      "reviewable": true,
+      "region_refs": [
+        "region-01-system",
+        "region-04-application",
+        "region-08-application",
+        "region-16-application"
+      ]
+    },
+    {
+      "capability_id": "typography-system",
+      "reviewable": true,
+      "region_refs": [
+        "region-01-system",
+        "region-06-editorial",
+        "region-10-editorial",
+        "region-16-editorial"
+      ]
+    },
+    {
+      "capability_id": "editorial-hierarchy",
+      "reviewable": true,
+      "region_refs": [
+        "region-06-editorial",
+        "region-10-editorial",
+        "region-16-editorial",
+        "region-17-editorial"
+      ]
+    },
+    {
+      "capability_id": "color-system",
+      "reviewable": true,
+      "region_refs": [
+        "region-01-system",
+        "region-04-application",
+        "region-08-application",
+        "region-15-application"
+      ]
+    },
+    {
+      "capability_id": "halftone-image-treatment",
+      "reviewable": true,
+      "region_refs": [
+        "region-01-system",
+        "region-03-editorial",
+        "region-06-editorial",
+        "region-17-editorial"
+      ]
+    },
+    {
+      "capability_id": "floral-texture-pattern",
+      "reviewable": true,
+      "region_refs": [
+        "region-01-system",
+        "region-03-packaging",
+        "region-06-editorial",
+        "region-17-editorial"
+      ]
+    },
+    {
+      "capability_id": "packaging-system",
+      "reviewable": true,
+      "region_refs": [
+        "region-02-packaging",
+        "region-03-packaging",
+        "region-09-packaging",
+        "region-10-packaging",
+        "region-11-packaging",
+        "region-12-packaging",
+        "region-13-packaging",
+        "region-14-packaging"
+      ]
+    },
+    {
+      "capability_id": "signage-spatial-system",
+      "reviewable": true,
+      "region_refs": [
+        "region-15-signage",
+        "region-17-signage",
+        "region-18-signage"
+      ]
+    },
+    {
+      "capability_id": "photography-direction",
+      "reviewable": true,
+      "region_refs": [
+        "region-02-photography",
+        "region-04-photography",
+        "region-09-photography",
+        "region-18-photography"
+      ]
+    },
+    {
+      "capability_id": "editorial-composition",
+      "reviewable": true,
+      "region_refs": [
+        "region-03-editorial",
+        "region-06-editorial",
+        "region-10-editorial",
+        "region-16-editorial",
+        "region-17-editorial"
+      ]
+    },
+    {
+      "capability_id": "presentation-sequence",
+      "reviewable": true,
+      "region_refs": [
+        "region-01-presentation",
+        "region-06-presentation",
+        "region-19-presentation",
+        "region-20-presentation"
+      ]
+    },
+    {
+      "capability_id": "brand-visual-grammar",
+      "reviewable": true,
+      "region_refs": [
+        "region-01-system",
+        "region-03-packaging",
+        "region-06-editorial",
+        "region-15-signage"
+      ]
+    },
+    {
+      "capability_id": "cross-application-consistency",
+      "reviewable": true,
+      "region_refs": [
+        "region-04-application",
+        "region-05-application",
+        "region-08-application",
+        "region-15-application",
+        "region-16-application"
+      ]
+    }
+  ]
+}

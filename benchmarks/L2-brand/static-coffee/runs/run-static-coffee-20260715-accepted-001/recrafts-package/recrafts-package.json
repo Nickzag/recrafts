@@ -1,0 +1,28 @@
+{
+  "version": "3.0.0",
+  "protocol_version": "1.1",
+  "schema_version": "3.0.0",
+  "package_id": "package-802e3e7ea40c3e99",
+  "analysis_id": "analysis-259adf6c6158297c",
+  "status": "accepted",
+  "artifacts": [
+    "source-manifest.json",
+    "evidence-map.json",
+    "claims.json",
+    "tokens.json",
+    "components.json",
+    "grid-rules.json",
+    "layout-rules.json",
+    "visual-grammar.json",
+    "conflicts.json",
+    "design.md",
+    "corrections.jsonl",
+    "correction-diff.json",
+    "lineage.json",
+    "artifact-set.json",
+    "region-overlays.json",
+    "decisions.jsonl"
+  ],
+  "parent_package_id": "package-25f37a4ded85f7bd",
+  "artifact_set_id": "artifact-set-464ed6215fbd6867"
+}

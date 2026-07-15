@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Static Coffee review workspace</title><style>
+:root{color-scheme:light;--ink:#181715;--muted:#6d6860;--paper:#f4f0e8;--panel:#fffdf8;--line:#d8d0c3;--accent:#5b452e;--ok:#2f6848;--pending:#8a5b12}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}header,main{max-width:1480px;margin:auto;padding:24px 32px}header{position:sticky;top:0;z-index:5;background:rgba(244,240,232,.96);border-bottom:1px solid var(--line)}h1{font:700 clamp(26px,4vw,48px)/1.08 Georgia,serif;margin:8px 0 12px}h2{font:700 27px/1.2 Georgia,serif;margin:32px 0 14px}h3{font:700 18px/1.3 Georgia,serif}.eyebrow,.meta{color:var(--muted);letter-spacing:.04em}.nav{display:flex;gap:14px;flex-wrap:wrap}.nav a,a{color:var(--accent)}.notice{border-left:5px solid var(--pending);padding:12px 16px;background:#fff5df}.ok{border-left-color:var(--ok);background:#edf7f0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;box-shadow:0 5px 18px rgba(47,39,28,.05)}img{display:block;width:100%;height:auto;border-radius:5px;background:#e7e1d6}.source-card img{aspect-ratio:14/8.4;object-fit:contain}.source-card.tall img{aspect-ratio:auto}.tag{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:2px 8px;margin:2px 3px 2px 0;color:var(--muted);font-size:12px}.split{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);gap:20px}.mapping{margin:24px 0;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:10px}pre{overflow:auto;max-height:620px;padding:16px;background:#211f1c;color:#f7f1e7;border-radius:7px;white-space:pre-wrap;word-break:break-word}code{font-family:inherit}table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}th{background:#eae3d8}@media(max-width:850px){header,main{padding:18px}.split{grid-template-columns:1fr}header{position:static}}
+</style></head><body><header><div class="eyebrow">R-009A · MODE B · HUMAN REVIEW</div><h1>Static Coffee review workspace</h1><div class="meta">Candidate run · run-static-coffee-20260715-codex-gpt5-001</div><nav class="nav"><a href="review-index.html">Review index</a><a href="source-contact-sheet.html">Source contact sheet</a><a href="artifact-index.html">Artifact index</a><a href="side-by-side-map.html">Side-by-side map</a><a href="human-score-form.html">中文评分</a></nav></header><main>
+<div class="notice ok"><strong>Source scope stabilized.</strong> Mode B records 20 static Sources, 35 Regions and 14 reviewable static capability categories. Four GIF modules and motion grammar are explicit Project Owner-approved exclusions.</div>
+<div class="notice"><strong>Human calibration is pending.</strong> Nick must enter eight 1–5 scores with reasons and Artifact/Evidence references, then confirm or revise the proposed medium-conflict resolution. No score or acceptance verdict is prefilled.</div>
+<section class="grid">
+  <article class="card"><h2>01 · Source review</h2><p>Inspect all local Source Pack images, Source/Region IDs and declared classifications.</p><a href="source-contact-sheet.html">Open contact sheet →</a></article>
+  <article class="card"><h2>02 · Artifact review</h2><p>Inspect Evidence, Claims, canonical candidates, conflicts and benchmark-only inference candidates.</p><a href="artifact-index.html">Open Artifact index →</a></article>
+  <article class="card"><h2>03 · Compare</h2><p>Trace each Source to its Regions, Evidence IDs and Claims without expected-answer content.</p><a href="side-by-side-map.html">Open side-by-side map →</a></article>
+  <article class="card"><h2>04 · 中文评分</h2><p>使用可视化 1–5 评分卡填写理由和引用，生成并复制结构化 JSON。</p><a href="human-score-form.html">打开中文评分页 →</a><p class="meta">Reviewer: Nick · Role: Project Owner</p></article>
+</section>
+<h2>Scope decision</h2><div class="panel"><pre>{
+  &quot;decision_id&quot;: &quot;scope-static-coffee-static-v1-mode-b&quot;,
+  &quot;mode&quot;: &quot;static-only&quot;,
+  &quot;owner_name&quot;: &quot;Nick&quot;,
+  &quot;owner_role&quot;: &quot;Project Owner&quot;,
+  &quot;approved_at&quot;: &quot;2026-07-15T09:30:00+08:00&quot;,
+  &quot;original_corpus_id&quot;: &quot;l2-brand-static-coffee-v1&quot;,
+  &quot;derived_corpus_id&quot;: &quot;l2-brand-static-coffee-static-v1&quot;,
+  &quot;scope&quot;: &quot;static brand identity and case-study presentation&quot;,
+  &quot;excluded_capabilities&quot;: [
+    &quot;motion-presentation-grammar&quot;
+  ],
+  &quot;excluded_modules&quot;: [
+    {
+      &quot;module_id&quot;: &quot;animated-project-module-01&quot;,
+      &quot;source_url&quot;: &quot;https://mir-s3-cdn-cf.behance.net/project_modules/1400/74fc88251828539.6a4144034d78b.gif&quot;,
+      &quot;reason&quot;: &quot;Mode B intentionally excludes animated media from the static-only benchmark scope.&quot;,
+      &quot;impact_assessment&quot;: &quot;The transition itself cannot be scored; the twenty static modules still cover all fourteen declared static capability categories.&quot;,
+      &quot;capability_impact&quot;: [
+        &quot;motion-presentation-grammar&quot;
+      ],
+      &quot;owner_approved&quot;: true
+    },
+    {
+      &quot;module_id&quot;: &quot;animated-project-module-02&quot;,
+      &quot;source_url&quot;: &quot;https://mir-s3-cdn-cf.behance.net/project_modules/1400/f08c50251828539.6a41d42ea97eb.gif&quot;,
+      &quot;reason&quot;: &quot;Mode B intentionally excludes animated media from the static-only benchmark scope.&quot;,
+      &quot;impact_assessment&quot;: &quot;Animated sequencing is unavailable for review but does not remove evidence for the declared static brand-system categories.&quot;,
+      &quot;capability_impact&quot;: [
+        &quot;motion-presentation-grammar&quot;
+      ],
+      &quot;owner_approved&quot;: true
+    },
+    {
+      &quot;module_id&quot;: &quot;animated-project-module-03&quot;,
+      &quot;source_url&quot;: &quot;https://mir-s3-cdn-cf.behance.net/project_modules/1400/b88fe1251828539.6a413f0dcf040.gif&quot;,
+      &quot;reason&quot;: &quot;Mode B intentionally excludes animated media from the static-only benchmark scope.&quot;,
+      &quot;impact_assessment&quot;: &quot;Motion behavior remains untested; typography, color, packaging, editorial and cross-application evidence remain reviewable from static sources.&quot;,
+      &quot;capability_impact&quot;: [
+        &quot;motion-presentation-grammar&quot;
+      ],
+      &quot;owner_approved&quot;: true
+    },
+    {
+      &quot;module_id&quot;: &quot;animated-project-module-04&quot;,
+      &quot;source_url&quot;: &quot;https://mir-s3-cdn-cf.behance.net/project_modules/1400/4b4b73251828539.6a41407950de8.gif&quot;,
+      &quot;reason&quot;: &quot;Mode B intentionally excludes animated media from the static-only benchmark scope.&quot;,
+      &quot;impact_assessment&quot;: &quot;The Corpus makes no claim about animation fidelity; all fourteen in-scope static categories retain traceable Region evidence.&quot;,
+      &quot;capability_impact&quot;: [
+        &quot;motion-presentation-grammar&quot;
+      ],
+      &quot;owner_approved&quot;: true
+    }
+  ]
+}</pre></div>
+<h2>Capability reviewability</h2><table><thead><tr><th>Capability</th><th>Reviewable</th><th>Region references</th></tr></thead><tbody><tr><td>brand-identity-narrative</td><td>YES</td><td><span class="tag">region-01-system</span><span class="tag">region-06-presentation</span><span class="tag">region-19-presentation</span><span class="tag">region-20-presentation</span></td></tr><tr><td>logo-wordmark-system</td><td>YES</td><td><span class="tag">region-01-system</span><span class="tag">region-04-application</span><span class="tag">region-08-application</span><span class="tag">region-16-application</span></td></tr><tr><td>typography-system</td><td>YES</td><td><span class="tag">region-01-system</span><span class="tag">region-06-editorial</span><span class="tag">region-10-editorial</span><span class="tag">region-16-editorial</span></td></tr><tr><td>editorial-hierarchy</td><td>YES</td><td><span class="tag">region-06-editorial</span><span class="tag">region-10-editorial</span><span class="tag">region-16-editorial</span><span class="tag">region-17-editorial</span></td></tr><tr><td>color-system</td><td>YES</td><td><span class="tag">region-01-system</span><span class="tag">region-04-application</span><span class="tag">region-08-application</span><span class="tag">region-15-application</span></td></tr><tr><td>halftone-image-treatment</td><td>YES</td><td><span class="tag">region-01-system</span><span class="tag">region-03-editorial</span><span class="tag">region-06-editorial</span><span class="tag">region-17-editorial</span></td></tr><tr><td>floral-texture-pattern</td><td>YES</td><td><span class="tag">region-01-system</span><span class="tag">region-03-packaging</span><span class="tag">region-06-editorial</span><span class="tag">region-17-editorial</span></td></tr><tr><td>packaging-system</td><td>YES</td><td><span class="tag">region-02-packaging</span><span class="tag">region-03-packaging</span><span class="tag">region-09-packaging</span><span class="tag">region-10-packaging</span><span class="tag">region-11-packaging</span><span class="tag">region-12-packaging</span><span class="tag">region-13-packaging</span><span class="tag">region-14-packaging</span></td></tr><tr><td>signage-spatial-system</td><td>YES</td><td><span class="tag">region-15-signage</span><span class="tag">region-17-signage</span><span class="tag">region-18-signage</span></td></tr><tr><td>photography-direction</td><td>YES</td><td><span class="tag">region-02-photography</span><span class="tag">region-04-photography</span><span class="tag">region-09-photography</span><span class="tag">region-18-photography</span></td></tr><tr><td>editorial-composition</td><td>YES</td><td><span class="tag">region-03-editorial</span><span class="tag">region-06-editorial</span><span class="tag">region-10-editorial</span><span class="tag">region-16-editorial</span><span class="tag">region-17-editorial</span></td></tr><tr><td>presentation-sequence</td><td>YES</td><td><span class="tag">region-01-presentation</span><span class="tag">region-06-presentation</span><span class="tag">region-19-presentation</span><span class="tag">region-20-presentation</span></td></tr><tr><td>brand-visual-grammar</td><td>YES</td><td><span class="tag">region-01-system</span><span class="tag">region-03-packaging</span><span class="tag">region-06-editorial</span><span class="tag">region-15-signage</span></td></tr><tr><td>cross-application-consistency</td><td>YES</td><td><span class="tag">region-04-application</span><span class="tag">region-05-application</span><span class="tag">region-08-application</span><span class="tag">region-15-application</span><span class="tag">region-16-application</span></td></tr></tbody></table></main></body></html>

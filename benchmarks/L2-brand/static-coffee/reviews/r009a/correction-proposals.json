@@ -1,0 +1,48 @@
+{
+  "proposal_status": "pending-project-owner-confirmation",
+  "proposal_note": "This is not an executed correction. Confirm, revise or reject it after side-by-side review.",
+  "proposed_correction": {
+    "correction_id": "correction-r009a-static-coffee-owner-001",
+    "base_package_id": "package-a5adf72a7eecac57",
+    "actor": "Nick",
+    "actor_role": "project-owner",
+    "created_at": "2026-07-15T10:00:00+08:00",
+    "reason": "Resolve the candidate Package's medium mockup-context scope conflict without promoting mockup environment details into the brand system.",
+    "operations": [
+      {
+        "operation_id": "resolve-mockup-context-scope-001",
+        "type": "resolve-conflict",
+        "target_id": "conflict-mockup-context-scope",
+        "before": {
+          "status": "open"
+        },
+        "after": {
+          "status": "resolved",
+          "selected_candidate": "token.image.moody-warm-photo",
+          "rejected_candidates": [],
+          "accepted_scope": "project-scoped photography direction",
+          "excluded_context": [
+            "cafe interiors",
+            "wood frames",
+            "platform-like controls"
+          ]
+        },
+        "evidence_refs": [
+          "ev-23046c00f866069e",
+          "ev-2fd7c73c4313ae4b",
+          "ev-e3ac1885f5d23653"
+        ],
+        "claim_refs": [
+          "claim-token.image.moody-warm-photo"
+        ],
+        "reason": "The repeated warm low-key photography is useful at project scope, while the surrounding mockup environment is contextual and must not become a global visual token."
+      }
+    ],
+    "decision_context": {
+      "corpus_id": "l2-brand-static-coffee-static-v1",
+      "candidate_run_id": "run-static-coffee-20260715-codex-gpt5-001",
+      "review_workspace": "benchmarks/L2-brand/static-coffee/reviews/r009a",
+      "owner_confirmation_required": true
+    }
+  }
+}

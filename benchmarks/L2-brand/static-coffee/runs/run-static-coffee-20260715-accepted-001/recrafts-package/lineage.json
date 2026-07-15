@@ -1,0 +1,15 @@
+{
+  "event_id": "lineage-9a0ea03e6bda5513",
+  "event_type": "accepted",
+  "package_id": "package-802e3e7ea40c3e99",
+  "parent_package_id": "package-25f37a4ded85f7bd",
+  "restored_from_package_id": null,
+  "correction_ids": [
+    "correction-r009a-static-coffee-owner-001"
+  ],
+  "decision_ids": [
+    "decision-r009a-static-coffee-owner-001"
+  ],
+  "created_at": "2026-07-15T19:15:00+08:00",
+  "artifact_set_hash": "f169be010dc6a00ef337196747167a0c1202d29405b2ee2386880bca45e1539a"
+}

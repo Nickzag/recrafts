@@ -1,0 +1,55 @@
+{
+  "decision_id": "scope-static-coffee-static-v1-mode-b",
+  "mode": "static-only",
+  "owner_name": "Nick",
+  "owner_role": "Project Owner",
+  "approved_at": "2026-07-15T09:30:00+08:00",
+  "original_corpus_id": "l2-brand-static-coffee-v1",
+  "derived_corpus_id": "l2-brand-static-coffee-static-v1",
+  "scope": "static brand identity and case-study presentation",
+  "excluded_capabilities": [
+    "motion-presentation-grammar"
+  ],
+  "excluded_modules": [
+    {
+      "module_id": "animated-project-module-01",
+      "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/74fc88251828539.6a4144034d78b.gif",
+      "reason": "Mode B intentionally excludes animated media from the static-only benchmark scope.",
+      "impact_assessment": "The transition itself cannot be scored; the twenty static modules still cover all fourteen declared static capability categories.",
+      "capability_impact": [
+        "motion-presentation-grammar"
+      ],
+      "owner_approved": true
+    },
+    {
+      "module_id": "animated-project-module-02",
+      "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f08c50251828539.6a41d42ea97eb.gif",
+      "reason": "Mode B intentionally excludes animated media from the static-only benchmark scope.",
+      "impact_assessment": "Animated sequencing is unavailable for review but does not remove evidence for the declared static brand-system categories.",
+      "capability_impact": [
+        "motion-presentation-grammar"
+      ],
+      "owner_approved": true
+    },
+    {
+      "module_id": "animated-project-module-03",
+      "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b88fe1251828539.6a413f0dcf040.gif",
+      "reason": "Mode B intentionally excludes animated media from the static-only benchmark scope.",
+      "impact_assessment": "Motion behavior remains untested; typography, color, packaging, editorial and cross-application evidence remain reviewable from static sources.",
+      "capability_impact": [
+        "motion-presentation-grammar"
+      ],
+      "owner_approved": true
+    },
+    {
+      "module_id": "animated-project-module-04",
+      "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4b4b73251828539.6a41407950de8.gif",
+      "reason": "Mode B intentionally excludes animated media from the static-only benchmark scope.",
+      "impact_assessment": "The Corpus makes no claim about animation fidelity; all fourteen in-scope static categories retain traceable Region evidence.",
+      "capability_impact": [
+        "motion-presentation-grammar"
+      ],
+      "owner_approved": true
+    }
+  ]
+}

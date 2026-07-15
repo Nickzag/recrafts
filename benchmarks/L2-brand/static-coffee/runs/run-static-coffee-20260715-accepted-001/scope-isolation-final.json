@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "findings": [],
+  "resolved_scope": {
+    "accepted": "project-scoped photography direction",
+    "excluded_context": ["cafe interiors", "wood frames", "platform-like controls"]
+  }
+}

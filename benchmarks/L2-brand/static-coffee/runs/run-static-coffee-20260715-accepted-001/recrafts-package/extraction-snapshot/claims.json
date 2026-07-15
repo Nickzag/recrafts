@@ -1,0 +1,936 @@
+{
+  "version": "3.0.0",
+  "claims": [
+    {
+      "claim_id": "claim-classification-source-1",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-863027be96b90182"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-2",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-23046c00f866069e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-3",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-22f3017ccbbf764c"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-4",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-1904eab8d1115b4c"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-5",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-2fd7c73c4313ae4b"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-6",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-e0db96392cba6da9"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-7",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-53a75eb8e0cfe31e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-8",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-dc0ffe63c54938b8"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-9",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-a253613c4204f3e4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-10",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-153c52025c306ec0"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-11",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-1bd1ae37a556bf88"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-12",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-bff9e512d48c7f90"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-13",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-808dab253285cf78"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-14",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-4d4c56d1930a659b"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-15",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-174b4293fb348783"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-16",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-c3afd618cdc3adc6"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-17",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-18",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-19",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.82,
+      "evidence_refs": [
+        "ev-39887c8c6c70a364"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-classification-source-20",
+      "claim_type": "source-classification",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-4a683209a5cae856"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "marketing-surface"
+    },
+    {
+      "claim_id": "claim-finding-wordmark",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-2fd7c73c4313ae4b",
+        "ev-dc0ffe63c54938b8",
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "A large expressive lowercase wordmark with soft, irregular terminals is repeated across the hero, merchandise, social cards and storefront."
+    },
+    {
+      "claim_id": "claim-finding-type-system",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-e0db96392cba6da9",
+        "ev-53a75eb8e0cfe31e",
+        "ev-c3afd618cdc3adc6",
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "The identity combines expressive wordmark lettering, high-contrast editorial serif headlines, small utilitarian monospaced labels and a loose handwritten accent."
+    },
+    {
+      "claim_id": "claim-finding-color-system",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-22f3017ccbbf764c",
+        "ev-1904eab8d1115b4c",
+        "ev-e0db96392cba6da9",
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "Deep warm coffee red and brown anchor the system, pale pink and cream carry primary graphic fields, and cyan appears as a restrained secondary contrast."
+    },
+    {
+      "claim_id": "claim-finding-halftone-floral",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-22f3017ccbbf764c",
+        "ev-e0db96392cba6da9",
+        "ev-153c52025c306ec0",
+        "ev-c3afd618cdc3adc6",
+        "ev-e3ac1885f5d23653",
+        "ev-4a683209a5cae856"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "A floral or organic silhouette translated into coarse halftone dots recurs as a background, crop, separator and packaging texture."
+    },
+    {
+      "claim_id": "claim-finding-packaging",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-23046c00f866069e",
+        "ev-22f3017ccbbf764c",
+        "ev-a253613c4204f3e4",
+        "ev-1bd1ae37a556bf88",
+        "ev-bff9e512d48c7f90",
+        "ev-808dab253285cf78",
+        "ev-4d4c56d1930a659b"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "Coffee bags, cups and takeaway pieces reuse the same wordmark, utility labels, limited palette and halftone motif while changing format-specific hierarchy."
+    },
+    {
+      "claim_id": "claim-finding-signage",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-174b4293fb348783",
+        "ev-e3ac1885f5d23653",
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "Storefront, pavement sign and interior sign applications preserve a large wordmark or headline, short supporting line and generous field around the mark."
+    },
+    {
+      "claim_id": "claim-finding-photography",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-23046c00f866069e",
+        "ev-1904eab8d1115b4c",
+        "ev-a253613c4204f3e4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "Application photography is low-key and warm, with reflective metal, dark interiors and selective highlights that support the coffee-red graphic system."
+    },
+    {
+      "claim_id": "claim-finding-editorial",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-e0db96392cba6da9",
+        "ev-153c52025c306ec0",
+        "ev-c3afd618cdc3adc6",
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "Editorial compositions alternate large type-led fields with smaller utility information, using asymmetric splits, layered cards and strong scale contrast."
+    },
+    {
+      "claim_id": "claim-finding-presentation",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-e0db96392cba6da9",
+        "ev-1bd1ae37a556bf88",
+        "ev-d45c42b93ce8b159",
+        "ev-39887c8c6c70a364",
+        "ev-4a683209a5cae856"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "The case-study sequence progresses from a system-defining hero into applications, detailed packaging variants, signage and a quiet graphic ending."
+    },
+    {
+      "claim_id": "claim-finding-scope",
+      "claim_type": "visual-finding",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-23046c00f866069e",
+        "ev-2fd7c73c4313ae4b",
+        "ev-c3afd618cdc3adc6",
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "Cafe interiors, walls, wood frames and social-platform affordances shown inside mockups provide context but are not stable global brand-system sources."
+    },
+    {
+      "claim_id": "claim-token.color.primary-coffee",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-bff9e512d48c7f90",
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "deep warm coffee red-brown"
+    },
+    {
+      "claim_id": "claim-token.color.pale-pink",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-22f3017ccbbf764c",
+        "ev-c3afd618cdc3adc6"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "pale candy pink"
+    },
+    {
+      "claim_id": "claim-token.color.cream",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-22f3017ccbbf764c",
+        "ev-e3ac1885f5d23653",
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "warm paper cream"
+    },
+    {
+      "claim_id": "claim-token.color.cyan-accent",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-1904eab8d1115b4c",
+        "ev-e0db96392cba6da9",
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "light cyan secondary accent"
+    },
+    {
+      "claim_id": "claim-token.type.expressive-wordmark",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "observed-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-2fd7c73c4313ae4b",
+        "ev-dc0ffe63c54938b8",
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "soft irregular lowercase display lettering"
+    },
+    {
+      "claim_id": "claim-token.type.editorial-serif",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-e0db96392cba6da9",
+        "ev-153c52025c306ec0",
+        "ev-c3afd618cdc3adc6",
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "high-contrast editorial serif display"
+    },
+    {
+      "claim_id": "claim-token.type.utility-mono",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-22f3017ccbbf764c",
+        "ev-bff9e512d48c7f90"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "small uppercase monospaced utility text"
+    },
+    {
+      "claim_id": "claim-token.type.handwritten-accent",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-53a75eb8e0cfe31e",
+        "ev-e3ac1885f5d23653",
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "loose handwritten annotation"
+    },
+    {
+      "claim_id": "claim-token.image.halftone-floral",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-22f3017ccbbf764c",
+        "ev-e0db96392cba6da9",
+        "ev-153c52025c306ec0",
+        "ev-c3afd618cdc3adc6",
+        "ev-e3ac1885f5d23653",
+        "ev-4a683209a5cae856"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "coarse halftone organic floral silhouette"
+    },
+    {
+      "claim_id": "claim-token.image.moody-warm-photo",
+      "claim_type": "token-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-23046c00f866069e",
+        "ev-1904eab8d1115b4c",
+        "ev-a253613c4204f3e4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "warm low-key cafe photography with selective highlights"
+    },
+    {
+      "claim_id": "claim-brand-wordmark-lockup",
+      "claim_type": "component-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-2fd7c73c4313ae4b",
+        "ev-dc0ffe63c54938b8",
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "brand-wordmark-lockup"
+    },
+    {
+      "claim_id": "claim-halftone-organic-field",
+      "claim_type": "component-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-22f3017ccbbf764c",
+        "ev-e0db96392cba6da9",
+        "ev-e3ac1885f5d23653",
+        "ev-4a683209a5cae856"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "halftone-organic-field"
+    },
+    {
+      "claim_id": "claim-coffee-packaging-label",
+      "claim_type": "component-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-1bd1ae37a556bf88",
+        "ev-bff9e512d48c7f90",
+        "ev-808dab253285cf78",
+        "ev-4d4c56d1930a659b"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "coffee-packaging-label"
+    },
+    {
+      "claim_id": "claim-editorial-menu-panel",
+      "claim_type": "component-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-e0db96392cba6da9",
+        "ev-153c52025c306ec0",
+        "ev-c3afd618cdc3adc6",
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "editorial-menu-panel"
+    },
+    {
+      "claim_id": "claim-signage-message-lockup",
+      "claim_type": "component-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-174b4293fb348783",
+        "ev-e3ac1885f5d23653",
+        "ev-d45c42b93ce8b159"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "signage-message-lockup"
+    },
+    {
+      "claim_id": "claim-application-montage",
+      "claim_type": "component-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-22f3017ccbbf764c",
+        "ev-2fd7c73c4313ae4b",
+        "ev-e0db96392cba6da9",
+        "ev-dc0ffe63c54938b8"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": "application-montage"
+    },
+    {
+      "claim_id": "claim-grid.hero-full-bleed",
+      "claim_type": "grid-rule-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-863027be96b90182"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": {
+        "dominant_element": "oversized wordmark",
+        "field": "full-bleed graphic image",
+        "supporting_copy": "small peripheral label"
+      }
+    },
+    {
+      "claim_id": "claim-grid.editorial-asymmetric-split",
+      "claim_type": "grid-rule-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-e0db96392cba6da9",
+        "ev-153c52025c306ec0",
+        "ev-e3ac1885f5d23653"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": {
+        "structure": "asymmetric split or layered cards",
+        "hierarchy": "large serif headline plus compact utility rows"
+      }
+    },
+    {
+      "claim_id": "claim-grid.application-sequence",
+      "claim_type": "grid-rule-candidate",
+      "scope": "project",
+      "status": "inferred-claim",
+      "confidence": 0.89,
+      "evidence_refs": [
+        "ev-863027be96b90182",
+        "ev-e0db96392cba6da9",
+        "ev-1bd1ae37a556bf88",
+        "ev-d45c42b93ce8b159",
+        "ev-4a683209a5cae856"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "GPT-5",
+        "vision_capability": true
+      },
+      "analysis_id": "analysis-259adf6c6158297c",
+      "value": {
+        "progression": "system hero to applications to detail variants to spatial close",
+        "rhythm": "alternate broad montage and focused object"
+      }
+    }
+  ]
+}

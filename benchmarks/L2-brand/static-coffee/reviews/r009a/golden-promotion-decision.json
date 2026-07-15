@@ -1,0 +1,9 @@
+{
+  "verdict": "REMAIN_CANDIDATE",
+  "owner_name": "Nick",
+  "owner_role": "Project Owner",
+  "decided_at": "2026-07-15T19:30:00+08:00",
+  "baseline_run_id": null,
+  "accepted_run_id": "run-static-coffee-20260715-accepted-001",
+  "notes": "项目所有者决定当前静态 Corpus 继续保持 candidate。已接受的运行与不可变 Baseline 证据保留，但不更新 Golden lifecycle 指针。"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "strong-pass",
+  "automatic_score": 70,
+  "automatic_maximum_score": 75,
+  "human_score": 25,
+  "human_maximum_score": 25,
+  "overall_score": 95,
+  "maximum_score": 100,
+  "hard_gate_status": "pass",
+  "human_reviewer": "Nick",
+  "human_reviewer_role": "Project Owner"
+}

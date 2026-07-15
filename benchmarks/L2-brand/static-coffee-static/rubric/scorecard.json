@@ -1,0 +1,86 @@
+{
+  "rubric_version": "1.0.0",
+  "automatic_weight": 75,
+  "human_weight": 25,
+  "automatic_modules": [
+    {
+      "module_id": "evidence-completeness",
+      "weight": 15,
+      "mode": "automatic"
+    },
+    {
+      "module_id": "evidence-claim-separation",
+      "weight": 10,
+      "mode": "automatic-hard-gate"
+    },
+    {
+      "module_id": "domain-coverage",
+      "weight": 15,
+      "mode": "automatic"
+    },
+    {
+      "module_id": "provenance-traceability",
+      "weight": 15,
+      "mode": "automatic-hard-gate"
+    },
+    {
+      "module_id": "scope-isolation",
+      "weight": 10,
+      "mode": "automatic-hard-gate"
+    },
+    {
+      "module_id": "conflict-quality",
+      "weight": 10,
+      "mode": "automatic"
+    }
+  ],
+  "human_modules": [
+    {
+      "module_id": "brand-system-coherence",
+      "weight": 3.125,
+      "mode": "human"
+    },
+    {
+      "module_id": "typography-system-interpretation",
+      "weight": 3.125,
+      "mode": "human"
+    },
+    {
+      "module_id": "color-system-interpretation",
+      "weight": 3.125,
+      "mode": "human"
+    },
+    {
+      "module_id": "cross-application-consistency",
+      "weight": 3.125,
+      "mode": "human"
+    },
+    {
+      "module_id": "visual-grammar-usefulness",
+      "weight": 3.125,
+      "mode": "human"
+    },
+    {
+      "module_id": "presentation-grammar-usefulness",
+      "weight": 3.125,
+      "mode": "human"
+    },
+    {
+      "module_id": "possible-intent-discipline",
+      "weight": 3.125,
+      "mode": "human"
+    },
+    {
+      "module_id": "overall-usefulness",
+      "weight": 3.125,
+      "mode": "human"
+    }
+  ],
+  "thresholds": {
+    "pass": 75,
+    "strong_pass": 85,
+    "minimum_module_ratio": 0.6,
+    "overall_regression": -5,
+    "module_regression": -10
+  }
+}

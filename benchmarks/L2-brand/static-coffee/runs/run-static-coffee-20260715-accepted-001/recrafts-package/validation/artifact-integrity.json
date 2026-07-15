@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "artifact_set_id": "artifact-set-464ed6215fbd6867",
+  "artifact_hashes": {
+    "design.md": "aff9f636f9ab86b8c847701bec439f429311e1a9ded6806054b606d9a487b5c5",
+    "tokens.json": "a36435534ac4abe932c809f8291d31dc8b245ec3c81d37b31a7a752563672b4e",
+    "components.json": "225d4c350ca22b5b29642f71f83c3a807f741c67cd417d22721960db13d40315",
+    "grid-rules.json": "0a5511448efdb7d4b81ee09cf4e3f0c7fb087e9a6206b231efeec2d6993d5738",
+    "layout-rules.json": "4ad69a512636a7334549a7ad9fa51c415010ac702d262f12e887b63c24c43d44",
+    "visual-grammar.json": "809bdec6e1aaa6fd4ad44704e60b3d92dbc771e1cb636848d590e0a631e04a0c",
+    "conflicts.json": "1a61cfc61a8e632ae70e2b667ef4da3c1eb5a3eda594789da9b5bc01b63dcb3c"
+  }
+}

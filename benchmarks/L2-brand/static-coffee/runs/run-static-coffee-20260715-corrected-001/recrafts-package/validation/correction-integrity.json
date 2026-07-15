@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "base_package_id": "package-a5adf72a7eecac57",
+  "immutable_hashes": {
+    "source-manifest.json": "821f8260d459a926028e34c9899e6b679b0f44d45743a62f35e1f3a8f46c443e",
+    "evidence-map.json": "65ea3293e14aa1f1788459d0fc519ec5f8826a52dfee2e1ae8fa3c75ae3b41f1",
+    "claims.json": "cb26a305915c831fef049676d6aa93427570bc4b2d8bbc49537a3812f7d9b10c"
+  },
+  "initial_extraction_preserved": true
+}
