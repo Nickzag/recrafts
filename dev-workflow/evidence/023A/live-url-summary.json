@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_class": "bounded-live-url-smoke",
+  "requested_url": "https://www.craft.do/",
+  "resolved_url": "https://www.craft.do/",
+  "redirect_behavior": "none",
+  "captured_at": "2026-07-15T12:35:37.663Z",
+  "capture_status": "complete",
+  "source_method": "Playwright Chromium real-browser-capture",
+  "browser": {
+    "name": "chromium",
+    "version": "149.0.7827.55"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "dom_css_available": true,
+  "rendered_evidence_available": true,
+  "evidence_counts": {
+    "network": 106,
+    "dom": 160,
+    "css_rules": 300,
+    "css_variables": 160,
+    "computed_styles": 40,
+    "screenshots": 2,
+    "screenshot_regions": 3,
+    "assets": 99,
+    "fonts": 35
+  },
+  "capture_record_sha256": "55fed4ae6cba5a9df0bbb5e10b2e581803a85772d579852bc79944c6c6f62623",
+  "viewport_sha256": "9f5be314c5d5be52d0661b3e17fcc9cfa84104e09481628906bea551d0b4280a",
+  "full_page_sha256": "383556341a676d4e19b2f871ef5bad943f8694b897b4a17ae2a13360478ded63",
+  "missing_evidence": [],
+  "fallback": {
+    "screenshot_available": true,
+    "partial_and_blocked_paths": "fixture-validated by R-006/R-008"
+  },
+  "stored_payload": "summary-only; page body and screenshot pixels remain outside repository",
+  "live_url_smoke": "passed",
+  "universal_url_accuracy": "not-established",
+  "website_replication_accuracy": "not-established",
+  "production_ready": false
+}
