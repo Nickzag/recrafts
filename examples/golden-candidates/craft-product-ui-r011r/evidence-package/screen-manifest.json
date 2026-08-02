@@ -1,0 +1,358 @@
+{
+  "schema_version": "3.1.0",
+  "protocol_version": "1.2",
+  "source_pack_id": "craft-notes-v1",
+  "prepared_visual_recovery_id": "prepared-visual-c4290f2c29bf285c",
+  "screens": [
+    {
+      "screen_id": "workspace-grid",
+      "source_id": "workspace-grid",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "workspace-grid",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3566,
+        "height": 2240
+      },
+      "original_basename": "source-1.png",
+      "prepared_source_path": "sources/workspace-grid.png",
+      "source_sha256": "ec999ec0efe18235db822537f3ff51e53d071fd3a687f354a72033c8713237b4",
+      "bytes": 866387,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-workspace-grid"
+      ]
+    },
+    {
+      "screen_id": "workspace-list",
+      "source_id": "workspace-list",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "workspace-list",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3582,
+        "height": 2240
+      },
+      "original_basename": "source-2.png",
+      "prepared_source_path": "sources/workspace-list.png",
+      "source_sha256": "20d2f487a57dac1105de87d033116cbd480aec4d25e3bc7fa237a07b35f1d629",
+      "bytes": 664250,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-workspace-list"
+      ]
+    },
+    {
+      "screen_id": "workspace-grid-alt",
+      "source_id": "workspace-grid-alt",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "workspace-grid-alt",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3582,
+        "height": 2240
+      },
+      "original_basename": "source-3.png",
+      "prepared_source_path": "sources/workspace-grid-alt.png",
+      "source_sha256": "8000a6adb15644ccd9b108dfc3d9f3f17785691a73c08aa4b7c94318cb0d123a",
+      "bytes": 1565716,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-workspace-grid-alt"
+      ]
+    },
+    {
+      "screen_id": "editor-focus",
+      "source_id": "editor-focus",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "editor-focus",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3580,
+        "height": 2240
+      },
+      "original_basename": "source-4.png",
+      "prepared_source_path": "sources/editor-focus.png",
+      "source_sha256": "91ee0e9aa0a7be47de3334544c49bf95b1ca14757e803c4875175500758f8c4b",
+      "bytes": 1697098,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-editor-focus"
+      ]
+    },
+    {
+      "screen_id": "editor-context",
+      "source_id": "editor-context",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "editor-context",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "original_basename": "source-5.png",
+      "prepared_source_path": "sources/editor-context.png",
+      "source_sha256": "edf3a0ef62ac1ed6df2343b441eded9d1d85a50c4210ce6df0732f6159d9f684",
+      "bytes": 1525513,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-editor-context"
+      ]
+    },
+    {
+      "screen_id": "page-info",
+      "source_id": "page-info",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "page-info",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "original_basename": "source-6.png",
+      "prepared_source_path": "sources/page-info.png",
+      "source_sha256": "54710b9c2b331d9b080f5ab8caab7253b09ff6205f7277a90c2cad9e6c825faf",
+      "bytes": 1481399,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-page-info"
+      ]
+    },
+    {
+      "screen_id": "style-gallery",
+      "source_id": "style-gallery",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "style-gallery",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "original_basename": "source-7.png",
+      "prepared_source_path": "sources/style-gallery.png",
+      "source_sha256": "f5f64172e0cefd99e45cd1fd9c53b24df3579e5a2532c87a01bf0aa8fd5f6ef2",
+      "bytes": 2208337,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-style-gallery"
+      ]
+    },
+    {
+      "screen_id": "review-actions",
+      "source_id": "review-actions",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "review-actions",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "original_basename": "source-8.png",
+      "prepared_source_path": "sources/review-actions.png",
+      "source_sha256": "81aa947e7ad3ac5f7b26f34b3ce0c207288fed7104c4f1a92e9cd89b4b8296c1",
+      "bytes": 1546576,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-review-actions"
+      ]
+    },
+    {
+      "screen_id": "template-gallery",
+      "source_id": "template-gallery",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "template-gallery",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "original_basename": "source-9.png",
+      "prepared_source_path": "sources/template-gallery.png",
+      "source_sha256": "678001c90473490d27b6234d11c224e4a67e84ab590cc855b35553defd380af8",
+      "bytes": 2482356,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-template-gallery"
+      ]
+    },
+    {
+      "screen_id": "settings",
+      "source_id": "settings",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "settings",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "original_basename": "source-10.png",
+      "prepared_source_path": "sources/settings.png",
+      "source_sha256": "55a7eb1101664c745d4b1e85ff7e328809070fa340244ee4e942b38df5bc0a8a",
+      "bytes": 902622,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-settings"
+      ]
+    },
+    {
+      "screen_id": "premium-dialog",
+      "source_id": "premium-dialog",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "premium-dialog",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3578,
+        "height": 2240
+      },
+      "original_basename": "source-11.png",
+      "prepared_source_path": "sources/premium-dialog.png",
+      "source_sha256": "d74e998c47d04a1dcb05b917b0a9ea3346a5aca753d9949f0cf9e8f80acfddb2",
+      "bytes": 1710451,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-premium-dialog"
+      ]
+    },
+    {
+      "screen_id": "document-editor",
+      "source_id": "document-editor",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "document-editor",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3576,
+        "height": 2240
+      },
+      "original_basename": "source-12.png",
+      "prepared_source_path": "sources/document-editor.png",
+      "source_sha256": "1d955527d6fa099aa8e65685f8dc03fc4aa82f978847dd2c738304e48a4cb8fd",
+      "bytes": 1125213,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-document-editor"
+      ]
+    },
+    {
+      "screen_id": "workspace-empty",
+      "source_id": "workspace-empty",
+      "source_pack_id": "craft-notes-v1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "screen_family": "workspace-empty",
+      "platform": "macOS desktop",
+      "viewport": "native",
+      "dimensions": {
+        "width": 3574,
+        "height": 2240
+      },
+      "original_basename": "source-13.png",
+      "prepared_source_path": "sources/workspace-empty.png",
+      "source_sha256": "fe6a2e31613123c309bab3c3bfedb5c5a5849c93d89f3f68dc04dd7fd2ee03f5",
+      "bytes": 338676,
+      "visible_states": [
+        "default",
+        "selected",
+        "active"
+      ],
+      "evidence_refs": [
+        "screen-evidence-workspace-empty"
+      ]
+    }
+  ],
+  "raw_sources_external": true,
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "stage": "R-011R-A",
+  "status": "awaiting-r011r-a-review",
+  "source_observation_execution": {
+    "host_agent": "Codex",
+    "engine": "gpt-5",
+    "vision_capability": true,
+    "performed_at": "2026-08-02T16:16:38.243Z",
+    "evidence_class": "codex-session-fixture"
+  },
+  "owner_decision_set_id": null
+}

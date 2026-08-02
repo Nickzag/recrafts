@@ -1,7 +1,7 @@
 {
   "name": "recrafts",
   "displayName": "Recrafts",
-  "version": "0.4.0-rc.1",
+  "version": "0.5.0-rc.1",
   "type": "skill",
   "role": "foundation_skill",
   "entry": "./runtime/interop_cli.mjs",
@@ -27,7 +27,10 @@
     "artifactDecision": "./schemas/artifact-decision-record.schema.json",
     "artifactSet": "./schemas/artifact-set-record.schema.json",
     "packageLineage": "./schemas/package-lineage-event.schema.json",
-    "rollbackEvent": "./schemas/rollback-event.schema.json"
+    "rollbackEvent": "./schemas/rollback-event.schema.json",
+    "productUIScreenRegion": "./contracts/product-ui-screen-region.schema.json",
+    "productUIVisualMeasurement": "./contracts/product-ui-visual-measurement.schema.json",
+    "productUIVisualObservations": "./contracts/product-ui-visual-observations.schema.json"
   },
   "dependencies": ["playwright@1.61.1", "Chromium browser binary (runtime prerequisite)"]
 }

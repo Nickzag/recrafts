@@ -1,0 +1,709 @@
+{
+  "schema_version": "3.1.0",
+  "protocol_version": "1.2",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "instances": [
+    {
+      "instance_id": "instance-workspace-grid-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "workspace-grid",
+      "region_id": "region-workspace-grid-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid",
+        "region-workspace-grid-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-grid-header",
+      "component_candidate": "content-header",
+      "screen_id": "workspace-grid",
+      "region_id": "region-workspace-grid-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid",
+        "region-workspace-grid-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-grid-toolbar",
+      "component_candidate": "top-toolbar",
+      "screen_id": "workspace-grid",
+      "region_id": "region-workspace-grid-toolbar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid",
+        "region-workspace-grid-toolbar"
+      ],
+      "confidence": 0.88,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-grid-list",
+      "component_candidate": "document-list",
+      "screen_id": "workspace-grid",
+      "region_id": "region-workspace-grid-list",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid",
+        "region-workspace-grid-list"
+      ],
+      "confidence": 0.84,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-grid-selected",
+      "component_candidate": "navigation-row",
+      "screen_id": "workspace-grid",
+      "region_id": "region-workspace-grid-selected-row",
+      "state": "selected",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid",
+        "region-workspace-grid-selected-row"
+      ],
+      "confidence": 0.92,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-list-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "workspace-list",
+      "region_id": "region-workspace-list-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-list",
+        "region-workspace-list-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-list-header",
+      "component_candidate": "content-header",
+      "screen_id": "workspace-list",
+      "region_id": "region-workspace-list-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-list",
+        "region-workspace-list-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-list-toolbar",
+      "component_candidate": "top-toolbar",
+      "screen_id": "workspace-list",
+      "region_id": "region-workspace-list-toolbar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-list",
+        "region-workspace-list-toolbar"
+      ],
+      "confidence": 0.88,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-list-list",
+      "component_candidate": "document-list",
+      "screen_id": "workspace-list",
+      "region_id": "region-workspace-list-list",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-list",
+        "region-workspace-list-list"
+      ],
+      "confidence": 0.84,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-list-selected",
+      "component_candidate": "navigation-row",
+      "screen_id": "workspace-list",
+      "region_id": "region-workspace-list-selected-row",
+      "state": "selected",
+      "evidence_refs": [
+        "screen-evidence-workspace-list",
+        "region-workspace-list-selected-row"
+      ],
+      "confidence": 0.92,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-grid-alt-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "workspace-grid-alt",
+      "region_id": "region-workspace-grid-alt-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid-alt",
+        "region-workspace-grid-alt-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-grid-alt-header",
+      "component_candidate": "content-header",
+      "screen_id": "workspace-grid-alt",
+      "region_id": "region-workspace-grid-alt-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid-alt",
+        "region-workspace-grid-alt-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-grid-alt-toolbar",
+      "component_candidate": "top-toolbar",
+      "screen_id": "workspace-grid-alt",
+      "region_id": "region-workspace-grid-alt-toolbar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid-alt",
+        "region-workspace-grid-alt-toolbar"
+      ],
+      "confidence": 0.88,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-grid-alt-list",
+      "component_candidate": "document-list",
+      "screen_id": "workspace-grid-alt",
+      "region_id": "region-workspace-grid-alt-list",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid-alt",
+        "region-workspace-grid-alt-list"
+      ],
+      "confidence": 0.84,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-grid-alt-selected",
+      "component_candidate": "navigation-row",
+      "screen_id": "workspace-grid-alt",
+      "region_id": "region-workspace-grid-alt-selected-row",
+      "state": "selected",
+      "evidence_refs": [
+        "screen-evidence-workspace-grid-alt",
+        "region-workspace-grid-alt-selected-row"
+      ],
+      "confidence": 0.92,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-focus-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "editor-focus",
+      "region_id": "region-editor-focus-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-focus",
+        "region-editor-focus-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-focus-header",
+      "component_candidate": "content-header",
+      "screen_id": "editor-focus",
+      "region_id": "region-editor-focus-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-focus",
+        "region-editor-focus-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-focus-toolbar",
+      "component_candidate": "editor-toolbar",
+      "screen_id": "editor-focus",
+      "region_id": "region-editor-focus-editor-toolbar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-focus",
+        "region-editor-focus-editor-toolbar"
+      ],
+      "confidence": 0.87,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-focus-canvas",
+      "component_candidate": "document-canvas",
+      "screen_id": "editor-focus",
+      "region_id": "region-editor-focus-canvas",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-focus",
+        "region-editor-focus-canvas"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-focus-inspector",
+      "component_candidate": "editor-context-panel",
+      "screen_id": "editor-focus",
+      "region_id": "region-editor-focus-inspector",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-focus",
+        "region-editor-focus-inspector"
+      ],
+      "confidence": 0.86,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-editor-context-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "editor-context",
+      "region_id": "region-editor-context-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-context",
+        "region-editor-context-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-context-header",
+      "component_candidate": "content-header",
+      "screen_id": "editor-context",
+      "region_id": "region-editor-context-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-context",
+        "region-editor-context-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-context-toolbar",
+      "component_candidate": "editor-toolbar",
+      "screen_id": "editor-context",
+      "region_id": "region-editor-context-editor-toolbar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-context",
+        "region-editor-context-editor-toolbar"
+      ],
+      "confidence": 0.87,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-context-canvas",
+      "component_candidate": "document-canvas",
+      "screen_id": "editor-context",
+      "region_id": "region-editor-context-canvas",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-context",
+        "region-editor-context-canvas"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-editor-context-inspector",
+      "component_candidate": "editor-context-panel",
+      "screen_id": "editor-context",
+      "region_id": "region-editor-context-inspector",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-editor-context",
+        "region-editor-context-inspector"
+      ],
+      "confidence": 0.86,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-page-info-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "page-info",
+      "region_id": "region-page-info-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-page-info",
+        "region-page-info-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-page-info-header",
+      "component_candidate": "content-header",
+      "screen_id": "page-info",
+      "region_id": "region-page-info-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-page-info",
+        "region-page-info-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-style-gallery-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "style-gallery",
+      "region_id": "region-style-gallery-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-style-gallery",
+        "region-style-gallery-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-style-gallery-header",
+      "component_candidate": "content-header",
+      "screen_id": "style-gallery",
+      "region_id": "region-style-gallery-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-style-gallery",
+        "region-style-gallery-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-style-gallery-overlay",
+      "component_candidate": "style-gallery-overlay",
+      "screen_id": "style-gallery",
+      "region_id": "region-style-gallery-overlay",
+      "state": "active",
+      "evidence_refs": [
+        "screen-evidence-style-gallery",
+        "region-style-gallery-overlay"
+      ],
+      "confidence": 0.85,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-review-actions-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "review-actions",
+      "region_id": "region-review-actions-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-review-actions",
+        "region-review-actions-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-review-actions-header",
+      "component_candidate": "content-header",
+      "screen_id": "review-actions",
+      "region_id": "region-review-actions-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-review-actions",
+        "region-review-actions-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-review-actions-actions",
+      "component_candidate": "action-list",
+      "screen_id": "review-actions",
+      "region_id": "region-review-actions-action-list",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-review-actions",
+        "region-review-actions-action-list"
+      ],
+      "confidence": 0.83,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-template-gallery-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "template-gallery",
+      "region_id": "region-template-gallery-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-template-gallery",
+        "region-template-gallery-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-template-gallery-header",
+      "component_candidate": "content-header",
+      "screen_id": "template-gallery",
+      "region_id": "region-template-gallery-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-template-gallery",
+        "region-template-gallery-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-template-gallery-template",
+      "component_candidate": "template-preview",
+      "screen_id": "template-gallery",
+      "region_id": "region-template-gallery-template",
+      "state": "template-content",
+      "evidence_refs": [
+        "screen-evidence-template-gallery",
+        "region-template-gallery-template"
+      ],
+      "confidence": 0.8,
+      "status": "single-screen"
+    },
+    {
+      "instance_id": "instance-settings-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "settings",
+      "region_id": "region-settings-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-settings",
+        "region-settings-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-settings-header",
+      "component_candidate": "content-header",
+      "screen_id": "settings",
+      "region_id": "region-settings-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-settings",
+        "region-settings-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-settings-control",
+      "component_candidate": "settings-control",
+      "screen_id": "settings",
+      "region_id": "region-settings-control",
+      "state": "active",
+      "evidence_refs": [
+        "screen-evidence-settings",
+        "region-settings-control"
+      ],
+      "confidence": 0.8,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-settings-section",
+      "component_candidate": "settings-section",
+      "screen_id": "settings",
+      "region_id": "region-settings-section",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-settings",
+        "region-settings-section"
+      ],
+      "confidence": 0.83,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-premium-dialog-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "premium-dialog",
+      "region_id": "region-premium-dialog-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-premium-dialog",
+        "region-premium-dialog-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-premium-dialog-header",
+      "component_candidate": "content-header",
+      "screen_id": "premium-dialog",
+      "region_id": "region-premium-dialog-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-premium-dialog",
+        "region-premium-dialog-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-premium-dialog-dialog",
+      "component_candidate": "premium-dialog",
+      "screen_id": "premium-dialog",
+      "region_id": "region-premium-dialog-dialog",
+      "state": "marketing",
+      "evidence_refs": [
+        "screen-evidence-premium-dialog",
+        "region-premium-dialog-dialog"
+      ],
+      "confidence": 0.82,
+      "status": "single-screen"
+    },
+    {
+      "instance_id": "instance-document-editor-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "document-editor",
+      "region_id": "region-document-editor-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-document-editor",
+        "region-document-editor-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-document-editor-header",
+      "component_candidate": "content-header",
+      "screen_id": "document-editor",
+      "region_id": "region-document-editor-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-document-editor",
+        "region-document-editor-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-document-editor-toolbar",
+      "component_candidate": "editor-toolbar",
+      "screen_id": "document-editor",
+      "region_id": "region-document-editor-editor-toolbar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-document-editor",
+        "region-document-editor-editor-toolbar"
+      ],
+      "confidence": 0.87,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-document-editor-canvas",
+      "component_candidate": "document-canvas",
+      "screen_id": "document-editor",
+      "region_id": "region-document-editor-canvas",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-document-editor",
+        "region-document-editor-canvas"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-document-editor-inspector",
+      "component_candidate": "editor-context-panel",
+      "screen_id": "document-editor",
+      "region_id": "region-document-editor-inspector",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-document-editor",
+        "region-document-editor-inspector"
+      ],
+      "confidence": 0.86,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-empty-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_id": "workspace-empty",
+      "region_id": "region-workspace-empty-sidebar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-empty",
+        "region-workspace-empty-sidebar"
+      ],
+      "confidence": 0.93,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-empty-header",
+      "component_candidate": "content-header",
+      "screen_id": "workspace-empty",
+      "region_id": "region-workspace-empty-header",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-empty",
+        "region-workspace-empty-header"
+      ],
+      "confidence": 0.9,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-empty-toolbar",
+      "component_candidate": "top-toolbar",
+      "screen_id": "workspace-empty",
+      "region_id": "region-workspace-empty-toolbar",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-empty",
+        "region-workspace-empty-toolbar"
+      ],
+      "confidence": 0.88,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-empty-list",
+      "component_candidate": "document-list",
+      "screen_id": "workspace-empty",
+      "region_id": "region-workspace-empty-list",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-empty",
+        "region-workspace-empty-list"
+      ],
+      "confidence": 0.84,
+      "status": "observed"
+    },
+    {
+      "instance_id": "instance-workspace-empty-selected",
+      "component_candidate": "navigation-row",
+      "screen_id": "workspace-empty",
+      "region_id": "region-workspace-empty-selected-row",
+      "state": "selected",
+      "evidence_refs": [
+        "screen-evidence-workspace-empty",
+        "region-workspace-empty-selected-row"
+      ],
+      "confidence": 0.92,
+      "status": "corroborated"
+    },
+    {
+      "instance_id": "instance-workspace-empty-empty",
+      "component_candidate": "empty-state",
+      "screen_id": "workspace-empty",
+      "region_id": "region-workspace-empty-empty",
+      "state": "default",
+      "evidence_refs": [
+        "screen-evidence-workspace-empty",
+        "region-workspace-empty-empty"
+      ],
+      "confidence": 0.89,
+      "status": "observed"
+    }
+  ]
+}

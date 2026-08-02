@@ -1,0 +1,24 @@
+{
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "artifact_set_id": "artifact-set-f9596af55d60cd6c",
+  "stage": "R-011R-A",
+  "protocol_version": "1.2",
+  "schema_version": "3.1.0",
+  "prepared_visual_recovery_id": "prepared-visual-c4290f2c29bf285c",
+  "source_pack_id": "craft-notes-v1",
+  "status": "awaiting-r011r-a-review",
+  "owner_decision_set_id": null,
+  "owner_verdict": "PENDING",
+  "downstream_generation_authorized": false,
+  "artifacts": [
+    "screen-manifest.json",
+    "region-manifest.json",
+    "visual-measurements.json",
+    "state-aware-color-observations.json",
+    "source-observed-visual-tokens.json",
+    "component-instances.json",
+    "cross-screen-recurrence.json",
+    "evidence-weighting-report.json",
+    "unknowns.json"
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "artifact_set_id": "artifact-set-f9596af55d60cd6c",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "parent_package_id": null,
+  "source_capture_ids": [
+    "workspace-grid",
+    "workspace-list",
+    "workspace-grid-alt",
+    "editor-focus",
+    "editor-context",
+    "page-info",
+    "style-gallery",
+    "review-actions",
+    "template-gallery",
+    "settings",
+    "premium-dialog",
+    "document-editor",
+    "workspace-empty"
+  ],
+  "analysis_ids": [
+    "prepared-visual-c4290f2c29bf285c"
+  ],
+  "correction_ids": [],
+  "decision_ids": [],
+  "status": "awaiting-review",
+  "artifacts": [
+    {
+      "type": "application/json",
+      "path": "component-instances.json",
+      "media_type": "application/json",
+      "sha256": "b0e8c0bd629f82a66268f435bb2b273d769c6bfb390c6a05569b24a510bc8b71",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "cross-screen-recurrence.json",
+      "media_type": "application/json",
+      "sha256": "fadfaf442210598dd19d3f676e736d0e7a88454500b2da7268e416e84ec999b1",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "evidence-weighting-report.json",
+      "media_type": "application/json",
+      "sha256": "c6fc4ce5e4b325d90737784ac9f30879110ba3809c0fe35d8ff46389f894471a",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "r011r-a-evidence-package.json",
+      "media_type": "application/json",
+      "sha256": "9576b4a67792520ba96dcac547efe007d1f4c19e6b32b0605b88e7f79a92cede",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "region-manifest.json",
+      "media_type": "application/json",
+      "sha256": "7df9612cb2c11b088ea749e8e4df4a459bee51617d601caae58fdd758f70d581",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "review/owner-decision.json",
+      "media_type": "application/json",
+      "sha256": "e919ce4f3204bba6a27f516bae173025361d5b91178f512365043df6f355c632",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "screen-manifest.json",
+      "media_type": "application/json",
+      "sha256": "5eebcea8f8c360848d065e836a9b9bf490471c4ceaa36777b6714203adbc8eb0",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "source-observed-visual-tokens.json",
+      "media_type": "application/json",
+      "sha256": "994d8e3f16699cae5e5c3280b5809800a32b12e7c9f935606d24328f74034bc4",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "state-aware-color-observations.json",
+      "media_type": "application/json",
+      "sha256": "b03ca9d010abe2bfd83f9a28cb42713756a33ea7e2b83e6505c2250bd8635ea1",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "unknowns.json",
+      "media_type": "application/json",
+      "sha256": "f8b38cbd996982b5547c07d5633cb7b2c5888248cdfb27d316ffa30a9d0e078a",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "validation/evidence-weighting.json",
+      "media_type": "application/json",
+      "sha256": "1d8edcf3eb3e31bdd801cff2e577620970c49d93ac266441808ac111419dcf86",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "validation/r011r-a-no-oracle.json",
+      "media_type": "application/json",
+      "sha256": "f9f8b67c0b72b67d85dfb8b3d9fa8efe772c9bcda8ee387f80fe65987c1600a2",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "validation/source-observed-token-coverage.json",
+      "media_type": "application/json",
+      "sha256": "296bada98af26b178b1d52b86af28825f69b48e0f2ce69aed1721651bf5796c2",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "validation/state-aware-color.json",
+      "media_type": "application/json",
+      "sha256": "f03d33307dfd255f18d0fa0f886f5f0d2bcd5ebd3901f2bb456b6cc1a5b58bc0",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "validation/tier-a-region-coverage.json",
+      "media_type": "application/json",
+      "sha256": "4714269df61a1b1a54ef00102da5af072f3b62bf09cba966a4e090fef7485cbd",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "validation/visual-measurement-coverage.json",
+      "media_type": "application/json",
+      "sha256": "d2dc072d5d1cfcd1b0666d3c72a203394d499fcac469cd1cd76eb5eb0b9631d7",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "visual-measurements.json",
+      "media_type": "application/json",
+      "sha256": "94d73525a85eddaa0a589bc874b2b84fe0a5840fc6723b563baf2a74c0c6eff9",
+      "schema_version": "3.1.0",
+      "status": "current"
+    },
+    {
+      "type": "application/json",
+      "path": "artifact-set.json",
+      "media_type": "application/json",
+      "sha256": null,
+      "schema_version": "3.1.0",
+      "status": "self-describing"
+    }
+  ],
+  "artifact_hashes": {
+    "component-instances.json": "b0e8c0bd629f82a66268f435bb2b273d769c6bfb390c6a05569b24a510bc8b71",
+    "cross-screen-recurrence.json": "fadfaf442210598dd19d3f676e736d0e7a88454500b2da7268e416e84ec999b1",
+    "evidence-weighting-report.json": "c6fc4ce5e4b325d90737784ac9f30879110ba3809c0fe35d8ff46389f894471a",
+    "r011r-a-evidence-package.json": "9576b4a67792520ba96dcac547efe007d1f4c19e6b32b0605b88e7f79a92cede",
+    "region-manifest.json": "7df9612cb2c11b088ea749e8e4df4a459bee51617d601caae58fdd758f70d581",
+    "review/owner-decision.json": "e919ce4f3204bba6a27f516bae173025361d5b91178f512365043df6f355c632",
+    "screen-manifest.json": "5eebcea8f8c360848d065e836a9b9bf490471c4ceaa36777b6714203adbc8eb0",
+    "source-observed-visual-tokens.json": "994d8e3f16699cae5e5c3280b5809800a32b12e7c9f935606d24328f74034bc4",
+    "state-aware-color-observations.json": "b03ca9d010abe2bfd83f9a28cb42713756a33ea7e2b83e6505c2250bd8635ea1",
+    "unknowns.json": "f8b38cbd996982b5547c07d5633cb7b2c5888248cdfb27d316ffa30a9d0e078a",
+    "validation/evidence-weighting.json": "1d8edcf3eb3e31bdd801cff2e577620970c49d93ac266441808ac111419dcf86",
+    "validation/r011r-a-no-oracle.json": "f9f8b67c0b72b67d85dfb8b3d9fa8efe772c9bcda8ee387f80fe65987c1600a2",
+    "validation/source-observed-token-coverage.json": "296bada98af26b178b1d52b86af28825f69b48e0f2ce69aed1721651bf5796c2",
+    "validation/state-aware-color.json": "f03d33307dfd255f18d0fa0f886f5f0d2bcd5ebd3901f2bb456b6cc1a5b58bc0",
+    "validation/tier-a-region-coverage.json": "4714269df61a1b1a54ef00102da5af072f3b62bf09cba966a4e090fef7485cbd",
+    "validation/visual-measurement-coverage.json": "d2dc072d5d1cfcd1b0666d3c72a203394d499fcac469cd1cd76eb5eb0b9631d7",
+    "visual-measurements.json": "94d73525a85eddaa0a589bc874b2b84fe0a5840fc6723b563baf2a74c0c6eff9"
+  },
+  "created_at": "2026-08-02T16:16:38.812Z"
+}

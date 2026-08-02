@@ -1,0 +1,15 @@
+{
+  "schema_version": "3.1.0",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "decision_set_id": null,
+  "status": "pending",
+  "verdict": "PENDING",
+  "review_scope": [
+    "Tier A Region depth",
+    "measurement integrity",
+    "state distinction",
+    "source-observed Token coverage",
+    "evidence weighting"
+  ],
+  "downstream_authorization": "blocked until R-011R-A ACCEPT"
+}

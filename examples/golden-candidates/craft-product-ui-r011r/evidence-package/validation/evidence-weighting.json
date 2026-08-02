@@ -1,0 +1,16 @@
+{
+  "validator": "validate-evidence-weighting",
+  "status": "pass",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "gates": {
+    "tier_a_region_coverage": true,
+    "visual_measurement_coverage": true,
+    "state_aware_color": true,
+    "source_observed_token_coverage": true,
+    "marketing_not_dominant": true,
+    "whole_screen_evidence_blocked": true,
+    "crop_hash_required": true,
+    "method_required": true,
+    "unknowns_not_measured": true
+  }
+}

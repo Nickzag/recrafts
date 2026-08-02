@@ -1,6 +1,6 @@
 {
   "name": "recrafts",
-  "version": "0.4.0-rc.1",
+  "version": "0.5.0-rc.1",
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
@@ -62,7 +62,17 @@
     "scripts/validate-application-grammar.mjs",
     "scripts/validate-product-ui-source-distance.mjs",
     "scripts/validate-product-preview-coverage.mjs",
-    "scripts/validate-no-oracle-product-ui.mjs"
+    "scripts/validate-no-oracle-product-ui.mjs",
+    "runtime/visual_recovery_a.mjs",
+    "scripts/create-r011r-a-observations.mjs",
+    "scripts/run-r011r-a.mjs",
+    "scripts/validate-r011r-a.mjs",
+    "scripts/validate-tier-a-region-coverage.mjs",
+    "scripts/validate-visual-measurement-coverage.mjs",
+    "scripts/validate-state-aware-color.mjs",
+    "scripts/validate-source-observed-token-coverage.mjs",
+    "scripts/validate-evidence-weighting.mjs",
+    "scripts/validate-r011r-a-no-oracle.mjs"
   ],
   "scripts": {
     "validate:r001": "node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs",
@@ -79,6 +89,9 @@
     "validate:r011": "node scripts/validate-r011-product-ui.mjs examples/golden-candidates/craft-product-ui-r011/candidate",
     "build:r011": "node scripts/run-r011-product-ui.mjs --prepared /private/tmp/craftdo-r011-prepared --host /private/tmp/craftdo-r011-host-analysis.json --output examples/golden-candidates/craft-product-ui-r011/candidate",
     "test:r011": "node --test tests/r011-*.test.mjs",
+    "validate:r011r-a": "node scripts/validate-r011r-a.mjs examples/golden-candidates/craft-product-ui-r011r/evidence-package",
+    "build:r011r-a": "node scripts/run-r011r-a.mjs",
+    "test:r011r-a": "node --test tests/r011r-a-visual-evidence.test.mjs",
     "benchmark:validate": "node scripts/benchmarks/validate-no-oracle.mjs benchmarks/L2-brand/static-coffee && node scripts/benchmarks/validate-corpus.mjs . benchmarks/L2-brand/static-coffee .local-benchmark-sources/static-coffee-v1-isolated-v3",
     "benchmark:static-coffee": "node scripts/benchmarks/run-benchmark.mjs .local-benchmark-sources/static-coffee-v1-isolated-v3/run-config.json",
     "benchmark:compare": "node scripts/benchmarks/compare-benchmark-runs.mjs",

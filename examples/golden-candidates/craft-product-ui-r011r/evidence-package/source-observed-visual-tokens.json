@@ -1,0 +1,623 @@
+{
+  "schema_version": "3.1.0",
+  "protocol_version": "1.2",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "tokens": [
+    {
+      "observation_token_id": "token-surface-app-background",
+      "role": "surface",
+      "observed_values": [
+        {
+          "hex": "#fbfaf7",
+          "role": "application-background"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions"
+      ],
+      "region_refs": [
+        "region-workspace-grid-sidebar",
+        "region-workspace-grid-header",
+        "region-workspace-grid-toolbar",
+        "region-workspace-grid-list",
+        "region-workspace-grid-selected-row"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-sidebar-0",
+        "measurement-region-workspace-grid-header-0",
+        "measurement-region-workspace-grid-toolbar-0",
+        "measurement-region-workspace-grid-list-0",
+        "measurement-region-workspace-grid-selected-row-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 8,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-surface-sidebar",
+      "role": "surface",
+      "observed_values": [
+        {
+          "hex": "#f7f6f2",
+          "role": "sidebar-surface"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions",
+        "settings",
+        "document-editor"
+      ],
+      "region_refs": [
+        "region-workspace-grid-sidebar",
+        "region-workspace-list-sidebar",
+        "region-workspace-grid-alt-sidebar",
+        "region-editor-focus-sidebar",
+        "region-editor-context-sidebar",
+        "region-page-info-sidebar",
+        "region-style-gallery-sidebar",
+        "region-review-actions-sidebar"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-sidebar-0",
+        "measurement-region-workspace-list-sidebar-0",
+        "measurement-region-workspace-grid-alt-sidebar-0",
+        "measurement-region-editor-focus-sidebar-0",
+        "measurement-region-editor-context-sidebar-0",
+        "measurement-region-page-info-sidebar-0",
+        "measurement-region-style-gallery-sidebar-0",
+        "measurement-region-review-actions-sidebar-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 10,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-text-primary",
+      "role": "text",
+      "observed_values": [
+        {
+          "hex": "#292824",
+          "role": "primary-text"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions",
+        "settings"
+      ],
+      "region_refs": [
+        "region-workspace-grid-sidebar",
+        "region-workspace-grid-header",
+        "region-workspace-grid-toolbar",
+        "region-workspace-grid-list",
+        "region-workspace-grid-selected-row",
+        "region-workspace-list-sidebar",
+        "region-workspace-list-header"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-sidebar-0",
+        "measurement-region-workspace-grid-header-0",
+        "measurement-region-workspace-grid-toolbar-0",
+        "measurement-region-workspace-grid-list-0",
+        "measurement-region-workspace-grid-selected-row-0",
+        "measurement-region-workspace-list-sidebar-0",
+        "measurement-region-workspace-list-header-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 9,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-text-secondary",
+      "role": "text",
+      "observed_values": [
+        {
+          "hex": "#716e68",
+          "role": "secondary-text"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery"
+      ],
+      "region_refs": [
+        "region-workspace-grid-toolbar",
+        "region-workspace-grid-list",
+        "region-workspace-grid-selected-row",
+        "region-workspace-list-sidebar",
+        "region-workspace-list-header",
+        "region-workspace-list-toolbar"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-toolbar-0",
+        "measurement-region-workspace-grid-list-0",
+        "measurement-region-workspace-grid-selected-row-0",
+        "measurement-region-workspace-list-sidebar-0",
+        "measurement-region-workspace-list-header-0",
+        "measurement-region-workspace-list-toolbar-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 7,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-icon-muted",
+      "role": "icon",
+      "observed_values": [
+        {
+          "hex": "#8d8a84",
+          "role": "muted-icon"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info"
+      ],
+      "region_refs": [
+        "region-workspace-grid-header",
+        "region-workspace-grid-toolbar",
+        "region-workspace-grid-list",
+        "region-workspace-grid-selected-row",
+        "region-workspace-list-sidebar",
+        "region-workspace-list-header"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-header-0",
+        "measurement-region-workspace-grid-toolbar-0",
+        "measurement-region-workspace-grid-list-0",
+        "measurement-region-workspace-grid-selected-row-0",
+        "measurement-region-workspace-list-sidebar-0",
+        "measurement-region-workspace-list-header-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 6,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-selection-blue",
+      "role": "selection",
+      "observed_values": [
+        {
+          "hex": "#dcecff",
+          "role": "selected-row-background"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt"
+      ],
+      "region_refs": [
+        "region-workspace-grid-selected-row",
+        "region-workspace-list-selected-row",
+        "region-workspace-grid-alt-selected-row",
+        "region-workspace-empty-selected-row"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-selected-row-0",
+        "measurement-region-workspace-list-selected-row-0",
+        "measurement-region-workspace-grid-alt-selected-row-0",
+        "measurement-region-workspace-empty-selected-row-0"
+      ],
+      "state": "selected",
+      "scope": "application",
+      "cross_screen_recurrence": 3,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-focus-blue",
+      "role": "focus",
+      "observed_values": [
+        {
+          "hex": "#2f6fed",
+          "role": "focus-accent"
+        }
+      ],
+      "screen_refs": [
+        "editor-focus",
+        "editor-context",
+        "settings"
+      ],
+      "region_refs": [
+        "region-workspace-grid-toolbar",
+        "region-workspace-list-toolbar",
+        "region-workspace-grid-alt-toolbar"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-toolbar-0",
+        "measurement-region-workspace-list-toolbar-0",
+        "measurement-region-workspace-grid-alt-toolbar-0"
+      ],
+      "state": "focus",
+      "scope": "application",
+      "cross_screen_recurrence": 3,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-border-subtle",
+      "role": "border",
+      "observed_values": [
+        {
+          "color": "#e6e2dc",
+          "width_px": 1
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions"
+      ],
+      "region_refs": [
+        "region-workspace-grid-list",
+        "region-workspace-list-list",
+        "region-workspace-grid-alt-list",
+        "region-review-actions-action-list",
+        "region-workspace-empty-list"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-list-0",
+        "measurement-region-workspace-list-list-0",
+        "measurement-region-workspace-grid-alt-list-0",
+        "measurement-region-review-actions-action-list-0",
+        "measurement-region-workspace-empty-list-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 8,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-shadow-dialog",
+      "role": "shadow",
+      "observed_values": [
+        {
+          "blur_px": 28,
+          "alpha": 0.2
+        }
+      ],
+      "screen_refs": [
+        "premium-dialog"
+      ],
+      "region_refs": [
+        "region-premium-dialog-dialog"
+      ],
+      "measurement_refs": [
+        "measurement-region-premium-dialog-dialog-0"
+      ],
+      "state": "marketing",
+      "scope": "marketing-brand",
+      "cross_screen_recurrence": 0,
+      "confidence": 0.84,
+      "status": "single-screen"
+    },
+    {
+      "observation_token_id": "token-material-light-surface",
+      "role": "material",
+      "observed_values": [
+        {
+          "material": "opaque-light-surface"
+        }
+      ],
+      "screen_refs": [
+        "editor-focus",
+        "editor-context",
+        "settings"
+      ],
+      "region_refs": [
+        "region-editor-focus-inspector",
+        "region-editor-context-inspector",
+        "region-settings-section",
+        "region-document-editor-inspector"
+      ],
+      "measurement_refs": [
+        "measurement-region-editor-focus-inspector-0",
+        "measurement-region-editor-context-inspector-0",
+        "measurement-region-settings-section-0",
+        "measurement-region-document-editor-inspector-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 3,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-spacing-row",
+      "role": "spacing",
+      "observed_values": [
+        {
+          "value": 12,
+          "scale_role": "row-gap"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions"
+      ],
+      "region_refs": [
+        "region-workspace-list-sidebar",
+        "region-workspace-list-header",
+        "region-workspace-list-toolbar",
+        "region-workspace-list-list",
+        "region-workspace-list-selected-row",
+        "region-workspace-grid-alt-sidebar"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-list-sidebar-0",
+        "measurement-region-workspace-list-header-0",
+        "measurement-region-workspace-list-toolbar-0",
+        "measurement-region-workspace-list-list-0",
+        "measurement-region-workspace-list-selected-row-0",
+        "measurement-region-workspace-grid-alt-sidebar-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 8,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-radius-control",
+      "role": "radius",
+      "observed_values": [
+        {
+          "value": 8,
+          "max_usage": "row-and-control"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info"
+      ],
+      "region_refs": [
+        "region-workspace-grid-list",
+        "region-workspace-grid-selected-row",
+        "region-workspace-list-sidebar",
+        "region-workspace-list-header",
+        "region-workspace-list-toolbar",
+        "region-workspace-list-list"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-list-0",
+        "measurement-region-workspace-grid-selected-row-0",
+        "measurement-region-workspace-list-sidebar-0",
+        "measurement-region-workspace-list-header-0",
+        "measurement-region-workspace-list-toolbar-0",
+        "measurement-region-workspace-list-list-0"
+      ],
+      "state": "selected",
+      "scope": "application",
+      "cross_screen_recurrence": 6,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-control-height",
+      "role": "control-size",
+      "observed_values": [
+        {
+          "height_px": 32
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "settings",
+        "review-actions"
+      ],
+      "region_refs": [
+        "region-workspace-grid-selected-row",
+        "region-workspace-list-sidebar",
+        "region-workspace-list-header"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-selected-row-0",
+        "measurement-region-workspace-list-sidebar-0",
+        "measurement-region-workspace-list-header-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 3,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-panel-width",
+      "role": "panel-dimension",
+      "observed_values": [
+        {
+          "sidebar_ratio": 0.18,
+          "inspector_ratio": 0.22
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions",
+        "settings",
+        "document-editor"
+      ],
+      "region_refs": [
+        "region-workspace-grid-sidebar",
+        "region-workspace-list-sidebar",
+        "region-workspace-grid-alt-sidebar",
+        "region-editor-focus-sidebar",
+        "region-editor-focus-inspector",
+        "region-editor-context-sidebar",
+        "region-editor-context-inspector",
+        "region-page-info-sidebar"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-sidebar-0",
+        "measurement-region-workspace-list-sidebar-0",
+        "measurement-region-workspace-grid-alt-sidebar-0",
+        "measurement-region-editor-focus-sidebar-0",
+        "measurement-region-editor-focus-inspector-0",
+        "measurement-region-editor-context-sidebar-0",
+        "measurement-region-editor-context-inspector-0",
+        "measurement-region-page-info-sidebar-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 10,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-body-type-role",
+      "role": "typography-role",
+      "observed_values": [
+        {
+          "role": "document-body",
+          "size_px": 16,
+          "line_height": 1.5
+        }
+      ],
+      "screen_refs": [
+        "editor-focus",
+        "document-editor"
+      ],
+      "region_refs": [
+        "region-editor-focus-canvas",
+        "region-editor-context-canvas",
+        "region-document-editor-canvas"
+      ],
+      "measurement_refs": [
+        "measurement-region-editor-focus-canvas-0",
+        "measurement-region-editor-context-canvas-0",
+        "measurement-region-document-editor-canvas-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 2,
+      "confidence": 0.62,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-compact-density",
+      "role": "density",
+      "observed_values": [
+        {
+          "value": "compact"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info"
+      ],
+      "region_refs": [
+        "region-workspace-grid-list",
+        "region-workspace-list-list",
+        "region-workspace-grid-alt-list",
+        "region-review-actions-action-list",
+        "region-workspace-empty-list"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-list-0",
+        "measurement-region-workspace-list-list-0",
+        "measurement-region-workspace-grid-alt-list-0",
+        "measurement-region-review-actions-action-list-0",
+        "measurement-region-workspace-empty-list-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 6,
+      "confidence": 0.84,
+      "status": "corroborated"
+    },
+    {
+      "observation_token_id": "token-document-preview-ratio",
+      "role": "document-preview",
+      "observed_values": [
+        {
+          "ratio": "4:3"
+        }
+      ],
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt"
+      ],
+      "region_refs": [
+        "region-workspace-grid-list",
+        "region-workspace-list-list",
+        "region-workspace-grid-alt-list"
+      ],
+      "measurement_refs": [
+        "measurement-region-workspace-grid-list-0",
+        "measurement-region-workspace-list-list-0",
+        "measurement-region-workspace-grid-alt-list-0"
+      ],
+      "state": "default",
+      "scope": "application",
+      "cross_screen_recurrence": 3,
+      "confidence": 0.84,
+      "status": "corroborated"
+    }
+  ]
+}

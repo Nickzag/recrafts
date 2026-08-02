@@ -1,0 +1,247 @@
+{
+  "schema_version": "3.1.0",
+  "protocol_version": "1.2",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "observations": [
+    {
+      "observation_id": "color-workspace-grid-selected",
+      "screen_id": "workspace-grid",
+      "region_id": "region-workspace-grid-selected-row",
+      "state": "selected",
+      "role": "selected-row-background",
+      "value": {
+        "hex": "#dcecff"
+      },
+      "evidence_refs": [
+        "screen-evidence-workspace-grid",
+        "region-workspace-grid-selected-row"
+      ],
+      "certainty": "measured",
+      "status": "corroborated"
+    },
+    {
+      "observation_id": "color-workspace-grid-teal",
+      "screen_id": "workspace-grid",
+      "region_id": "region-workspace-grid-list",
+      "state": "available-option",
+      "role": "color-option",
+      "value": {
+        "hex": "#4aa69b"
+      },
+      "evidence_refs": [
+        "screen-evidence-workspace-grid",
+        "region-workspace-grid-list"
+      ],
+      "certainty": "estimated",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-workspace-list-selected",
+      "screen_id": "workspace-list",
+      "region_id": "region-workspace-list-selected-row",
+      "state": "selected",
+      "role": "selected-row-background",
+      "value": {
+        "hex": "#dcecff"
+      },
+      "evidence_refs": [
+        "screen-evidence-workspace-list",
+        "region-workspace-list-selected-row"
+      ],
+      "certainty": "measured",
+      "status": "corroborated"
+    },
+    {
+      "observation_id": "color-workspace-list-teal",
+      "screen_id": "workspace-list",
+      "region_id": "region-workspace-list-list",
+      "state": "available-option",
+      "role": "color-option",
+      "value": {
+        "hex": "#4aa69b"
+      },
+      "evidence_refs": [
+        "screen-evidence-workspace-list",
+        "region-workspace-list-list"
+      ],
+      "certainty": "estimated",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-workspace-grid-alt-selected",
+      "screen_id": "workspace-grid-alt",
+      "region_id": "region-workspace-grid-alt-selected-row",
+      "state": "selected",
+      "role": "selected-row-background",
+      "value": {
+        "hex": "#dcecff"
+      },
+      "evidence_refs": [
+        "screen-evidence-workspace-grid-alt",
+        "region-workspace-grid-alt-selected-row"
+      ],
+      "certainty": "measured",
+      "status": "corroborated"
+    },
+    {
+      "observation_id": "color-workspace-grid-alt-teal",
+      "screen_id": "workspace-grid-alt",
+      "region_id": "region-workspace-grid-alt-list",
+      "state": "available-option",
+      "role": "color-option",
+      "value": {
+        "hex": "#4aa69b"
+      },
+      "evidence_refs": [
+        "screen-evidence-workspace-grid-alt",
+        "region-workspace-grid-alt-list"
+      ],
+      "certainty": "estimated",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-editor-focus-focus",
+      "screen_id": "editor-focus",
+      "region_id": "region-editor-focus-editor-toolbar",
+      "state": "focus",
+      "role": "editor-focus-accent",
+      "value": {
+        "hex": "#2f6fed"
+      },
+      "evidence_refs": [
+        "screen-evidence-editor-focus",
+        "region-editor-focus-editor-toolbar"
+      ],
+      "certainty": "estimated",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-editor-context-focus",
+      "screen_id": "editor-context",
+      "region_id": "region-editor-context-editor-toolbar",
+      "state": "focus",
+      "role": "editor-focus-accent",
+      "value": {
+        "hex": "#2f6fed"
+      },
+      "evidence_refs": [
+        "screen-evidence-editor-context",
+        "region-editor-context-editor-toolbar"
+      ],
+      "certainty": "estimated",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-template-gallery-marketing",
+      "screen_id": "template-gallery",
+      "region_id": "region-template-gallery-template",
+      "state": "template-content",
+      "role": "template-palette",
+      "value": {
+        "hex": "#efc06b"
+      },
+      "evidence_refs": [
+        "screen-evidence-template-gallery",
+        "region-template-gallery-template"
+      ],
+      "certainty": "measured",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-settings-active",
+      "screen_id": "settings",
+      "region_id": "region-settings-control",
+      "state": "active",
+      "role": "active-control",
+      "value": {
+        "hex": "#2f6fed"
+      },
+      "evidence_refs": [
+        "screen-evidence-settings",
+        "region-settings-control"
+      ],
+      "certainty": "measured",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-settings-purple",
+      "screen_id": "settings",
+      "region_id": "region-settings-control",
+      "state": "available-option",
+      "role": "color-option",
+      "value": {
+        "hex": "#8b6dd8"
+      },
+      "evidence_refs": [
+        "screen-evidence-settings",
+        "region-settings-control"
+      ],
+      "certainty": "estimated",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-premium-dialog-marketing",
+      "screen_id": "premium-dialog",
+      "region_id": "region-premium-dialog-marketing",
+      "state": "marketing",
+      "role": "marketing-brand-color",
+      "value": {
+        "hex": "#d85b86"
+      },
+      "evidence_refs": [
+        "screen-evidence-premium-dialog",
+        "region-premium-dialog-marketing"
+      ],
+      "certainty": "measured",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-document-editor-focus",
+      "screen_id": "document-editor",
+      "region_id": "region-document-editor-editor-toolbar",
+      "state": "focus",
+      "role": "editor-focus-accent",
+      "value": {
+        "hex": "#2f6fed"
+      },
+      "evidence_refs": [
+        "screen-evidence-document-editor",
+        "region-document-editor-editor-toolbar"
+      ],
+      "certainty": "estimated",
+      "status": "single-screen"
+    },
+    {
+      "observation_id": "color-workspace-empty-selected",
+      "screen_id": "workspace-empty",
+      "region_id": "region-workspace-empty-selected-row",
+      "state": "selected",
+      "role": "selected-row-background",
+      "value": {
+        "hex": "#dcecff"
+      },
+      "evidence_refs": [
+        "screen-evidence-workspace-empty",
+        "region-workspace-empty-selected-row"
+      ],
+      "certainty": "measured",
+      "status": "corroborated"
+    },
+    {
+      "observation_id": "color-workspace-empty-teal",
+      "screen_id": "workspace-empty",
+      "region_id": "region-workspace-empty-list",
+      "state": "available-option",
+      "role": "color-option",
+      "value": {
+        "hex": "#4aa69b"
+      },
+      "evidence_refs": [
+        "screen-evidence-workspace-empty",
+        "region-workspace-empty-list"
+      ],
+      "certainty": "estimated",
+      "status": "single-screen"
+    }
+  ]
+}

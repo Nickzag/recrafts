@@ -1,0 +1,51 @@
+{
+  "schema_version": "3.1.0",
+  "protocol_version": "1.2",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "unknowns": [
+    {
+      "unknown_id": "unknown-responsive",
+      "question": "移动端与窄视口的布局断点尚未在源图中出现。",
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions",
+        "template-gallery",
+        "settings",
+        "premium-dialog",
+        "document-editor",
+        "workspace-empty"
+      ],
+      "impact": "不得据此推断响应式规则。",
+      "status": "unknown"
+    },
+    {
+      "unknown_id": "unknown-hover",
+      "question": "悬停与键盘焦点的全部状态未被静态截图覆盖。",
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context"
+      ],
+      "impact": "状态颜色只能记录已见状态。",
+      "status": "unknown"
+    },
+    {
+      "unknown_id": "unknown-font",
+      "question": "精确字体文件与字重映射未从像素证据中确认。",
+      "screen_refs": [
+        "editor-focus",
+        "document-editor"
+      ],
+      "impact": "Typography 观察保持角色级别。",
+      "status": "unknown"
+    }
+  ]
+}

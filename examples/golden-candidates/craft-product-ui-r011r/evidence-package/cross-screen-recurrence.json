@@ -1,0 +1,193 @@
+{
+  "schema_version": "3.1.0",
+  "protocol_version": "1.2",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "recurrence": [
+    {
+      "recurrence_id": "recurrence-application-sidebar",
+      "component_candidate": "application-sidebar",
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions",
+        "template-gallery",
+        "settings",
+        "premium-dialog",
+        "document-editor",
+        "workspace-empty"
+      ],
+      "region_refs": [
+        "region-workspace-grid-sidebar",
+        "region-workspace-list-sidebar",
+        "region-workspace-grid-alt-sidebar",
+        "region-editor-focus-sidebar",
+        "region-editor-context-sidebar",
+        "region-page-info-sidebar",
+        "region-style-gallery-sidebar",
+        "region-review-actions-sidebar",
+        "region-template-gallery-sidebar",
+        "region-settings-sidebar",
+        "region-premium-dialog-sidebar",
+        "region-document-editor-sidebar",
+        "region-workspace-empty-sidebar"
+      ],
+      "recurrence_count": 13,
+      "evidence_refs": [
+        "region-workspace-grid-sidebar",
+        "region-workspace-list-sidebar",
+        "region-workspace-grid-alt-sidebar",
+        "region-editor-focus-sidebar",
+        "region-editor-context-sidebar",
+        "region-page-info-sidebar",
+        "region-style-gallery-sidebar",
+        "region-review-actions-sidebar",
+        "region-template-gallery-sidebar",
+        "region-settings-sidebar",
+        "region-premium-dialog-sidebar",
+        "region-document-editor-sidebar",
+        "region-workspace-empty-sidebar"
+      ],
+      "status": "corroborated"
+    },
+    {
+      "recurrence_id": "recurrence-content-header",
+      "component_candidate": "content-header",
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "editor-focus",
+        "editor-context",
+        "page-info",
+        "style-gallery",
+        "review-actions",
+        "template-gallery",
+        "settings",
+        "premium-dialog",
+        "document-editor",
+        "workspace-empty"
+      ],
+      "region_refs": [
+        "region-workspace-grid-header",
+        "region-workspace-list-header",
+        "region-workspace-grid-alt-header",
+        "region-editor-focus-header",
+        "region-editor-context-header",
+        "region-page-info-header",
+        "region-style-gallery-header",
+        "region-review-actions-header",
+        "region-template-gallery-header",
+        "region-settings-header",
+        "region-premium-dialog-header",
+        "region-document-editor-header",
+        "region-workspace-empty-header"
+      ],
+      "recurrence_count": 13,
+      "evidence_refs": [
+        "region-workspace-grid-header",
+        "region-workspace-list-header",
+        "region-workspace-grid-alt-header",
+        "region-editor-focus-header",
+        "region-editor-context-header",
+        "region-page-info-header",
+        "region-style-gallery-header",
+        "region-review-actions-header",
+        "region-template-gallery-header",
+        "region-settings-header",
+        "region-premium-dialog-header",
+        "region-document-editor-header",
+        "region-workspace-empty-header"
+      ],
+      "status": "corroborated"
+    },
+    {
+      "recurrence_id": "recurrence-navigation-row",
+      "component_candidate": "navigation-row",
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "workspace-empty"
+      ],
+      "region_refs": [
+        "region-workspace-grid-selected-row",
+        "region-workspace-list-selected-row",
+        "region-workspace-grid-alt-selected-row",
+        "region-workspace-empty-selected-row"
+      ],
+      "recurrence_count": 4,
+      "evidence_refs": [
+        "region-workspace-grid-selected-row",
+        "region-workspace-list-selected-row",
+        "region-workspace-grid-alt-selected-row",
+        "region-workspace-empty-selected-row"
+      ],
+      "status": "corroborated"
+    },
+    {
+      "recurrence_id": "recurrence-document-list",
+      "component_candidate": "document-list",
+      "screen_refs": [
+        "workspace-grid",
+        "workspace-list",
+        "workspace-grid-alt",
+        "workspace-empty"
+      ],
+      "region_refs": [
+        "region-workspace-grid-list",
+        "region-workspace-list-list",
+        "region-workspace-grid-alt-list",
+        "region-workspace-empty-list"
+      ],
+      "recurrence_count": 4,
+      "evidence_refs": [
+        "region-workspace-grid-list",
+        "region-workspace-list-list",
+        "region-workspace-grid-alt-list",
+        "region-workspace-empty-list"
+      ],
+      "status": "corroborated"
+    },
+    {
+      "recurrence_id": "recurrence-document-canvas",
+      "component_candidate": "document-canvas",
+      "screen_refs": [
+        "editor-focus",
+        "editor-context",
+        "document-editor"
+      ],
+      "region_refs": [
+        "region-editor-focus-canvas",
+        "region-editor-context-canvas",
+        "region-document-editor-canvas"
+      ],
+      "recurrence_count": 3,
+      "evidence_refs": [
+        "region-editor-focus-canvas",
+        "region-editor-context-canvas",
+        "region-document-editor-canvas"
+      ],
+      "status": "corroborated"
+    },
+    {
+      "recurrence_id": "recurrence-settings-section",
+      "component_candidate": "settings-section",
+      "screen_refs": [
+        "settings"
+      ],
+      "region_refs": [
+        "region-settings-section"
+      ],
+      "recurrence_count": 1,
+      "evidence_refs": [
+        "region-settings-section"
+      ],
+      "status": "single-screen"
+    }
+  ]
+}

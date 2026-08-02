@@ -1,0 +1,2031 @@
+{
+  "schema_version": "3.1.0",
+  "protocol_version": "1.2",
+  "package_id": "package-r011r-a-7aa94582b7de20ed",
+  "measurements": [
+    {
+      "measurement_id": "measurement-region-workspace-grid-sidebar-0",
+      "region_id": "region-workspace-grid-sidebar",
+      "property": "dimension",
+      "value": 642,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-sidebar-1",
+      "region_id": "region-workspace-grid-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-grid-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-header-0",
+      "region_id": "region-workspace-grid-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-header-1",
+      "region_id": "region-workspace-grid-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-grid-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-toolbar-0",
+      "region_id": "region-workspace-grid-toolbar",
+      "property": "dimension",
+      "value": 179,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-toolbar-1",
+      "region_id": "region-workspace-grid-toolbar",
+      "property": "spacing",
+      "value": 12,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-list-0",
+      "region_id": "region-workspace-grid-list",
+      "property": "density",
+      "value": "compact",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-list-1",
+      "region_id": "region-workspace-grid-list",
+      "property": "color",
+      "value": {
+        "hex": "#fbfaf7",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-grid-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-selected-row-0",
+      "region_id": "region-workspace-grid-selected-row",
+      "property": "color",
+      "value": {
+        "hex": "#dcecff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-grid-selected-row"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-selected-row-1",
+      "region_id": "region-workspace-grid-selected-row",
+      "property": "radius",
+      "value": 8,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-selected-row"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-sidebar-0",
+      "region_id": "region-workspace-list-sidebar",
+      "property": "dimension",
+      "value": 645,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-list-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-sidebar-1",
+      "region_id": "region-workspace-list-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-list-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-header-0",
+      "region_id": "region-workspace-list-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-list-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-header-1",
+      "region_id": "region-workspace-list-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-list-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-toolbar-0",
+      "region_id": "region-workspace-list-toolbar",
+      "property": "dimension",
+      "value": 179,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-list-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-toolbar-1",
+      "region_id": "region-workspace-list-toolbar",
+      "property": "spacing",
+      "value": 12,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-list-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-list-0",
+      "region_id": "region-workspace-list-list",
+      "property": "density",
+      "value": "compact",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-list-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-list-1",
+      "region_id": "region-workspace-list-list",
+      "property": "color",
+      "value": {
+        "hex": "#fbfaf7",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-list-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-selected-row-0",
+      "region_id": "region-workspace-list-selected-row",
+      "property": "color",
+      "value": {
+        "hex": "#dcecff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-list-selected-row"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-list-selected-row-1",
+      "region_id": "region-workspace-list-selected-row",
+      "property": "radius",
+      "value": 8,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-list-selected-row"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-sidebar-0",
+      "region_id": "region-workspace-grid-alt-sidebar",
+      "property": "dimension",
+      "value": 645,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-alt-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-sidebar-1",
+      "region_id": "region-workspace-grid-alt-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-grid-alt-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-header-0",
+      "region_id": "region-workspace-grid-alt-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-alt-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-header-1",
+      "region_id": "region-workspace-grid-alt-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-grid-alt-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-toolbar-0",
+      "region_id": "region-workspace-grid-alt-toolbar",
+      "property": "dimension",
+      "value": 179,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-alt-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-toolbar-1",
+      "region_id": "region-workspace-grid-alt-toolbar",
+      "property": "spacing",
+      "value": 12,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-alt-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-list-0",
+      "region_id": "region-workspace-grid-alt-list",
+      "property": "density",
+      "value": "compact",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-alt-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-list-1",
+      "region_id": "region-workspace-grid-alt-list",
+      "property": "color",
+      "value": {
+        "hex": "#fbfaf7",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-grid-alt-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-selected-row-0",
+      "region_id": "region-workspace-grid-alt-selected-row",
+      "property": "color",
+      "value": {
+        "hex": "#dcecff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-grid-alt-selected-row"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-grid-alt-selected-row-1",
+      "region_id": "region-workspace-grid-alt-selected-row",
+      "property": "radius",
+      "value": 8,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-grid-alt-selected-row"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-sidebar-0",
+      "region_id": "region-editor-focus-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-focus-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-sidebar-1",
+      "region_id": "region-editor-focus-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-editor-focus-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-header-0",
+      "region_id": "region-editor-focus-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-focus-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-header-1",
+      "region_id": "region-editor-focus-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-editor-focus-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-editor-toolbar-0",
+      "region_id": "region-editor-focus-editor-toolbar",
+      "property": "dimension",
+      "value": 179,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-focus-editor-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-canvas-0",
+      "region_id": "region-editor-focus-canvas",
+      "property": "spacing",
+      "value": 24,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-focus-canvas"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-canvas-1",
+      "region_id": "region-editor-focus-canvas",
+      "property": "typography",
+      "value": {
+        "role": "document-body",
+        "size_px": 16,
+        "line_height": 1.5
+      },
+      "unit": "font-metadata",
+      "method": "font-estimation",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-focus-canvas"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-inspector-0",
+      "region_id": "region-editor-focus-inspector",
+      "property": "dimension",
+      "value": 788,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-focus-inspector"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-focus-inspector-1",
+      "region_id": "region-editor-focus-inspector",
+      "property": "blur/material",
+      "value": "opaque-light-surface",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-focus-inspector"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-sidebar-0",
+      "region_id": "region-editor-context-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-context-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-sidebar-1",
+      "region_id": "region-editor-context-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-editor-context-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-header-0",
+      "region_id": "region-editor-context-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-context-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-header-1",
+      "region_id": "region-editor-context-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-editor-context-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-editor-toolbar-0",
+      "region_id": "region-editor-context-editor-toolbar",
+      "property": "dimension",
+      "value": 179,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-context-editor-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-canvas-0",
+      "region_id": "region-editor-context-canvas",
+      "property": "spacing",
+      "value": 24,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-context-canvas"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-canvas-1",
+      "region_id": "region-editor-context-canvas",
+      "property": "typography",
+      "value": {
+        "role": "document-body",
+        "size_px": 16,
+        "line_height": 1.5
+      },
+      "unit": "font-metadata",
+      "method": "font-estimation",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-context-canvas"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-inspector-0",
+      "region_id": "region-editor-context-inspector",
+      "property": "dimension",
+      "value": 787,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-context-inspector"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-editor-context-inspector-1",
+      "region_id": "region-editor-context-inspector",
+      "property": "blur/material",
+      "value": "opaque-light-surface",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-editor-context-inspector"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-page-info-sidebar-0",
+      "region_id": "region-page-info-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-page-info-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-page-info-sidebar-1",
+      "region_id": "region-page-info-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-page-info-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-page-info-header-0",
+      "region_id": "region-page-info-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-page-info-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-page-info-header-1",
+      "region_id": "region-page-info-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-page-info-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-style-gallery-sidebar-0",
+      "region_id": "region-style-gallery-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-style-gallery-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-style-gallery-sidebar-1",
+      "region_id": "region-style-gallery-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-style-gallery-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-style-gallery-header-0",
+      "region_id": "region-style-gallery-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-style-gallery-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-style-gallery-header-1",
+      "region_id": "region-style-gallery-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-style-gallery-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-style-gallery-overlay-0",
+      "region_id": "region-style-gallery-overlay",
+      "property": "blur/material",
+      "value": "translucent-light",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-style-gallery-overlay"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-style-gallery-overlay-1",
+      "region_id": "region-style-gallery-overlay",
+      "property": "radius",
+      "value": 14,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-style-gallery-overlay"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-review-actions-sidebar-0",
+      "region_id": "region-review-actions-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-review-actions-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-review-actions-sidebar-1",
+      "region_id": "region-review-actions-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-review-actions-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-review-actions-header-0",
+      "region_id": "region-review-actions-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-review-actions-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-review-actions-header-1",
+      "region_id": "region-review-actions-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-review-actions-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-review-actions-action-list-0",
+      "region_id": "region-review-actions-action-list",
+      "property": "spacing",
+      "value": 12,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-review-actions-action-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-review-actions-action-list-1",
+      "region_id": "region-review-actions-action-list",
+      "property": "border",
+      "value": {
+        "color": "#e6e2dc",
+        "width_px": 1
+      },
+      "unit": "px",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-review-actions-action-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-template-gallery-sidebar-0",
+      "region_id": "region-template-gallery-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-template-gallery-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-template-gallery-sidebar-1",
+      "region_id": "region-template-gallery-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-template-gallery-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-template-gallery-header-0",
+      "region_id": "region-template-gallery-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-template-gallery-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-template-gallery-header-1",
+      "region_id": "region-template-gallery-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-template-gallery-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-template-gallery-template-0",
+      "region_id": "region-template-gallery-template",
+      "property": "color",
+      "value": {
+        "hex": "#efc06b",
+        "source": "pixel-sample",
+        "use": "template-content"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-template-gallery-template"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-template-gallery-template-1",
+      "region_id": "region-template-gallery-template",
+      "property": "density",
+      "value": "image-led",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-template-gallery-template"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-settings-sidebar-0",
+      "region_id": "region-settings-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-settings-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-settings-sidebar-1",
+      "region_id": "region-settings-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-settings-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-settings-header-0",
+      "region_id": "region-settings-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-settings-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-settings-header-1",
+      "region_id": "region-settings-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-settings-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-settings-control-0",
+      "region_id": "region-settings-control",
+      "property": "dimension",
+      "value": 224,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-settings-control"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-settings-control-1",
+      "region_id": "region-settings-control",
+      "property": "color",
+      "value": {
+        "hex": "#2f6fed",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-settings-control"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-settings-section-0",
+      "region_id": "region-settings-section",
+      "property": "spacing",
+      "value": 20,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-settings-section"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-premium-dialog-sidebar-0",
+      "region_id": "region-premium-dialog-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-premium-dialog-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-premium-dialog-sidebar-1",
+      "region_id": "region-premium-dialog-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-premium-dialog-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-premium-dialog-header-0",
+      "region_id": "region-premium-dialog-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-premium-dialog-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-premium-dialog-header-1",
+      "region_id": "region-premium-dialog-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-premium-dialog-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-premium-dialog-dialog-0",
+      "region_id": "region-premium-dialog-dialog",
+      "property": "dimension",
+      "value": 1503,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-premium-dialog-dialog"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-premium-dialog-dialog-1",
+      "region_id": "region-premium-dialog-dialog",
+      "property": "shadow",
+      "value": {
+        "blur_px": 28,
+        "alpha": 0.2
+      },
+      "unit": "qualitative",
+      "method": "pixel-sample",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-premium-dialog-dialog"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-premium-dialog-marketing-0",
+      "region_id": "region-premium-dialog-marketing",
+      "property": "color",
+      "value": {
+        "hex": "#d85b86",
+        "source": "pixel-sample",
+        "use": "marketing"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-premium-dialog-marketing"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-sidebar-0",
+      "region_id": "region-document-editor-sidebar",
+      "property": "dimension",
+      "value": 644,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-document-editor-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-sidebar-1",
+      "region_id": "region-document-editor-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-document-editor-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-header-0",
+      "region_id": "region-document-editor-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-document-editor-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-header-1",
+      "region_id": "region-document-editor-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-document-editor-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-editor-toolbar-0",
+      "region_id": "region-document-editor-editor-toolbar",
+      "property": "dimension",
+      "value": 179,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-document-editor-editor-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-canvas-0",
+      "region_id": "region-document-editor-canvas",
+      "property": "spacing",
+      "value": 24,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-document-editor-canvas"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-canvas-1",
+      "region_id": "region-document-editor-canvas",
+      "property": "typography",
+      "value": {
+        "role": "document-body",
+        "size_px": 16,
+        "line_height": 1.5
+      },
+      "unit": "font-metadata",
+      "method": "font-estimation",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-document-editor-canvas"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-inspector-0",
+      "region_id": "region-document-editor-inspector",
+      "property": "dimension",
+      "value": 787,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-document-editor-inspector"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-document-editor-inspector-1",
+      "region_id": "region-document-editor-inspector",
+      "property": "blur/material",
+      "value": "opaque-light-surface",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-document-editor-inspector"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-sidebar-0",
+      "region_id": "region-workspace-empty-sidebar",
+      "property": "dimension",
+      "value": 643,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-empty-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-sidebar-1",
+      "region_id": "region-workspace-empty-sidebar",
+      "property": "color",
+      "value": {
+        "hex": "#f7f6f2",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-empty-sidebar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-header-0",
+      "region_id": "region-workspace-empty-header",
+      "property": "dimension",
+      "value": 269,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-empty-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-header-1",
+      "region_id": "region-workspace-empty-header",
+      "property": "color",
+      "value": {
+        "hex": "#ffffff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-empty-header"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-toolbar-0",
+      "region_id": "region-workspace-empty-toolbar",
+      "property": "dimension",
+      "value": 179,
+      "unit": "px",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-empty-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-toolbar-1",
+      "region_id": "region-workspace-empty-toolbar",
+      "property": "spacing",
+      "value": 12,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-empty-toolbar"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-list-0",
+      "region_id": "region-workspace-empty-list",
+      "property": "density",
+      "value": "compact",
+      "unit": "qualitative",
+      "method": "Host-vision",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-empty-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-list-1",
+      "region_id": "region-workspace-empty-list",
+      "property": "color",
+      "value": {
+        "hex": "#fbfaf7",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-empty-list"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-selected-row-0",
+      "region_id": "region-workspace-empty-selected-row",
+      "property": "color",
+      "value": {
+        "hex": "#dcecff",
+        "source": "pixel-sample"
+      },
+      "unit": "hex",
+      "method": "pixel-sample",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2 RGB",
+      "evidence_refs": [
+        "region-workspace-empty-selected-row"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-selected-row-1",
+      "region_id": "region-workspace-empty-selected-row",
+      "property": "radius",
+      "value": 8,
+      "unit": "px",
+      "method": "manual-review",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-empty-selected-row"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-empty-0",
+      "region_id": "region-workspace-empty-empty",
+      "property": "alignment",
+      "value": "centered",
+      "unit": "qualitative",
+      "method": "geometry",
+      "certainty": "measured",
+      "sample_location": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-empty-empty"
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "measurement_id": "measurement-region-workspace-empty-empty-1",
+      "region_id": "region-workspace-empty-empty",
+      "property": "typography",
+      "value": {
+        "role": "empty-state-message",
+        "size_px": 15
+      },
+      "unit": "font-metadata",
+      "method": "font-estimation",
+      "certainty": "estimated",
+      "sample_location": {
+        "x": 0.4,
+        "y": 0.4
+      },
+      "tolerance": "±2px",
+      "evidence_refs": [
+        "region-workspace-empty-empty"
+      ],
+      "review_status": "reviewed"
+    }
+  ]
+}

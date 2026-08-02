@@ -8,3 +8,4 @@ node_modules/
 .local-benchmark-sources/
 examples/**/generated/page.html
 examples/**/generated-v*/
+examples/golden-candidates/craft-product-ui-r011r/evidence-package-v*/
