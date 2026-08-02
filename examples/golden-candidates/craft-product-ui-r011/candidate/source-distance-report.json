@@ -1,0 +1,147 @@
+{
+  "version": "r011.1.0",
+  "assessment_id": "source-distance-be773298aa153df7",
+  "dimensions": [
+    {
+      "dimension_id": "exact-color-dependence",
+      "source_observation": "原始品牌色不作为实现输入",
+      "portable_decision": "采用 neutral semantic palette",
+      "difference": "中风险",
+      "risk": "中风险",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-exact-color-dependence"
+      ]
+    },
+    {
+      "dimension_id": "icon-similarity",
+      "source_observation": "截图图标轮廓只用于 affordance 观察",
+      "portable_decision": "使用独立开源图标集合",
+      "difference": "低风险",
+      "risk": "低风险",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-icon-similarity"
+      ]
+    },
+    {
+      "dimension_id": "panel-topology",
+      "source_observation": "保留编辑器与上下文面板关系",
+      "portable_decision": "改变面板分组和抽屉行为",
+      "difference": "中风险",
+      "risk": "中风险",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-panel-topology"
+      ]
+    },
+    {
+      "dimension_id": "navigation-arrangement",
+      "source_observation": "观察到轨道和三级层级",
+      "portable_decision": "重新命名并加入 CraftsOS 工作区语义",
+      "difference": "低风险",
+      "risk": "低风险",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-navigation-arrangement"
+      ]
+    },
+    {
+      "dimension_id": "corner-radius-signature",
+      "source_observation": "不提取单一品牌半径",
+      "portable_decision": "使用 8/12/16 语义 scale",
+      "difference": "低风险",
+      "risk": "低风险",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-corner-radius-signature"
+      ]
+    },
+    {
+      "dimension_id": "toolbar-arrangement",
+      "source_observation": "工具按任务关系抽象",
+      "portable_decision": "引入 command/search 与 review affordance",
+      "difference": "中风险",
+      "risk": "中风险",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-toolbar-arrangement"
+      ]
+    },
+    {
+      "dimension_id": "typographic-proportions",
+      "source_observation": "保留密度比例",
+      "portable_decision": "使用新的系统字体与尺寸 scale",
+      "difference": "低风险",
+      "risk": "低风险",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-typographic-proportions"
+      ]
+    },
+    {
+      "dimension_id": "brand-marks",
+      "source_observation": "拒绝 logo、名称和营销标题",
+      "portable_decision": "仅使用 CraftsOS 中性命名",
+      "difference": "低风险",
+      "risk": "低风险",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-brand-marks"
+      ]
+    },
+    {
+      "dimension_id": "component-combinations",
+      "source_observation": "抽取 recurring roles",
+      "portable_decision": "重组为可审计组件契约",
+      "difference": "中风险",
+      "risk": "中风险",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-component-combinations"
+      ]
+    },
+    {
+      "dimension_id": "application-silhouette",
+      "source_observation": "保留内容优先轮廓",
+      "portable_decision": "加入证据、冲突和回滚系统面",
+      "difference": "中风险",
+      "risk": "中风险",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-application-silhouette"
+      ]
+    }
+  ],
+  "topology_risk": "medium",
+  "motif_combination_risk": "low",
+  "differences": [
+    "brand-neutral naming",
+    "independent icon vocabulary",
+    "semantic token palette",
+    "new panel combinations",
+    "CraftsOS evidence and rollback surfaces",
+    "mobile behavior remains candidate until observed"
+  ],
+  "gate_status": "pass"
+}

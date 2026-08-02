@@ -1,0 +1,388 @@
+{
+  "schema_version": "r011.1.0",
+  "input_profile": "product-ui-mixed-evidence",
+  "sources": [
+    {
+      "source_id": "source-1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "workspace-shell",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "regions": [
+        {
+          "region_id": "source-1-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-9c7a134b9f919592"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-2",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "workspace-shell",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "regions": [
+        {
+          "region_id": "source-2-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-78838e2043651085"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-3",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "workspace-shell",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "regions": [
+        {
+          "region_id": "source-3-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-059a7ad47452be71"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-4",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "editor-chrome",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "regions": [
+        {
+          "region_id": "source-4-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "editor-chrome",
+          "confidence": 0.94,
+          "evidence_refs": [
+            "ev-92adcc5c2690f045"
+          ],
+          "canonical_promotion_blocked": false
+        },
+        {
+          "region_id": "source-4-platform-toolbar",
+          "classification": "platform-chrome",
+          "scope": "platform-chrome",
+          "confidence": 0.97,
+          "evidence_refs": [
+            "ev-92adcc5c2690f045"
+          ],
+          "canonical_promotion_blocked": true
+        }
+      ]
+    },
+    {
+      "source_id": "source-5",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "editor-chrome",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "regions": [
+        {
+          "region_id": "source-5-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "editor-chrome",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-b548d4fd17843d57"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-6",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "inspector",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-312511e2aebf02d8"
+      ],
+      "regions": [
+        {
+          "region_id": "source-6-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "inspector",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-312511e2aebf02d8"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-7",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "overlay",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "regions": [
+        {
+          "region_id": "source-7-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "overlay",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-997b1018771aef13"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-8",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "review-and-evidence",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "regions": [
+        {
+          "region_id": "source-8-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "review-and-evidence",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-8e2720fb78f32d0e"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-9",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "workspace-shell",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-95868ab46650868e"
+      ],
+      "regions": [
+        {
+          "region_id": "source-9-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.91,
+          "evidence_refs": [
+            "ev-95868ab46650868e"
+          ],
+          "canonical_promotion_blocked": false
+        },
+        {
+          "region_id": "source-9-template-gallery",
+          "classification": "template-content",
+          "scope": "template-content",
+          "confidence": 0.96,
+          "evidence_refs": [
+            "ev-95868ab46650868e"
+          ],
+          "canonical_promotion_blocked": true
+        }
+      ]
+    },
+    {
+      "source_id": "source-10",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "system-feedback",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "regions": [
+        {
+          "region_id": "source-10-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "system-feedback",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-322a3b4ac9bfc84b"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-11",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "overlay",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-fdb03f5dd09f05e6"
+      ],
+      "regions": [
+        {
+          "region_id": "source-11-dialog",
+          "classification": "canonical-product-ui",
+          "scope": "overlay",
+          "confidence": 0.89,
+          "evidence_refs": [
+            "ev-fdb03f5dd09f05e6"
+          ],
+          "canonical_promotion_blocked": false
+        },
+        {
+          "region_id": "source-11-marketing-modal",
+          "classification": "marketing-surface",
+          "scope": "marketing-brand",
+          "confidence": 0.99,
+          "evidence_refs": [
+            "ev-fdb03f5dd09f05e6"
+          ],
+          "canonical_promotion_blocked": true
+        }
+      ]
+    },
+    {
+      "source_id": "source-12",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "canvas-or-document-content",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-8756c07a68612f23"
+      ],
+      "regions": [
+        {
+          "region_id": "source-12-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "canvas-or-document-content",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-8756c07a68612f23"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-13",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "scope": "workspace-shell",
+      "classification": "canonical-product-ui",
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "regions": [
+        {
+          "region_id": "source-13-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-e09d6e18315a9e58"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-14",
+      "source_role": "official-product-web",
+      "authority": "tier-c",
+      "scope": "marketing-brand",
+      "classification": "marketing-surface",
+      "evidence_refs": [
+        "ev-d3cc7c66cfe7acff"
+      ],
+      "regions": [
+        {
+          "region_id": "source-14-public-surface",
+          "classification": "marketing-surface",
+          "scope": "marketing-brand",
+          "confidence": 0.78,
+          "evidence_refs": [
+            "ev-d3cc7c66cfe7acff"
+          ],
+          "canonical_promotion_blocked": true
+        }
+      ]
+    },
+    {
+      "source_id": "source-15",
+      "source_role": "official-interface-tutorial",
+      "authority": "tier-b",
+      "scope": "editor-chrome",
+      "classification": "official-interface",
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "regions": [
+        {
+          "region_id": "source-15-public-surface",
+          "classification": "official-interface",
+          "scope": "editor-chrome",
+          "confidence": 0.78,
+          "evidence_refs": [
+            "ev-284023afe76f6ce4"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-16",
+      "source_role": "official-help-documentation",
+      "authority": "tier-b",
+      "scope": "navigation",
+      "classification": "official-interface",
+      "evidence_refs": [
+        "ev-8613e908d310cc54"
+      ],
+      "regions": [
+        {
+          "region_id": "source-16-public-surface",
+          "classification": "official-interface",
+          "scope": "navigation",
+          "confidence": 0.78,
+          "evidence_refs": [
+            "ev-8613e908d310cc54"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    }
+  ]
+}

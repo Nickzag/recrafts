@@ -1,0 +1,101 @@
+{
+  "version": "r011.1.0",
+  "rules": [
+    {
+      "id": "density-library",
+      "summary": "列表行高度紧凑，分组标题和缩略图形成次级节奏",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-density-library"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "density-editor",
+      "summary": "编辑画布留白宽，工具密度集中在顶部与侧边",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-density-editor"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "density-overlay",
+      "summary": "浮层内容分区明确，选项行可扫描且不堆叠装饰",
+      "scope": "overlay",
+      "status": "observed",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-density-overlay"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "density-mobile",
+      "summary": "移动端密度仅允许候选推断，必须以真实 viewport 验证",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-density-mobile"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

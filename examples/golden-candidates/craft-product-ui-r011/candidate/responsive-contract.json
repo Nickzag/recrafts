@@ -1,0 +1,77 @@
+{
+  "version": "r011.1.0",
+  "rules": [
+    {
+      "id": "responsive-library",
+      "summary": "桌面文档表面在窄宽度下保持列表优先",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.78,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-responsive-library"
+      ],
+      "cross_screen_recurrence_count": 1,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "responsive-navigation-sheet",
+      "summary": "移动端将左轨道折叠为导航 sheet，待产品证据确认",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-responsive-navigation-sheet"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "responsive-inspector-sheet",
+      "summary": "移动端 inspector 使用 sheet 并保持当前选区",
+      "scope": "inspector",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-responsive-inspector-sheet"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

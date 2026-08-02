@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "sources": [
+    {
+      "source_id": "source-1",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-2",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-3",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-4",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-5",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-6",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-7",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-8",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-9",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-10",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-11",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-12",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-13",
+      "status": "complete",
+      "missing_evidence": []
+    },
+    {
+      "source_id": "source-14",
+      "status": "complete",
+      "missing_evidence": [],
+      "stale_reasons": [],
+      "reason": null
+    },
+    {
+      "source_id": "source-15",
+      "status": "complete",
+      "missing_evidence": [],
+      "stale_reasons": [],
+      "reason": null
+    },
+    {
+      "source_id": "source-16",
+      "status": "complete",
+      "missing_evidence": [],
+      "stale_reasons": [],
+      "reason": null
+    }
+  ]
+}

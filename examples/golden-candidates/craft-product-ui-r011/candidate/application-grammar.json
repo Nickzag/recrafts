@@ -1,0 +1,286 @@
+{
+  "version": "r011.1.0",
+  "grammar_id": "product-ui-application-grammar-r011",
+  "rules": [
+    {
+      "id": "grammar-shell",
+      "summary": "应用轨道固定在工作区外层，内容表面不承担全局导航职责",
+      "scope": "application-chrome",
+      "status": "corroborated",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-shell"
+      ],
+      "cross_screen_recurrence_count": 5,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-nav-hierarchy",
+      "summary": "工作区、项目、文档三级层级通过缩进与分组表达，不用颜色单独承担层级",
+      "scope": "navigation",
+      "status": "observed",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-nav-hierarchy"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-content-first",
+      "summary": "编辑内容优先于工具装饰，工具只围绕当前任务显示",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-content-first"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-panel-persistence",
+      "summary": "上下文面板由选择和任务触发，关闭后不遮挡画布",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-panel-persistence"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-inspector-ownership",
+      "summary": "样式、信息和操作归属于当前文档或选区，不能漂移成全局面板",
+      "scope": "inspector",
+      "status": "corroborated",
+      "confidence": 0.87,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-inspector-ownership"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-canvas-primacy",
+      "summary": "画布保持最大连续面积与最高文字对比，支持长内容扫描",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-canvas-primacy"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-command-recovery",
+      "summary": "搜索和命令入口支持键盘优先并允许从中断状态恢复",
+      "scope": "overlay",
+      "status": "inferred",
+      "confidence": 0.73,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-command-recovery"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": false
+    },
+    {
+      "id": "grammar-selection",
+      "summary": "选择态用轻量表面和焦点边界表达，避免重色填充覆盖内容",
+      "scope": "editor-chrome",
+      "status": "observed",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-selection"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-progressive-disclosure",
+      "summary": "高级选项通过折叠、抽屉或二级弹层渐进披露",
+      "scope": "inspector",
+      "status": "corroborated",
+      "confidence": 0.84,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-progressive-disclosure"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-recovery",
+      "summary": "冲突、失败和回滚都显示原因、影响与可逆动作",
+      "scope": "system-feedback",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-grammar-recovery"
+      ],
+      "cross_screen_recurrence_count": 1,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": false
+    },
+    {
+      "id": "grammar-review-evidence",
+      "summary": "证据与审阅状态独立成面，来源和决策不混入营销内容",
+      "scope": "review-and-evidence",
+      "status": "candidate",
+      "confidence": 0.66,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-grammar-review-evidence"
+      ],
+      "cross_screen_recurrence_count": 1,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": false
+    }
+  ],
+  "craftsos_constraints": [
+    "content-first editing",
+    "explicit human review",
+    "reversible operations"
+  ]
+}

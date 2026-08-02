@@ -1,0 +1,1013 @@
+{
+  "version": "r011.1.0",
+  "coverage_id": "preview-coverage-84dcd9ab89c6b64a",
+  "required_surfaces": [
+    "workspace-library-desktop",
+    "workspace-library-mobile",
+    "project-studio-desktop",
+    "project-studio-compact",
+    "review-evidence",
+    "quick-create",
+    "command-overlay",
+    "dialog",
+    "navigation-sheet",
+    "inspector-sheet",
+    "empty-state",
+    "loading-state",
+    "blocking-conflict",
+    "rollback-confirmation"
+  ],
+  "required_directions": [
+    "quiet-frame",
+    "signal-column"
+  ],
+  "previews": [
+    {
+      "preview_id": "preview-quiet-frame-workspace-library-desktop",
+      "direction_id": "quiet-frame",
+      "surface_id": "workspace-library-desktop",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/workspace-library-desktop.html",
+      "screenshot_path": "previews/quiet-frame/workspace-library-desktop.png",
+      "contract_ids": [
+        "contract-workspace-library-desktop",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "app-rail",
+        "view-switcher",
+        "document-preview"
+      ],
+      "state_ids": [
+        "workspace-ready"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "fb220c2229319e0484ecacad86a686c8cc97b3472184b414287ca6f4736c991a"
+    },
+    {
+      "preview_id": "preview-quiet-frame-workspace-library-mobile",
+      "direction_id": "quiet-frame",
+      "surface_id": "workspace-library-mobile",
+      "mode": "mobile",
+      "viewport": "390x844",
+      "html_path": "previews/quiet-frame/workspace-library-mobile.html",
+      "screenshot_path": "previews/quiet-frame/workspace-library-mobile.png",
+      "contract_ids": [
+        "contract-workspace-library-mobile",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "view-switcher",
+        "document-preview"
+      ],
+      "state_ids": [
+        "mobile-library-unknown"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "54cbaa8ad494862d06ffaacc60b4e42d6de35af909c87804f4bfd3a7ad7c2433"
+    },
+    {
+      "preview_id": "preview-quiet-frame-project-studio-desktop",
+      "direction_id": "quiet-frame",
+      "surface_id": "project-studio-desktop",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/project-studio-desktop.html",
+      "screenshot_path": "previews/quiet-frame/project-studio-desktop.png",
+      "contract_ids": [
+        "contract-project-studio-desktop",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "app-rail",
+        "editor-context-panel",
+        "document-preview"
+      ],
+      "state_ids": [
+        "project-editing"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "d0ba2335c7dae2abbb978c684f4730eabd610e170a0a158acd9abaa3a881e298"
+    },
+    {
+      "preview_id": "preview-quiet-frame-project-studio-compact",
+      "direction_id": "quiet-frame",
+      "surface_id": "project-studio-compact",
+      "mode": "compact",
+      "viewport": "1080x860",
+      "html_path": "previews/quiet-frame/project-studio-compact.html",
+      "screenshot_path": "previews/quiet-frame/project-studio-compact.png",
+      "contract_ids": [
+        "contract-project-studio-compact",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "editor-context-panel",
+        "document-preview"
+      ],
+      "state_ids": [
+        "project-selected"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "f71884a7f0b130ef29072121e9a775af69682905b7dcc43e22d42c75c5824f8d"
+    },
+    {
+      "preview_id": "preview-quiet-frame-review-evidence",
+      "direction_id": "quiet-frame",
+      "surface_id": "review-evidence",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/review-evidence.html",
+      "screenshot_path": "previews/quiet-frame/review-evidence.png",
+      "contract_ids": [
+        "contract-review-evidence",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "app-rail",
+        "action-list",
+        "editor-context-panel"
+      ],
+      "state_ids": [
+        "review-ready"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "7200cffd168965e8263894cc7fc8584ad438826376275194b71d60452cc5dc22"
+    },
+    {
+      "preview_id": "preview-quiet-frame-quick-create",
+      "direction_id": "quiet-frame",
+      "surface_id": "quick-create",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/quick-create.html",
+      "screenshot_path": "previews/quiet-frame/quick-create.png",
+      "contract_ids": [
+        "contract-quick-create",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "insert-palette",
+        "command-search"
+      ],
+      "state_ids": [
+        "style-gallery-open"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "45306058716cb8b6e4fc6e6db548f69af8976dab423264ec34174a9296f04c41"
+    },
+    {
+      "preview_id": "preview-quiet-frame-command-overlay",
+      "direction_id": "quiet-frame",
+      "surface_id": "command-overlay",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/command-overlay.html",
+      "screenshot_path": "previews/quiet-frame/command-overlay.png",
+      "contract_ids": [
+        "contract-command-overlay",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "command-search",
+        "action-list"
+      ],
+      "state_ids": [
+        "command-search-open"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "b076b889a3349418e45e5d89d7d2cfaea0921e899874fab4f70c414a75c78e6a"
+    },
+    {
+      "preview_id": "preview-quiet-frame-dialog",
+      "direction_id": "quiet-frame",
+      "surface_id": "dialog",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/dialog.html",
+      "screenshot_path": "previews/quiet-frame/dialog.png",
+      "contract_ids": [
+        "contract-dialog",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "action-list",
+        "editor-context-panel"
+      ],
+      "state_ids": [
+        "review-rollback"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "19df2c04d74c90410a41cdc0be794467e666edca2d4f14376de071ca3f2fe5da"
+    },
+    {
+      "preview_id": "preview-quiet-frame-navigation-sheet",
+      "direction_id": "quiet-frame",
+      "surface_id": "navigation-sheet",
+      "mode": "mobile",
+      "viewport": "390x844",
+      "html_path": "previews/quiet-frame/navigation-sheet.html",
+      "screenshot_path": "previews/quiet-frame/navigation-sheet.png",
+      "contract_ids": [
+        "contract-navigation-sheet",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "app-rail",
+        "view-switcher"
+      ],
+      "state_ids": [
+        "mobile-library-unknown"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "67ec68973c04fc95cb52c99f5f39daa9fc50728aa87fc51aea2f9c50ad5823bd"
+    },
+    {
+      "preview_id": "preview-quiet-frame-inspector-sheet",
+      "direction_id": "quiet-frame",
+      "surface_id": "inspector-sheet",
+      "mode": "mobile",
+      "viewport": "390x844",
+      "html_path": "previews/quiet-frame/inspector-sheet.html",
+      "screenshot_path": "previews/quiet-frame/inspector-sheet.png",
+      "contract_ids": [
+        "contract-inspector-sheet",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "editor-context-panel",
+        "preference-section"
+      ],
+      "state_ids": [
+        "mobile-inspector-unknown"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "ac660380a0d617bd7d52ab98821fe30e69dc318b9ed4ef6db77cc329c82c4d7b"
+    },
+    {
+      "preview_id": "preview-quiet-frame-empty-state",
+      "direction_id": "quiet-frame",
+      "surface_id": "empty-state",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/empty-state.html",
+      "screenshot_path": "previews/quiet-frame/empty-state.png",
+      "contract_ids": [
+        "contract-empty-state",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "app-rail",
+        "empty-state"
+      ],
+      "state_ids": [
+        "workspace-empty"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "4023ea4b0282cad92b5a0a31a3bd9e4b475199ce50c2653bfe464a20842d0db0"
+    },
+    {
+      "preview_id": "preview-quiet-frame-loading-state",
+      "direction_id": "quiet-frame",
+      "surface_id": "loading-state",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/loading-state.html",
+      "screenshot_path": "previews/quiet-frame/loading-state.png",
+      "contract_ids": [
+        "contract-loading-state",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "app-rail",
+        "document-preview"
+      ],
+      "state_ids": [
+        "workspace-loading"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "bd8e0c7fab2279c990309af025541f31078ab7d5be1a0e98a4871c18d9596732"
+    },
+    {
+      "preview_id": "preview-quiet-frame-blocking-conflict",
+      "direction_id": "quiet-frame",
+      "surface_id": "blocking-conflict",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/blocking-conflict.html",
+      "screenshot_path": "previews/quiet-frame/blocking-conflict.png",
+      "contract_ids": [
+        "contract-blocking-conflict",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "action-list",
+        "editor-context-panel"
+      ],
+      "state_ids": [
+        "project-conflict"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "13da646e3639da7ffd33d065f064f1949a8500aba898155ec9b868797103d353"
+    },
+    {
+      "preview_id": "preview-quiet-frame-rollback-confirmation",
+      "direction_id": "quiet-frame",
+      "surface_id": "rollback-confirmation",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/quiet-frame/rollback-confirmation.html",
+      "screenshot_path": "previews/quiet-frame/rollback-confirmation.png",
+      "contract_ids": [
+        "contract-rollback-confirmation",
+        "contract-quiet-frame"
+      ],
+      "component_ids": [
+        "action-list",
+        "editor-context-panel"
+      ],
+      "state_ids": [
+        "review-rollback"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "3ef2613333f201c6c24cfb4b0aeb00158f5b65195b8bbadd408a5afb2d82e11b"
+    },
+    {
+      "preview_id": "preview-signal-column-workspace-library-desktop",
+      "direction_id": "signal-column",
+      "surface_id": "workspace-library-desktop",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/workspace-library-desktop.html",
+      "screenshot_path": "previews/signal-column/workspace-library-desktop.png",
+      "contract_ids": [
+        "contract-workspace-library-desktop",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "app-rail",
+        "view-switcher",
+        "document-preview"
+      ],
+      "state_ids": [
+        "workspace-ready"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "cf23fe2610eea9ec678f4577f81958f77ded4616fc4f96af05a5c0a208d9b170"
+    },
+    {
+      "preview_id": "preview-signal-column-workspace-library-mobile",
+      "direction_id": "signal-column",
+      "surface_id": "workspace-library-mobile",
+      "mode": "mobile",
+      "viewport": "390x844",
+      "html_path": "previews/signal-column/workspace-library-mobile.html",
+      "screenshot_path": "previews/signal-column/workspace-library-mobile.png",
+      "contract_ids": [
+        "contract-workspace-library-mobile",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "view-switcher",
+        "document-preview"
+      ],
+      "state_ids": [
+        "mobile-library-unknown"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "745501383b3cbee3cce5a07a63b9cefaafe1b78e11b217f78e3427406681a3bb"
+    },
+    {
+      "preview_id": "preview-signal-column-project-studio-desktop",
+      "direction_id": "signal-column",
+      "surface_id": "project-studio-desktop",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/project-studio-desktop.html",
+      "screenshot_path": "previews/signal-column/project-studio-desktop.png",
+      "contract_ids": [
+        "contract-project-studio-desktop",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "app-rail",
+        "editor-context-panel",
+        "document-preview"
+      ],
+      "state_ids": [
+        "project-editing"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "f0d780138125c072240859d85c7ddb5fb03867d789d5e676149545e903c0134c"
+    },
+    {
+      "preview_id": "preview-signal-column-project-studio-compact",
+      "direction_id": "signal-column",
+      "surface_id": "project-studio-compact",
+      "mode": "compact",
+      "viewport": "1080x860",
+      "html_path": "previews/signal-column/project-studio-compact.html",
+      "screenshot_path": "previews/signal-column/project-studio-compact.png",
+      "contract_ids": [
+        "contract-project-studio-compact",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "editor-context-panel",
+        "document-preview"
+      ],
+      "state_ids": [
+        "project-selected"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "6d353f2830f5ea1e7f8b0659f7af53a5e8cd8a38ca4d0d0a711b67ab0e8c17ae"
+    },
+    {
+      "preview_id": "preview-signal-column-review-evidence",
+      "direction_id": "signal-column",
+      "surface_id": "review-evidence",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/review-evidence.html",
+      "screenshot_path": "previews/signal-column/review-evidence.png",
+      "contract_ids": [
+        "contract-review-evidence",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "app-rail",
+        "action-list",
+        "editor-context-panel"
+      ],
+      "state_ids": [
+        "review-ready"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "cdb89aa168c768914ff180c4f904deaf56e7ff1bb7066c4008d9eb1db092b65a"
+    },
+    {
+      "preview_id": "preview-signal-column-quick-create",
+      "direction_id": "signal-column",
+      "surface_id": "quick-create",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/quick-create.html",
+      "screenshot_path": "previews/signal-column/quick-create.png",
+      "contract_ids": [
+        "contract-quick-create",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "insert-palette",
+        "command-search"
+      ],
+      "state_ids": [
+        "style-gallery-open"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "94d4e2daf6ba6d03a86fb62ffe55706f166cdf505acf54c67df0f6e1140968d3"
+    },
+    {
+      "preview_id": "preview-signal-column-command-overlay",
+      "direction_id": "signal-column",
+      "surface_id": "command-overlay",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/command-overlay.html",
+      "screenshot_path": "previews/signal-column/command-overlay.png",
+      "contract_ids": [
+        "contract-command-overlay",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "command-search",
+        "action-list"
+      ],
+      "state_ids": [
+        "command-search-open"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "a1398be800512fb5e9c1c4b87183f63693b012ef4bddd49f9acb75919d172131"
+    },
+    {
+      "preview_id": "preview-signal-column-dialog",
+      "direction_id": "signal-column",
+      "surface_id": "dialog",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/dialog.html",
+      "screenshot_path": "previews/signal-column/dialog.png",
+      "contract_ids": [
+        "contract-dialog",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "action-list",
+        "editor-context-panel"
+      ],
+      "state_ids": [
+        "review-rollback"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "761b6fb4a00dfe1b0ad4e5d0ad1106a3830c5fa878257e4f23abfe437c82ed55"
+    },
+    {
+      "preview_id": "preview-signal-column-navigation-sheet",
+      "direction_id": "signal-column",
+      "surface_id": "navigation-sheet",
+      "mode": "mobile",
+      "viewport": "390x844",
+      "html_path": "previews/signal-column/navigation-sheet.html",
+      "screenshot_path": "previews/signal-column/navigation-sheet.png",
+      "contract_ids": [
+        "contract-navigation-sheet",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "app-rail",
+        "view-switcher"
+      ],
+      "state_ids": [
+        "mobile-library-unknown"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "1fc7ca56436442f9c00ae3898b9620bdac4139f5ec5adf9704c6a09f04757b08"
+    },
+    {
+      "preview_id": "preview-signal-column-inspector-sheet",
+      "direction_id": "signal-column",
+      "surface_id": "inspector-sheet",
+      "mode": "mobile",
+      "viewport": "390x844",
+      "html_path": "previews/signal-column/inspector-sheet.html",
+      "screenshot_path": "previews/signal-column/inspector-sheet.png",
+      "contract_ids": [
+        "contract-inspector-sheet",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "editor-context-panel",
+        "preference-section"
+      ],
+      "state_ids": [
+        "mobile-inspector-unknown"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "23b5fea881b15cde167354abb67ca96df8d66bf6582db506d8dd8c91c15a7cb2"
+    },
+    {
+      "preview_id": "preview-signal-column-empty-state",
+      "direction_id": "signal-column",
+      "surface_id": "empty-state",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/empty-state.html",
+      "screenshot_path": "previews/signal-column/empty-state.png",
+      "contract_ids": [
+        "contract-empty-state",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "app-rail",
+        "empty-state"
+      ],
+      "state_ids": [
+        "workspace-empty"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "9dc93b8ba8a8d090f8f4363357749998caeea6f0bb7a17a46b75025d35d3cada"
+    },
+    {
+      "preview_id": "preview-signal-column-loading-state",
+      "direction_id": "signal-column",
+      "surface_id": "loading-state",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/loading-state.html",
+      "screenshot_path": "previews/signal-column/loading-state.png",
+      "contract_ids": [
+        "contract-loading-state",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "app-rail",
+        "document-preview"
+      ],
+      "state_ids": [
+        "workspace-loading"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "62798d18f42309c45fe7b8addfeb7df5c492d622b82339aae17ab9f4968bec10"
+    },
+    {
+      "preview_id": "preview-signal-column-blocking-conflict",
+      "direction_id": "signal-column",
+      "surface_id": "blocking-conflict",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/blocking-conflict.html",
+      "screenshot_path": "previews/signal-column/blocking-conflict.png",
+      "contract_ids": [
+        "contract-blocking-conflict",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "action-list",
+        "editor-context-panel"
+      ],
+      "state_ids": [
+        "project-conflict"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "4a7633770b39d628fa52b26a7243a40caad2a5bf09c526db093a4f798ac03f55"
+    },
+    {
+      "preview_id": "preview-signal-column-rollback-confirmation",
+      "direction_id": "signal-column",
+      "surface_id": "rollback-confirmation",
+      "mode": "desktop",
+      "viewport": "1440x900",
+      "html_path": "previews/signal-column/rollback-confirmation.html",
+      "screenshot_path": "previews/signal-column/rollback-confirmation.png",
+      "contract_ids": [
+        "contract-rollback-confirmation",
+        "contract-signal-column"
+      ],
+      "component_ids": [
+        "action-list",
+        "editor-context-panel"
+      ],
+      "state_ids": [
+        "review-rollback"
+      ],
+      "provenance_layers": {
+        "source_derived": [
+          "hierarchy",
+          "density",
+          "panel relationship"
+        ],
+        "craftsos_required": [
+          "evidence traceability",
+          "human review gate",
+          "reversible recovery"
+        ]
+      },
+      "source_neutral": true,
+      "status": "pass",
+      "sha256": "139d6035289d126d6235914151383feeb303a5b1d633be27897b18c168b7297c"
+    }
+  ],
+  "status": "pass"
+}

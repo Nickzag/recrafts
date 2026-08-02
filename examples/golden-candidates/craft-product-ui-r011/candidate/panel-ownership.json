@@ -1,0 +1,77 @@
+{
+  "version": "r011.1.0",
+  "rules": [
+    {
+      "id": "panel-editor-context",
+      "summary": "Insert、Format、Style、Info 属于当前编辑器上下文",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-panel-editor-context"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "panel-review-actions",
+      "summary": "审阅动作归属于文档信息面板，不改变全局导航",
+      "scope": "review-and-evidence",
+      "status": "observed",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-panel-review-actions"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "panel-mobile-inspector",
+      "summary": "移动端 inspector 以 sheet 形式承接桌面上下文面板",
+      "scope": "inspector",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-panel-mobile-inspector"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>R-011 产品 UI 混合证据候选包｜Owner Review</title>
+  <style>
+    :root{font:15px/1.5 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#18212f;background:#f4f6f5}body{max-width:1120px;margin:0 auto;padding:40px 28px}header,section{background:#fff;border:1px solid #d8dfdc;border-radius:16px;padding:24px;margin-bottom:18px}h1{margin:0 0 8px;font-size:28px}h2{font-size:19px;margin:0 0 12px}.meta{color:#66717d}.notice{border-left:4px solid #286b63;padding:12px 16px;background:#eef4f2}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}.direction{border:1px solid #d8dfdc;border-radius:12px;padding:16px}.direction h3{margin:0 0 8px}.surface{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid #e7ecea}.surface a{color:#286b63;text-decoration:none}.surface a:hover{text-decoration:underline}.pill{display:inline-block;border:1px solid #9abcb5;color:#286b63;border-radius:99px;padding:3px 9px;font-size:12px}.questions li{margin:7px 0}code{background:#eef1f0;border-radius:5px;padding:2px 5px}
+  </style>
+</head>
+<body>
+  <header>
+    <span class="pill">R-011 · 待 Owner 视觉评审</span>
+    <h1>CraftsOS 产品 UI 混合证据候选包</h1>
+    <p class="meta">候选 Package <code>package-08c28e7765f0cabf</code> · Artifact Set <code>artifact-set-3d20de490db98156</code></p>
+    <div class="notice">本页只展示 source-neutral 预览。原始图片、官方 URL 捕获、Host Analysis、Scope Map 与验证报告均已放入同一候选包；当前状态为 <strong>awaiting-owner-review / decision pending</strong>，不能授权下游 UI 实施。</div>
+  </header>
+  <section>
+    <h2>评审范围</h2>
+    <ul class="questions">
+      <li>应用特征、信息层级、密度与导航是否适合作为 CraftsOS 基础。</li>
+      <li>编辑器/画布优先级、上下文面板关系、组件可区分性与跨界面一致性。</li>
+      <li>两个 Shell 方向的取舍：Quiet Frame 与 Signal Column。</li>
+      <li>Source Distance、营销/模板/用户内容隔离、移动端未知项是否需要修正。</li>
+    </ul>
+    <p class="meta">请在外部 Owner Decision Set 中填写：<code>PASS</code>、<code>PASS WITH CHANGES</code> 或 <code>REWORK</code>，并说明需要修正的方向和候选 Artifact。</p>
+  </section>
+  <section>
+    <h2>两套 Shell 与 14 个 Required Surfaces</h2>
+    <div class="grid">
+      <div class="direction"><h3>Quiet Frame</h3><p class="meta">低对比背景、安静边界、画布优先。</p>
+        <div class="surface"><span>Workspace Library desktop</span><a href="../previews/quiet-frame/workspace-library-desktop.png">PNG</a></div>
+        <div class="surface"><span>Workspace Library mobile</span><a href="../previews/quiet-frame/workspace-library-mobile.png">PNG</a></div>
+        <div class="surface"><span>Project Studio desktop</span><a href="../previews/quiet-frame/project-studio-desktop.png">PNG</a></div>
+        <div class="surface"><span>Project Studio compact</span><a href="../previews/quiet-frame/project-studio-compact.png">PNG</a></div>
+        <div class="surface"><span>Review &amp; Evidence</span><a href="../previews/quiet-frame/review-evidence.png">PNG</a></div>
+        <div class="surface"><span>Quick Create</span><a href="../previews/quiet-frame/quick-create.png">PNG</a></div>
+        <div class="surface"><span>Command/search overlay</span><a href="../previews/quiet-frame/command-overlay.png">PNG</a></div>
+        <div class="surface"><span>Dialog</span><a href="../previews/quiet-frame/dialog.png">PNG</a></div>
+        <div class="surface"><span>Navigation Sheet</span><a href="../previews/quiet-frame/navigation-sheet.png">PNG</a></div>
+        <div class="surface"><span>Inspector Sheet</span><a href="../previews/quiet-frame/inspector-sheet.png">PNG</a></div>
+        <div class="surface"><span>Empty / Loading</span><a href="../previews/quiet-frame/empty-state.png">Empty</a> · <a href="../previews/quiet-frame/loading-state.png">Loading</a></div>
+        <div class="surface"><span>Blocking / Rollback</span><a href="../previews/quiet-frame/blocking-conflict.png">Conflict</a> · <a href="../previews/quiet-frame/rollback-confirmation.png">Rollback</a></div>
+      </div>
+      <div class="direction"><h3>Signal Column</h3><p class="meta">更清晰的列分割、状态信号与任务面板。</p>
+        <div class="surface"><span>Workspace Library desktop</span><a href="../previews/signal-column/workspace-library-desktop.png">PNG</a></div>
+        <div class="surface"><span>Workspace Library mobile</span><a href="../previews/signal-column/workspace-library-mobile.png">PNG</a></div>
+        <div class="surface"><span>Project Studio desktop</span><a href="../previews/signal-column/project-studio-desktop.png">PNG</a></div>
+        <div class="surface"><span>Project Studio compact</span><a href="../previews/signal-column/project-studio-compact.png">PNG</a></div>
+        <div class="surface"><span>Review &amp; Evidence</span><a href="../previews/signal-column/review-evidence.png">PNG</a></div>
+        <div class="surface"><span>Quick Create</span><a href="../previews/signal-column/quick-create.png">PNG</a></div>
+        <div class="surface"><span>Command/search overlay</span><a href="../previews/signal-column/command-overlay.png">PNG</a></div>
+        <div class="surface"><span>Dialog</span><a href="../previews/signal-column/dialog.png">PNG</a></div>
+        <div class="surface"><span>Navigation Sheet</span><a href="../previews/signal-column/navigation-sheet.png">PNG</a></div>
+        <div class="surface"><span>Inspector Sheet</span><a href="../previews/signal-column/inspector-sheet.png">PNG</a></div>
+        <div class="surface"><span>Empty / Loading</span><a href="../previews/signal-column/empty-state.png">Empty</a> · <a href="../previews/signal-column/loading-state.png">Loading</a></div>
+        <div class="surface"><span>Blocking / Rollback</span><a href="../previews/signal-column/blocking-conflict.png">Conflict</a> · <a href="../previews/signal-column/rollback-confirmation.png">Rollback</a></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>验证状态</h2>
+    <p><span class="pill">PASS</span> Mixed-evidence Host Analysis · Scope · Grammar · State Matrix · Component Recurrence · Source Distance · Preview Coverage · No-Oracle · Artifact Set。</p>
+    <p class="meta">已采集 13 张本地产品截图与 3 个真实浏览器官方 URL 捕获。营销首页、模板/用户内容、平台工具栏均保留在 Scope Map 中并阻止进入应用 Core。移动端没有 Tier A 像素证据，相关契约保持 unknown/candidate。</p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "version": "r011.1.0",
+  "themes": [
+    {
+      "theme_id": "quiet-frame",
+      "surface": "#f4f6f5",
+      "accent": "#286b63"
+    },
+    {
+      "theme_id": "signal-column",
+      "surface": "#f6f4f8",
+      "accent": "#5d4fb1"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": "r011.1.0",
+  "conflicts": [
+    {
+      "conflict_id": "conflict-marketing-region",
+      "conflict_class": "scope",
+      "domain": "source-scope",
+      "severity": "low",
+      "impact": "官方首页与价格营销区域不可作为应用 Core",
+      "candidate_refs": [
+        "all-shell-directions"
+      ],
+      "evidence_refs": [
+        "ev-d3cc7c66cfe7acff"
+      ],
+      "status": "resolved"
+    },
+    {
+      "conflict_id": "conflict-mobile-evidence",
+      "conflict_class": "coverage",
+      "domain": "responsive",
+      "severity": "medium",
+      "impact": "移动端缺少 Tier A screenshot，相关契约保持 candidate/unknown",
+      "candidate_refs": [
+        "screen-mobile-library",
+        "screen-mobile-inspector"
+      ],
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "status": "accepted-risk"
+    }
+  ]
+}

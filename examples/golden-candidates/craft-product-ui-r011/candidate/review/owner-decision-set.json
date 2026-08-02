@@ -1,0 +1,10 @@
+{
+  "decision_set_id": null,
+  "reviewed_package_id": "package-08c28e7765f0cabf",
+  "verdict": "PENDING",
+  "decision_status": "pending",
+  "decision_source": null,
+  "confirmed_candidates": [],
+  "rejected_candidates": [],
+  "visual_review_required": true
+}

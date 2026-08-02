@@ -1,0 +1,17 @@
+{
+  "version": "r011.1.0",
+  "pairs": [
+    {
+      "foreground": "text.primary",
+      "background": "surface.app",
+      "ratio": 13.2,
+      "status": "pass"
+    },
+    {
+      "foreground": "action.accent",
+      "background": "surface.panel",
+      "ratio": 5.1,
+      "status": "pass"
+    }
+  ]
+}

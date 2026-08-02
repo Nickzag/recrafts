@@ -1,0 +1,16 @@
+{
+  "validator": "validate-no-oracle-product-ui",
+  "status": "pass",
+  "checked_inputs": [
+    "prepared mixed Evidence bundle",
+    "fresh official URL captures",
+    "host analysis fixture"
+  ],
+  "excluded_inputs": [
+    "downstream visual source captures",
+    "prior design contracts",
+    "prior review bundles"
+  ],
+  "expected_answer_paths": [],
+  "errors": []
+}

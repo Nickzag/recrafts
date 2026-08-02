@@ -1,0 +1,47 @@
+{
+  "version": "r011.1.0",
+  "roles": [
+    {
+      "role": "display",
+      "size": "28px",
+      "weight": 650
+    },
+    {
+      "role": "title",
+      "size": "20px",
+      "weight": 620
+    },
+    {
+      "role": "body",
+      "size": "15px",
+      "weight": 450
+    },
+    {
+      "role": "meta",
+      "size": "12px",
+      "weight": 500
+    },
+    {
+      "role": "label",
+      "size": "13px",
+      "weight": 580
+    }
+  ],
+  "pairing": [
+    "system-ui for interface labels",
+    "humanist sans for long-form canvas content"
+  ],
+  "truncation": [
+    "document titles use two-line clamp",
+    "metadata uses single-line ellipsis",
+    "never truncate destructive action labels"
+  ],
+  "density": [
+    "body line-height 1.55",
+    "compact controls target 32px minimum",
+    "touch targets target 44px on mobile"
+  ],
+  "evidence_refs": [
+    "ev-92adcc5c2690f045"
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "version": "r011.1.0",
+  "states": [
+    {
+      "state_id": "workspace-ready",
+      "screen_family": "workspace-library",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "工作区有文档且可切换视图",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-workspace-ready"
+      ]
+    },
+    {
+      "state_id": "workspace-empty",
+      "screen_family": "workspace-library",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "空工作区显示下一步引导",
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-workspace-empty"
+      ]
+    },
+    {
+      "state_id": "workspace-loading",
+      "screen_family": "workspace-library",
+      "status": "inferred",
+      "promotion": "candidate",
+      "summary": "加载时保留导航位置并给出反馈",
+      "evidence_refs": [
+        "ev-8613e908d310cc54"
+      ],
+      "claim_refs": [
+        "claim-workspace-loading"
+      ]
+    },
+    {
+      "state_id": "project-editing",
+      "screen_family": "project-studio",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "画布处于可编辑状态",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-project-editing"
+      ]
+    },
+    {
+      "state_id": "project-selected",
+      "screen_family": "project-studio",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "选区激活上下文面板",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-project-selected"
+      ]
+    },
+    {
+      "state_id": "project-conflict",
+      "screen_family": "project-studio",
+      "status": "inferred",
+      "promotion": "candidate",
+      "summary": "冲突阻断写入并显示原因",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-project-conflict"
+      ]
+    },
+    {
+      "state_id": "review-ready",
+      "screen_family": "review-evidence",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "审阅动作可见且未执行",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-review-ready"
+      ]
+    },
+    {
+      "state_id": "review-rollback",
+      "screen_family": "review-evidence",
+      "status": "inferred",
+      "promotion": "candidate",
+      "summary": "回滚确认后返回安全状态",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-review-rollback"
+      ]
+    },
+    {
+      "state_id": "style-gallery-open",
+      "screen_family": "style-gallery",
+      "status": "observed",
+      "promotion": "candidate",
+      "summary": "样式画廊覆盖当前表面",
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-style-gallery-open"
+      ]
+    },
+    {
+      "state_id": "command-search-open",
+      "screen_family": "command-search",
+      "status": "inferred",
+      "promotion": "candidate",
+      "summary": "命令搜索获得焦点",
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-command-search-open"
+      ]
+    },
+    {
+      "state_id": "mobile-library-unknown",
+      "screen_family": "workspace-library-mobile",
+      "status": "unknown",
+      "promotion": "candidate",
+      "summary": "移动端库仅有候选契约",
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-mobile-library-unknown"
+      ]
+    },
+    {
+      "state_id": "mobile-inspector-unknown",
+      "screen_family": "inspector-sheet",
+      "status": "unknown",
+      "promotion": "candidate",
+      "summary": "移动端 inspector 仅有候选契约",
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-mobile-inspector-unknown"
+      ]
+    }
+  ]
+}

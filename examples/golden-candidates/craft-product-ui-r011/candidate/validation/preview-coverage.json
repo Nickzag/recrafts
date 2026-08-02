@@ -1,0 +1,26 @@
+{
+  "validator": "validate-product-preview-coverage",
+  "status": "pass",
+  "required_surfaces": [
+    "workspace-library-desktop",
+    "workspace-library-mobile",
+    "project-studio-desktop",
+    "project-studio-compact",
+    "review-evidence",
+    "quick-create",
+    "command-overlay",
+    "dialog",
+    "navigation-sheet",
+    "inspector-sheet",
+    "empty-state",
+    "loading-state",
+    "blocking-conflict",
+    "rollback-confirmation"
+  ],
+  "required_directions": [
+    "quiet-frame",
+    "signal-column"
+  ],
+  "preview_count": 28,
+  "errors": []
+}

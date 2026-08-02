@@ -1,0 +1,14 @@
+{
+  "status": "reviewable",
+  "owner_visual_review": false,
+  "source_distance_gate": "pass",
+  "machine_contract_gate": "pending",
+  "accessibility_gate": "pass",
+  "responsive_gate": "candidate",
+  "production_validation": false,
+  "blockers": [
+    "project-owner-visual-review",
+    "shell-direction-selection",
+    "accepted-artifact-set"
+  ]
+}

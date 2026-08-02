@@ -1,0 +1,25 @@
+{
+  "prepared_analysis_id": "prepared-2427cc9ce3142173",
+  "source_count": 16,
+  "evidence_count": 2197,
+  "capture_status": "complete",
+  "source_hashes": {
+    "source-1": "e8bb920394a282dea38240f0e2b4439f0f121c62919f7da7c42f59c9ef2a43f4",
+    "source-2": "08896a012846a2484e21501d483b8c192a731823e1c65d8fc64c6cadc4a05f1a",
+    "source-3": "bade6c472a617757737583cbfce16b0d45cdd32889532f84b940cfd036131ada",
+    "source-4": "eef726a5100bfe70848b4060fad5bfdaf85cc507985e6691562a71087b6b51b8",
+    "source-5": "5b2c40000a041513b49d68ff9c75407355df47cbb5e0211c234e7c7c34111ec2",
+    "source-6": "9ae98b8fc16df22f47b42db6fccbc537271a70cf45ef068164320ad3a61ae2b1",
+    "source-7": "c243e5e5ced8dc824d89dd51455e235ca13351d114b1bd6cdabc5c04ea2ecd3b",
+    "source-8": "20febdcd610f8a1f141f5436995e51e8fd94968f2e4b5caa68c1b2d9bcba9597",
+    "source-9": "a23f1325ccf807b8607c7fb1f947cea75a51af214f3cf2705072e13acc3da97e",
+    "source-10": "a81dc9b3d01164fc3a9e6be5ad5b948b870b176181757ea4cfa8d8105063438b",
+    "source-11": "f44c2611f42eeb33b070ed85ab9aad28d873d53e5f61fd37f7ff042053a3907e",
+    "source-12": "c05d0b08d78e9cf7992b76128adcfb0b7beda80e466f5d8018dba0f334aeeda1",
+    "source-13": "2d387b58c1cb28ac8da43e5cab46c6b549ee92d29ffae8388457d235e896fafe",
+    "source-14": null,
+    "source-15": null,
+    "source-16": null
+  },
+  "evidence_class": "codex-session-fixture"
+}

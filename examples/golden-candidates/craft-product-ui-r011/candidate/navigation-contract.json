@@ -1,0 +1,77 @@
+{
+  "version": "r011.1.0",
+  "rules": [
+    {
+      "id": "nav-rail-to-workspace",
+      "summary": "应用轨道进入工作区，工作区导航维持当前选中上下文",
+      "scope": "navigation",
+      "status": "observed",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-nav-rail-to-workspace"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "nav-view-switcher",
+      "summary": "视图切换只改变内容排列，不改变当前项目和筛选上下文",
+      "scope": "navigation",
+      "status": "observed",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-nav-view-switcher"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "nav-mobile-sheet",
+      "summary": "移动端导航需折叠为可回退 sheet，待真实产品证据确认",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-nav-mobile-sheet"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

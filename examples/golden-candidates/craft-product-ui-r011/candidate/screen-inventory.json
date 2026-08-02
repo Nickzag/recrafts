@@ -1,0 +1,341 @@
+{
+  "version": "r011.1.0",
+  "screens": [
+    {
+      "id": "screen-workspace-library",
+      "summary": "Workspace Library desktop",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-screen-workspace-library"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-workspace-list",
+      "summary": "Workspace Library list view",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-screen-workspace-list"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-workspace-grid",
+      "summary": "Workspace Library grid view",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-screen-workspace-grid"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-project-studio",
+      "summary": "Project Studio desktop",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-screen-project-studio"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-editor-context",
+      "summary": "Project Studio context panel",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-screen-editor-context"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-style-gallery",
+      "summary": "Style Gallery overlay",
+      "scope": "overlay",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-screen-style-gallery"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-review-evidence",
+      "summary": "Review & Evidence",
+      "scope": "review-and-evidence",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-screen-review-evidence"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-settings",
+      "summary": "Appearance and Sound settings",
+      "scope": "system-feedback",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-screen-settings"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-quick-create",
+      "summary": "Quick Create",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-screen-quick-create"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-command-search",
+      "summary": "Command/search overlay",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-screen-command-search"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-empty",
+      "summary": "Empty Shared with Me",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-screen-empty"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-loading",
+      "summary": "Loading state",
+      "scope": "system-feedback",
+      "status": "inferred",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-8613e908d310cc54"
+      ],
+      "claim_refs": [
+        "claim-screen-loading"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-mobile-library",
+      "summary": "Workspace Library mobile",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-screen-mobile-library"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-mobile-inspector",
+      "summary": "Inspector sheet mobile",
+      "scope": "inspector",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-screen-mobile-inspector"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

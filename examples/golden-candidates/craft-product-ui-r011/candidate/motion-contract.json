@@ -1,0 +1,53 @@
+{
+  "version": "r011.1.0",
+  "rules": [
+    {
+      "id": "motion-panel",
+      "summary": "上下文面板使用短距离淡入与位移，避免打断编辑",
+      "scope": "inspector",
+      "status": "inferred",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-motion-panel"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "motion-overlay",
+      "summary": "浮层从触发点附近进入并可逆退出",
+      "scope": "overlay",
+      "status": "inferred",
+      "confidence": 0.58,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-motion-overlay"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "version": "r011.1.0",
+  "surfaces": [
+    {
+      "id": "surface-workspace-library",
+      "summary": "Workspace Library 由轨道、工作区导航、工具行和文档表面构成",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-surface-workspace-library"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "surface-project-studio",
+      "summary": "Project Studio 由编辑画布与可选上下文面板构成",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-surface-project-studio"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "surface-review-evidence",
+      "summary": "Review & Evidence 面承载审阅动作和来源摘要",
+      "scope": "review-and-evidence",
+      "status": "observed",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-surface-review-evidence"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "surface-overlay-layer",
+      "summary": "Overlay 层覆盖当前表面但保留背景上下文",
+      "scope": "overlay",
+      "status": "observed",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-surface-overlay-layer"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "surface-mobile-sheet",
+      "summary": "移动端抽屉与导航 sheet 仅作为候选契约，缺少 Tier A 像素证据",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.42,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-surface-mobile-sheet"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

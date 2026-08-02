@@ -1,0 +1,77 @@
+{
+  "version": "r011.1.0",
+  "rules": [
+    {
+      "id": "interaction-open-context",
+      "summary": "选择文档或区块后打开上下文面板",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-interaction-open-context"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "interaction-command-search",
+      "summary": "命令搜索通过快捷键打开并支持 Escape 恢复",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-interaction-command-search"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "interaction-confirm-risk",
+      "summary": "删除、回滚和冲突解决需要显式确认",
+      "scope": "system-feedback",
+      "status": "candidate",
+      "confidence": 0.65,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-interaction-confirm-risk"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

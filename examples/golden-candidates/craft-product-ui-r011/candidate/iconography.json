@@ -1,0 +1,17 @@
+{
+  "version": "r011.1.0",
+  "grid": "20px optical grid",
+  "stroke_fill": "1.5px outline with filled active state",
+  "optical_size": "16px controls / 20px navigation",
+  "active_inactive": "accent active, muted inactive",
+  "roles": [
+    "navigation",
+    "editing",
+    "status",
+    "recovery"
+  ],
+  "source_policy": "Use neutral open icon vocabulary; never copy product glyph silhouettes or logo marks",
+  "evidence_refs": [
+    "ev-9c7a134b9f919592"
+  ]
+}

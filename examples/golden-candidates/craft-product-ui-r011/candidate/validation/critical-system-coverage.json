@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "required_dimensions": [
+    "application chrome",
+    "surface",
+    "text",
+    "border",
+    "spacing",
+    "radius",
+    "typography",
+    "navigation",
+    "editor",
+    "states"
+  ],
+  "note": "R-011 product UI contract coverage; not CraftsOS implementation evidence"
+}

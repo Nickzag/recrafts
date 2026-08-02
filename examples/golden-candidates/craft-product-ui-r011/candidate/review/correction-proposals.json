@@ -1,0 +1,19 @@
+{
+  "package_id": "package-08c28e7765f0cabf",
+  "proposals": [
+    {
+      "proposal_id": "proposal-shell-selection",
+      "question": "选择哪一个 Shell 方向进入下一次修正？",
+      "options": [
+        "quiet-frame",
+        "signal-column"
+      ],
+      "status": "pending"
+    },
+    {
+      "proposal_id": "proposal-mobile-contract",
+      "question": "移动端行为目前仅有候选推断，是否接受为 CraftsOS 约束扩展？",
+      "status": "pending"
+    }
+  ]
+}

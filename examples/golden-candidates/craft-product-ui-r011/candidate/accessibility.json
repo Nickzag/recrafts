@@ -1,0 +1,34 @@
+{
+  "version": "r011.1.0",
+  "pairs": [
+    {
+      "foreground": "text.primary",
+      "background": "surface.app",
+      "ratio": 13.2,
+      "status": "pass"
+    },
+    {
+      "foreground": "action.accent",
+      "background": "surface.panel",
+      "ratio": 5.1,
+      "status": "pass"
+    }
+  ],
+  "keyboard": [
+    "all visible controls reachable by Tab",
+    "Escape closes overlays and sheets",
+    "destructive actions require confirmation"
+  ],
+  "focus": [
+    "visible 2px focus ring",
+    "focus remains within modal until dismissed",
+    "restore focus to trigger"
+  ],
+  "reduced_motion": [
+    "disable non-essential panel motion",
+    "preserve state change indication with opacity/border"
+  ],
+  "evidence_refs": [
+    "ev-92adcc5c2690f045"
+  ]
+}

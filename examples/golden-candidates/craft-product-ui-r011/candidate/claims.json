@@ -1,0 +1,1217 @@
+{
+  "version": "r011.1.0",
+  "claims": [
+    {
+      "claim_id": "claim-visual-observation-obs-shell-rail-1",
+      "claim_type": "visual-observation",
+      "value": "持久左侧应用轨道承载工作区级导航与视图入口",
+      "status": "observed-claim",
+      "scope": "application-chrome",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-workspace-grouping-2",
+      "claim_type": "visual-observation",
+      "value": "文档列表按工作区与时间分组，内容区保持高密度但有清晰层级",
+      "status": "observed-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-view-switch-3",
+      "claim_type": "visual-observation",
+      "value": "列表与网格视图通过紧凑切换器互换，信息架构不随视图改变",
+      "status": "corroborated-claim",
+      "scope": "navigation",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-editor-canvas-4",
+      "claim_type": "visual-observation",
+      "value": "编辑画布拥有最高视觉优先级，工具与上下文操作围绕当前选择展开",
+      "status": "observed-claim",
+      "scope": "canvas-or-document-content",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-context-panel-5",
+      "claim_type": "visual-observation",
+      "value": "右侧上下文面板随编辑任务出现，包含插入、格式、样式和信息分组",
+      "status": "observed-claim",
+      "scope": "inspector",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-progressive-disclosure-6",
+      "claim_type": "visual-observation",
+      "value": "复杂设置通过分段面板与抽屉逐层展开，避免把全部控制同时铺开",
+      "status": "corroborated-claim",
+      "scope": "inspector",
+      "confidence": 0.89,
+      "evidence_refs": [
+        "ev-312511e2aebf02d8"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-overlay-command-7",
+      "claim_type": "visual-observation",
+      "value": "覆盖层用于样式选择、命令搜索和快速创建，保留当前任务上下文",
+      "status": "observed-claim",
+      "scope": "overlay",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-review-actions-8",
+      "claim_type": "visual-observation",
+      "value": "审阅、分享和删除等高影响操作集中在信息面板并需要明确确认",
+      "status": "observed-claim",
+      "scope": "review-and-evidence",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-content-boundary-9",
+      "claim_type": "visual-observation",
+      "value": "模板缩略图与用户内容只作为内容样本，不成为应用全局视觉规则",
+      "status": "observed-claim",
+      "scope": "template-content",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-95868ab46650868e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-settings-controls-10",
+      "claim_type": "visual-observation",
+      "value": "偏好设置以分组 section 呈现主题、强调色和声音等系统反馈控制",
+      "status": "observed-claim",
+      "scope": "system-feedback",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-empty-state-11",
+      "claim_type": "visual-observation",
+      "value": "空工作区使用单一任务引导，避免空白画布缺少下一步",
+      "status": "observed-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-visual-observation-obs-official-feature-language-12",
+      "claim_type": "visual-observation",
+      "value": "官方教程支持编辑器、模板、快捷动作等能力的公开叙述，但不覆盖内部实现",
+      "status": "corroborated-claim",
+      "scope": "editor-chrome",
+      "confidence": 0.74,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-shell-1",
+      "claim_type": "application-grammar",
+      "value": "应用轨道固定在工作区外层，内容表面不承担全局导航职责",
+      "status": "corroborated-claim",
+      "scope": "application-chrome",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-nav-hierarchy-2",
+      "claim_type": "application-grammar",
+      "value": "工作区、项目、文档三级层级通过缩进与分组表达，不用颜色单独承担层级",
+      "status": "observed-claim",
+      "scope": "navigation",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-content-first-3",
+      "claim_type": "application-grammar",
+      "value": "编辑内容优先于工具装饰，工具只围绕当前任务显示",
+      "status": "observed-claim",
+      "scope": "canvas-or-document-content",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-panel-persistence-4",
+      "claim_type": "application-grammar",
+      "value": "上下文面板由选择和任务触发，关闭后不遮挡画布",
+      "status": "observed-claim",
+      "scope": "inspector",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-inspector-ownership-5",
+      "claim_type": "application-grammar",
+      "value": "样式、信息和操作归属于当前文档或选区，不能漂移成全局面板",
+      "status": "corroborated-claim",
+      "scope": "inspector",
+      "confidence": 0.87,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-canvas-primacy-6",
+      "claim_type": "application-grammar",
+      "value": "画布保持最大连续面积与最高文字对比，支持长内容扫描",
+      "status": "observed-claim",
+      "scope": "canvas-or-document-content",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-command-recovery-7",
+      "claim_type": "application-grammar",
+      "value": "搜索和命令入口支持键盘优先并允许从中断状态恢复",
+      "status": "inferred-claim",
+      "scope": "overlay",
+      "confidence": 0.73,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-selection-8",
+      "claim_type": "application-grammar",
+      "value": "选择态用轻量表面和焦点边界表达，避免重色填充覆盖内容",
+      "status": "observed-claim",
+      "scope": "editor-chrome",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-progressive-disclosure-9",
+      "claim_type": "application-grammar",
+      "value": "高级选项通过折叠、抽屉或二级弹层渐进披露",
+      "status": "corroborated-claim",
+      "scope": "inspector",
+      "confidence": 0.84,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-recovery-10",
+      "claim_type": "application-grammar",
+      "value": "冲突、失败和回滚都显示原因、影响与可逆动作",
+      "status": "inferred-claim",
+      "scope": "system-feedback",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-application-grammar-grammar-review-evidence-11",
+      "claim_type": "application-grammar",
+      "value": "证据与审阅状态独立成面，来源和决策不混入营销内容",
+      "status": "inferred-claim",
+      "scope": "review-and-evidence",
+      "confidence": 0.66,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-surface-topology-surface-workspace-library-1",
+      "claim_type": "surface-topology",
+      "value": "Workspace Library 由轨道、工作区导航、工具行和文档表面构成",
+      "status": "observed-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-surface-topology-surface-project-studio-2",
+      "claim_type": "surface-topology",
+      "value": "Project Studio 由编辑画布与可选上下文面板构成",
+      "status": "observed-claim",
+      "scope": "canvas-or-document-content",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-surface-topology-surface-review-evidence-3",
+      "claim_type": "surface-topology",
+      "value": "Review & Evidence 面承载审阅动作和来源摘要",
+      "status": "observed-claim",
+      "scope": "review-and-evidence",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-surface-topology-surface-overlay-layer-4",
+      "claim_type": "surface-topology",
+      "value": "Overlay 层覆盖当前表面但保留背景上下文",
+      "status": "observed-claim",
+      "scope": "overlay",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-surface-topology-surface-mobile-sheet-5",
+      "claim_type": "surface-topology",
+      "value": "移动端抽屉与导航 sheet 仅作为候选契约，缺少 Tier A 像素证据",
+      "status": "unknown-claim",
+      "scope": "navigation",
+      "confidence": 0.42,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-workspace-library-1",
+      "claim_type": "screen-inventory",
+      "value": "Workspace Library desktop",
+      "status": "observed-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-workspace-list-2",
+      "claim_type": "screen-inventory",
+      "value": "Workspace Library list view",
+      "status": "observed-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-workspace-grid-3",
+      "claim_type": "screen-inventory",
+      "value": "Workspace Library grid view",
+      "status": "observed-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-project-studio-4",
+      "claim_type": "screen-inventory",
+      "value": "Project Studio desktop",
+      "status": "observed-claim",
+      "scope": "canvas-or-document-content",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-editor-context-5",
+      "claim_type": "screen-inventory",
+      "value": "Project Studio context panel",
+      "status": "observed-claim",
+      "scope": "inspector",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-style-gallery-6",
+      "claim_type": "screen-inventory",
+      "value": "Style Gallery overlay",
+      "status": "observed-claim",
+      "scope": "overlay",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-review-evidence-7",
+      "claim_type": "screen-inventory",
+      "value": "Review & Evidence",
+      "status": "observed-claim",
+      "scope": "review-and-evidence",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-settings-8",
+      "claim_type": "screen-inventory",
+      "value": "Appearance and Sound settings",
+      "status": "observed-claim",
+      "scope": "system-feedback",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-quick-create-9",
+      "claim_type": "screen-inventory",
+      "value": "Quick Create",
+      "status": "inferred-claim",
+      "scope": "overlay",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-command-search-10",
+      "claim_type": "screen-inventory",
+      "value": "Command/search overlay",
+      "status": "inferred-claim",
+      "scope": "overlay",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-empty-11",
+      "claim_type": "screen-inventory",
+      "value": "Empty Shared with Me",
+      "status": "observed-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-loading-12",
+      "claim_type": "screen-inventory",
+      "value": "Loading state",
+      "status": "inferred-claim",
+      "scope": "system-feedback",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-8613e908d310cc54"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-mobile-library-13",
+      "claim_type": "screen-inventory",
+      "value": "Workspace Library mobile",
+      "status": "unknown-claim",
+      "scope": "navigation",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-screen-inventory-screen-mobile-inspector-14",
+      "claim_type": "screen-inventory",
+      "value": "Inspector sheet mobile",
+      "status": "unknown-claim",
+      "scope": "inspector",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-app-rail-1",
+      "claim_type": "component-contract",
+      "value": "应用轨道",
+      "status": "inferred-claim",
+      "scope": "application-chrome",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-view-switcher-2",
+      "claim_type": "component-contract",
+      "value": "视图切换器",
+      "status": "inferred-claim",
+      "scope": "navigation",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-document-preview-3",
+      "claim_type": "component-contract",
+      "value": "文档预览单元",
+      "status": "inferred-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-editor-context-panel-4",
+      "claim_type": "component-contract",
+      "value": "编辑器上下文面板",
+      "status": "inferred-claim",
+      "scope": "inspector",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-insert-palette-5",
+      "claim_type": "component-contract",
+      "value": "插入面板",
+      "status": "inferred-claim",
+      "scope": "overlay",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-style-gallery-6",
+      "claim_type": "component-contract",
+      "value": "样式画廊",
+      "status": "inferred-claim",
+      "scope": "overlay",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-preference-section-7",
+      "claim_type": "component-contract",
+      "value": "偏好设置分组",
+      "status": "inferred-claim",
+      "scope": "system-feedback",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-empty-state-8",
+      "claim_type": "component-contract",
+      "value": "空状态引导",
+      "status": "inferred-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-action-list-9",
+      "claim_type": "component-contract",
+      "value": "审阅动作列表",
+      "status": "inferred-claim",
+      "scope": "review-and-evidence",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-component-contract-command-search-10",
+      "claim_type": "component-contract",
+      "value": "命令搜索",
+      "status": "inferred-claim",
+      "scope": "overlay",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-1",
+      "claim_type": "token-candidate",
+      "value": "#f4f6f5",
+      "status": "inferred-claim",
+      "scope": "application-chrome",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-2",
+      "claim_type": "token-candidate",
+      "value": "#ffffff",
+      "status": "inferred-claim",
+      "scope": "inspector",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-3",
+      "claim_type": "token-candidate",
+      "value": "#eef1f0",
+      "status": "inferred-claim",
+      "scope": "workspace-shell",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-4",
+      "claim_type": "token-candidate",
+      "value": "#18212f",
+      "status": "inferred-claim",
+      "scope": "canvas-or-document-content",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-5",
+      "claim_type": "token-candidate",
+      "value": "#5e6875",
+      "status": "inferred-claim",
+      "scope": "workspace-shell",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-6",
+      "claim_type": "token-candidate",
+      "value": "#d8dfdc",
+      "status": "inferred-claim",
+      "scope": "application-chrome",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-7",
+      "claim_type": "token-candidate",
+      "value": "#286b63",
+      "status": "inferred-claim",
+      "scope": "application-chrome",
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-8",
+      "claim_type": "token-candidate",
+      "value": "#5b77d4",
+      "status": "inferred-claim",
+      "scope": "application-chrome",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-9",
+      "claim_type": "token-candidate",
+      "value": "#dfe9ff",
+      "status": "inferred-claim",
+      "scope": "editor-chrome",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-10",
+      "claim_type": "token-candidate",
+      "value": "20px",
+      "status": "inferred-claim",
+      "scope": "inspector",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-11",
+      "claim_type": "token-candidate",
+      "value": "12px",
+      "status": "inferred-claim",
+      "scope": "workspace-shell",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-token-candidate-undefined-12",
+      "claim_type": "token-candidate",
+      "value": "15px/1.55",
+      "status": "inferred-claim",
+      "scope": "canvas-or-document-content",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-interaction-contract-interaction-open-context-1",
+      "claim_type": "interaction-contract",
+      "value": "选择文档或区块后打开上下文面板",
+      "status": "observed-claim",
+      "scope": "inspector",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-interaction-contract-interaction-command-search-2",
+      "claim_type": "interaction-contract",
+      "value": "命令搜索通过快捷键打开并支持 Escape 恢复",
+      "status": "inferred-claim",
+      "scope": "overlay",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-interaction-contract-interaction-confirm-risk-3",
+      "claim_type": "interaction-contract",
+      "value": "删除、回滚和冲突解决需要显式确认",
+      "status": "inferred-claim",
+      "scope": "system-feedback",
+      "confidence": 0.65,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-motion-contract-motion-panel-1",
+      "claim_type": "motion-contract",
+      "value": "上下文面板使用短距离淡入与位移，避免打断编辑",
+      "status": "inferred-claim",
+      "scope": "inspector",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-motion-contract-motion-overlay-2",
+      "claim_type": "motion-contract",
+      "value": "浮层从触发点附近进入并可逆退出",
+      "status": "inferred-claim",
+      "scope": "overlay",
+      "confidence": 0.58,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-responsive-contract-responsive-library-1",
+      "claim_type": "responsive-contract",
+      "value": "桌面文档表面在窄宽度下保持列表优先",
+      "status": "observed-claim",
+      "scope": "workspace-shell",
+      "confidence": 0.78,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-responsive-contract-responsive-navigation-sheet-2",
+      "claim_type": "responsive-contract",
+      "value": "移动端将左轨道折叠为导航 sheet，待产品证据确认",
+      "status": "unknown-claim",
+      "scope": "navigation",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    },
+    {
+      "claim_id": "claim-responsive-contract-responsive-inspector-sheet-3",
+      "claim_type": "responsive-contract",
+      "value": "移动端 inspector 使用 sheet 并保持当前选区",
+      "status": "unknown-claim",
+      "scope": "inspector",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "host_identity": {
+        "agent": "Codex",
+        "engine": "gpt-5",
+        "vision_capability": true
+      },
+      "analysis_id": "product-analysis-374910b48951e9de"
+    }
+  ]
+}

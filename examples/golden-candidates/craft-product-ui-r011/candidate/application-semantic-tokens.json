@@ -1,0 +1,305 @@
+{
+  "version": "r011.1.0",
+  "tokens": [
+    {
+      "token_id": "surface.app",
+      "domain": "color",
+      "role": "应用背景",
+      "scope": "application-chrome",
+      "status": "portable",
+      "value": "#f4f6f5",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-surface.app"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "将低饱和浅色背景转为不依赖品牌的 neutral surface",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "surface.panel",
+      "domain": "color",
+      "role": "面板背景",
+      "scope": "inspector",
+      "status": "portable",
+      "value": "#ffffff",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-surface.panel"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "保留高亮面板层级并替换原始品牌色",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "surface.subtle",
+      "domain": "color",
+      "role": "弱化表面",
+      "scope": "workspace-shell",
+      "status": "portable",
+      "value": "#eef1f0",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-surface.subtle"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "从分组和行间层级抽象为语义 surface",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "text.primary",
+      "domain": "color",
+      "role": "主文字",
+      "scope": "canvas-or-document-content",
+      "status": "portable",
+      "value": "#18212f",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-text.primary"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "保持高对比文字比例，避免复制产品色板",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "text.secondary",
+      "domain": "color",
+      "role": "次文字",
+      "scope": "workspace-shell",
+      "status": "portable",
+      "value": "#5e6875",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-text.secondary"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "将元信息层级转为可访问的 muted text",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "border.subtle",
+      "domain": "color",
+      "role": "细边框",
+      "scope": "application-chrome",
+      "status": "portable",
+      "value": "#d8dfdc",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-border.subtle"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "以低对比边界替代截图像素值",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "action.accent",
+      "domain": "color",
+      "role": "主动作",
+      "scope": "application-chrome",
+      "status": "portable",
+      "value": "#286b63",
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-action.accent"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "从强调色角色抽象为 CraftsOS-neutral teal，不复制品牌标记",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "action.focus",
+      "domain": "color",
+      "role": "焦点环",
+      "scope": "application-chrome",
+      "status": "portable",
+      "value": "#5b77d4",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-action.focus"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "将选择边界转为独立 focus role",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "selection.surface",
+      "domain": "color",
+      "role": "选择表面",
+      "scope": "editor-chrome",
+      "status": "portable",
+      "value": "#dfe9ff",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-selection.surface"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "降低原始选中态饱和度并保持文字可读",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "space.panel-gutter",
+      "domain": "spacing",
+      "role": "面板间距",
+      "scope": "inspector",
+      "status": "candidate",
+      "value": "20px",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-space.panel-gutter"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "以 recurring panel gutter 生成语义尺寸",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "radius.surface",
+      "domain": "shape",
+      "role": "表面圆角",
+      "scope": "workspace-shell",
+      "status": "candidate",
+      "value": "12px",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-radius.surface"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "从多表面圆角趋势抽象，不复刻单一截图半径",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "type.body",
+      "domain": "typography",
+      "role": "正文",
+      "scope": "canvas-or-document-content",
+      "status": "portable",
+      "value": "15px/1.55",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-type.body"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "保持正文密度与行高比例，使用系统无衬线栈",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "version": "r011.1.0",
+  "observations": [
+    {
+      "id": "obs-shell-rail",
+      "summary": "持久左侧应用轨道承载工作区级导航与视图入口",
+      "scope": "application-chrome",
+      "status": "observed",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-obs-shell-rail"
+      ],
+      "cross_screen_recurrence_count": 5,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-workspace-grouping",
+      "summary": "文档列表按工作区与时间分组，内容区保持高密度但有清晰层级",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-obs-workspace-grouping"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-view-switch",
+      "summary": "列表与网格视图通过紧凑切换器互换，信息架构不随视图改变",
+      "scope": "navigation",
+      "status": "corroborated",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-obs-view-switch"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-editor-canvas",
+      "summary": "编辑画布拥有最高视觉优先级，工具与上下文操作围绕当前选择展开",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-obs-editor-canvas"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-context-panel",
+      "summary": "右侧上下文面板随编辑任务出现，包含插入、格式、样式和信息分组",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-obs-context-panel"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-progressive-disclosure",
+      "summary": "复杂设置通过分段面板与抽屉逐层展开，避免把全部控制同时铺开",
+      "scope": "inspector",
+      "status": "corroborated",
+      "confidence": 0.89,
+      "evidence_refs": [
+        "ev-312511e2aebf02d8"
+      ],
+      "claim_refs": [
+        "claim-obs-progressive-disclosure"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-overlay-command",
+      "summary": "覆盖层用于样式选择、命令搜索和快速创建，保留当前任务上下文",
+      "scope": "overlay",
+      "status": "observed",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-obs-overlay-command"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-review-actions",
+      "summary": "审阅、分享和删除等高影响操作集中在信息面板并需要明确确认",
+      "scope": "review-and-evidence",
+      "status": "observed",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-obs-review-actions"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-content-boundary",
+      "summary": "模板缩略图与用户内容只作为内容样本，不成为应用全局视觉规则",
+      "scope": "template-content",
+      "status": "observed",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-95868ab46650868e"
+      ],
+      "claim_refs": [
+        "claim-obs-content-boundary"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-settings-controls",
+      "summary": "偏好设置以分组 section 呈现主题、强调色和声音等系统反馈控制",
+      "scope": "system-feedback",
+      "status": "observed",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-obs-settings-controls"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-empty-state",
+      "summary": "空工作区使用单一任务引导，避免空白画布缺少下一步",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-obs-empty-state"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-official-feature-language",
+      "summary": "官方教程支持编辑器、模板、快捷动作等能力的公开叙述，但不覆盖内部实现",
+      "scope": "editor-chrome",
+      "status": "corroborated",
+      "confidence": 0.74,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-obs-official-feature-language"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ]
+}

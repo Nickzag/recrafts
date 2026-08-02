@@ -1,0 +1,3771 @@
+{
+  "schema_version": "r011.1.0",
+  "input_profile": "product-ui-mixed-evidence",
+  "prepared_analysis_id": "prepared-2427cc9ce3142173",
+  "execution": {
+    "host_agent": "Codex",
+    "engine": "gpt-5",
+    "vision_capability": true,
+    "performed_at": "2026-08-02T03:10:13.702Z",
+    "evidence_class": "codex-session-fixture"
+  },
+  "sources": [
+    {
+      "source_id": "source-1",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3574x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "workspace-shell",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "regions": [
+        {
+          "region_id": "source-1-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-9c7a134b9f919592"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-2",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "workspace-shell",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "regions": [
+        {
+          "region_id": "source-2-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-78838e2043651085"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-3",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "workspace-shell",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "regions": [
+        {
+          "region_id": "source-3-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-059a7ad47452be71"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-4",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "editor-chrome",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "regions": [
+        {
+          "region_id": "source-4-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "editor-chrome",
+          "confidence": 0.94,
+          "evidence_refs": [
+            "ev-92adcc5c2690f045"
+          ],
+          "canonical_promotion_blocked": false
+        },
+        {
+          "region_id": "source-4-platform-toolbar",
+          "classification": "platform-chrome",
+          "scope": "platform-chrome",
+          "confidence": 0.97,
+          "evidence_refs": [
+            "ev-92adcc5c2690f045"
+          ],
+          "canonical_promotion_blocked": true
+        }
+      ]
+    },
+    {
+      "source_id": "source-5",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "editor-chrome",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "regions": [
+        {
+          "region_id": "source-5-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "editor-chrome",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-b548d4fd17843d57"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-6",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "inspector",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-312511e2aebf02d8"
+      ],
+      "regions": [
+        {
+          "region_id": "source-6-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "inspector",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-312511e2aebf02d8"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-7",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "overlay",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "regions": [
+        {
+          "region_id": "source-7-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "overlay",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-997b1018771aef13"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-8",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "review-and-evidence",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "regions": [
+        {
+          "region_id": "source-8-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "review-and-evidence",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-8e2720fb78f32d0e"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-9",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "workspace-shell",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-95868ab46650868e"
+      ],
+      "regions": [
+        {
+          "region_id": "source-9-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.91,
+          "evidence_refs": [
+            "ev-95868ab46650868e"
+          ],
+          "canonical_promotion_blocked": false
+        },
+        {
+          "region_id": "source-9-template-gallery",
+          "classification": "template-content",
+          "scope": "template-content",
+          "confidence": 0.96,
+          "evidence_refs": [
+            "ev-95868ab46650868e"
+          ],
+          "canonical_promotion_blocked": true
+        }
+      ]
+    },
+    {
+      "source_id": "source-10",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "system-feedback",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "regions": [
+        {
+          "region_id": "source-10-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "system-feedback",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-322a3b4ac9bfc84b"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-11",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "overlay",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-fdb03f5dd09f05e6"
+      ],
+      "regions": [
+        {
+          "region_id": "source-11-dialog",
+          "classification": "canonical-product-ui",
+          "scope": "overlay",
+          "confidence": 0.89,
+          "evidence_refs": [
+            "ev-fdb03f5dd09f05e6"
+          ],
+          "canonical_promotion_blocked": false
+        },
+        {
+          "region_id": "source-11-marketing-modal",
+          "classification": "marketing-surface",
+          "scope": "marketing-brand",
+          "confidence": 0.99,
+          "evidence_refs": [
+            "ev-fdb03f5dd09f05e6"
+          ],
+          "canonical_promotion_blocked": true
+        }
+      ]
+    },
+    {
+      "source_id": "source-12",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "canvas-or-document-content",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-8756c07a68612f23"
+      ],
+      "regions": [
+        {
+          "region_id": "source-12-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "canvas-or-document-content",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-8756c07a68612f23"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-13",
+      "source_role": "product-app-screenshot",
+      "authority": "tier-a",
+      "platform": "macOS desktop",
+      "viewport": "3566x2240",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "workspace-shell",
+      "evidence_classes": [
+        "app-screen",
+        "app-screen-region",
+        "ui-component-instance",
+        "content-density-measurement"
+      ],
+      "classification": "canonical-product-ui",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "regions": [
+        {
+          "region_id": "source-13-app-shell",
+          "classification": "canonical-product-ui",
+          "scope": "workspace-shell",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "ev-e09d6e18315a9e58"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-14",
+      "source_role": "official-product-web",
+      "authority": "tier-c",
+      "platform": "Chromium 149.0.7827.55",
+      "viewport": "1440x900 capture",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "marketing-brand",
+      "evidence_classes": [
+        "tutorial-keyframe",
+        "interaction-affordance",
+        "dom-node",
+        "capture-metadata"
+      ],
+      "classification": "marketing-surface",
+      "confidence": 0.78,
+      "evidence_refs": [
+        "ev-d3cc7c66cfe7acff"
+      ],
+      "regions": [
+        {
+          "region_id": "source-14-public-surface",
+          "classification": "marketing-surface",
+          "scope": "marketing-brand",
+          "confidence": 0.78,
+          "evidence_refs": [
+            "ev-d3cc7c66cfe7acff"
+          ],
+          "canonical_promotion_blocked": true
+        }
+      ]
+    },
+    {
+      "source_id": "source-15",
+      "source_role": "official-interface-tutorial",
+      "authority": "tier-b",
+      "platform": "Chromium 149.0.7827.55",
+      "viewport": "1440x900 capture",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "editor-chrome",
+      "evidence_classes": [
+        "tutorial-keyframe",
+        "interaction-affordance",
+        "dom-node",
+        "capture-metadata"
+      ],
+      "classification": "official-interface",
+      "confidence": 0.78,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "regions": [
+        {
+          "region_id": "source-15-public-surface",
+          "classification": "official-interface",
+          "scope": "editor-chrome",
+          "confidence": 0.78,
+          "evidence_refs": [
+            "ev-284023afe76f6ce4"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    },
+    {
+      "source_id": "source-16",
+      "source_role": "official-help-documentation",
+      "authority": "tier-b",
+      "platform": "Chromium 149.0.7827.55",
+      "viewport": "1440x900 capture",
+      "product_version": null,
+      "freshness": "current",
+      "scope": "navigation",
+      "evidence_classes": [
+        "tutorial-keyframe",
+        "interaction-affordance",
+        "dom-node",
+        "capture-metadata"
+      ],
+      "classification": "official-interface",
+      "confidence": 0.78,
+      "evidence_refs": [
+        "ev-8613e908d310cc54"
+      ],
+      "regions": [
+        {
+          "region_id": "source-16-public-surface",
+          "classification": "official-interface",
+          "scope": "navigation",
+          "confidence": 0.78,
+          "evidence_refs": [
+            "ev-8613e908d310cc54"
+          ],
+          "canonical_promotion_blocked": false
+        }
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "obs-shell-rail",
+      "summary": "持久左侧应用轨道承载工作区级导航与视图入口",
+      "scope": "application-chrome",
+      "status": "observed",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-obs-shell-rail"
+      ],
+      "cross_screen_recurrence_count": 5,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-workspace-grouping",
+      "summary": "文档列表按工作区与时间分组，内容区保持高密度但有清晰层级",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-obs-workspace-grouping"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-view-switch",
+      "summary": "列表与网格视图通过紧凑切换器互换，信息架构不随视图改变",
+      "scope": "navigation",
+      "status": "corroborated",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-obs-view-switch"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-editor-canvas",
+      "summary": "编辑画布拥有最高视觉优先级，工具与上下文操作围绕当前选择展开",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.99,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-obs-editor-canvas"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-context-panel",
+      "summary": "右侧上下文面板随编辑任务出现，包含插入、格式、样式和信息分组",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-obs-context-panel"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-progressive-disclosure",
+      "summary": "复杂设置通过分段面板与抽屉逐层展开，避免把全部控制同时铺开",
+      "scope": "inspector",
+      "status": "corroborated",
+      "confidence": 0.89,
+      "evidence_refs": [
+        "ev-312511e2aebf02d8"
+      ],
+      "claim_refs": [
+        "claim-obs-progressive-disclosure"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-overlay-command",
+      "summary": "覆盖层用于样式选择、命令搜索和快速创建，保留当前任务上下文",
+      "scope": "overlay",
+      "status": "observed",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-obs-overlay-command"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-review-actions",
+      "summary": "审阅、分享和删除等高影响操作集中在信息面板并需要明确确认",
+      "scope": "review-and-evidence",
+      "status": "observed",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-obs-review-actions"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-content-boundary",
+      "summary": "模板缩略图与用户内容只作为内容样本，不成为应用全局视觉规则",
+      "scope": "template-content",
+      "status": "observed",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-95868ab46650868e"
+      ],
+      "claim_refs": [
+        "claim-obs-content-boundary"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-settings-controls",
+      "summary": "偏好设置以分组 section 呈现主题、强调色和声音等系统反馈控制",
+      "scope": "system-feedback",
+      "status": "observed",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-obs-settings-controls"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-empty-state",
+      "summary": "空工作区使用单一任务引导，避免空白画布缺少下一步",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-obs-empty-state"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "obs-official-feature-language",
+      "summary": "官方教程支持编辑器、模板、快捷动作等能力的公开叙述，但不覆盖内部实现",
+      "scope": "editor-chrome",
+      "status": "corroborated",
+      "confidence": 0.74,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-obs-official-feature-language"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "application_grammar": [
+    {
+      "id": "grammar-shell",
+      "summary": "应用轨道固定在工作区外层，内容表面不承担全局导航职责",
+      "scope": "application-chrome",
+      "status": "corroborated",
+      "confidence": 0.93,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-shell"
+      ],
+      "cross_screen_recurrence_count": 5,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-nav-hierarchy",
+      "summary": "工作区、项目、文档三级层级通过缩进与分组表达，不用颜色单独承担层级",
+      "scope": "navigation",
+      "status": "observed",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-nav-hierarchy"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-content-first",
+      "summary": "编辑内容优先于工具装饰，工具只围绕当前任务显示",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-content-first"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-panel-persistence",
+      "summary": "上下文面板由选择和任务触发，关闭后不遮挡画布",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-panel-persistence"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-inspector-ownership",
+      "summary": "样式、信息和操作归属于当前文档或选区，不能漂移成全局面板",
+      "scope": "inspector",
+      "status": "corroborated",
+      "confidence": 0.87,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-inspector-ownership"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-canvas-primacy",
+      "summary": "画布保持最大连续面积与最高文字对比，支持长内容扫描",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-canvas-primacy"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-command-recovery",
+      "summary": "搜索和命令入口支持键盘优先并允许从中断状态恢复",
+      "scope": "overlay",
+      "status": "inferred",
+      "confidence": 0.73,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-command-recovery"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": false
+    },
+    {
+      "id": "grammar-selection",
+      "summary": "选择态用轻量表面和焦点边界表达，避免重色填充覆盖内容",
+      "scope": "editor-chrome",
+      "status": "observed",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-selection"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-progressive-disclosure",
+      "summary": "高级选项通过折叠、抽屉或二级弹层渐进披露",
+      "scope": "inspector",
+      "status": "corroborated",
+      "confidence": 0.84,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-grammar-progressive-disclosure"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": true
+    },
+    {
+      "id": "grammar-recovery",
+      "summary": "冲突、失败和回滚都显示原因、影响与可逆动作",
+      "scope": "system-feedback",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-grammar-recovery"
+      ],
+      "cross_screen_recurrence_count": 1,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": false
+    },
+    {
+      "id": "grammar-review-evidence",
+      "summary": "证据与审阅状态独立成面，来源和决策不混入营销内容",
+      "scope": "review-and-evidence",
+      "status": "candidate",
+      "confidence": 0.66,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-grammar-review-evidence"
+      ],
+      "cross_screen_recurrence_count": 1,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "core": false
+    }
+  ],
+  "surface_topology": [
+    {
+      "id": "surface-workspace-library",
+      "summary": "Workspace Library 由轨道、工作区导航、工具行和文档表面构成",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.97,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-surface-workspace-library"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "surface-project-studio",
+      "summary": "Project Studio 由编辑画布与可选上下文面板构成",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.98,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-surface-project-studio"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "surface-review-evidence",
+      "summary": "Review & Evidence 面承载审阅动作和来源摘要",
+      "scope": "review-and-evidence",
+      "status": "observed",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-surface-review-evidence"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "surface-overlay-layer",
+      "summary": "Overlay 层覆盖当前表面但保留背景上下文",
+      "scope": "overlay",
+      "status": "observed",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-surface-overlay-layer"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "surface-mobile-sheet",
+      "summary": "移动端抽屉与导航 sheet 仅作为候选契约，缺少 Tier A 像素证据",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.42,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-surface-mobile-sheet"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "screen_inventory": [
+    {
+      "id": "screen-workspace-library",
+      "summary": "Workspace Library desktop",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-screen-workspace-library"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-workspace-list",
+      "summary": "Workspace Library list view",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-screen-workspace-list"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-workspace-grid",
+      "summary": "Workspace Library grid view",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-screen-workspace-grid"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-project-studio",
+      "summary": "Project Studio desktop",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-screen-project-studio"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-editor-context",
+      "summary": "Project Studio context panel",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-screen-editor-context"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-style-gallery",
+      "summary": "Style Gallery overlay",
+      "scope": "overlay",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-screen-style-gallery"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-review-evidence",
+      "summary": "Review & Evidence",
+      "scope": "review-and-evidence",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-screen-review-evidence"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-settings",
+      "summary": "Appearance and Sound settings",
+      "scope": "system-feedback",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-screen-settings"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-quick-create",
+      "summary": "Quick Create",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-screen-quick-create"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-command-search",
+      "summary": "Command/search overlay",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-screen-command-search"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-empty",
+      "summary": "Empty Shared with Me",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.91,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-screen-empty"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-loading",
+      "summary": "Loading state",
+      "scope": "system-feedback",
+      "status": "inferred",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-8613e908d310cc54"
+      ],
+      "claim_refs": [
+        "claim-screen-loading"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-mobile-library",
+      "summary": "Workspace Library mobile",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-screen-mobile-library"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "screen-mobile-inspector",
+      "summary": "Inspector sheet mobile",
+      "scope": "inspector",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-screen-mobile-inspector"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "navigation_contract": [
+    {
+      "id": "nav-rail-to-workspace",
+      "summary": "应用轨道进入工作区，工作区导航维持当前选中上下文",
+      "scope": "navigation",
+      "status": "observed",
+      "confidence": 0.95,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-nav-rail-to-workspace"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "nav-view-switcher",
+      "summary": "视图切换只改变内容排列，不改变当前项目和筛选上下文",
+      "scope": "navigation",
+      "status": "observed",
+      "confidence": 0.92,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-nav-view-switcher"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "nav-mobile-sheet",
+      "summary": "移动端导航需折叠为可回退 sheet，待真实产品证据确认",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-nav-mobile-sheet"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "panel_ownership": [
+    {
+      "id": "panel-editor-context",
+      "summary": "Insert、Format、Style、Info 属于当前编辑器上下文",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-panel-editor-context"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "panel-review-actions",
+      "summary": "审阅动作归属于文档信息面板，不改变全局导航",
+      "scope": "review-and-evidence",
+      "status": "observed",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-panel-review-actions"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "panel-mobile-inspector",
+      "summary": "移动端 inspector 以 sheet 形式承接桌面上下文面板",
+      "scope": "inspector",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-panel-mobile-inspector"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "density_contract": [
+    {
+      "id": "density-library",
+      "summary": "列表行高度紧凑，分组标题和缩略图形成次级节奏",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.94,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-density-library"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "density-editor",
+      "summary": "编辑画布留白宽，工具密度集中在顶部与侧边",
+      "scope": "canvas-or-document-content",
+      "status": "observed",
+      "confidence": 0.96,
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-density-editor"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "density-overlay",
+      "summary": "浮层内容分区明确，选项行可扫描且不堆叠装饰",
+      "scope": "overlay",
+      "status": "observed",
+      "confidence": 0.86,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-density-overlay"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "density-mobile",
+      "summary": "移动端密度仅允许候选推断，必须以真实 viewport 验证",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-density-mobile"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "component_candidates": [
+    {
+      "id": "candidate-app-rail",
+      "summary": "应用轨道",
+      "scope": "application-chrome",
+      "status": "corroborated",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-candidate-app-rail"
+      ],
+      "cross_screen_recurrence_count": 5,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "app-rail",
+      "maturity": "core"
+    },
+    {
+      "id": "candidate-view-switcher",
+      "summary": "视图切换器",
+      "scope": "navigation",
+      "status": "corroborated",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-candidate-view-switcher"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "view-switcher",
+      "maturity": "core"
+    },
+    {
+      "id": "candidate-document-preview",
+      "summary": "文档预览单元",
+      "scope": "workspace-shell",
+      "status": "corroborated",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-candidate-document-preview"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "document-preview",
+      "maturity": "core"
+    },
+    {
+      "id": "candidate-editor-context-panel",
+      "summary": "编辑器上下文面板",
+      "scope": "inspector",
+      "status": "corroborated",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-candidate-editor-context-panel"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "editor-context-panel",
+      "maturity": "core"
+    },
+    {
+      "id": "candidate-insert-palette",
+      "summary": "插入面板",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-candidate-insert-palette"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "insert-palette",
+      "maturity": "candidate"
+    },
+    {
+      "id": "candidate-style-gallery",
+      "summary": "样式画廊",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-candidate-style-gallery"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "style-gallery",
+      "maturity": "candidate"
+    },
+    {
+      "id": "candidate-preference-section",
+      "summary": "偏好设置分组",
+      "scope": "system-feedback",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-candidate-preference-section"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "preference-section",
+      "maturity": "candidate"
+    },
+    {
+      "id": "candidate-empty-state",
+      "summary": "空状态引导",
+      "scope": "workspace-shell",
+      "status": "corroborated",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-candidate-empty-state"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "empty-state",
+      "maturity": "core"
+    },
+    {
+      "id": "candidate-action-list",
+      "summary": "审阅动作列表",
+      "scope": "review-and-evidence",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-candidate-action-list"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "action-list",
+      "maturity": "candidate"
+    },
+    {
+      "id": "candidate-command-search",
+      "summary": "命令搜索",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-candidate-command-search"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "command-search",
+      "maturity": "candidate"
+    }
+  ],
+  "component_contracts": [
+    {
+      "id": "app-rail",
+      "summary": "应用轨道",
+      "scope": "application-chrome",
+      "status": "core",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-app-rail"
+      ],
+      "cross_screen_recurrence_count": 5,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "app-rail",
+      "maturity": "core",
+      "purpose": "应用轨道",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "view-switcher",
+      "summary": "视图切换器",
+      "scope": "navigation",
+      "status": "core",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-view-switcher"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "view-switcher",
+      "maturity": "core",
+      "purpose": "视图切换器",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "document-preview",
+      "summary": "文档预览单元",
+      "scope": "workspace-shell",
+      "status": "core",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-document-preview"
+      ],
+      "cross_screen_recurrence_count": 4,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "document-preview",
+      "maturity": "core",
+      "purpose": "文档预览单元",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "editor-context-panel",
+      "summary": "编辑器上下文面板",
+      "scope": "inspector",
+      "status": "core",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-editor-context-panel"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "editor-context-panel",
+      "maturity": "core",
+      "purpose": "编辑器上下文面板",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "insert-palette",
+      "summary": "插入面板",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-insert-palette"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "insert-palette",
+      "maturity": "candidate",
+      "purpose": "插入面板",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "style-gallery",
+      "summary": "样式画廊",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-style-gallery"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "style-gallery",
+      "maturity": "candidate",
+      "purpose": "样式画廊",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "preference-section",
+      "summary": "偏好设置分组",
+      "scope": "system-feedback",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-preference-section"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "preference-section",
+      "maturity": "candidate",
+      "purpose": "偏好设置分组",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "empty-state",
+      "summary": "空状态引导",
+      "scope": "workspace-shell",
+      "status": "core",
+      "confidence": 0.88,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-empty-state"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "empty-state",
+      "maturity": "core",
+      "purpose": "空状态引导",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "action-list",
+      "summary": "审阅动作列表",
+      "scope": "review-and-evidence",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-action-list"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "action-list",
+      "maturity": "candidate",
+      "purpose": "审阅动作列表",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    },
+    {
+      "id": "command-search",
+      "summary": "命令搜索",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-command-search"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ],
+      "component_id": "command-search",
+      "maturity": "candidate",
+      "purpose": "命令搜索",
+      "anatomy": [
+        "label",
+        "leading affordance",
+        "content surface",
+        "state indicator"
+      ],
+      "variants": [
+        "default",
+        "selected",
+        "disabled"
+      ],
+      "states": [
+        "idle",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "interaction": "键盘与指针均可访问；高影响动作需要确认",
+      "keyboard_expectation": "Tab 顺序与可见层级一致",
+      "responsive_behavior": "桌面保持面板关系；移动端允许 sheet 化",
+      "content_constraints": "不承载品牌标志或营销文案",
+      "token_dependencies": [
+        "surface.app",
+        "surface.panel",
+        "text.primary",
+        "action.accent"
+      ]
+    }
+  ],
+  "component_recurrence": [
+    {
+      "component_id": "app-rail",
+      "screen_occurrences": [
+        "screen-occurrence-app-rail-1",
+        "screen-occurrence-app-rail-2",
+        "screen-occurrence-app-rail-3",
+        "screen-occurrence-app-rail-4",
+        "screen-occurrence-app-rail-5"
+      ],
+      "recurrence_count": 5,
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-app-rail"
+      ]
+    },
+    {
+      "component_id": "view-switcher",
+      "screen_occurrences": [
+        "screen-occurrence-view-switcher-1",
+        "screen-occurrence-view-switcher-2",
+        "screen-occurrence-view-switcher-3"
+      ],
+      "recurrence_count": 3,
+      "evidence_refs": [
+        "ev-059a7ad47452be71"
+      ],
+      "claim_refs": [
+        "claim-view-switcher"
+      ]
+    },
+    {
+      "component_id": "document-preview",
+      "screen_occurrences": [
+        "screen-occurrence-document-preview-1",
+        "screen-occurrence-document-preview-2",
+        "screen-occurrence-document-preview-3",
+        "screen-occurrence-document-preview-4"
+      ],
+      "recurrence_count": 4,
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-document-preview"
+      ]
+    },
+    {
+      "component_id": "editor-context-panel",
+      "screen_occurrences": [
+        "screen-occurrence-editor-context-panel-1",
+        "screen-occurrence-editor-context-panel-2",
+        "screen-occurrence-editor-context-panel-3"
+      ],
+      "recurrence_count": 3,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-editor-context-panel"
+      ]
+    },
+    {
+      "component_id": "insert-palette",
+      "screen_occurrences": [
+        "screen-occurrence-insert-palette-1",
+        "screen-occurrence-insert-palette-2"
+      ],
+      "recurrence_count": 2,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-insert-palette"
+      ]
+    },
+    {
+      "component_id": "style-gallery",
+      "screen_occurrences": [
+        "screen-occurrence-style-gallery-1",
+        "screen-occurrence-style-gallery-2"
+      ],
+      "recurrence_count": 2,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-style-gallery"
+      ]
+    },
+    {
+      "component_id": "preference-section",
+      "screen_occurrences": [
+        "screen-occurrence-preference-section-1",
+        "screen-occurrence-preference-section-2"
+      ],
+      "recurrence_count": 2,
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-preference-section"
+      ]
+    },
+    {
+      "component_id": "empty-state",
+      "screen_occurrences": [
+        "screen-occurrence-empty-state-1",
+        "screen-occurrence-empty-state-2"
+      ],
+      "recurrence_count": 2,
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-empty-state"
+      ]
+    },
+    {
+      "component_id": "action-list",
+      "screen_occurrences": [
+        "screen-occurrence-action-list-1",
+        "screen-occurrence-action-list-2"
+      ],
+      "recurrence_count": 2,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-action-list"
+      ]
+    },
+    {
+      "component_id": "command-search",
+      "screen_occurrences": [
+        "screen-occurrence-command-search-1",
+        "screen-occurrence-command-search-2"
+      ],
+      "recurrence_count": 2,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-command-search"
+      ]
+    }
+  ],
+  "tokens": [
+    {
+      "token_id": "surface.app",
+      "domain": "color",
+      "role": "应用背景",
+      "scope": "application-chrome",
+      "status": "portable",
+      "value": "#f4f6f5",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-surface.app"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "将低饱和浅色背景转为不依赖品牌的 neutral surface",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "surface.panel",
+      "domain": "color",
+      "role": "面板背景",
+      "scope": "inspector",
+      "status": "portable",
+      "value": "#ffffff",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-surface.panel"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "保留高亮面板层级并替换原始品牌色",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "surface.subtle",
+      "domain": "color",
+      "role": "弱化表面",
+      "scope": "workspace-shell",
+      "status": "portable",
+      "value": "#eef1f0",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-surface.subtle"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "从分组和行间层级抽象为语义 surface",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "text.primary",
+      "domain": "color",
+      "role": "主文字",
+      "scope": "canvas-or-document-content",
+      "status": "portable",
+      "value": "#18212f",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-text.primary"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "保持高对比文字比例，避免复制产品色板",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "text.secondary",
+      "domain": "color",
+      "role": "次文字",
+      "scope": "workspace-shell",
+      "status": "portable",
+      "value": "#5e6875",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-text.secondary"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "将元信息层级转为可访问的 muted text",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "border.subtle",
+      "domain": "color",
+      "role": "细边框",
+      "scope": "application-chrome",
+      "status": "portable",
+      "value": "#d8dfdc",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-border.subtle"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "以低对比边界替代截图像素值",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "action.accent",
+      "domain": "color",
+      "role": "主动作",
+      "scope": "application-chrome",
+      "status": "portable",
+      "value": "#286b63",
+      "evidence_refs": [
+        "ev-322a3b4ac9bfc84b"
+      ],
+      "claim_refs": [
+        "claim-action.accent"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "从强调色角色抽象为 CraftsOS-neutral teal，不复制品牌标记",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "action.focus",
+      "domain": "color",
+      "role": "焦点环",
+      "scope": "application-chrome",
+      "status": "portable",
+      "value": "#5b77d4",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-action.focus"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "将选择边界转为独立 focus role",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "selection.surface",
+      "domain": "color",
+      "role": "选择表面",
+      "scope": "editor-chrome",
+      "status": "portable",
+      "value": "#dfe9ff",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-selection.surface"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "降低原始选中态饱和度并保持文字可读",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "space.panel-gutter",
+      "domain": "spacing",
+      "role": "面板间距",
+      "scope": "inspector",
+      "status": "candidate",
+      "value": "20px",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-space.panel-gutter"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "以 recurring panel gutter 生成语义尺寸",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "radius.surface",
+      "domain": "shape",
+      "role": "表面圆角",
+      "scope": "workspace-shell",
+      "status": "candidate",
+      "value": "12px",
+      "evidence_refs": [
+        "ev-78838e2043651085"
+      ],
+      "claim_refs": [
+        "claim-radius.surface"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "从多表面圆角趋势抽象，不复刻单一截图半径",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    },
+    {
+      "token_id": "type.body",
+      "domain": "typography",
+      "role": "正文",
+      "scope": "canvas-or-document-content",
+      "status": "portable",
+      "value": "15px/1.55",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-type.body"
+      ],
+      "corroboration": "Portable semantic decision from recurring application evidence",
+      "transformation_record": "保持正文密度与行高比例，使用系统无衬线栈",
+      "contrast_result": {
+        "against": "surface.app",
+        "ratio": 4.8,
+        "status": "pass"
+      },
+      "usage_limits": [
+        "仅用于应用 UI 语义角色",
+        "不得用于用户内容或营销品牌区域"
+      ]
+    }
+  ],
+  "typography": {
+    "roles": [
+      {
+        "role": "display",
+        "size": "28px",
+        "weight": 650
+      },
+      {
+        "role": "title",
+        "size": "20px",
+        "weight": 620
+      },
+      {
+        "role": "body",
+        "size": "15px",
+        "weight": 450
+      },
+      {
+        "role": "meta",
+        "size": "12px",
+        "weight": 500
+      },
+      {
+        "role": "label",
+        "size": "13px",
+        "weight": 580
+      }
+    ],
+    "pairing": [
+      "system-ui for interface labels",
+      "humanist sans for long-form canvas content"
+    ],
+    "truncation": [
+      "document titles use two-line clamp",
+      "metadata uses single-line ellipsis",
+      "never truncate destructive action labels"
+    ],
+    "density": [
+      "body line-height 1.55",
+      "compact controls target 32px minimum",
+      "touch targets target 44px on mobile"
+    ],
+    "evidence_refs": [
+      "ev-92adcc5c2690f045"
+    ]
+  },
+  "iconography": {
+    "grid": "20px optical grid",
+    "stroke_fill": "1.5px outline with filled active state",
+    "optical_size": "16px controls / 20px navigation",
+    "active_inactive": "accent active, muted inactive",
+    "roles": [
+      "navigation",
+      "editing",
+      "status",
+      "recovery"
+    ],
+    "source_policy": "Use neutral open icon vocabulary; never copy product glyph silhouettes or logo marks",
+    "evidence_refs": [
+      "ev-9c7a134b9f919592"
+    ]
+  },
+  "interaction_contract": [
+    {
+      "id": "interaction-open-context",
+      "summary": "选择文档或区块后打开上下文面板",
+      "scope": "inspector",
+      "status": "observed",
+      "confidence": 0.9,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-interaction-open-context"
+      ],
+      "cross_screen_recurrence_count": 3,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "interaction-command-search",
+      "summary": "命令搜索通过快捷键打开并支持 Escape 恢复",
+      "scope": "overlay",
+      "status": "candidate",
+      "confidence": 0.68,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-interaction-command-search"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "interaction-confirm-risk",
+      "summary": "删除、回滚和冲突解决需要显式确认",
+      "scope": "system-feedback",
+      "status": "candidate",
+      "confidence": 0.65,
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-interaction-confirm-risk"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "motion_contract": [
+    {
+      "id": "motion-panel",
+      "summary": "上下文面板使用短距离淡入与位移，避免打断编辑",
+      "scope": "inspector",
+      "status": "inferred",
+      "confidence": 0.62,
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-motion-panel"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "motion-overlay",
+      "summary": "浮层从触发点附近进入并可逆退出",
+      "scope": "overlay",
+      "status": "inferred",
+      "confidence": 0.58,
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-motion-overlay"
+      ],
+      "cross_screen_recurrence_count": 2,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "responsive_contract": [
+    {
+      "id": "responsive-library",
+      "summary": "桌面文档表面在窄宽度下保持列表优先",
+      "scope": "workspace-shell",
+      "status": "observed",
+      "confidence": 0.78,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-responsive-library"
+      ],
+      "cross_screen_recurrence_count": 1,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "responsive-navigation-sheet",
+      "summary": "移动端将左轨道折叠为导航 sheet，待产品证据确认",
+      "scope": "navigation",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-responsive-navigation-sheet"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    },
+    {
+      "id": "responsive-inspector-sheet",
+      "summary": "移动端 inspector 使用 sheet 并保持当前选区",
+      "scope": "inspector",
+      "status": "unknown",
+      "confidence": 0.4,
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-responsive-inspector-sheet"
+      ],
+      "cross_screen_recurrence_count": 0,
+      "allowed_transformations": [
+        "preserve hierarchy",
+        "translate to semantic tokens",
+        "adapt to CraftsOS product constraints"
+      ],
+      "forbidden_generalizations": [
+        "do not copy brand marks",
+        "do not promote content or marketing regions",
+        "do not infer unseen behavior as observed"
+      ]
+    }
+  ],
+  "accessibility": {
+    "pairs": [
+      {
+        "foreground": "text.primary",
+        "background": "surface.app",
+        "ratio": 13.2,
+        "status": "pass"
+      },
+      {
+        "foreground": "action.accent",
+        "background": "surface.panel",
+        "ratio": 5.1,
+        "status": "pass"
+      }
+    ],
+    "keyboard": [
+      "all visible controls reachable by Tab",
+      "Escape closes overlays and sheets",
+      "destructive actions require confirmation"
+    ],
+    "focus": [
+      "visible 2px focus ring",
+      "focus remains within modal until dismissed",
+      "restore focus to trigger"
+    ],
+    "reduced_motion": [
+      "disable non-essential panel motion",
+      "preserve state change indication with opacity/border"
+    ],
+    "evidence_refs": [
+      "ev-92adcc5c2690f045"
+    ]
+  },
+  "state_matrix": [
+    {
+      "state_id": "workspace-ready",
+      "screen_family": "workspace-library",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "工作区有文档且可切换视图",
+      "evidence_refs": [
+        "ev-9c7a134b9f919592"
+      ],
+      "claim_refs": [
+        "claim-workspace-ready"
+      ]
+    },
+    {
+      "state_id": "workspace-empty",
+      "screen_family": "workspace-library",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "空工作区显示下一步引导",
+      "evidence_refs": [
+        "ev-e09d6e18315a9e58"
+      ],
+      "claim_refs": [
+        "claim-workspace-empty"
+      ]
+    },
+    {
+      "state_id": "workspace-loading",
+      "screen_family": "workspace-library",
+      "status": "inferred",
+      "promotion": "candidate",
+      "summary": "加载时保留导航位置并给出反馈",
+      "evidence_refs": [
+        "ev-8613e908d310cc54"
+      ],
+      "claim_refs": [
+        "claim-workspace-loading"
+      ]
+    },
+    {
+      "state_id": "project-editing",
+      "screen_family": "project-studio",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "画布处于可编辑状态",
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ],
+      "claim_refs": [
+        "claim-project-editing"
+      ]
+    },
+    {
+      "state_id": "project-selected",
+      "screen_family": "project-studio",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "选区激活上下文面板",
+      "evidence_refs": [
+        "ev-b548d4fd17843d57"
+      ],
+      "claim_refs": [
+        "claim-project-selected"
+      ]
+    },
+    {
+      "state_id": "project-conflict",
+      "screen_family": "project-studio",
+      "status": "inferred",
+      "promotion": "candidate",
+      "summary": "冲突阻断写入并显示原因",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-project-conflict"
+      ]
+    },
+    {
+      "state_id": "review-ready",
+      "screen_family": "review-evidence",
+      "status": "observed",
+      "promotion": "core",
+      "summary": "审阅动作可见且未执行",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-review-ready"
+      ]
+    },
+    {
+      "state_id": "review-rollback",
+      "screen_family": "review-evidence",
+      "status": "inferred",
+      "promotion": "candidate",
+      "summary": "回滚确认后返回安全状态",
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ],
+      "claim_refs": [
+        "claim-review-rollback"
+      ]
+    },
+    {
+      "state_id": "style-gallery-open",
+      "screen_family": "style-gallery",
+      "status": "observed",
+      "promotion": "candidate",
+      "summary": "样式画廊覆盖当前表面",
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-style-gallery-open"
+      ]
+    },
+    {
+      "state_id": "command-search-open",
+      "screen_family": "command-search",
+      "status": "inferred",
+      "promotion": "candidate",
+      "summary": "命令搜索获得焦点",
+      "evidence_refs": [
+        "ev-997b1018771aef13"
+      ],
+      "claim_refs": [
+        "claim-command-search-open"
+      ]
+    },
+    {
+      "state_id": "mobile-library-unknown",
+      "screen_family": "workspace-library-mobile",
+      "status": "unknown",
+      "promotion": "candidate",
+      "summary": "移动端库仅有候选契约",
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-mobile-library-unknown"
+      ]
+    },
+    {
+      "state_id": "mobile-inspector-unknown",
+      "screen_family": "inspector-sheet",
+      "status": "unknown",
+      "promotion": "candidate",
+      "summary": "移动端 inspector 仅有候选契约",
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "claim_refs": [
+        "claim-mobile-inspector-unknown"
+      ]
+    }
+  ],
+  "source_distance": {
+    "dimensions": [
+      {
+        "dimension_id": "exact-color-dependence",
+        "source_observation": "原始品牌色不作为实现输入",
+        "portable_decision": "采用 neutral semantic palette",
+        "difference": "中风险",
+        "risk": "中风险",
+        "evidence_refs": [
+          "ev-9c7a134b9f919592"
+        ],
+        "claim_refs": [
+          "claim-exact-color-dependence"
+        ]
+      },
+      {
+        "dimension_id": "icon-similarity",
+        "source_observation": "截图图标轮廓只用于 affordance 观察",
+        "portable_decision": "使用独立开源图标集合",
+        "difference": "低风险",
+        "risk": "低风险",
+        "evidence_refs": [
+          "ev-9c7a134b9f919592"
+        ],
+        "claim_refs": [
+          "claim-icon-similarity"
+        ]
+      },
+      {
+        "dimension_id": "panel-topology",
+        "source_observation": "保留编辑器与上下文面板关系",
+        "portable_decision": "改变面板分组和抽屉行为",
+        "difference": "中风险",
+        "risk": "中风险",
+        "evidence_refs": [
+          "ev-92adcc5c2690f045"
+        ],
+        "claim_refs": [
+          "claim-panel-topology"
+        ]
+      },
+      {
+        "dimension_id": "navigation-arrangement",
+        "source_observation": "观察到轨道和三级层级",
+        "portable_decision": "重新命名并加入 CraftsOS 工作区语义",
+        "difference": "低风险",
+        "risk": "低风险",
+        "evidence_refs": [
+          "ev-92adcc5c2690f045"
+        ],
+        "claim_refs": [
+          "claim-navigation-arrangement"
+        ]
+      },
+      {
+        "dimension_id": "corner-radius-signature",
+        "source_observation": "不提取单一品牌半径",
+        "portable_decision": "使用 8/12/16 语义 scale",
+        "difference": "低风险",
+        "risk": "低风险",
+        "evidence_refs": [
+          "ev-92adcc5c2690f045"
+        ],
+        "claim_refs": [
+          "claim-corner-radius-signature"
+        ]
+      },
+      {
+        "dimension_id": "toolbar-arrangement",
+        "source_observation": "工具按任务关系抽象",
+        "portable_decision": "引入 command/search 与 review affordance",
+        "difference": "中风险",
+        "risk": "中风险",
+        "evidence_refs": [
+          "ev-8e2720fb78f32d0e"
+        ],
+        "claim_refs": [
+          "claim-toolbar-arrangement"
+        ]
+      },
+      {
+        "dimension_id": "typographic-proportions",
+        "source_observation": "保留密度比例",
+        "portable_decision": "使用新的系统字体与尺寸 scale",
+        "difference": "低风险",
+        "risk": "低风险",
+        "evidence_refs": [
+          "ev-8e2720fb78f32d0e"
+        ],
+        "claim_refs": [
+          "claim-typographic-proportions"
+        ]
+      },
+      {
+        "dimension_id": "brand-marks",
+        "source_observation": "拒绝 logo、名称和营销标题",
+        "portable_decision": "仅使用 CraftsOS 中性命名",
+        "difference": "低风险",
+        "risk": "低风险",
+        "evidence_refs": [
+          "ev-8e2720fb78f32d0e"
+        ],
+        "claim_refs": [
+          "claim-brand-marks"
+        ]
+      },
+      {
+        "dimension_id": "component-combinations",
+        "source_observation": "抽取 recurring roles",
+        "portable_decision": "重组为可审计组件契约",
+        "difference": "中风险",
+        "risk": "中风险",
+        "evidence_refs": [
+          "ev-8e2720fb78f32d0e"
+        ],
+        "claim_refs": [
+          "claim-component-combinations"
+        ]
+      },
+      {
+        "dimension_id": "application-silhouette",
+        "source_observation": "保留内容优先轮廓",
+        "portable_decision": "加入证据、冲突和回滚系统面",
+        "difference": "中风险",
+        "risk": "中风险",
+        "evidence_refs": [
+          "ev-8e2720fb78f32d0e"
+        ],
+        "claim_refs": [
+          "claim-application-silhouette"
+        ]
+      }
+    ],
+    "topology_risk": "medium",
+    "motif_combination_risk": "low",
+    "differences": [
+      "brand-neutral naming",
+      "independent icon vocabulary",
+      "semantic token palette",
+      "new panel combinations",
+      "CraftsOS evidence and rollback surfaces",
+      "mobile behavior remains candidate until observed"
+    ],
+    "gate_status": "pass"
+  },
+  "conflicts": [
+    {
+      "conflict_id": "conflict-marketing-region",
+      "conflict_class": "scope",
+      "domain": "source-scope",
+      "severity": "low",
+      "impact": "官方首页与价格营销区域不可作为应用 Core",
+      "candidate_refs": [
+        "all-shell-directions"
+      ],
+      "evidence_refs": [
+        "ev-d3cc7c66cfe7acff"
+      ],
+      "status": "resolved"
+    },
+    {
+      "conflict_id": "conflict-mobile-evidence",
+      "conflict_class": "coverage",
+      "domain": "responsive",
+      "severity": "medium",
+      "impact": "移动端缺少 Tier A screenshot，相关契约保持 candidate/unknown",
+      "candidate_refs": [
+        "screen-mobile-library",
+        "screen-mobile-inspector"
+      ],
+      "evidence_refs": [
+        "ev-284023afe76f6ce4"
+      ],
+      "status": "accepted-risk"
+    }
+  ],
+  "shell_directions": [
+    {
+      "direction_id": "quiet-frame",
+      "name": "Quiet Frame",
+      "description": "低对比背景、安静边界和画布优先的中性 Shell；适合长时间编辑与审阅。",
+      "differences": [
+        "neutral canvas",
+        "muted rail",
+        "thin borders",
+        "single accent",
+        "content-first whitespace",
+        "CraftsOS review rail"
+      ],
+      "evidence_refs": [
+        "ev-92adcc5c2690f045"
+      ]
+    },
+    {
+      "direction_id": "signal-column",
+      "name": "Signal Column",
+      "description": "更清晰的列分割、可见状态信号和任务面板；适合操作密集的证据与冲突工作流。",
+      "differences": [
+        "stronger column separation",
+        "status signal stripe",
+        "task-oriented inspector",
+        "denser control rows",
+        "separate evidence column",
+        "reversible conflict actions"
+      ],
+      "evidence_refs": [
+        "ev-8e2720fb78f32d0e"
+      ]
+    }
+  ]
+}
