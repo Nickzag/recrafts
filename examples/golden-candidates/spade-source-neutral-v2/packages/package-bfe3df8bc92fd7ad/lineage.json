@@ -1,0 +1,19 @@
+{
+  "event_id": "lineage-2a135effe85af730",
+  "event_type": "accepted",
+  "package_id": "package-bfe3df8bc92fd7ad",
+  "parent_package_id": "package-c2a9b64984ab6d02",
+  "restored_from_package_id": null,
+  "correction_ids": [
+    "correction-r010-owner-pass-20260716",
+    "correction-r010b-metadata-finalization-20260716",
+    "correction-r010b-final-lineage-normalization-20260716"
+  ],
+  "decision_ids": [
+    "decision-r010-owner-pass-20260716",
+    "decision-r010b-independent-review-accept-20260716",
+    "decision-r010b-final-consistency-accept-20260716"
+  ],
+  "created_at": "2026-07-16T13:15:00+08:00",
+  "artifact_set_hash": "b1c485e714e11d49025cc9e9f7de0f17036bedc905aa8cbfa8e2379a181db26e"
+}

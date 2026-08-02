@@ -1,0 +1,9 @@
+{
+  "version":"3.1.0","schema_version":"3.1.0","capture_id":"capture-r010-spade-neutral-20260716","analysis_id":"analysis-r010-codex-gpt5-2348cc69-20260716","package_id":"package-91d1a8226792e35e","mode":"source-neutral-host-rerun","host_agent":"Codex","model":"GPT-5","vision_capability":true,"analysis_timestamp":"2026-07-16T09:16:58.000Z","owner_decision_set_id":null,"decision_status":"pending","decision_source":null,
+  "sources":[
+    {"source_id":"together-case-desktop","capture_id":"capture-together-desktop-8ef41ffeb83f","url":"https://together.agency/work/spade/?ref=rebrand","status":"complete","scope":"source-reference","portable_promotion":"blocked-shell-only"},
+    {"source_id":"together-case-mobile","capture_id":"capture-together-mobile-3afdd781d3bf","url":"https://together.agency/work/spade/?ref=rebrand","status":"complete","scope":"source-reference","portable_promotion":"blocked-shell-only"},
+    {"source_id":"brand-site-desktop","capture_id":"capture-spade-desktop-59140c400bdc","url":"https://spade.com/","status":"complete","scope":"source-reference","portable_promotion":"observation-only"},
+    {"source_id":"brand-site-mobile","capture_id":"capture-spade-mobile-16071303190c","url":"https://spade.com/","status":"complete","scope":"source-reference","portable_promotion":"observation-only"}
+  ]
+}

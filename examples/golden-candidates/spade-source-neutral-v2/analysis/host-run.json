@@ -1,0 +1,25 @@
+{
+  "analysis_id": "analysis-r010-codex-gpt5-2348cc69-20260716",
+  "host_agent": "Codex",
+  "execution_engine": "Codex desktop",
+  "model": "GPT-5",
+  "capabilities": ["vision", "browser", "files", "structured-output"],
+  "visual_pixel_inspection": true,
+  "prompt_file": "prompts/r010-source-neutral-host-analysis.md",
+  "prompt_sha256": "2348cc6994e5f78a721b3cbb66d3a99be29f6cf5928998c70fae6a5969a1b072",
+  "no_oracle_report_id": "no-oracle-12fd8eb3131f81d1",
+  "started_at": "2026-07-16T09:13:00.000Z",
+  "completed_at": "2026-07-16T09:16:58.000Z",
+  "input_count": 33,
+  "capture_ids": [
+    "capture-together-desktop-8ef41ffeb83f",
+    "capture-together-mobile-3afdd781d3bf",
+    "capture-spade-desktop-59140c400bdc",
+    "capture-spade-mobile-16071303190c"
+  ],
+  "limitations": [
+    "Visual analysis used captured initial and full-page states; hover and scroll-bound motion were not exhaustively sampled.",
+    "Source font names are observed, but redistribution and production licensing were not authorized.",
+    "Together full-page lazy media contains unloaded areas; DOM/CSS and visible case-study regions were retained as Evidence."
+  ]
+}

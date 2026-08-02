@@ -1,0 +1,26 @@
+{
+  "correction_id": "correction-r010b-final-lineage-normalization-20260716",
+  "base_package_id": "package-4192c75f3227ddb5",
+  "package_id": "package-42e863141911c07b",
+  "operations": [
+    {
+      "operation_id": "normalize-final-accepted-lineage",
+      "type": "finalize-accepted-metadata",
+      "target_id": "design.md",
+      "before": {
+        "status": "accepted"
+      },
+      "after": {
+        "delivery_readiness": "pilot-ready"
+      },
+      "evidence_refs": [
+        "ev-together-desktop-viewport",
+        "ev-spade-desktop-viewport"
+      ],
+      "claim_refs": [
+        "claim-shell-brand-separation"
+      ],
+      "reason": "Ensure historical correction and acceptance states appear only in the accepted history appendix."
+    }
+  ]
+}

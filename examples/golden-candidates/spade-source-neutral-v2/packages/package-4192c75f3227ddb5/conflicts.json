@@ -1,0 +1,26 @@
+{
+  "conflicts": [
+    {
+      "conflict_id": "conflict-owner-core-theme-review",
+      "conflict_class": "scope-conflict",
+      "domain": "visual-grammar",
+      "severity": "high",
+      "status": "resolved",
+      "impact": "Project owner must confirm shell/brand separation, Core promotions, selected preview theme and declared pilot limitations before acceptance.",
+      "candidate_refs": [
+        "grid.instrument"
+      ],
+      "evidence_refs": [
+        "ev-together-desktop-viewport",
+        "ev-spade-desktop-viewport"
+      ],
+      "resolution": {
+        "status": "resolved",
+        "verdict": "confirmed"
+      },
+      "resolver": "Nick",
+      "decision_id": "correction-r010-owner-pass-20260716",
+      "verdict": "confirmed"
+    }
+  ]
+}

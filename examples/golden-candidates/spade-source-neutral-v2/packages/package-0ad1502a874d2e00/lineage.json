@@ -1,0 +1,13 @@
+{
+  "event_id": "lineage-ba1d1b4b31e7c29b",
+  "event_type": "corrected",
+  "package_id": "package-0ad1502a874d2e00",
+  "parent_package_id": "package-91d1a8226792e35e",
+  "restored_from_package_id": null,
+  "correction_ids": [
+    "correction-r010-owner-pass-20260716"
+  ],
+  "decision_ids": [],
+  "created_at": "2026-07-16T12:00:00+08:00",
+  "artifact_set_hash": "a8c7b173742a03b9cacd6b3634067177acaad86eae73786984252bf0bfd666f6"
+}

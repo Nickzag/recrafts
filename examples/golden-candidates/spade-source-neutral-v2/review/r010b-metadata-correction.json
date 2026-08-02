@@ -1,0 +1,36 @@
+{
+  "correction_id": "correction-r010b-metadata-finalization-20260716",
+  "base_package_id": "package-c2a9b64984ab6d02",
+  "actor": "ChatGPT Independent Review",
+  "actor_role": "authorized-reviewer",
+  "created_at": "2026-07-16T13:00:00+08:00",
+  "reason": "R-010 final independent review requires a bounded accepted-package metadata and validation-authority consistency patch.",
+  "operations": [
+    {
+      "operation_id": "finalize-accepted-metadata",
+      "type": "finalize-accepted-metadata",
+      "target_id": "design.md",
+      "before": {
+        "status": "accepted"
+      },
+      "after": {
+        "delivery_readiness": "pilot-ready"
+      },
+      "evidence_refs": [
+        "ev-together-desktop-viewport",
+        "ev-spade-desktop-viewport"
+      ],
+      "claim_refs": [
+        "claim-shell-brand-separation"
+      ],
+      "reason": "Compose a self-consistent accepted header and package an authoritative PASS validation index without changing portable design contracts."
+    }
+  ],
+  "decision_context": {
+    "review": "R-010 Final Independent Review",
+    "verdict": "ACCEPT",
+    "delivery_readiness": "PILOT-READY",
+    "overall_maturity": 91,
+    "correction_class": "non-blocking-acceptance-packaging-consistency"
+  }
+}

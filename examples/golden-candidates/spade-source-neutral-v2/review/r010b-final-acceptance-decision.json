@@ -1,0 +1,12 @@
+{
+  "decision_id": "decision-r010b-final-consistency-accept-20260716",
+  "candidate_package_id": "package-42e863141911c07b",
+  "actor": "ChatGPT Independent Review",
+  "actor_role": "authorized-reviewer",
+  "verdict": "PASS_WITH_CHANGES",
+  "changes_completed": true,
+  "created_at": "2026-07-16T13:15:00+08:00",
+  "accepted_risks": [],
+  "resolved_conflicts": [],
+  "notes": "R-010B accepted metadata、validation authority 与历史 lineage 已完成最终一致性校验；继承 decision-r010-owner-pass-20260716。"
+}

@@ -1,0 +1,458 @@
+[
+  {
+    "selector": "#__next > div > header",
+    "tag": "header",
+    "role": null,
+    "text": "SolutionsCustomersCompanyDocsContact sales"
+  },
+  {
+    "selector": "#__next > div > header > div > div > a",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > header > div > div > nav",
+    "tag": "nav",
+    "role": null,
+    "text": "SolutionsCustomersCompanyDocs"
+  },
+  {
+    "selector": "#__next > div > header > div > div > nav > ul > li:nth-of-type(1) > div > button",
+    "tag": "button",
+    "role": null,
+    "text": "Solutions"
+  },
+  {
+    "selector": "#__next > div > header > div > div > nav > ul > li:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Customers"
+  },
+  {
+    "selector": "#__next > div > header > div > div > nav > ul > li:nth-of-type(3) > div > button",
+    "tag": "button",
+    "role": null,
+    "text": "Company"
+  },
+  {
+    "selector": "#__next > div > header > div > div > nav > ul > li:nth-of-type(4) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Docs"
+  },
+  {
+    "selector": "#__next > div > header > div > div > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "Contact sales"
+  },
+  {
+    "selector": "#__next > div > header > div > div > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > main",
+    "tag": "main",
+    "role": null,
+    "text": "The data & AI platform for modern financeSpade takes messy transaction data and turns it into structured, verified records — with AI agents that help you use it everywhere it matters. Contact salesEnriching billions of transactions for cate"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(1)",
+    "tag": "section",
+    "role": null,
+    "text": "The data & AI platform for modern financeSpade takes messy transaction data and turns it into structured, verified records — with AI agents that help you use it everywhere it matters. Contact sales"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(1) > div:nth-of-type(4) > div > div:nth-of-type(2) > h1",
+    "tag": "h1",
+    "role": null,
+    "text": "The data & AI platform for modern finance"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(1) > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Contact sales"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(2)",
+    "tag": "section",
+    "role": null,
+    "text": "Enriching billions of transactions for category-defining fintechs & Fortune 500 banks every month"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(3)",
+    "tag": "section",
+    "role": null,
+    "text": "Financial institutions process billions of transactions every day, but most of that data is hard to use.Spade enriches transaction data in real time, adding structure, accuracy, and intelligence at every layer."
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(4)",
+    "tag": "section",
+    "role": null,
+    "text": "Risk & AuthorizationMake every authorization smarterReturn enriched merchant and location data in under 50 milliseconds — helping teams make faster, more accurate authorization decisions. Learn moreP99 enrichment latency"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(4) > div > div > div:nth-of-type(1) > div:nth-of-type(1) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Make every authorization smarter"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(4) > div > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(5)",
+    "tag": "section",
+    "role": null,
+    "text": "Rewards & AttributionConnect every purchase to the right rewardGive marketing teams true merchant and location-level clarity, enabling targeted, meaningful programs without messy data or guesswork. Learn more"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(5) > div > div:nth-of-type(1) > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Connect every purchase to the right reward"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(5) > div > div:nth-of-type(1) > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(6)",
+    "tag": "section",
+    "role": null,
+    "text": "Analytics & AIBuild intelligence on solid dataProvide consistent merchant context across cards, transfers, and third party sources — powering personalized offers, new product features, and better cross-sell opportunities. Learn moreUser Exp"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(6) > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Build intelligence on solid data"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(6) > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(6) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Move disputes to the merchant"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(6) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7)",
+    "tag": "section",
+    "role": null,
+    "text": "Built for every layer of modern finance[fintechs]Infrastructure for innovationPower new products, rewards, and AI capabilities with a data foundation that scales.Learn more[Banks]Clarity at enterprise scaleUnify authorization, analytics, an"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Built for every layer of modern finance"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Infrastructure for innovation"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Clarity at enterprise scale"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "AI that learns from the truth"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Learn more"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Infrastructure for innovation"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Clarity at enterprise scale"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "AI that learns from the truth"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(7) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8)",
+    "tag": "section",
+    "role": null,
+    "text": "Proven across payments and beyondSee all case studies“Spade's granular merchant data allows us to deliver new and innovative rewards on the more than $5 billion in neighborhood spend happening on our platform.”Brandt Smallwood, PresidentRea"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(1) > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Proven across payments and beyond"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "See all case studies"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(2) > nav",
+    "tag": "nav",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(2) > nav > button:nth-of-type(1)",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(2) > nav > button:nth-of-type(2)",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(2) > nav > button:nth-of-type(3)",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "“Spade's granular merchant data allows us to deliver new and innovative rewards on the more than $5 billion in neighborhood spend happening on our platform.”Brandt Smallwood, PresidentRead case study"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "“We needed real-time controls that didn't create false declines. Spade's merchant and location data lets us approve legitimate fuel purchases while blocking misuse, and helps save our customers tens of thousands of dollars.”Daniel Simon, Co"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "“When we can correctly identify the type of spend that’s happening at a company, we can set up rules to automatically categorize those transactions. This alone can save hours for our customers each month”Anish Bhayani, Engineering ManagerRe"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(8) > div > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "See all case studies"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(9)",
+    "tag": "section",
+    "role": null,
+    "text": "[Developers]Integrate Spade’s API in minutes. No complex setup, no custom configuration — just high-performance enrichment that scales automatically.Explore our docs"
+  },
+  {
+    "selector": "#__next > div > main > section:nth-of-type(9) > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Explore our docs"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(1) > div:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Contact sales"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav",
+    "tag": "nav",
+    "role": null,
+    "text": "Use CasesRisk & AuthorizationRewards & AttributionAnalytics & AIUser ExperienceIndustriesFintechsBanksAIEcosystem PartnersCompanyAboutCareersSecurityResources"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(1) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Use Cases"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(1) > div > ul > li:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Risk & Authorization"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(1) > div > ul > li:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Rewards & Attribution"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(1) > div > ul > li:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Analytics & AI"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(1) > div > ul > li:nth-of-type(4) > a",
+    "tag": "a",
+    "role": null,
+    "text": "User Experience"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(2) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Industries"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(2) > div > ul > li:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Fintechs"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(2) > div > ul > li:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Banks"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(2) > div > ul > li:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "AI"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(2) > div > ul > li:nth-of-type(4) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Ecosystem Partners"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(3) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Company"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(3) > div > ul > li:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "About"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(3) > div > ul > li:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Careers"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(3) > div > ul > li:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Security"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > nav > div > div:nth-of-type(3) > div > ul > li:nth-of-type(4) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Resources"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(1) > div > div > div:nth-of-type(2) > form > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > nav",
+    "tag": "nav",
+    "role": null,
+    "text": "Terms of ServicePrivacy PolicyMSASLA"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > nav > ul > li:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Terms of Service"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > nav > ul > li:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Privacy Policy"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > nav > ul > li:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "MSA"
+  },
+  {
+    "selector": "#__next > div > footer > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > nav > ul > li:nth-of-type(4) > a",
+    "tag": "a",
+    "role": null,
+    "text": "SLA"
+  }
+]

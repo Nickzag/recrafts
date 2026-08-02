@@ -1,0 +1,164 @@
+{
+  "artifact_set_id": "artifact-set-397273002fa0d625",
+  "package_id": "package-42e863141911c07b",
+  "parent_package_id": "package-4192c75f3227ddb5",
+  "source_capture_ids": [
+    "capture-together-desktop-8ef41ffeb83f",
+    "capture-together-mobile-3afdd781d3bf",
+    "capture-spade-desktop-59140c400bdc",
+    "capture-spade-mobile-16071303190c"
+  ],
+  "analysis_ids": [
+    "analysis-r010-codex-gpt5-2348cc69-20260716"
+  ],
+  "correction_ids": [
+    "correction-r010-owner-pass-20260716",
+    "correction-r010b-metadata-finalization-20260716",
+    "correction-r010b-final-lineage-normalization-20260716"
+  ],
+  "decision_ids": [
+    "decision-r010-owner-pass-20260716",
+    "decision-r010b-independent-review-accept-20260716"
+  ],
+  "status": "awaiting-finalization",
+  "artifacts": [
+    {
+      "type": "design",
+      "path": "design.md",
+      "media_type": "text/markdown",
+      "sha256": "f8a02f053bdac2e2243715599b26d7aac6d13ece649dd0326f80e9d449a7bd71",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "tokens",
+      "path": "tokens.json",
+      "media_type": "application/json",
+      "sha256": "ced82bcdc1989d656c8d52845e5a9db808f588d16f9844b4ecfd01c631d4c767",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "components",
+      "path": "components.json",
+      "media_type": "application/json",
+      "sha256": "c86edba8f646c7ca1a54c744a8bc362d8975752cad76ce7ee4e5312358066c5a",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "grid-rules",
+      "path": "grid-rules.json",
+      "media_type": "application/json",
+      "sha256": "78d339e648f500cef6e66407cf83089f9df51072d6a022ac427b6edd05685be2",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "layout-rules",
+      "path": "layout-rules.json",
+      "media_type": "application/json",
+      "sha256": "fd2500bf471a5a00534df31d2f2b48c5d68499a14e0020f496f447c610fb0a59",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "visual-grammar",
+      "path": "visual-grammar.json",
+      "media_type": "application/json",
+      "sha256": "39524762d8e6d5e5e042ee5930c946d0ed7653d8aeaa363c75fc3c39a5bdb249",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "conflicts",
+      "path": "conflicts.json",
+      "media_type": "application/json",
+      "sha256": "2bb2bd2b5568e01b6a74a6022ff43fd21e0ebdc15f1a6f9926fba944cf2bb9dd",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "source-observations",
+      "path": "source-observations.json",
+      "media_type": "application/json",
+      "sha256": "948b4c74e41281127c4bfb348be285db330fb351cdce82be67fc15d6b1f937e3",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "core-grammar",
+      "path": "core-grammar.json",
+      "media_type": "application/json",
+      "sha256": "5602f561a07f8968324f0fd8d9a94a6448cc5f94e25a6f016d43c773189bed2f",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "themes",
+      "path": "themes.json",
+      "media_type": "application/json",
+      "sha256": "3069fb8a68276b1e6f4c546c3c1402595b6c5dd071066cb80f0fb287a3474a22",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "templates",
+      "path": "templates.json",
+      "media_type": "application/json",
+      "sha256": "1f1d44df820fc06755c619e558beb64fbe0d7ab13a06138d9c579f7d204da74c",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "accessibility",
+      "path": "accessibility.json",
+      "media_type": "application/json",
+      "sha256": "8ea505b848680aac416e31a87069379387bdcf87e925187754432462af1fdf69",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "source-distance-report",
+      "path": "source-distance-report.json",
+      "media_type": "application/json",
+      "sha256": "b3778d63ac9206af063967a04e21d76b11a303e134e8711a49b17075eb2b6fd3",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "preview-coverage",
+      "path": "preview-coverage.json",
+      "media_type": "application/json",
+      "sha256": "5f548847aeeba8299fc2961d5ce8211c28443afaaff8dda211246b5a6a18ee8d",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    },
+    {
+      "type": "delivery-readiness",
+      "path": "delivery-readiness.json",
+      "media_type": "application/json",
+      "sha256": "b4d94220401d77f8013552ca32c67f4015d64f30b8b48ec41609840ee9dd4b2b",
+      "schema_version": "3.0.0",
+      "status": "awaiting-finalization"
+    }
+  ],
+  "artifact_hashes": {
+    "design.md": "f8a02f053bdac2e2243715599b26d7aac6d13ece649dd0326f80e9d449a7bd71",
+    "tokens.json": "ced82bcdc1989d656c8d52845e5a9db808f588d16f9844b4ecfd01c631d4c767",
+    "components.json": "c86edba8f646c7ca1a54c744a8bc362d8975752cad76ce7ee4e5312358066c5a",
+    "grid-rules.json": "78d339e648f500cef6e66407cf83089f9df51072d6a022ac427b6edd05685be2",
+    "layout-rules.json": "fd2500bf471a5a00534df31d2f2b48c5d68499a14e0020f496f447c610fb0a59",
+    "visual-grammar.json": "39524762d8e6d5e5e042ee5930c946d0ed7653d8aeaa363c75fc3c39a5bdb249",
+    "conflicts.json": "2bb2bd2b5568e01b6a74a6022ff43fd21e0ebdc15f1a6f9926fba944cf2bb9dd",
+    "source-observations.json": "948b4c74e41281127c4bfb348be285db330fb351cdce82be67fc15d6b1f937e3",
+    "core-grammar.json": "5602f561a07f8968324f0fd8d9a94a6448cc5f94e25a6f016d43c773189bed2f",
+    "themes.json": "3069fb8a68276b1e6f4c546c3c1402595b6c5dd071066cb80f0fb287a3474a22",
+    "templates.json": "1f1d44df820fc06755c619e558beb64fbe0d7ab13a06138d9c579f7d204da74c",
+    "accessibility.json": "8ea505b848680aac416e31a87069379387bdcf87e925187754432462af1fdf69",
+    "source-distance-report.json": "b3778d63ac9206af063967a04e21d76b11a303e134e8711a49b17075eb2b6fd3",
+    "preview-coverage.json": "5f548847aeeba8299fc2961d5ce8211c28443afaaff8dda211246b5a6a18ee8d",
+    "delivery-readiness.json": "b4d94220401d77f8013552ca32c67f4015d64f30b8b48ec41609840ee9dd4b2b"
+  },
+  "created_at": "2026-07-16T13:10:00+08:00"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "realization_id": "realization-86494147bb58ae5e",
+  "package_id": "package-c2a9b64984ab6d02",
+  "owner_decision_set_id": "decision-r010-owner-pass-20260716",
+  "fidelity_basis": "accepted-portable-contract",
+  "contract_count": 15,
+  "preview_count": 36,
+  "failures": []
+}

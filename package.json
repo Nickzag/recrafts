@@ -42,7 +42,14 @@
     "scripts/validate-r007-corrections.mjs",
     "scripts/validate-r007-acceptance.mjs",
     "scripts/validate-r007-lineage.mjs",
-    "scripts/validate-r007-rollback.mjs"
+    "scripts/validate-r007-rollback.mjs",
+    "scripts/validate-source-distance.mjs",
+    "scripts/validate-identity-safety.mjs",
+    "scripts/validate-agent-contract.mjs",
+    "scripts/validate-preview-coverage.mjs",
+    "scripts/validate-preview-accessibility.mjs",
+    "scripts/validate-acceptance-finalization.mjs",
+    "scripts/validate-source-neutral-contract.mjs"
   ],
   "scripts": {
     "validate:r001": "node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs",
@@ -55,6 +62,7 @@
     "validate:r005": "node scripts/validate-r005-release-candidate.mjs release-candidates/recrafts-0.3.0-rc.1-build5",
     "validate:r006": "node --test tests/r006-evidence-truth.test.mjs",
     "validate:r007": "node --test tests/r007-contracts.test.mjs tests/r007-package-evolution.test.mjs",
+    "validate:r010": "node --test tests/r010-*.test.mjs tests/r010b-*.test.mjs",
     "benchmark:validate": "node scripts/benchmarks/validate-no-oracle.mjs benchmarks/L2-brand/static-coffee && node scripts/benchmarks/validate-corpus.mjs . benchmarks/L2-brand/static-coffee .local-benchmark-sources/static-coffee-v1-isolated-v3",
     "benchmark:static-coffee": "node scripts/benchmarks/run-benchmark.mjs .local-benchmark-sources/static-coffee-v1-isolated-v3/run-config.json",
     "benchmark:compare": "node scripts/benchmarks/compare-benchmark-runs.mjs",

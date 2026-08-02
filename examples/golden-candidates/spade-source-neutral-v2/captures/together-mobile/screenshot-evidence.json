@@ -1,0 +1,16 @@
+[
+  {
+    "kind": "viewport",
+    "viewport": "390x844",
+    "file": "viewport-390x844.png",
+    "sha256": "ba4c534ff1e7bdb440e6e7dfdf72320b1241c6946821e353fb465104c016c27a",
+    "bytes": 70833
+  },
+  {
+    "kind": "full-page",
+    "viewport": "390x16801",
+    "file": "full-page.png",
+    "sha256": "1db04c53ab0e11f17c653560ce6e723b61bdf68b4ff7a8727ffda0e84c03d53a",
+    "bytes": 507612
+  }
+]

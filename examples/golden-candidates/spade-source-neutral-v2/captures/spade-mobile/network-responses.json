@@ -1,0 +1,658 @@
+[
+  {
+    "url": "https://spade.com/",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "etag": "W/\"2sjeud5vdm32qg\"",
+    "last_modified": null,
+    "resource_type": "document"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/fbcbfeb8105deba8.css?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "etag": "W/\"6413a004b28ca2958dbc95fe5a47a0cb\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://spade.com/_next/static/media/NaNSuperXSansDisplay_VF_TRIAL-s.p.55b41e97.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"050c5e6e0bc7398fd271d9f05712504f\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/5804f8b25ee2f280.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"99ba08240f831cc838abd6bcf3fa76cb\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/media/FTPolarMono_Medium-s.p.119f14b6.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"e8ab0b2e7ae0e33cbb6cba07e0c1c042\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/debb1e1191d3db67.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"203495ec52e9bcda53e3b8822e83163b\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/1749746d289a0eeb.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"7ae48cd1d15874608e32fbe8cef0bbe2\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/febab3fae21381e6.css?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "etag": "W/\"4a7f18b47eafbfb4562feafbbd9bf801\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/cebc9d011fe899ba.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"cda269b603c11b408a572f157d436e46\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/e48fe33e5b740e50.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"71b1a3aba6cba2c8f34b7c80eb201cec\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/media/FTPolar_Regular-s.p.61d92bfa.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"40bb9628d4895a5c64cfe97fc1d96dfd\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/c48e2cd13205fafc.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"2d1bad20a42acbe64ad6bf22c61a65c7\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/163f657a16afbe5e.css?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "etag": "\"68b329da9893e34099c7d8ad5cb9c940\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/f03775c5695d8f95.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"5ec7cc2e3a232f28f7ea5d2d0838fc03\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/100dfa221507f228.css?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "etag": "W/\"43abfd9a2d98c1ebb9d554d58e34660b\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/84c79364ef595840.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"3811e3215b451475e994a90257918426\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/tKz_KcfPN-JVunkVjifKC/_buildManifest.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"60d5d35564d176f0d7afa11ee40a67a7\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/9fa7cd9cd48a9046.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"691b2ad0511a606bab796c742fd4d84d\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/tKz_KcfPN-JVunkVjifKC/_ssgManifest.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"3af7f47516cf2df824b553acc5a1bd18\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/turbopack-534d755ba41ebf77.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"868e524c35db6b14c2b61ac26729207a\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/turbopack-c5673be0761ed864.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"3a9e57091eb8e359e64ece580261bc39\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/da4557751de25855.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"7c56120fcf1703f9078a48f00fe673ef\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/a2e92bdb4f9668a1.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"e5629c3fc749c66e12386e0b08f9e486\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/caa0230639638f94.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"779ea92cdde084326cdc2eb568ff6cc1\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/e2c482292bffcf34.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"361b8117898e662ba84a4da9af478c3b\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/52e0c238efd35d9e.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"77db093bdec1c450639b621eefc9d53f\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/media/FTPolarMono_Regular-s.p.23bb8712.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"f4e69465af945dd178f6dc8e76885f4b\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/febbdfbb573a5cea.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"4e7a4f900fa15b776c225f3d04a5596c\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/807f8245e106d5c0.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"fbf3470129ce0375af6335b9352cea88\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/bce36e24908407ec.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"691de01c1154e8a218d288944a063a06\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:26 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fcitizens.png&w=320&q=75",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Tue, 17 Mar 2026 14:34:48 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F06%2Fcardless-logo.png&w=640&q=75",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Mon, 22 Jun 2026 18:10:53 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-7.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424592-1cf1\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:42 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-6.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424593-509\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:43 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-2.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424595-d7e\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:45 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-4.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424594-33e0\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:44 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-3.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424595-aaa\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:45 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-5.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424594-c37\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:44 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spade.com/_next/static/tKz_KcfPN-JVunkVjifKC/_clientMiddlewareManifest.json",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "etag": "\"d751713988987e9331980363e24189ce\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fcashapppay-black-e1772810522146.png&w=320&q=75",
+    "status": 200,
+    "content_type": "image/png",
+    "etag": null,
+    "last_modified": "Tue, 17 Mar 2026 14:34:49 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F06%2FMotive-logo.webp&w=750&q=75",
+    "status": 200,
+    "content_type": "image/avif",
+    "etag": null,
+    "last_modified": "Mon, 22 Jun 2026 18:36:04 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-8.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424591-1280\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:41 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/Vector-2.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424591-63b\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:41 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-9.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424590-1ab3\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:40 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-10.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "W/\"6a424590-162f\"",
+    "last_modified": "Mon, 29 Jun 2026 10:14:40 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/cc3b82fd94097410.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"baf5cc0fd79a203753b574bb8c40d8c8\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/5e30723aaf16e0ad.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"a78d0b33c1d188c8e14f0218761f4e8e\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/data/tKz_KcfPN-JVunkVjifKC/index.json",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://spade.com/_next/data/tKz_KcfPN-JVunkVjifKC/contact.json?slug=contact",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/ae8064aa1bb886ac.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"cb2449f0a2c70cf8a78fcd46eb188473\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/3a2ead39c735bb83.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"f937e851f1b1cd6361daacf57a0ffda1\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "other"
+  },
+  {
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/02/home-scroller.mp4",
+    "status": 200,
+    "content_type": "video/mp4",
+    "etag": "\"69b96683-aa9be5\"",
+    "last_modified": "Tue, 17 Mar 2026 14:34:43 GMT",
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://js-na1.hs-scripts.com/51552623.js",
+    "status": 200,
+    "content_type": "application/javascript;charset=utf-8",
+    "etag": null,
+    "last_modified": "Thu, 16 Jul 2026 09:10:51 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/0fc6b108ea5eaccd.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"495e088bb222dd7f19181b0b3f47a87e\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/1eab162c0c6c0ff5.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"8969997b17dd881cab96a9b739df9dc9\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "other"
+  },
+  {
+    "url": "https://js.hs-banner.com/v2/51552623/banner.js",
+    "status": 200,
+    "content_type": "text/javascript; charset=UTF-8",
+    "etag": "\"e2c9ac4e398f7ab60b6779c036dbf93e\"",
+    "last_modified": "Tue, 02 Jun 2026 17:57:49 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://unpkg.com/@rive-app/webgl2@2.34.0/rive.wasm",
+    "status": 200,
+    "content_type": "application/wasm",
+    "etag": null,
+    "last_modified": "Wed, 01 Jul 2026 20:46:49 GMT",
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://js.hs-analytics.net/analytics/1784189100000/51552623.js",
+    "status": 200,
+    "content_type": "text/javascript",
+    "etag": "\"064417d3bd239b8c7c72d38084515ca7\"",
+    "last_modified": "Thu, 02 Jul 2026 17:29:17 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/1eab162c0c6c0ff5.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"8969997b17dd881cab96a9b739df9dc9\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"71820dee322a3b2e57bd836912212e1b\"",
+    "last_modified": "Wed, 15 Jul 2026 08:37:56 UTC",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=390x844&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=51552623&rcu=https%3A%2F%2Fspade.com%2F&pu=https%3A%2F%2Fspade.com%2F&t=The+data+%26+AI+platform+for+modern+finance+%7C+Spade&cts=1784193053048&vi=aefcffd9176f9450dec7010d68ff53c2&nc=true&u=109009885.aefcffd9176f9450dec7010d68ff53c2.1784193053033.1784193053033.1784193053033.1&b=109009885.1.1784193053034&cc=15",
+    "status": 200,
+    "content_type": "image/gif",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=51552623&utk=aefcffd9176f9450dec7010d68ff53c2",
+    "status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "xhr"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/35d43b6ed74ba00f.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"c23a90c6e71b53d6bdae0130e827e345\"",
+    "last_modified": "Wed, 08 Jul 2026 10:24:27 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/turbopack-42afe67cdb0f1106.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"5f8f6e766a05834828e6b243fe87afd7\"",
+    "last_modified": "Wed, 15 Jul 2026 15:37:37 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/wp-content/uploads/2026/01/homepage-masthead-animation-2.riv",
+    "status": 200,
+    "content_type": "application/octet-stream",
+    "etag": null,
+    "last_modified": "Tue, 17 Mar 2026 14:34:31 GMT",
+    "resource_type": "fetch"
+  },
+  {
+    "url": "blob:https://spade.com/f6edb9b0-0061-4368-bbff-d550f90fc94b",
+    "status": 200,
+    "content_type": "image/png",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "blob:https://spade.com/1b51a535-89d5-4e46-998d-e596a1bec5a8",
+    "status": 200,
+    "content_type": "image/png",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+    "status": 200,
+    "content_type": "image/gif",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+    "status": 200,
+    "content_type": "application/javascript;charset=utf-8",
+    "etag": null,
+    "last_modified": "Wed, 10 Jun 2026 07:46:22 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://spade.com/_next/static/chunks/5530756f21769041.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"acd6da5021dd7e6e131e3cb23d2cca03\"",
+    "last_modified": "Wed, 08 Jul 2026 14:08:41 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+    "status": 200,
+    "content_type": "application/javascript;charset=utf-8",
+    "etag": null,
+    "last_modified": "Sun, 17 May 2026 09:47:35 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "blob:https://spade.com/1eb77af5-257d-4bea-9917-6e5c9e463a2e",
+    "status": 206,
+    "content_type": "video/mp4",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "media"
+  },
+  {
+    "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=9539140&time=1784193061451&li_adsId=a0683f2b-835f-40d7-b533-7abf760b5e42&url=https%3A%2F%2Fspade.com%2F",
+    "status": 302,
+    "content_type": null,
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://px.ads.linkedin.com/attribution_trigger?pid=9539140&time=1784193061451&url=https%3A%2F%2Fspade.com%2F",
+    "status": 200,
+    "content_type": "application/json",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "xhr"
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-WQ7PPT3Q",
+    "status": 200,
+    "content_type": "application/javascript; charset=UTF-8",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=9539140&time=1784193061451&li_adsId=a0683f2b-835f-40d7-b533-7abf760b5e42&url=https%3A%2F%2Fspade.com%2F&cookiesTest=true",
+    "status": 302,
+    "content_type": null,
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D9539140%26time%3D1784193061451%26li_adsId%3Da0683f2b-835f-40d7-b533-7abf760b5e42%26url%3Dhttps%253A%252F%252Fspade.com%252F%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+    "status": 302,
+    "content_type": null,
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-ZVV3VKHDF8&cx=c&gtm=4e67e0",
+    "status": 200,
+    "content_type": "application/javascript; charset=UTF-8",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=9539140&time=1784193061451&li_adsId=a0683f2b-835f-40d7-b533-7abf760b5e42&url=https%3A%2F%2Fspade.com%2F&cookiesTest=true&liSync=true",
+    "status": 302,
+    "content_type": null,
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=9539140&time=1784193061451&li_adsId=a0683f2b-835f-40d7-b533-7abf760b5e42&url=https%3A%2F%2Fspade.com%2F&cookiesTest=true&liSync=true&e_ipv6=AQJCFqICClfldAAAAZ9qMaMbY2eldZRvoj628JvJODZVmhaXKxQEeH5RVq0O1DVIfHtbsjqpAjpbNFsaovPyh7hEdFiHqKVxTg",
+    "status": 200,
+    "content_type": "application/javascript",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "image"
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-ZVV3VKHDF8&gtm=45je67e0v9257579216z89257721792za20gzb9257721792zd9257721792&_p=1784193060878&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=926033208.1784193067&frm=0&ngs=1&pscdl=noapi&rcb=3&sr=390x844&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.6.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118395334~118897920~118897930~119709550~119724321~119773332&sid=1784193066&sct=1&seg=0&dl=https%3A%2F%2Fspade.com%2F&dt=The%20data%20%26%20AI%20platform%20for%20modern%20finance%20%7C%20Spade&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=19526",
+    "status": 204,
+    "content_type": "text/plain",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+    "status": 204,
+    "content_type": null,
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "fetch"
+  }
+]

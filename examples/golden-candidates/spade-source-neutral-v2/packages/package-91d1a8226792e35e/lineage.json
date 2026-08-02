@@ -1,0 +1,11 @@
+{
+  "event_id":"lineage-r010-extracted-91d1a8226792e35e",
+  "event_type":"extracted",
+  "package_id":"package-91d1a8226792e35e",
+  "parent_package_id":null,
+  "restored_from_package_id":null,
+  "correction_ids":[],
+  "decision_ids":[],
+  "created_at":"2026-07-16T09:16:58.000Z",
+  "artifact_set_hash":"971bb3952098ac9199befdbbceeb1ba959bd60ae6316f71f1a0dd5c5cc822f28"
+}

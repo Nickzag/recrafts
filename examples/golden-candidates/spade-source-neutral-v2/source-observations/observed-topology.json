@@ -1,0 +1,3 @@
+{"observations":[
+  {"observation_id":"obs-topology-spade-hero","domain":"topology","value":{"region_order":["navigation","centered headline","central contour object with bilateral data","centered explanation","centered CTA"],"alignment":"centered","primary_object_location":"center","cta_location":"bottom-center","measurement_boundary_location":"left-and-right viewport edges","background_transitions":["white","pale-green","white"]},"source_scope":"spade-brand-system","evidence_refs":["ev-spade-desktop-viewport","ev-spade-mobile-viewport"],"claim_refs":["claim-topology-source-locked"],"confidence":"high","source_specificity":"high","portability_risk":"high"}
+]}

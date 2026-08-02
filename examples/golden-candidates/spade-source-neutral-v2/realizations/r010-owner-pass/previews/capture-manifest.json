@@ -1,0 +1,222 @@
+{
+  "captured_at": "2026-07-16T09:23:48.350Z",
+  "browser": "chromium",
+  "results": [
+    {
+      "kind": "system-board",
+      "page": null,
+      "file": "previews/system/system-board.png",
+      "viewport": "1440x1000"
+    },
+    {
+      "kind": "components",
+      "page": null,
+      "file": "previews/system/core-component-sheet.png",
+      "viewport": "1440x1000"
+    },
+    {
+      "kind": "theme-comparison",
+      "page": null,
+      "file": "previews/system/theme-comparison.png",
+      "viewport": "1440x1000"
+    },
+    {
+      "kind": "source-distance",
+      "page": null,
+      "file": "previews/system/source-distance-comparison.png",
+      "viewport": "1440x1000"
+    },
+    {
+      "kind": "web-a",
+      "page": null,
+      "file": "previews/web/web-a-320.png",
+      "viewport": "320x844"
+    },
+    {
+      "kind": "web-a",
+      "page": null,
+      "file": "previews/web/web-a-390.png",
+      "viewport": "390x844"
+    },
+    {
+      "kind": "web-a",
+      "page": null,
+      "file": "previews/web/web-a-768.png",
+      "viewport": "768x844"
+    },
+    {
+      "kind": "web-a",
+      "page": null,
+      "file": "previews/web/web-a-1024.png",
+      "viewport": "1024x844"
+    },
+    {
+      "kind": "web-a",
+      "page": null,
+      "file": "previews/web/web-a-1440.png",
+      "viewport": "1440x1037"
+    },
+    {
+      "kind": "web-b",
+      "page": null,
+      "file": "previews/web/web-b-320.png",
+      "viewport": "320x844"
+    },
+    {
+      "kind": "web-b",
+      "page": null,
+      "file": "previews/web/web-b-390.png",
+      "viewport": "390x844"
+    },
+    {
+      "kind": "web-b",
+      "page": null,
+      "file": "previews/web/web-b-768.png",
+      "viewport": "768x844"
+    },
+    {
+      "kind": "web-b",
+      "page": null,
+      "file": "previews/web/web-b-1024.png",
+      "viewport": "1024x844"
+    },
+    {
+      "kind": "web-b",
+      "page": null,
+      "file": "previews/web/web-b-1440.png",
+      "viewport": "1440x1037"
+    },
+    {
+      "kind": "poster-a",
+      "page": null,
+      "file": "previews/posters/poster-derived.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "poster-b",
+      "page": null,
+      "file": "previews/posters/poster-alternative.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel",
+      "page": "cover",
+      "file": "previews/carousel/page-01-cover.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel",
+      "page": "problem",
+      "file": "previews/carousel/page-02-problem.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel",
+      "page": "insight",
+      "file": "previews/carousel/page-03-insight.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel",
+      "page": "mechanism",
+      "file": "previews/carousel/page-04-mechanism.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel",
+      "page": "evidence",
+      "file": "previews/carousel/page-05-evidence.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel",
+      "page": "use-case",
+      "file": "previews/carousel/page-06-use-case.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel",
+      "page": "result",
+      "file": "previews/carousel/page-07-result.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel",
+      "page": "cta",
+      "file": "previews/carousel/page-08-cta.png",
+      "viewport": "1080x1350"
+    },
+    {
+      "kind": "carousel-contact",
+      "page": null,
+      "file": "previews/carousel/contact-sheet.png",
+      "viewport": "1440x1100"
+    },
+    {
+      "kind": "slide",
+      "page": "cover",
+      "file": "previews/slides/slide-01-cover.png",
+      "viewport": "1920x1080"
+    },
+    {
+      "kind": "slide",
+      "page": "problem",
+      "file": "previews/slides/slide-02-problem.png",
+      "viewport": "1920x1080"
+    },
+    {
+      "kind": "slide",
+      "page": "insight",
+      "file": "previews/slides/slide-03-insight.png",
+      "viewport": "1920x1080"
+    },
+    {
+      "kind": "slide",
+      "page": "mechanism",
+      "file": "previews/slides/slide-04-mechanism.png",
+      "viewport": "1920x1080"
+    },
+    {
+      "kind": "slide",
+      "page": "evidence",
+      "file": "previews/slides/slide-05-evidence.png",
+      "viewport": "1920x1080"
+    },
+    {
+      "kind": "slide",
+      "page": "use-case",
+      "file": "previews/slides/slide-06-use-case.png",
+      "viewport": "1920x1080"
+    },
+    {
+      "kind": "slide",
+      "page": "result",
+      "file": "previews/slides/slide-07-result.png",
+      "viewport": "1920x1080"
+    },
+    {
+      "kind": "slide",
+      "page": "cta",
+      "file": "previews/slides/slide-08-cta.png",
+      "viewport": "1920x1080"
+    },
+    {
+      "kind": "slide-contact",
+      "page": null,
+      "file": "previews/slides/contact-sheet.png",
+      "viewport": "1600x1000"
+    },
+    {
+      "kind": "real-object",
+      "page": null,
+      "file": "previews/real-imagery/commerce-object.png",
+      "viewport": "1440x1000"
+    },
+    {
+      "kind": "real-place",
+      "page": null,
+      "file": "previews/real-imagery/infrastructure-place.png",
+      "viewport": "1440x1000"
+    }
+  ]
+}

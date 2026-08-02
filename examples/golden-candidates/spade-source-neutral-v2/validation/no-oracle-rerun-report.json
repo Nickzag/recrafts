@@ -1,0 +1,147 @@
+{
+  "report_id": "no-oracle-12fd8eb3131f81d1",
+  "status": "pass",
+  "inputs": [
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/input/source-manifest.json",
+      "sha256": "7d3c37f6e6706edb195670428de4d1b93fc7be6bd20ee4374c6d2b379bb8cd75"
+    },
+    {
+      "file": "prompts/r010-source-neutral-host-analysis.md",
+      "sha256": "2348cc6994e5f78a721b3cbb66d3a99be29f6cf5928998c70fae6a5969a1b072"
+    },
+    {
+      "file": "contracts/source-observation.schema.json",
+      "sha256": "3ebbf62191c55bdd508375f3fa28c8049ebe8a0610812fdbe1380ef45c7f9da1"
+    },
+    {
+      "file": "contracts/portable-system.schema.json",
+      "sha256": "d8b604684237a8a9db827dad833688561b8a7fa82696c585c1ec0bf31b2e7761"
+    },
+    {
+      "file": "contracts/source-distance.schema.json",
+      "sha256": "344fe7e8f81ed6c62b15b0851cd1b9dc4a6dbfa576e1e81abcbf5e9ee5d1d85f"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-desktop/capture-record.json",
+      "sha256": "11480cc1b40c6ca3f53d5d6257d66be4f5ba782239b0b19323965789a12ba12c"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-desktop/dom-evidence.json",
+      "sha256": "ad839bf40aec52ccb5dccb5deeeb10f99fda0a19850e42d4363fcd94c2daec8c"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-desktop/css-evidence.json",
+      "sha256": "2a03d00720c111ec52554856b2c81add2df384ed59a71651a6c5d30dfeaaf0da"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-desktop/computed-style-evidence.json",
+      "sha256": "0ef602760a8c70564c9caf5c8ba6cd21a5cc95c54bb55b9ab96a1582cc35d475"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-desktop/font-evidence.json",
+      "sha256": "4d8ef79ce7956c7ce19a57d62a1adf02cdceb5b834417075a7eba758a2554243"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-desktop/viewport-1440x900.png",
+      "sha256": "aa3adb28a742926ff95d7aac8ae336f75337ed695a6af9733e78663af287fa37"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-desktop/full-page.png",
+      "sha256": "4d5ffe20b9365abc4149e98c258131820db8ff78243b9e3c1d91c5d05f348fd9"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-mobile/capture-record.json",
+      "sha256": "c5ccdf84a805d1001aa5fd5e9f2dae1e584169ee8395ae87a5f5b265429120b5"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-mobile/dom-evidence.json",
+      "sha256": "83b4e8a35feda01d1e961aa45f96f92e6382b9b535eb6dab945cd885c5b50eca"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-mobile/css-evidence.json",
+      "sha256": "2fd6c3af9486a09014386653fcfe472b32d0c098352b0d012ffdb230d9068316"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-mobile/computed-style-evidence.json",
+      "sha256": "ae61ff18ad1f267e6f7a06313b4a00359c06b32195cddc1921998a3625319ebb"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-mobile/font-evidence.json",
+      "sha256": "4d8ef79ce7956c7ce19a57d62a1adf02cdceb5b834417075a7eba758a2554243"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-mobile/viewport-390x844.png",
+      "sha256": "ba4c534ff1e7bdb440e6e7dfdf72320b1241c6946821e353fb465104c016c27a"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/together-mobile/full-page.png",
+      "sha256": "1db04c53ab0e11f17c653560ce6e723b61bdf68b4ff7a8727ffda0e84c03d53a"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-desktop/capture-record.json",
+      "sha256": "a2cb8d8922c339f857fdf6f5f456c8853d940baea7613abd273fc9fdf2aac3e8"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-desktop/dom-evidence.json",
+      "sha256": "e4245a14da74acb2bb7ca844eb587481fd8fdd31f07f342261ca156b7c2eee66"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-desktop/css-evidence.json",
+      "sha256": "c63dc61b39bdc75a37d79b8839154aff29034c62bc85b7f919126c983169141f"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-desktop/computed-style-evidence.json",
+      "sha256": "e55cd4c39bd6174095c39c254938c0fee09465e74ef8eed7474c5a6f9abad1be"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-desktop/font-evidence.json",
+      "sha256": "3194c4c5a852fdbaa06ca71f709e9b46889cf099d115ef5f0343a3736f623a1e"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-desktop/viewport-1440x900.png",
+      "sha256": "1102f58e008792642e89912296b07692d87313b7ea1cfcc53b795e0cadd9c0f6"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-desktop/full-page.png",
+      "sha256": "9320adc3f53eae27ba4ca4f6c02743343e899c36a58144267ec48311b4879011"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-mobile/capture-record.json",
+      "sha256": "0ebd65462841a717f16bdbe0e8bb8b26076a1cf7b04de2c6143b13e785e71502"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-mobile/dom-evidence.json",
+      "sha256": "e4245a14da74acb2bb7ca844eb587481fd8fdd31f07f342261ca156b7c2eee66"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-mobile/css-evidence.json",
+      "sha256": "7f579d0decce88344a784e82b428b967e276735e7b52c89bfb60faaca0e7e803"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-mobile/computed-style-evidence.json",
+      "sha256": "ab89bdbed8bde9d646fb1445003f3b58f04a4c20c232fc876ba4d75bc744adc0"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-mobile/font-evidence.json",
+      "sha256": "07901b2b70eb19c2e2c8c0c7552e10df21f16979212b57d55172a4ae95272a38"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-mobile/viewport-390x844.png",
+      "sha256": "77735d5478f96a92395e6cf1ba50c7f2be922e8633be178c7afb8aee81f37eb9"
+    },
+    {
+      "file": "examples/golden-candidates/spade-source-neutral-v2/captures/spade-mobile/full-page.png",
+      "sha256": "52618f680372f5b05bc2e0faf0cdb0a293b29d8dfdcb4770617aa543c89a2b89"
+    }
+  ],
+  "prior_artifact_roots": [],
+  "findings": [],
+  "excluded_classes": [
+    "prior design.md",
+    "prior preview pixels",
+    "prior Package artifacts",
+    "prior review expected answers"
+  ],
+  "assertion": "Host inputs contain only fresh Evidence, capture policy, generic schemas, generic source-neutral instructions and declared target media."
+}

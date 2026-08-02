@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { assertSchema, loadSchema } from "./schema_validator.mjs";
+import { validateAcceptanceFinalization } from "./acceptance_finalization.mjs";
 
 const artifactSchema = loadSchema(new URL("../contracts/artifact-set.schema.json", import.meta.url));
 const lineageSchema = loadSchema(new URL("../contracts/package-lineage.schema.json", import.meta.url));
@@ -44,6 +45,11 @@ export async function validateR007Package(root) {
     if (evidence.some((item) => item.status === "stale")) fail("Accepted package contains stale mandatory Evidence");
     const source = await readJson(root, "source-manifest.json"); if ((source.sources ?? []).some((item) => item.status === "blocked")) fail("Accepted package contains blocked source");
     if (!decisions.length && lineage.event_type !== "rollback-created") fail("Accepted package lacks project-owner decision history");
+    const hasFinalizationIndex = await readFile(path.join(root, "validation/index.json"), "utf8").then(() => true).catch((error) => error.code === "ENOENT" ? false : Promise.reject(error));
+    if (hasFinalizationIndex) {
+      const finalization = await validateAcceptanceFinalization(root);
+      if (finalization.status !== "pass") fail(`Acceptance finalization invalid: ${finalization.errors.join("; ")}`);
+    }
   }
   return { status: "pass", package_id: manifest.package_id, package_status: manifest.status, artifact_set_id: set.artifact_set_id, correction_count: corrections.length, decision_count: decisions.length, lineage_event_type: lineage.event_type };
 }

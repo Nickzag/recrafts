@@ -1,0 +1,26 @@
+{
+  "correction_id": "correction-r010b-metadata-finalization-20260716",
+  "base_package_id": "package-c2a9b64984ab6d02",
+  "package_id": "package-a773edead6a47370",
+  "operations": [
+    {
+      "operation_id": "finalize-accepted-metadata",
+      "type": "finalize-accepted-metadata",
+      "target_id": "design.md",
+      "before": {
+        "status": "accepted"
+      },
+      "after": {
+        "delivery_readiness": "pilot-ready"
+      },
+      "evidence_refs": [
+        "ev-together-desktop-viewport",
+        "ev-spade-desktop-viewport"
+      ],
+      "claim_refs": [
+        "claim-shell-brand-separation"
+      ],
+      "reason": "Compose a self-consistent accepted header and package an authoritative PASS validation index without changing portable design contracts."
+    }
+  ]
+}

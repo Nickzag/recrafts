@@ -1,0 +1,26 @@
+{
+  "layout_rules": [
+    {
+      "layout_rule_id": "layout.asymmetric-proof",
+      "rule": "Narrative and proof use asymmetric regions; mobile stacks explanation before proof.",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "claim_refs": [
+        "claim-density-rhythm",
+        "claim-topology-source-locked"
+      ]
+    },
+    {
+      "layout_rule_id": "layout.no-cardification",
+      "rule": "Proof canvas is not decomposed into a universal card grid.",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport"
+      ],
+      "claim_refs": [
+        "claim-one-protagonist"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+[
+  {
+    "kind": "script",
+    "url": "https://ddwl4m2hdecbv.cloudfront.net/b/7N850H58V5N1/7N850H58V5N1.js.gz"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-ZVV3VKHDF8&cx=c&gtm=4e67e0"
+  },
+  {
+    "kind": "script",
+    "url": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://js.hs-analytics.net/analytics/1784189100000/51552623.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://js.hscollectedforms.net/collectedforms.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://js.hs-banner.com/v2/51552623/banner.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js"
+  },
+  {
+    "kind": "link",
+    "url": "https://spade.com/_next/static/chunks/100dfa221507f228.css?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "link",
+    "url": "https://spade.com/_next/static/chunks/fbcbfeb8105deba8.css?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "link",
+    "url": "https://spade.com/_next/static/chunks/febab3fae21381e6.css?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "link",
+    "url": "https://spade.com/_next/static/chunks/163f657a16afbe5e.css?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/f03775c5695d8f95.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/9fa7cd9cd48a9046.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/e48fe33e5b740e50.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/1749746d289a0eeb.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/debb1e1191d3db67.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/5804f8b25ee2f280.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/cebc9d011fe899ba.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/a2e92bdb4f9668a1.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/52e0c238efd35d9e.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/turbopack-c5673be0761ed864.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/807f8245e106d5c0.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/84c79364ef595840.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/c48e2cd13205fafc.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/febbdfbb573a5cea.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/caa0230639638f94.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/da4557751de25855.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/e2c482292bffcf34.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/bce36e24908407ec.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/turbopack-534d755ba41ebf77.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/tKz_KcfPN-JVunkVjifKC/_ssgManifest.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/tKz_KcfPN-JVunkVjifKC/_buildManifest.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/cc3b82fd94097410.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/5e30723aaf16e0ad.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/ae8064aa1bb886ac.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/0fc6b108ea5eaccd.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/35d43b6ed74ba00f.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/turbopack-42afe67cdb0f1106.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/5530756f21769041.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-2.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-3.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-4.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-5.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-6.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-7.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-8.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fcitizens.png&w=320&q=75"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F06%2Fcardless-logo.png&w=640&q=75"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fcashapppay-black-e1772810522146.png&w=320&q=75"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/Vector-2.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F06%2FMotive-logo.webp&w=750&q=75"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-9.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/06/logo-10.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2025/12/padlock-icon.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2025%2F12%2FRisk-Auth-Lifestyle.jpg&w=1920&q=75"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2025/12/heart-icon.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/01/analytics-and-AI-feature-BG.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2025/12/analytics-icon.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2025/12/user-icon.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fbilt-white.png&w=640&q=75"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fcoast-white.png&w=640&q=75"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/03/mercury-1.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spadewp.wpenginepowered.com/wp-content/uploads/2026/01/docs-layer-1.svg"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=https%3A%2F%2Fspadewp.wpenginepowered.com%2Fwp-content%2Fuploads%2F2026%2F01%2Fdocs-layer-2.png&w=1920&q=75"
+  },
+  {
+    "kind": "img",
+    "url": "https://spade.com/_next/image/?url=%2Fcoin.png&w=480&q=75"
+  },
+  {
+    "kind": "script",
+    "url": "https://js-na1.hs-scripts.com/51552623.js"
+  },
+  {
+    "kind": "script",
+    "url": "https://spade.com/_next/static/chunks/1eab162c0c6c0ff5.js?dpl=dpl_DPMXaFzsz9MgyHyt6gLt2hoanmkJ"
+  },
+  {
+    "kind": "script",
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-WQ7PPT3Q"
+  }
+]

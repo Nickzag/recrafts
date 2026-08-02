@@ -1,0 +1,206 @@
+{
+  "status": "pass",
+  "runner": {
+    "os": "darwin",
+    "browser": "149.0.7827.55"
+  },
+  "stacks": [
+    {
+      "id": "macos-system",
+      "display": "-apple-system",
+      "body": "-apple-system",
+      "data": "SFMono-Regular",
+      "cjk": "PingFang SC"
+    },
+    {
+      "id": "windows-system",
+      "display": "Segoe UI Variable, Segoe UI, sans-serif",
+      "body": "Segoe UI, sans-serif",
+      "data": "Consolas, monospace",
+      "cjk": "Microsoft YaHei, sans-serif"
+    },
+    {
+      "id": "open-web",
+      "display": "Inter, sans-serif",
+      "body": "Inter, sans-serif",
+      "data": "IBM Plex Mono, monospace",
+      "cjk": "Noto Sans CJK SC, sans-serif"
+    }
+  ],
+  "results": [
+    {
+      "stack_id": "macos-system",
+      "measurements": [
+        {
+          "sample_id": "mixed-heading",
+          "text": "Evidence 证据系统 / Operational Proof",
+          "requested_stack": "-apple-system",
+          "computed_family": "-apple-system",
+          "width": 900,
+          "height": 134.375,
+          "line_height": "67.2px",
+          "overflow": false
+        },
+        {
+          "sample_id": "long-en",
+          "text": "A deliberately long English heading verifies line breaks without hiding the measured outcome",
+          "requested_stack": "-apple-system",
+          "computed_family": "-apple-system",
+          "width": 720,
+          "height": 235.1875,
+          "line_height": "58.8px",
+          "overflow": false
+        },
+        {
+          "sample_id": "long-zh",
+          "text": "这是一条用于验证中文长标题换行、字面密度和视觉层级的压力测试文本",
+          "requested_stack": "-apple-system",
+          "computed_family": "-apple-system",
+          "width": 720,
+          "height": 176.390625,
+          "line_height": "58.8px",
+          "overflow": false
+        },
+        {
+          "sample_id": "financial-number",
+          "text": "-$123,456,789.00  +37.25%",
+          "requested_stack": "SFMono-Regular",
+          "computed_family": "SFMono-Regular",
+          "width": 720,
+          "height": 41.59375,
+          "line_height": "41.6px",
+          "overflow": false
+        },
+        {
+          "sample_id": "code-data-label",
+          "text": "TXN-042 / WINDOW 18 ms / STATUS EMPTY",
+          "requested_stack": "SFMono-Regular",
+          "computed_family": "SFMono-Regular",
+          "width": 720,
+          "height": 31.1875,
+          "line_height": "31.2px",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "stack_id": "windows-system",
+      "measurements": [
+        {
+          "sample_id": "mixed-heading",
+          "text": "Evidence 证据系统 / Operational Proof",
+          "requested_stack": "Segoe UI Variable, Segoe UI, sans-serif",
+          "computed_family": "\"Segoe UI Variable\", \"Segoe UI\", sans-serif",
+          "width": 900,
+          "height": 134.375,
+          "line_height": "67.2px",
+          "overflow": false
+        },
+        {
+          "sample_id": "long-en",
+          "text": "A deliberately long English heading verifies line breaks without hiding the measured outcome",
+          "requested_stack": "Segoe UI Variable, Segoe UI, sans-serif",
+          "computed_family": "\"Segoe UI Variable\", \"Segoe UI\", sans-serif",
+          "width": 720,
+          "height": 235.1875,
+          "line_height": "58.8px",
+          "overflow": false
+        },
+        {
+          "sample_id": "long-zh",
+          "text": "这是一条用于验证中文长标题换行、字面密度和视觉层级的压力测试文本",
+          "requested_stack": "Segoe UI Variable, Segoe UI, sans-serif",
+          "computed_family": "\"Segoe UI Variable\", \"Segoe UI\", sans-serif",
+          "width": 720,
+          "height": 176.390625,
+          "line_height": "58.8px",
+          "overflow": false
+        },
+        {
+          "sample_id": "financial-number",
+          "text": "-$123,456,789.00  +37.25%",
+          "requested_stack": "Consolas, monospace",
+          "computed_family": "Consolas, monospace",
+          "width": 720,
+          "height": 41.59375,
+          "line_height": "41.6px",
+          "overflow": false
+        },
+        {
+          "sample_id": "code-data-label",
+          "text": "TXN-042 / WINDOW 18 ms / STATUS EMPTY",
+          "requested_stack": "Consolas, monospace",
+          "computed_family": "Consolas, monospace",
+          "width": 720,
+          "height": 31.1875,
+          "line_height": "31.2px",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "stack_id": "open-web",
+      "measurements": [
+        {
+          "sample_id": "mixed-heading",
+          "text": "Evidence 证据系统 / Operational Proof",
+          "requested_stack": "Inter, sans-serif",
+          "computed_family": "Inter, sans-serif",
+          "width": 900,
+          "height": 134.375,
+          "line_height": "67.2px",
+          "overflow": false
+        },
+        {
+          "sample_id": "long-en",
+          "text": "A deliberately long English heading verifies line breaks without hiding the measured outcome",
+          "requested_stack": "Inter, sans-serif",
+          "computed_family": "Inter, sans-serif",
+          "width": 720,
+          "height": 235.1875,
+          "line_height": "58.8px",
+          "overflow": false
+        },
+        {
+          "sample_id": "long-zh",
+          "text": "这是一条用于验证中文长标题换行、字面密度和视觉层级的压力测试文本",
+          "requested_stack": "Inter, sans-serif",
+          "computed_family": "Inter, sans-serif",
+          "width": 720,
+          "height": 176.390625,
+          "line_height": "58.8px",
+          "overflow": false
+        },
+        {
+          "sample_id": "financial-number",
+          "text": "-$123,456,789.00  +37.25%",
+          "requested_stack": "IBM Plex Mono, monospace",
+          "computed_family": "\"IBM Plex Mono\", monospace",
+          "width": 720,
+          "height": 41.59375,
+          "line_height": "41.6px",
+          "overflow": false
+        },
+        {
+          "sample_id": "code-data-label",
+          "text": "TXN-042 / WINDOW 18 ms / STATUS EMPTY",
+          "requested_stack": "IBM Plex Mono, monospace",
+          "computed_family": "\"IBM Plex Mono\", monospace",
+          "width": 720,
+          "height": 31.1875,
+          "line_height": "31.2px",
+          "overflow": false
+        }
+      ]
+    }
+  ],
+  "assertions": {
+    "line_break_samples_complete": true,
+    "no_horizontal_overflow": true,
+    "font_files_redistributed": false
+  },
+  "limitations": [
+    "Windows and open-web stacks were measured through Chromium fallback resolution on macOS; native Windows rendering remains a production validation.",
+    "No font files are included in the Package."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "grammar_id": "instrument-grammar-source-neutral-v2",
+  "name": "Evidence Instrument Grammar",
+  "rules": [
+    {"rule_id":"grammar-density-rhythm","scope":"all-media","status":"portable","rationale":"Alternate concise explanation with concentrated proof so hierarchy remains legible.","evidence_refs":["ev-together-desktop-viewport","ev-spade-desktop-viewport"],"claim_refs":["claim-density-rhythm"],"allowed":["one sparse explanation region before a dense proof region"],"forbidden":["uniform density across every region"],"validation_method":"density-region-count"},
+    {"rule_id":"grammar-semantic-attachment","scope":"all-media","status":"portable","rationale":"Numbers and labels must describe a nearby object, event or outcome.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-dom"],"claim_refs":["claim-semantic-attachment"],"allowed":["data labels connected by proximity, caption or leader"],"forbidden":["decorative metrics without a referent"],"validation_method":"semantic-overlay-review"},
+    {"rule_id":"grammar-one-protagonist","scope":"primary-proof-region","status":"portable","rationale":"One primary visual subject anchors each proof-bearing surface.","evidence_refs":["ev-spade-desktop-viewport"],"claim_refs":["claim-one-protagonist"],"allowed":["object, photograph, diagram or typographic statement as protagonist"],"forbidden":["multiple equal-weight protagonists"],"validation_method":"primary-object-count"},
+    {"rule_id":"grammar-measured-relationship","scope":"proof-regions","status":"portable","rationale":"Boundaries and alignment communicate measurable relationships without prescribing a source motif.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-css"],"claim_refs":["claim-measured-boundary"],"allowed":["offset frame, ruled field, baseline bracket, calibrated gap"],"forbidden":["mandatory viewport rails or fixed cut-corner measurements"],"validation_method":"boundary-contract"},
+    {"rule_id":"grammar-evidence-before-decoration","scope":"all-media","status":"portable","rationale":"Visual detail must improve comprehension or proof.","evidence_refs":["ev-together-desktop-viewport","ev-spade-desktop-viewport"],"claim_refs":["claim-core-theme-separation"],"allowed":["evidence-bearing image, label, comparison or sequence"],"forbidden":["ornament with no informational role"],"validation_method":"artifact-rationale-audit"},
+    {"rule_id":"grammar-flat-hierarchy","scope":"components","status":"portable","rationale":"Prefer direct surfaces and explicit relationships over stacked generic cards.","evidence_refs":["ev-spade-desktop-viewport"],"claim_refs":["claim-one-protagonist"],"allowed":["flat proof canvas with subordinate callouts"],"forbidden":["universal nested card grid"],"validation_method":"container-depth"},
+    {"rule_id":"grammar-limited-signals","scope":"all-media","status":"portable","rationale":"A small signal budget keeps evidence and action distinguishable.","evidence_refs":["ev-spade-desktop-viewport"],"claim_refs":["claim-core-theme-separation"],"allowed":["one primary and one supporting signal per surface"],"forbidden":["three or more simultaneous accent families"],"validation_method":"signal-area-and-count"},
+    {"rule_id":"grammar-medium-sequence","scope":"carousel-and-slide","status":"portable","rationale":"Narrative sequence adapts density and type size to viewing distance and progression.","evidence_refs":["ev-together-desktop-viewport","ev-spade-mobile-viewport"],"claim_refs":["claim-density-rhythm"],"allowed":["cover, problem, insight, mechanism, evidence, use case, result, CTA"],"forbidden":["same layout duplicated across all pages"],"validation_method":"preview-coverage"}
+  ],
+  "forbidden_requirements": [
+    "exact source colors",
+    "source font files",
+    "source logo or slogans",
+    "fixed cut-corner geometry",
+    "left/right viewport measurement rails",
+    "contour-circle protagonist",
+    "transaction-chip motif",
+    "centered full-height Hero topology"
+  ]
+}

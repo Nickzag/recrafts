@@ -1,0 +1,1103 @@
+{
+  "rules": [
+    {
+      "selector": null,
+      "css_text": "@layer properties {\n  @supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {\n  *, ::before, ::after { --tw-translate-x: 0; --tw-translate-y: 0; --tw-translate-z: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scale-z: 1; --tw-rotate-x: initial; --tw-rotate-y: initial; --tw-rotate-z: initial; --tw-skew-x: initial; --tw-skew-y: initial; --tw-space-y-reverse: 0; --tw-space-x-reverse: 0; --tw-divide-y-reverse: 0; --tw-border-style: solid; --tw-gradient-position: initial; --tw-gradient-from: #0000; --tw-gradient-via: #0000; --tw-gradient-to: #0000; --tw-gradient-stops: initial; --tw-gradient-via-stops: initial; --tw-gradient-from-position: 0%; --tw-gradient-via-position: 50%; --tw-gradient-to-position: 100%; --tw-leading: initial; --tw-font-weight: initial; --tw-tracking: initial; --tw-shadow: 0 0 #0000; --tw-shadow-color: initial; --tw-shadow-alpha: 100%; --tw-inset-shadow: 0 0 #0000; --tw-inset-shadow-color: initial",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@layer theme {\n  :root, :host { --font-sans: system-ui, sans-serif; --font-serif: Georgia, serif; --font-mono: ui-monospace, monospace; --color-red-50: #fef2f2; --color-red-400: #ff6568; --color-red-600: #e40014; --color-red-900: #82181a; --color-orange-200: #ffd7a8; --color-black: #000; --color-white: #fff; --spacing: .25rem; --container-xs: 20rem; --container-sm: 24rem; --container-md: 28rem; --container-lg: 32rem; --container-xl: 36rem; --container-2xl: 42rem; --container-3xl: 48rem; --container-4xl: 56rem; --container-5xl: 64rem; --container-6xl: 72rem; --text-sm: .875rem; --text-sm--line-height: calc(1.25 / .875); --text-base: 1rem; --text-base--line-height: calc(1.5 / 1); --font-weight-light: 300; --font-weight-normal: 400; --font-weight-medium: 500; --font-weight-semibold: 600; --font-weight-extrabold: 800; --tracking-wider: .05em; --leading-normal: 1.5; --radius-sm: .25rem; --radius-md: .375rem; --radius-lg: .5rem; --ease-out: cubic-bezier(0, 0, .2, 1); --ease-in-out: cubic-bez",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@layer base {\n  *, ::after, ::before { box-sizing: border-box; border: 0px solid; margin: 0px; padding: 0px; }\n  ::backdrop { box-sizing: border-box; border: 0px solid; margin: 0px; padding: 0px; }\n  ::file-selector-button { box-sizing: border-box; border: 0px solid; margin: 0px; padding: 0px; }\n  html, :host { text-size-adjust: 100%; tab-size: 4; line-height: 1.5; font-family: var(--default-font-family,ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"); font-feature-settings: var(--default-font-feature-settings,normal); font-variation-settings: var(--default-font-variation-settings,normal); -webkit-tap-highlight-color: transparent; }\n  hr { height: 0px; color: inherit; border-top-width: 1px; }\n  abbr:where([title]) { text-decoration: underline dotted; }\n  h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }\n  a { color: inherit; text-decoration: inherit; }\n  b, strong { font-weight: bolder; }\n  code, kbd,",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@layer components;",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@layer utilities {\n  .pointer-events-auto { pointer-events: auto; }\n  .pointer-events-none { pointer-events: none; }\n  .collapse { visibility: collapse; }\n  .invisible { visibility: hidden; }\n  .visible { visibility: visible; }\n  .sr-only { clip-path: inset(50%); white-space: nowrap; border-width: 0px; width: 1px; height: 1px; margin: -1px; padding: 0px; position: absolute; overflow: hidden; }\n  .absolute { position: absolute; }\n  .fixed { position: fixed; }\n  .relative { position: relative; }\n  .static { position: static; }\n  .sticky { position: sticky; }\n  .inset-0 { inset: 0px; }\n  .inset-2 { inset: calc(var(--spacing) * 2); }\n  .inset-x-0 { inset-inline: 0px; }\n  .-top-1 { top: calc(var(--spacing) * -1); }\n  .top-0 { top: 0px; }\n  .top-1\\/2 { top: 50%; }\n  .top-2 { top: calc(var(--spacing) * 2); }\n  .top-24 { top: calc(var(--spacing) * 24); }\n  .top-\\[20vh\\] { top: 20vh; }\n  .top-\\[50\\%\\] { top: 50%; }\n  .-right-2 { right: calc(var(--spacing) * -2); }\n  .-right-3 { right: calc(var(",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@font-face { font-family: Sohne; src: url(\"../media/subset-Sohne-Kraftig.1_4tn2k_txo_v.woff2\") format(\"woff2\"); font-weight: 500; font-style: normal; font-display: swap; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@font-face { font-family: Sohne; src: url(\"../media/subset-Sohne-Halbfett.3menqk5xfaznq.woff2\") format(\"woff2\"); font-weight: 600; font-style: normal; font-display: swap; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".work-content",
+      "css_text": ".work-content { position: relative; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".work-content p:not(:last-child)",
+      "css_text": ".work-content p:not(:last-child) { margin-bottom: 2rem; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".work-content p",
+      "css_text": ".work-content p { color: var(--color-black); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark .work-content p",
+      "css_text": ".dark .work-content p { color: var(--color-black-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".work-content h1, .work-content h2, .work-content h3, .work-content h4, .work-content h5, .work-content h6",
+      "css_text": ".work-content h1, .work-content h2, .work-content h3, .work-content h4, .work-content h5, .work-content h6 { color: var(--color-black); margin-bottom: 1rem; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark .work-content h1, .dark .work-content h2, .dark .work-content h3, .dark .work-content h4, .dark .work-content h5, .dark .work-content h6",
+      "css_text": ".dark .work-content h1, .dark .work-content h2, .dark .work-content h3, .dark .work-content h4, .dark .work-content h5, .dark .work-content h6 { color: var(--color-black-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@keyframes shake { \n  0%, 100% { transform: translate(0px); }\n  20% { transform: translate(-6px); }\n  40% { transform: translate(6px); }\n  60% { transform: translate(-4px); }\n  80% { transform: translate(4px); }\n}",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark input:-webkit-autofill",
+      "css_text": ".dark input:-webkit-autofill { -webkit-text-fill-color: rgb(255, 255, 255); color: rgb(255, 255, 255) !important; background-color: rgb(0, 0, 0) !important; background-clip: content-box !important; box-shadow: rgb(0, 0, 0) 0px 0px 0px 60px inset !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark input:-webkit-autofill:hover",
+      "css_text": ".dark input:-webkit-autofill:hover { -webkit-text-fill-color: rgb(255, 255, 255); color: rgb(255, 255, 255) !important; background-color: rgb(0, 0, 0) !important; background-clip: content-box !important; box-shadow: rgb(0, 0, 0) 0px 0px 0px 60px inset !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark input:-webkit-autofill:focus",
+      "css_text": ".dark input:-webkit-autofill:focus { -webkit-text-fill-color: rgb(255, 255, 255); color: rgb(255, 255, 255) !important; background-color: rgb(0, 0, 0) !important; background-clip: content-box !important; box-shadow: rgb(0, 0, 0) 0px 0px 0px 60px inset !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark input:-webkit-autofill:active",
+      "css_text": ".dark input:-webkit-autofill:active { -webkit-text-fill-color: rgb(255, 255, 255); color: rgb(255, 255, 255) !important; background-color: rgb(0, 0, 0) !important; background-clip: content-box !important; box-shadow: rgb(0, 0, 0) 0px 0px 0px 60px inset !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input",
+      "css_text": "input { outline: none; appearance: none !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input:focus",
+      "css_text": "input:focus { box-shadow: none; outline: none; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input:not([type=\"checkbox\"]):not([type=\"radio\"])",
+      "css_text": "input:not([type=\"checkbox\"]):not([type=\"radio\"]) { appearance: none !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input:not([type=\"checkbox\"]):not([type=\"radio\"]):focus",
+      "css_text": "input:not([type=\"checkbox\"]):not([type=\"radio\"]):focus { box-shadow: none !important; outline: none !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input:-webkit-autofill",
+      "css_text": "input:-webkit-autofill { -webkit-text-fill-color: rgb(0, 0, 0); color: rgb(0, 0, 0) !important; background-color: rgb(255, 255, 255) !important; background-clip: content-box !important; box-shadow: rgb(255, 255, 255) 0px 0px 0px 60px inset !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input:-webkit-autofill:hover",
+      "css_text": "input:-webkit-autofill:hover { -webkit-text-fill-color: rgb(0, 0, 0); color: rgb(0, 0, 0) !important; background-color: rgb(255, 255, 255) !important; background-clip: content-box !important; box-shadow: rgb(255, 255, 255) 0px 0px 0px 60px inset !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input:-webkit-autofill:focus",
+      "css_text": "input:-webkit-autofill:focus { -webkit-text-fill-color: rgb(0, 0, 0); color: rgb(0, 0, 0) !important; background-color: rgb(255, 255, 255) !important; background-clip: content-box !important; box-shadow: rgb(255, 255, 255) 0px 0px 0px 60px inset !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input:-webkit-autofill:active",
+      "css_text": "input:-webkit-autofill:active { -webkit-text-fill-color: rgb(0, 0, 0); color: rgb(0, 0, 0) !important; background-color: rgb(255, 255, 255) !important; background-clip: content-box !important; box-shadow: rgb(255, 255, 255) 0px 0px 0px 60px inset !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input::-webkit-credentials-auto-fill-button",
+      "css_text": "input::-webkit-credentials-auto-fill-button { background-color: rgb(255, 255, 255) !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input::-webkit-credentials-auto-fill-button:hover",
+      "css_text": "input::-webkit-credentials-auto-fill-button:hover { background-color: rgb(255, 255, 255) !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button",
+      "css_text": "input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button { background-color: var(--color-black); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button",
+      "css_text": ".dark input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button { background-color: var(--color-black-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".input-wrapper.newsletter",
+      "css_text": ".input-wrapper.newsletter { z-index: 52; position: relative; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".input-wrapper::after",
+      "css_text": ".input-wrapper::after { content: \"\"; background-color: var(--color-border); height: 1px; transition: 0.2s ease-in-out; position: absolute; bottom: 0px; left: 0px; right: 0px; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "button",
+      "css_text": "button { cursor: pointer; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark .input-wrapper::after",
+      "css_text": ".dark .input-wrapper::after { background-color: var(--color-border-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".input-wrapper:hover::after",
+      "css_text": ".input-wrapper:hover::after { background-color: rgba(0, 0, 0, 0.4); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark .input-wrapper:hover::after",
+      "css_text": ".dark .input-wrapper:hover::after { background-color: rgba(255, 255, 255, 0.4); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".input-wrapper:focus-within::after",
+      "css_text": ".input-wrapper:focus-within::after { background-color: rgba(0, 0, 0, 0.8); height: 2px; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark .input-wrapper:focus-within::after",
+      "css_text": ".dark .input-wrapper:focus-within::after { background-color: rgba(255, 255, 255, 0.6); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".input-wrapper:focus-within ~ .overlay",
+      "css_text": ".input-wrapper:focus-within ~ .overlay { pointer-events: auto; opacity: 1; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".shake",
+      "css_text": ".shake { backface-visibility: hidden; perspective: 1000px; animation: 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0s 1 normal both running shake; transform: translateZ(0px); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ":root",
+      "css_text": ":root { --color-1: 0 85% 60%; --color-2: 255 85% 60%; --color-3: 155 85% 60%; --color-4: 55 85% 60%; --color-5: 315 85% 60%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@keyframes rainbow { \n  0% { background-position: 0% center; }\n  100% { background-position: 300% center; }\n}",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "#contact-form, #careers-form",
+      "css_text": "#contact-form, #careers-form { overflow: visible; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "#contact-form .submit-button, #careers-form .submit-button",
+      "css_text": "#contact-form .submit-button, #careers-form .submit-button { position: relative; overflow: visible; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "#contact-form .submit-button .button-gradient, #careers-form .submit-button .button-gradient",
+      "css_text": "#contact-form .submit-button .button-gradient, #careers-form .submit-button .button-gradient { background-image: ; background-position-x: ; background-position-y: ; background-repeat: ; background-attachment: ; background-origin: ; background-clip: ; background-color: ; backface-visibility: hidden; filter: blur(0.8rem); background-size: 300% 100%; border-radius: 9999px; animation: 3s linear 0s infinite normal none running rainbow; transform: translateZ(0px); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@media (min-width: 640px) {\n  .container { max-width: 100%; padding-left: 3rem; padding-right: 3rem; }\n}",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@media (min-width: 1280px) {\n  .container { max-width: 1280px; }\n}",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@media (min-width: 1536px) {\n  .container { max-width: 1536px; }\n}",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@media (min-width: 768px) {\n  .pt-base { padding-top: 5rem; }\n  .pb-base { padding-bottom: 8rem; }\n  .pt-small { padding-top: 4rem; }\n  .pb-small { padding-bottom: 4rem; }\n  .pt-large { padding-top: 10rem; }\n  .pb-large { padding-bottom: 10rem; }\n}",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-translate-x { syntax: \"*\"; inherits: false; initial-value: 0; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-translate-y { syntax: \"*\"; inherits: false; initial-value: 0; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-translate-z { syntax: \"*\"; inherits: false; initial-value: 0; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-scale-x { syntax: \"*\"; inherits: false; initial-value: 1; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-scale-y { syntax: \"*\"; inherits: false; initial-value: 1; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-scale-z { syntax: \"*\"; inherits: false; initial-value: 1; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-rotate-x { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-rotate-y { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-rotate-z { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-skew-x { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-skew-y { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-space-y-reverse { syntax: \"*\"; inherits: false; initial-value: 0; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-space-x-reverse { syntax: \"*\"; inherits: false; initial-value: 0; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-divide-y-reverse { syntax: \"*\"; inherits: false; initial-value: 0; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-border-style { syntax: \"*\"; inherits: false; initial-value: solid; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-position { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-from { syntax: \"<color>\"; inherits: false; initial-value: #0000; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-via { syntax: \"<color>\"; inherits: false; initial-value: #0000; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-to { syntax: \"<color>\"; inherits: false; initial-value: #0000; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-stops { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-via-stops { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-from-position { syntax: \"<length-percentage>\"; inherits: false; initial-value: 0%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-via-position { syntax: \"<length-percentage>\"; inherits: false; initial-value: 50%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-gradient-to-position { syntax: \"<length-percentage>\"; inherits: false; initial-value: 100%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-leading { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-font-weight { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-tracking { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-shadow { syntax: \"*\"; inherits: false; initial-value: 0 0 #0000; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-shadow-color { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-shadow-alpha { syntax: \"<percentage>\"; inherits: false; initial-value: 100%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-inset-shadow { syntax: \"*\"; inherits: false; initial-value: 0 0 #0000; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-inset-shadow-color { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-inset-shadow-alpha { syntax: \"<percentage>\"; inherits: false; initial-value: 100%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-ring-color { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-ring-shadow { syntax: \"*\"; inherits: false; initial-value: 0 0 #0000; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-inset-ring-color { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-inset-ring-shadow { syntax: \"*\"; inherits: false; initial-value: 0 0 #0000; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-ring-inset { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-ring-offset-width { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-ring-offset-color { syntax: \"*\"; inherits: false; initial-value: #fff; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-ring-offset-shadow { syntax: \"*\"; inherits: false; initial-value: 0 0 #0000; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-outline-style { syntax: \"*\"; inherits: false; initial-value: solid; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-blur { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-brightness { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-contrast { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-grayscale { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-hue-rotate { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-invert { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-opacity { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-saturate { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-sepia { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-drop-shadow { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-drop-shadow-color { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-drop-shadow-alpha { syntax: \"<percentage>\"; inherits: false; initial-value: 100%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-drop-shadow-size { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-blur { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-brightness { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-contrast { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-grayscale { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-hue-rotate { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-invert { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-opacity { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-saturate { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-backdrop-sepia { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-duration { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@property --tw-ease { syntax: \"*\"; inherits: false; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@keyframes pulse { \n  50% { opacity: 0.5; }\n}",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": "html",
+      "css_text": "html { -webkit-font-smoothing: antialiased; scroll-padding-top: 8rem; scroll-behavior: smooth !important; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".header-bg-gradient-blur",
+      "css_text": ".header-bg-gradient-blur { backdrop-filter: blur(14px); background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)); mask-image: linear-gradient(rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".dark .header-bg-gradient-blur",
+      "css_text": ".dark .header-bg-gradient-blur { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".scrollbar-hide",
+      "css_text": ".scrollbar-hide { scrollbar-width: none; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".scrollbar-hide::-webkit-scrollbar",
+      "css_text": ".scrollbar-hide::-webkit-scrollbar { display: none; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@keyframes loadingBounce { \n  0%, 100% { transform: translateY(0px); }\n  50% { transform: translateY(-6px); }\n}",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".animate-text",
+      "css_text": ".animate-text { opacity: 0.4; transition: opacity 0.8s cubic-bezier(0.4, 0, 0.3, 1); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@font-face { font-family: tiempos; src: url(\"../media/subset_TiemposText_Regular-s.p.3t2cct-y169la.woff2\") format(\"woff2\"); font-display: optional; font-weight: 300; font-style: normal; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@font-face { font-family: \"tiempos Fallback\"; src: local(\"Times New Roman\"); ascent-override: 65.93%; descent-override: 20.68%; line-gap-override: 17.34%; size-adjust: 115.45%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".tiempos_30fc21dc-module__jS9aQW__className",
+      "css_text": ".tiempos_30fc21dc-module__jS9aQW__className { font-family: tiempos, \"tiempos Fallback\", Georgia, serif; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".tiempos_30fc21dc-module__jS9aQW__variable",
+      "css_text": ".tiempos_30fc21dc-module__jS9aQW__variable { --font-tiempos: \"tiempos\", \"tiempos Fallback\", Georgia, serif; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@font-face { font-family: sohne; src: url(\"../media/subset_Sohne_Buch-s.p.1-6e469yq4ruk.woff2\") format(\"woff2\"); font-display: swap; font-weight: 400; font-style: normal; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@font-face { font-family: \"sohne Fallback\"; src: local(\"Arial\"); ascent-override: 103.76%; descent-override: 23.33%; line-gap-override: 0%; size-adjust: 100.24%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".sohne_1a7c600b-module__FA1JRa__className",
+      "css_text": ".sohne_1a7c600b-module__FA1JRa__className { font-family: sohne, \"sohne Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": ".sohne_1a7c600b-module__FA1JRa__variable",
+      "css_text": ".sohne_1a7c600b-module__FA1JRa__variable { --font-sohne: \"sohne\", \"sohne Fallback\", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@font-face { font-family: sohneMono; src: url(\"../media/subset_SohneMono_Buch-s.p.357nv2ufuxzdu.woff2\") format(\"woff2\"); font-display: swap; font-weight: 400; font-style: normal; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/41nh3m5fy5p-w.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@font-face { font-family: \"sohneMono Fallback\"; src: local(\"Arial\"); ascent-override: 78.86%; descent-override: 21.98%; line-gap-override: 0%; size-adjust: 131.49%; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/41nh3m5fy5p-w.css"
+    },
+    {
+      "selector": ".sohnemono_f6f8a09-module__laBKAa__className",
+      "css_text": ".sohnemono_f6f8a09-module__laBKAa__className { font-family: sohneMono, \"sohneMono Fallback\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/41nh3m5fy5p-w.css"
+    },
+    {
+      "selector": ".sohnemono_f6f8a09-module__laBKAa__variable",
+      "css_text": ".sohnemono_f6f8a09-module__laBKAa__variable { --font-sohne-mono: \"sohneMono\", \"sohneMono Fallback\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/41nh3m5fy5p-w.css"
+    },
+    {
+      "selector": ".work-module__WGvjLW__work",
+      "css_text": ".work-module__WGvjLW__work { position: relative; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".work-module__WGvjLW__work .caption strong",
+      "css_text": ".work-module__WGvjLW__work .caption strong { color: var(--color-black); font-weight: 500; }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".dark .work-module__WGvjLW__work .caption strong",
+      "css_text": ".dark .work-module__WGvjLW__work .caption strong { color: var(--color-black-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".work-module__WGvjLW__work .caption > p",
+      "css_text": ".work-module__WGvjLW__work .caption > p { color: var(--color-body); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".dark .work-module__WGvjLW__work .caption > p",
+      "css_text": ".dark .work-module__WGvjLW__work .caption > p { color: var(--color-body-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".work-module__WGvjLW__work .caption.colourChanged",
+      "css_text": ".work-module__WGvjLW__work .caption.colourChanged { color: var(--color-body-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".dark .work-module__WGvjLW__work .caption.colourChanged",
+      "css_text": ".dark .work-module__WGvjLW__work .caption.colourChanged { color: var(--color-body-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".work-module__WGvjLW__work .caption.colourChanged strong",
+      "css_text": ".work-module__WGvjLW__work .caption.colourChanged strong { color: var(--color-white); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".dark .work-module__WGvjLW__work .caption.colourChanged strong",
+      "css_text": ".dark .work-module__WGvjLW__work .caption.colourChanged strong { color: var(--color-white); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".work-module__WGvjLW__work .caption.colourChanged > p",
+      "css_text": ".work-module__WGvjLW__work .caption.colourChanged > p { color: var(--color-body-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".dark .work-module__WGvjLW__work .caption.colourChanged > p",
+      "css_text": ".dark .work-module__WGvjLW__work .caption.colourChanged > p { color: var(--color-body-dark); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".work-module__WGvjLW__work .heading.colourChanged",
+      "css_text": ".work-module__WGvjLW__work .heading.colourChanged { color: var(--color-white); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": ".dark .work-module__WGvjLW__work .heading.colourChanged",
+      "css_text": ".dark .work-module__WGvjLW__work .heading.colourChanged { color: var(--color-white); }",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    },
+    {
+      "selector": null,
+      "css_text": "@layer blossom-carousel {\n  [blossom-carousel] { white-space: nowrap; scroll-behavior: smooth; overscroll-behavior-x: contain; box-sizing: border-box; inline-size: 100%; max-inline-size: 100vw; list-style-type: none; display: inline-block; overflow: auto clip; }\n  [blossom-carousel]:is(ul) { padding-inline-start: 0px; }\n  [blossom-carousel] { scrollbar-width: none; }\n  [blossom-carousel]::-webkit-scrollbar { display: none; }\n  [blossom-carousel][has-repeat=\"true\"] { padding-inline: 50% !important; scroll-padding-inline: 50% !important; }\n  [blossom-carousel][has-snap=\"true\"] { scroll-snap-type: var(--snap-type) !important; }\n  [blossom-carousel][has-overflow=\"true\"] { cursor: grab; }\n  [blossom-carousel][has-overflow=\"true\"]:active { cursor: grabbing; }\n  @media (pointer: fine) {\n  [blossom-carousel][has-overflow=\"true\"]:active { scroll-snap-type: none !important; }\n}\n  [blossom-carousel] > * { white-space: initial; vertical-align: top; display: inline-block; }\n  [blossom-carousel] * {",
+      "stylesheet": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css"
+    }
+  ],
+  "variables": [
+    {
+      "name": "--container-md",
+      "value": "28rem"
+    },
+    {
+      "name": "--tw-ring-offset-shadow",
+      "value": "0 0 #0000"
+    },
+    {
+      "name": "--tw-inset-shadow-alpha",
+      "value": "100%"
+    },
+    {
+      "name": "--color-orange-200",
+      "value": "lab(88.4871% 9.94918 28.8378)"
+    },
+    {
+      "name": "--tw-ring-shadow",
+      "value": "0 0 #0000"
+    },
+    {
+      "name": "--tw-drop-shadow-alpha",
+      "value": "100%"
+    },
+    {
+      "name": "--color-red-900",
+      "value": "lab(28.5139% 44.5539 29.0463)"
+    },
+    {
+      "name": "--default-transition-timing-function",
+      "value": "cubic-bezier(.4, 0, .2, 1)"
+    },
+    {
+      "name": "--color-white-dark",
+      "value": "#000"
+    },
+    {
+      "name": "--font-body",
+      "value": "system-ui, sans-serif"
+    },
+    {
+      "name": "--color-2",
+      "value": "255 85% 60%"
+    },
+    {
+      "name": "--tw-outline-style",
+      "value": "solid"
+    },
+    {
+      "name": "--color-5",
+      "value": "315 85% 60%"
+    },
+    {
+      "name": "--container-5xl",
+      "value": "64rem"
+    },
+    {
+      "name": "--leading-normal",
+      "value": "1.5"
+    },
+    {
+      "name": "--tw-inset-ring-shadow",
+      "value": "0 0 #0000"
+    },
+    {
+      "name": "--text-base--line-height",
+      "value": "calc(1.5 / 1)"
+    },
+    {
+      "name": "--spacing",
+      "value": ".25rem"
+    },
+    {
+      "name": "--lightningcss-dark",
+      "value": ""
+    },
+    {
+      "name": "--tw-translate-z",
+      "value": "0"
+    },
+    {
+      "name": "--tw-gradient-via",
+      "value": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "--tw-scale-y",
+      "value": "1"
+    },
+    {
+      "name": "--tracking-wider",
+      "value": ".05em"
+    },
+    {
+      "name": "--font-mono",
+      "value": "ui-monospace, monospace"
+    },
+    {
+      "name": "--container-6xl",
+      "value": "72rem"
+    },
+    {
+      "name": "--font-weight-semibold",
+      "value": "600"
+    },
+    {
+      "name": "--color-body",
+      "value": "#5c5c5c"
+    },
+    {
+      "name": "--container-3xl",
+      "value": "48rem"
+    },
+    {
+      "name": "--text-sm",
+      "value": ".875rem"
+    },
+    {
+      "name": "--tw-translate-y",
+      "value": "0"
+    },
+    {
+      "name": "--blur-md",
+      "value": "12px"
+    },
+    {
+      "name": "--ease-out",
+      "value": "cubic-bezier(0, 0, .2, 1)"
+    },
+    {
+      "name": "--color-off-grey",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "--container-4xl",
+      "value": "56rem"
+    },
+    {
+      "name": "--tw-inset-shadow",
+      "value": "0 0 #0000"
+    },
+    {
+      "name": "--tw-ring-offset-color",
+      "value": "#fff"
+    },
+    {
+      "name": "--color-red-400",
+      "value": "lab(63.7053% 60.745 31.3109)"
+    },
+    {
+      "name": "--tw-gradient-from",
+      "value": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "--color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "--color-grey",
+      "value": "#fafafa"
+    },
+    {
+      "name": "--tw-gradient-to",
+      "value": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "--tw-shadow-alpha",
+      "value": "100%"
+    },
+    {
+      "name": "--radius-sm",
+      "value": ".25rem"
+    },
+    {
+      "name": "--lightningcss-light",
+      "value": ""
+    },
+    {
+      "name": "--font-weight-extrabold",
+      "value": "800"
+    },
+    {
+      "name": "--font-sans",
+      "value": "system-ui, sans-serif"
+    },
+    {
+      "name": "--color-body-dark",
+      "value": "#a3a3a3"
+    },
+    {
+      "name": "--tw-divide-y-reverse",
+      "value": "0"
+    },
+    {
+      "name": "--tw-scale-z",
+      "value": "1"
+    },
+    {
+      "name": "--tw-border-style",
+      "value": "solid"
+    },
+    {
+      "name": "--color-grey-dark",
+      "value": "#121212"
+    },
+    {
+      "name": "--color-red-600",
+      "value": "lab(48.4493% 77.4328 61.5452)"
+    },
+    {
+      "name": "--color-red-50",
+      "value": "lab(96.5005% 4.18508 1.52328)"
+    },
+    {
+      "name": "--container-2xl",
+      "value": "42rem"
+    },
+    {
+      "name": "--tw-shadow",
+      "value": "0 0 #0000"
+    },
+    {
+      "name": "--text-sm--line-height",
+      "value": "calc(1.25 / .875)"
+    },
+    {
+      "name": "--tw-translate-x",
+      "value": "0"
+    },
+    {
+      "name": "--tw-ring-offset-width",
+      "value": "0px"
+    },
+    {
+      "name": "--container-sm",
+      "value": "24rem"
+    },
+    {
+      "name": "--color-border",
+      "value": "#0000000d"
+    },
+    {
+      "name": "--color-4",
+      "value": "55 85% 60%"
+    },
+    {
+      "name": "--tw-gradient-via-position",
+      "value": "50%"
+    },
+    {
+      "name": "--color-3",
+      "value": "155 85% 60%"
+    },
+    {
+      "name": "--color-black",
+      "value": "#000"
+    },
+    {
+      "name": "--default-font-family",
+      "value": "system-ui, sans-serif"
+    },
+    {
+      "name": "--font-weight-light",
+      "value": "300"
+    },
+    {
+      "name": "--tw-space-x-reverse",
+      "value": "0"
+    },
+    {
+      "name": "--container-lg",
+      "value": "32rem"
+    },
+    {
+      "name": "--tw-scale-x",
+      "value": "1"
+    },
+    {
+      "name": "--color-black-dark",
+      "value": "#ededed"
+    },
+    {
+      "name": "--font-weight-normal",
+      "value": "400"
+    },
+    {
+      "name": "--font-weight-medium",
+      "value": "500"
+    },
+    {
+      "name": "--tw-gradient-to-position",
+      "value": "100%"
+    },
+    {
+      "name": "--font-serif",
+      "value": "Georgia, serif"
+    },
+    {
+      "name": "--color-border-dark",
+      "value": "#ffffff1a"
+    },
+    {
+      "name": "--color-1",
+      "value": "0 85% 60%"
+    },
+    {
+      "name": "--default-transition-duration",
+      "value": ".15s"
+    },
+    {
+      "name": "--animate-pulse",
+      "value": "pulse 2s cubic-bezier(.4, 0, .6, 1) infinite"
+    },
+    {
+      "name": "--tw-space-y-reverse",
+      "value": "0"
+    },
+    {
+      "name": "--radius-md",
+      "value": ".375rem"
+    },
+    {
+      "name": "--container-xl",
+      "value": "36rem"
+    },
+    {
+      "name": "--radius-lg",
+      "value": ".5rem"
+    },
+    {
+      "name": "--container-xs",
+      "value": "20rem"
+    },
+    {
+      "name": "--text-base",
+      "value": "1rem"
+    },
+    {
+      "name": "--tw-gradient-from-position",
+      "value": "0%"
+    },
+    {
+      "name": "--blur-sm",
+      "value": "8px"
+    },
+    {
+      "name": "--default-mono-font-family",
+      "value": "ui-monospace, monospace"
+    },
+    {
+      "name": "--ease-in-out",
+      "value": "cubic-bezier(.4, 0, .2, 1)"
+    }
+  ]
+}

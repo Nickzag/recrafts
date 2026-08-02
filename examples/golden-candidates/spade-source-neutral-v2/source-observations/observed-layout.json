@@ -1,0 +1,4 @@
+{"observations":[
+  {"observation_id":"obs-layout-together-reading-column","domain":"layout","value":{"alignment":"centered-narrow-column","headline_width":"approximately 530px at 1440","sequence":"intro then wide proof media"},"source_scope":"together-case-study-shell","evidence_refs":["ev-together-desktop-viewport","ev-together-mobile-viewport"],"claim_refs":["claim-shell-brand-separation","claim-density-rhythm"],"confidence":"high","source_specificity":"medium","portability_risk":"medium"},
+  {"observation_id":"obs-layout-spade-proof-canvas","domain":"layout","value":{"alignment":"centered-instrument-canvas","density":"dense focal proof inside sparse field"},"source_scope":"spade-brand-system","evidence_refs":["ev-spade-desktop-viewport","ev-spade-mobile-viewport"],"claim_refs":["claim-density-rhythm","claim-one-protagonist"],"confidence":"high","source_specificity":"medium","portability_risk":"medium"}
+]}

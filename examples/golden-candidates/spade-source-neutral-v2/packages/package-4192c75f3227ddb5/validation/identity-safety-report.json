@@ -1,0 +1,85 @@
+{
+  "status": "blocked",
+  "findings": [
+    {
+      "kind": "source-name",
+      "file": "components.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "components.json",
+      "value": "Together"
+    },
+    {
+      "kind": "source-name",
+      "file": "conflicts.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "conflicts.json",
+      "value": "Together"
+    },
+    {
+      "kind": "source-name",
+      "file": "core-grammar.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "core-grammar.json",
+      "value": "Together"
+    },
+    {
+      "kind": "source-name",
+      "file": "grid-rules.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "grid-rules.json",
+      "value": "Together"
+    },
+    {
+      "kind": "source-name",
+      "file": "layout-rules.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "preview-coverage.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "recrafts-package.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "source-distance-report.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "tokens.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "tokens.json",
+      "value": "Together"
+    },
+    {
+      "kind": "source-name",
+      "file": "visual-grammar.json",
+      "value": "Spade"
+    },
+    {
+      "kind": "source-name",
+      "file": "visual-grammar.json",
+      "value": "Together"
+    }
+  ]
+}

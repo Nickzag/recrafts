@@ -1,0 +1,5 @@
+{"observations":[
+  {"observation_id":"obs-motif-contour-object","domain":"motif","value":"stacked contour-line object","source_scope":"spade-brand-system","evidence_refs":["ev-spade-desktop-viewport"],"claim_refs":["claim-motifs-source-locked"],"confidence":"high","source_specificity":"high","portability_risk":"high"},
+  {"observation_id":"obs-motif-transaction-chip","domain":"motif","value":"merchant transaction chip attached to focal object","source_scope":"spade-content-example","evidence_refs":["ev-spade-desktop-viewport","ev-spade-dom"],"claim_refs":["claim-semantic-attachment","claim-motifs-source-locked"],"confidence":"high","source_specificity":"high","portability_risk":"high"},
+  {"observation_id":"obs-motif-measurement-rails","domain":"motif","value":"bilateral viewport tick rails and directional markers","source_scope":"spade-brand-system","evidence_refs":["ev-spade-desktop-viewport"],"claim_refs":["claim-measured-boundary","claim-motifs-source-locked"],"confidence":"high","source_specificity":"high","portability_risk":"high"}
+]}

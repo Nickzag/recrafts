@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "errors": [],
+  "checks": {
+    "contrast_pairs": 6,
+    "stress_cases": 10
+  }
+}

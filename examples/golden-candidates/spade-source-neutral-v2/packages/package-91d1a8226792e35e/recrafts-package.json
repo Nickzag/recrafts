@@ -1,0 +1,4 @@
+{
+  "package_id":"package-91d1a8226792e35e","capture_id":"capture-r010-spade-neutral-20260716","analysis_id":"analysis-r010-codex-gpt5-2348cc69-20260716","status":"reviewable","parent_package_id":null,"artifact_set_id":"artifact-set-c57d931218a10273",
+  "artifacts":["source-manifest.json","evidence-map.json","claims.json","source-observations.json","core-grammar.json","tokens.json","themes.json","components.json","templates.json","accessibility.json","source-distance-report.json","preview-coverage.json","delivery-readiness.json","grid-rules.json","layout-rules.json","visual-grammar.json","conflicts.json","design.md"]
+}

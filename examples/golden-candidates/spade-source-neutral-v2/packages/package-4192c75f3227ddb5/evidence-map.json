@@ -1,0 +1,14 @@
+{
+  "version":"3.1.0","evidence":[
+    {"evidence_id":"ev-together-desktop-viewport","source_id":"together-case-desktop","status":"observed"},
+    {"evidence_id":"ev-together-mobile-viewport","source_id":"together-case-mobile","status":"observed"},
+    {"evidence_id":"ev-together-computed","source_id":"together-case-desktop","status":"observed"},
+    {"evidence_id":"ev-together-fonts","source_id":"together-case-desktop","status":"observed"},
+    {"evidence_id":"ev-spade-desktop-viewport","source_id":"brand-site-desktop","status":"observed"},
+    {"evidence_id":"ev-spade-mobile-viewport","source_id":"brand-site-mobile","status":"observed"},
+    {"evidence_id":"ev-spade-css","source_id":"brand-site-desktop","status":"observed"},
+    {"evidence_id":"ev-spade-computed","source_id":"brand-site-desktop","status":"observed"},
+    {"evidence_id":"ev-spade-fonts","source_id":"brand-site-desktop","status":"observed"},
+    {"evidence_id":"ev-spade-dom","source_id":"brand-site-desktop","status":"observed"}
+  ]
+}

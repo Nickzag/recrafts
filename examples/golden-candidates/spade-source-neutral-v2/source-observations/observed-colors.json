@@ -1,0 +1,6 @@
+{"observations":[
+  {"observation_id":"obs-color-spade-sea","domain":"color","value":"#093328","source_scope":"spade-brand-system","evidence_refs":["ev-spade-css"],"claim_refs":["claim-motifs-source-locked"],"confidence":"high","source_specificity":"high","portability_risk":"high"},
+  {"observation_id":"obs-color-spade-forest","domain":"color","value":"#18280e","source_scope":"spade-brand-system","evidence_refs":["ev-spade-css"],"claim_refs":["claim-motifs-source-locked"],"confidence":"high","source_specificity":"high","portability_risk":"high"},
+  {"observation_id":"obs-color-spade-lemongrass","domain":"color","value":"#b2eb76","source_scope":"spade-brand-system","evidence_refs":["ev-spade-css"],"claim_refs":["claim-motifs-source-locked"],"confidence":"high","source_specificity":"high","portability_risk":"high"},
+  {"observation_id":"obs-color-together-grey","domain":"color","value":"#fafafa","source_scope":"together-case-study-shell","evidence_refs":["ev-together-computed"],"claim_refs":["claim-shell-brand-separation"],"confidence":"high","source_specificity":"low","portability_risk":"low"}
+]}

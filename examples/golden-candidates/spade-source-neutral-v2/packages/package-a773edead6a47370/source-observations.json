@@ -1,0 +1,284 @@
+{
+  "observation_count": 15,
+  "observations": [
+    {
+      "observation_id": "obs-color-spade-sea",
+      "domain": "color",
+      "value": "#093328",
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-css"
+      ],
+      "claim_refs": [
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    },
+    {
+      "observation_id": "obs-color-spade-forest",
+      "domain": "color",
+      "value": "#18280e",
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-css"
+      ],
+      "claim_refs": [
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    },
+    {
+      "observation_id": "obs-color-spade-lemongrass",
+      "domain": "color",
+      "value": "#b2eb76",
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-css"
+      ],
+      "claim_refs": [
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    },
+    {
+      "observation_id": "obs-color-together-grey",
+      "domain": "color",
+      "value": "#fafafa",
+      "source_scope": "together-case-study-shell",
+      "evidence_refs": [
+        "ev-together-computed"
+      ],
+      "claim_refs": [
+        "claim-shell-brand-separation"
+      ],
+      "confidence": "high",
+      "source_specificity": "low",
+      "portability_risk": "low"
+    },
+    {
+      "observation_id": "obs-type-together-editorial",
+      "domain": "typography",
+      "value": {
+        "headline": "Tiempos 300",
+        "desktop": "48/60",
+        "mobile": "32px"
+      },
+      "source_scope": "together-case-study-shell",
+      "evidence_refs": [
+        "ev-together-computed",
+        "ev-together-fonts"
+      ],
+      "claim_refs": [
+        "claim-shell-brand-separation"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "medium"
+    },
+    {
+      "observation_id": "obs-type-spade-display",
+      "domain": "typography",
+      "value": {
+        "headline": "naNSuperX 560",
+        "desktop": "84px",
+        "mobile": "34/39.1"
+      },
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-computed",
+        "ev-spade-fonts"
+      ],
+      "claim_refs": [
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    },
+    {
+      "observation_id": "obs-type-spade-mono",
+      "domain": "typography",
+      "value": {
+        "utility": "polarMono 520",
+        "desktop": "14px"
+      },
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-computed",
+        "ev-spade-fonts"
+      ],
+      "claim_refs": [
+        "claim-semantic-attachment"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "medium"
+    },
+    {
+      "observation_id": "obs-layout-together-reading-column",
+      "domain": "layout",
+      "value": {
+        "alignment": "centered-narrow-column",
+        "headline_width": "approximately 530px at 1440",
+        "sequence": "intro then wide proof media"
+      },
+      "source_scope": "together-case-study-shell",
+      "evidence_refs": [
+        "ev-together-desktop-viewport",
+        "ev-together-mobile-viewport"
+      ],
+      "claim_refs": [
+        "claim-shell-brand-separation",
+        "claim-density-rhythm"
+      ],
+      "confidence": "high",
+      "source_specificity": "medium",
+      "portability_risk": "medium"
+    },
+    {
+      "observation_id": "obs-layout-spade-proof-canvas",
+      "domain": "layout",
+      "value": {
+        "alignment": "centered-instrument-canvas",
+        "density": "dense focal proof inside sparse field"
+      },
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "claim_refs": [
+        "claim-density-rhythm",
+        "claim-one-protagonist"
+      ],
+      "confidence": "high",
+      "source_specificity": "medium",
+      "portability_risk": "medium"
+    },
+    {
+      "observation_id": "obs-shape-cut-boundary",
+      "domain": "shape",
+      "value": {
+        "form": "cut or notched panel corners",
+        "measurement": "exact cut values not promoted"
+      },
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-css"
+      ],
+      "claim_refs": [
+        "claim-measured-boundary",
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "medium",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    },
+    {
+      "observation_id": "obs-motion-marquee",
+      "domain": "motion",
+      "value": {
+        "css_variable": "--animate-marquee",
+        "timing": "25s linear infinite"
+      },
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-css"
+      ],
+      "claim_refs": [
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "medium",
+      "portability_risk": "medium"
+    },
+    {
+      "observation_id": "obs-topology-spade-hero",
+      "domain": "topology",
+      "value": {
+        "region_order": [
+          "navigation",
+          "centered headline",
+          "central contour object with bilateral data",
+          "centered explanation",
+          "centered CTA"
+        ],
+        "alignment": "centered",
+        "primary_object_location": "center",
+        "cta_location": "bottom-center",
+        "measurement_boundary_location": "left-and-right viewport edges",
+        "background_transitions": [
+          "white",
+          "pale-green",
+          "white"
+        ]
+      },
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "claim_refs": [
+        "claim-topology-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    },
+    {
+      "observation_id": "obs-motif-contour-object",
+      "domain": "motif",
+      "value": "stacked contour-line object",
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport"
+      ],
+      "claim_refs": [
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    },
+    {
+      "observation_id": "obs-motif-transaction-chip",
+      "domain": "motif",
+      "value": "merchant transaction chip attached to focal object",
+      "source_scope": "spade-content-example",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-dom"
+      ],
+      "claim_refs": [
+        "claim-semantic-attachment",
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    },
+    {
+      "observation_id": "obs-motif-measurement-rails",
+      "domain": "motif",
+      "value": "bilateral viewport tick rails and directional markers",
+      "source_scope": "spade-brand-system",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport"
+      ],
+      "claim_refs": [
+        "claim-measured-boundary",
+        "claim-motifs-source-locked"
+      ],
+      "confidence": "high",
+      "source_specificity": "high",
+      "portability_risk": "high"
+    }
+  ]
+}

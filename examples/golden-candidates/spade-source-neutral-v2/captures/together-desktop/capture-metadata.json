@@ -1,0 +1,15 @@
+{
+  "url": "https://together.agency/work/spade/?ref=rebrand",
+  "captured_at": "2026-07-16T09:11:18.985Z",
+  "browser": {
+    "name": "chromium",
+    "version": "149.0.7827.55"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": "complete",
+  "missing_evidence": [],
+  "content_sha256": "8ef41ffeb83fe23173f11c6eb6df81136714abb26200cfd00324cc607f478a7d"
+}

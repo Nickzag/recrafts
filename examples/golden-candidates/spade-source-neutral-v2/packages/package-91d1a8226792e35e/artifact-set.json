@@ -1,0 +1,157 @@
+{
+  "artifact_set_id": "artifact-set-c57d931218a10273",
+  "package_id": "package-91d1a8226792e35e",
+  "parent_package_id": null,
+  "source_capture_ids": [
+    "capture-together-desktop-8ef41ffeb83f",
+    "capture-together-mobile-3afdd781d3bf",
+    "capture-spade-desktop-59140c400bdc",
+    "capture-spade-mobile-16071303190c"
+  ],
+  "analysis_ids": [
+    "analysis-r010-codex-gpt5-2348cc69-20260716"
+  ],
+  "correction_ids": [],
+  "decision_ids": [],
+  "status": "awaiting-review",
+  "artifacts": [
+    {
+      "type": "design",
+      "path": "design.md",
+      "media_type": "text/markdown",
+      "sha256": "d8fe77db6331a27eb6d8b32c776efbaadd7b9234eb34ebae1e7198536c1b5bfc",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "tokens",
+      "path": "tokens.json",
+      "media_type": "application/json",
+      "sha256": "44578d83221a0d86cdd23083c353f5259890c1baa134427a5394381d21539bb3",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "components",
+      "path": "components.json",
+      "media_type": "application/json",
+      "sha256": "30baf2b31a3bed4ecc7657aeadba5ac83b28d00358b9fa03e83b36f585fc08d8",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "grid-rules",
+      "path": "grid-rules.json",
+      "media_type": "application/json",
+      "sha256": "e1dbdd48f206cad96c72cce3957aa9629cdf130596a19e6b88039b038d38577b",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "layout-rules",
+      "path": "layout-rules.json",
+      "media_type": "application/json",
+      "sha256": "2ba119897cbe401c285493545a9497b10153243653dfdb251482016ff4266ae0",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "visual-grammar",
+      "path": "visual-grammar.json",
+      "media_type": "application/json",
+      "sha256": "0f4741b715c014ccae6bdc5e77a1faee4b44b7b87d11099d11a1bb5445ada984",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "conflicts",
+      "path": "conflicts.json",
+      "media_type": "application/json",
+      "sha256": "f741578d32663f402aa85d2e6ecf52ab120f4430e5f4831f1b0889e8c2b8e75e",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "source-observations",
+      "path": "source-observations.json",
+      "media_type": "application/json",
+      "sha256": "948b4c74e41281127c4bfb348be285db330fb351cdce82be67fc15d6b1f937e3",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "core-grammar",
+      "path": "core-grammar.json",
+      "media_type": "application/json",
+      "sha256": "5602f561a07f8968324f0fd8d9a94a6448cc5f94e25a6f016d43c773189bed2f",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "themes",
+      "path": "themes.json",
+      "media_type": "application/json",
+      "sha256": "3069fb8a68276b1e6f4c546c3c1402595b6c5dd071066cb80f0fb287a3474a22",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "templates",
+      "path": "templates.json",
+      "media_type": "application/json",
+      "sha256": "1f1d44df820fc06755c619e558beb64fbe0d7ab13a06138d9c579f7d204da74c",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "accessibility",
+      "path": "accessibility.json",
+      "media_type": "application/json",
+      "sha256": "8ea505b848680aac416e31a87069379387bdcf87e925187754432462af1fdf69",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "source-distance-report",
+      "path": "source-distance-report.json",
+      "media_type": "application/json",
+      "sha256": "b3778d63ac9206af063967a04e21d76b11a303e134e8711a49b17075eb2b6fd3",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "preview-coverage",
+      "path": "preview-coverage.json",
+      "media_type": "application/json",
+      "sha256": "5f548847aeeba8299fc2961d5ce8211c28443afaaff8dda211246b5a6a18ee8d",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    },
+    {
+      "type": "delivery-readiness",
+      "path": "delivery-readiness.json",
+      "media_type": "application/json",
+      "sha256": "c31ccd51eee4856b577cb58c58e0208eed16ab8eda6b9ae8af7897804c428e08",
+      "schema_version": "3.1.0",
+      "status": "reviewable"
+    }
+  ],
+  "artifact_hashes": {
+    "design.md": "d8fe77db6331a27eb6d8b32c776efbaadd7b9234eb34ebae1e7198536c1b5bfc",
+    "tokens.json": "44578d83221a0d86cdd23083c353f5259890c1baa134427a5394381d21539bb3",
+    "components.json": "30baf2b31a3bed4ecc7657aeadba5ac83b28d00358b9fa03e83b36f585fc08d8",
+    "grid-rules.json": "e1dbdd48f206cad96c72cce3957aa9629cdf130596a19e6b88039b038d38577b",
+    "layout-rules.json": "2ba119897cbe401c285493545a9497b10153243653dfdb251482016ff4266ae0",
+    "visual-grammar.json": "0f4741b715c014ccae6bdc5e77a1faee4b44b7b87d11099d11a1bb5445ada984",
+    "conflicts.json": "f741578d32663f402aa85d2e6ecf52ab120f4430e5f4831f1b0889e8c2b8e75e",
+    "source-observations.json": "948b4c74e41281127c4bfb348be285db330fb351cdce82be67fc15d6b1f937e3",
+    "core-grammar.json": "5602f561a07f8968324f0fd8d9a94a6448cc5f94e25a6f016d43c773189bed2f",
+    "themes.json": "3069fb8a68276b1e6f4c546c3c1402595b6c5dd071066cb80f0fb287a3474a22",
+    "templates.json": "1f1d44df820fc06755c619e558beb64fbe0d7ab13a06138d9c579f7d204da74c",
+    "accessibility.json": "8ea505b848680aac416e31a87069379387bdcf87e925187754432462af1fdf69",
+    "source-distance-report.json": "b3778d63ac9206af063967a04e21d76b11a303e134e8711a49b17075eb2b6fd3",
+    "preview-coverage.json": "5f548847aeeba8299fc2961d5ce8211c28443afaaff8dda211246b5a6a18ee8d",
+    "delivery-readiness.json": "c31ccd51eee4856b577cb58c58e0208eed16ab8eda6b9ae8af7897804c428e08"
+  },
+  "created_at": "2026-07-16T09:16:58.000Z"
+}

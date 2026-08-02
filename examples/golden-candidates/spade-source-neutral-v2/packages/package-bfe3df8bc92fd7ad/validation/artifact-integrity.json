@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "artifact_set_id": "artifact-set-717ad5437a1b919c",
+  "artifact_hashes": {
+    "design.md": "9f2464157acc5911ff94ff7ca54ff5557bfe6e2459ad06ef208ac47efd3dc8b9",
+    "tokens.json": "ced82bcdc1989d656c8d52845e5a9db808f588d16f9844b4ecfd01c631d4c767",
+    "components.json": "c86edba8f646c7ca1a54c744a8bc362d8975752cad76ce7ee4e5312358066c5a",
+    "grid-rules.json": "78d339e648f500cef6e66407cf83089f9df51072d6a022ac427b6edd05685be2",
+    "layout-rules.json": "fd2500bf471a5a00534df31d2f2b48c5d68499a14e0020f496f447c610fb0a59",
+    "visual-grammar.json": "39524762d8e6d5e5e042ee5930c946d0ed7653d8aeaa363c75fc3c39a5bdb249",
+    "conflicts.json": "2bb2bd2b5568e01b6a74a6022ff43fd21e0ebdc15f1a6f9926fba944cf2bb9dd",
+    "source-observations.json": "948b4c74e41281127c4bfb348be285db330fb351cdce82be67fc15d6b1f937e3",
+    "core-grammar.json": "5602f561a07f8968324f0fd8d9a94a6448cc5f94e25a6f016d43c773189bed2f",
+    "themes.json": "3069fb8a68276b1e6f4c546c3c1402595b6c5dd071066cb80f0fb287a3474a22",
+    "templates.json": "1f1d44df820fc06755c619e558beb64fbe0d7ab13a06138d9c579f7d204da74c",
+    "accessibility.json": "8ea505b848680aac416e31a87069379387bdcf87e925187754432462af1fdf69",
+    "source-distance-report.json": "b3778d63ac9206af063967a04e21d76b11a303e134e8711a49b17075eb2b6fd3",
+    "preview-coverage.json": "5f548847aeeba8299fc2961d5ce8211c28443afaaff8dda211246b5a6a18ee8d",
+    "delivery-readiness.json": "b4d94220401d77f8013552ca32c67f4015d64f30b8b48ec41609840ee9dd4b2b"
+  }
+}

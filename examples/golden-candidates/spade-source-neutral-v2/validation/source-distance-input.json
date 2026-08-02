@@ -1,0 +1,18 @@
+{
+  "dimension_scores": {
+    "identity_and_trademark": 0,
+    "copy_and_naming": 0,
+    "exact_color_dependence": 18,
+    "typography_dependence": 22,
+    "shape_motif_dependence": 28,
+    "page_topology": 25,
+    "component_combination": 20,
+    "imagery_and_proprietary_assets": 0,
+    "motion_signature": 10,
+    "overall_combination_risk": 22
+  },
+  "source_traits": ["near-exact-green","centered-full-height-hero","viewport-rails","cut-corner-canvas","contour-object","transaction-chip"],
+  "output_traits": ["transformed-mineral-palette","asymmetric-narrative-hero","offset-frame","licensed-photograph","evidence-callout","side-action"],
+  "topology": {"matched_relationships":2,"total_relationships":10},
+  "evidence_refs": ["ev-spade-desktop-viewport","ev-spade-mobile-viewport"]
+}

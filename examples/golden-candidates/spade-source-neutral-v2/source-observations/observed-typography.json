@@ -1,0 +1,5 @@
+{"observations":[
+  {"observation_id":"obs-type-together-editorial","domain":"typography","value":{"headline":"Tiempos 300","desktop":"48/60","mobile":"32px"},"source_scope":"together-case-study-shell","evidence_refs":["ev-together-computed","ev-together-fonts"],"claim_refs":["claim-shell-brand-separation"],"confidence":"high","source_specificity":"high","portability_risk":"medium"},
+  {"observation_id":"obs-type-spade-display","domain":"typography","value":{"headline":"naNSuperX 560","desktop":"84px","mobile":"34/39.1"},"source_scope":"spade-brand-system","evidence_refs":["ev-spade-computed","ev-spade-fonts"],"claim_refs":["claim-motifs-source-locked"],"confidence":"high","source_specificity":"high","portability_risk":"high"},
+  {"observation_id":"obs-type-spade-mono","domain":"typography","value":{"utility":"polarMono 520","desktop":"14px"},"source_scope":"spade-brand-system","evidence_refs":["ev-spade-computed","ev-spade-fonts"],"claim_refs":["claim-semantic-attachment"],"confidence":"high","source_specificity":"high","portability_risk":"medium"}
+]}

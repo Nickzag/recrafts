@@ -1,0 +1,3 @@
+{"observations":[
+  {"observation_id":"obs-motion-marquee","domain":"motion","value":{"css_variable":"--animate-marquee","timing":"25s linear infinite"},"source_scope":"spade-brand-system","evidence_refs":["ev-spade-css"],"claim_refs":["claim-motifs-source-locked"],"confidence":"high","source_specificity":"medium","portability_risk":"medium"}
+]}

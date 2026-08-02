@@ -1,0 +1,9 @@
+{
+  "policy_id": "source-distance-policy-v1",
+  "dimensions": ["identity_and_trademark","copy_and_naming","exact_color_dependence","typography_dependence","shape_motif_dependence","page_topology","component_combination","imagery_and_proprietary_assets","motion_signature","overall_combination_risk"],
+  "thresholds": {"low":[0,34],"medium":[35,69],"high":[70,100]},
+  "combination_gate": "four or more high-specificity source traits on one primary preview blocks pilot-ready",
+  "topology_gate": "high topology risk plus high motif-combination risk blocks pilot-ready",
+  "primary_preview_difference_minimum": 2,
+  "difference_dimensions": ["palette family","Hero topology","boundary form","primary object form","typography proportion","measurement placement","CTA placement","image strategy"]
+}

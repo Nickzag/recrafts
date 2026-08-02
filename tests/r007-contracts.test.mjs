@@ -18,7 +18,7 @@ test("correction contract is strict and enumerates every R-007 operation", () =>
   const schema = read("contracts/correction.schema.json");
   const valid = { correction_id: "correction-1", base_package_id: "package-A", actor: "Nick", actor_role: "project-owner", created_at: "2026-07-13T00:00:00Z", reason: "Resolve reviewed mismatch", operations: [{ operation_id: "op-1", type: "replace-token", target_id: "color.surface", before: { value: "#fff" }, after: { value: "#f7f7f7" }, evidence_refs: ["ev-1"], claim_refs: ["claim-1"], reason: "Owner correction" }], decision_context: { review_id: "review-1" } };
   assert.doesNotThrow(() => assertSchema(valid, schema));
-  for (const type of ["replace-token", "reject-token", "replace-component", "reject-component", "replace-grid-rule", "reject-grid-rule", "reclassify-region", "resolve-conflict", "confirm-candidate", "reject-candidate"]) {
+  for (const type of ["replace-token", "reject-token", "replace-component", "reject-component", "replace-grid-rule", "reject-grid-rule", "reclassify-region", "resolve-conflict", "confirm-candidate", "reject-candidate", "finalize-accepted-metadata"]) {
     assert.doesNotThrow(() => assertSchema({ ...valid, operations: [{ ...valid.operations[0], type }] }, schema), type);
   }
   assert.throws(() => assertSchema({ ...valid, actor_role: "host-agent" }, schema));

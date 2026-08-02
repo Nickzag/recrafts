@@ -1,0 +1,31 @@
+{
+  "status": "candidate",
+  "grid_rules": [
+    {
+      "grid_rule_id": "grid.instrument",
+      "domain_id": "grid.instrument",
+      "rule_type": "responsive-grid",
+      "constraints": {
+        "columns": [
+          4,
+          8,
+          12
+        ],
+        "gutter": "16-32px",
+        "max_width": "1280px",
+        "forbidden": "fixed centered source Hero"
+      },
+      "scope": "all-media",
+      "status": "candidate",
+      "confidence": 0.82,
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-together-desktop-viewport"
+      ],
+      "claim_refs": [
+        "claim-density-rhythm"
+      ],
+      "conflict_refs": []
+    }
+  ]
+}

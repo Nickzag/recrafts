@@ -1,0 +1,1 @@
+{"decision_id":"decision-r010-owner-pass-20260716","candidate_package_id":"package-0ad1502a874d2e00","actor":"Nick","actor_role":"project-owner","verdict":"PASS","created_at":"2026-07-16T12:05:00+08:00","accepted_risks":[],"resolved_conflicts":["conflict-owner-core-theme-review"],"notes":"八项全部确认，R-010 PASS。后续无需额外所有者评审表，明确的项目所有者消息即作为授权记录。"}

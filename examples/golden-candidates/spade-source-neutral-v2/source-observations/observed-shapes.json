@@ -1,0 +1,3 @@
+{"observations":[
+  {"observation_id":"obs-shape-cut-boundary","domain":"shape","value":{"form":"cut or notched panel corners","measurement":"exact cut values not promoted"},"source_scope":"spade-brand-system","evidence_refs":["ev-spade-desktop-viewport","ev-spade-css"],"claim_refs":["claim-measured-boundary","claim-motifs-source-locked"],"confidence":"medium","source_specificity":"high","portability_risk":"high"}
+]}

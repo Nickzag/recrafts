@@ -1,0 +1,12 @@
+{
+  "claims":[
+    {"claim_id":"claim-shell-brand-separation","statement":"Case shell and brand layer are separate.","evidence_refs":["ev-together-desktop-viewport","ev-spade-desktop-viewport"]},
+    {"claim_id":"claim-density-rhythm","statement":"Sparse explanation alternates with dense proof.","evidence_refs":["ev-together-desktop-viewport","ev-spade-desktop-viewport"]},
+    {"claim_id":"claim-semantic-attachment","statement":"Data describes an attached referent.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-dom"]},
+    {"claim_id":"claim-one-protagonist","statement":"One protagonist anchors proof.","evidence_refs":["ev-spade-desktop-viewport"]},
+    {"claim_id":"claim-measured-boundary","statement":"Boundaries express measurement but exact forms are source-specific.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-css"]},
+    {"claim_id":"claim-topology-source-locked","statement":"Source Hero topology is not portable.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-mobile-viewport"]},
+    {"claim_id":"claim-motifs-source-locked","statement":"Signature motif combinations are not portable.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-css"]},
+    {"claim_id":"claim-core-theme-separation","statement":"Core mechanisms survive theme and topology transformation.","evidence_refs":["ev-together-desktop-viewport","ev-spade-desktop-viewport"]}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "correction_id": "correction-r010-owner-pass-20260716",
+  "base_package_id": "package-91d1a8226792e35e",
+  "package_id": "package-0ad1502a874d2e00",
+  "operations": [
+    {
+      "operation_id": "resolve-owner-review-conflict",
+      "type": "resolve-conflict",
+      "target_id": "conflict-owner-core-theme-review",
+      "before": {
+        "status": "open"
+      },
+      "after": {
+        "status": "resolved",
+        "verdict": "confirmed"
+      },
+      "evidence_refs": [
+        "ev-together-desktop-viewport",
+        "ev-spade-desktop-viewport"
+      ],
+      "claim_refs": [
+        "claim-shell-brand-separation",
+        "claim-density-rhythm"
+      ],
+      "reason": "项目所有者确认来源分层、Core Grammar、主题、组件、拓扑、法律与可访问性限制及预览覆盖。"
+    }
+  ]
+}

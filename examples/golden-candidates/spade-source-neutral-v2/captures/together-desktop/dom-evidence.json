@@ -1,0 +1,626 @@
+[
+  {
+    "selector": "#__next > main",
+    "tag": "main",
+    "role": null,
+    "text": "Together LogoContactContact--- title: Spade — Machine-readable source_page: http://localhost:3000/work/spade/ canonical: http://localhost:3000/work/spade/ format: text/markdown last_updated: 2026-06-09 description: Case study: Spade --- **Q"
+  },
+  {
+    "selector": "#__next > main > header",
+    "tag": "header",
+    "role": "banner",
+    "text": "Together LogoContactContact"
+  },
+  {
+    "selector": "#__next > main > header > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Together Logo"
+  },
+  {
+    "selector": "#__next > main > header > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(2) > nav",
+    "tag": "nav",
+    "role": null,
+    "text": "ContactContact"
+  },
+  {
+    "selector": "#__next > main > header > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(2) > nav > ul > li > a",
+    "tag": "a",
+    "role": null,
+    "text": "ContactContact"
+  },
+  {
+    "selector": "#__next > main > header > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main",
+    "tag": "main",
+    "role": null,
+    "text": "--- title: Spade — Machine-readable source_page: http://localhost:3000/work/spade/ canonical: http://localhost:3000/work/spade/ format: text/markdown last_updated: 2026-06-09 description: Case study: Spade --- **Quick links:** [Human page]("
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1)",
+    "tag": "article",
+    "role": null,
+    "text": "Repositioning a payments infrastructure partner from the ground up What we didBrand positioning and messaging strategyTone of voice and narrative frameworkVisual identity system and brand applicationsUX strategy, sitemap, and IA for enterpr"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1) > div > div > header",
+    "tag": "header",
+    "role": null,
+    "text": "Repositioning a payments infrastructure partner from the ground up"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1) > div > div > header > h1",
+    "tag": "h1",
+    "role": null,
+    "text": "Repositioning a payments infrastructure partner from the ground up"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1) > section:nth-of-type(1)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#overview-title > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div > div > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1) > section:nth-of-type(2)",
+    "tag": "section",
+    "role": null,
+    "text": "What we didBrand positioning and messaging strategyTone of voice and narrative frameworkVisual identity system and brand applicationsUX strategy, sitemap, and IA for enterprise use casesEnd-to-end website design, content, and developmentSca"
+  },
+  {
+    "selector": "#what-we-did-title > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "What we did"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1) > section:nth-of-type(3)",
+    "tag": "section",
+    "role": null,
+    "text": "OverviewThe future of payments is being rewritten in real time. But the data behind those payments hasn’t kept up. Banks, fintechs, and platforms process billions in transactions every day but still struggle with incomplete, inconsistent, a"
+  },
+  {
+    "selector": "#overview-title > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Overview"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1) > section:nth-of-type(3) > div:nth-of-type(2) > div > div > div:nth-of-type(3) > button",
+    "tag": "button",
+    "role": null,
+    "text": "Read moreRead more"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(1) > section:nth-of-type(3) > div:nth-of-type(2) > div > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Visit websiteVisit website"
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(1)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(2)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(3)",
+    "tag": "section",
+    "role": null,
+    "text": "In focus/01A category-defining position built on ground truth /02A narrative that elevates enrichment into intelligence. /03A scalable identity for a fast-moving product and team. /04A website engineered for trust, clarity, and conversion."
+  },
+  {
+    "selector": "#contents-title > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "In focus"
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(3) > div:nth-of-type(2) > div > nav",
+    "tag": "nav",
+    "role": null,
+    "text": "/01A category-defining position built on ground truth /02A narrative that elevates enrichment into intelligence. /03A scalable identity for a fast-moving product and team. /04A website engineered for trust, clarity, and conversion."
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(3) > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "/01A category-defining position built on ground truth"
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(3) > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "/02A narrative that elevates enrichment into intelligence."
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(3) > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "/03A scalable identity for a fast-moving product and team."
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(3) > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(4) > a",
+    "tag": "a",
+    "role": null,
+    "text": "/04A website engineered for trust, clarity, and conversion."
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(4)",
+    "tag": "section",
+    "role": null,
+    "text": "01A category-defining position built on ground truthThe enrichment category is crowded and clouded by distrust. Banks want auditability. Fintechs want reliability. Everyone wants real-time. But many vendors still rely on opaque models or fr"
+  },
+  {
+    "selector": "#a-category-defining-position-built-on-ground-truth > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "01"
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(4) > div:nth-of-type(2) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "A category-defining position built on ground truth"
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(5)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(5) > div > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(6)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(7)",
+    "tag": "section",
+    "role": null,
+    "text": "02A narrative that elevates enrichment into intelligence.Raw data isn’t the story. What enterprises need is meaning: merchant identity, category clarity, geolocation, attributes, and context that unlocks real decision-making. We transformed"
+  },
+  {
+    "selector": "#a-narrative-that-elevates-enrichment-into-intelligence > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "02"
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(7) > div:nth-of-type(2) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "A narrative that elevates enrichment into intelligence."
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(8)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(9)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(10)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(11)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(11) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(12)",
+    "tag": "section",
+    "role": null,
+    "text": "03A scalable identity for a fast-moving product and team.The old identity didn’t reflect Spade’s ambition or technical depth. We rebuilt the visual system to embody the new brand. Tactile, grounded, and unmistakably Spade. Everything is bui"
+  },
+  {
+    "selector": "#a-scalable-identity-for-a-fast-moving-product-and-team > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "03"
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(12) > div:nth-of-type(2) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "A scalable identity for a fast-moving product and team."
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(13)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(14)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(14) > div > div:nth-of-type(1) > div > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(14) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(15)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(16)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(16) > div > div:nth-of-type(1) > div > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(16) > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(17)",
+    "tag": "section",
+    "role": null,
+    "text": "04A website engineered for trust, clarity, and conversion.Spade’s audiences (banks, fintechs, and resellers) each arrive with different expectations, challenges, and internal constraints. We redesigned the website to serve all of them. Ever"
+  },
+  {
+    "selector": "#a-website-engineered-for-trust-clarity-and-conversion > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "04"
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(17) > div:nth-of-type(2) > div > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "A website engineered for trust, clarity, and conversion."
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(18)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(19)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(20)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(20) > div > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(21)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(21) > div > div:nth-of-type(1) > div > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(21) > div > div:nth-of-type(2) > div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(22)",
+    "tag": "section",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > div:nth-of-type(2) > section:nth-of-type(22) > div > div:nth-of-type(3) > div > div > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(2)",
+    "tag": "article",
+    "role": null,
+    "text": "With thanksWith thanks toOban MacTavish, Lauren Crossett and Hailey McCracken."
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(2) > section",
+    "tag": "section",
+    "role": null,
+    "text": "With thanksWith thanks toOban MacTavish, Lauren Crossett and Hailey McCracken."
+  },
+  {
+    "selector": "#related-work-title > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "With thanks"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3)",
+    "tag": "article",
+    "role": null,
+    "text": "Related workAriaSimplifying B2B payments.BrandWebsiteOrumAI sales dialling.BrandWebsiteUnitEmbeddable finance.BrandWebsiteCoderCloud development workspace.BrandWebsite"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section",
+    "tag": "section",
+    "role": null,
+    "text": "Related workAriaSimplifying B2B payments.BrandWebsiteOrumAI sales dialling.BrandWebsiteUnitEmbeddable finance.BrandWebsiteCoderCloud development workspace.BrandWebsite"
+  },
+  {
+    "selector": "#related-work-title > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Related work"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(1) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "AriaSimplifying B2B payments.BrandWebsite"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(1) > div > a > div > div:nth-of-type(1) > div:nth-of-type(2) > div > div > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(1) > div > a > div > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Aria"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "OrumAI sales dialling.BrandWebsite"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > a > div > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Orum"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(3) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "UnitEmbeddable finance.BrandWebsite"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(3) > div > a > div > div:nth-of-type(1) > div:nth-of-type(2) > div > div > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(3) > div > a > div > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Unit"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(4) > div > a",
+    "tag": "a",
+    "role": null,
+    "text": "CoderCloud development workspace.BrandWebsite"
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(4) > div > a > div > div:nth-of-type(1) > div:nth-of-type(2) > div > div > button",
+    "tag": "button",
+    "role": null,
+    "text": ""
+  },
+  {
+    "selector": "#__next > main > main > article:nth-of-type(3) > section > div:nth-of-type(2) > div > div:nth-of-type(4) > div > a > div > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Coder"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(1) > div:nth-of-type(1) > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Explore"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(1) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Work"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Services"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "AI Expertise"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Clients"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(5) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Careers"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(6) > a",
+    "tag": "a",
+    "role": null,
+    "text": "About"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(7) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Contact"
+  },
+  {
+    "selector": "#__next > main > footer > section",
+    "tag": "section",
+    "role": null,
+    "text": "ConnectPartner with us.If you’re building something category-defining, we’d love to chat.Contact usContact usStay informed.For new work, behind-the-scenes thinking, and agency updates, subscribe here.SubscribeSubscribe"
+  },
+  {
+    "selector": "#cta-section-title > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Connect"
+  },
+  {
+    "selector": "#__next > main > footer > section > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Partner with us."
+  },
+  {
+    "selector": "#__next > main > footer > section > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "Contact usContact us"
+  },
+  {
+    "selector": "#__next > main > footer > section > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div:nth-of-type(2) > h3",
+    "tag": "h3",
+    "role": null,
+    "text": "Stay informed."
+  },
+  {
+    "selector": "#__next > main > footer > section > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div:nth-of-type(3) > a",
+    "tag": "a",
+    "role": null,
+    "text": "SubscribeSubscribe"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(2) > div:nth-of-type(1) > div > h2",
+    "tag": "h2",
+    "role": null,
+    "text": "Together"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(1) > nav",
+    "tag": "nav",
+    "role": null,
+    "text": "LinkedInInstagramGitHubX (Twitter)"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(1) > nav > div > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": "LinkedIn"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(1) > nav > div > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": "Instagram"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(1) > nav > div > a:nth-of-type(3)",
+    "tag": "a",
+    "role": null,
+    "text": "GitHub"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(1) > nav > div > a:nth-of-type(4)",
+    "tag": "a",
+    "role": null,
+    "text": "X (Twitter)"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(1)",
+    "tag": "a",
+    "role": null,
+    "text": "Terms"
+  },
+  {
+    "selector": "#__next > main > footer > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > a:nth-of-type(2)",
+    "tag": "a",
+    "role": null,
+    "text": "Privacy"
+  }
+]

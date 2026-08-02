@@ -1,0 +1,15 @@
+{
+  "url": "https://spade.com/",
+  "captured_at": "2026-07-16T09:12:25.774Z",
+  "browser": {
+    "name": "chromium",
+    "version": "149.0.7827.55"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "status": "complete",
+  "missing_evidence": [],
+  "content_sha256": "59140c400bdc0127b758de518fcb6899b3ae1cfe36d4b4aa400cb14f13c0fb87"
+}

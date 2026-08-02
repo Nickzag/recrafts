@@ -1,0 +1,21 @@
+{
+  "grammar_id": "instrument-grammar-source-neutral-v2",
+  "status": "portable",
+  "rule_refs": [
+    "grammar-density-rhythm",
+    "grammar-semantic-attachment",
+    "grammar-one-protagonist",
+    "grammar-measured-relationship",
+    "grammar-evidence-before-decoration",
+    "grammar-flat-hierarchy",
+    "grammar-limited-signals",
+    "grammar-medium-sequence"
+  ],
+  "evidence_refs": [
+    "ev-together-desktop-viewport",
+    "ev-spade-desktop-viewport"
+  ],
+  "claim_refs": [
+    "claim-core-theme-separation"
+  ]
+}

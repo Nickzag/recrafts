@@ -1,0 +1,12 @@
+{
+  "core_grammar":{"grammar_id":"instrument-grammar-source-neutral-v2","rules":[{"rule_id":"grammar-semantic-attachment","allowed":["referent-bound data"],"forbidden":["decorative data"],"validation_method":"semantic-overlay-review"}]},
+  "tokens":[{"token_id":"color.surface"},{"token_id":"color.ink"},{"token_id":"color.signal.primary"},{"token_id":"type.data"},{"token_id":"boundary.measured"},{"token_id":"density.rhythm"}],
+  "themes":[{"theme_id":"theme-derived"},{"theme_id":"theme-alternative-a"},{"theme_id":"theme-alternative-b"}],
+  "components":[{"component_id":"proof-canvas","maturity":"core","token_dependencies":["color.surface","color.ink","type.data","boundary.measured","density.rhythm"],"states":["default","empty","error","no-image"],"keyboard":"not-interactive unless action is present","validation_rules":["previewed in Web A, poster and real-image preview"]}],
+  "templates":[{"template_id":"web-instrument-a","component_refs":["proof-canvas"],"required_slots":["title","evidence"]},{"template_id":"slide-eight-stage","component_refs":["proof-canvas"],"required_slots":["title","evidence"]}],
+  "preview_component_ids":["proof-canvas"],
+  "render_requests":[
+    {"request_id":"render-independent-web","media":"web","theme_ref":"theme-derived","template_ref":"web-instrument-a","component_refs":["proof-canvas"],"content":{"title":"Turn movement into a verifiable record.","evidence":"84/min"}},
+    {"request_id":"render-independent-slide","media":"slide","theme_ref":"theme-alternative-a","template_ref":"slide-eight-stage","component_refs":["proof-canvas"],"content":{"title":"A value matters only when attached.","evidence":"18ms"}}
+  ]
+}

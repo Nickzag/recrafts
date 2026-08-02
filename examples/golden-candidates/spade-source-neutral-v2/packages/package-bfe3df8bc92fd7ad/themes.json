@@ -1,0 +1,8 @@
+{
+  "selected_theme_id": "theme-derived",
+  "themes": [
+    {"theme_id":"theme-derived","name":"Mineral Ledger","primary_family":"desaturated mineral teal with copper signal","boundary_form":"offset frame and baseline bracket","primary_object_form":"licensed operational photograph or rectilinear proof field","hero_topology":"left narrative column with lower-right proof field","core_grammar_ref":"instrument-grammar-source-neutral-v2","source_distance":"medium","tokens":{"surface":"#edf3ef","ink":"#17241f","muted":"#617069","signal":"#d37448","support":"#4e7164","inverse":"#f8fbf9"}},
+    {"theme_id":"theme-alternative-a","name":"Cobalt Dispatch","primary_family":"cobalt blue with coral signal","boundary_form":"stepped rule and vertical index bar","primary_object_form":"modular evidence strip","hero_topology":"top-left title with right-edge evidence column and bottom action","core_grammar_ref":"instrument-grammar-source-neutral-v2","source_distance":"high","tokens":{"surface":"#f3f0e8","ink":"#0b1c3a","muted":"#5d6470","signal":"#e55b43","support":"#3157b7","inverse":"#ffffff"}},
+    {"theme_id":"theme-alternative-b","name":"Burgundy Field","primary_family":"burgundy with aqua signal","boundary_form":"rule-and-field with rounded continuous corners","primary_object_form":"photographic place field with horizontal datum","hero_topology":"asymmetric stacked title, full-bleed place image, side CTA","core_grammar_ref":"instrument-grammar-source-neutral-v2","source_distance":"high","tokens":{"surface":"#f6eee7","ink":"#361425","muted":"#745f67","signal":"#20a39e","support":"#a33d63","inverse":"#fffaf5"}}
+  ]
+}

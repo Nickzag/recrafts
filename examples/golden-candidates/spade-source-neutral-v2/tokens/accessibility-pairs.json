@@ -1,0 +1,8 @@
+{"pairs":[
+  {"foreground_token":"theme-derived.ink","background_token":"theme-derived.surface","contrast_ratio":14.27,"normal_text_status":"pass","large_text_status":"pass","non_text_status":"pass","allowed_contexts":["all text"]},
+  {"foreground_token":"theme-derived.ink","background_token":"theme-derived.signal","contrast_ratio":4.86,"normal_text_status":"pass","large_text_status":"pass","non_text_status":"pass","allowed_contexts":["signal action"]},
+  {"foreground_token":"theme-alternative-a.ink","background_token":"theme-alternative-a.surface","contrast_ratio":14.85,"normal_text_status":"pass","large_text_status":"pass","non_text_status":"pass","allowed_contexts":["all text"]},
+  {"foreground_token":"theme-alternative-a.ink","background_token":"theme-alternative-a.signal","contrast_ratio":4.76,"normal_text_status":"pass","large_text_status":"pass","non_text_status":"pass","allowed_contexts":["signal action"]},
+  {"foreground_token":"theme-alternative-b.ink","background_token":"theme-alternative-b.surface","contrast_ratio":14.26,"normal_text_status":"pass","large_text_status":"pass","non_text_status":"pass","allowed_contexts":["all text"]},
+  {"foreground_token":"theme-alternative-b.ink","background_token":"theme-alternative-b.signal","contrast_ratio":5.29,"normal_text_status":"pass","large_text_status":"pass","non_text_status":"pass","allowed_contexts":["signal action"]}
+]}

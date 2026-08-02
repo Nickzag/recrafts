@@ -11,6 +11,8 @@ import { resolveSafeInput, resolveSafeOutput, toArtifactPath } from "./path_secu
 import { validateR006Package } from "./r006_validation.mjs";
 import { acceptArtifacts, rollbackPackage, submitCorrection } from "./package_evolution.mjs";
 import { validateR007Package } from "./r007_validation.mjs";
+import { createSourceNeutralRealization } from "../realization/source_neutral_realization.mjs";
+import { validateSourceNeutralFidelity } from "./source_neutral_fidelity.mjs";
 
 const hashFile = async (file) => createHash("sha256").update(await readFile(file)).digest("hex");
 const artifact = async ({ type, file, outputRoot, mediaType, schemaVersion = "2.1.0" }) => ({ type, path: toArtifactPath({ file, outputRoot }), sha256: await hashFile(file), media_type: mediaType, schema_version: schemaVersion });
@@ -76,8 +78,9 @@ export async function executeOperation(request, workingRoot) {
   if (request.operation === "submit-correction") {
     const base = await resolveSafeInput({ value: input.base_package_directory, workingRoot, allowedTypes: ["directory"] });
     const correction = await resolveSafeInput({ value: input.correction_file, workingRoot, allowedTypes: ["file"] });
-    const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: [base, correction] });
-    const result = await submitCorrection({ basePackageDirectory: base, correctionFile: correction, outputDirectory: output });
+    const authority = input.authoritative_validation_report ? await resolveSafeInput({ value: input.authoritative_validation_report, workingRoot, allowedTypes: ["file"] }) : null;
+    const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: [base, correction, ...(authority ? [authority] : [])] });
+    const result = await submitCorrection({ basePackageDirectory: base, correctionFile: correction, authoritativeValidationReport: authority, outputDirectory: output });
     return { status: "completed_with_warnings", artifacts: [await artifact({ type: "corrected-package", file: path.join(output, "recrafts-package.json"), outputRoot: output, mediaType: "application/json", schemaVersion: "3.0.0" })], validation: result, warnings: ["Corrected package still requires explicit artifact acceptance"] };
   }
   if (request.operation === "accept-artifacts") {
@@ -97,6 +100,13 @@ export async function executeOperation(request, workingRoot) {
   }
   if (request.operation === "generate-realization") {
     const directory = await resolveSafeInput({ value: input.package_directory, workingRoot, allowedTypes: ["directory"] });
+    const sourceNeutralDelivery = await readFile(path.join(directory, "delivery-readiness.json"), "utf8").then(JSON.parse).catch(() => null);
+    if (sourceNeutralDelivery) {
+      const previews = await resolveSafeInput({ value: input.preview_directory ?? path.join(path.dirname(path.dirname(directory)), "previews"), workingRoot, allowedTypes: ["directory"] });
+      const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: [directory, previews] });
+      const result = await createSourceNeutralRealization({ packageDirectory: directory, previewDirectory: previews, outputDirectory: output });
+      return { status: "completed", artifacts: [await artifact({ type: "realization", file: path.join(output, "realization.json"), outputRoot: workingRoot, mediaType: "application/json", schemaVersion: "3.0.0" })], validation: result };
+    }
     const readiness = JSON.parse(await readFile(path.join(directory, "validation/realization-readiness.json"), "utf8"));
     const packageManifest = JSON.parse(await readFile(path.join(directory, "recrafts-package.json"), "utf8"));
     if (packageManifest.schema_version === "3.0.0") throw Object.assign(new Error("R-006 packages cannot be accepted or realized before the R-007 correction and acceptance protocol"), { code: "REALIZATION_NOT_AUTHORIZED" });
@@ -119,6 +129,12 @@ export async function executeOperation(request, workingRoot) {
   }
   if (request.operation === "verify-fidelity") {
     const directory = await resolveSafeInput({ value: input.fidelity_directory, workingRoot, allowedTypes: ["directory"] });
+    const sourceNeutral = await readFile(path.join(directory, "realization.json"), "utf8").then(JSON.parse).catch(() => null);
+    if (sourceNeutral?.realization_kind === "source-neutral-portable-system") {
+      const result = await validateSourceNeutralFidelity(directory);
+      if (result.status !== "passed") throw Object.assign(new Error("Source-neutral fidelity validation failed"), { code: "FIDELITY_SCOPE_UNSUPPORTED" });
+      return { status: "completed", artifacts: [], validation: result };
+    }
     const result = await validateFidelity(directory, { writeReport: false });
     if (result.status !== "passed") throw Object.assign(new Error("Fidelity scope validation failed"), { code: "FIDELITY_SCOPE_UNSUPPORTED" });
     return { status: "completed", artifacts: [], validation: result };

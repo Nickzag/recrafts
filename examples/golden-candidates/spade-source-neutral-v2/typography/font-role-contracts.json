@@ -1,0 +1,9 @@
+{
+  "roles": [
+    {"role_id":"display","required_metrics":{"cap_height":"0.68-0.76em","width":"moderate","weight":"580-720"},"fallback_stack":"Inter, ui-sans-serif, system-ui, sans-serif","latin_cjk_pairing":"Inter / Noto Sans CJK SC","numeric_behavior":"proportional headings","condensation_range":"90-105%","platform_status":"fallback-tested"},
+    {"role_id":"body","required_metrics":{"x_height":"0.50-0.56em","width":"readable","weight":"400-520"},"fallback_stack":"Inter, -apple-system, Segoe UI, sans-serif","latin_cjk_pairing":"Inter / Noto Sans CJK SC","numeric_behavior":"proportional","condensation_range":"100%","platform_status":"fallback-tested"},
+    {"role_id":"data","required_metrics":{"cell_width":"monospace","weight":"450-600"},"fallback_stack":"IBM Plex Mono, ui-monospace, SFMono-Regular, Consolas, monospace","latin_cjk_pairing":"IBM Plex Mono / Noto Sans Mono CJK SC","numeric_behavior":"tabular","condensation_range":"95-100%","platform_status":"fallback-tested"}
+  ],
+  "source_fonts_observation_only": ["Tiempos","Sohne","naNSuperX","polar","polarMono"],
+  "font_files_redistributed": false
+}

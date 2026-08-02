@@ -1,0 +1,50 @@
+[
+  {
+    "family": "Sohne",
+    "style": "normal",
+    "weight": "500",
+    "status": "loaded"
+  },
+  {
+    "family": "Sohne",
+    "style": "normal",
+    "weight": "600",
+    "status": "loaded"
+  },
+  {
+    "family": "tiempos",
+    "style": "normal",
+    "weight": "300",
+    "status": "loaded"
+  },
+  {
+    "family": "tiempos Fallback",
+    "style": "normal",
+    "weight": "normal",
+    "status": "unloaded"
+  },
+  {
+    "family": "sohne",
+    "style": "normal",
+    "weight": "400",
+    "status": "loaded"
+  },
+  {
+    "family": "sohne Fallback",
+    "style": "normal",
+    "weight": "normal",
+    "status": "loaded"
+  },
+  {
+    "family": "sohneMono",
+    "style": "normal",
+    "weight": "400",
+    "status": "loaded"
+  },
+  {
+    "family": "sohneMono Fallback",
+    "style": "normal",
+    "weight": "normal",
+    "status": "unloaded"
+  }
+]

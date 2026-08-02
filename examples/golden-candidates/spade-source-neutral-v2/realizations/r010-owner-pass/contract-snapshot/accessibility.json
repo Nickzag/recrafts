@@ -1,0 +1,16 @@
+{
+  "contract_id": "accessibility-instrument-v2",
+  "requirements": [
+    "semantic nav and main landmarks",
+    "native links with href and native buttons for actions",
+    "figure and figcaption for proof imagery",
+    "visible unclipped focus",
+    "44px minimum touch target",
+    "WCAG AA normal-text pairs and 3:1 essential non-text",
+    "implemented prefers-reduced-motion replacement",
+    "logical heading hierarchy and explicit image alt behavior"
+  ],
+  "stress_cases": ["320px","390px","200%-text-zoom","long-en","long-zh","large-currency","negative-value","empty-data","error-state","no-image"],
+  "manual_checks_required": ["screen-reader reading order","real device touch behavior","production implementation audit"],
+  "production_status": "not-complete"
+}

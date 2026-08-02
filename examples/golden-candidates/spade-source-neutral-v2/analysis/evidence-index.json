@@ -1,0 +1,14 @@
+{
+  "evidence": [
+    {"evidence_id":"ev-together-desktop-viewport","capture_id":"capture-together-desktop-8ef41ffeb83f","path":"captures/together-desktop/viewport-1440x900.png","sha256":"aa3adb28a742926ff95d7aac8ae336f75337ed695a6af9733e78663af287fa37"},
+    {"evidence_id":"ev-together-mobile-viewport","capture_id":"capture-together-mobile-3afdd781d3bf","path":"captures/together-mobile/viewport-390x844.png","sha256":"ba4c534ff1e7bdb440e6e7dfdf72320b1241c6946821e353fb465104c016c27a"},
+    {"evidence_id":"ev-together-computed","capture_id":"capture-together-desktop-8ef41ffeb83f","path":"captures/together-desktop/computed-style-evidence.json"},
+    {"evidence_id":"ev-together-fonts","capture_id":"capture-together-desktop-8ef41ffeb83f","path":"captures/together-desktop/font-evidence.json"},
+    {"evidence_id":"ev-spade-desktop-viewport","capture_id":"capture-spade-desktop-59140c400bdc","path":"captures/spade-desktop/viewport-1440x900.png","sha256":"1102f58e008792642e89912296b07692d87313b7ea1cfcc53b795e0cadd9c0f6"},
+    {"evidence_id":"ev-spade-mobile-viewport","capture_id":"capture-spade-mobile-16071303190c","path":"captures/spade-mobile/viewport-390x844.png","sha256":"77735d5478f96a92395e6cf1ba50c7f2be922e8633be178c7afb8aee81f37eb9"},
+    {"evidence_id":"ev-spade-css","capture_id":"capture-spade-desktop-59140c400bdc","path":"captures/spade-desktop/css-evidence.json"},
+    {"evidence_id":"ev-spade-computed","capture_id":"capture-spade-desktop-59140c400bdc","path":"captures/spade-desktop/computed-style-evidence.json"},
+    {"evidence_id":"ev-spade-fonts","capture_id":"capture-spade-desktop-59140c400bdc","path":"captures/spade-desktop/font-evidence.json"},
+    {"evidence_id":"ev-spade-dom","capture_id":"capture-spade-desktop-59140c400bdc","path":"captures/spade-desktop/dom-evidence.json"}
+  ]
+}

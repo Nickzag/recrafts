@@ -1,0 +1,314 @@
+[
+  {
+    "url": "https://together.agency/work/spade/?ref=rebrand",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "etag": "W/\"ff7da8e35dc219e576cf9dcc1a60406f\"",
+    "last_modified": null,
+    "resource_type": "document"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/turbopack-1msxh7dyhk7wa.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"6f0990f21d5c94aa8f1380c4163d62c7\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/turbopack-3-m9biy8l-eu9.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"6621438bec79f178cf9f2faa4bbbec98\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:58 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/19t07nnk4ajna.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"2d393dd73f970fe8c3a963c3737b0eca\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:58 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/A6K_ym-WE3fwhdMSjXFLw/_buildManifest.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"68d7a1621377e4287b391d1e948d0b0e\"",
+    "last_modified": "Thu, 09 Jul 2026 09:09:24 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/1a7ascq9ri6lr.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"89f6c41303b234e4b8501d05cefdaf57\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/0_ga-q0nt0zb4.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"a44759e430a70287ad157a229b32fa26\"",
+    "last_modified": "Thu, 09 Jul 2026 11:03:50 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/2e7ajwejkp2zd.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"435a0f8d239c0dc81c74b0db24993625\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/41nh3m5fy5p-w.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "etag": "\"7fcbb471b99029aae2ed6438136659c7\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/22i6kprkc3a8t.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"3a8ef56720d9ac48a000e9789f68a87c\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/media/subset_Sohne_Buch-s.p.1-6e469yq4ruk.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"7faf910d73c587e7000a629b5f73ea93\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://together.agency/_next/static/media/subset_SohneMono_Buch-s.p.357nv2ufuxzdu.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"aaff147008168ce97cf7b1606777022a\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/3h1b1_za4_s_b.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "etag": "W/\"ae6e7c87625f4da43a425fbde759ad3e\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/2u1kjg160ly4b.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"dcf6ce47d2bab885d437bec0f65db97d\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/A6K_ym-WE3fwhdMSjXFLw/_clientMiddlewareManifest.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"013eb57bab04ab886e7d6f5105a343c8\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/media/subset_TiemposText_Regular-s.p.3t2cct-y169la.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"be28891f866d83de7f86bedf7ab46b18\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/0692g18-l5_31.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"e2dc38fd978ec69be529a48ef133ff59\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/2l-rwqh66opbb.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"d0c1f89d293124907c4cf0342fa3f96f\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/1bctlkfbth33r.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"dee27aab1246d681e918d50221f68147\"",
+    "last_modified": "Thu, 09 Jul 2026 11:03:50 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/1ybjd_48v3k0z.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"1ce805079a3744ae627b3ffbfa5d31f2\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/0263_75eq_z6o.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"10e712a5d62dfc3299db0e95a812ebbc\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/1am6vh-nkhjf5.css",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "etag": "W/\"3eed1a26a8a95f44130cc5d45fbb5f1a\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "stylesheet"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/2oomrsdpeb221.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"5f14987b07bcbc7a3e70632ce2211294\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/A6K_ym-WE3fwhdMSjXFLw/_ssgManifest.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"d7cb4ef2bd77075d95eb63a1e3118246\"",
+    "last_modified": "Thu, 09 Jul 2026 09:09:24 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/1ju6glry7enim.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"73f9b0b352365b7bb89cd188f3453c95\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/media/subset-Sohne-Kraftig.1_4tn2k_txo_v.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"5e0634940d8829322f1240cd7d330a44\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:58 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://together.agency/_next/static/media/subset-Sohne-Halbfett.3menqk5xfaznq.woff2",
+    "status": 200,
+    "content_type": "font/woff2",
+    "etag": "\"fb07ca121cef2696a82f77167c0b5dfd\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:58 GMT",
+    "resource_type": "font"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/2q8nkgw3iofwk.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"9c99e14811143a55e84470f6d860cef0\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:58 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/0vz50r5qb50tp.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"1d09d0f50e5c1b4b0b3a6fd2e36fc4a9\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:58 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/07m0q0xiq8rnx.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"e7bf338851118643c6efb07d1ed9c420\"",
+    "last_modified": "Thu, 09 Jul 2026 11:04:00 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/data/A6K_ym-WE3fwhdMSjXFLw/index.json",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "etag": "W/\"6d64c0999607e76938b8eb3877236b48\"",
+    "last_modified": null,
+    "resource_type": "fetch"
+  },
+  {
+    "url": "https://plausible.io/js/script.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "etag": null,
+    "last_modified": null,
+    "resource_type": "script"
+  },
+  {
+    "url": "https://assets.together.agency/svg/2026/03/spade-logo.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "\"83bef3c08ec1daea865d1a253c420762\"",
+    "last_modified": "Thu, 12 Mar 2026 13:35:22 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://assets.together.agency/svg/2026/03/raw-transactions.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "etag": "\"8ce0c4b4dde8460a119e417cef40c9d9\"",
+    "last_modified": "Thu, 12 Mar 2026 13:37:44 GMT",
+    "resource_type": "image"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/1o9b7ea1lswhn.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"f5b6341866a916d6d6a2d9e66a3a5040\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:58 GMT",
+    "resource_type": "other"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/1o9b7ea1lswhn.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "\"f5b6341866a916d6d6a2d9e66a3a5040\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:58 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/turbopack-07qhdcjcqc61f.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"3a0f8e8827fd21fe035a2f3369a3f6c3\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://together.agency/_next/static/chunks/2w3lptva4_31i.js",
+    "status": 200,
+    "content_type": "application/javascript; charset=utf-8",
+    "etag": "W/\"8481c258f33953918029c37e01d51733\"",
+    "last_modified": "Thu, 09 Jul 2026 06:41:57 GMT",
+    "resource_type": "script"
+  },
+  {
+    "url": "https://res.cloudinary.com/dgfq2zjmk/video/upload/q_auto:good,c_limit,vc_auto,w_420,dpr_1,f_mp4,vc_av1/v1773322498/qcjatcr4hu4g0weh0llc.mp4",
+    "status": 206,
+    "content_type": "video/mp4;codecs=av01",
+    "etag": "\"04ff39462bda73232c2446396b49da0c\"",
+    "last_modified": "Fri, 12 Jun 2026 10:16:37 GMT",
+    "resource_type": "media"
+  }
+]

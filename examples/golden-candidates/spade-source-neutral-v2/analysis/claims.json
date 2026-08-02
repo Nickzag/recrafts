@@ -1,0 +1,12 @@
+{
+  "claims": [
+    {"claim_id":"claim-shell-brand-separation","statement":"The Together editorial case-study shell and the Spade product-brand layer are distinct sources of visual rules.","evidence_refs":["ev-together-desktop-viewport","ev-spade-desktop-viewport"],"confidence":"high"},
+    {"claim_id":"claim-density-rhythm","statement":"Sparse explanatory regions alternate with dense proof-bearing regions across both source presentations.","evidence_refs":["ev-together-desktop-viewport","ev-spade-desktop-viewport"],"confidence":"high"},
+    {"claim_id":"claim-semantic-attachment","statement":"Data labels are spatially attached to an object, transaction or outcome rather than used as free decoration.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-dom"],"confidence":"high"},
+    {"claim_id":"claim-one-protagonist","statement":"A proof region establishes one primary visual protagonist and subordinates annotations around it.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-mobile-viewport"],"confidence":"high"},
+    {"claim_id":"claim-measured-boundary","statement":"Boundaries communicate measurement and instrumentation, but their exact rails and corner geometry are source-specific.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-css"],"confidence":"high"},
+    {"claim_id":"claim-topology-source-locked","statement":"The centered title/object/CTA sequence and lateral measurement rails form a source-specific Hero topology.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-mobile-viewport"],"confidence":"high"},
+    {"claim_id":"claim-motifs-source-locked","statement":"Contour object, transaction chip, green family, cut boundaries and monospace labels become signature-like when combined.","evidence_refs":["ev-spade-desktop-viewport","ev-spade-css"],"confidence":"high"},
+    {"claim_id":"claim-core-theme-separation","statement":"Evidence-first hierarchy, semantic attachment and controlled signal count remain useful after palette, object, typography and topology change.","evidence_refs":["ev-together-desktop-viewport","ev-spade-desktop-viewport"],"confidence":"medium"}
+  ]
+}

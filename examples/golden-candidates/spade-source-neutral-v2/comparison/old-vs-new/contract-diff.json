@@ -1,0 +1,22 @@
+{
+  "comparison_id": "r010-spade-finding-to-contract-regression",
+  "comparison_basis": "prior-review-findings-to-new-accepted-package",
+  "historical_package_available": false,
+  "historical_reference": "chatgpt-review-package-spade-visual-system-2026-07-15.zip",
+  "historical_reference_status": "not-present-in-workspace",
+  "new_package_id": "package-c2a9b64984ab6d02",
+  "new_artifact_set_id": "artifact-set-312bc3a6bdc88e5c",
+  "dimensions": [
+    { "dimension": "shell-brand-separation", "prior_finding": "accepted strength", "new_status": "explicit-machine-contract", "new_refs": ["source-observations.json", "core-grammar.json"] },
+    { "dimension": "core-theme-separation", "prior_finding": "missing", "new_status": "pass-three-themes-one-core", "new_refs": ["core-grammar.json", "themes.json"] },
+    { "dimension": "exact-source-token-dependence", "prior_finding": "P0", "new_status": "source-observed-only", "new_refs": ["source-observations.json", "tokens.json"] },
+    { "dimension": "identity-legal-safety", "prior_finding": "P0-unverified-symbol", "new_status": "pass", "new_refs": ["accessibility.json", "../../validation/identity-safety-config.json"] },
+    { "dimension": "component-contract-completeness", "prior_finding": "P1", "new_status": "five-core-components-fully-specified", "new_refs": ["components.json"] },
+    { "dimension": "agent-contract-completeness", "prior_finding": "P1-hidden-prose-risk", "new_status": "pass-double-render-contract", "new_refs": ["artifact-set.json", "../../validation/agent-contract-report.json"] },
+    { "dimension": "accessibility-coverage", "prior_finding": "P1-described-not-validated", "new_status": "pass-basic-pilot-gate", "new_refs": ["accessibility.json", "../../validation/accessibility-report.json"] },
+    { "dimension": "cross-media-preview-coverage", "prior_finding": "P1-claims-exceeded-evidence", "new_status": "pass-36-previews", "new_refs": ["preview-coverage.json", "../../previews/capture-manifest.json"] },
+    { "dimension": "real-image-validation", "prior_finding": "P1-missing", "new_status": "pass-two-open-license-images", "new_refs": ["../../previews/real-imagery/commerce-object.png", "../../previews/real-imagery/infrastructure-place.png"] },
+    { "dimension": "delivery-readiness-accuracy", "prior_finding": "P1-exportable-overclaim", "new_status": "pilot-ready-not-production-ready", "new_refs": ["delivery-readiness.json"] }
+  ],
+  "limitation": "旧 Package 未出现在工作区，因此本文件不声称完成旧 Artifact 哈希级 diff；它只将先前评审已记录的问题映射到新 accepted package 的可审计证据。"
+}

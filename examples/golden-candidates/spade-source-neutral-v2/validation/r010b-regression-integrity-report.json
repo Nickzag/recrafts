@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "base_accepted_package_id": "package-c2a9b64984ab6d02",
+  "final_accepted_package_id": "package-c993e552fba61da0",
+  "final_artifact_set_id": "artifact-set-3b77fac6e98d1a91",
+  "canonical_contract_count": 15,
+  "allowed_changed_contracts": [
+    "design.md"
+  ],
+  "unexpected_changed_contracts": [],
+  "source_distance_unchanged": true,
+  "owner_decision_id": "decision-r010-owner-pass-20260716",
+  "owner_decision_preserved": true,
+  "delivery_readiness": "pilot-ready",
+  "preview_count": 36,
+  "preview_tree_sha256": "cfd22848ef4e832958d5fd9e27c6ac63f27dece58b55226f522932b5efab31d9",
+  "historical_package_tree_hashes": {
+    "package-91d1a8226792e35e": "e82fe89777da7cf09d021fc68be749c2658e053b5e162e1e150ab9ff5fd14c03",
+    "package-0ad1502a874d2e00": "2974ec7718a2f27debb34748df6ae3c976c67ec32913f6620fc5f0cb4a0e0736",
+    "package-c2a9b64984ab6d02": "37c5e6e9cf1168d70b3839625543168d9a421ee0e265c0bf4993ac2abea06e31"
+  },
+  "historical_packages_unchanged": true
+}

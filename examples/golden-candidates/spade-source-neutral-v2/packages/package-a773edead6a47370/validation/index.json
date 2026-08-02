@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "validation_run_id": "validation-fc430613f7e06032",
+  "reports": [
+    {
+      "validation_id": "identity-safety",
+      "authoritative_report_path": "validation/identity-safety-report.current.json",
+      "report_status": "pass",
+      "report_sha256": "5e410b75c1e40eabbf404970d25339c4dd51a5195f7f595d6b254be713013be8",
+      "superseded_report_paths": [
+        "validation/identity-safety-report.json"
+      ],
+      "superseded_reason": "The earlier package report used a scanner that treated technical IDs and provenance references as reusable brand content."
+    }
+  ]
+}

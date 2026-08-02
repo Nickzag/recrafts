@@ -1,0 +1,52 @@
+{
+  "coverage_id": "preview-coverage-spade-neutral-v2",
+  "system_previews": [
+    {"type":"system-board","file":"previews/system/system-board.png"},
+    {"type":"core-component-sheet","file":"previews/system/core-component-sheet.png"},
+    {"type":"theme-comparison","file":"previews/system/theme-comparison.png"},
+    {"type":"source-distance-comparison","file":"previews/system/source-distance-comparison.png"}
+  ],
+  "web": [
+    {"structure":"web-a","viewport":320,"file":"previews/web/web-a-320.png","topology":"left narrative then lower-right object proof"},
+    {"structure":"web-a","viewport":390,"file":"previews/web/web-a-390.png","topology":"left narrative then lower-right object proof"},
+    {"structure":"web-a","viewport":768,"file":"previews/web/web-a-768.png","topology":"left narrative then lower-right object proof"},
+    {"structure":"web-a","viewport":1024,"file":"previews/web/web-a-1024.png","topology":"left narrative then lower-right object proof"},
+    {"structure":"web-a","viewport":1440,"file":"previews/web/web-a-1440.png","topology":"left narrative then lower-right object proof"},
+    {"structure":"web-b","viewport":320,"file":"previews/web/web-b-320.png","topology":"top-left title, place field, evidence column, side action"},
+    {"structure":"web-b","viewport":390,"file":"previews/web/web-b-390.png","topology":"top-left title, place field, evidence column, side action"},
+    {"structure":"web-b","viewport":768,"file":"previews/web/web-b-768.png","topology":"top-left title, place field, evidence column, side action"},
+    {"structure":"web-b","viewport":1024,"file":"previews/web/web-b-1024.png","topology":"top-left title, place field, evidence column, side action"},
+    {"structure":"web-b","viewport":1440,"file":"previews/web/web-b-1440.png","topology":"top-left title, place field, evidence column, side action"}
+  ],
+  "posters": [
+    {"theme":"theme-derived","composition":"licensed object field with detached datum","file":"previews/posters/poster-derived.png"},
+    {"theme":"theme-alternative-a","composition":"measured bars without contour object","file":"previews/posters/poster-alternative.png"}
+  ],
+  "carousel": [
+    {"page_type":"cover","file":"previews/carousel/page-01-cover.png"},
+    {"page_type":"problem","file":"previews/carousel/page-02-problem.png"},
+    {"page_type":"insight","file":"previews/carousel/page-03-insight.png"},
+    {"page_type":"mechanism","file":"previews/carousel/page-04-mechanism.png"},
+    {"page_type":"evidence","file":"previews/carousel/page-05-evidence.png"},
+    {"page_type":"use-case","file":"previews/carousel/page-06-use-case.png"},
+    {"page_type":"result","file":"previews/carousel/page-07-result.png"},
+    {"page_type":"cta","file":"previews/carousel/page-08-cta.png"}
+  ],
+  "carousel_contact_sheet": "previews/carousel/contact-sheet.png",
+  "slides": [
+    {"page_type":"cover","file":"previews/slides/slide-01-cover.png"},
+    {"page_type":"problem","file":"previews/slides/slide-02-problem.png"},
+    {"page_type":"insight","file":"previews/slides/slide-03-insight.png"},
+    {"page_type":"mechanism","file":"previews/slides/slide-04-mechanism.png"},
+    {"page_type":"evidence","file":"previews/slides/slide-05-evidence.png"},
+    {"page_type":"use-case","file":"previews/slides/slide-06-use-case.png"},
+    {"page_type":"result","file":"previews/slides/slide-07-result.png"},
+    {"page_type":"cta","file":"previews/slides/slide-08-cta.png"}
+  ],
+  "slide_contact_sheet": "previews/slides/contact-sheet.png",
+  "real_imagery": [
+    {"kind":"commerce-object","license":"CC0 1.0","author":"Streetsoda","source_url":"https://commons.wikimedia.org/wiki/File:Corrugated_cardboard_on_conveyor.jpg","sha256":"192b7353ca04fa89c79ee63c51d315be00b9fe2164ce0d9b5f89eee73de90035","semantic_overlay":true,"file":"previews/real-imagery/commerce-object.png"},
+    {"kind":"infrastructure-place","license":"Public domain release","author":"Arpingstone","source_url":"https://commons.wikimedia.org/wiki/File:Lots.road.power.station.london.arp.jpg","sha256":"30cb691677ee1f696a0498b172dc16d3c307c8ed8dc70614605f22f945b070f5","semantic_overlay":true,"file":"previews/real-imagery/infrastructure-place.png"}
+  ],
+  "status": "pass"
+}

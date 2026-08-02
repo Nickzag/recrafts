@@ -1,0 +1,8 @@
+{
+  "alternatives": [
+    {"environment":"macOS system","display":"-apple-system","body":"-apple-system","data":"SFMono-Regular","cjk":"PingFang SC","license":"platform system fonts; not redistributed"},
+    {"environment":"Windows system","display":"Segoe UI Variable","body":"Segoe UI","data":"Consolas","cjk":"Microsoft YaHei","license":"platform system fonts; not redistributed"},
+    {"environment":"open web","display":"Inter","body":"Inter","data":"IBM Plex Mono","cjk":"Noto Sans CJK SC","license":"SIL Open Font License; references only, no font files packaged"}
+  ],
+  "required_samples": ["mixed Chinese/English heading","long English heading","long Chinese heading","financial numbers","code/data labels"]
+}

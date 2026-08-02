@@ -1,0 +1,12 @@
+{
+  "realization_id": "realization-86494147bb58ae5e",
+  "realization_kind": "source-neutral-portable-system",
+  "package_id": "package-c2a9b64984ab6d02",
+  "artifact_set_id": "artifact-set-312bc3a6bdc88e5c",
+  "owner_decision_set_id": "decision-r010-owner-pass-20260716",
+  "delivery_readiness": "pilot-ready",
+  "preview_count": 36,
+  "compiled_contract": "compiled-contract.json",
+  "contract_snapshot": "contract-snapshot",
+  "preview_root": "previews"
+}

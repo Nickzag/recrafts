@@ -1,0 +1,281 @@
+{
+  "assessment_id": "source-distance-20-0",
+  "dimensions": [
+    {
+      "dimension": "identity_and_trademark",
+      "score": 0,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "copy_and_naming",
+      "score": 0,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "exact_color_dependence",
+      "score": 18,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "typography_dependence",
+      "score": 22,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "shape_motif_dependence",
+      "score": 28,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "page_topology",
+      "score": 25,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "component_combination",
+      "score": 20,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "imagery_and_proprietary_assets",
+      "score": 0,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "motion_signature",
+      "score": 10,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    },
+    {
+      "dimension": "overall_combination_risk",
+      "score": 22,
+      "status": "low",
+      "evidence_refs": [
+        "ev-spade-desktop-viewport",
+        "ev-spade-mobile-viewport"
+      ],
+      "observed_source_traits": [
+        "near-exact-green",
+        "centered-full-height-hero",
+        "viewport-rails",
+        "cut-corner-canvas",
+        "contour-object",
+        "transaction-chip"
+      ],
+      "portable_output_traits": [
+        "transformed-mineral-palette",
+        "asymmetric-narrative-hero",
+        "offset-frame",
+        "licensed-photograph",
+        "evidence-callout",
+        "side-action"
+      ],
+      "mitigation": "retain mechanism-level relationship only",
+      "review_status": "machine-assessed"
+    }
+  ],
+  "topology_risk": "low",
+  "topology_similarity_ratio": 20,
+  "motif_combination_risk": "low",
+  "matched_signature_traits": [],
+  "gate_status": "pass",
+  "blocking_reasons": []
+}

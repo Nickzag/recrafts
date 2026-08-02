@@ -1,0 +1,44 @@
+[
+  {
+    "family": "naNSuperX",
+    "style": "normal",
+    "weight": "100 900",
+    "status": "loaded"
+  },
+  {
+    "family": "naNSuperX Fallback",
+    "style": "normal",
+    "weight": "normal",
+    "status": "loaded"
+  },
+  {
+    "family": "polar",
+    "style": "normal",
+    "weight": "400",
+    "status": "loaded"
+  },
+  {
+    "family": "polar Fallback",
+    "style": "normal",
+    "weight": "normal",
+    "status": "unloaded"
+  },
+  {
+    "family": "polarMono",
+    "style": "normal",
+    "weight": "400",
+    "status": "loaded"
+  },
+  {
+    "family": "polarMono",
+    "style": "normal",
+    "weight": "500",
+    "status": "loaded"
+  },
+  {
+    "family": "polarMono Fallback",
+    "style": "normal",
+    "weight": "normal",
+    "status": "loaded"
+  }
+]

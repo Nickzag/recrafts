@@ -1,0 +1,24 @@
+{
+  "comparison_basis": "prior-review-findings-to-new-machine-assessment",
+  "prior_run": {
+    "machine_report_available": false,
+    "recorded_risks": [
+      "exact source green dependence",
+      "source-like centered hero topology",
+      "viewport measurement rails",
+      "cut-corner canvas",
+      "contour object and transaction chip combination",
+      "unverified registered-trademark symbol"
+    ]
+  },
+  "new_run": {
+    "assessment_id": "source-distance-20-0",
+    "gate_status": "pass",
+    "topology_risk": "low",
+    "topology_similarity_ratio": 20,
+    "motif_combination_risk": "low",
+    "matched_signature_traits": [],
+    "identity_safety": "pass"
+  },
+  "conclusion": "新输出保留机制级关联，但未复用先前评审标记的签名级组合。"
+}

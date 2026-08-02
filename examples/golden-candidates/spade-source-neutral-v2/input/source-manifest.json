@@ -1,0 +1,44 @@
+{
+  "manifest_id": "source-manifest-spade-neutral-v2-20260716",
+  "created_at": "2026-07-16T09:13:00.000Z",
+  "capture_policy": "fresh-real-browser-desktop-mobile",
+  "sources": [
+    {
+      "capture_id": "capture-together-desktop-8ef41ffeb83f",
+      "source_scope": "together-case-study-shell",
+      "url": "https://together.agency/work/spade/?ref=rebrand",
+      "viewport": "1440x900",
+      "content_sha256": "8ef41ffeb83fe23173f11c6eb6df81136714abb26200cfd00324cc607f478a7d",
+      "viewport_sha256": "aa3adb28a742926ff95d7aac8ae336f75337ed695a6af9733e78663af287fa37",
+      "status": "complete"
+    },
+    {
+      "capture_id": "capture-together-mobile-3afdd781d3bf",
+      "source_scope": "together-case-study-shell",
+      "url": "https://together.agency/work/spade/?ref=rebrand",
+      "viewport": "390x844",
+      "content_sha256": "3afdd781d3bf6373a79718f1dfe171d193ccf72d96466506f8b1d02c3dddd6ee",
+      "viewport_sha256": "ba4c534ff1e7bdb440e6e7dfdf72320b1241c6946821e353fb465104c016c27a",
+      "status": "complete"
+    },
+    {
+      "capture_id": "capture-spade-desktop-59140c400bdc",
+      "source_scope": "spade-brand-and-product-site",
+      "url": "https://spade.com/",
+      "viewport": "1440x900",
+      "content_sha256": "59140c400bdc0127b758de518fcb6899b3ae1cfe36d4b4aa400cb14f13c0fb87",
+      "viewport_sha256": "1102f58e008792642e89912296b07692d87313b7ea1cfcc53b795e0cadd9c0f6",
+      "status": "complete"
+    },
+    {
+      "capture_id": "capture-spade-mobile-16071303190c",
+      "source_scope": "spade-brand-and-product-site",
+      "url": "https://spade.com/",
+      "viewport": "390x844",
+      "content_sha256": "16071303190c71cc4565506a9a82ef5a8f1d94d2aef073d179cab8e2ac35a08d",
+      "viewport_sha256": "77735d5478f96a92395e6cf1ba50c7f2be922e8633be178c7afb8aee81f37eb9",
+      "status": "complete"
+    }
+  ],
+  "scope_separation": ["together-shell", "spade-brand-system", "platform-ui", "case-study-presentation", "content-examples"]
+}
