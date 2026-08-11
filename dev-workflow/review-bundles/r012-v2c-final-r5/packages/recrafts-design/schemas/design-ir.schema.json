@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/design-ir.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "generated_notice", "authoring_source", "design_system", "overview", "foundations", "compositions", "components", "states", "responsive", "content_archetypes", "agent_rules", "constraints", "agent_usable"],
+  "properties": {
+    "schema": { "const": "recrafts.design-ir/v1" },
+    "generated_notice": { "const": "GENERATED · DO NOT EDIT · NOT AUTHORING SOURCE" },
+    "authoring_source": { "const": "design.md" },
+    "design_system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "version", "status", "release_id", "parent_release", "evidence_revision", "decision_revision", "derived_from", "confidence"],
+      "properties": {
+        "id": { "type": "string" }, "name": { "type": "string" }, "version": { "type": "string" }, "status": { "enum": ["candidate", "accepted"] },
+        "release_id": { "type": ["string", "null"] }, "parent_release": { "type": ["string", "null"] }, "evidence_revision": { "type": "string" },
+        "decision_revision": { "type": ["string", "null"] }, "derived_from": { "type": "array", "items": { "type": "string" } }, "confidence": { "type": "object" }
+      }
+    },
+    "overview": { "type": "string" },
+    "foundations": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/foundations" },
+    "compositions": { "type": "array", "items": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/composition" } },
+    "components": { "type": "array", "items": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/component" } },
+    "states": { "type": "array", "items": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/state" } },
+    "responsive": {
+      "type": "object", "additionalProperties": false, "required": ["desktop", "compact", "mobile"],
+      "properties": {
+        "desktop": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/viewport" },
+        "compact": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/viewport" },
+        "mobile": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/viewport" }
+      }
+    },
+    "content_archetypes": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/stringArray" },
+    "agent_rules": { "type": "array", "items": { "type": "string" } },
+    "constraints": { "$ref": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json#/$defs/constraints" },
+    "agent_usable": { "type": "boolean" }
+  }
+}

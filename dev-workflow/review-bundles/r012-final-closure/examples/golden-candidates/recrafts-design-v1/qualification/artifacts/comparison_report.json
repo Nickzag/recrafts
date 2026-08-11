@@ -1,0 +1,18 @@
+{
+  "schema": "recrafts.source-comparison/v1",
+  "candidate_revision": "C-FIXTURE-1",
+  "reconstruction_sha256": "7c0d3580a4f5a18b0744d34a7af86964cf5c2a7f26300b71dfea15d94802c4ce",
+  "comparisons": [
+    {
+      "region_id": "RG1",
+      "visual_similarity": 0.97,
+      "unsupported_objects": [],
+      "unknowns_hardened": false,
+      "metric_provenance": "deterministic-fixture"
+    }
+  ],
+  "visual_binding": {
+    "source_visual_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "reconstruction_visual_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  }
+}

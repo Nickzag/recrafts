@@ -1,0 +1,83 @@
+{
+  "schema": "recrafts.r012-result/v1",
+  "status": "candidate",
+  "agent_usable": false,
+  "gate_a": {
+    "schema": "recrafts.source-fidelity-report/v2",
+    "verdict": "PASS",
+    "candidate_revision": "C-FIXTURE-1",
+    "evidence_revision": "E-FIXTURE-1",
+    "design_sha256": "c2d809478f81be1d38eacb10ac8ebd1f2f3eb7a0de7623df716166b09337494b",
+    "artifact_hashes": {
+      "source_manifest": "67e80a771482fee91cd0c8c8bd7577b64206c052859a6221eed42991dee55a36",
+      "region_set": "9d2fcd033b1c98c09a5c030d79aca324a490a4861a7eec89a639f6b962152637",
+      "measurement_set": "80785df90cc299b1c0148ec2ef907ff10c6dba2f6fb02a739bae0c14136c6b96",
+      "source_token_set": "6759236d218eff601d7cd7e320719075ce41015946d44d3c3db595e97286fd98",
+      "reconstruction": "7c0d3580a4f5a18b0744d34a7af86964cf5c2a7f26300b71dfea15d94802c4ce",
+      "comparison_report": "265ae2d0b4ad05e8672a8a156ed4ebc33be18625926ce109f7e50dc2b221ae26",
+      "geometry_report": "ce53365cde36f93294972d9baf944b69274d490d66e976aafef886071912d962"
+    },
+    "checks": {
+      "candidate_and_evidence_binding": "PASS",
+      "artifact_dependency_binding": "PASS",
+      "source_and_region_coverage": "PASS",
+      "measurement_integrity": "PASS",
+      "source_token_support": "PASS",
+      "reconstruction_coverage": "PASS",
+      "comparison_coverage": "PASS",
+      "unsupported_visible_objects": "PASS",
+      "unknown_honesty": "PASS",
+      "geometry_fidelity": "PASS"
+    },
+    "failures": [],
+    "gate_a_runtime_qualification": "PASS",
+    "real_source_source_fidelity": "NOT_RUN",
+    "qualification_fixture": true,
+    "report_sha256": "12a54d319619e10da78776f4f50ee6d3d5e75d4fa7b8209120d900a7a6ddb0af"
+  },
+  "gate_b": {
+    "schema": "recrafts.design-coherence-report/v2",
+    "verdict": "PASS",
+    "candidate_revision": "C-FIXTURE-1",
+    "evidence_revision": "E-FIXTURE-1",
+    "design_sha256": "c2d809478f81be1d38eacb10ac8ebd1f2f3eb7a0de7623df716166b09337494b",
+    "preview_artifact_sha256": "0b30eed9277dbe1f335734ec63a1e53cf1d30b4ab9e19da0ab260c36a7477f6e",
+    "checks": {
+      "schema_and_ir": "PASS",
+      "critical_token_coverage": "PASS",
+      "component_visual_contracts": "PASS",
+      "state_coverage": "PASS",
+      "composition_grammar": "PASS",
+      "responsive_validity": "PASS",
+      "accessibility": "PASS",
+      "unknown_governance": "PASS",
+      "agent_rules": "PASS",
+      "forbidden_patterns": "PASS",
+      "preview_integrity": "PASS",
+      "browser_bound_visual": "NOT_RUN",
+      "preview_visual_coverage": "PASS",
+      "candidate_binding": "PASS"
+    },
+    "failures": [],
+    "proves_source_fidelity": false,
+    "production_gate": false,
+    "browser_evidence_sha256": null,
+    "report_sha256": "36619d20e4e459a71800768bd6794c1c0a29403a04d66daf678c70696c975af9"
+  },
+  "blind": {
+    "schema": "recrafts.blind-qualification-result/v1",
+    "blind_harness_status": "READY",
+    "blind_agent_status": "PENDING",
+    "agent_usable": false,
+    "forbidden_accesses": [],
+    "deterministic_fixture": true
+  },
+  "linux": {
+    "schema": "recrafts.r012-local-linux-diagnosis/v1",
+    "host_os": "darwin",
+    "readiness": "LINUX_PENDING",
+    "substitutes_for_linux_evidence": false
+  },
+  "owner_decision": "MISSING",
+  "release_promotion": "BLOCKED"
+}

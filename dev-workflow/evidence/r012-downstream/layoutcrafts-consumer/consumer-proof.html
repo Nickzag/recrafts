@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Layoutcrafts — Installed Qualification Consumer Proof</title>
+<style>
+:root{--recrafts-color-surface: #f7f7f5;--recrafts-color-panel: #ffffff;--recrafts-color-text: #20201e;--recrafts-color-border: #d8d8d3;--recrafts-color-accent: #dce8ff;--recrafts-spacing-row: 12px;--recrafts-spacing-section: 24px;--recrafts-radius-control: 8px;--recrafts-border-hairline: 1px;--recrafts-typography-body: 14px/1.5 system-ui;}
+body{margin:0;font:var(--recrafts-typography-body);background:var(--recrafts-color-surface);color:var(--recrafts-color-text)}
+.lc-app{display:grid;grid-template-columns:minmax(180px,0.32fr) minmax(0,1fr);min-height:100vh}
+.lc-sidebar{background:var(--recrafts-color-panel);border-right:var(--recrafts-border-hairline) solid var(--recrafts-color-border);padding:var(--recrafts-spacing-row)}
+.lc-nav-row{display:flex;flex-direction:row;align-items:center;gap:var(--recrafts-spacing-row);padding:var(--recrafts-spacing-row);border-radius:var(--recrafts-radius-control);cursor:pointer}
+.lc-nav-row[aria-selected="true"]{background:var(--recrafts-color-accent)}
+.lc-canvas{padding:var(--recrafts-spacing-section)}
+.lc-inspector{background:var(--recrafts-color-panel);border-left:var(--recrafts-border-hairline) solid var(--recrafts-color-border);padding:var(--recrafts-spacing-row)}
+h3{margin:0;font:var(--recrafts-typography-body)}
+@media (min-width:640px) and (max-width:1023px){[data-lc-region="inspector"]{display:none}}@media (max-width:639px){[data-lc-region="sidebar"]{display:none}[data-lc-region="inspector"]{display:none}}
+</style></head><body>
+<div class="lc-app">
+<aside data-lc-region="sidebar" class="lc-sidebar"><h3>Documents</h3>
+<div class="lc-nav-row" aria-selected="true">📄 Document title</div>
+<div class="lc-nav-row">📄 Updated recently</div>
+</aside>
+<main data-lc-region="canvas" class="lc-canvas"><h2>Layoutcrafts Consumer Proof</h2>
+<p>This UI vertical slice uses only the Recrafts Design System: Installed Qualification.</p>
+<p>Colors, spacing, typography, borders, layout, and responsive behavior are all from design.md tokens.</p>
+<p>No source screenshots, generic SaaS/shadcn, or invented semantics were used.</p>
+</main>
+<aside data-lc-region="inspector" class="lc-inspector"><h3>Inspector</h3><p>Context panel</p></aside>
+</div></body></html>

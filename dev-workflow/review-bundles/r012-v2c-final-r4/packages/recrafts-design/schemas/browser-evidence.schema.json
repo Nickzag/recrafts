@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/browser-evidence.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "status",
+    "preview_sha256",
+    "screenshots",
+    "computed_styles"
+  ],
+  "properties": {
+    "schema": {
+      "const": "recrafts.browser-evidence/v1"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "preview_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "browser_engine": {
+      "type": "string"
+    },
+    "screenshots": {
+      "type": "object",
+      "minProperties": 3,
+      "required": [
+        "desktop",
+        "compact",
+        "mobile"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "desktop": {
+          "$ref": "#/$defs/screenshotEntry"
+        },
+        "compact": {
+          "$ref": "#/$defs/screenshotEntry"
+        },
+        "mobile": {
+          "$ref": "#/$defs/screenshotEntry"
+        }
+      }
+    },
+    "computed_styles": {
+      "type": "object",
+      "required": [
+        "desktop",
+        "compact",
+        "mobile"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "desktop": {
+          "$ref": "#/$defs/viewportStyles"
+        },
+        "compact": {
+          "$ref": "#/$defs/viewportStyles"
+        },
+        "mobile": {
+          "$ref": "#/$defs/viewportStyles"
+        }
+      }
+    },
+    "infrastructure_selector_audit": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "infrastructure_affects_visual_region": {
+      "type": "boolean"
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "screenshotEntry": {
+      "type": "object",
+      "required": [
+        "file",
+        "sha256"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "viewport": {
+          "type": "object"
+        }
+      }
+    },
+    "viewportStyles": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "root_tokens": {
+          "type": "object"
+        },
+        "specimen": {
+          "type": "object"
+        },
+        "visual_region": {
+          "type": "object"
+        },
+        "regions": {
+          "type": "array"
+        }
+      }
+    }
+  }
+}

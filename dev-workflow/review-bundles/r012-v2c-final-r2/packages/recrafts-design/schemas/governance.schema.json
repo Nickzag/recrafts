@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/governance.schema.json",
+  "$defs": {
+    "id": { "type": "string", "minLength": 1 },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "dateTime": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{3})?Z$" },
+    "evidenceRevision": {
+      "type": "object", "additionalProperties": false, "required": ["schema", "id", "source_manifest_sha256", "created_at", "immutable"],
+      "properties": { "schema": { "const": "recrafts.evidence-revision/v2" }, "id": { "$ref": "#/$defs/id" }, "source_manifest_sha256": { "$ref": "#/$defs/sha256" }, "created_at": { "$ref": "#/$defs/dateTime" }, "immutable": { "const": true } }
+    },
+    "candidate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "id", "evidence_revision", "design_sha256", "design_ir_sha256", "status", "agent_usable", "agent", "created_at", "immutable"],
+      "properties": {
+        "schema": { "const": "recrafts.candidate-revision/v2" }, "id": { "$ref": "#/$defs/id" }, "evidence_revision": { "$ref": "#/$defs/id" },
+        "design_sha256": { "$ref": "#/$defs/sha256" }, "design_ir_sha256": { "$ref": "#/$defs/sha256" }, "status": { "const": "candidate" }, "agent_usable": { "const": false },
+        "agent": { "type": "object", "additionalProperties": false, "required": ["name", "run_id", "input_manifest_sha256"], "properties": { "name": { "$ref": "#/$defs/id" }, "run_id": { "$ref": "#/$defs/id" }, "input_manifest_sha256": { "$ref": "#/$defs/sha256" } } },
+        "created_at": { "$ref": "#/$defs/dateTime" }, "immutable": { "const": true }
+      }
+    },
+    "ownerDecisionInput": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "decision_id", "reviewer_name", "reviewer_role", "verdict", "candidate_revision", "evidence_revision", "design_sha256", "gate_a_report_sha256", "gate_b_report_sha256", "decided_at", "fixture"],
+      "properties": {
+        "schema": { "const": "recrafts.owner-decision-input/v1" }, "decision_id": { "$ref": "#/$defs/id" }, "reviewer_name": { "$ref": "#/$defs/id" },
+        "reviewer_role": { "const": "Project Owner" }, "verdict": { "enum": ["PASS", "REVISE", "REJECT"] }, "candidate_revision": { "$ref": "#/$defs/id" },
+        "evidence_revision": { "$ref": "#/$defs/id" }, "design_sha256": { "$ref": "#/$defs/sha256" }, "gate_a_report_sha256": { "$ref": "#/$defs/sha256" },
+        "gate_b_report_sha256": { "$ref": "#/$defs/sha256" }, "decided_at": { "$ref": "#/$defs/dateTime" }, "fixture": { "const": false }
+      }
+    },
+    "ownerDecisionReceipt": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "decision_id", "verdict", "candidate_revision", "evidence_revision", "design_sha256", "gate_a_report_sha256", "gate_b_report_sha256", "decision_file_sha256", "import_operation", "authority_provenance", "decided_at", "imported_at", "receipt_sha256"],
+      "properties": {
+        "schema": { "const": "recrafts.owner-decision-receipt/v1" }, "decision_id": { "$ref": "#/$defs/id" }, "verdict": { "const": "PASS" },
+        "candidate_revision": { "$ref": "#/$defs/id" }, "evidence_revision": { "$ref": "#/$defs/id" }, "design_sha256": { "$ref": "#/$defs/sha256" },
+        "gate_a_report_sha256": { "$ref": "#/$defs/sha256" }, "gate_b_report_sha256": { "$ref": "#/$defs/sha256" }, "decision_file_sha256": { "$ref": "#/$defs/sha256" },
+        "import_operation": { "const": "import-design-owner-decision" },
+        "authority_provenance": { "type": "object", "additionalProperties": false, "required": ["trust_boundary", "reviewer_name", "reviewer_role", "cryptographic_identity_verified"], "properties": { "trust_boundary": { "const": "local-governance" }, "reviewer_name": { "$ref": "#/$defs/id" }, "reviewer_role": { "const": "Project Owner" }, "cryptographic_identity_verified": { "const": false } } },
+        "decided_at": { "$ref": "#/$defs/dateTime" }, "imported_at": { "$ref": "#/$defs/dateTime" }, "receipt_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "rollbackDecision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "decision_id", "reviewer_name", "reviewer_role", "verdict", "current_release", "target_release", "new_release_id", "new_version", "reason", "decided_at", "fixture"],
+      "properties": {
+        "schema": { "const": "recrafts.rollback-design-release-decision/v1" }, "decision_id": { "$ref": "#/$defs/id" }, "reviewer_name": { "$ref": "#/$defs/id" },
+        "reviewer_role": { "const": "Project Owner" }, "verdict": { "const": "PASS" }, "current_release": { "$ref": "#/$defs/id" }, "target_release": { "$ref": "#/$defs/id" },
+        "new_release_id": { "$ref": "#/$defs/id" }, "new_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" }, "reason": { "$ref": "#/$defs/id" },
+        "decided_at": { "$ref": "#/$defs/dateTime" }, "fixture": { "const": false }
+      }
+    },
+    "designRelease": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "release_id", "version", "release_kind", "status", "agent_usable", "parent_release", "candidate_revision", "evidence_revision", "decision_revision", "candidate_design_sha256", "release_design_sha256", "semantic_ir_sha256", "preview_artifact_sha256", "gate_a_report_sha256", "gate_b_report_sha256", "decision_receipt_sha256", "artifact_hashes", "created_at", "immutable", "release_sha256"],
+      "properties": {
+        "schema": { "const": "recrafts.design-release/v2" }, "release_id": { "$ref": "#/$defs/id" }, "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "release_kind": { "enum": ["promotion", "rollback"] }, "status": { "const": "accepted" }, "agent_usable": { "const": true }, "parent_release": { "type": ["string", "null"] },
+        "candidate_revision": { "type": ["string", "null"] }, "evidence_revision": { "$ref": "#/$defs/id" }, "decision_revision": { "$ref": "#/$defs/id" },
+        "candidate_design_sha256": { "$ref": "#/$defs/sha256" }, "release_design_sha256": { "$ref": "#/$defs/sha256" }, "semantic_ir_sha256": { "$ref": "#/$defs/sha256" },
+        "preview_artifact_sha256": { "$ref": "#/$defs/sha256" }, "gate_a_report_sha256": { "$ref": "#/$defs/sha256" }, "gate_b_report_sha256": { "$ref": "#/$defs/sha256" },
+        "decision_receipt_sha256": { "$ref": "#/$defs/sha256" }, "reused_gate_artifacts_from": { "type": "string" },
+        "rollback": { "type": "object", "additionalProperties": false, "required": ["decision_id", "source_release", "target_release"], "properties": { "decision_id": { "$ref": "#/$defs/id" }, "source_release": { "$ref": "#/$defs/id" }, "target_release": { "$ref": "#/$defs/id" } } },
+        "artifact_hashes": { "type": "object", "minProperties": 5, "additionalProperties": { "$ref": "#/$defs/sha256" } }, "created_at": { "$ref": "#/$defs/dateTime" },
+        "immutable": { "const": true }, "release_sha256": { "$ref": "#/$defs/sha256" }
+      },
+      "allOf": [
+        { "if": { "properties": { "release_kind": { "const": "promotion" } } }, "then": { "required": ["candidate_revision"] } },
+        { "if": { "properties": { "release_kind": { "const": "rollback" } } }, "then": { "required": ["rollback", "reused_gate_artifacts_from"] } }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Layoutcrafts Consumer Proof — Installed Qualification</title>
+<style>
+:root { --recrafts-color-surface: #f7f7f5; --recrafts-color-panel: #ffffff; --recrafts-color-text: #20201e; --recrafts-color-border: #d8d8d3; --recrafts-color-accent: #dce8ff; --recrafts-spacing-row: 12px; --recrafts-spacing-section: 24px; --recrafts-radius-control: 8px; --recrafts-border-hairline: 1px; --recrafts-typography-body: 14px/1.5 system-ui; }
+body { margin:0; font-family:system-ui; background:var(--recrafts-color-surface); color:var(--recrafts-color-text); }
+.lc-app { display:grid; grid-template-columns:minmax(180px,0.32fr) minmax(0,1fr); min-height:100vh; }
+.lc-nav { background: var(--recrafts-color-panel); color: var(--recrafts-color-text); border-color: var(--recrafts-color-border); border-width: var(--recrafts-border-hairline); border-radius: var(--recrafts-radius-control); padding: var(--recrafts-spacing-row); font: var(--recrafts-typography-body); display: flex; flex-direction: row; gap: var(--recrafts-spacing-row); border-style: solid; }
+.lc-nav[aria-selected="true"] { background:var(--recrafts-color-accent); }
+.lc-canvas { padding:var(--recrafts-spacing-section); }
+@media (min-width:640px) and (max-width:1023px) { [data-lc-region="inspector"] { display: none; } }
+@media (max-width:639px) { [data-lc-region="sidebar"] { display: none; } [data-lc-region="inspector"] { display: none; } }
+</style></head><body>
+<div class="lc-app">
+  <aside data-lc-region="sidebar" class="lc-nav">
+    <h3>Document title</h3>
+    <div class="lc-nav" role="option" aria-selected="true">Document title</div>
+    <div class="lc-nav" role="option">Updated recently</div>
+  </aside>
+  <main data-lc-region="canvas" class="lc-canvas">
+    <h2>Layoutcrafts Consumer Proof</h2>
+    <p>This UI is rendered from the Recrafts Design System: Installed Qualification v0.1.0.</p>
+    <p>All colors, spacing, typography, borders, and layout are from design.md tokens.</p>
+  </main>
+</div>
+</body></html>

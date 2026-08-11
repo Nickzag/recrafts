@@ -1,0 +1,10 @@
+{
+  "schema": "recrafts.source-manifest/v1",
+  "evidence_revision": "E-FIXTURE-1",
+  "sources": [
+    {
+      "source_id": "S1",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ]
+}

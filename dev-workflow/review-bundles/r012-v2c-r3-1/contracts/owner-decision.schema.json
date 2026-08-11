@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/owner-decision.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision_set_id", "reviewed_package_id", "verdict", "decision_status", "decision_source", "decided_at"],
+  "properties": {
+    "decision_set_id": { "type": "string", "minLength": 1 },
+    "reviewed_package_id": { "type": "string", "pattern": "^package-" },
+    "verdict": { "enum": ["PASS", "PASS WITH CHANGES"] },
+    "decision_status": { "const": "accepted" },
+    "decision_source": { "enum": ["project-owner", "deterministic-interoperability-fixture"] },
+    "decided_at": { "type": "string", "minLength": 1 },
+    "changes": { "type": "array", "items": { "type": "string" } }
+  }
+}

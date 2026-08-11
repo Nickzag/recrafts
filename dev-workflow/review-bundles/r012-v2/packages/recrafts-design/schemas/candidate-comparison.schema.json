@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/candidate-comparison.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema", "candidate_ids", "evidence_revisions", "domains", "summary", "voting_used", "automatic_merge", "decision_required"],
+  "properties": {
+    "schema": { "const": "recrafts.candidate-comparison/v2" }, "candidate_ids": { "type": "array", "minItems": 2, "items": { "type": "string" }, "uniqueItems": true },
+    "evidence_revisions": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "domains": { "type": "object", "additionalProperties": false, "required": ["foundations", "components", "states", "compositions", "responsive", "agent_rules", "constraints", "unknowns"], "properties": {
+      "foundations": { "$ref": "#/$defs/records" }, "components": { "$ref": "#/$defs/records" }, "states": { "$ref": "#/$defs/records" }, "compositions": { "$ref": "#/$defs/records" },
+      "responsive": { "$ref": "#/$defs/records" }, "agent_rules": { "$ref": "#/$defs/records" }, "constraints": { "$ref": "#/$defs/records" }, "unknowns": { "$ref": "#/$defs/records" }
+    } },
+    "summary": { "type": "object", "additionalProperties": false, "required": ["agreement", "compatible-difference", "conflict", "unsupported", "unknown"], "properties": { "agreement": { "type": "integer", "minimum": 0 }, "compatible-difference": { "type": "integer", "minimum": 0 }, "conflict": { "type": "integer", "minimum": 0 }, "unsupported": { "type": "integer", "minimum": 0 }, "unknown": { "type": "integer", "minimum": 0 } } },
+    "voting_used": { "const": false }, "automatic_merge": { "const": false }, "decision_required": { "const": true }
+  },
+  "$defs": { "records": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["key", "classification", "candidates", "evidence_refs"], "properties": { "key": { "type": "string" }, "classification": { "enum": ["agreement", "compatible-difference", "conflict", "unsupported", "unknown"] }, "candidates": { "type": "object" }, "evidence_refs": { "type": "object" } } } } }
+}

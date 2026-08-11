@@ -1,0 +1,13 @@
+{
+  "schema": "recrafts.source-comparison/v1",
+  "candidate_revision": "C-FIXTURE-1",
+  "reconstruction_sha256": "a4b0f7616501724da57e8a7206066bbf73f3d311244e43c17406c1820c57b45b",
+  "comparisons": [
+    {
+      "region_id": "RG1",
+      "visual_similarity": 0.97,
+      "unsupported_objects": [],
+      "unknowns_hardened": false
+    }
+  ]
+}

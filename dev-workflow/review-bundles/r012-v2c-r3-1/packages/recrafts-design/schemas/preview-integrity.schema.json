@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/preview-integrity.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema", "design_sha256", "compiler_version", "design_ir_sha256", "projected_style_sha256", "preview_content_sha256", "renderer_infrastructure_sha256", "renderer_infrastructure_allowlist_sha256", "preview_artifact_sha256", "generated_at", "infrastructure_affects_visual_region", "projected_rule_ids", "projected_token_refs", "projected_component_refs", "projected_state_refs", "projected_composition_refs", "viewport_coverage"],
+  "properties": {
+    "schema": { "const": "recrafts.preview-integrity/v2" }, "design_sha256": { "$ref": "#/$defs/sha256" }, "compiler_version": { "type": "string" }, "design_ir_sha256": { "$ref": "#/$defs/sha256" },
+    "projected_style_sha256": { "$ref": "#/$defs/sha256" }, "preview_content_sha256": { "$ref": "#/$defs/sha256" }, "renderer_infrastructure_sha256": { "$ref": "#/$defs/sha256" },
+    "renderer_infrastructure_allowlist_sha256": { "$ref": "#/$defs/sha256" }, "preview_artifact_sha256": { "$ref": "#/$defs/sha256" }, "generated_at": { "type": "string" },
+    "infrastructure_affects_visual_region": { "const": false }, "projected_rule_ids": { "$ref": "#/$defs/refs" }, "projected_token_refs": { "$ref": "#/$defs/refs" },
+    "projected_component_refs": { "$ref": "#/$defs/refs" }, "projected_state_refs": { "$ref": "#/$defs/refs" }, "projected_composition_refs": { "$ref": "#/$defs/refs" },
+    "viewport_coverage": { "type": "array", "items": { "enum": ["desktop", "compact", "mobile"] }, "minItems": 3, "maxItems": 3, "uniqueItems": true }
+  },
+  "$defs": { "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }, "refs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true } }
+}

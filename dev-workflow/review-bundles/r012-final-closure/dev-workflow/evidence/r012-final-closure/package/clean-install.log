@@ -1,0 +1,4 @@
+recrafts-0.5.0-rc.1.tgz clean install: PASS
+SHA-256: da0ba9ee4012028d55e7e975140fabf7705b59a624b6b085d339dac77636efcf
+3/3 CLI bin targets verify
+11/11 Design Operations loaded

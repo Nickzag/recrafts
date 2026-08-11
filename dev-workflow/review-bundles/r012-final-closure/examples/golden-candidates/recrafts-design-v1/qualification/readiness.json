@@ -1,0 +1,16 @@
+{
+  "schema": "recrafts.r012-readiness/v1",
+  "implementation_status": "RUNTIME_CORE_PARTIAL",
+  "runtime_status": "RUNTIME_DEEPENED",
+  "status": "candidate",
+  "agent_usable": false,
+  "gate_a_runtime_qualification": "PASS",
+  "real_source_source_fidelity": "NOT_RUN",
+  "gate_b_design_coherence": "PASS",
+  "blind_harness_status": "READY",
+  "blind_agent_status": "PENDING",
+  "linux_status": "LINUX_PENDING",
+  "linux_dispatch_ready": false,
+  "owner_decision": "MISSING",
+  "release_promotion": "BLOCKED"
+}

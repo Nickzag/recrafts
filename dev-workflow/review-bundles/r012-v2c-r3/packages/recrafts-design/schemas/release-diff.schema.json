@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/release-diff.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema", "current_release", "next_release", "required_semver", "semantic_change", "visual_diff_required"],
+  "properties": { "schema": { "const": "recrafts.release-diff/v1" }, "current_release": { "type": "string" }, "next_release": { "type": "string" }, "required_semver": { "enum": ["patch", "minor", "major"] }, "semantic_change": { "type": "object" }, "visual_diff_required": { "const": true } }
+}

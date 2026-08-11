@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://recrafts.local/aliases/source-fidelity-report.schema.json","$ref":"../../packages/recrafts-design/schemas/gate-reports.schema.json#/$defs/gateA"}

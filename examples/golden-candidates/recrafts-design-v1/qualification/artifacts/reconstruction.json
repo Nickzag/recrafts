@@ -1,0 +1,31 @@
+{
+  "schema": "recrafts.faithful-reconstruction/v1",
+  "candidate_revision": "C-FIXTURE-1",
+  "design_sha256": "c2d809478f81be1d38eacb10ac8ebd1f2f3eb7a0de7623df716166b09337494b",
+  "region_set_sha256": "9d2fcd033b1c98c09a5c030d79aca324a490a4861a7eec89a639f6b962152637",
+  "surfaces": [
+    {
+      "region_id": "RG1",
+      "status": "rendered",
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50,
+        "unit": "px"
+      },
+      "reconstruction_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50,
+        "unit": "px"
+      }
+    }
+  ],
+  "visual_evidence": {
+    "source_visual_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "reconstruction_visual_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "browser_provenance": "deterministic-fixture"
+  }
+}

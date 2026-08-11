@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/gate-reports.schema.json",
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "statusMap": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "enum": [
+          "PASS",
+          "FAIL",
+          "NOT_RUN"
+        ]
+      }
+    },
+    "gateA": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "verdict",
+        "candidate_revision",
+        "evidence_revision",
+        "design_sha256",
+        "artifact_hashes",
+        "checks",
+        "failures",
+        "gate_a_runtime_qualification",
+        "real_source_source_fidelity",
+        "qualification_fixture",
+        "report_sha256"
+      ],
+      "properties": {
+        "schema": {
+          "const": "recrafts.source-fidelity-report/v2"
+        },
+        "verdict": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ]
+        },
+        "candidate_revision": {
+          "type": "string"
+        },
+        "evidence_revision": {
+          "type": "string"
+        },
+        "design_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "artifact_hashes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source_manifest",
+            "region_set",
+            "measurement_set",
+            "source_token_set",
+            "reconstruction",
+            "comparison_report",
+            "geometry_report"
+          ],
+          "properties": {
+            "source_manifest": {
+              "$ref": "#/$defs/sha256"
+            },
+            "region_set": {
+              "$ref": "#/$defs/sha256"
+            },
+            "measurement_set": {
+              "$ref": "#/$defs/sha256"
+            },
+            "source_token_set": {
+              "$ref": "#/$defs/sha256"
+            },
+            "reconstruction": {
+              "$ref": "#/$defs/sha256"
+            },
+            "comparison_report": {
+              "$ref": "#/$defs/sha256"
+            },
+            "geometry_report": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        },
+        "checks": {
+          "$ref": "#/$defs/statusMap"
+        },
+        "failures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gate_a_runtime_qualification": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN"
+          ]
+        },
+        "real_source_source_fidelity": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN"
+          ]
+        },
+        "qualification_fixture": {
+          "type": "boolean"
+        },
+        "report_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "visual_evidence_binding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source_visual_sha256",
+            "reconstruction_visual_sha256"
+          ],
+          "properties": {
+            "source_visual_sha256": {
+              "$ref": "#/$defs/sha256"
+            },
+            "reconstruction_visual_sha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        }
+      }
+    },
+    "gateB": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "verdict",
+        "candidate_revision",
+        "evidence_revision",
+        "design_sha256",
+        "preview_artifact_sha256",
+        "checks",
+        "failures",
+        "proves_source_fidelity",
+        "report_sha256",
+        "production_gate"
+      ],
+      "properties": {
+        "schema": {
+          "const": "recrafts.design-coherence-report/v2"
+        },
+        "verdict": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ]
+        },
+        "candidate_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "design_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "preview_artifact_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "checks": {
+          "$ref": "#/$defs/statusMap"
+        },
+        "failures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "proves_source_fidelity": {
+          "const": false
+        },
+        "report_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "browser_evidence_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "production_gate": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

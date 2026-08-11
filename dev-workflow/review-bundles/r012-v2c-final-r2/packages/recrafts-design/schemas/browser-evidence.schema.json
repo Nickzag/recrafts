@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/browser-evidence.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "status",
+    "preview_sha256",
+    "screenshots"
+  ],
+  "properties": {
+    "schema": {
+      "const": "recrafts.browser-evidence/v1"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "preview_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "browser_engine": {
+      "type": "string"
+    },
+    "screenshots": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "file",
+          "sha256"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "viewport": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "computed_styles": {
+      "type": "object",
+      "properties": {
+        "root_tokens": {
+          "type": "object"
+        },
+        "specimen": {
+          "type": "object"
+        },
+        "visual_region": {
+          "type": "object"
+        }
+      }
+    },
+    "infrastructure_selector_audit": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "infrastructure_affects_visual_region": {
+      "type": "boolean"
+    }
+  }
+}

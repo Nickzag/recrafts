@@ -1,0 +1,17 @@
+{
+  "schema": "recrafts.geometry-report/v1",
+  "candidate_revision": "C-FIXTURE-1",
+  "region_set_sha256": "9d2fcd033b1c98c09a5c030d79aca324a490a4861a7eec89a639f6b962152637",
+  "measurement_set_sha256": "80785df90cc299b1c0148ec2ef907ff10c6dba2f6fb02a739bae0c14136c6b96",
+  "regions": [
+    {
+      "region_id": "RG1",
+      "delta_px": 1,
+      "tolerance_px": 2
+    }
+  ],
+  "visual_binding": {
+    "source_visual_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "reconstruction_visual_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  }
+}

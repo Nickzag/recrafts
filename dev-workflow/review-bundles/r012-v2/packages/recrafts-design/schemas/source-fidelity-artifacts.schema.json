@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/source-fidelity-artifacts.schema.json",
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "id": { "type": "string", "minLength": 1 },
+    "sourceManifest": {
+      "type": "object", "additionalProperties": false, "required": ["schema", "evidence_revision", "sources"],
+      "properties": {
+        "schema": { "const": "recrafts.source-manifest/v1" }, "evidence_revision": { "$ref": "#/$defs/id" },
+        "sources": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["source_id", "sha256"], "properties": { "source_id": { "$ref": "#/$defs/id" }, "sha256": { "$ref": "#/$defs/sha256" } } } }
+      }
+    },
+    "regionSet": {
+      "type": "object", "additionalProperties": false, "required": ["schema", "evidence_revision", "regions"],
+      "properties": {
+        "schema": { "const": "recrafts.region-set/v1" }, "evidence_revision": { "$ref": "#/$defs/id" },
+        "regions": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["region_id", "source_id", "coverage", "status"], "properties": { "region_id": { "$ref": "#/$defs/id" }, "source_id": { "$ref": "#/$defs/id" }, "coverage": { "type": "number", "minimum": 0, "maximum": 1 }, "status": { "enum": ["observed", "inferred", "unknown"] } } } }
+      }
+    },
+    "measurementSet": {
+      "type": "object", "additionalProperties": false, "required": ["schema", "evidence_revision", "measurements"],
+      "properties": {
+        "schema": { "const": "recrafts.measurement-set/v1" }, "evidence_revision": { "$ref": "#/$defs/id" },
+        "measurements": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["measurement_id", "region_id", "kind", "value", "unit", "confidence"], "properties": { "measurement_id": { "$ref": "#/$defs/id" }, "region_id": { "$ref": "#/$defs/id" }, "kind": { "$ref": "#/$defs/id" }, "value": { "type": "number" }, "unit": { "$ref": "#/$defs/id" }, "confidence": { "type": "number", "minimum": 0, "maximum": 1 } } } }
+      }
+    },
+    "sourceTokenSet": {
+      "type": "object", "additionalProperties": false, "required": ["schema", "evidence_revision", "measurement_set_sha256", "tokens"],
+      "properties": {
+        "schema": { "const": "recrafts.source-token-set/v1" }, "evidence_revision": { "$ref": "#/$defs/id" }, "measurement_set_sha256": { "$ref": "#/$defs/sha256" },
+        "tokens": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["token_id", "certainty", "region_refs", "measurement_refs"], "properties": { "token_id": { "$ref": "#/$defs/id" }, "certainty": { "enum": ["observed", "inferred", "unknown"] }, "region_refs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } }, "measurement_refs": { "type": "array", "items": { "$ref": "#/$defs/id" } } } } }
+      }
+    },
+    "reconstruction": {
+      "type": "object", "additionalProperties": false, "required": ["schema", "candidate_revision", "design_sha256", "region_set_sha256", "surfaces"],
+      "properties": {
+        "schema": { "const": "recrafts.faithful-reconstruction/v1" }, "candidate_revision": { "$ref": "#/$defs/id" }, "design_sha256": { "$ref": "#/$defs/sha256" }, "region_set_sha256": { "$ref": "#/$defs/sha256" },
+        "surfaces": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["region_id", "status"], "properties": { "region_id": { "$ref": "#/$defs/id" }, "status": { "enum": ["rendered", "blocked"] } } } }
+      }
+    },
+    "comparisonReport": {
+      "type": "object", "additionalProperties": false, "required": ["schema", "candidate_revision", "reconstruction_sha256", "comparisons"],
+      "properties": {
+        "schema": { "const": "recrafts.source-comparison/v1" }, "candidate_revision": { "$ref": "#/$defs/id" }, "reconstruction_sha256": { "$ref": "#/$defs/sha256" },
+        "comparisons": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["region_id", "visual_similarity", "unsupported_objects", "unknowns_hardened"], "properties": { "region_id": { "$ref": "#/$defs/id" }, "visual_similarity": { "type": "number", "minimum": 0, "maximum": 1 }, "unsupported_objects": { "type": "array", "items": { "type": "string" } }, "unknowns_hardened": { "type": "boolean" } } } }
+      }
+    },
+    "geometryReport": {
+      "type": "object", "additionalProperties": false, "required": ["schema", "candidate_revision", "region_set_sha256", "measurement_set_sha256", "regions"],
+      "properties": {
+        "schema": { "const": "recrafts.geometry-report/v1" }, "candidate_revision": { "$ref": "#/$defs/id" }, "region_set_sha256": { "$ref": "#/$defs/sha256" }, "measurement_set_sha256": { "$ref": "#/$defs/sha256" },
+        "regions": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["region_id", "delta_px", "tolerance_px"], "properties": { "region_id": { "$ref": "#/$defs/id" }, "delta_px": { "type": "number", "minimum": 0 }, "tolerance_px": { "type": "number", "minimum": 0 } } } }
+      }
+    }
+  }
+}

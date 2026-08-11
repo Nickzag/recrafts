@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "operation",
+    "input"
+  ],
+  "properties": {
+    "operation": {
+      "const": "verify-source-fidelity"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "candidate_file"
+      ],
+      "properties": {
+        "candidate_file": {
+          "type": "string"
+        },
+        "source_manifest_file": {
+          "type": "string"
+        },
+        "region_set_file": {
+          "type": "string"
+        },
+        "measurement_set_file": {
+          "type": "string"
+        },
+        "source_token_set_file": {
+          "type": "string"
+        },
+        "reconstruction_file": {
+          "type": "string"
+        },
+        "comparison_report_file": {
+          "type": "string"
+        },
+        "geometry_report_file": {
+          "type": "string"
+        },
+        "source_visual_file": {
+          "type": "string"
+        },
+        "reconstruction_visual_file": {
+          "type": "string"
+        },
+        "production_gate": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "x-recrafts": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "statuses": [
+      "completed",
+      "failed"
+    ]
+  }
+}

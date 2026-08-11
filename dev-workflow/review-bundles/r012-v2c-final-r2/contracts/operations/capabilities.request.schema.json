@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","required":["operation"],"properties":{"operation":{"const":"capabilities"}},"x-recrafts":{"writes_files":false,"required_capabilities":[],"statuses":["completed","failed"],"artifact_types":[],"error_codes":["INVALID_JSON","PROTOCOL_VERSION_UNSUPPORTED","SCHEMA_VALIDATION_FAILED"]}}

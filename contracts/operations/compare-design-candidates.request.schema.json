@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "operation",
+    "input"
+  ],
+  "properties": {
+    "operation": {
+      "const": "compare-design-candidates"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "candidates_file",
+        "candidate_runs_file",
+        "canonical_allowed_input_manifest",
+        "target_lock",
+        "evidence_revision",
+        "canonical_allowed_input_manifest_sha256"
+      ],
+      "properties": {
+        "candidates_file": {
+          "type": "string"
+        },
+        "canonical_allowed_input_manifest": {
+          "type": "string"
+        },
+        "target_lock": {
+          "type": "string"
+        },
+        "evidence_revision": {
+          "type": "string"
+        },
+        "candidate_runs_file": {
+          "type": "string"
+        },
+        "canonical_allowed_input_manifest_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "x-recrafts": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "statuses": [
+      "completed",
+      "failed"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "operation",
+    "input"
+  ],
+  "properties": {
+    "operation": {
+      "const": "compare-design-candidates"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "candidates_file"
+      ],
+      "properties": {
+        "candidates_file": {
+          "type": "string"
+        },
+        "canonical_allowed_input_manifest": {
+          "type": "string"
+        },
+        "target_lock": {
+          "type": "string"
+        },
+        "evidence_revision": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "x-recrafts": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "statuses": [
+      "completed",
+      "failed"
+    ]
+  }
+}

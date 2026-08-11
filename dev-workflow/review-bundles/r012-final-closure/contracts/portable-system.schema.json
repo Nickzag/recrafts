@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/portable-system.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["core_grammar", "tokens", "themes", "components", "delivery"],
+  "properties": {
+    "core_grammar": { "type": "object" },
+    "tokens": { "type": "array", "minItems": 1, "items": { "type": "object" } },
+    "themes": { "type": "array", "minItems": 3, "items": { "type": "object" } },
+    "components": { "type": "array", "minItems": 1, "items": { "type": "object" } },
+    "delivery": { "type": "object" }
+  }
+}

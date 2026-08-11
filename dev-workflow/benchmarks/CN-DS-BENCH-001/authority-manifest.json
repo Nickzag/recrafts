@@ -1,0 +1,20 @@
+{
+  "schema": "cn-ds-bench-001.authority-manifest/v1",
+  "allowed_inputs": [
+    "design.md",
+    "task.md",
+    "evidence-revision.json",
+    "screenshots/"
+  ],
+  "target_lock": "crafts-notes-v1",
+  "evidence_revision": "E1",
+  "forbidden_inputs": [
+    "candidate_answers.json",
+    "owner_decisions.json"
+  ],
+  "required_provenance": [
+    "runner",
+    "input_isolated",
+    "accessed_files"
+  ]
+}

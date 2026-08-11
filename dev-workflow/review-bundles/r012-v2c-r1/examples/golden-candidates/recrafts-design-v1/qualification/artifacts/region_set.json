@@ -1,0 +1,12 @@
+{
+  "schema": "recrafts.region-set/v1",
+  "evidence_revision": "E-FIXTURE-1",
+  "regions": [
+    {
+      "region_id": "RG1",
+      "source_id": "S1",
+      "coverage": 1,
+      "status": "observed"
+    }
+  ]
+}

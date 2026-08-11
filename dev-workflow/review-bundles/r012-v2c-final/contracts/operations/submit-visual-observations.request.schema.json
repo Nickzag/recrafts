@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/operations/submit-visual-observations.request.schema.json",
+  "type": "object",
+  "required": ["operation", "input", "output_directory"],
+  "properties": {
+    "operation": { "const": "submit-visual-observations" },
+    "input": { "type": "object", "required": ["prepared_visual_recovery_directory", "observations_file"], "properties": { "prepared_visual_recovery_directory": { "type": "string" }, "observations_file": { "type": "string" } }, "additionalProperties": false },
+    "output_directory": { "type": "string" }
+  },
+  "x-recrafts": { "writes_files": true, "required_capabilities": ["files", "structured-output", "vision"], "statuses": ["completed", "completed_with_warnings", "failed"], "artifact_types": ["visual-evidence-package", "region-manifest", "measurements", "source-observed-visual-tokens"], "error_codes": ["PACKAGE_INVALID", "OUTPUT_NOT_EMPTY", "HOST_ACTION_REQUIRED"] }
+}

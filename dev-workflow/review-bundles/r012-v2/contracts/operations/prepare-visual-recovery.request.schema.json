@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/operations/prepare-visual-recovery.request.schema.json",
+  "type": "object",
+  "required": ["operation", "input", "output_directory"],
+  "properties": {
+    "operation": { "const": "prepare-visual-recovery" },
+    "input": { "type": "object", "required": ["source_pack_id", "sources"], "properties": { "source_pack_id": { "type": "string", "minLength": 1 }, "sources": { "type": "array", "minItems": 1, "maxItems": 20, "items": { "type": "object", "required": ["path", "screen_id", "screen_family", "platform", "viewport", "source_role"], "properties": { "path": { "type": "string" }, "screen_id": { "type": "string" }, "screen_family": { "type": "string" }, "platform": { "type": "string" }, "viewport": { "type": "string" }, "source_role": { "const": "product-app-screenshot" }, "known_state_labels": { "type": "array", "items": { "type": "string" } } }, "additionalProperties": false } } }, "additionalProperties": false },
+    "output_directory": { "type": "string" }
+  },
+  "x-recrafts": { "writes_files": true, "required_capabilities": ["files"], "statuses": ["needs_host_action", "failed"], "artifact_types": ["screen-manifest", "region-preparation", "measurement-request", "host-instructions"], "error_codes": ["UNSAFE_INPUT_PATH", "UNSAFE_OUTPUT_PATH", "OUTPUT_NOT_EMPTY", "INPUT_NOT_FOUND"] }
+}

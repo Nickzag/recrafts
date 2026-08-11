@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/design-document.schema.json",
+  "title": "Recrafts Canonical Design Document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["frontMatter", "overview", "structured"],
+  "properties": {
+    "frontMatter": { "$ref": "#/$defs/frontMatter" },
+    "overview": { "$ref": "#/$defs/nonEmptyString" },
+    "structured": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["foundations", "compositions", "components", "states", "responsive", "agentRules", "constraints"],
+      "properties": {
+        "foundations": { "$ref": "#/$defs/foundations" },
+        "compositions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/composition" } },
+        "components": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/component" } },
+        "states": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/state" } },
+        "responsive": { "$ref": "#/$defs/responsive" },
+        "agentRules": { "type": "array", "minItems": 2, "uniqueItems": true, "items": { "$ref": "#/$defs/nonEmptyString" } },
+        "constraints": { "$ref": "#/$defs/constraints" }
+      }
+    }
+  },
+  "$defs": {
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)*$" },
+    "stringArray": { "type": "array", "items": { "$ref": "#/$defs/nonEmptyString" }, "uniqueItems": true },
+    "frontMatter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "id", "name", "version", "status", "release_id", "parent_release", "evidence_revision", "decision_revision", "derived_from", "generated_by", "generated_at", "confidence", "agent_usable"],
+      "properties": {
+        "schema": { "const": "recrafts.design/v1" },
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "name": { "$ref": "#/$defs/nonEmptyString" },
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$" },
+        "status": { "enum": ["candidate", "accepted"] },
+        "release_id": { "type": ["string", "null"] },
+        "parent_release": { "type": ["string", "null"] },
+        "evidence_revision": { "$ref": "#/$defs/nonEmptyString" },
+        "decision_revision": { "type": ["string", "null"] },
+        "derived_from": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nonEmptyString" }, "uniqueItems": true },
+        "generated_by": { "$ref": "#/$defs/nonEmptyString" },
+        "generated_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{3})?Z$" },
+        "confidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["overall"],
+          "properties": { "overall": { "type": "number", "minimum": 0, "maximum": 1 } }
+        },
+        "agent_usable": { "type": "boolean" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "candidate" } }, "required": ["status"] },
+          "then": { "properties": { "release_id": { "type": "null" }, "decision_revision": { "type": "null" }, "agent_usable": { "const": false } } }
+        },
+        {
+          "if": { "properties": { "status": { "const": "accepted" } }, "required": ["status"] },
+          "then": { "properties": { "release_id": { "type": "string", "minLength": 1 }, "decision_revision": { "type": "string", "minLength": 1 }, "agent_usable": { "const": true } } }
+        }
+      ]
+    },
+    "token": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "certainty", "confidence", "source_relationship", "usage", "forbidden_usage"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "role": { "$ref": "#/$defs/nonEmptyString" },
+        "value": { "type": ["string", "number", "boolean"] },
+        "range": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": ["string", "number"] } },
+        "certainty": { "enum": ["measured", "observed", "inferred", "unknown"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "source_relationship": { "$ref": "#/$defs/nonEmptyString" },
+        "usage": { "$ref": "#/$defs/nonEmptyString" },
+        "forbidden_usage": { "$ref": "#/$defs/nonEmptyString" }
+      },
+      "allOf": [
+        { "if": { "properties": { "certainty": { "const": "unknown" } }, "required": ["certainty"] }, "then": { "not": { "required": ["value"] } } },
+        { "if": { "properties": { "certainty": { "const": "inferred" } }, "required": ["certainty", "value"] }, "then": { "required": ["range"] } }
+      ]
+    },
+    "foundations": {
+      "type": "object",
+      "minProperties": 1,
+      "patternProperties": { "^[a-z][a-z0-9-]*$": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/token" } } },
+      "additionalProperties": false
+    },
+    "tokenBindings": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "enum": ["background", "text", "border", "border_width", "radius", "padding", "gap", "font", "accent"] },
+      "additionalProperties": { "$ref": "#/$defs/id" }
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "component_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "role": { "$ref": "#/$defs/nonEmptyString" },
+        "component_refs": { "type": "array", "items": { "$ref": "#/$defs/id" }, "uniqueItems": true }
+      }
+    },
+    "composition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "required_regions", "optional_regions", "constraints", "layout", "regions"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "role": { "$ref": "#/$defs/nonEmptyString" },
+        "required_regions": { "$ref": "#/$defs/stringArray" },
+        "optional_regions": { "$ref": "#/$defs/stringArray" },
+        "constraints": { "$ref": "#/$defs/stringArray" },
+        "layout": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["display", "columns", "gap_token", "region_order"],
+          "properties": {
+            "display": { "enum": ["grid", "flex"] },
+            "columns": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nonEmptyString" } },
+            "gap_token": { "$ref": "#/$defs/id" },
+            "region_order": { "$ref": "#/$defs/stringArray" }
+          }
+        },
+        "regions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/region" } }
+      }
+    },
+    "specimen": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["element", "sample_content", "token_bindings", "state_bindings"],
+      "properties": {
+        "element": { "enum": ["article", "button", "div", "nav", "section", "input"] },
+        "sample_content": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nonEmptyString" } },
+        "token_bindings": { "$ref": "#/$defs/tokenBindings" },
+        "state_bindings": {
+          "type": "object",
+          "propertyNames": { "$ref": "#/$defs/id" },
+          "additionalProperties": { "$ref": "#/$defs/tokenBindings" }
+        }
+      }
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "maturity", "anatomy", "required_parts", "optional_parts", "allowed_children", "forbidden_children", "variants", "states", "token_usage", "content_archetypes", "layout_constraints", "responsive_behavior", "accessibility_behavior", "allowed_variation", "unknowns", "specimen"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "role": { "$ref": "#/$defs/nonEmptyString" },
+        "maturity": { "enum": ["observed", "candidate", "core", "extension", "rejected"] },
+        "anatomy": { "$ref": "#/$defs/stringArray" },
+        "required_parts": { "$ref": "#/$defs/stringArray" },
+        "optional_parts": { "$ref": "#/$defs/stringArray" },
+        "allowed_children": { "$ref": "#/$defs/stringArray" },
+        "forbidden_children": { "$ref": "#/$defs/stringArray" },
+        "variants": { "$ref": "#/$defs/stringArray" },
+        "states": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" }, "uniqueItems": true },
+        "token_usage": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" }, "uniqueItems": true },
+        "content_archetypes": { "$ref": "#/$defs/stringArray" },
+        "layout_constraints": { "$ref": "#/$defs/stringArray" },
+        "responsive_behavior": { "$ref": "#/$defs/nonEmptyString" },
+        "accessibility_behavior": { "$ref": "#/$defs/nonEmptyString" },
+        "allowed_variation": { "$ref": "#/$defs/nonEmptyString" },
+        "unknowns": { "$ref": "#/$defs/stringArray" },
+        "specimen": { "$ref": "#/$defs/specimen" }
+      }
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "trigger", "transition", "precedence", "mutual_exclusion", "keyboard_behavior", "state_persistence", "visual_delta", "accessibility_semantics", "certainty", "visual_tokens"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "trigger": { "$ref": "#/$defs/nonEmptyString" },
+        "transition": { "$ref": "#/$defs/nonEmptyString" },
+        "precedence": { "$ref": "#/$defs/nonEmptyString" },
+        "mutual_exclusion": { "$ref": "#/$defs/stringArray" },
+        "keyboard_behavior": { "$ref": "#/$defs/nonEmptyString" },
+        "state_persistence": { "$ref": "#/$defs/nonEmptyString" },
+        "visual_delta": { "$ref": "#/$defs/nonEmptyString" },
+        "accessibility_semantics": { "$ref": "#/$defs/nonEmptyString" },
+        "certainty": { "enum": ["measured", "observed", "inferred", "unknown"] },
+        "visual_tokens": { "type": "object", "propertyNames": { "enum": ["background", "text", "border", "accent"] }, "additionalProperties": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "viewport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["preserved_regions", "collapsed_regions", "relocated_regions", "priority_order"],
+      "properties": {
+        "preserved_regions": { "$ref": "#/$defs/stringArray" },
+        "collapsed_regions": { "$ref": "#/$defs/stringArray" },
+        "relocated_regions": { "$ref": "#/$defs/stringArray" },
+        "priority_order": { "$ref": "#/$defs/stringArray" },
+        "min_width": { "type": "integer", "minimum": 0 },
+        "max_width": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "responsive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["desktop", "compact", "mobile", "content_archetypes"],
+      "properties": {
+        "desktop": { "$ref": "#/$defs/viewport" },
+        "compact": { "$ref": "#/$defs/viewport" },
+        "mobile": { "$ref": "#/$defs/viewport" },
+        "content_archetypes": { "$ref": "#/$defs/stringArray" }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["forbidden_patterns", "known_unknowns", "allowed_deviation", "unsupported_behaviors"],
+      "properties": {
+        "forbidden_patterns": { "$ref": "#/$defs/stringArray" },
+        "known_unknowns": { "$ref": "#/$defs/stringArray" },
+        "allowed_deviation": { "$ref": "#/$defs/stringArray" },
+        "unsupported_behaviors": { "$ref": "#/$defs/stringArray" }
+      }
+    }
+  }
+}

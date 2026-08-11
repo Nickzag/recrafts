@@ -1,0 +1,14 @@
+{
+  "schema": "recrafts.measurement-set/v1",
+  "evidence_revision": "E-FIXTURE-1",
+  "measurements": [
+    {
+      "measurement_id": "M1",
+      "region_id": "RG1",
+      "kind": "bounds",
+      "value": 100,
+      "unit": "px",
+      "confidence": 0.95
+    }
+  ]
+}

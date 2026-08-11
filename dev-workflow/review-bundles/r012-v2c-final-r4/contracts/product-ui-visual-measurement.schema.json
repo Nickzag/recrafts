@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/product-ui-visual-measurement.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["measurement_id", "region_id", "property", "value", "unit", "method", "certainty", "sample_location", "tolerance", "evidence_refs", "review_status"],
+  "properties": {
+    "measurement_id": { "type": "string", "minLength": 1 },
+    "region_id": { "type": "string", "minLength": 1 },
+    "property": { "enum": ["color", "alpha/translucency", "blur/material", "border", "shadow", "radius", "spacing", "dimension", "typography", "icon", "density", "ratio", "alignment"] },
+    "value": {},
+    "unit": { "type": "string", "minLength": 1 },
+    "method": { "enum": ["pixel-sample", "geometry", "font-estimation", "Host-vision", "manual-review", "cross-screen-comparison"] },
+    "certainty": { "enum": ["measured", "estimated", "model-inferred", "unknown"] },
+    "sample_location": { "type": "object", "additionalProperties": false, "required": ["x", "y"], "properties": { "x": { "type": "number", "minimum": 0, "maximum": 1 }, "y": { "type": "number", "minimum": 0, "maximum": 1 } } },
+    "tolerance": {},
+    "evidence_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "review_status": { "enum": ["unreviewed", "reviewed", "corrected", "blocked"] }
+  }
+}

@@ -1,0 +1,44 @@
+const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
+const statesByFamily = {
+  Button: ["default","hover","pressed","disabled"], IconButton: ["default","hover","selected","disabled"], NavigationItem: ["default","hover","selected"], Tabs: ["inactive","active","disabled"], Toggle: ["off","on","disabled"], DocumentCard: ["default","hover","selected","loading"], InspectorSection: ["expanded","collapsed","disabled"], PropertyRow: ["default","focused","changed","invalid"], Modal: ["closed-reference","open"], AgentSuggestionCard: ["proposed","accepted","rejected","applied"], EmptyState: ["empty","unavailable"], LoadingSkeleton: ["card","list","canvas"]
+};
+const label = (state) => `<span class="state-name">${escapeHtml(state)}</span>`;
+function sample(name, state) {
+  if (name === "Button") return `${label(state)}<button class="btn ${state === "pressed" ? "primary" : ""}" ${state === "disabled" ? "disabled" : ""}>Create page</button>`;
+  if (name === "IconButton") return `${label(state)}<button class="icon-btn ${state === "selected" ? "selected" : ""}" ${state === "disabled" ? "disabled" : ""}>＋</button>`;
+  if (name === "Tabs") return `${label(state)}<div class="tabs"><button class="tab ${state === "active" ? "active" : ""}" ${state === "disabled" ? "disabled" : ""}>Design</button><button class="tab">Layers</button></div>`;
+  if (name === "SegmentedControl" || name === "ViewSwitcher") return `${label(state)}<div class="segment"><button class="active">Grid</button><button>List</button></div>`;
+  if (name === "SearchField") return `${label(state)}<input class="field" value="Search components" aria-label="Search components">`;
+  if (name === "Toggle") return `${label(state)}<button class="toggle ${state === "on" ? "on" : ""}" ${state === "disabled" ? "disabled" : ""} aria-label="Toggle"></button>`;
+  if (name === "Divider") return `${label(state)}<div class="divider" style="width:150px"></div>`;
+  if (name === "Badge") return `${label(state)}<span class="badge">Draft</span>`;
+  if (name === "Tooltip") return `${label(state)}<span class="badge">⌘ K · Command</span>`;
+  if (name === "Popover") return `${label(state)}<div class="card" style="padding:12px;width:160px"><strong>Align</strong><p class="state-name">Left · Center · Right</p></div>`;
+  if (name === "Modal") return `${label(state)}<div class="modal-card" style="padding:14px;width:220px"><strong>${state === "open" ? "Export ready" : "Modal reference"}</strong><p class="state-name">${state}</p></div>`;
+  if (name === "ScrollArea") return `${label(state)}<div class="card" style="width:150px;height:82px;overflow:auto;padding:10px">One<br>Two<br>Three<br>Four<br>Five</div>`;
+  if (name === "NavigationRail") return `${label(state)}<div class="card" style="display:grid;gap:5px;padding:8px;width:150px"><span class="badge">Pages</span><span>Assets</span><span>History</span></div>`;
+  if (name === "NavigationItem") return `${label(state)}<div class="artboard-item ${state === "selected" ? "selected" : ""}" style="width:180px"><div class="artboard-thumb"></div><div class="artboard-copy"><strong>Cover</strong><span>1080 × 1350</span></div></div>`;
+  if (name === "DocumentCard") return `${label(state)}<div class="card" style="width:170px;padding:10px;${state === "selected" ? "outline:2px solid var(--preview-interaction-accent)" : ""}"><div class="skeleton" style="height:70px"></div><strong style="display:block;margin-top:8px">Campaign draft</strong></div>`;
+  if (name === "DocumentListRow") return `${label(state)}<div class="property-row" style="width:230px"><span>Launch notes</span><span class="state-name">Today</span></div>`;
+  if (name === "ToolbarGroup") return `${label(state)}<div class="canvas-toolbar" style="position:static;transform:none"><button class="icon-btn selected">T</button><button class="icon-btn">□</button><button class="icon-btn">↗</button></div>`;
+  if (name === "InspectorPanel") return `${label(state)}<div class="card" style="width:210px"><div class="inspector-section"><h3>Inspector</h3><div class="property-row"><span class="property-label">Opacity</span><span class="property-value">100%</span></div></div></div>`;
+  if (name === "InspectorSection") return `${label(state)}<div class="card" style="width:210px;padding:12px"><strong>Appearance</strong>${state !== "collapsed" ? '<p class="state-name">Fill · Border · Shadow</p>' : ""}</div>`;
+  if (name === "PropertyRow") return `${label(state)}<div class="property-row" style="width:220px"><span class="property-label">Width</span><span class="property-value ${state}">1080 px</span></div>`;
+  if (name === "EditorCanvas") return `${label(state)}<div class="card" style="width:150px;aspect-ratio:4/5;padding:18px"><strong>Canvas</strong><div class="divider" style="margin-top:12px"></div></div>`;
+  if (name === "FloatingControlIsland") return `${label(state)}<div class="canvas-toolbar" style="position:static;transform:none"><button class="icon-btn">−</button><span class="badge">72%</span><button class="icon-btn">＋</button></div>`;
+  if (name === "AgentSuggestionCard") return `${label(state)}<div class="suggestion-card"><h4>Balance the title</h4><p>${state} · Reduce width and align to the image edge.</p><div class="suggestion-actions"><button class="btn primary">Accept</button><button class="btn">Reject</button></div></div>`;
+  if (name === "SettingsRow") return `${label(state)}<div class="property-row" style="width:230px"><span>Reduced motion</span><button class="toggle on"></button></div>`;
+  if (name === "EmptyState") return `${label(state)}<div class="card" style="padding:18px;width:210px;text-align:center"><strong>${state === "unavailable" ? "Preview unavailable" : "Start with a page"}</strong><p class="state-name">Add content when you’re ready.</p></div>`;
+  if (name === "LoadingSkeleton") return `${label(state)}<div style="display:grid;gap:6px;width:180px"><div class="skeleton" style="height:${state === "canvas" ? "100px" : "42px"}"></div><div class="skeleton" style="height:10px;width:70%"></div></div>`;
+  return `${label(state)}<div class="card" style="padding:12px">${escapeHtml(name)}</div>`;
+}
+
+export function renderComponentGallery({ manifest, components, previewFallbackComponent }) {
+  const allComponents = previewFallbackComponent ? [...components, previewFallbackComponent] : components;
+  const blocks = allComponents.map((component) => {
+    const states = statesByFamily[component.name] ?? component.visible_states ?? ["default"];
+    const contractId = component.contract_id ?? `component-${component.name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;
+    return `<section class="component-block traceable" data-component-contract-id="${contractId}" data-token-ids="${escapeHtml(component.token_dependencies.join(","))}" data-scope="${escapeHtml(component.scope)}" data-state="gallery" data-evidence-refs="${escapeHtml(component.evidence_refs.join(","))}" data-package-id="${manifest.package_id}" data-analysis-id="${manifest.analysis_id}" data-decision-set-id="${manifest.owner_decision_set_id}" data-preview-fallback-status="${component.preview_fallback ? "preview-only" : "none"}" ${statesByFamily[component.name] ? 'data-state-matrix="true"' : ""}><div class="component-meta"><p class="eyebrow">${escapeHtml(component.scope)}</p><h2>${escapeHtml(component.name)}</h2>${component.preview_fallback ? '<span class="fallback-flag">preview-only component fallback</span>' : ""}<p>${escapeHtml(component.purpose)}</p><p>Anatomy · ${escapeHtml(component.anatomy.join(" / "))}</p><p>Confidence · ${component.confidence}</p><p>Evidence · ${escapeHtml(component.evidence_refs.join(" · "))}</p><p>Unknowns · ${escapeHtml(component.unknowns.join(" · "))}</p></div><div class="state-stage">${states.map((state) => `<div class="state-sample" data-state="${escapeHtml(state)}">${sample(component.name, state)}</div>`).join("")}</div></section>`;
+  }).join("");
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recrafts Component Gallery</title><link rel="stylesheet" href="runtime/tokens.css"><link rel="stylesheet" href="runtime/base.css"><link rel="stylesheet" href="runtime/components.css"><link rel="stylesheet" href="runtime/surfaces.css"></head><body><main class="gallery-shell" data-realization-root><div class="gallery-intro"><div><p class="eyebrow">Runnable visual specification</p><h1 class="page-title">Component<br>Gallery</h1><p class="lede">${allComponents.length} evidence-bound families. State matrices show behavior direction, not production semantics.</p></div><button class="btn" data-toggle-trace>Toggle trace</button></div>${blocks}</main><script src="runtime/preview.js"></script></body></html>`;
+}

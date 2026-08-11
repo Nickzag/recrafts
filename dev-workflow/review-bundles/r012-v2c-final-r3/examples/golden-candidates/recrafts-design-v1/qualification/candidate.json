@@ -1,0 +1,16 @@
+{
+  "schema": "recrafts.candidate-revision/v2",
+  "id": "C-FIXTURE-1",
+  "evidence_revision": "E-FIXTURE-1",
+  "design_sha256": "ebbd6e207c469108a981a9693db0f18aa4eca5a170a01fcf993e18ff01950d43",
+  "design_ir_sha256": "ebbd6e207c469108a981a9693db0f18aa4eca5a170a01fcf993e18ff01950d43",
+  "agent": {
+    "name": "deterministic-qualification-fixture",
+    "run_id": "r012-fixture-1",
+    "input_manifest_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "status": "candidate",
+  "agent_usable": false,
+  "created_at": "2026-08-09T00:00:00.000Z",
+  "immutable": true
+}

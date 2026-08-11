@@ -1,0 +1,80 @@
+{
+  "schema": "recrafts.r012-result/v1",
+  "status": "candidate",
+  "agent_usable": false,
+  "gate_a": {
+    "schema": "recrafts.source-fidelity-report/v2",
+    "verdict": "PASS",
+    "candidate_revision": "C-FIXTURE-1",
+    "evidence_revision": "E-FIXTURE-1",
+    "design_sha256": "ebbd6e207c469108a981a9693db0f18aa4eca5a170a01fcf993e18ff01950d43",
+    "artifact_hashes": {
+      "source_manifest": "67e80a771482fee91cd0c8c8bd7577b64206c052859a6221eed42991dee55a36",
+      "region_set": "9d2fcd033b1c98c09a5c030d79aca324a490a4861a7eec89a639f6b962152637",
+      "measurement_set": "80785df90cc299b1c0148ec2ef907ff10c6dba2f6fb02a739bae0c14136c6b96",
+      "source_token_set": "6759236d218eff601d7cd7e320719075ce41015946d44d3c3db595e97286fd98",
+      "reconstruction": "a4b0f7616501724da57e8a7206066bbf73f3d311244e43c17406c1820c57b45b",
+      "comparison_report": "e23a16243ab0c90b245d3dc99205a0d9d38cd69254d70866f9eac284f8a3c927",
+      "geometry_report": "1df37e51c3d3ce633162805308da2204f2a6f3ef01a7301bbc2b5b09dbfdf6b5"
+    },
+    "checks": {
+      "candidate_and_evidence_binding": "PASS",
+      "artifact_dependency_binding": "PASS",
+      "source_and_region_coverage": "PASS",
+      "measurement_integrity": "PASS",
+      "source_token_support": "PASS",
+      "reconstruction_coverage": "PASS",
+      "comparison_coverage": "PASS",
+      "unsupported_visible_objects": "PASS",
+      "unknown_honesty": "PASS",
+      "geometry_fidelity": "PASS"
+    },
+    "failures": [],
+    "gate_a_runtime_qualification": "PASS",
+    "real_source_source_fidelity": "NOT_RUN",
+    "qualification_fixture": true,
+    "report_sha256": "2c9ad10e4a5cee614fd9093688dd9280141be9e36605c5a9d3aa062e60235c03"
+  },
+  "gate_b": {
+    "schema": "recrafts.design-coherence-report/v2",
+    "verdict": "PASS",
+    "candidate_revision": "C-FIXTURE-1",
+    "evidence_revision": "E-FIXTURE-1",
+    "design_sha256": "ebbd6e207c469108a981a9693db0f18aa4eca5a170a01fcf993e18ff01950d43",
+    "preview_artifact_sha256": "9d643e46314eff50ef30a74b37e72e993c3cb40d30acd085cb70df87574bd382",
+    "checks": {
+      "schema_and_ir": "PASS",
+      "critical_token_coverage": "PASS",
+      "component_visual_contracts": "PASS",
+      "state_coverage": "PASS",
+      "composition_grammar": "PASS",
+      "responsive_validity": "PASS",
+      "accessibility": "PASS",
+      "unknown_governance": "PASS",
+      "agent_rules": "PASS",
+      "forbidden_patterns": "PASS",
+      "preview_integrity": "PASS",
+      "preview_visual_coverage": "PASS",
+      "candidate_binding": "PASS"
+    },
+    "failures": [],
+    "proves_source_fidelity": false,
+    "report_sha256": "8ae8fbb9c78289cbeb09f0bf43ded342f66cf6a5090efe431196fc9316ca61d7"
+  },
+  "blind": {
+    "schema": "recrafts.blind-qualification-result/v1",
+    "blind_harness_status": "READY",
+    "blind_agent_status": "PENDING",
+    "agent_usable": false,
+    "forbidden_accesses": [],
+    "deterministic_fixture": true
+  },
+  "linux": {
+    "schema": "recrafts.r012-local-linux-diagnosis/v1",
+    "host_os": "darwin",
+    "readiness": "LINUX_PENDING",
+    "substitutes_for_linux_evidence": false
+  },
+  "owner_decision": "MISSING",
+  "release_promotion": "BLOCKED"
+}

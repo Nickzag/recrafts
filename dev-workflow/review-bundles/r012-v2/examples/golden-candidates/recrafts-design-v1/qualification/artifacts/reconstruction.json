@@ -1,0 +1,12 @@
+{
+  "schema": "recrafts.faithful-reconstruction/v1",
+  "candidate_revision": "C-FIXTURE-1",
+  "design_sha256": "ebbd6e207c469108a981a9693db0f18aa4eca5a170a01fcf993e18ff01950d43",
+  "region_set_sha256": "9d2fcd033b1c98c09a5c030d79aca324a490a4861a7eec89a639f6b962152637",
+  "surfaces": [
+    {
+      "region_id": "RG1",
+      "status": "rendered"
+    }
+  ]
+}

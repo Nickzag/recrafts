@@ -1,0 +1,13 @@
+{
+  "tarball_sha256": "da0ba9ee4012028d55e7e975140fabf7705b59a624b6b085d339dac77636efcf",
+  "clean_install": "PASS (9 packages)",
+  "package_version": "0.5.0-rc.1",
+  "cli_bins": {
+    "recraft": "PASS",
+    "recraft-interop": "PASS",
+    "recraft-capture": "PASS"
+  },
+  "operations": 11,
+  "dynamic_import_ops": "PASS (11 ops)",
+  "installed_at": "2026-08-11T05:53:29.747Z"
+}

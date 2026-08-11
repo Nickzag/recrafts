@@ -1,0 +1,17 @@
+{
+  "schema": "recrafts.source-token-set/v1",
+  "evidence_revision": "E-FIXTURE-1",
+  "measurement_set_sha256": "80785df90cc299b1c0148ec2ef907ff10c6dba2f6fb02a739bae0c14136c6b96",
+  "tokens": [
+    {
+      "token_id": "T1",
+      "certainty": "observed",
+      "region_refs": [
+        "RG1"
+      ],
+      "measurement_refs": [
+        "M1"
+      ]
+    }
+  ]
+}

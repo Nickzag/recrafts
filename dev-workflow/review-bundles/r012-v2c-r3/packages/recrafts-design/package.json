@@ -1,0 +1,10 @@
+{
+  "name": "@recrafts/design",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "license": "UNLICENSED",
+  "exports": { ".": { "types": "./types.d.ts", "import": "./index.mjs" } },
+  "files": ["index.mjs", "src/", "schemas/", "types.d.ts"],
+  "dependencies": { "ajv": "8.17.1", "yaml": "2.8.1" }
+}

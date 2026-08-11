@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/delivery-readiness.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "owner_visual_review", "identity_legal_gate", "source_distance_gate", "machine_contract_gate", "accessibility_gate", "responsive_gate", "production_validation"],
+  "properties": {
+    "status": { "enum": ["draft", "reviewable", "pilot-ready", "production-ready", "blocked"] },
+    "owner_visual_review": { "type": "boolean" },
+    "identity_legal_gate": { "enum": ["pass", "fail", "not-run"] },
+    "source_distance_gate": { "enum": ["pass", "fail", "not-run"] },
+    "machine_contract_gate": { "enum": ["pass", "fail", "not-run"] },
+    "accessibility_gate": { "enum": ["pass", "fail", "not-run"] },
+    "responsive_gate": { "enum": ["pass", "fail", "not-run"] },
+    "production_validation": { "type": "boolean" }
+  }
+}

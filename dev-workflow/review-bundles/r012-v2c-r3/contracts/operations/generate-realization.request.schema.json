@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["operation", "input", "output_directory"],
+  "properties": {
+    "operation": { "const": "generate-realization" },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["package_directory"],
+      "properties": {
+        "package_directory": { "type": "string" },
+        "owner_decision_file": { "type": "string" },
+        "approved_package_directory": { "type": "string" }
+      }
+    },
+    "output_directory": { "type": "string" },
+    "options": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "interoperability_fixture": { "type": "boolean" }, "compatibility_mode": { "enum": ["protocol-1.0"] } }
+    }
+  },
+  "x-recrafts": {
+    "writes_files": true,
+    "required_capabilities": ["files"],
+    "statuses": ["completed", "failed"],
+    "artifact_types": ["approved-extraction-package", "realization"],
+    "error_codes": ["HOST_ACTION_REQUIRED", "PACKAGE_INVALID", "REALIZATION_NOT_AUTHORIZED", "OUTPUT_NOT_EMPTY"]
+  }
+}

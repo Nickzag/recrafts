@@ -1,0 +1,28 @@
+name: Recrafts R-012 Linux Qualification
+on:
+  workflow_dispatch:
+jobs:
+  qualify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Pack exact checkout
+        run: npm pack --json --pack-destination "$RUNNER_TEMP" > "$RUNNER_TEMP/npm-pack.json"
+      - name: Resolve exact tarball path
+        run: node -e "const fs=require('fs');const p=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/npm-pack.json'));fs.writeFileSync(process.env.RUNNER_TEMP+'/tarball-path.txt',process.env.RUNNER_TEMP+'/'+p[0].filename)"
+      - name: Run Linux qualification harness
+        run: node scripts/run-r012-linux-qualification.mjs "$(cat "$RUNNER_TEMP/tarball-path.txt")" r012-linux-evidence.json
+      - name: Validate Linux evidence
+        run: node scripts/validate-r012-linux-evidence.mjs r012-linux-evidence.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recrafts-r012-linux-evidence
+          path: r012-linux-evidence.json
+          if-no-files-found: error

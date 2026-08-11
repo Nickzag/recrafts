@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/product-ui-host-analysis.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "input_profile", "prepared_analysis_id", "execution", "sources", "observations", "application_grammar", "surface_topology", "screen_inventory", "navigation_contract", "panel_ownership", "density_contract", "component_candidates", "component_contracts", "component_recurrence", "tokens", "typography", "iconography", "interaction_contract", "motion_contract", "responsive_contract", "accessibility", "state_matrix", "source_distance", "conflicts", "shell_directions"],
+  "properties": {
+    "schema_version": { "const": "r011.1.0" },
+    "input_profile": { "const": "product-ui-mixed-evidence" },
+    "prepared_analysis_id": { "type": "string", "pattern": "^prepared-" },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["host_agent", "engine", "vision_capability", "performed_at", "evidence_class"],
+      "properties": {
+        "host_agent": { "type": "string", "minLength": 1 },
+        "engine": { "type": "string", "minLength": 1 },
+        "vision_capability": { "const": true },
+        "performed_at": { "type": "string", "minLength": 1 },
+        "evidence_class": { "enum": ["codex-session-fixture", "live-provider", "real-user", "controlled-fixture"] }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "source_role", "authority", "platform", "viewport", "product_version", "freshness", "scope", "evidence_classes", "classification", "confidence", "evidence_refs", "regions"],
+        "properties": {
+          "source_id": { "type": "string", "minLength": 1 },
+          "source_role": { "enum": ["product-app-screenshot", "product-app-screen-set", "official-product-web", "official-interface-tutorial", "official-help-documentation", "marketing-site", "user-content", "template-content", "platform-chrome", "unknown"] },
+          "authority": { "enum": ["tier-a", "tier-b", "tier-c", "tier-d", "untrusted"] },
+          "platform": { "type": "string", "minLength": 1 },
+          "viewport": { "type": "string", "minLength": 1 },
+          "product_version": { "type": ["string", "null"] },
+          "freshness": { "enum": ["current", "historical", "unknown"] },
+          "scope": { "type": "string", "minLength": 1 },
+          "evidence_classes": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "classification": { "enum": ["canonical-product-ui", "official-interface", "marketing-surface", "user-generated-content", "template-content", "platform-chrome", "unknown"] },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["region_id", "classification", "scope", "confidence", "evidence_refs", "canonical_promotion_blocked"],
+              "properties": {
+                "region_id": { "type": "string", "minLength": 1 },
+                "classification": { "enum": ["canonical-product-ui", "official-interface", "marketing-surface", "user-generated-content", "template-content", "platform-chrome", "unknown"] },
+                "scope": { "type": "string", "minLength": 1 },
+                "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+                "evidence_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+                "canonical_promotion_blocked": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "observations": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "application_grammar": { "type": "array", "minItems": 8, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "surface_topology": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "screen_inventory": { "type": "array", "minItems": 8, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "navigation_contract": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "panel_ownership": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "density_contract": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "component_candidates": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "component_contracts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "component_recurrence": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/recurrenceItem" } },
+    "state_matrix": { "type": "array", "minItems": 8, "items": { "$ref": "#/$defs/stateItem" } },
+    "tokens": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/tokenItem" } },
+    "typography": { "type": "object", "required": ["roles", "pairing", "truncation", "density", "evidence_refs"], "properties": { "roles": { "type": "array", "minItems": 5 }, "pairing": { "type": "array", "minItems": 1 }, "truncation": { "type": "array", "minItems": 1 }, "density": { "type": "array", "minItems": 1 }, "evidence_refs": { "type": "array", "minItems": 1 } } },
+    "iconography": { "type": "object", "required": ["grid", "stroke_fill", "optical_size", "active_inactive", "roles", "source_policy", "evidence_refs"], "properties": { "grid": { "type": "string" }, "stroke_fill": { "type": "string" }, "optical_size": { "type": "string" }, "active_inactive": { "type": "string" }, "roles": { "type": "array", "minItems": 1 }, "source_policy": { "type": "string" }, "evidence_refs": { "type": "array", "minItems": 1 } } },
+    "interaction_contract": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "motion_contract": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "responsive_contract": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenanceItem" } },
+    "accessibility": { "type": "object", "required": ["pairs", "keyboard", "focus", "reduced_motion", "evidence_refs"], "properties": { "pairs": { "type": "array", "minItems": 1 }, "keyboard": { "type": "array", "minItems": 1 }, "focus": { "type": "array", "minItems": 1 }, "reduced_motion": { "type": "array", "minItems": 1 }, "evidence_refs": { "type": "array", "minItems": 1 } } },
+    "source_distance": { "type": "object", "required": ["dimensions", "topology_risk", "motif_combination_risk", "differences", "gate_status"], "properties": { "dimensions": { "type": "array", "minItems": 10 }, "topology_risk": { "enum": ["low", "medium", "high"] }, "motif_combination_risk": { "enum": ["low", "medium", "high"] }, "differences": { "type": "array", "minItems": 5 }, "gate_status": { "enum": ["pass", "blocked"] } } },
+    "conflicts": { "type": "array", "items": { "$ref": "#/$defs/conflictItem" } },
+    "shell_directions": { "type": "array", "minItems": 2, "items": { "type": "object", "required": ["direction_id", "name", "description", "differences", "evidence_refs"], "properties": { "direction_id": { "type": "string" }, "name": { "type": "string" }, "description": { "type": "string" }, "differences": { "type": "array", "minItems": 5 }, "evidence_refs": { "type": "array", "minItems": 1 } } } }
+  },
+  "$defs": {
+    "provenanceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "scope", "status", "confidence", "evidence_refs", "claim_refs", "cross_screen_recurrence_count", "allowed_transformations", "forbidden_generalizations"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string" },
+        "value": {},
+        "observation": { "type": "string" },
+        "purpose": { "type": "string" },
+        "name": { "type": "string" },
+        "component_id": { "type": "string" },
+        "core": { "type": "boolean" },
+        "maturity": { "type": "string" },
+        "anatomy": { "type": "array", "items": {} },
+        "variants": { "type": "array", "items": {} },
+        "states": { "type": "array", "items": {} },
+        "interaction": {},
+        "keyboard_expectation": {},
+        "responsive_behavior": {},
+        "content_constraints": {},
+        "token_dependencies": { "type": "array", "items": {} },
+        "authoritative_official_corroboration": { "type": "boolean" },
+        "scope": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["observed", "corroborated", "inferred", "unknown", "candidate", "portable", "core", "screen-specific"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "evidence_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "claim_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "cross_screen_recurrence_count": { "type": "integer", "minimum": 0 },
+        "allowed_transformations": { "type": "array", "items": { "type": "string" } },
+        "forbidden_generalizations": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "recurrenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["component_id", "screen_occurrences", "recurrence_count", "evidence_refs", "claim_refs"],
+      "properties": { "component_id": { "type": "string" }, "screen_occurrences": { "type": "array", "minItems": 1 }, "recurrence_count": { "type": "integer", "minimum": 1 }, "evidence_refs": { "type": "array", "minItems": 1 }, "claim_refs": { "type": "array", "minItems": 1 } }
+    },
+    "stateItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state_id", "screen_family", "status", "promotion", "evidence_refs", "claim_refs"],
+      "properties": {
+        "state_id": { "type": "string", "minLength": 1 },
+        "screen_family": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["observed", "corroborated", "inferred", "unknown"] },
+        "promotion": { "enum": ["core", "candidate", "screen-specific", "blocked"] },
+        "evidence_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "claim_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "summary": { "type": "string" },
+        "trigger": { "type": "string" },
+        "recovery": { "type": "string" }
+      }
+    },
+    "tokenItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["token_id", "domain", "role", "scope", "status", "value", "evidence_refs", "claim_refs", "corroboration", "transformation_record", "usage_limits"],
+      "properties": { "token_id": { "type": "string" }, "domain": { "type": "string" }, "role": { "type": "string" }, "scope": { "type": "string" }, "status": { "enum": ["observed", "inferred", "suggested", "confirmed", "portable", "candidate"] }, "value": {}, "evidence_refs": { "type": "array", "minItems": 1 }, "claim_refs": { "type": "array", "minItems": 1 }, "corroboration": { "type": "string" }, "transformation_record": { "type": "string" }, "contrast_result": {}, "usage_limits": { "type": "array", "minItems": 1 } }
+    },
+    "conflictItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["conflict_id", "conflict_class", "domain", "severity", "impact", "candidate_refs", "evidence_refs", "status"],
+      "properties": { "conflict_id": { "type": "string" }, "conflict_class": { "type": "string" }, "domain": { "type": "string" }, "severity": { "enum": ["low", "medium", "high"] }, "impact": { "type": "string" }, "candidate_refs": { "type": "array" }, "evidence_refs": { "type": "array", "minItems": 1 }, "status": { "enum": ["open", "resolved", "accepted-risk"] } }
+    }
+  }
+}

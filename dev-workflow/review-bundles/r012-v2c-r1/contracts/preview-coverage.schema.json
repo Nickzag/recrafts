@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/preview-coverage.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["coverage_id", "system_previews", "web", "posters", "carousel", "slides", "real_imagery", "status"],
+  "properties": {
+    "coverage_id": { "type": "string", "minLength": 1 },
+    "system_previews": { "type": "array", "minItems": 4, "items": { "type": "object" } },
+    "web": { "type": "array", "minItems": 10, "items": { "type": "object" } },
+    "posters": { "type": "array", "minItems": 2, "items": { "type": "object" } },
+    "carousel": { "type": "array", "minItems": 8, "items": { "type": "object" } },
+    "slides": { "type": "array", "minItems": 8, "items": { "type": "object" } },
+    "real_imagery": { "type": "array", "minItems": 2, "items": { "type": "object" } },
+    "status": { "enum": ["pass", "fail"] }
+  }
+}

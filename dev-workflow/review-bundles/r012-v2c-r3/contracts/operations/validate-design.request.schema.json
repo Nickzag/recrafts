@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "operation",
+    "input"
+  ],
+  "properties": {
+    "operation": {
+      "const": "validate-design"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "design_file",
+        "candidate_file",
+        "preview_file"
+      ],
+      "properties": {
+        "design_file": {
+          "type": "string"
+        },
+        "candidate_file": {
+          "type": "string"
+        },
+        "preview_file": {
+          "type": "string"
+        },
+        "browser_evidence_file": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "x-recrafts": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "statuses": [
+      "completed",
+      "failed"
+    ]
+  }
+}

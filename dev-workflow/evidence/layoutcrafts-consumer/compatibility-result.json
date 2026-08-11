@@ -1,0 +1,57 @@
+{
+  "schema": "recrafts.layoutcrafts-consumer-qualification/v1",
+  "verdict": "PASS",
+  "consumer_chain": {
+    "parse": "PASS",
+    "compile": "PASS",
+    "token_extraction": "PASS",
+    "component_extraction": "PASS",
+    "composition_extraction": "PASS",
+    "responsive_extraction": "PASS"
+  },
+  "extracted_tokens": {
+    "--recrafts-color-surface": "#f7f7f5",
+    "--recrafts-color-panel": "#ffffff",
+    "--recrafts-color-text": "#20201e",
+    "--recrafts-color-border": "#d8d8d3",
+    "--recrafts-color-accent": "#dce8ff",
+    "--recrafts-spacing-row": "12px",
+    "--recrafts-spacing-section": "24px",
+    "--recrafts-radius-control": "8px",
+    "--recrafts-border-hairline": "1px",
+    "--recrafts-typography-body": "14px/1.5 system-ui"
+  },
+  "extracted_components": [
+    {
+      "id": "component.row",
+      "role": "navigation row",
+      "anatomy": [
+        "title",
+        "metadata"
+      ],
+      "states": [
+        "state.default",
+        "state.selected"
+      ],
+      "layout": {
+        "flow": "horizontal",
+        "slot_order": [
+          "title",
+          "metadata"
+        ],
+        "alignment": "center",
+        "internal_gap": "spacing.row"
+      },
+      "token_bindings": {
+        "background": "color.panel",
+        "text": "color.text",
+        "border": "color.border",
+        "border_width": "border.hairline",
+        "radius": "radius.control",
+        "padding": "spacing.row",
+        "font": "typography.body"
+      }
+    }
+  ],
+  "unsupported_semantics": []
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "cn-ds-bench-001.runtime-manifest/v1",
+  "recrafts_commit_sha": "b6c00e93694a74d3220265e18f96359e98fbece3",
+  "package_version": "0.5.0-rc.1",
+  "protocol_version": "1.2",
+  "schema_version": "recrafts.design/v1",
+  "exact_tarball_sha256": "da0ba9ee4012028d55e7e975140fabf7705b59a624b6b085d339dac77636efcf",
+  "operation_count": 11,
+  "operations": [
+    "parse-design-md",
+    "compile-design-ir",
+    "validate-design",
+    "verify-source-fidelity",
+    "render-design-preview",
+    "compare-design-candidates",
+    "import-design-owner-decision",
+    "create-design-release",
+    "validate-design-release",
+    "rollback-design-release",
+    "compare-design-releases"
+  ]
+}

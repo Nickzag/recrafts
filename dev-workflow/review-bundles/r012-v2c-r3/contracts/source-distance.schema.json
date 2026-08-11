@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/contracts/source-distance.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["assessment_id", "dimensions", "topology_risk", "motif_combination_risk", "gate_status"],
+  "properties": {
+    "assessment_id": { "type": "string", "minLength": 1 },
+    "dimensions": { "type": "array", "minItems": 10, "items": { "type": "object" } },
+    "topology_risk": { "enum": ["low", "medium", "high"] },
+    "motif_combination_risk": { "enum": ["low", "medium", "high"] },
+    "gate_status": { "enum": ["pass", "blocked"] }
+  }
+}
