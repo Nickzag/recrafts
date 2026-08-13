@@ -7,6 +7,8 @@ import path from "node:path";
 import { compileDesignIr, parseDesignMd } from "../packages/recrafts-design/index.mjs";
 import { renderDesignPreview } from "../runtime/design_preview_renderer.mjs";
 import { evaluateDesignCoherence } from "../runtime/design_coherence_gate.mjs";
+import { capturePreviewEvidence } from "./capture-r012-preview-evidence.mjs";
+import { semanticCandidateArtifactSha256 } from "../runtime/design_system_runtime.mjs";
 
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const writeJson = (file, value) => writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
@@ -36,7 +38,11 @@ export async function runInstalledConsumerSmoke({ workspace, cliFile, packageRoo
   });
   await Promise.all([writeJson(path.join(workspace, "gate-a.json"), gateA), writeJson(path.join(workspace, "gate-b.json"), gateB)]);
   const evidenceSupport = Object.fromEntries(["foundations", "components", "states", "compositions", "responsive", "agent_rules", "constraints", "unknowns"].map((domain) => [domain, { "*": [`E-${domain}`] }]));
-  await writeJson(path.join(workspace, "candidates.json"), [{ id: "C1", evidence_revision: "E-INSTALLED", target_lock: "static-coffee-v1", design_ir: ir, evidence_support: evidenceSupport }, { id: "C2", evidence_revision: "E-INSTALLED", design_ir: structuredClone(ir), evidence_support: evidenceSupport }]);
+  const semanticCandidates = [
+    { id: "C1", evidence_revision: "E-INSTALLED", target_lock: "static-coffee-v1", design_ir: ir, evidence_support: evidenceSupport },
+    { id: "C2", evidence_revision: "E-INSTALLED", target_lock: "static-coffee-v1", design_ir: structuredClone(ir), evidence_support: evidenceSupport }
+  ].map((value) => ({ ...value, artifact_sha256: semanticCandidateArtifactSha256(value) }));
+  await writeJson(path.join(workspace, "candidates.json"), semanticCandidates);
   await writeJson(path.join(workspace, "decision-fixture.json"), { schema: "recrafts.owner-decision-input/v1", decision_id: "D-INSTALLED-FIXTURE", reviewer_name: "Deterministic Fixture", reviewer_role: "Project Owner", verdict: "PASS", candidate_revision: candidate.id, evidence_revision: candidate.evidence_revision, design_sha256: candidate.design_sha256, gate_a_report_sha256: gateA.report_sha256, gate_b_report_sha256: gateB.report_sha256, decided_at: "2026-08-09T00:00:00.000Z", fixture: true });
   await mkdir(path.join(workspace, "design-store"));
   await writeJson(path.join(workspace, "rollback-fixture.json"), { schema: "recrafts.rollback-design-release-decision/v1", decision_id: "D-ROLLBACK-FIXTURE", reviewer_name: "Deterministic Fixture", reviewer_role: "Project Owner", verdict: "PASS", current_release: "R1", target_release: "R1", new_release_id: "R2", new_version: "0.2.0", reason: "qualification negative", decided_at: "2026-08-09T00:00:00.000Z", fixture: true });
@@ -57,29 +63,16 @@ export async function runInstalledConsumerSmoke({ workspace, cliFile, packageRoo
     return response;
   };
 
-  const designMd = await readFile(path.join(workspace, "design.md"), "utf8");
-  const previewResult = renderDesignPreview({ designSource: designMd, generatedAt: new Date().toISOString() });
-  const dummyPng = Buffer.from("iVBORw0KGgo=FAKE", "utf8");
-  const desktopHash = sha256(dummyPng);
-  const compactHash = sha256(Buffer.from("iVBORw0KGgo=FAKEC", "utf8"));
-  const mobileHash = sha256(Buffer.from("iVBORw0KGgo=FAKEM", "utf8"));
-  await Promise.all([
-    writeFile(path.join(workspace, "desktop.png"), dummyPng),
-    writeFile(path.join(workspace, "compact.png"), Buffer.from("iVBORw0KGgo=FAKEC", "utf8")),
-    writeFile(path.join(workspace, "mobile.png"), Buffer.from("iVBORw0KGgo=FAKEM", "utf8"))
-  ]);
-  const bevHash = sha256(JSON.stringify({ status: "PASS", preview_sha256: sha256(previewResult.html) }));
-  await writeFile(path.join(workspace, "browser-evidence.json"), JSON.stringify({ schema: "recrafts.browser-evidence/v1", status: "PASS", preview_sha256: sha256(previewResult.html), screenshots: { desktop: { file: "desktop.png", sha256: desktopHash, viewport: { width: 1440, height: 1000 } }, compact: { file: "compact.png", sha256: compactHash, viewport: { width: 768, height: 1000 } }, mobile: { file: "mobile.png", sha256: mobileHash, viewport: { width: 390, height: 844 } } }, computed_styles: { desktop: { root_tokens: {}, specimen: {}, visual_region: {}, regions: [] }, compact: { root_tokens: {}, specimen: {}, visual_region: {}, regions: [] }, mobile: { root_tokens: {}, specimen: {}, visual_region: {}, regions: [] } }, infrastructure_selector_audit: "PASS", infrastructure_affects_visual_region: false }));
-  await writeFile(path.join(workspace, "manifest.json"), JSON.stringify({ allowed_inputs: ["design.md", "task.md"] }));
-  // candidates.json written above with proper Semantic Compare format
-  // Write isolation data separately
-  await writeFile(path.join(workspace, "candidates.json"), JSON.stringify([{ id: "C1", evidence_revision: "E-INSTALLED", target_lock: "static-coffee-v1", design_ir: ir, evidence_support: evidenceSupport }, { id: "C2", evidence_revision: "E-INSTALLED", target_lock: "static-coffee-v1", design_ir: structuredClone(ir), evidence_support: evidenceSupport }]));
+  const authorityManifest = { allowed_inputs: ["design.md", "task.md"] };
+  const authorityManifestSha = sha256(JSON.stringify(authorityManifest));
+  await writeJson(path.join(workspace, "manifest.json"), authorityManifest);
   execute("parse-design-md", { design_file: "design.md" }, "completed");
   execute("compile-design-ir", { design_file: "design.md" }, "completed");
   execute("render-design-preview", { design_file: "design.md" }, "completed", "preview-output");
-  execute("validate-design", { design_file: "design.md", candidate_file: "candidate.json", preview_file: "preview-output/preview.html", browser_evidence_file: "browser-evidence.json" }, "completed");
-  await writeFile(path.join(workspace, "candidate-runs.json"), JSON.stringify([{ candidate_id: "C1", run_id: "r1", agent: "test", target_lock: "static-coffee-v1", evidence_revision: "E-INSTALLED", allowed_inputs: ["design.md", "task.md"], accessed_inputs: ["design.md", "task.md"], output_sha256: "a".repeat(64) }, { candidate_id: "C2", run_id: "r2", agent: "test", target_lock: "static-coffee-v1", evidence_revision: "E-INSTALLED", allowed_inputs: ["design.md", "task.md"], accessed_inputs: ["design.md", "task.md"], output_sha256: "b".repeat(64) }]));
-  execute("compare-design-candidates", { candidates_file: "candidates.json", candidate_runs_file: "candidate-runs.json", canonical_allowed_input_manifest: "manifest.json", target_lock: "static-coffee-v1", evidence_revision: "E-INSTALLED" }, "completed");
+  await capturePreviewEvidence({ previewFile: path.join(workspace, "preview-output", "preview.html"), outputDirectory: workspace });
+  execute("validate-design", { design_file: "design.md", candidate_file: "candidate.json", preview_file: "preview-output/preview.html", browser_evidence_file: "computed-styles.json" }, "completed");
+  await writeJson(path.join(workspace, "candidate-runs.json"), semanticCandidates.map((semanticCandidate, index) => ({ candidate_id: semanticCandidate.id, run_id: `r${index + 1}`, agent: "installed-smoke", target_lock: "static-coffee-v1", evidence_revision: "E-INSTALLED", input_manifest_sha256: authorityManifestSha, accessed_inputs: ["design.md", "task.md"], output_sha256: semanticCandidate.artifact_sha256 })));
+  execute("compare-design-candidates", { candidates_file: "candidates.json", candidate_runs_file: "candidate-runs.json", canonical_allowed_input_manifest: "manifest.json", canonical_allowed_input_manifest_sha256: authorityManifestSha, target_lock: "static-coffee-v1", evidence_revision: "E-INSTALLED" }, "completed");
   execute("import-design-owner-decision", { decision_file: "decision-fixture.json", candidate_file: "candidate.json", gate_a_report_file: "gate-a.json", gate_b_report_file: "gate-b.json" }, "failed", "decision-negative");
   execute("create-design-release", { design_store_directory: "design-store", candidate_file: "candidate.json", design_file: "design.md", gate_a_report_file: "gate-a.json", gate_b_report_file: "gate-b.json", owner_decision_receipt_file: "missing-owner-receipt.json", release_id: "R1", version: "0.1.0", parent_release_id: null }, "failed");
   execute("verify-source-fidelity", { candidate_file: "candidate.json" }, "failed");

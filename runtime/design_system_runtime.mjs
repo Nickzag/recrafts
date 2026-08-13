@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseDesignMd, compileDesignIr, loadDesignRelease, validateDesign } from "../packages/recrafts-design/index.mjs";
@@ -11,6 +12,11 @@ import { createDesignRelease, rollbackDesignRelease } from "./design_release_sto
 import { resolveSafeInput, resolveSafeOutput, resolveWorkingRoot } from "./path_security.mjs";
 
 export const DESIGN_OPERATIONS = ["parse-design-md", "compile-design-ir", "validate-design", "verify-source-fidelity", "render-design-preview", "compare-design-candidates", "import-design-owner-decision", "create-design-release", "validate-design-release", "rollback-design-release", "compare-design-releases"];
+
+export function semanticCandidateArtifactSha256(candidate) {
+  const { artifact_sha256: _declared, ...content } = candidate;
+  return createHash("sha256").update(JSON.stringify(content)).digest("hex");
+}
 
 const readJson = async (file) => JSON.parse(await readFile(file, "utf8"));
 async function inputFile(value, root) { return resolveSafeInput({ value, workingRoot: root, allowedTypes: ["file"] }); }
@@ -104,8 +110,9 @@ export async function executeDesignOperation(request, workingRoot) {
     const candidateById = new Map(candidateList.map((c) => [c.id, c]));
     for (const run of isolationRuns || []) {
       const cand = candidateById.get(run.candidate_id);
-      const candArtifactSha = cand.artifact_sha256 || cand.output_sha256;
+      const candArtifactSha = cand.artifact_sha256;
       if (!candArtifactSha) throw Object.assign(new Error(`Candidate ${run.candidate_id} is missing artifact_sha256`), { code: "CANDIDATE_ARTIFACT_SHA_REQUIRED" });
+      if (semanticCandidateArtifactSha256(cand) !== candArtifactSha) throw Object.assign(new Error(`Candidate ${run.candidate_id} artifact_sha256 does not match its canonical content`), { code: "CANDIDATE_ARTIFACT_HASH_MISMATCH" });
       if (!run.output_sha256) throw Object.assign(new Error(`Run ${run.run_id} is missing output_sha256`), { code: "RUN_OUTPUT_SHA_REQUIRED" });
       if (candArtifactSha !== run.output_sha256) throw Object.assign(new Error(`Run output_sha256 ${run.output_sha256} does not match candidate ${run.candidate_id} artifact_sha256 ${candArtifactSha}`), { code: "CANDIDATE_OUTPUT_MISMATCH" });
     }

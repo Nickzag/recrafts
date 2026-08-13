@@ -139,7 +139,7 @@ const secretPatterns = [
   /gh[pousr]_[A-Za-z0-9_]{20,}/,
   /sk-[A-Za-z0-9_-]{20,}/,
   /eyJ[A-Za-z0-9_-]+\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+/,
-  /(?:api[_ -]?key|secret|token|password|passwd)\s*[:=]\s*[^\s]{8,}/i,
+  /(?<![A-Za-z0-9_])(?:api[_ -]?key|secret|token|password|passwd)\s*(?::\s*["']?[A-Za-z0-9_+/=-]{8,}["']?|=\s*(?![A-Za-z_$][A-Za-z0-9_$]*\s*\()["']?[A-Za-z0-9_+/=-]{8,}["']?)/i,
 ];
 for (const file of walk(root).filter((file) => /\.(?:md|json|mjs|js|txt)$/i.test(file) && !file.includes(`${path.sep}tests${path.sep}`))) {
   const body = readFileSync(file, "utf8");

@@ -11,7 +11,7 @@ import { candidateFixture, gateReports, ownerDecisionFile, canonical } from "./r
 async function acceptedRelease() {
   const root = await mkdtemp(path.join(os.tmpdir(), "r012-consumer-"));
   const candidate = candidateFixture();
-  const { gateA, gateB } = gateReports({ candidate });
+  const { gateA, gateB } = await gateReports({ candidate });
   const decisionFile = await ownerDecisionFile(root, { candidate, gateA, gateB });
   const decisionReceipt = await importDesignOwnerDecision({ decisionFile, candidate, gateAReport: gateA, gateBReport: gateB, outputDirectory: path.join(root, "decision") });
   const storeDirectory = path.join(root, "store");
@@ -41,4 +41,3 @@ test("Consumer rejects tampered Release metadata or public artifacts", async () 
     await assert.rejects(() => design.loadDesignRelease({ releaseDirectory, expectedReleaseId: "R1", expectedVersion: "0.1.0" }), /hash|integrity|tamper|Schema/i);
   }
 });
-

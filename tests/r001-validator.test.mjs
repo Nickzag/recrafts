@@ -43,6 +43,7 @@ test("golden candidate passes the public validator CLI", () => {
 const negativeCases = [
   ["raw screenshot tracked", (cwd) => writeFileSync(path.join(cwd, fixtureRelative, "local-raw-sources", "raw.png"), "raw")],
   ["secret-like string", (cwd) => writeFileSync(path.join(cwd, fixtureRelative, "README.md"), "sk-abcdefghijklmnopqrstuvwxyz123456")],
+  ["labelled generic secret", (cwd) => writeFileSync(path.join(cwd, fixtureRelative, "README.md"), "api_key: abcdefghijklmnopqrstuvwxyz123456")],
   ["unclassified region", (cwd) => mutateJson(cwd, `${fixtureRelative}/input/source-manifest.json`, (x) => { x.sources[0].regions[0].class = ""; })],
   ["missing evidence ref", (cwd) => mutateJson(cwd, `${fixtureRelative}/oracle/evidence-map.json`, (x) => { delete x.evidence[0].region_id; })],
   ["user-content green promoted globally", (cwd) => mutateJson(cwd, `${fixtureRelative}/oracle/design-contract.json`, (x) => { x.tokens.push({ id: "global.color.accent", value: "#00C878", scope: "global", status: "observed", source_class: "user-generated-content", evidence_refs: ["ev-document-artwork"] }); })],
