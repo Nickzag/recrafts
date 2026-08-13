@@ -1,0 +1,214 @@
+{
+  "bundle_schema_version": "1.0.0",
+  "project": "Recrafts",
+  "task_id": "R-013",
+  "task_title": "Evidence-grounded Design System Intelligence Upgrade",
+  "generated_at": "2026-08-13T15:21:13.018Z",
+  "requested_verdict": [
+    "PASS",
+    "authorize separate Linux Qualification"
+  ],
+  "repositories": [
+    {
+      "name": "Recrafts",
+      "repository": "https://github.com/Nickzag/recrafts.git",
+      "base_commit": "8917cd8bf89711913223e8865ca13686173fd952",
+      "branch": "recrafts/r-013-evidence-grounded-ds-intelligence",
+      "worktree": "isolated R-013 worktree",
+      "implementation_commits": [
+        "fec8da17963d9d34d2c38396716dcd195bf9784d",
+        "91ae60eedc09f3b288b9f99be76901207970485e"
+      ],
+      "evidence_commits": [],
+      "head_commit": "91ae60eedc09f3b288b9f99be76901207970485e",
+      "pull_request": null,
+      "merge_commit": null,
+      "remote_sync": "push pending final bundle validation",
+      "working_tree_status": "evidence-only bundle generation pending",
+      "tested_commit": "91ae60eedc09f3b288b9f99be76901207970485e"
+    }
+  ],
+  "base_commits": {
+    "Recrafts": "8917cd8bf89711913223e8865ca13686173fd952"
+  },
+  "head_commits": {
+    "Recrafts": "91ae60eedc09f3b288b9f99be76901207970485e"
+  },
+  "pull_requests": {
+    "Recrafts": null
+  },
+  "merge_commits": {
+    "Recrafts": null
+  },
+  "files": [
+    "CHATGPT-REVIEW-BUNDLE.md",
+    "file-index.md",
+    "git-evidence.md",
+    "known-limitations.md",
+    "raw-evidence/adversarial-self-review.md",
+    "raw-evidence/clean-install.log",
+    "raw-evidence/compact.png",
+    "raw-evidence/computed-styles.json",
+    "raw-evidence/darwin-qualification.json",
+    "raw-evidence/desktop.png",
+    "raw-evidence/installed-smoke-result.json",
+    "raw-evidence/mobile.png",
+    "raw-evidence/npm-pack-inventory.json",
+    "raw-evidence/recrafts-0.6.0-rc.1.tgz",
+    "raw-evidence/tarball-sha256.txt",
+    "raw-evidence/test-summary.json",
+    "result.md",
+    "review-packet.md",
+    "review-source/README.md",
+    "review-source/SKILL.md",
+    "review-source/benchmark-lessons.md",
+    "review-source/contracts/validate-design.request.schema.json",
+    "review-source/contracts/verify-source-fidelity.request.schema.json",
+    "review-source/fixtures/holdout-kanban-design-intelligence.json",
+    "review-source/frozen-fixture-manifest.json",
+    "review-source/manifest.json",
+    "review-source/package.json",
+    "review-source/runtime/design_coherence_gate.mjs",
+    "review-source/runtime/design_compare.mjs",
+    "review-source/runtime/design_fidelity_gate.mjs",
+    "review-source/runtime/design_intelligence.mjs",
+    "review-source/runtime/design_system_runtime.mjs",
+    "review-source/schemas/candidate-comparison.schema.json",
+    "review-source/schemas/design-intelligence.schema.json",
+    "review-source/schemas/gate-reports.schema.json",
+    "review-source/scripts/run-r013-darwin-qualification.mjs",
+    "review-source/scripts/validate-r013.mjs",
+    "review-source/skill_manifest.json",
+    "review-source/tests/r012-semantic-compare.test.mjs",
+    "review-source/tests/r013-design-intelligence.test.mjs",
+    "review-source/tests/r013-operation-gates.test.mjs",
+    "review-source/validation-matrix.md",
+    "task.md",
+    "test-summary.md"
+  ],
+  "file_hashes": {
+    "CHATGPT-REVIEW-BUNDLE.md": "6eeee7f068ea25f34fe582d3623430a30d4d54e69588b05a644b8b77ffa7c73e",
+    "file-index.md": "43693f93de0f067c4e1ebba68fc0899173e0e4cc14020998dc10bc66549ac0e7",
+    "git-evidence.md": "fbcbbe27e97896272409ac07245275783b5f5ae7d4022a7de0ccbd6274235343",
+    "known-limitations.md": "dd2e59c92dffdcbe21a8f1391bf182edb98e5c7abf01719e6de0a46320aa440d",
+    "raw-evidence/adversarial-self-review.md": "2e41ad7005fb5c387bf47bf2abef420657fb85c9ce77fa6984f739e91ad2914a",
+    "raw-evidence/clean-install.log": "cdcef9b6ea9022f8d9e26411ebf110d5e1c09a112eaa1ff365162541787d3ede",
+    "raw-evidence/compact.png": "b84693a707022b1408f356967ef2e4be303526b80576f793dc7767ba4a8c5991",
+    "raw-evidence/computed-styles.json": "61f89a170f415a60561ad625d99975b6f185153943778750e3abb15c1a67e6ca",
+    "raw-evidence/darwin-qualification.json": "dee8a5f92a5deab49b569c7c5349232224e334f8b1c54a57cbd69c5d9da051d6",
+    "raw-evidence/desktop.png": "ac841066f36b12a7c88e9b91319cc41b3016899f0942ec4ffe7394d1c48d0d73",
+    "raw-evidence/installed-smoke-result.json": "c42580e688d13f7b7069e4f6bc516ee80645d7f5e29775a5ad82861f65225bcd",
+    "raw-evidence/mobile.png": "f4aaab8eec81f303786ef9757095c707a0135991c65252a509d08f83500e1330",
+    "raw-evidence/npm-pack-inventory.json": "3e63560ffcf2256277ea0111dfab751ba8c930faf26f4f77d5e1738165b92bea",
+    "raw-evidence/recrafts-0.6.0-rc.1.tgz": "65bb728c5268287d4ee917051ad10fd4af0eb1a7977b2eeea286c9a5a0786d97",
+    "raw-evidence/tarball-sha256.txt": "cb186190faa13fd773040e3c21777273f0e1e838432e0cfc634721205dd1b167",
+    "raw-evidence/test-summary.json": "798235b8bc245a00189cf247fd8dbc033a6f7b63914f06a02a865b1529284a1c",
+    "result.md": "3da9580b3d80c4a67c96d96f0af15f280cbb857928745d154faa6a5af7221057",
+    "review-packet.md": "16f6f2d979af36446501488371c249bde4d13a900c861d2aa27c421c7c414b7f",
+    "review-source/README.md": "1ddfea1f5991da5bc25a43a6d5406bf03dcbdc98d566209efec6e32bebcca5dc",
+    "review-source/SKILL.md": "171dc30657c1c671e7cdd90283f49b3b0a6f7b78ab43ead2a287a378f51a58d5",
+    "review-source/benchmark-lessons.md": "162d4027f7f9902c5f3cde08476fa605c354327048e2673453abdad687bb77e1",
+    "review-source/contracts/validate-design.request.schema.json": "94fdc4193ebe40b2fa373db0eedbe017515d2cd39c1b5db9e296e8603b1f860e",
+    "review-source/contracts/verify-source-fidelity.request.schema.json": "5681dfc89d79b580cc4b77f69c90cbf001c231834fef71dce23f0151bc24f616",
+    "review-source/fixtures/holdout-kanban-design-intelligence.json": "7409c24dd46fa0d8cefde2729bacf5e3ff188094d7fe2ae74a468b3f8c7ce41b",
+    "review-source/frozen-fixture-manifest.json": "f28c18a705fb96b2876fb53a42e63efbd17d80bbb0ef437e45ff365e3fa085de",
+    "review-source/manifest.json": "e4b1d8f4b647ea1df7f2f640d2333361b3c5366cf098b38ef8f6c47a01f69cac",
+    "review-source/package.json": "710a95b03a2319035be36146ba94b34c3c982cd2161039e2c2699deed6c89d4b",
+    "review-source/runtime/design_coherence_gate.mjs": "ca98a4572d7e20020cf32dae1bdf6078d01197cf8bfbb63b5522f9fcafa0b060",
+    "review-source/runtime/design_compare.mjs": "353f855974ae711e2d7a877dfa9d5a0b39c91c0b21b9a057ae1fbdc023ebd6ae",
+    "review-source/runtime/design_fidelity_gate.mjs": "4b566d435a7f3e2e8820eae127ab655ffdda2d86ac985f2cbdb98b437dbd76a7",
+    "review-source/runtime/design_intelligence.mjs": "0f6c39216fad24f47a37aa9528797b1f5c56bb26575754e510ce6121cf90760c",
+    "review-source/runtime/design_system_runtime.mjs": "6655ee5652e202509da39767e19209b41cb0c328f1b2c18d4d6a8d8bc058aa48",
+    "review-source/schemas/candidate-comparison.schema.json": "67d3a6f78ba6012139073ac3971286de000e72d3ce62eb2ce4b80e4177808831",
+    "review-source/schemas/design-intelligence.schema.json": "6de24829a691e79287b9cf82fa883d88b3733b3186ca41913edd5d493431886e",
+    "review-source/schemas/gate-reports.schema.json": "1cab31d72beb17804549f41c180df967638f9c6724111a5e06fb741d4673b4e0",
+    "review-source/scripts/run-r013-darwin-qualification.mjs": "cfef68e15c1823117db0994b7ad2bd781af03edea26b5dccb845baf169c90a6a",
+    "review-source/scripts/validate-r013.mjs": "a6712d0735bde52342b1f484b759e03c4af3b17a1f7649e9ab1062a6124b44f4",
+    "review-source/skill_manifest.json": "2a0c5b57f49fc60b2972b8cee912132ca756fee7d7ae8b0fa487fa2ba06ed55c",
+    "review-source/tests/r012-semantic-compare.test.mjs": "4d82ea09c32ca0e33bbb1c0cf9d04b874690c29429c5f232896e056c1dee135e",
+    "review-source/tests/r013-design-intelligence.test.mjs": "7de6539ed1da0a2dc32dbc3292f34aad5f812351f2defe390e08a3b59cccbcdb",
+    "review-source/tests/r013-operation-gates.test.mjs": "c602c6f21df32aec1b5c8a6e8601140b4148aa97a2d7f61765da726a136a9526",
+    "review-source/validation-matrix.md": "0b8b4b97f6ba7f2295f54caabb95fadbc5db62590bf12e050dee03ce341749d9",
+    "task.md": "696b3b8ff146a9b5966d0d892d0ba0359d145a3d579850a3e8a346cf4d64e0c0",
+    "test-summary.md": "3c62da728c5b1836464da1446662d49c36f396379f3465cbae928ae70fee20d8"
+  },
+  "test_commands": [
+    "npm test",
+    "npm run validate:r013",
+    "npm run qualify:r013-darwin"
+  ],
+  "test_results": [
+    {
+      "repository": "Recrafts",
+      "command": "npm test",
+      "commit": "91ae60eedc09f3b288b9f99be76901207970485e",
+      "exit_code": 0,
+      "pass": 320,
+      "fail": 0,
+      "skip": 0,
+      "artifact": "raw-evidence/test-summary.json",
+      "timestamp": "2026-08-13T23:18:00+08:00"
+    },
+    {
+      "repository": "Recrafts",
+      "command": "npm run validate:r013",
+      "commit": "91ae60eedc09f3b288b9f99be76901207970485e",
+      "exit_code": 0,
+      "pass": 7,
+      "fail": 0,
+      "skip": 0,
+      "artifact": "raw-evidence/test-summary.json",
+      "timestamp": "2026-08-13T23:10:00+08:00"
+    },
+    {
+      "repository": "Recrafts",
+      "command": "npm run qualify:r013-darwin",
+      "commit": "91ae60eedc09f3b288b9f99be76901207970485e",
+      "exit_code": 0,
+      "pass": 14,
+      "fail": 0,
+      "skip": 0,
+      "artifact": "raw-evidence/darwin-qualification.json",
+      "timestamp": "2026-08-13T23:18:00+08:00"
+    }
+  ],
+  "browser_results": {
+    "engine": "playwright-chromium",
+    "status": "PASS",
+    "viewports": [
+      "desktop",
+      "compact",
+      "mobile"
+    ],
+    "artifact": "raw-evidence/computed-styles.json"
+  },
+  "provider_calls": 0,
+  "open_gates": [
+    "Development Mainline R-013 verdict",
+    "separately authorized Linux Qualification"
+  ],
+  "known_limitations": [
+    "Linux qualification is NOT_RUN and no Linux PASS is claimed.",
+    "The frozen Craft benchmark is research evidence, not a fresh real-agent execution.",
+    "No Owner PASS, Accepted Release, merge, npm publish, or Layoutcrafts change occurred."
+  ],
+  "contract_versions": {
+    "package": "0.6.0-rc.1",
+    "protocol": "1.2",
+    "design": "recrafts.design/v1",
+    "intelligence": "recrafts.design-intelligence/v1"
+  },
+  "evidence_classes": [
+    "unit/integration tests",
+    "real Chromium",
+    "exact tarball",
+    "Darwin clean install",
+    "installed 11-operation smoke",
+    "frozen benchmark hash registry",
+    "non-Craft holdout"
+  ],
+  "customer_evidence": false,
+  "production_evidence": false,
+  "recommended_next_task": "If Development Mainline returns PASS, authorize the separately governed Linux Qualification for the exact 0.6.0-rc.1 tarball",
+  "next_task_authorized": false
+}

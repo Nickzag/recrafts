@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "operation",
+    "input"
+  ],
+  "properties": {
+    "operation": {
+      "const": "verify-source-fidelity"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "candidate_file",
+        "source_manifest_file",
+        "region_set_file",
+        "measurement_set_file",
+        "source_token_set_file",
+        "reconstruction_file",
+        "comparison_report_file",
+        "geometry_report_file",
+        "source_visual_file",
+        "reconstruction_visual_file"
+      ],
+      "properties": {
+        "candidate_file": {
+          "type": "string"
+        },
+        "source_manifest_file": {
+          "type": "string"
+        },
+        "region_set_file": {
+          "type": "string"
+        },
+        "measurement_set_file": {
+          "type": "string"
+        },
+        "source_token_set_file": {
+          "type": "string"
+        },
+        "reconstruction_file": {
+          "type": "string"
+        },
+        "comparison_report_file": {
+          "type": "string"
+        },
+        "geometry_report_file": {
+          "type": "string"
+        },
+        "source_visual_file": {
+          "type": "string"
+        },
+        "reconstruction_visual_file": {
+          "type": "string"
+        },
+        "overlay_visual_file": {
+          "type": "string"
+        },
+        "design_intelligence_file": {
+          "type": "string"
+        },
+        "qualification_profile": {
+          "enum": ["r012-canonical", "r013-evidence-grounded"]
+        },
+        "production_gate": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": { "properties": { "qualification_profile": { "const": "r013-evidence-grounded" } }, "required": ["qualification_profile"] },
+          "then": { "required": ["design_intelligence_file"] }
+        }
+      ]
+    }
+  },
+  "x-recrafts": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "statuses": [
+      "completed",
+      "failed"
+    ]
+  }
+}

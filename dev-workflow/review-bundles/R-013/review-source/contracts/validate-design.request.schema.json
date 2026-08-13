@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "operation",
+    "input"
+  ],
+  "properties": {
+    "operation": {
+      "const": "validate-design"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "design_file",
+        "candidate_file",
+        "preview_file",
+        "browser_evidence_file"
+      ],
+      "properties": {
+        "design_file": {
+          "type": "string"
+        },
+        "candidate_file": {
+          "type": "string"
+        },
+        "preview_file": {
+          "type": "string"
+        },
+        "browser_evidence_file": {
+          "type": "string"
+        },
+        "design_intelligence_file": {
+          "type": "string"
+        },
+        "qualification_profile": {
+          "enum": ["r012-canonical", "r013-evidence-grounded"]
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": { "properties": { "qualification_profile": { "const": "r013-evidence-grounded" } }, "required": ["qualification_profile"] },
+          "then": { "required": ["design_intelligence_file"] }
+        }
+      ]
+    }
+  },
+  "x-recrafts": {
+    "required_capabilities": [
+      "files",
+      "structured-output"
+    ],
+    "statuses": [
+      "completed",
+      "failed"
+    ]
+  }
+}

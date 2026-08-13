@@ -1,0 +1,44 @@
+{
+  "name": "recrafts",
+  "displayName": "Recrafts",
+  "version": "0.6.0-rc.1",
+  "type": "skill",
+  "role": "foundation_skill",
+  "entry": "./runtime/interop_cli.mjs",
+  "standalone": true,
+  "craftsOSCompatible": true,
+  "canonicalDesignFilename": "design.md",
+  "compatibilityModes": ["uppercase-design-md-mirror"],
+  "schemas": {
+    "input": "./schemas/input.schema.json",
+    "output": "./schemas/output.schema.json",
+    "sourceManifest": "./schemas/source-manifest.schema.json",
+    "evidenceMap": "./schemas/evidence-map.schema.json",
+    "designContract": "./schemas/design-contract.schema.json",
+    "components": "./schemas/components.schema.json",
+    "validationReport": "./schemas/validation-report.schema.json"
+    ,"extractionOutput": "./schemas/extraction-output.schema.json",
+    "realizationPackage": "./schemas/realization-package.schema.json",
+    "realizationReadiness": "./schemas/realization-readiness.schema.json",
+    "evidenceRecord": "./schemas/evidence-record.schema.json",
+    "claimRecord": "./schemas/claim-record.schema.json",
+    "conflictRecord": "./schemas/conflict-record.schema.json",
+    "correctionEvent": "./schemas/correction-event.schema.json",
+    "artifactDecision": "./schemas/artifact-decision-record.schema.json",
+    "artifactSet": "./schemas/artifact-set-record.schema.json",
+    "packageLineage": "./schemas/package-lineage-event.schema.json",
+    "rollbackEvent": "./schemas/rollback-event.schema.json",
+    "productUIScreenRegion": "./contracts/product-ui-screen-region.schema.json",
+    "productUIVisualMeasurement": "./contracts/product-ui-visual-measurement.schema.json",
+    "productUIVisualObservations": "./contracts/product-ui-visual-observations.schema.json"
+    ,"designDocument": "./packages/recrafts-design/schemas/design-document.schema.json"
+    ,"designIR": "./packages/recrafts-design/schemas/design-ir.schema.json"
+    ,"designGovernance": "./packages/recrafts-design/schemas/governance.schema.json"
+    ,"designGateReports": "./packages/recrafts-design/schemas/gate-reports.schema.json"
+    ,"designPreviewIntegrity": "./packages/recrafts-design/schemas/preview-integrity.schema.json"
+    ,"designCandidateComparison": "./packages/recrafts-design/schemas/candidate-comparison.schema.json"
+    ,"designReleaseDiff": "./packages/recrafts-design/schemas/release-diff.schema.json"
+    ,"designIntelligence": "./packages/recrafts-design/schemas/design-intelligence.schema.json"
+  },
+  "dependencies": ["playwright@1.61.1", "Chromium browser binary (runtime prerequisite)"]
+}

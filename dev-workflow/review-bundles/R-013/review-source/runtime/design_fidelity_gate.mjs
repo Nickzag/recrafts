@@ -1,0 +1,116 @@
+import { createHash } from "node:crypto";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+import { assertSourceFidelityArtifact } from "../packages/recrafts-design/src/schema_runtime.mjs";
+import { evaluateDesignIntelligence } from "./design_intelligence.mjs";
+
+const sha256 = (value) => createHash("sha256").update(value).digest("hex");
+const REQUIRED = ["source_manifest", "region_set", "measurement_set", "source_token_set", "reconstruction", "comparison_report", "geometry_report"];
+const SCHEMA_KIND = { source_manifest: "sourceManifest", region_set: "regionSet", measurement_set: "measurementSet", source_token_set: "sourceTokenSet", reconstruction: "reconstruction", comparison_report: "comparisonReport", geometry_report: "geometryReport" };
+const pass = (condition) => condition ? "PASS" : "FAIL";
+const covers = (required, actual) => [...required].every((id) => actual.has(id));
+
+async function loadArtifacts(artifacts) {
+  const values = {};
+  const hashes = {};
+  for (const name of REQUIRED) {
+    const descriptor = artifacts?.[name];
+    if (!descriptor?.path || !descriptor.sha256) throw new Error(`Source Fidelity Artifact is missing: ${name}`);
+    if (path.basename(descriptor.path).toLowerCase() === "preview.html") throw new Error("preview.html cannot be used as Source Fidelity evidence");
+    const bytes = await readFile(descriptor.path);
+    const actual = sha256(bytes);
+    if (actual !== descriptor.sha256) throw new Error(`Source Fidelity Artifact hash mismatch: ${name}`);
+    const value = JSON.parse(bytes);
+    assertSourceFidelityArtifact(SCHEMA_KIND[name], value);
+    values[name] = value;
+    hashes[name] = actual;
+  }
+  return { values, hashes };
+}
+
+function verifyVisualFile(path, expectedSha256, label) {
+  return readFile(path).then((bytes) => {
+    const actual = sha256(bytes);
+    if (actual !== expectedSha256) throw new Error(`${label} visual file hash mismatch: expected ${expectedSha256}, got ${actual}`);
+    return actual;
+  });
+}
+
+export async function evaluateSourceFidelity({ candidate, artifacts, visualFiles = null, designIntelligence = null }, { qualificationFixture = false, productionGate = false, requireDesignIntelligence = false } = {}) {
+  const { values, hashes } = await loadArtifacts(artifacts);
+  const sourceIds = new Set(values.source_manifest.sources.map(({ source_id }) => source_id));
+  const regions = values.region_set.regions;
+  const regionIds = new Set(regions.map(({ region_id }) => region_id));
+  const measurementIds = new Set(values.measurement_set.measurements.map(({ measurement_id }) => measurement_id));
+  const measuredRegions = new Set(values.measurement_set.measurements.map(({ region_id }) => region_id));
+  const reconstructedRegions = new Set(values.reconstruction.surfaces.filter(({ status }) => status === "rendered").map(({ region_id }) => region_id));
+  const comparisonRegions = new Set(values.comparison_report.comparisons.map(({ region_id }) => region_id));
+  const geometryRegions = new Set(values.geometry_report.regions.map(({ region_id }) => region_id));
+  const checks = {
+    source_manifest_identity: pass(values.source_manifest.sources.length === sourceIds.size),
+    candidate_and_evidence_binding: pass(
+      candidate?.id && candidate.status === "candidate" && candidate.agent_usable === false &&
+      values.source_manifest.evidence_revision === candidate.evidence_revision && values.region_set.evidence_revision === candidate.evidence_revision &&
+      values.measurement_set.evidence_revision === candidate.evidence_revision && values.source_token_set.evidence_revision === candidate.evidence_revision &&
+      values.reconstruction.candidate_revision === candidate.id && values.comparison_report.candidate_revision === candidate.id && values.geometry_report.candidate_revision === candidate.id &&
+      values.reconstruction.design_sha256 === candidate.design_sha256
+    ),
+    artifact_dependency_binding: pass(
+      values.source_token_set.measurement_set_sha256 === hashes.measurement_set && values.reconstruction.region_set_sha256 === hashes.region_set &&
+      values.comparison_report.reconstruction_sha256 === hashes.reconstruction && values.geometry_report.region_set_sha256 === hashes.region_set &&
+      values.geometry_report.measurement_set_sha256 === hashes.measurement_set
+    ),
+    source_and_region_coverage: pass(regions.length > 0 && regions.every((region) => sourceIds.has(region.source_id) && region.coverage >= 0.95) && covers(sourceIds, new Set(regions.map(({ source_id }) => source_id)))),
+    measurement_integrity: pass(covers(regionIds, measuredRegions) && values.measurement_set.measurements.every((measurement) => regionIds.has(measurement.region_id) && measurement.confidence >= 0.8)),
+    source_token_support: pass(values.source_token_set.tokens.length > 0 && values.source_token_set.tokens.every((token) => token.region_refs.every((ref) => regionIds.has(ref)) && token.measurement_refs.every((ref) => measurementIds.has(ref)))),
+    reconstruction_coverage: pass(covers(regionIds, reconstructedRegions)),
+    comparison_coverage: pass(covers(regionIds, comparisonRegions) && values.comparison_report.comparisons.every((item) => item.visual_similarity >= 0.9)),
+    unsupported_visible_objects: pass(values.comparison_report.comparisons.every((item) => item.unsupported_objects.length === 0)),
+    unknown_honesty: pass(values.comparison_report.comparisons.every((item) => item.unknowns_hardened === false)),
+    geometry_fidelity: pass(covers(regionIds, geometryRegions) && values.geometry_report.regions.every((item) => item.delta_px <= item.tolerance_px))
+  };
+  let intelligenceReport = null;
+  if (designIntelligence) {
+    intelligenceReport = evaluateDesignIntelligence(designIntelligence);
+    for (const gate of ["full_source_comprehension", "product_understanding_layer", "evidence_tier_authority", "visual_measurement"]) checks[`intelligence_${gate}`] = intelligenceReport.gates[gate];
+    checks.intelligence_evidence_revision = pass(designIntelligence.source_coverage.source_revision === candidate?.evidence_revision);
+    checks.intelligence_source_binding = pass(
+      designIntelligence.source_coverage.source_ids.length === sourceIds.size &&
+      designIntelligence.source_coverage.source_ids.every((sourceId) => sourceIds.has(sourceId))
+    );
+  } else if (requireDesignIntelligence) checks.design_intelligence = "FAIL";
+  let visualFailures = [];
+  if (productionGate) {
+    if (!visualFiles) { visualFailures.push("production-gate-requires-visual-files"); checks.visual_file_verification = "FAIL"; }
+    else if (!visualFiles.source_visual) { visualFailures.push("production-gate-requires-source-visual"); checks.visual_file_verification = "FAIL"; }
+    else if (!visualFiles.reconstruction_visual) { visualFailures.push("production-gate-requires-reconstruction-visual"); checks.visual_file_verification = "FAIL"; }
+    else if (values.reconstruction.visual_evidence.overlay_visual_sha256 && !visualFiles.overlay_visual) { visualFailures.push("declared-overlay-requires-visual-file"); checks.visual_file_verification = "FAIL"; }
+  }
+  if (visualFiles && (!productionGate || checks.visual_file_verification !== "FAIL")) {
+    try {
+      if (visualFiles.source_visual) await verifyVisualFile(visualFiles.source_visual, values.reconstruction.visual_evidence.source_visual_sha256, "Source visual");
+      if (visualFiles.reconstruction_visual) await verifyVisualFile(visualFiles.reconstruction_visual, values.reconstruction.visual_evidence.reconstruction_visual_sha256, "Reconstruction visual");
+      if (visualFiles.overlay_visual) {
+        if (!values.reconstruction.visual_evidence.overlay_visual_sha256) visualFailures.push("overlay-file-without-declared-hash");
+        else await verifyVisualFile(visualFiles.overlay_visual, values.reconstruction.visual_evidence.overlay_visual_sha256, "Overlay visual");
+      }
+      // Cross-artifact hash equality
+      if (values.reconstruction.visual_evidence.source_visual_sha256 !== values.comparison_report.visual_binding.source_visual_sha256) visualFailures.push("cross-artifact-source-visual-mismatch");
+      if (values.reconstruction.visual_evidence.reconstruction_visual_sha256 !== values.comparison_report.visual_binding.reconstruction_visual_sha256) visualFailures.push("cross-artifact-reconstruction-visual-mismatch");
+      if (values.reconstruction.visual_evidence.source_visual_sha256 !== values.geometry_report.visual_binding.source_visual_sha256) visualFailures.push("cross-artifact-geometry-source-mismatch");
+      const declaredOverlayHashes = [values.reconstruction.visual_evidence.overlay_visual_sha256, values.comparison_report.visual_binding.overlay_visual_sha256, values.geometry_report.visual_binding.overlay_visual_sha256].filter(Boolean);
+      if (declaredOverlayHashes.length && (declaredOverlayHashes.length !== 3 || new Set(declaredOverlayHashes).size !== 1)) visualFailures.push("cross-artifact-overlay-visual-mismatch");
+      checks.visual_file_verification = visualFailures.length ? "FAIL" : "PASS";
+    } catch (e) { visualFailures.push(e.message); checks.visual_file_verification = "FAIL"; }
+  }
+  const failures = [...Object.entries(checks).filter(([, status]) => status === "FAIL").map(([check]) => check), ...visualFailures];
+  const verdict = failures.length ? "FAIL" : "PASS";
+  const report = {
+    schema: "recrafts.source-fidelity-report/v2", verdict, candidate_revision: candidate?.id ?? null, evidence_revision: candidate?.evidence_revision ?? null,
+    design_sha256: candidate?.design_sha256 ?? null, artifact_hashes: hashes, checks, failures,
+    gate_a_runtime_qualification: qualificationFixture ? verdict : "NOT_RUN", real_source_source_fidelity: qualificationFixture ? "NOT_RUN" : verdict,
+    qualification_fixture: qualificationFixture,
+    ...(intelligenceReport ? { design_intelligence_report_sha256: intelligenceReport.report_sha256 } : {})
+  };
+  return { ...report, report_sha256: sha256(JSON.stringify(report)) };
+}

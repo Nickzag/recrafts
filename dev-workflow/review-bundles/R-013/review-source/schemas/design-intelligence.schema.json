@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recrafts.local/schemas/recrafts-design/v1/design-intelligence.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "source_coverage", "product_understanding", "evidence_authority", "measurements", "components", "preview_coverage", "downstream_utility"],
+  "properties": {
+    "schema": { "const": "recrafts.design-intelligence/v1" },
+    "source_coverage": { "$ref": "#/$defs/sourceCoverage" },
+    "product_understanding": { "$ref": "#/$defs/productUnderstanding" },
+    "evidence_authority": { "$ref": "#/$defs/evidenceAuthority" },
+    "measurements": { "$ref": "#/$defs/measurementSet" },
+    "components": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/matureComponent" } },
+    "preview_coverage": { "$ref": "#/$defs/previewCoverage" },
+    "downstream_utility": { "$ref": "#/$defs/downstreamUtility" }
+  },
+  "$defs": {
+    "stringArray": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "sourceCoverage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_set_id", "source_revision", "total_source_count", "reviewed_source_count", "source_ids", "sources", "coverage_complete"],
+      "properties": {
+        "source_set_id": { "type": "string" }, "source_revision": { "type": "string" },
+        "total_source_count": { "type": "integer", "minimum": 1 }, "reviewed_source_count": { "type": "integer", "minimum": 0 },
+        "source_ids": { "$ref": "#/$defs/stringArray" },
+        "sources": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["source_id", "status", "surface_hypothesis", "visible_regions", "visible_components", "visible_states", "major_observations", "unknowns"], "properties": {
+          "source_id": { "type": "string" }, "status": { "enum": ["REVIEWED", "UNREADABLE"] }, "surface_hypothesis": { "type": "string" },
+          "visible_regions": { "$ref": "#/$defs/stringArray" }, "visible_components": { "$ref": "#/$defs/stringArray" }, "visible_states": { "$ref": "#/$defs/stringArray" },
+          "major_observations": { "$ref": "#/$defs/stringArray" }, "unknowns": { "type": "array", "items": { "type": "string" } }
+        } } },
+        "coverage_complete": { "type": "boolean" }
+      }
+    },
+    "productObject": { "type": "object", "additionalProperties": false, "required": ["id", "class", "label", "status", "evidence_refs"], "properties": {
+      "id": { "type": "string" }, "class": { "enum": ["PRODUCT_OBJECT", "UI_REGION", "SYSTEM_COMPONENT", "USER_CONTENT", "MARKETING_CONTENT", "FEATURE_SPECIFIC_EXPRESSION"] },
+      "label": { "type": "string" }, "status": { "enum": ["OBSERVED", "RESEARCH_CONFIRMED", "INFERRED", "UNKNOWN"] }, "evidence_refs": { "type": "array", "items": { "type": "string" } }
+    } },
+    "productUnderstanding": { "type": "object", "additionalProperties": false, "required": ["source_set_id", "source_revision", "objects", "surfaces", "regions", "unknowns"], "properties": {
+      "source_set_id": { "type": "string" }, "source_revision": { "type": "string" }, "objects": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/productObject" } },
+      "surfaces": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["id", "object_refs", "evidence_refs"], "properties": { "id": { "type": "string" }, "object_refs": { "$ref": "#/$defs/stringArray" }, "evidence_refs": { "$ref": "#/$defs/stringArray" } } } },
+      "regions": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["id", "object_ref", "persistence", "evidence_refs"], "properties": { "id": { "type": "string" }, "object_ref": { "type": "string" }, "persistence": { "enum": ["PERSISTENT", "CONTEXTUAL", "FEATURE_SPECIFIC", "UNKNOWN"] }, "evidence_refs": { "$ref": "#/$defs/stringArray" } } } },
+      "unknowns": { "type": "array", "items": { "type": "string" } }
+    } },
+    "evidenceAuthority": { "type": "object", "additionalProperties": false, "required": ["source_set_id", "tiers", "conflicts", "decisions"], "properties": {
+      "source_set_id": { "type": "string" }, "tiers": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["tier", "authority_rank", "source_ids", "purpose"], "properties": { "tier": { "enum": ["A", "B", "C"] }, "authority_rank": { "type": "integer", "minimum": 1 }, "source_ids": { "$ref": "#/$defs/stringArray" }, "purpose": { "type": "string" } } } },
+      "conflicts": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["id", "higher_tier", "lower_tier", "semantic_unit", "resolution", "decision_ref"], "properties": { "id": { "type": "string" }, "higher_tier": { "enum": ["A", "B", "C"] }, "lower_tier": { "enum": ["A", "B", "C"] }, "semantic_unit": { "type": "string" }, "resolution": { "enum": ["HIGHER_PRESERVED", "LOWER_OVERRIDES", "UNRESOLVED"] }, "decision_ref": { "type": ["string", "null"] } } } },
+      "decisions": { "type": "array", "items": { "type": "string" } }
+    } },
+    "measurement": { "type": "object", "additionalProperties": false, "required": ["id", "source_id", "region_id", "measurement_method", "class", "value", "unit", "certainty", "confidence", "source_relationship"], "properties": {
+      "id": { "type": "string" }, "source_id": { "type": "string" }, "region_id": { "type": "string" }, "measurement_method": { "type": "string" },
+      "class": { "enum": ["OBSERVED_EXACT", "OBSERVED_RANGE", "DERIVED_ROLE", "IMPLEMENTATION_CANDIDATE", "UNKNOWN"] }, "value": {}, "range": { "type": "array", "minItems": 2, "maxItems": 2 }, "unit": { "type": "string" },
+      "certainty": { "enum": ["OBSERVED", "RESEARCH_CONFIRMED", "INFERRED", "UNKNOWN"] }, "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+      "source_relationship": { "enum": ["system-chrome", "content", "user-content", "feature-specific", "marketing", "unknown"] }
+    } },
+    "measurementSet": { "type": "object", "additionalProperties": false, "required": ["source_revision", "measurements"], "properties": { "source_revision": { "type": "string" }, "measurements": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/measurement" } } } },
+    "matureComponent": { "type": "object", "additionalProperties": false, "required": ["id", "maturity", "purpose", "anatomy", "required_parts", "optional_parts", "allowed_children", "forbidden_combinations", "variants", "states", "token_relationships", "content_rules", "layout_rules", "responsive_behavior", "accessibility", "variation_boundaries", "unknowns"], "properties": {
+      "id": { "type": "string" }, "maturity": { "enum": ["M0", "M1", "M2", "M3", "M4", "M5"] }, "purpose": { "type": "string" },
+      "anatomy": { "type": "array", "items": { "type": "string" } }, "required_parts": { "type": "array", "items": { "type": "string" } }, "optional_parts": { "type": "array", "items": { "type": "string" } },
+      "allowed_children": { "type": "array", "items": { "type": "string" } }, "forbidden_combinations": { "type": "array", "items": { "type": "string" } }, "variants": { "type": "array", "items": { "type": "string" } },
+      "states": { "type": "array", "items": { "type": "string" } }, "token_relationships": { "type": "array", "items": { "type": "string" } }, "content_rules": { "type": "array", "items": { "type": "string" } },
+      "layout_rules": { "type": "array", "items": { "type": "string" } }, "responsive_behavior": { "type": "array", "items": { "type": "string" } }, "accessibility": { "type": "array", "items": { "type": "string" } },
+      "variation_boundaries": { "type": "array", "items": { "type": "string" } }, "unknowns": { "type": "array", "items": { "type": "string" } }
+    } },
+    "previewCoverage": { "type": "object", "additionalProperties": false, "required": ["foundations", "core_components", "product_composition", "stress_density", "responsive_states", "product_composition_refs", "rendered_component_refs"], "properties": {
+      "foundations": { "type": "boolean" }, "core_components": { "type": "boolean" }, "product_composition": { "type": "boolean" }, "stress_density": { "type": "boolean" }, "responsive_states": { "type": "boolean" },
+      "product_composition_refs": { "$ref": "#/$defs/stringArray" }, "rendered_component_refs": { "$ref": "#/$defs/stringArray" }
+    } },
+    "utilityStatus": { "enum": ["PASS", "DEGRADED", "BLOCK"] },
+    "downstreamUtility": { "type": "object", "additionalProperties": false, "required": ["consumer_class", "required_component_maturity", "token_completeness", "component_maturity", "state_completeness", "composition_constraints", "responsive_semantics", "agent_rules", "unknown_semantics", "invention_required", "gaps"], "properties": {
+      "consumer_class": { "type": "string" }, "required_component_maturity": { "enum": ["M0", "M1", "M2", "M3", "M4", "M5"] },
+      "token_completeness": { "$ref": "#/$defs/utilityStatus" }, "component_maturity": { "$ref": "#/$defs/utilityStatus" }, "state_completeness": { "$ref": "#/$defs/utilityStatus" },
+      "composition_constraints": { "$ref": "#/$defs/utilityStatus" }, "responsive_semantics": { "$ref": "#/$defs/utilityStatus" }, "agent_rules": { "$ref": "#/$defs/utilityStatus" }, "unknown_semantics": { "$ref": "#/$defs/utilityStatus" },
+      "invention_required": { "type": "boolean" }, "gaps": { "type": "array", "items": { "type": "string" } }
+    } }
+  }
+}

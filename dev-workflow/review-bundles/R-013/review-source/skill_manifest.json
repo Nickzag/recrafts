@@ -1,0 +1,29 @@
+{
+  "name": "recrafts",
+  "displayName": "Recrafts",
+  "version": "0.6.0-rc.1",
+  "type": "skill",
+  "role": "foundation_skill",
+  "description": "Builds provenance-backed visual-system contracts from authorized references.",
+  "entry": "./runtime/interop_cli.mjs",
+  "standalone": true,
+  "os_plugin": true,
+  "craftsOSCompatible": true,
+  "inputs": [
+    "brand.md",
+    "references",
+    "knowledge_pack",
+    "asset_pack",
+    "workspace_taste.md"
+  ],
+  "canonicalManifest": "./manifest.json",
+  "protocol": "./contracts/envelope-request.schema.json",
+  "operations": ["capabilities", "prepare-analysis", "submit-analysis", "validate-package", "generate-realization", "verify-fidelity", "submit-correction", "accept-artifacts", "rollback-package", "prepare-visual-recovery", "submit-visual-observations", "generate-faithful-reconstruction", "verify-source-fidelity", "compile-portable-product-ui", "generate-target-adaptation", "parse-design-md", "compile-design-ir", "validate-design", "render-design-preview", "compare-design-candidates", "import-design-owner-decision", "create-design-release", "validate-design-release", "rollback-design-release", "compare-design-releases"],
+  "outputs": ["evidence-bundle", "claims.json", "design-intelligence.json", "decision-ledger-candidate.json", "design.md", "preview.html", "design-release.json", "tokens.json", "components.json", "grid-rules.json", "layout-rules.json", "visual-grammar.json", "conflicts.json", "artifact-set.json", "corrections.jsonl", "decisions.jsonl", "lineage.json", "recrafts-package.json", "realization.json", "fidelity-readiness.json"],
+  "dependencies": ["playwright@1.61.1", "Chromium browser binary (runtime prerequisite)"],
+  "tags": [
+    "visual-system",
+    "design-md",
+    "foundation-skill"
+  ]
+}

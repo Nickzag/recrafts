@@ -8,7 +8,7 @@ Final local evidence:
 
 - `npm test`: 320 PASS / 0 FAIL.
 - `npm run validate:r013`: PASS; seven Intelligence dimensions and 11-operation inventory.
-- exact tarball: `recrafts-0.6.0-rc.1.tgz`, 233 files, SHA-256 `c4e90ab8b7e44ab18cef9501616ea5a3139f035d522102d459ab4d84d73ed51b`.
+- exact tarball: `recrafts-0.6.0-rc.1.tgz`, 233 files, SHA-256 `65bb728c5268287d4ee917051ad10fd4af0eb1a7977b2eeea286c9a5a0786d97`.
 - Darwin clean install: PASS; three CLI/bin load checks PASS; installed smoke 11/11 PASS.
 - Chromium evidence: desktop, compact and mobile PNG plus computed styles generated from the canonical Preview.
 - Linux qualification: not executed in this task; no Linux PASS is claimed.
