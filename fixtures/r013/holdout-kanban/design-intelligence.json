@@ -1,0 +1,49 @@
+{
+  "schema": "recrafts.design-intelligence/v1",
+  "source_coverage": {
+    "source_set_id": "holdout-kanban",
+    "source_revision": "E1",
+    "total_source_count": 3,
+    "reviewed_source_count": 3,
+    "source_ids": ["alpha", "beta", "gamma"],
+    "sources": [
+      { "source_id": "alpha", "status": "REVIEWED", "surface_hypothesis": "board workspace", "visible_regions": ["alpha-main"], "visible_components": ["task-item"], "visible_states": ["default"], "major_observations": ["column topology"], "unknowns": [] },
+      { "source_id": "beta", "status": "REVIEWED", "surface_hypothesis": "task detail", "visible_regions": ["beta-main"], "visible_components": ["task-item"], "visible_states": ["selected"], "major_observations": ["detail topology"], "unknowns": [] },
+      { "source_id": "gamma", "status": "REVIEWED", "surface_hypothesis": "compact board", "visible_regions": ["gamma-main"], "visible_components": ["task-item"], "visible_states": ["compact"], "major_observations": ["responsive topology"], "unknowns": [] }
+    ],
+    "coverage_complete": true
+  },
+  "product_understanding": {
+    "source_set_id": "holdout-kanban",
+    "source_revision": "E1",
+    "objects": [
+      { "id": "board", "class": "PRODUCT_OBJECT", "label": "work board", "status": "OBSERVED", "evidence_refs": ["alpha"] },
+      { "id": "main", "class": "UI_REGION", "label": "primary board", "status": "OBSERVED", "evidence_refs": ["alpha"] },
+      { "id": "task", "class": "SYSTEM_COMPONENT", "label": "task item", "status": "OBSERVED", "evidence_refs": ["beta"] }
+    ],
+    "surfaces": [{ "id": "board-surface", "object_refs": ["board", "main", "task"], "evidence_refs": ["alpha", "beta"] }],
+    "regions": [{ "id": "board-main", "object_ref": "main", "persistence": "PERSISTENT", "evidence_refs": ["alpha"] }],
+    "unknowns": []
+  },
+  "evidence_authority": {
+    "source_set_id": "holdout-kanban",
+    "tiers": [
+      { "tier": "A", "authority_rank": 1, "source_ids": ["alpha", "beta"], "purpose": "primary interface truth" },
+      { "tier": "B", "authority_rank": 2, "source_ids": ["gamma"], "purpose": "responsive semantic support" }
+    ],
+    "conflicts": [],
+    "decisions": []
+  },
+  "measurements": {
+    "source_revision": "E1",
+    "measurements": [
+      { "id": "m1", "source_id": "alpha", "region_id": "alpha-main", "measurement_method": "pixel-bounds", "class": "OBSERVED_EXACT", "value": 320, "unit": "px", "certainty": "OBSERVED", "confidence": 0.98, "source_relationship": "system-chrome" },
+      { "id": "m2", "source_id": "beta", "region_id": "beta-main", "measurement_method": "cluster", "class": "DERIVED_ROLE", "value": "#1d4ed8", "unit": "color", "certainty": "INFERRED", "confidence": 0.82, "source_relationship": "system-chrome" }
+    ]
+  },
+  "components": [{
+    "id": "task-item", "maturity": "M5", "purpose": "Represent work", "anatomy": ["title", "status"], "required_parts": ["title"], "optional_parts": ["status"], "allowed_children": ["label"], "forbidden_combinations": ["loading+complete"], "variants": ["compact"], "states": ["default", "selected"], "token_relationships": ["color.accent"], "content_rules": ["title required"], "layout_rules": ["single row"], "responsive_behavior": ["wrap labels"], "accessibility": ["keyboard selectable"], "variation_boundaries": ["preserve title"], "unknowns": []
+  }],
+  "preview_coverage": { "foundations": true, "core_components": true, "product_composition": true, "stress_density": true, "responsive_states": true, "product_composition_refs": ["board-surface"], "rendered_component_refs": ["task-item"] },
+  "downstream_utility": { "consumer_class": "application-ui", "required_component_maturity": "M5", "token_completeness": "PASS", "component_maturity": "PASS", "state_completeness": "PASS", "composition_constraints": "PASS", "responsive_semantics": "PASS", "agent_rules": "PASS", "unknown_semantics": "PASS", "invention_required": false, "gaps": [] }
+}

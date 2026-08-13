@@ -4,6 +4,7 @@ import path from "node:path";
 import { parseDesignMd, compileDesignIr, validateDesignIr } from "../packages/recrafts-design/index.mjs";
 import { validatePreviewIntegrity } from "./design_preview_renderer.mjs";
 import { assertBrowserEvidence } from "../packages/recrafts-design/src/schema_runtime.mjs";
+import { evaluateDesignIntelligence, qualifyDownstreamUtility } from "./design_intelligence.mjs";
 
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const pass = (condition) => condition ? "PASS" : "FAIL";
@@ -31,7 +32,7 @@ function forbiddenPatternsAbsent(ir) {
   return ir.constraints.forbidden_patterns.every((pattern) => !projectedContent.includes(pattern.toLowerCase()));
 }
 
-export async function evaluateDesignCoherence({ candidate, designSource, previewHtml, browserEvidence = null, browserEvidenceRoot = null, productionGate = false }) {
+export async function evaluateDesignCoherence({ candidate, designSource, previewHtml, browserEvidence = null, browserEvidenceRoot = null, productionGate = false, designIntelligence = null, requireDesignIntelligence = false }) {
   const failures = [];
   const checks = {};
   let previewMetadata = null;
@@ -163,6 +164,16 @@ export async function evaluateDesignCoherence({ candidate, designSource, preview
       same(preview.metadata.viewport_coverage, ["desktop", "compact", "mobile"])
     );
     checks.candidate_binding = pass(candidate?.id && candidate.evidence_revision === document.frontMatter.evidence_revision && candidate.design_sha256 === sha256(designSource) && candidate.status === "candidate" && candidate.agent_usable === false);
+    if (designIntelligence) {
+      const intelligence = evaluateDesignIntelligence(designIntelligence);
+      checks.intelligence_component_maturity = intelligence.gates.component_maturity;
+      checks.intelligence_preview_coverage = intelligence.gates.preview_intelligence;
+      checks.intelligence_evidence_revision = pass(designIntelligence.source_coverage.source_revision === candidate?.evidence_revision);
+      const compositionIds = new Set(ir.compositions.map(({ id }) => id));
+      const componentIds = new Set(ir.components.map(({ id }) => id));
+      checks.product_composition_proof = pass(designIntelligence.preview_coverage.product_composition && designIntelligence.preview_coverage.product_composition_refs.length > 0 && designIntelligence.preview_coverage.product_composition_refs.every((id) => compositionIds.has(id)));
+      checks.component_preview_binding = pass(designIntelligence.preview_coverage.rendered_component_refs.length > 0 && designIntelligence.preview_coverage.rendered_component_refs.every((id) => componentIds.has(id)));
+    } else if (requireDesignIntelligence) checks.design_intelligence = "FAIL";
   } catch (error) {
     checks.runtime_validation = "FAIL";
     failures.push(error.message);
@@ -171,8 +182,8 @@ export async function evaluateDesignCoherence({ candidate, designSource, preview
   const report = {
     schema: "recrafts.design-coherence-report/v2", verdict: failures.length ? "FAIL" : "PASS", candidate_revision: candidate?.id ?? null,
     evidence_revision: candidate?.evidence_revision ?? null, design_sha256: sha256(designSource), preview_artifact_sha256: previewMetadata?.preview_artifact_sha256 ?? null,
-    checks, failures: [...new Set(failures)], proves_source_fidelity: false, production_gate: productionGate, browser_evidence_sha256: typeof browserEvidenceHash !== "undefined" ? browserEvidenceHash : null
+    checks, failures: [...new Set(failures)], proves_source_fidelity: false, production_gate: productionGate, browser_evidence_sha256: typeof browserEvidenceHash !== "undefined" ? browserEvidenceHash : null,
+    ...(designIntelligence ? { design_intelligence_report_sha256: evaluateDesignIntelligence(designIntelligence).report_sha256, downstream_utility: qualifyDownstreamUtility(designIntelligence.downstream_utility, designIntelligence.components) } : {})
   };
   return { ...report, report_sha256: sha256(JSON.stringify(report)) };
 }
-

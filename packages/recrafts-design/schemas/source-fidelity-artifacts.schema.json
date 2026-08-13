@@ -484,6 +484,9 @@
             },
             "reconstruction_visual_sha256": {
               "$ref": "#/$defs/sha256"
+            },
+            "overlay_visual_sha256": {
+              "$ref": "#/$defs/sha256"
             }
           }
         }

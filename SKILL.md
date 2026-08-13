@@ -57,3 +57,26 @@ R-012 v2 的公开输出仅为 `design.md`、由其编译生成的 `preview.html
 Host Agent 的每次输出只能创建新的 Candidate Revision。只有 Source Fidelity Gate、Design Coherence Gate 与真实 Project Owner Decision 同时 PASS，才允许创建 `status: accepted` 且 `agent_usable: true` 的 Design Release。确定性 qualification fixture 必须保持 `status: candidate`、`agent_usable: false`；它只能令 `blind_harness_status` 成为 `READY`，不能令 `blind_agent_status` 成为 `PASS`。
 
 本地 macOS 诊断不替代 Linux Evidence。在真实 GitHub Linux 证据完成并经 validator 校验前，readiness 必须保持 `LINUX_PENDING`。
+
+## Evidence-grounded Design System Intelligence（R-013）
+
+生产 Design System 建立必须按以下单向流程执行：
+
+1. 检查输入来源、用途与权威边界。
+2. 完成全量 Source Coverage；所有来源逐一审阅后才能提取。
+3. 建立 Product Understanding，区分产品对象、UI Region、系统组件、用户内容、营销内容与功能特定表达。
+4. 将来源分类为 A/B/C 权威层；低权威来源不能覆盖高权威 UI 事实，除非存在显式人工 Decision。
+5. Regionization 与测量必须记录来源、区域、方法、数值或范围、确定性、置信度和来源关系。
+6. 视觉与语义提取必须区分 `OBSERVED_EXACT`、`OBSERVED_RANGE`、`DERIVED_ROLE`、`IMPLEMENTATION_CANDIDATE` 与 `UNKNOWN`。
+7. 组件按 M0–M5 成熟度构建；只有完整具备 anatomy、states、constraints、responsive、accessibility 与 content semantics 才能成为 M5。
+8. `design.md` 保持唯一公开作者源。
+9. Internal Design IR 只能由 `design.md` 单向编译。
+10. `preview.html` 必须证明 Foundations、Core Components、Product Composition、Stress/Density、Responsive/State 五类覆盖。
+11. Gate A 验证 Source → Region → Measurement → Rule → Reconstruction → Comparison 链及真实视觉文件。
+12. Gate B 验证 Design IR、组件/状态/组合完整性、Preview 投影和真实 Browser Evidence，且不得替代 Gate A。
+13. Downstream Utility 对指定消费者给出 `PASS`、`DEGRADED` 或 `BLOCK`；需要下游自行发明设计语义时必须 `BLOCK`。
+14. 多 Candidate 只做逐语义单元比较并生成 Decision Ledger Candidate；不得投票、平均、选胜者或自动授权，最终仍走 Candidate / Decision / Release 治理。
+
+禁止在未审完来源时开始提取；禁止用通用 SaaS 先验替代来源；禁止让落地页/营销视觉覆盖应用 UI；禁止发明无证据的精确值或静默填充 UNKNOWN；禁止把漂亮 Preview 当作 Source Fidelity；禁止让下游用通用组件兜底缺失语义。
+
+Recrafts 负责工作流、Schema、证据类别、测量语义、成熟度、Gate、比较和发布治理；视觉 Host 负责真实的来源理解、视觉推理、产品推理和证据绑定内容。Runtime 不编码任何模型专属策略或特定产品布局。

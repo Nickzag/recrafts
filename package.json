@@ -1,6 +1,6 @@
 {
   "name": "recrafts",
-  "version": "0.5.0-rc.1",
+  "version": "0.6.0-rc.1",
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
@@ -77,9 +77,15 @@
     "scripts/validate-r012-v2.mjs",
     "scripts/run-r012-linux-qualification.mjs",
     "scripts/r012-installed-consumer-smoke.mjs",
+    "scripts/capture-r012-preview-evidence.mjs",
     "scripts/validate-r012-linux-evidence.mjs",
     "scripts/build-r012-review-bundle.mjs",
     "scripts/validate-r012-review-bundle.mjs"
+    ,"scripts/validate-r013.mjs"
+    ,"scripts/build-r013-review-bundle.mjs"
+    ,"scripts/validate-r013-review-bundle.mjs"
+    ,"scripts/run-r013-darwin-qualification.mjs"
+    ,"fixtures/r013/"
   ],
   "scripts": {
     "validate:r001": "node scripts/validate-r001-recrafts-contract-evidence-fixture.mjs",
@@ -102,6 +108,9 @@
     "build:r012": "node scripts/run-r012-v2.mjs",
     "validate:r012": "node scripts/validate-r012-v2.mjs",
     "test:r012": "node --test tests/r012-*.test.mjs",
+    "test:r013": "node --test tests/r013-*.test.mjs",
+    "validate:r013": "node scripts/validate-r013.mjs",
+    "qualify:r013-darwin": "node scripts/run-r013-darwin-qualification.mjs",
     "benchmark:validate": "node scripts/benchmarks/validate-no-oracle.mjs benchmarks/L2-brand/static-coffee && node scripts/benchmarks/validate-corpus.mjs . benchmarks/L2-brand/static-coffee .local-benchmark-sources/static-coffee-v1-isolated-v3",
     "benchmark:static-coffee": "node scripts/benchmarks/run-benchmark.mjs .local-benchmark-sources/static-coffee-v1-isolated-v3/run-config.json",
     "benchmark:compare": "node scripts/benchmarks/compare-benchmark-runs.mjs",

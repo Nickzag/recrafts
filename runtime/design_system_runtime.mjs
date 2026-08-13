@@ -51,8 +51,9 @@ export async function executeDesignOperation(request, workingRoot) {
       browserEvidence = await readJson(bevFile);
       browserEvidenceRoot = path.dirname(bevFile);
     }
+    const designIntelligence = input.design_intelligence_file ? await readJson(await inputFile(input.design_intelligence_file, workingRoot)) : null;
     validateDesign(parseDesignMd(designSource));
-    return { status: "completed", artifacts: [], validation: await evaluateDesignCoherence({ candidate, designSource, previewHtml, browserEvidence, browserEvidenceRoot, productionGate: true }) };
+    return { status: "completed", artifacts: [], validation: await evaluateDesignCoherence({ candidate, designSource, previewHtml, browserEvidence, browserEvidenceRoot, productionGate: true, designIntelligence, requireDesignIntelligence: input.qualification_profile === "r013-evidence-grounded" }) };
   }
   
   if (request.operation === "verify-source-fidelity") {
@@ -68,7 +69,9 @@ export async function executeDesignOperation(request, workingRoot) {
     const visualFiles = {};
     if (input.source_visual_file) visualFiles.source_visual = await inputFile(input.source_visual_file, workingRoot);
     if (input.reconstruction_visual_file) visualFiles.reconstruction_visual = await inputFile(input.reconstruction_visual_file, workingRoot);
-    const report = await evaluateSourceFidelity({ candidate, artifacts, visualFiles: Object.keys(visualFiles).length ? visualFiles : null }, { productionGate: input.production_gate !== false });
+    if (input.overlay_visual_file) visualFiles.overlay_visual = await inputFile(input.overlay_visual_file, workingRoot);
+    const designIntelligence = input.design_intelligence_file ? await readJson(await inputFile(input.design_intelligence_file, workingRoot)) : null;
+    const report = await evaluateSourceFidelity({ candidate, artifacts, visualFiles: Object.keys(visualFiles).length ? visualFiles : null, designIntelligence }, { productionGate: input.production_gate !== false, requireDesignIntelligence: input.qualification_profile === "r013-evidence-grounded" });
     return { status: "completed", artifacts: [], validation: report };
   }
   if (request.operation === "compare-design-candidates") {

@@ -11,6 +11,7 @@ export const previewIntegritySchema = load("preview-integrity.schema.json");
 export const candidateComparisonSchema = load("candidate-comparison.schema.json");
 export const releaseDiffSchema = load("release-diff.schema.json");
 export const browserEvidenceSchema = load("browser-evidence.schema.json");
+export const designIntelligenceSchema = load("design-intelligence.schema.json");
 
 const ajv = new Ajv2020({ allErrors: true, strict: true, strictRequired: false, allowUnionTypes: true });
 ajv.addSchema(designDocumentSchema);
@@ -22,6 +23,7 @@ ajv.addSchema(previewIntegritySchema);
 ajv.addSchema(candidateComparisonSchema);
 ajv.addSchema(releaseDiffSchema);
 ajv.addSchema(browserEvidenceSchema);
+ajv.addSchema(designIntelligenceSchema);
 
 const validators = {
   document: ajv.getSchema(designDocumentSchema.$id),
@@ -29,6 +31,7 @@ const validators = {
   ,preview: ajv.getSchema(previewIntegritySchema.$id)
   ,candidateComparison: ajv.getSchema(candidateComparisonSchema.$id)
   ,releaseDiff: ajv.getSchema(releaseDiffSchema.$id)
+  ,designIntelligence: ajv.getSchema(designIntelligenceSchema.$id)
 };
 
 const fidelityValidators = Object.fromEntries(Object.keys(sourceFidelityArtifactsSchema.$defs).filter((key) => key !== "sha256" && key !== "id").map((key) => [key, ajv.getSchema(`${sourceFidelityArtifactsSchema.$id}#/$defs/${key}`)]));
@@ -48,6 +51,7 @@ export const assertDesignIrStructure = (value) => assertValid("ir", value);
 export const assertPreviewIntegrityStructure = (value) => assertValid("preview", value);
 export const assertCandidateComparisonStructure = (value) => assertValid("candidateComparison", value);
 export const assertReleaseDiffStructure = (value) => assertValid("releaseDiff", value);
+export const assertDesignIntelligenceStructure = (value) => assertValid("designIntelligence", value);
 export function assertSourceFidelityArtifact(kind, value) {
   const validate = fidelityValidators[kind];
   if (!validate) throw new Error(`Unknown Source Fidelity Artifact kind: ${kind}`);

@@ -1,7 +1,7 @@
 {
   "name": "recrafts",
   "displayName": "Recrafts",
-  "version": "0.5.0-rc.1",
+  "version": "0.6.0-rc.1",
   "type": "skill",
   "role": "foundation_skill",
   "entry": "./runtime/interop_cli.mjs",
@@ -38,6 +38,7 @@
     ,"designPreviewIntegrity": "./packages/recrafts-design/schemas/preview-integrity.schema.json"
     ,"designCandidateComparison": "./packages/recrafts-design/schemas/candidate-comparison.schema.json"
     ,"designReleaseDiff": "./packages/recrafts-design/schemas/release-diff.schema.json"
+    ,"designIntelligence": "./packages/recrafts-design/schemas/design-intelligence.schema.json"
   },
   "dependencies": ["playwright@1.61.1", "Chromium browser binary (runtime prerequisite)"]
 }

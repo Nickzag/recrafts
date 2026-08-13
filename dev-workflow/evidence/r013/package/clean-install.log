@@ -1,0 +1,7 @@
+exact tarball: recrafts-0.6.0-rc.1.tgz
+sha256: c4e90ab8b7e44ab18cef9501616ea5a3139f035d522102d459ab4d84d73ed51b
+npm install exit: 0
+installed package version: 0.6.0-rc.1
+CLI bins loaded: 3/3
+installed Operations: 11/11
+installed smoke: 11/11 PASS

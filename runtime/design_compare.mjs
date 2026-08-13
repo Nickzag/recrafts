@@ -53,7 +53,23 @@ export function compareDesignCandidates(candidates) {
       return { key, classification, candidates: Object.fromEntries(candidates.map((candidate, index) => [candidate.id, values[index] ?? null])), evidence_refs: Object.fromEntries(candidates.map((candidate) => [candidate.id, candidate.evidence_support?.[domain]?.[key] ?? candidate.evidence_support?.[domain]?.["*"] ?? []])) };
     });
   }
-  const result = { schema: "recrafts.candidate-comparison/v2", candidate_ids: candidates.map(({ id }) => id), evidence_revisions: [...new Set(candidates.map(({ evidence_revision }) => evidence_revision))], domains, summary, voting_used: false, automatic_merge: false, decision_required: true };
+  const decisionLedgerCandidate = {
+    schema: "recrafts.decision-ledger-candidate/v1",
+    candidate_ids: candidates.map(({ id }) => id),
+    records: Object.entries(domains).flatMap(([domain, records]) => records.map((record) => ({
+      semantic_unit: `${domain}:${record.key}`,
+      domain,
+      classification: record.classification.replace("-", "_").toUpperCase(),
+      candidate_claims: record.candidates,
+      evidence_refs: record.evidence_refs,
+      conflict_reason: record.classification === "conflict" ? "evidence-backed semantic claims differ" : null
+    }))),
+    voting_used: false,
+    numeric_averaging_used: false,
+    winner_selected: false,
+    automatic_authorization: false
+  };
+  const result = { schema: "recrafts.candidate-comparison/v2", candidate_ids: candidates.map(({ id }) => id), evidence_revisions: [...new Set(candidates.map(({ evidence_revision }) => evidence_revision))], domains, summary, voting_used: false, automatic_merge: false, decision_required: true, decision_ledger_candidate: decisionLedgerCandidate };
   assertCandidateComparisonStructure(result);
   return result;
 }

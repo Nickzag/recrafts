@@ -133,6 +133,9 @@
               "$ref": "#/$defs/sha256"
             }
           }
+        },
+        "design_intelligence_report_sha256": {
+          "$ref": "#/$defs/sha256"
         }
       }
     },
@@ -208,6 +211,21 @@
         },
         "production_gate": {
           "type": "boolean"
+        },
+        "design_intelligence_report_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "downstream_utility": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["schema", "consumer_class", "verdict", "gaps", "invention_required"],
+          "properties": {
+            "schema": { "const": "recrafts.downstream-utility-result/v1" },
+            "consumer_class": { "type": "string" },
+            "verdict": { "enum": ["PASS", "DEGRADED", "BLOCK"] },
+            "gaps": { "type": "array", "items": { "type": "string" } },
+            "invention_required": { "type": "boolean" }
+          }
         }
       }
     }

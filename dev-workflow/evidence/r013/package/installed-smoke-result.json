@@ -1,0 +1,124 @@
+{
+  "schema": "recrafts.r012-installed-smoke/v1",
+  "package_version": "0.6.0-rc.1",
+  "operation_results": [
+    {
+      "operation": "parse-design-md",
+      "qualification": "PASS",
+      "expected_status": "completed",
+      "observed_status": "completed",
+      "exit_code": 0,
+      "stdout_sha256": "bfdeac7331207294821bf0646f29accce1f6c09e796fdd84e80b93136d9c34e3",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs parse-design-md",
+      "error_code": null
+    },
+    {
+      "operation": "compile-design-ir",
+      "qualification": "PASS",
+      "expected_status": "completed",
+      "observed_status": "completed",
+      "exit_code": 0,
+      "stdout_sha256": "62f31fdb2c3ac9d4094995b32c1ed3ea42cda86c1f83c95d9f1d0a254e628e9c",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs compile-design-ir",
+      "error_code": null
+    },
+    {
+      "operation": "validate-design",
+      "qualification": "PASS",
+      "expected_status": "completed",
+      "observed_status": "completed",
+      "exit_code": 0,
+      "stdout_sha256": "dbaadacdfbc90de6e7d68a3c580cf50f63e87ca2a8fa2d5db49d5d0a841be1da",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs validate-design",
+      "error_code": null
+    },
+    {
+      "operation": "verify-source-fidelity",
+      "qualification": "PASS",
+      "expected_status": "failed",
+      "observed_status": "failed",
+      "exit_code": 1,
+      "stdout_sha256": "87e6a61e213b178641f8521b473ef8349b599d56df94cef13d6000ad3ac733f5",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs verify-source-fidelity",
+      "error_code": "SCHEMA_VALIDATION_FAILED"
+    },
+    {
+      "operation": "render-design-preview",
+      "qualification": "PASS",
+      "expected_status": "completed",
+      "observed_status": "completed",
+      "exit_code": 0,
+      "stdout_sha256": "9b20f7c6e7a83cdf458958be2f3f9a480544be9b8f9114ae2c3e90fe46e9cee5",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs render-design-preview",
+      "error_code": null
+    },
+    {
+      "operation": "compare-design-candidates",
+      "qualification": "PASS",
+      "expected_status": "completed",
+      "observed_status": "completed",
+      "exit_code": 0,
+      "stdout_sha256": "9a3212dff6431fbbbcacb3fd92b6bf9ae907ad4b420b590318b2f2d3c43279cb",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs compare-design-candidates",
+      "error_code": null
+    },
+    {
+      "operation": "import-design-owner-decision",
+      "qualification": "PASS",
+      "expected_status": "failed",
+      "observed_status": "failed",
+      "exit_code": 1,
+      "stdout_sha256": "b900e0a4ecd0af5b7fd0b8d3f0d8286845bdd25f3fd7884a50dafca655c9f0fc",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs import-design-owner-decision",
+      "error_code": "SCHEMA_VALIDATION_FAILED"
+    },
+    {
+      "operation": "create-design-release",
+      "qualification": "PASS",
+      "expected_status": "failed",
+      "observed_status": "failed",
+      "exit_code": 1,
+      "stdout_sha256": "156e6a1c0ba5c544eade78afe0185bbc9959c2c1505955ae52d052b27015ce7b",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs create-design-release",
+      "error_code": "INPUT_NOT_FOUND"
+    },
+    {
+      "operation": "validate-design-release",
+      "qualification": "PASS",
+      "expected_status": "failed",
+      "observed_status": "failed",
+      "exit_code": 1,
+      "stdout_sha256": "ac2c480a6a527f5686ba1f3df7d6de7c2ec385545cfabbc1cb428f1c1c88f8fb",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs validate-design-release",
+      "error_code": "INTERNAL_ERROR"
+    },
+    {
+      "operation": "rollback-design-release",
+      "qualification": "PASS",
+      "expected_status": "failed",
+      "observed_status": "failed",
+      "exit_code": 1,
+      "stdout_sha256": "7123ebe1053a6aa0123e8254d1ef69ef9849588753b1da34a98952f0ec4bfe4d",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs rollback-design-release",
+      "error_code": "SCHEMA_VALIDATION_FAILED"
+    },
+    {
+      "operation": "compare-design-releases",
+      "qualification": "PASS",
+      "expected_status": "completed",
+      "observed_status": "completed",
+      "exit_code": 0,
+      "stdout_sha256": "6dae4bd8556826f80a273eed8a7aadd5bdb8cc0e02598bf397f3fc4aaf5925eb",
+      "command": "node node_modules/recrafts/runtime/interop_cli.mjs compare-design-releases",
+      "error_code": null
+    }
+  ],
+  "tests": {
+    "passed": 11,
+    "failed": 0,
+    "total": 11,
+    "reporter": "installed-smoke"
+  },
+  "governance_fixture_created_owner_pass": false,
+  "accepted_release_created": false
+}

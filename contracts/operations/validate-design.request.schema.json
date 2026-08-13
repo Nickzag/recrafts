@@ -29,9 +29,21 @@
         },
         "browser_evidence_file": {
           "type": "string"
+        },
+        "design_intelligence_file": {
+          "type": "string"
+        },
+        "qualification_profile": {
+          "enum": ["r012-canonical", "r013-evidence-grounded"]
         }
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": { "properties": { "qualification_profile": { "const": "r013-evidence-grounded" } }, "required": ["qualification_profile"] },
+          "then": { "required": ["design_intelligence_file"] }
+        }
+      ]
     }
   },
   "x-recrafts": {

@@ -7,7 +7,7 @@ const operations = ["parse-design-md", "compile-design-ir", "validate-design", "
 const valid = {
   schema: "recrafts.r012-linux-evidence/v2", runner_os: "Linux", runner_arch: "x64",
   commit_sha: "a".repeat(40), package_sha256: "b".repeat(64),
-  installation: { exact_tarball: true, source_install: false, package_version: "0.5.0-rc.1", cli_version: "0.5.0-rc.1" },
+  installation: { exact_tarball: true, source_install: false, package_version: "0.6.0-rc.1", cli_version: "0.6.0-rc.1" },
   operation_results: operations.map((operation, index) => {
     const completed = index < 6 || operation === "compare-design-releases";
     return { operation, qualification: "PASS", expected_status: completed ? "completed" : "failed", observed_status: completed ? "completed" : "failed", exit_code: completed ? 0 : 1, stdout_sha256: index.toString(16).repeat(64), command: `installed/recraft-interop ${operation}` };

@@ -1,0 +1,42 @@
+{
+  "schema": "recrafts.r013-darwin-qualification/v1",
+  "status": "PASS",
+  "platform": "darwin",
+  "arch": "x64",
+  "package_version": "0.6.0-rc.1",
+  "tarball": "recrafts-0.6.0-rc.1.tgz",
+  "tarball_sha256": "c4e90ab8b7e44ab18cef9501616ea5a3139f035d522102d459ab4d84d73ed51b",
+  "packed_files": 233,
+  "exact_tarball_install": true,
+  "source_install": false,
+  "bin_checks": [
+    {
+      "name": "recraft",
+      "expected_exit_code": 1,
+      "observed_exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ad856d7be3db620cfafa8217961ee2a9165cb06096c9f16332d57f02c7e17ea5"
+    },
+    {
+      "name": "recraft-interop",
+      "expected_exit_code": 0,
+      "observed_exit_code": 0,
+      "stdout_sha256": "ceceb113c124af18aa5ef3f3578bb215944f78838275c94241d5a315efdf0362",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "recraft-capture",
+      "expected_exit_code": 2,
+      "observed_exit_code": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7d151e065bda50891816e6b78dcea6132c684b44e370bf73996e0a9509d9995c"
+    }
+  ],
+  "installed_operations": 11,
+  "installed_smoke": {
+    "passed": 11,
+    "failed": 0,
+    "total": 11,
+    "reporter": "installed-smoke"
+  }
+}

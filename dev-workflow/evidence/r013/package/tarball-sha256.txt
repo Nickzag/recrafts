@@ -1,0 +1,1 @@
+c4e90ab8b7e44ab18cef9501616ea5a3139f035d522102d459ab4d84d73ed51b  recrafts-0.6.0-rc.1.tgz

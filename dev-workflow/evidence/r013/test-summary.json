@@ -1,0 +1,11 @@
+{
+  "schema": "recrafts.r013-test-summary/v1",
+  "tested_commit": "WORKTREE_PENDING_FINAL_COMMIT",
+  "commands": [
+    { "command": "npm test", "exit_code": 0, "pass": 320, "fail": 0, "skip": 0, "timestamp": "2026-08-13T23:05:00+08:00" },
+    { "command": "npm run validate:r013", "exit_code": 0, "pass": 7, "fail": 0, "skip": 0, "timestamp": "2026-08-13T22:58:00+08:00" },
+    { "command": "npm run qualify:r013-darwin", "exit_code": 0, "pass": 14, "fail": 0, "skip": 0, "timestamp": "2026-08-13T23:06:00+08:00" }
+  ],
+  "browser_evidence": { "status": "PASS", "viewports": ["desktop", "compact", "mobile"] },
+  "linux": "NOT_RUN"
+}

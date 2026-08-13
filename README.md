@@ -1,4 +1,4 @@
-# Recrafts MVP 0.4 development line
+# Recrafts 0.6 evidence-grounded Design System candidate
 
 Recrafts 是可独立安装的 Host-Agent 视觉重构 Skill。它不内置视觉模型；视觉理解由接入方提供的 Host Agent 完成。
 
@@ -87,6 +87,16 @@ Runtime 通过 realpath 拒绝 traversal、symlink escape、Oracle/expected、�
 Protocol 1.2 新增 `parse-design-md`、`compile-design-ir`、`validate-design`、`render-design-preview`、`compare-design-candidates`、`create-design-release`、`validate-design-release`、`compare-design-releases`。Gate A 验证 Source Fidelity，Gate B 验证 Design Coherence；Preview 不能充当 Source Fidelity Evidence。确定性 fixture 只能证明 Gate runtime 和 blind harness 可运行，不能产生 Owner PASS、真实 Blind Agent PASS 或 Accepted Release。
 
 当前本地资格固定为 `LINUX_PENDING`。只有 GitHub `ubuntu-latest` Workflow 生成并通过 `validate-r012-linux-evidence.mjs` 校验的证据，才能在后续 evidence-only 更新中改变 Linux readiness。
+
+## Evidence-grounded Intelligence（R-013）
+
+`recrafts.design-intelligence/v1` 将 Source Coverage、Product Understanding、Evidence Tier、Visual Measurement、Component Maturity、Preview Coverage 与 Downstream Utility 组成一个 Ajv 管理的 Canonical Artifact。既有 11 个 Design Operation 保持不变：
+
+- `verify-source-fidelity` 可使用 `qualification_profile: r013-evidence-grounded` 和 `design_intelligence_file`，将前四项能力绑定进 Gate A，并实际校验声明的 Source、Reconstruction 与 Overlay 文件。
+- `validate-design` 在相同 profile 下将 Component Maturity、Product Composition Preview Proof 与 Downstream Utility 绑定进 Gate B。
+- `compare-design-candidates` 在既有隔离和冻结 Manifest 约束内输出逐域比较及未授权的 Decision Ledger Candidate；它不会投票、平均或选择赢家。
+
+R-013 Candidate 版本为 `0.6.0-rc.1`，Protocol 仍为 1.2。此任务不发布 npm 包，也不授权 Accepted Design Release。
 
 ## Legacy Development CLI
 

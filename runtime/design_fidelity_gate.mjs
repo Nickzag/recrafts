@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { assertSourceFidelityArtifact } from "../packages/recrafts-design/src/schema_runtime.mjs";
+import { evaluateDesignIntelligence } from "./design_intelligence.mjs";
 
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const REQUIRED = ["source_manifest", "region_set", "measurement_set", "source_token_set", "reconstruction", "comparison_report", "geometry_report"];
@@ -35,7 +36,7 @@ function verifyVisualFile(path, expectedSha256, label) {
   });
 }
 
-export async function evaluateSourceFidelity({ candidate, artifacts, visualFiles = null }, { qualificationFixture = false, productionGate = false } = {}) {
+export async function evaluateSourceFidelity({ candidate, artifacts, visualFiles = null, designIntelligence = null }, { qualificationFixture = false, productionGate = false, requireDesignIntelligence = false } = {}) {
   const { values, hashes } = await loadArtifacts(artifacts);
   const sourceIds = new Set(values.source_manifest.sources.map(({ source_id }) => source_id));
   const regions = values.region_set.regions;
@@ -46,6 +47,7 @@ export async function evaluateSourceFidelity({ candidate, artifacts, visualFiles
   const comparisonRegions = new Set(values.comparison_report.comparisons.map(({ region_id }) => region_id));
   const geometryRegions = new Set(values.geometry_report.regions.map(({ region_id }) => region_id));
   const checks = {
+    source_manifest_identity: pass(values.source_manifest.sources.length === sourceIds.size),
     candidate_and_evidence_binding: pass(
       candidate?.id && candidate.status === "candidate" && candidate.agent_usable === false &&
       values.source_manifest.evidence_revision === candidate.evidence_revision && values.region_set.evidence_revision === candidate.evidence_revision &&
@@ -67,20 +69,37 @@ export async function evaluateSourceFidelity({ candidate, artifacts, visualFiles
     unknown_honesty: pass(values.comparison_report.comparisons.every((item) => item.unknowns_hardened === false)),
     geometry_fidelity: pass(covers(regionIds, geometryRegions) && values.geometry_report.regions.every((item) => item.delta_px <= item.tolerance_px))
   };
+  let intelligenceReport = null;
+  if (designIntelligence) {
+    intelligenceReport = evaluateDesignIntelligence(designIntelligence);
+    for (const gate of ["full_source_comprehension", "product_understanding_layer", "evidence_tier_authority", "visual_measurement"]) checks[`intelligence_${gate}`] = intelligenceReport.gates[gate];
+    checks.intelligence_evidence_revision = pass(designIntelligence.source_coverage.source_revision === candidate?.evidence_revision);
+    checks.intelligence_source_binding = pass(
+      designIntelligence.source_coverage.source_ids.length === sourceIds.size &&
+      designIntelligence.source_coverage.source_ids.every((sourceId) => sourceIds.has(sourceId))
+    );
+  } else if (requireDesignIntelligence) checks.design_intelligence = "FAIL";
   let visualFailures = [];
   if (productionGate) {
     if (!visualFiles) { visualFailures.push("production-gate-requires-visual-files"); checks.visual_file_verification = "FAIL"; }
     else if (!visualFiles.source_visual) { visualFailures.push("production-gate-requires-source-visual"); checks.visual_file_verification = "FAIL"; }
     else if (!visualFiles.reconstruction_visual) { visualFailures.push("production-gate-requires-reconstruction-visual"); checks.visual_file_verification = "FAIL"; }
+    else if (values.reconstruction.visual_evidence.overlay_visual_sha256 && !visualFiles.overlay_visual) { visualFailures.push("declared-overlay-requires-visual-file"); checks.visual_file_verification = "FAIL"; }
   }
   if (visualFiles && (!productionGate || checks.visual_file_verification !== "FAIL")) {
     try {
       if (visualFiles.source_visual) await verifyVisualFile(visualFiles.source_visual, values.reconstruction.visual_evidence.source_visual_sha256, "Source visual");
       if (visualFiles.reconstruction_visual) await verifyVisualFile(visualFiles.reconstruction_visual, values.reconstruction.visual_evidence.reconstruction_visual_sha256, "Reconstruction visual");
+      if (visualFiles.overlay_visual) {
+        if (!values.reconstruction.visual_evidence.overlay_visual_sha256) visualFailures.push("overlay-file-without-declared-hash");
+        else await verifyVisualFile(visualFiles.overlay_visual, values.reconstruction.visual_evidence.overlay_visual_sha256, "Overlay visual");
+      }
       // Cross-artifact hash equality
       if (values.reconstruction.visual_evidence.source_visual_sha256 !== values.comparison_report.visual_binding.source_visual_sha256) visualFailures.push("cross-artifact-source-visual-mismatch");
       if (values.reconstruction.visual_evidence.reconstruction_visual_sha256 !== values.comparison_report.visual_binding.reconstruction_visual_sha256) visualFailures.push("cross-artifact-reconstruction-visual-mismatch");
       if (values.reconstruction.visual_evidence.source_visual_sha256 !== values.geometry_report.visual_binding.source_visual_sha256) visualFailures.push("cross-artifact-geometry-source-mismatch");
+      const declaredOverlayHashes = [values.reconstruction.visual_evidence.overlay_visual_sha256, values.comparison_report.visual_binding.overlay_visual_sha256, values.geometry_report.visual_binding.overlay_visual_sha256].filter(Boolean);
+      if (declaredOverlayHashes.length && (declaredOverlayHashes.length !== 3 || new Set(declaredOverlayHashes).size !== 1)) visualFailures.push("cross-artifact-overlay-visual-mismatch");
       checks.visual_file_verification = visualFailures.length ? "FAIL" : "PASS";
     } catch (e) { visualFailures.push(e.message); checks.visual_file_verification = "FAIL"; }
   }
@@ -90,8 +109,8 @@ export async function evaluateSourceFidelity({ candidate, artifacts, visualFiles
     schema: "recrafts.source-fidelity-report/v2", verdict, candidate_revision: candidate?.id ?? null, evidence_revision: candidate?.evidence_revision ?? null,
     design_sha256: candidate?.design_sha256 ?? null, artifact_hashes: hashes, checks, failures,
     gate_a_runtime_qualification: qualificationFixture ? verdict : "NOT_RUN", real_source_source_fidelity: qualificationFixture ? "NOT_RUN" : verdict,
-    qualification_fixture: qualificationFixture
+    qualification_fixture: qualificationFixture,
+    ...(intelligenceReport ? { design_intelligence_report_sha256: intelligenceReport.report_sha256 } : {})
   };
   return { ...report, report_sha256: sha256(JSON.stringify(report)) };
 }
-

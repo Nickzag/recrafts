@@ -1,0 +1,1181 @@
+[
+  {
+    "id": "recrafts@0.6.0-rc.1",
+    "name": "recrafts",
+    "version": "0.6.0-rc.1",
+    "size": 185443,
+    "unpackedSize": 782794,
+    "shasum": "3d8294d3399e7e082b27f9959305fafb39c194b5",
+    "integrity": "sha512-8lEEexez5TrwH65uZfvsqxN2Hk+GlKp+XPJtSjcpukZJMHWeve7y7aw0cS0F12dR2/FuKNjB1liTXuDaobeh+w==",
+    "filename": "recrafts-0.6.0-rc.1.tgz",
+    "files": [
+      {
+        "path": "README.md",
+        "size": 6547,
+        "mode": 420
+      },
+      {
+        "path": "SKILL.md",
+        "size": 7327,
+        "mode": 420
+      },
+      {
+        "path": "contracts/artifact-decision.schema.json",
+        "size": 1095,
+        "mode": 420
+      },
+      {
+        "path": "contracts/artifact-set.schema.json",
+        "size": 1074,
+        "mode": 420
+      },
+      {
+        "path": "contracts/claims.schema.json",
+        "size": 202,
+        "mode": 420
+      },
+      {
+        "path": "contracts/components.schema.json",
+        "size": 365,
+        "mode": 420
+      },
+      {
+        "path": "contracts/conflicts.schema.json",
+        "size": 208,
+        "mode": 420
+      },
+      {
+        "path": "contracts/correction.schema.json",
+        "size": 1419,
+        "mode": 420
+      },
+      {
+        "path": "contracts/delivery-readiness.schema.json",
+        "size": 939,
+        "mode": 420
+      },
+      {
+        "path": "contracts/envelope-request.schema.json",
+        "size": 1176,
+        "mode": 420
+      },
+      {
+        "path": "contracts/envelope-response.schema.json",
+        "size": 738,
+        "mode": 420
+      },
+      {
+        "path": "contracts/evidence.schema.json",
+        "size": 206,
+        "mode": 420
+      },
+      {
+        "path": "contracts/grid-rules.schema.json",
+        "size": 351,
+        "mode": 420
+      },
+      {
+        "path": "contracts/host-analysis.schema.json",
+        "size": 6591,
+        "mode": 420
+      },
+      {
+        "path": "contracts/layout-rules.schema.json",
+        "size": 214,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/accept-artifacts.request.schema.json",
+        "size": 674,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/capabilities.request.schema.json",
+        "size": 358,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/compare-design-candidates.request.schema.json",
+        "size": 1214,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/compare-design-releases.request.schema.json",
+        "size": 525,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/compile-design-ir.request.schema.json",
+        "size": 397,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/compile-portable-product-ui.request.schema.json",
+        "size": 488,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/create-design-release.request.schema.json",
+        "size": 868,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/generate-faithful-reconstruction.request.schema.json",
+        "size": 489,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/generate-realization.request.schema.json",
+        "size": 1105,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/generate-target-adaptation.request.schema.json",
+        "size": 488,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/import-design-owner-decision.request.schema.json",
+        "size": 640,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/parse-design-md.request.schema.json",
+        "size": 375,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/prepare-analysis.request.schema.json",
+        "size": 566,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/prepare-visual-recovery.request.schema.json",
+        "size": 1411,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/render-design-preview.request.schema.json",
+        "size": 437,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/rollback-design-release.request.schema.json",
+        "size": 493,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/rollback-package.request.schema.json",
+        "size": 733,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/submit-analysis.request.schema.json",
+        "size": 614,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/submit-correction.request.schema.json",
+        "size": 739,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/submit-visual-observations.request.schema.json",
+        "size": 1001,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/validate-design-release.request.schema.json",
+        "size": 525,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/validate-design.request.schema.json",
+        "size": 1322,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/validate-package.request.schema.json",
+        "size": 420,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/verify-fidelity.request.schema.json",
+        "size": 432,
+        "mode": 420
+      },
+      {
+        "path": "contracts/operations/verify-source-fidelity.request.schema.json",
+        "size": 2126,
+        "mode": 420
+      },
+      {
+        "path": "contracts/owner-decision.schema.json",
+        "size": 791,
+        "mode": 420
+      },
+      {
+        "path": "contracts/package-lineage.schema.json",
+        "size": 825,
+        "mode": 420
+      },
+      {
+        "path": "contracts/portable-system.schema.json",
+        "size": 617,
+        "mode": 420
+      },
+      {
+        "path": "contracts/preview-coverage.schema.json",
+        "size": 932,
+        "mode": 420
+      },
+      {
+        "path": "contracts/product-ui-host-analysis.schema.json",
+        "size": 12363,
+        "mode": 420
+      },
+      {
+        "path": "contracts/product-ui-screen-region.schema.json",
+        "size": 2537,
+        "mode": 420
+      },
+      {
+        "path": "contracts/product-ui-visual-measurement.schema.json",
+        "size": 1401,
+        "mode": 420
+      },
+      {
+        "path": "contracts/product-ui-visual-observations.schema.json",
+        "size": 8231,
+        "mode": 420
+      },
+      {
+        "path": "contracts/release-manifest.schema.json",
+        "size": 439,
+        "mode": 420
+      },
+      {
+        "path": "contracts/rollback-decision.schema.json",
+        "size": 732,
+        "mode": 420
+      },
+      {
+        "path": "contracts/source-distance.schema.json",
+        "size": 643,
+        "mode": 420
+      },
+      {
+        "path": "contracts/source-observation.schema.json",
+        "size": 1056,
+        "mode": 420
+      },
+      {
+        "path": "contracts/tokens.schema.json",
+        "size": 332,
+        "mode": 420
+      },
+      {
+        "path": "contracts/visual-grammar.schema.json",
+        "size": 218,
+        "mode": 420
+      },
+      {
+        "path": "fidelity/README.md",
+        "size": 207,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/interop/host-analysis.fixture.json",
+        "size": 1893,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/interop/README.md",
+        "size": 687,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/interop/sanitized-analysis-fixture.svg",
+        "size": 467,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/r006/url-complete.json",
+        "size": 918,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/r006/url-partial.json",
+        "size": 351,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/r006/url-stale.json",
+        "size": 290,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/r012/installed-qualification/design.md",
+        "size": 6492,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/r013/holdout-kanban/design-intelligence.json",
+        "size": 3937,
+        "mode": 420
+      },
+      {
+        "path": "fixtures/r013/holdout-kanban/README.md",
+        "size": 337,
+        "mode": 420
+      },
+      {
+        "path": "manifest.json",
+        "size": 2541,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 6025,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/index.mjs",
+        "size": 944,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/package.json",
+        "size": 314,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/browser-evidence.schema.json",
+        "size": 2547,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/candidate-comparison.schema.json",
+        "size": 3359,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/design-document.schema.json",
+        "size": 12155,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/design-intelligence.schema.json",
+        "size": 9618,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/design-ir.schema.json",
+        "size": 2947,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/gate-reports.schema.json",
+        "size": 5799,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/governance.schema.json",
+        "size": 7422,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/preview-integrity.schema.json",
+        "size": 1871,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/release-diff.schema.json",
+        "size": 619,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/schemas/source-fidelity-artifacts.schema.json",
+        "size": 12647,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/src/compatibility.mjs",
+        "size": 1565,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/src/compiler.mjs",
+        "size": 4933,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/src/consumer.mjs",
+        "size": 5063,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/src/parser.mjs",
+        "size": 2964,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/src/schema_runtime.mjs",
+        "size": 5356,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/src/schema.mjs",
+        "size": 622,
+        "mode": 420
+      },
+      {
+        "path": "packages/recrafts-design/types.d.ts",
+        "size": 6066,
+        "mode": 420
+      },
+      {
+        "path": "prompts/correction-loop.md",
+        "size": 207,
+        "mode": 420
+      },
+      {
+        "path": "prompts/design-contract-builder.md",
+        "size": 242,
+        "mode": 420
+      },
+      {
+        "path": "prompts/interaction-guide.md",
+        "size": 209,
+        "mode": 420
+      },
+      {
+        "path": "prompts/preview-review.md",
+        "size": 192,
+        "mode": 420
+      },
+      {
+        "path": "prompts/primary-visual-analysis.md",
+        "size": 828,
+        "mode": 420
+      },
+      {
+        "path": "prompts/r010-source-neutral-host-analysis.md",
+        "size": 1945,
+        "mode": 420
+      },
+      {
+        "path": "prompts/source-classification.md",
+        "size": 265,
+        "mode": 420
+      },
+      {
+        "path": "realization/component_renderer.mjs",
+        "size": 616,
+        "mode": 420
+      },
+      {
+        "path": "realization/fidelity_runtime.mjs",
+        "size": 10302,
+        "mode": 420
+      },
+      {
+        "path": "realization/package_loader.mjs",
+        "size": 958,
+        "mode": 420
+      },
+      {
+        "path": "realization/preflight.mjs",
+        "size": 1122,
+        "mode": 420
+      },
+      {
+        "path": "realization/realization_runtime.mjs",
+        "size": 6499,
+        "mode": 420
+      },
+      {
+        "path": "realization/render_component_gallery.mjs",
+        "size": 8869,
+        "mode": 420
+      },
+      {
+        "path": "realization/render_runtime_assets.mjs",
+        "size": 14547,
+        "mode": 420
+      },
+      {
+        "path": "realization/render_system_board.mjs",
+        "size": 8803,
+        "mode": 420
+      },
+      {
+        "path": "realization/render_workbench.mjs",
+        "size": 6748,
+        "mode": 420
+      },
+      {
+        "path": "realization/source_neutral_realization.mjs",
+        "size": 3275,
+        "mode": 420
+      },
+      {
+        "path": "realization/surface_composer.mjs",
+        "size": 586,
+        "mode": 420
+      },
+      {
+        "path": "realization/token_compiler.mjs",
+        "size": 867,
+        "mode": 420
+      },
+      {
+        "path": "runtime/acceptance_finalization.mjs",
+        "size": 4575,
+        "mode": 420
+      },
+      {
+        "path": "runtime/agent_contract.mjs",
+        "size": 1965,
+        "mode": 420
+      },
+      {
+        "path": "runtime/analysis_exchange.mjs",
+        "size": 13644,
+        "mode": 420
+      },
+      {
+        "path": "runtime/analysis_input_audit.mjs",
+        "size": 2156,
+        "mode": 420
+      },
+      {
+        "path": "runtime/browser_capture_cli.mjs",
+        "size": 759,
+        "mode": 420
+      },
+      {
+        "path": "runtime/browser_capture.mjs",
+        "size": 10626,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_coherence_gate.mjs",
+        "size": 13528,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_compare.mjs",
+        "size": 5453,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_fidelity_gate.mjs",
+        "size": 10019,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_governance.mjs",
+        "size": 1142,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_intelligence.mjs",
+        "size": 11458,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_owner_decision.mjs",
+        "size": 4703,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_preview_renderer.mjs",
+        "size": 14300,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_qualification.mjs",
+        "size": 3257,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_release_store.mjs",
+        "size": 15141,
+        "mode": 420
+      },
+      {
+        "path": "runtime/design_system_runtime.mjs",
+        "size": 14859,
+        "mode": 420
+      },
+      {
+        "path": "runtime/evidence_truth.mjs",
+        "size": 25333,
+        "mode": 420
+      },
+      {
+        "path": "runtime/extraction_runtime.mjs",
+        "size": 23769,
+        "mode": 420
+      },
+      {
+        "path": "runtime/identity_safety.mjs",
+        "size": 3408,
+        "mode": 420
+      },
+      {
+        "path": "runtime/interop_cli.mjs",
+        "size": 956,
+        "mode": 493
+      },
+      {
+        "path": "runtime/interop_contract.mjs",
+        "size": 6818,
+        "mode": 420
+      },
+      {
+        "path": "runtime/interop_operations.mjs",
+        "size": 20881,
+        "mode": 420
+      },
+      {
+        "path": "runtime/local_adapter.mjs",
+        "size": 521,
+        "mode": 420
+      },
+      {
+        "path": "runtime/owner_decision_import.mjs",
+        "size": 4231,
+        "mode": 420
+      },
+      {
+        "path": "runtime/package_evolution.mjs",
+        "size": 29244,
+        "mode": 420
+      },
+      {
+        "path": "runtime/path_security.mjs",
+        "size": 3770,
+        "mode": 420
+      },
+      {
+        "path": "runtime/preview_accessibility.mjs",
+        "size": 4595,
+        "mode": 420
+      },
+      {
+        "path": "runtime/product_ui_contract.mjs",
+        "size": 38977,
+        "mode": 420
+      },
+      {
+        "path": "runtime/r006_validation.mjs",
+        "size": 3315,
+        "mode": 420
+      },
+      {
+        "path": "runtime/r007_validation.mjs",
+        "size": 5442,
+        "mode": 420
+      },
+      {
+        "path": "runtime/r012_linux_evidence.mjs",
+        "size": 3062,
+        "mode": 420
+      },
+      {
+        "path": "runtime/recraft-cli.mjs",
+        "size": 1436,
+        "mode": 420
+      },
+      {
+        "path": "runtime/schema_validator.mjs",
+        "size": 3025,
+        "mode": 420
+      },
+      {
+        "path": "runtime/skill_core.mjs",
+        "size": 74,
+        "mode": 420
+      },
+      {
+        "path": "runtime/source_distance.mjs",
+        "size": 2157,
+        "mode": 420
+      },
+      {
+        "path": "runtime/source_neutral_contract.mjs",
+        "size": 4501,
+        "mode": 420
+      },
+      {
+        "path": "runtime/source_neutral_fidelity.mjs",
+        "size": 1656,
+        "mode": 420
+      },
+      {
+        "path": "runtime/visual_recovery_a.mjs",
+        "size": 24948,
+        "mode": 420
+      },
+      {
+        "path": "schemas/artifact-decision-record.schema.json",
+        "size": 245,
+        "mode": 420
+      },
+      {
+        "path": "schemas/artifact-set-record.schema.json",
+        "size": 229,
+        "mode": 420
+      },
+      {
+        "path": "schemas/claim-record.schema.json",
+        "size": 666,
+        "mode": 420
+      },
+      {
+        "path": "schemas/components.schema.json",
+        "size": 333,
+        "mode": 420
+      },
+      {
+        "path": "schemas/conflict-record.schema.json",
+        "size": 982,
+        "mode": 420
+      },
+      {
+        "path": "schemas/correction-event.schema.json",
+        "size": 265,
+        "mode": 420
+      },
+      {
+        "path": "schemas/design-contract.schema.json",
+        "size": 428,
+        "mode": 420
+      },
+      {
+        "path": "schemas/evidence-map.schema.json",
+        "size": 393,
+        "mode": 420
+      },
+      {
+        "path": "schemas/evidence-record.schema.json",
+        "size": 900,
+        "mode": 420
+      },
+      {
+        "path": "schemas/extraction-output.schema.json",
+        "size": 852,
+        "mode": 420
+      },
+      {
+        "path": "schemas/input.schema.json",
+        "size": 519,
+        "mode": 420
+      },
+      {
+        "path": "schemas/output.schema.json",
+        "size": 590,
+        "mode": 420
+      },
+      {
+        "path": "schemas/package-lineage-event.schema.json",
+        "size": 251,
+        "mode": 420
+      },
+      {
+        "path": "schemas/product-ui-screen-region.schema.json",
+        "size": 1688,
+        "mode": 420
+      },
+      {
+        "path": "schemas/realization-package.schema.json",
+        "size": 679,
+        "mode": 420
+      },
+      {
+        "path": "schemas/realization-readiness.schema.json",
+        "size": 470,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/candidate-comparison.schema.json",
+        "size": 212,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/candidate-revision.schema.json",
+        "size": 217,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/decision-revision.schema.json",
+        "size": 227,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/design-coherence-report.schema.json",
+        "size": 220,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/design-front-matter.schema.json",
+        "size": 225,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/design-intelligence.schema.json",
+        "size": 210,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/design-ir.schema.json",
+        "size": 190,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/design-release.schema.json",
+        "size": 217,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/evidence-revision.schema.json",
+        "size": 223,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/preview-integrity.schema.json",
+        "size": 206,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/release-diff.schema.json",
+        "size": 196,
+        "mode": 420
+      },
+      {
+        "path": "schemas/recrafts-design-v1/source-fidelity-report.schema.json",
+        "size": 219,
+        "mode": 420
+      },
+      {
+        "path": "schemas/rollback-event.schema.json",
+        "size": 274,
+        "mode": 420
+      },
+      {
+        "path": "schemas/source-manifest.schema.json",
+        "size": 689,
+        "mode": 420
+      },
+      {
+        "path": "schemas/validation-report.schema.json",
+        "size": 304,
+        "mode": 420
+      },
+      {
+        "path": "scripts/build-extraction-quality-summary.mjs",
+        "size": 2919,
+        "mode": 420
+      },
+      {
+        "path": "scripts/build-r012-review-bundle.mjs",
+        "size": 4077,
+        "mode": 420
+      },
+      {
+        "path": "scripts/build-r013-review-bundle.mjs",
+        "size": 1972,
+        "mode": 420
+      },
+      {
+        "path": "scripts/capture-r012-preview-evidence.mjs",
+        "size": 4449,
+        "mode": 420
+      },
+      {
+        "path": "scripts/check-r003-token-compliance.mjs",
+        "size": 1846,
+        "mode": 420
+      },
+      {
+        "path": "scripts/compare-r002-normalized-output.mjs",
+        "size": 1432,
+        "mode": 420
+      },
+      {
+        "path": "scripts/create-r011-host-analysis.mjs",
+        "size": 27246,
+        "mode": 420
+      },
+      {
+        "path": "scripts/create-r011r-a-observations.mjs",
+        "size": 24552,
+        "mode": 420
+      },
+      {
+        "path": "scripts/generate-r011-previews.mjs",
+        "size": 23732,
+        "mode": 420
+      },
+      {
+        "path": "scripts/package-smoke.mjs",
+        "size": 854,
+        "mode": 420
+      },
+      {
+        "path": "scripts/r012-installed-consumer-smoke.mjs",
+        "size": 10335,
+        "mode": 420
+      },
+      {
+        "path": "scripts/run-r003-preflight.mjs",
+        "size": 1385,
+        "mode": 420
+      },
+      {
+        "path": "scripts/run-r011-product-ui.mjs",
+        "size": 1452,
+        "mode": 420
+      },
+      {
+        "path": "scripts/run-r011r-a.mjs",
+        "size": 2708,
+        "mode": 420
+      },
+      {
+        "path": "scripts/run-r012-linux-qualification.mjs",
+        "size": 2773,
+        "mode": 420
+      },
+      {
+        "path": "scripts/run-r012-v2.mjs",
+        "size": 5511,
+        "mode": 420
+      },
+      {
+        "path": "scripts/run-r013-darwin-qualification.mjs",
+        "size": 4505,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-acceptance-finalization.mjs",
+        "size": 845,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-agent-contract.mjs",
+        "size": 562,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-application-grammar.mjs",
+        "size": 661,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-component-recurrence.mjs",
+        "size": 718,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-evidence-weighting.mjs",
+        "size": 401,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-identity-safety.mjs",
+        "size": 634,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-preview-accessibility.mjs",
+        "size": 696,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-preview-coverage.mjs",
+        "size": 575,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-product-preview-coverage.mjs",
+        "size": 666,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-product-ui-source-distance.mjs",
+        "size": 523,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-product-ui-source-scope.mjs",
+        "size": 662,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r002-mvp-extraction.mjs",
+        "size": 7196,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r003-preflight.mjs",
+        "size": 2100,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r003-realization.mjs",
+        "size": 5137,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r004-fidelity.mjs",
+        "size": 4136,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r006-conflicts.mjs",
+        "size": 244,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r006-domain-provenance.mjs",
+        "size": 240,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r006-evidence-truth.mjs",
+        "size": 186,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r006-url-lifecycle.mjs",
+        "size": 681,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r007-acceptance.mjs",
+        "size": 272,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r007-corrections.mjs",
+        "size": 248,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r007-lineage.mjs",
+        "size": 252,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r007-rollback.mjs",
+        "size": 286,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r011-product-ui.mjs",
+        "size": 3202,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r011r-a.mjs",
+        "size": 7839,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r012-linux-evidence.mjs",
+        "size": 378,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r012-review-bundle.mjs",
+        "size": 1337,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r012-v2.mjs",
+        "size": 1997,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r013-review-bundle.mjs",
+        "size": 1656,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-r013.mjs",
+        "size": 1109,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-source-distance.mjs",
+        "size": 567,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-source-neutral-contract.mjs",
+        "size": 1107,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-source-observed-token-coverage.mjs",
+        "size": 446,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-state-aware-color.mjs",
+        "size": 400,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-state-matrix.mjs",
+        "size": 640,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-tier-a-region-coverage.mjs",
+        "size": 475,
+        "mode": 420
+      },
+      {
+        "path": "scripts/validate-visual-measurement-coverage.mjs",
+        "size": 455,
+        "mode": 420
+      },
+      {
+        "path": "skill_manifest.json",
+        "size": 1782,
+        "mode": 420
+      },
+      {
+        "path": "templates/component-spec.md",
+        "size": 86,
+        "mode": 420
+      },
+      {
+        "path": "templates/design.md",
+        "size": 402,
+        "mode": 420
+      },
+      {
+        "path": "templates/evidence-map.json",
+        "size": 34,
+        "mode": 420
+      },
+      {
+        "path": "templates/source-manifest.json",
+        "size": 33,
+        "mode": 420
+      },
+      {
+        "path": "templates/validation-report.md",
+        "size": 112,
+        "mode": 420
+      }
+    ],
+    "entryCount": 233,
+    "bundled": []
+  }
+]
