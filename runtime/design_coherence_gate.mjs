@@ -77,11 +77,11 @@ export async function evaluateDesignCoherence({ candidate, designSource, preview
     }
     if (productionGate) {
       // Production gate: empty tokens → FAIL
-      const hasAnyToken = browserEvidence && browserEvidence.computed_styles && 
+      const hasAnyToken = browserEvidence && browserEvidence.computed_styles &&
         Object.values(browserEvidence.computed_styles).some((vp) => vp && vp.root_tokens && Object.keys(vp.root_tokens).length > 0);
       if (!hasAnyToken) { browserEvidenceValid = false; }
       // Production gate: empty regions → FAIL
-      const hasAnyRegion = browserEvidence && browserEvidence.computed_styles && 
+      const hasAnyRegion = browserEvidence && browserEvidence.computed_styles &&
         Object.values(browserEvidence.computed_styles).some((vp) => vp && vp.regions && vp.regions.length > 0);
       if (!hasAnyRegion) { browserEvidenceValid = false; }
       // Production gate: verify PNG magic bytes

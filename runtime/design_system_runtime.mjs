@@ -55,7 +55,7 @@ export async function executeDesignOperation(request, workingRoot) {
     validateDesign(parseDesignMd(designSource));
     return { status: "completed", artifacts: [], validation: await evaluateDesignCoherence({ candidate, designSource, previewHtml, browserEvidence, browserEvidenceRoot, productionGate: true, designIntelligence, requireDesignIntelligence: input.qualification_profile === "r013-evidence-grounded" }) };
   }
-  
+
   if (request.operation === "verify-source-fidelity") {
     const candidateFile = await inputFile(input.candidate_file, workingRoot);
     const candidate = await readJson(candidateFile);
