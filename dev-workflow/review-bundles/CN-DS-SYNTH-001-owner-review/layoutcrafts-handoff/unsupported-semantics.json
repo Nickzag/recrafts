@@ -1,0 +1,12 @@
+{
+  "schema": "cn-ds-synth.unsupported-semantics/v1",
+  "items": [
+    { "semantic": "phone-topology", "required_action": "BLOCK" },
+    { "semantic": "tablet-topology", "required_action": "BLOCK" },
+    { "semantic": "exact-responsive-breakpoints", "required_action": "DEGRADED" },
+    { "semantic": "automatic-collapse-order", "required_action": "BLOCK" },
+    { "semantic": "dark-product-chrome", "required_action": "BLOCK" },
+    { "semantic": "error-state-visuals", "required_action": "BLOCK" },
+    { "semantic": "exact-font-shadow-motion", "required_action": "UNKNOWN" }
+  ]
+}

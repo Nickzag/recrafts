@@ -1,0 +1,9 @@
+{
+  "schema": "cn-ds-synth.layoutcrafts-compatibility/v1",
+  "candidate_id": "cn-ds-synth-001-canonical-candidate",
+  "status": "DEGRADED",
+  "supported_contracts": ["foundations", "desktop-compositions", "core-components", "states", "accessibility-semantics", "agent-rules"],
+  "degraded_contracts": ["responsive", "owner-visual-direction"],
+  "blocked_contracts": [],
+  "implementation_authorized": false
+}

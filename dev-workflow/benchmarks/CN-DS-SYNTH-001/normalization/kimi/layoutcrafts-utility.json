@@ -1,0 +1,23 @@
+{
+  "status": "UNQUALIFIED",
+  "historical_claim": {
+    "LAYOUTCRAFTS_UTILITY": "PASS",
+    "assessment": {
+      "token_completeness": "PASS — full neutral ramp (10 sampled surfaces), text ramp (4 levels), accent + 7-option palette, text-highlight palette, semantic tokens (updated/destructive/badges); dark palette explicitly UNKNOWN",
+      "component_anatomy": "PASS — 17 components with purpose/anatomy/variants/states/forbidden-combinations; inspector tab contents enumerated normatively (observed item lists)",
+      "state_completeness": "DEGRADED-OK — all observed states modeled (selected/toggle/swatch/pill/skeleton/empty/updated/modal/focus); hover/pressed/focus-visible honestly UNKNOWN",
+      "composition_rules": "PASS — Region topology R1–R6 with persistence, relationships, 5 layout rules, 3 collection densities + document layout",
+      "responsive_semantics": "DEGRADED-OK — only Mac desktop evidenced; sidebar-collapse focus mode is the single adaptive rule; other breakpoints marked UNKNOWN (no invention)",
+      "agent_rules": "PASS — 10 normative MUST rules incl. anti-generic-SaaS guardrails",
+      "unsupported_semantics": [
+        "dark appearance palette",
+        "Tasks/Calendar surfaces",
+        "hover/focus states",
+        "mobile/web breakpoints",
+        "search results UI"
+      ],
+      "remaining_ambiguity": "Exact radii/spacing scale are ranges, not point values; Layoutcrafts can implement within stated ranges without redesign"
+    },
+    "conclusion": "A downstream agent can implement a Craft-like interface (sidebar+toolbar+3 collection densities+editor+4-tab inspector+modals) without re-reading screenshots. Gaps are bounded, enumerated, and never silently filled with generic patterns."
+  }
+}

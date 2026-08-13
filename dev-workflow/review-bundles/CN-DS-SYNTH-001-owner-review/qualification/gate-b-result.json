@@ -1,0 +1,29 @@
+{
+  "schema": "recrafts.design-coherence-report/v2",
+  "verdict": "PASS",
+  "candidate_revision": "cn-ds-synth-001-canonical-candidate",
+  "evidence_revision": "E-CN-DS-SYNTH-001",
+  "design_sha256": "72b7d6b754c491bad37c23b4c1c43b6d623058436ccea7f0763804814fca5aa3",
+  "preview_artifact_sha256": "5915dff33298ae66ca55158b4656903494562bcfc988aad4c2b0ccfe0476c381",
+  "checks": {
+    "schema_and_ir": "PASS",
+    "critical_token_coverage": "PASS",
+    "component_visual_contracts": "PASS",
+    "state_coverage": "PASS",
+    "composition_grammar": "PASS",
+    "responsive_validity": "PASS",
+    "accessibility": "PASS",
+    "unknown_governance": "PASS",
+    "agent_rules": "PASS",
+    "forbidden_patterns": "PASS",
+    "preview_integrity": "PASS",
+    "browser_bound_visual": "PASS",
+    "preview_visual_coverage": "PASS",
+    "candidate_binding": "PASS"
+  },
+  "failures": [],
+  "proves_source_fidelity": false,
+  "production_gate": true,
+  "browser_evidence_sha256": null,
+  "report_sha256": "d725a7564403d687118269e5039db773e48f43cc76540b064ffeb866b13600db"
+}

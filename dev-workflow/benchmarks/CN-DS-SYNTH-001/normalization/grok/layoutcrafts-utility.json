@@ -1,0 +1,25 @@
+{
+  "status": "PENDING_COMMON_UTILITY_CHECK",
+  "historical_claim": {
+    "LAYOUTCRAFTS_UTILITY": "DEGRADED",
+    "token_completeness": "PASS",
+    "component_anatomy": "PASS",
+    "state_completeness": "PASS",
+    "composition_rules": "PASS",
+    "responsive_semantics": "DEGRADED — compact/mobile inferred from desktop collapse only",
+    "agent_rules": "PASS",
+    "unsupported_semantics": [
+      "dark product chrome",
+      "hover",
+      "Tasks and Calendar screens",
+      "true mobile chrome",
+      "pixel-faithful reconstruction"
+    ],
+    "remaining_ambiguity": [
+      "Layoutcrafts must not invent a phone tab bar",
+      "Inspector width resize is unknown",
+      "Document style-to-app-chrome coupling is unknown"
+    ],
+    "note": "Usable for a Craft-like desktop shell if unknowns stay unknown. Not sufficient to clone screenshot pixels."
+  }
+}

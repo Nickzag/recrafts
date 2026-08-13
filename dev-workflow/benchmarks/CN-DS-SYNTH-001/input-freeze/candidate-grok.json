@@ -1,0 +1,11 @@
+{
+  "candidate_id": "CN-DS-BENCH-001-GROK",
+  "source_bundle": "candidates/CN-DS-BENCH-001-GROK-complete.zip",
+  "bundle_sha256": "aa755847165d2a13570fff8ee4a1ddd59360f6e61bb865a1196fe359383cb49e",
+  "design_md_path": "CN-DS-BENCH-001-GROK/candidate/design.md",
+  "design_md_sha256": "0d6af543c075d9f41157a59fa8bfe95def6593388ace2779310ea92c1820528e",
+  "preview_html_sha256": "91c445455feefe132831aa9746b2be7a8e452dda5f7b7d379288406e3926fd70",
+  "candidate_artifact_sha256": "152245e7d37b2730f18dc47122bb9e92bd54081f8c6b9207096e817a19a09ae5",
+  "frozen": true,
+  "mutable": false
+}

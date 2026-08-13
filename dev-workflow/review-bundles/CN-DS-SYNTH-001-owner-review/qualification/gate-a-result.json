@@ -1,0 +1,35 @@
+{
+  "schema": "cn-ds-synth.source-fidelity-checklist/v1",
+  "verdict": "PASS",
+  "candidate_revision": "cn-ds-synth-001-canonical-candidate",
+  "evidence_revision": "E-CN-DS-SYNTH-001",
+  "design_sha256": "72b7d6b754c491bad37c23b4c1c43b6d623058436ccea7f0763804814fca5aa3",
+  "method": "Shared Mainline rule-fidelity checklist against the frozen 13-screenshot Tier-A Source Pack; preview.html is excluded as Source Fidelity evidence.",
+  "checks": {
+    "source_pack_exact_set": "PASS",
+    "application_topology": "PASS",
+    "sidebar_geometry_range": "PASS",
+    "workspace_geometry": "PASS",
+    "inspector_geometry_range": "PASS",
+    "modal_behavior": "PASS",
+    "all_docs_projections": "PASS",
+    "inspector_modes": "PASS",
+    "settings_anatomy": "PASS",
+    "selected_states": "PASS",
+    "loading_and_empty_states": "PASS",
+    "accent_role": "PASS",
+    "destructive_role": "PASS",
+    "content_chrome_isolation": "PASS",
+    "unsupported_unknown_governance": "PASS"
+  },
+  "evidence": {
+    "source_hash_manifest": "../input-freeze/source-pack-sha256.json",
+    "source_fidelity_matrix": "../normalization/source-fidelity-matrix.md",
+    "decision_ledger": "../decision-ledger.md"
+  },
+  "limitations": [
+    "This checklist proves rule-level fidelity, not pixel cloning.",
+    "Phone/tablet topology and exact responsive breakpoints remain unknown.",
+    "Exact typography files, shadow recipes and motion timing remain unknown."
+  ]
+}

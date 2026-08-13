@@ -1,0 +1,9 @@
+{
+  "status": "PENDING_COMMON_BROWSER_EVIDENCE",
+  "reason": "Parse and compile passed; common browser-bound Gate B remains pending.",
+  "historical_input_only": {
+    "verdict": "FAIL"
+  },
+  "parse_status": "completed",
+  "compile_status": "completed"
+}

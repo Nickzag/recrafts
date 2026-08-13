@@ -1,0 +1,1 @@
+72b7d6b754c491bad37c23b4c1c43b6d623058436ccea7f0763804814fca5aa3  canonical-candidate/design.md

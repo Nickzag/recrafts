@@ -1,0 +1,11 @@
+{
+  "candidate_id": "CN-DS-BENCH-001-KIMI",
+  "source_bundle": "candidates/CN-DS-BENCH-001-KIMI.zip",
+  "bundle_sha256": "792d0dfa9ccb2d9e1753661b43e60845ad21ae9e7a86aa27c68c5dac79ae97a3",
+  "design_md_path": "CN-DS-BENCH-001-KIMI/candidate/design.md",
+  "design_md_sha256": "aaeaad0f3861b66f76160b781ac03d3555b5b1616a1210c946f5e261297c3faf",
+  "preview_html_sha256": "5670dc919af27beddbfa55852738278d69ddc871e07dbbda612112510a4fb9f4",
+  "candidate_artifact_sha256": "091bdb7e40b912ce2a44d9edc4d4a36c4987eee8d0886132cb41f64572666f57",
+  "frozen": true,
+  "mutable": false
+}

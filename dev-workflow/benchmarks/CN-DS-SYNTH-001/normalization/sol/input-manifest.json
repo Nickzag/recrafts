@@ -1,0 +1,8 @@
+{
+  "schema": "cn-ds-synth.normalization-input/v1",
+  "candidate": "sol",
+  "source_bundle_sha256": "71ce490e52581e7f9834e8da22953a557139c857ce72876960097100111416a8",
+  "design_md_sha256": "f9868c165dc80d7d8ede71588013ba8b8628a85a0d26d9419afca0a519fb3876",
+  "runtime_sha256": "da0ba9ee4012028d55e7e975140fabf7705b59a624b6b085d339dac77636efcf",
+  "mutated": false
+}

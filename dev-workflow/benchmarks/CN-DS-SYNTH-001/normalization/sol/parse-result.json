@@ -1,0 +1,30 @@
+{
+  "exit_code": 1,
+  "response": {
+    "protocol_version": "1.2",
+    "request_id": "synth-sol-parse-design-md",
+    "operation": "parse-design-md",
+    "status": "failed",
+    "host_handshake": {
+      "required_capabilities": [
+        "files"
+      ],
+      "provided_capabilities": [
+        "files",
+        "structured-output"
+      ],
+      "missing_required": [],
+      "host_agent": "codex",
+      "host_engine": "node"
+    },
+    "host_action": null,
+    "artifacts": [],
+    "validation": {},
+    "warnings": [],
+    "error": {
+      "code": "INTERNAL_ERROR",
+      "message": "Internal operation failure"
+    }
+  },
+  "stderr": ""
+}

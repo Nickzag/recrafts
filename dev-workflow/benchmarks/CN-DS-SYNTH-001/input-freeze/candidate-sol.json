@@ -1,0 +1,11 @@
+{
+  "candidate_id": "CN-DS-BENCH-001-SOL",
+  "source_bundle": "candidates/CN-DS-BENCH-001-SOL-Trinity-Evaluation.zip",
+  "bundle_sha256": "71ce490e52581e7f9834e8da22953a557139c857ce72876960097100111416a8",
+  "design_md_path": "CN-DS-BENCH-001-SOL/candidate/design.md",
+  "design_md_sha256": "f9868c165dc80d7d8ede71588013ba8b8628a85a0d26d9419afca0a519fb3876",
+  "preview_html_sha256": "c024e40f3df63ae90bf5fb5676080db48005b869c70de2c5b906fb6bc0c49a67",
+  "candidate_artifact_sha256": "7a4d54a5731c859bb92b9295c91a956a70f6f47720cd81788129228fffb8b998",
+  "frozen": true,
+  "mutable": false
+}

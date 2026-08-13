@@ -1,0 +1,10 @@
+{
+  "id": "cn-ds-synth-001-canonical-candidate",
+  "status": "candidate",
+  "agent_usable": false,
+  "evidence_revision": "E-CN-DS-SYNTH-001",
+  "design_sha256": "72b7d6b754c491bad37c23b4c1c43b6d623058436ccea7f0763804814fca5aa3",
+  "preview_sha256": "969d21ba5f01e3c0ec9fc3581b1891103967a536b6228800abffe7db6df74728",
+  "target_lock": "craft-product-grammar-v1",
+  "generated_by": "codex-cn-ds-synth-001"
+}

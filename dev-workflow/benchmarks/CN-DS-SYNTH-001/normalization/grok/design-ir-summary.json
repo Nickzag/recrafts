@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "schema": "recrafts.design-ir/v1",
+  "design_system": {
+    "id": "crafts-notes-interface",
+    "name": "Craft Notes Product Interface",
+    "version": "0.1.0",
+    "status": "candidate",
+    "release_id": null,
+    "parent_release": null,
+    "evidence_revision": "E1",
+    "decision_revision": null,
+    "derived_from": [
+      "S01-all-docs-cards",
+      "S02-all-docs-list",
+      "S03-all-docs-dense-grid",
+      "S04-document-insert",
+      "S05-document-format",
+      "S06-document-style",
+      "S07-style-gallery-modal",
+      "S08-document-info",
+      "S09-imagine-empty",
+      "S10-settings-appearance",
+      "S11-settings-about-plan",
+      "S12-document-focus",
+      "S13-shared-empty"
+    ],
+    "confidence": {
+      "overall": 0.73
+    }
+  },
+  "token_count": 19,
+  "component_count": 12,
+  "state_count": 7,
+  "composition_count": 4
+}

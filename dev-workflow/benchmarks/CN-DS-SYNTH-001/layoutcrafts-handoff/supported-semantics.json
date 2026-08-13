@@ -1,0 +1,19 @@
+{
+  "schema": "cn-ds-synth.supported-semantics/v1",
+  "items": [
+    "quiet-light-neutral-shell",
+    "white-work-surfaces",
+    "graphite-primary-ink",
+    "interaction-only-blue-accent",
+    "neutral-sidebar-selection",
+    "semantic-destructive-action",
+    "left-workspace-optional-inspector-topology",
+    "document-projection-card-dense-list",
+    "inspector-insert-format-style-info",
+    "settings-separate-information-architecture",
+    "bounded-modal-layer",
+    "desktop-focus-composition",
+    "empty-and-loading-state-separation",
+    "content-chrome-isolation"
+  ]
+}

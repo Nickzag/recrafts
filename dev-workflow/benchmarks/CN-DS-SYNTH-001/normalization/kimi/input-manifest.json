@@ -1,0 +1,8 @@
+{
+  "schema": "cn-ds-synth.normalization-input/v1",
+  "candidate": "kimi",
+  "source_bundle_sha256": "792d0dfa9ccb2d9e1753661b43e60845ad21ae9e7a86aa27c68c5dac79ae97a3",
+  "design_md_sha256": "aaeaad0f3861b66f76160b781ac03d3555b5b1616a1210c946f5e261297c3faf",
+  "runtime_sha256": "da0ba9ee4012028d55e7e975140fabf7705b59a624b6b085d339dac77636efcf",
+  "mutated": false
+}

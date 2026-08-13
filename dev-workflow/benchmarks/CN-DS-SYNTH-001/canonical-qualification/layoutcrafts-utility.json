@@ -1,0 +1,29 @@
+{
+  "schema": "cn-ds-synth.layoutcrafts-utility/v1",
+  "LAYOUTCRAFTS_UTILITY": "DEGRADED",
+  "candidate_revision": "cn-ds-synth-001-canonical-candidate",
+  "token_completeness": "PASS",
+  "component_anatomy": "PASS",
+  "state_completeness": "PASS",
+  "composition_rules": "PASS",
+  "agent_rules": "PASS",
+  "responsive_semantics": "DEGRADED",
+  "preview_visual_utility": "DEGRADED",
+  "blocking_semantics": [],
+  "unsupported_semantics": [
+    "phone and tablet topology",
+    "exact responsive breakpoints",
+    "automatic side-region collapse order",
+    "dark product chrome",
+    "error-state visual treatment",
+    "exact typography files",
+    "exact shadow and motion recipes"
+  ],
+  "remaining_ambiguity": [
+    "qualification viewport bands are not implementation authority",
+    "desktop focus mode does not establish responsive collapse order",
+    "frozen renderer proves machine coverage but remains visually schematic",
+    "Layoutcrafts must request Mainline resolution instead of inventing unsupported behavior"
+  ],
+  "verdict_reason": "Desktop application grammar, components, states and agent constraints are implementable. Responsive behavior and Owner-level visual direction remain bounded unknowns, so utility cannot be promoted to PASS."
+}

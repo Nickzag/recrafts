@@ -1,0 +1,18 @@
+{
+  "schema": "cn-ds-synth.normalization-authority/v1",
+  "task_id": "CN-DS-SYNTH-001",
+  "baseline_commit": "5ecf5f5e8f6a4514c91a955e48144aa086cb375c",
+  "baseline_remote_ref": "origin/recrafts/r-012-v2-canonical-design-system-governance",
+  "runtime_tarball_sha256": "da0ba9ee4012028d55e7e975140fabf7705b59a624b6b085d339dac77636efcf",
+  "runtime_package_version": "0.5.0-rc.1",
+  "protocol_version": "1.2",
+  "design_schema": "recrafts.design/v1",
+  "source_pack_manifest_sha256": "c89eece4848882a1a4e4f1233570a6f3ee71fb7407430d0b5ea542468d4e079a",
+  "cross_model_review_sha256": "07e000d899ce4ee3c58eede34b028866931f8bfee966513affef6d0209ec720b",
+  "candidate_bundle_sha256": {
+    "sol": "71ce490e52581e7f9834e8da22953a557139c857ce72876960097100111416a8",
+    "kimi": "792d0dfa9ccb2d9e1753661b43e60845ad21ae9e7a86aa27c68c5dac79ae97a3",
+    "grok": "aa755847165d2a13570fff8ee4a1ddd59360f6e61bb865a1196fe359383cb49e"
+  },
+  "retroactive_benchmark_repair": false
+}

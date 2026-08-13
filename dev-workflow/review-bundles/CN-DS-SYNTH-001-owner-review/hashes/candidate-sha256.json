@@ -1,0 +1,9 @@
+{
+  "schema": "cn-ds-synth.input-candidates/v1",
+  "input_zip_sha256": "48883397c896d7058fb99455d7af082d600638a1461ca468a7fcf4c4f55a7fc3",
+  "candidates": {
+    "sol": "71ce490e52581e7f9834e8da22953a557139c857ce72876960097100111416a8",
+    "kimi": "792d0dfa9ccb2d9e1753661b43e60845ad21ae9e7a86aa27c68c5dac79ae97a3",
+    "grok": "aa755847165d2a13570fff8ee4a1ddd59360f6e61bb865a1196fe359383cb49e"
+  }
+}

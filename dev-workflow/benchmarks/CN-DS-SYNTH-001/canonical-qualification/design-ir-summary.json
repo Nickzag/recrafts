@@ -1,0 +1,65 @@
+{
+  "schema": "recrafts.design-ir/v1",
+  "design_system": {
+    "id": "craft-product-grammar-canonical-candidate",
+    "name": "Craft Product Grammar Canonical Candidate",
+    "version": "0.2.0-synthesis",
+    "status": "candidate",
+    "release_id": null,
+    "parent_release": null,
+    "evidence_revision": "E-CN-DS-SYNTH-001",
+    "decision_revision": null,
+    "derived_from": [
+      "cn-ds-bench-001-sol-candidate",
+      "cn-ds-bench-001-kimi-candidate",
+      "cn-ds-bench-001-grok-candidate",
+      "cn-ds-synth-001-frozen-source-pack"
+    ],
+    "confidence": {
+      "overall": 0.87
+    }
+  },
+  "token_count": 21,
+  "component_ids": [
+    "component.sidebar-item",
+    "component.document-card",
+    "component.document-row",
+    "component.inspector-tab",
+    "component.insert-tile",
+    "component.style-chip",
+    "component.view-mode-control",
+    "component.format-control",
+    "component.style-control",
+    "component.info-panel",
+    "component.settings-row",
+    "component.loading-skeleton",
+    "component.page-title",
+    "component.modal-frame",
+    "component.empty-browse",
+    "component.toggle",
+    "component.assistant-entry",
+    "component.primary-button"
+  ],
+  "state_ids": [
+    "state.default",
+    "state.selected",
+    "state.placeholder",
+    "state.empty",
+    "state.on",
+    "state.disabled",
+    "state.destructive",
+    "state.loading"
+  ],
+  "composition_ids": [
+    "composition.browse-workspace",
+    "composition.document-workspace",
+    "composition.focus-document",
+    "composition.settings-workspace"
+  ],
+  "viewport_bands": [
+    "desktop",
+    "compact",
+    "mobile"
+  ],
+  "agent_usable": false
+}

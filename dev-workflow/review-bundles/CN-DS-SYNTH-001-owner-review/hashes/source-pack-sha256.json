@@ -1,0 +1,22 @@
+{
+  "schema": "cn-ds-synth.tier-a-source-pack/v1",
+  "source_pack_id": "CN-DS-BENCH-001-RECOVERED-SOURCE-PACK",
+  "screenshot_count": 13,
+  "triple_identity_verified": true,
+  "files": {
+    "Clipboard - 2026-07-11 23.55.28.png": "ec999ec0efe18235db822537f3ff51e53d071fd3a687f354a72033c8713237b4",
+    "Clipboard - 2026-07-11 23.55.40.png": "20d2f487a57dac1105de87d033116cbd480aec4d25e3bc7fa237a07b35f1d629",
+    "Clipboard - 2026-07-11 23.55.54.png": "8000a6adb15644ccd9b108dfc3d9f3f17785691a73c08aa4b7c94318cb0d123a",
+    "Clipboard - 2026-07-11 23.56.42.png": "91ee0e9aa0a7be47de3334544c49bf95b1ca14757e803c4875175500758f8c4b",
+    "Clipboard - 2026-07-11 23.57.17.png": "edf3a0ef62ac1ed6df2343b441eded9d1d85a50c4210ce6df0732f6159d9f684",
+    "Clipboard - 2026-07-11 23.57.59.png": "54710b9c2b331d9b080f5ab8caab7253b09ff6205f7277a90c2cad9e6c825faf",
+    "Clipboard - 2026-07-11 23.58.20.png": "f5f64172e0cefd99e45cd1fd9c53b24df3579e5a2532c87a01bf0aa8fd5f6ef2",
+    "Clipboard - 2026-07-11 23.58.53.png": "81aa947e7ad3ac5f7b26f34b3ce0c207288fed7104c4f1a92e9cd89b4b8296c1",
+    "Clipboard - 2026-07-11 23.59.22.png": "678001c90473490d27b6234d11c224e4a67e84ab590cc855b35553defd380af8",
+    "Clipboard - 2026-07-12 00.00.56.png": "55a7eb1101664c745d4b1e85ff7e328809070fa340244ee4e942b38df5bc0a8a",
+    "Clipboard - 2026-07-12 00.01.35.png": "d74e998c47d04a1dcb05b917b0a9ea3346a5aca753d9949f0cf9e8f80acfddb2",
+    "Clipboard - 2026-07-12 00.02.08.png": "1d955527d6fa099aa8e65685f8dc03fc4aa82f978847dd2c738304e48a4cb8fd",
+    "Clipboard - 2026-07-12 00.04.45.png": "fe6a2e31613123c309bab3c3bfedb5c5a5849c93d89f3f68dc04dd7fd2ee03f5"
+  },
+  "historical_boundary": "This recovered source pack is synthesis authority only and does not retroactively normalize the three benchmark runs."
+}

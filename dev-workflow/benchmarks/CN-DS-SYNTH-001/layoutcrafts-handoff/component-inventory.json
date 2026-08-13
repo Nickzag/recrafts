@@ -1,0 +1,303 @@
+{
+  "schema": "cn-ds-synth.component-inventory/v1",
+  "candidate_id": "cn-ds-synth-001-canonical-candidate",
+  "components": [
+    {
+      "id": "component.sidebar-item",
+      "role": "space or settings navigator row",
+      "maturity": "observed",
+      "variants": [
+        "surface",
+        "folder",
+        "tab"
+      ],
+      "states": [
+        "state.default",
+        "state.selected"
+      ],
+      "unknowns": [
+        "hover transition"
+      ]
+    },
+    {
+      "id": "component.document-card",
+      "role": "browsable document projection",
+      "maturity": "observed",
+      "variants": [
+        "comfortable",
+        "dense"
+      ],
+      "states": [
+        "state.default",
+        "state.empty"
+      ],
+      "unknowns": [
+        "exact elevation blur"
+      ]
+    },
+    {
+      "id": "component.document-row",
+      "role": "browsable document list row",
+      "maturity": "observed",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "state.default",
+        "state.selected"
+      ],
+      "unknowns": [
+        "hover transition"
+      ]
+    },
+    {
+      "id": "component.inspector-tab",
+      "role": "document tool mode switch",
+      "maturity": "observed",
+      "variants": [
+        "insert",
+        "format",
+        "style",
+        "info"
+      ],
+      "states": [
+        "state.default",
+        "state.selected"
+      ],
+      "unknowns": [
+        "keyboard wrap behavior"
+      ]
+    },
+    {
+      "id": "component.insert-tile",
+      "role": "block type to insert",
+      "maturity": "observed",
+      "variants": [
+        "suggested",
+        "rich",
+        "collection",
+        "nested",
+        "separator",
+        "media"
+      ],
+      "states": [
+        "state.default"
+      ],
+      "unknowns": [
+        "hover transition"
+      ]
+    },
+    {
+      "id": "component.style-chip",
+      "role": "compact format or style choice",
+      "maturity": "observed",
+      "variants": [
+        "text-role",
+        "group",
+        "font",
+        "separator"
+      ],
+      "states": [
+        "state.default",
+        "state.selected"
+      ],
+      "unknowns": [
+        "hover transition"
+      ]
+    },
+    {
+      "id": "component.view-mode-control",
+      "role": "switch one Document collection between card dense and list projections",
+      "maturity": "observed",
+      "variants": [
+        "three-projection"
+      ],
+      "states": [
+        "state.default",
+        "state.selected"
+      ],
+      "unknowns": [
+        "view control narrow-width placement"
+      ]
+    },
+    {
+      "id": "component.format-control",
+      "role": "block and content formatting inside the Format Inspector mode",
+      "maturity": "observed",
+      "variants": [
+        "text-role",
+        "emphasis",
+        "alignment",
+        "list",
+        "color",
+        "font"
+      ],
+      "states": [
+        "state.default",
+        "state.selected",
+        "state.disabled"
+      ],
+      "unknowns": [
+        "keyboard wrap behavior"
+      ]
+    },
+    {
+      "id": "component.style-control",
+      "role": "document-level visual theming inside the Style Inspector mode",
+      "maturity": "observed",
+      "variants": [
+        "original",
+        "tailored",
+        "gallery"
+      ],
+      "states": [
+        "state.default",
+        "state.selected"
+      ],
+      "unknowns": [
+        "document style to app chrome coupling"
+      ]
+    },
+    {
+      "id": "component.info-panel",
+      "role": "document metadata review actions and bounded document operations",
+      "maturity": "observed",
+      "variants": [
+        "page-info",
+        "actions"
+      ],
+      "states": [
+        "state.default",
+        "state.destructive"
+      ],
+      "unknowns": [
+        "destructive confirmation policy"
+      ]
+    },
+    {
+      "id": "component.settings-row",
+      "role": "labelled settings value or action row",
+      "maturity": "observed",
+      "variants": [
+        "toggle",
+        "choice",
+        "disclosure"
+      ],
+      "states": [
+        "state.default",
+        "state.selected",
+        "state.disabled"
+      ],
+      "unknowns": [
+        "settings narrow-width topology"
+      ]
+    },
+    {
+      "id": "component.loading-skeleton",
+      "role": "pending document collection projection",
+      "maturity": "observed",
+      "variants": [
+        "card-grid"
+      ],
+      "states": [
+        "state.loading"
+      ],
+      "unknowns": [
+        "loading duration"
+      ]
+    },
+    {
+      "id": "component.page-title",
+      "role": "document page title slot",
+      "maturity": "observed",
+      "variants": [
+        "named",
+        "placeholder"
+      ],
+      "states": [
+        "state.default",
+        "state.placeholder"
+      ],
+      "unknowns": [
+        "caret inside title"
+      ]
+    },
+    {
+      "id": "component.modal-frame",
+      "role": "blocking overlay dialog",
+      "maturity": "observed",
+      "variants": [
+        "style-gallery",
+        "plan"
+      ],
+      "states": [
+        "state.default"
+      ],
+      "unknowns": [
+        "motion of open and close"
+      ]
+    },
+    {
+      "id": "component.empty-browse",
+      "role": "empty document index",
+      "maturity": "observed",
+      "variants": [
+        "shared",
+        "folder"
+      ],
+      "states": [
+        "state.empty"
+      ],
+      "unknowns": [
+        "populated shared-document extras"
+      ]
+    },
+    {
+      "id": "component.toggle",
+      "role": "binary setting",
+      "maturity": "observed",
+      "variants": [
+        "settings",
+        "wide-page"
+      ],
+      "states": [
+        "state.default",
+        "state.on"
+      ],
+      "unknowns": [
+        "motion of the thumb"
+      ]
+    },
+    {
+      "id": "component.assistant-entry",
+      "role": "persistent assistant opener",
+      "maturity": "observed",
+      "variants": [
+        "corner"
+      ],
+      "states": [
+        "state.default"
+      ],
+      "unknowns": [
+        "open panel anatomy"
+      ]
+    },
+    {
+      "id": "component.primary-button",
+      "role": "high-emphasis action",
+      "maturity": "observed",
+      "variants": [
+        "filled",
+        "quiet"
+      ],
+      "states": [
+        "state.default",
+        "state.disabled",
+        "state.destructive"
+      ],
+      "unknowns": [
+        "hover transition"
+      ]
+    }
+  ]
+}

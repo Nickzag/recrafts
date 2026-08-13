@@ -1,0 +1,1709 @@
+{
+  "exit_code": 0,
+  "response": {
+    "protocol_version": "1.2",
+    "request_id": "synth-grok-compile-design-ir",
+    "operation": "compile-design-ir",
+    "status": "completed",
+    "host_handshake": {
+      "required_capabilities": [
+        "files",
+        "structured-output"
+      ],
+      "provided_capabilities": [
+        "files",
+        "structured-output"
+      ],
+      "missing_required": [],
+      "host_agent": "codex",
+      "host_engine": "node"
+    },
+    "host_action": null,
+    "artifacts": [],
+    "validation": {
+      "schema": "recrafts.design-ir/v1",
+      "generated_notice": "GENERATED · DO NOT EDIT · NOT AUTHORING SOURCE",
+      "authoring_source": "design.md",
+      "design_system": {
+        "id": "crafts-notes-interface",
+        "name": "Craft Notes Product Interface",
+        "version": "0.1.0",
+        "status": "candidate",
+        "release_id": null,
+        "parent_release": null,
+        "evidence_revision": "E1",
+        "decision_revision": null,
+        "derived_from": [
+          "S01-all-docs-cards",
+          "S02-all-docs-list",
+          "S03-all-docs-dense-grid",
+          "S04-document-insert",
+          "S05-document-format",
+          "S06-document-style",
+          "S07-style-gallery-modal",
+          "S08-document-info",
+          "S09-imagine-empty",
+          "S10-settings-appearance",
+          "S11-settings-about-plan",
+          "S12-document-focus",
+          "S13-shared-empty"
+        ],
+        "confidence": {
+          "overall": 0.73
+        }
+      },
+      "overview": "Quiet, document-first macOS product interface reconstructed from the user Craft screenshot pack. Organization happens on a pale gray field with white document projections (cards or rows). Writing happens on a white sheet that can reclaim the window when sidebar and inspector collapse. System accent is a restrained blue used for caret, toggles, and selected chips — not as a brand wash. Inspector is a four-mode contextual tool (Insert, Format, Style, Info), not a generic properties column. Settings uses a separate information architecture. Compact and mobile breakpoints are inferred only from observed collapse of sidebar/inspector; no phone or tablet screenshot exists. Document contents, marketing illustrations, style-preset photography, and pricing art are content, not chrome.",
+      "foundations": {
+        "color": [
+          {
+            "id": "color.surface",
+            "role": "application and browse field",
+            "value": "#f5f5f5",
+            "certainty": "measured",
+            "confidence": 0.94,
+            "source_relationship": "S01-S03 S13 canvas field; S02 list ground",
+            "usage": "browse index background, gaps around the writing sheet, settings body",
+            "forbidden_usage": "saturated marketing hero or dark unobserved chrome"
+          },
+          {
+            "id": "color.panel",
+            "role": "raised document or inspector surface",
+            "value": "#ffffff",
+            "certainty": "measured",
+            "confidence": 0.95,
+            "source_relationship": "S01 cards; S04-S08 inspector and writing sheet; S12 canvas",
+            "usage": "document canvas, cards, inspector, modals, selected nav pill",
+            "forbidden_usage": "full-window brand color"
+          },
+          {
+            "id": "color.sidebar",
+            "role": "space navigator ground",
+            "value": "#f2f2f2",
+            "certainty": "measured",
+            "confidence": 0.93,
+            "source_relationship": "S01 sidebar pixel sample x<480@2x",
+            "usage": "left space navigator and settings navigator",
+            "forbidden_usage": "writing sheet"
+          },
+          {
+            "id": "color.text",
+            "role": "primary readable text",
+            "value": "#1f2225",
+            "certainty": "measured",
+            "confidence": 0.94,
+            "source_relationship": "S01 card title pixels; S11 primary CTA fill matches this ink",
+            "usage": "titles, selected labels, primary buttons",
+            "forbidden_usage": "decorative fill on large fields"
+          },
+          {
+            "id": "color.text-muted",
+            "role": "secondary metadata",
+            "value": "#8a8b8d",
+            "certainty": "measured",
+            "confidence": 0.88,
+            "source_relationship": "S02 list subtitle/meta sample",
+            "usage": "timestamps, section captions, empty-state copy, inspector hints",
+            "forbidden_usage": "primary titles"
+          },
+          {
+            "id": "color.border",
+            "role": "hairline separator",
+            "value": "#e9e9e9",
+            "certainty": "measured",
+            "confidence": 0.86,
+            "source_relationship": "S02 list rule at y=206",
+            "usage": "list rows, inspector section rules",
+            "forbidden_usage": "emphasis outline"
+          },
+          {
+            "id": "color.accent",
+            "role": "system interactive accent",
+            "value": "#0087ff",
+            "certainty": "measured",
+            "confidence": 0.92,
+            "source_relationship": "S05 caret; S10 toggle on track",
+            "usage": "caret, toggle on, selected theme tile outline, block selection stroke",
+            "forbidden_usage": "large decorative surfaces or invented extra hues"
+          },
+          {
+            "id": "color.accent-soft",
+            "role": "selected chip wash",
+            "value": "#d5e2ee",
+            "certainty": "measured",
+            "confidence": 0.88,
+            "source_relationship": "S05 Title chip; S06 Line separator chip",
+            "usage": "selected format/style chips only",
+            "forbidden_usage": "browse card fill"
+          },
+          {
+            "id": "color.destructive",
+            "role": "irreversible action",
+            "value": "#fd3c67",
+            "certainty": "measured",
+            "confidence": 0.9,
+            "source_relationship": "S08 Delete label",
+            "usage": "delete and equivalent destructive text",
+            "forbidden_usage": "decoration or default CTA"
+          },
+          {
+            "id": "color.tile",
+            "role": "inset control well",
+            "value": "#f3f3f3",
+            "certainty": "measured",
+            "confidence": 0.84,
+            "source_relationship": "S04 insert tiles",
+            "usage": "insert tiles, quiet wells inside inspector",
+            "forbidden_usage": "primary canvas"
+          }
+        ],
+        "spacing": [
+          {
+            "id": "spacing.row",
+            "role": "compact control rhythm",
+            "value": "12px",
+            "range": [
+              "8px",
+              "16px"
+            ],
+            "certainty": "inferred",
+            "confidence": 0.7,
+            "source_relationship": "S02 row padding; S05 chip gaps",
+            "usage": "nav items, chips, list rows, tile padding",
+            "forbidden_usage": "section breaks"
+          },
+          {
+            "id": "spacing.section",
+            "role": "section and pane gap",
+            "value": "24px",
+            "range": [
+              "20px",
+              "32px"
+            ],
+            "certainty": "inferred",
+            "confidence": 0.72,
+            "source_relationship": "S01 date-group gaps; S04 pane gutters",
+            "usage": "composition gaps, date group spacing, inspector section stacks",
+            "forbidden_usage": "tight chip clusters"
+          },
+          {
+            "id": "spacing.sidebar",
+            "role": "navigator column width",
+            "value": "240px",
+            "certainty": "measured",
+            "confidence": 0.9,
+            "source_relationship": "S01 sidebar edge ~480px at 2x",
+            "usage": "sidebar and settings-nav column",
+            "forbidden_usage": "canvas width"
+          }
+        ],
+        "radius": [
+          {
+            "id": "radius.control",
+            "role": "chip and nav-pill corner",
+            "value": "8px",
+            "certainty": "observed",
+            "confidence": 0.82,
+            "source_relationship": "S01 selected All Docs pill; S05 chips",
+            "usage": "sidebar selection, chips, small buttons",
+            "forbidden_usage": "claiming exact path geometry"
+          },
+          {
+            "id": "radius.card",
+            "role": "document projection corner",
+            "value": "16px",
+            "range": [
+              "14px",
+              "20px"
+            ],
+            "certainty": "inferred",
+            "confidence": 0.74,
+            "source_relationship": "S01 S03 cards; S07 S11 modals",
+            "usage": "document cards, modals, ghost empty tiles",
+            "forbidden_usage": "hairline list rows"
+          }
+        ],
+        "border": [
+          {
+            "id": "border.hairline",
+            "role": "1px rule",
+            "value": "1px",
+            "certainty": "observed",
+            "confidence": 0.86,
+            "source_relationship": "S02 list rules; S04 selected block stroke width appears 1-2px",
+            "usage": "list separators, chip/tile outline",
+            "forbidden_usage": "heavy frames"
+          }
+        ],
+        "typography": [
+          {
+            "id": "typography.body",
+            "role": "UI and metadata body",
+            "value": "13px/1.4 system-ui",
+            "range": [
+              "12px",
+              "14px"
+            ],
+            "certainty": "inferred",
+            "confidence": 0.68,
+            "source_relationship": "S02 meta and inspector labels; typeface file not measured",
+            "usage": "chrome labels, list metadata, inspector copy",
+            "forbidden_usage": "claiming a named retail font file"
+          },
+          {
+            "id": "typography.title",
+            "role": "document and card title",
+            "value": "15px/1.3 system-ui",
+            "range": [
+              "14px",
+              "17px"
+            ],
+            "certainty": "inferred",
+            "confidence": 0.66,
+            "source_relationship": "S01 S02 titles appear slightly larger/heavier than meta",
+            "usage": "card titles, list titles, modal titles",
+            "forbidden_usage": "exact font-family claim"
+          },
+          {
+            "id": "typography.page-title",
+            "role": "document page title slot",
+            "value": "28px/1.2 system-ui",
+            "range": [
+              "24px",
+              "34px"
+            ],
+            "certainty": "inferred",
+            "confidence": 0.6,
+            "source_relationship": "S06-S08 S12 Page Title placeholder scale",
+            "usage": "page title only",
+            "forbidden_usage": "sidebar labels"
+          }
+        ]
+      },
+      "compositions": [
+        {
+          "id": "composition.browse-workspace",
+          "role": "space document index",
+          "required_regions": [
+            "sidebar",
+            "workspace"
+          ],
+          "optional_regions": [],
+          "constraints": [
+            "sidebar stays a quiet navigator and never becomes a dashboard",
+            "workspace shows the same documents as cards or rows",
+            "date group headers are index chrome not content cards"
+          ],
+          "layout": {
+            "display": "grid",
+            "columns": [
+              "240px",
+              "minmax(0, 1fr)"
+            ],
+            "gap_token": "spacing.section",
+            "region_order": [
+              "sidebar",
+              "workspace"
+            ]
+          },
+          "regions": [
+            {
+              "id": "sidebar",
+              "role": "space navigator",
+              "component_refs": [
+                "component.sidebar-item",
+                "component.assistant-entry"
+              ]
+            },
+            {
+              "id": "workspace",
+              "role": "document index",
+              "component_refs": [
+                "component.document-card",
+                "component.document-row",
+                "component.empty-browse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "composition.document-workspace",
+          "role": "writing workspace with optional inspector",
+          "required_regions": [
+            "sidebar",
+            "canvas"
+          ],
+          "optional_regions": [
+            "inspector"
+          ],
+          "constraints": [
+            "canvas is a white writing sheet not a card grid",
+            "inspector is a four-mode tool and may be absent",
+            "document content images are not chrome"
+          ],
+          "layout": {
+            "display": "grid",
+            "columns": [
+              "240px",
+              "minmax(0, 1fr)",
+              "320px"
+            ],
+            "gap_token": "spacing.section",
+            "region_order": [
+              "sidebar",
+              "canvas",
+              "inspector"
+            ]
+          },
+          "regions": [
+            {
+              "id": "sidebar",
+              "role": "space navigator",
+              "component_refs": [
+                "component.sidebar-item"
+              ]
+            },
+            {
+              "id": "canvas",
+              "role": "writing sheet",
+              "component_refs": [
+                "component.page-title"
+              ]
+            },
+            {
+              "id": "inspector",
+              "role": "insert format style or info",
+              "component_refs": [
+                "component.inspector-tab",
+                "component.insert-tile",
+                "component.style-chip",
+                "component.toggle"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "composition.focus-document",
+          "role": "writing with chrome collapsed",
+          "required_regions": [
+            "canvas"
+          ],
+          "optional_regions": [],
+          "constraints": [
+            "sidebar and inspector are allowed to disappear",
+            "assistant may remain"
+          ],
+          "layout": {
+            "display": "grid",
+            "columns": [
+              "minmax(0, 1fr)"
+            ],
+            "gap_token": "spacing.section",
+            "region_order": [
+              "canvas"
+            ]
+          },
+          "regions": [
+            {
+              "id": "canvas",
+              "role": "writing sheet",
+              "component_refs": [
+                "component.page-title",
+                "component.assistant-entry"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "composition.settings-workspace",
+          "role": "account and space settings",
+          "required_regions": [
+            "settings-nav",
+            "settings-body"
+          ],
+          "optional_regions": [],
+          "constraints": [
+            "settings nav is not the document sidebar",
+            "promo and plan art stay out of the note editor"
+          ],
+          "layout": {
+            "display": "grid",
+            "columns": [
+              "240px",
+              "minmax(0, 1fr)"
+            ],
+            "gap_token": "spacing.section",
+            "region_order": [
+              "settings-nav",
+              "settings-body"
+            ]
+          },
+          "regions": [
+            {
+              "id": "settings-nav",
+              "role": "settings navigator",
+              "component_refs": [
+                "component.sidebar-item"
+              ]
+            },
+            {
+              "id": "settings-body",
+              "role": "settings form",
+              "component_refs": [
+                "component.toggle",
+                "component.modal-frame",
+                "component.primary-button"
+              ]
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "component.sidebar-item",
+          "role": "space or settings navigator row",
+          "maturity": "observed",
+          "anatomy": [
+            "icon",
+            "label",
+            "trailing"
+          ],
+          "required_parts": [
+            "label"
+          ],
+          "optional_parts": [
+            "icon",
+            "trailing"
+          ],
+          "allowed_children": [
+            "text",
+            "icon"
+          ],
+          "forbidden_children": [
+            "document-preview",
+            "pricing-art"
+          ],
+          "variants": [
+            "surface",
+            "folder",
+            "tab"
+          ],
+          "states": [
+            "state.default",
+            "state.selected"
+          ],
+          "token_usage": [
+            "color.sidebar",
+            "color.panel",
+            "color.text",
+            "color.border",
+            "color.accent",
+            "spacing.row",
+            "radius.control",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "text-heavy"
+          ],
+          "layout_constraints": [
+            "single horizontal row",
+            "selected state is a white pill not a blue bar"
+          ],
+          "responsive_behavior": "hidden with the sidebar column on the inferred mobile width",
+          "accessibility_behavior": "expose as a navigation option with aria-current when selected",
+          "allowed_variation": "label and icon only",
+          "unknowns": [
+            "hover transition"
+          ],
+          "specimen": {
+            "element": "nav",
+            "sample_content": [
+              "All Docs",
+              "Documents"
+            ],
+            "token_bindings": {
+              "background": "color.sidebar",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.row",
+              "font": "typography.body"
+            },
+            "state_bindings": {
+              "state.selected": {
+                "background": "color.panel"
+              }
+            },
+            "layout": {
+              "flow": "horizontal",
+              "slot_order": [
+                "icon",
+                "label",
+                "trailing"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.document-card",
+          "role": "browsable document projection",
+          "maturity": "observed",
+          "anatomy": [
+            "title",
+            "preview",
+            "badge"
+          ],
+          "required_parts": [
+            "title"
+          ],
+          "optional_parts": [
+            "preview",
+            "badge"
+          ],
+          "allowed_children": [
+            "text",
+            "image"
+          ],
+          "forbidden_children": [
+            "settings-promo",
+            "style-preset-photo"
+          ],
+          "variants": [
+            "comfortable",
+            "dense"
+          ],
+          "states": [
+            "state.default",
+            "state.empty"
+          ],
+          "token_usage": [
+            "color.panel",
+            "color.text",
+            "color.text-muted",
+            "color.border",
+            "spacing.section",
+            "radius.card",
+            "border.hairline",
+            "typography.title"
+          ],
+          "content_archetypes": [
+            "text-heavy",
+            "image-led",
+            "mixed",
+            "empty"
+          ],
+          "layout_constraints": [
+            "vertical stack title over preview",
+            "live document content is preview only"
+          ],
+          "responsive_behavior": "column count drops with workspace width; do not invent phone-only card chrome",
+          "accessibility_behavior": "name the document from the title; preview is supplementary",
+          "allowed_variation": "preview content substitution",
+          "unknowns": [
+            "exact elevation blur"
+          ],
+          "specimen": {
+            "element": "article",
+            "sample_content": [
+              "Document title",
+              "Preview"
+            ],
+            "token_bindings": {
+              "background": "color.panel",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.card",
+              "padding": "spacing.section",
+              "font": "typography.title"
+            },
+            "state_bindings": {
+              "state.empty": {
+                "background": "color.surface",
+                "text": "color.text-muted"
+              }
+            },
+            "layout": {
+              "flow": "vertical",
+              "slot_order": [
+                "title",
+                "preview",
+                "badge"
+              ],
+              "alignment": "start",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.document-row",
+          "role": "browsable document list row",
+          "maturity": "observed",
+          "anatomy": [
+            "icon",
+            "title",
+            "meta",
+            "viewed",
+            "updated",
+            "created"
+          ],
+          "required_parts": [
+            "title"
+          ],
+          "optional_parts": [
+            "icon",
+            "meta",
+            "viewed",
+            "updated",
+            "created"
+          ],
+          "allowed_children": [
+            "text",
+            "icon"
+          ],
+          "forbidden_children": [
+            "gallery-tile"
+          ],
+          "variants": [
+            "default"
+          ],
+          "states": [
+            "state.default",
+            "state.selected"
+          ],
+          "token_usage": [
+            "color.surface",
+            "color.text",
+            "color.text-muted",
+            "color.border",
+            "color.accent-soft",
+            "spacing.row",
+            "radius.control",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "text-heavy",
+            "table/data"
+          ],
+          "layout_constraints": [
+            "one row with hairline separator",
+            "metadata columns stay secondary"
+          ],
+          "responsive_behavior": "drop viewed and created columns before the title",
+          "accessibility_behavior": "row is a selectable option announcing the title",
+          "allowed_variation": "metadata column set",
+          "unknowns": [
+            "hover transition"
+          ],
+          "specimen": {
+            "element": "article",
+            "sample_content": [
+              "Document title",
+              "Updated recently"
+            ],
+            "token_bindings": {
+              "background": "color.surface",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.row",
+              "font": "typography.body"
+            },
+            "state_bindings": {
+              "state.selected": {
+                "background": "color.accent-soft"
+              }
+            },
+            "layout": {
+              "flow": "horizontal",
+              "slot_order": [
+                "icon",
+                "title",
+                "meta",
+                "viewed",
+                "updated",
+                "created"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.inspector-tab",
+          "role": "document tool mode switch",
+          "maturity": "observed",
+          "anatomy": [
+            "label"
+          ],
+          "required_parts": [
+            "label"
+          ],
+          "optional_parts": [],
+          "allowed_children": [
+            "text"
+          ],
+          "forbidden_children": [
+            "nested-inspector"
+          ],
+          "variants": [
+            "insert",
+            "format",
+            "style",
+            "info"
+          ],
+          "states": [
+            "state.default",
+            "state.selected"
+          ],
+          "token_usage": [
+            "color.panel",
+            "color.text",
+            "color.accent-soft",
+            "color.border",
+            "spacing.row",
+            "radius.control",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "text-heavy"
+          ],
+          "layout_constraints": [
+            "four named modes only",
+            "sits at the top of the inspector"
+          ],
+          "responsive_behavior": "inspector including tabs collapses on compact and mobile",
+          "accessibility_behavior": "tablist with selected tab as aria-selected",
+          "allowed_variation": "none beyond the four observed labels",
+          "unknowns": [
+            "keyboard wrap behavior"
+          ],
+          "specimen": {
+            "element": "button",
+            "sample_content": [
+              "Insert"
+            ],
+            "token_bindings": {
+              "background": "color.panel",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.row",
+              "font": "typography.body"
+            },
+            "state_bindings": {
+              "state.selected": {
+                "background": "color.accent-soft",
+                "text": "color.text"
+              }
+            },
+            "layout": {
+              "flow": "horizontal",
+              "slot_order": [
+                "label"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.insert-tile",
+          "role": "block type to insert",
+          "maturity": "observed",
+          "anatomy": [
+            "glyph",
+            "name"
+          ],
+          "required_parts": [
+            "name"
+          ],
+          "optional_parts": [
+            "glyph"
+          ],
+          "allowed_children": [
+            "text",
+            "icon"
+          ],
+          "forbidden_children": [
+            "live-document"
+          ],
+          "variants": [
+            "suggested",
+            "rich",
+            "collection",
+            "nested",
+            "separator",
+            "media"
+          ],
+          "states": [
+            "state.default"
+          ],
+          "token_usage": [
+            "color.tile",
+            "color.text",
+            "color.border",
+            "spacing.row",
+            "radius.control",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "mixed"
+          ],
+          "layout_constraints": [
+            "square-ish tile in a wrapped catalog",
+            "grouped by inspector headings"
+          ],
+          "responsive_behavior": "catalog lives only inside the inspector",
+          "accessibility_behavior": "button named by the block type",
+          "allowed_variation": "glyph drawing",
+          "unknowns": [
+            "hover transition"
+          ],
+          "specimen": {
+            "element": "button",
+            "sample_content": [
+              "Page",
+              "Card"
+            ],
+            "token_bindings": {
+              "background": "color.tile",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.row",
+              "font": "typography.body"
+            },
+            "state_bindings": {},
+            "layout": {
+              "flow": "vertical",
+              "slot_order": [
+                "glyph",
+                "name"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.style-chip",
+          "role": "compact format or style choice",
+          "maturity": "observed",
+          "anatomy": [
+            "label"
+          ],
+          "required_parts": [
+            "label"
+          ],
+          "optional_parts": [],
+          "allowed_children": [
+            "text"
+          ],
+          "forbidden_children": [
+            "image"
+          ],
+          "variants": [
+            "text-role",
+            "group",
+            "font",
+            "separator"
+          ],
+          "states": [
+            "state.default",
+            "state.selected"
+          ],
+          "token_usage": [
+            "color.panel",
+            "color.accent-soft",
+            "color.text",
+            "color.border",
+            "spacing.row",
+            "radius.control",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "text-heavy"
+          ],
+          "layout_constraints": [
+            "wrap in inspector groups",
+            "selected uses soft blue wash"
+          ],
+          "responsive_behavior": "collapses with inspector",
+          "accessibility_behavior": "toggle button with pressed state",
+          "allowed_variation": "label set from observed groups",
+          "unknowns": [
+            "hover transition"
+          ],
+          "specimen": {
+            "element": "button",
+            "sample_content": [
+              "Title"
+            ],
+            "token_bindings": {
+              "background": "color.panel",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.row",
+              "font": "typography.body"
+            },
+            "state_bindings": {
+              "state.selected": {
+                "background": "color.accent-soft"
+              }
+            },
+            "layout": {
+              "flow": "horizontal",
+              "slot_order": [
+                "label"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.page-title",
+          "role": "document page title slot",
+          "maturity": "observed",
+          "anatomy": [
+            "title"
+          ],
+          "required_parts": [
+            "title"
+          ],
+          "optional_parts": [],
+          "allowed_children": [
+            "text"
+          ],
+          "forbidden_children": [
+            "card-grid"
+          ],
+          "variants": [
+            "named",
+            "placeholder"
+          ],
+          "states": [
+            "state.default",
+            "state.placeholder"
+          ],
+          "token_usage": [
+            "color.panel",
+            "color.text",
+            "color.text-muted",
+            "color.border",
+            "spacing.section",
+            "radius.control",
+            "border.hairline",
+            "typography.page-title"
+          ],
+          "content_archetypes": [
+            "text-heavy",
+            "empty"
+          ],
+          "layout_constraints": [
+            "sits above document blocks",
+            "placeholder is lighter and inactive-looking"
+          ],
+          "responsive_behavior": "remains with the canvas in every evidenced width",
+          "accessibility_behavior": "heading level 1 for the document page",
+          "allowed_variation": "title string",
+          "unknowns": [
+            "caret inside title"
+          ],
+          "specimen": {
+            "element": "input",
+            "sample_content": [
+              "Page Title"
+            ],
+            "token_bindings": {
+              "background": "color.panel",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.section",
+              "font": "typography.page-title"
+            },
+            "state_bindings": {
+              "state.placeholder": {
+                "text": "color.text-muted"
+              }
+            },
+            "layout": {
+              "flow": "vertical",
+              "slot_order": [
+                "title"
+              ],
+              "alignment": "start",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.modal-frame",
+          "role": "blocking overlay dialog",
+          "maturity": "observed",
+          "anatomy": [
+            "title",
+            "search",
+            "body",
+            "close"
+          ],
+          "required_parts": [
+            "title",
+            "body"
+          ],
+          "optional_parts": [
+            "search",
+            "close"
+          ],
+          "allowed_children": [
+            "text",
+            "image",
+            "component.primary-button"
+          ],
+          "forbidden_children": [
+            "sidebar"
+          ],
+          "variants": [
+            "style-gallery",
+            "plan"
+          ],
+          "states": [
+            "state.default"
+          ],
+          "token_usage": [
+            "color.panel",
+            "color.text",
+            "color.border",
+            "spacing.section",
+            "radius.card",
+            "border.hairline",
+            "typography.title"
+          ],
+          "content_archetypes": [
+            "mixed"
+          ],
+          "layout_constraints": [
+            "centered over a dimmed workspace",
+            "plan and gallery contents are not editor chrome"
+          ],
+          "responsive_behavior": "unknown below desktop; do not invent a drawer",
+          "accessibility_behavior": "dialog with labelled title; backdrop is inert",
+          "allowed_variation": "inner body only",
+          "unknowns": [
+            "motion of open and close"
+          ],
+          "specimen": {
+            "element": "section",
+            "sample_content": [
+              "Style Gallery",
+              "Search"
+            ],
+            "token_bindings": {
+              "background": "color.panel",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.card",
+              "padding": "spacing.section",
+              "font": "typography.title"
+            },
+            "state_bindings": {},
+            "layout": {
+              "flow": "vertical",
+              "slot_order": [
+                "title",
+                "search",
+                "body",
+                "close"
+              ],
+              "alignment": "stretch",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.empty-browse",
+          "role": "empty document index",
+          "maturity": "observed",
+          "anatomy": [
+            "ghost-grid",
+            "caption"
+          ],
+          "required_parts": [
+            "caption"
+          ],
+          "optional_parts": [
+            "ghost-grid"
+          ],
+          "allowed_children": [
+            "text"
+          ],
+          "forbidden_children": [
+            "illustrated-hero"
+          ],
+          "variants": [
+            "shared",
+            "folder"
+          ],
+          "states": [
+            "state.empty"
+          ],
+          "token_usage": [
+            "color.surface",
+            "color.text-muted",
+            "color.border",
+            "spacing.section",
+            "radius.card",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "empty"
+          ],
+          "layout_constraints": [
+            "reuse the card grid as ghosts",
+            "caption is centered and quiet"
+          ],
+          "responsive_behavior": "ghost columns follow the browse grid",
+          "accessibility_behavior": "status text announcing the folder is empty",
+          "allowed_variation": "caption string",
+          "unknowns": [
+            "populated shared-document extras"
+          ],
+          "specimen": {
+            "element": "section",
+            "sample_content": [
+              "This Folder is Empty"
+            ],
+            "token_bindings": {
+              "background": "color.surface",
+              "text": "color.text-muted",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.card",
+              "padding": "spacing.section",
+              "font": "typography.body"
+            },
+            "state_bindings": {
+              "state.empty": {
+                "background": "color.surface",
+                "text": "color.text-muted"
+              }
+            },
+            "layout": {
+              "flow": "vertical",
+              "slot_order": [
+                "ghost-grid",
+                "caption"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.section"
+            }
+          }
+        },
+        {
+          "id": "component.toggle",
+          "role": "binary setting",
+          "maturity": "observed",
+          "anatomy": [
+            "track",
+            "thumb",
+            "label"
+          ],
+          "required_parts": [
+            "track",
+            "thumb"
+          ],
+          "optional_parts": [
+            "label"
+          ],
+          "allowed_children": [
+            "text"
+          ],
+          "forbidden_children": [
+            "image"
+          ],
+          "variants": [
+            "settings",
+            "wide-page"
+          ],
+          "states": [
+            "state.default",
+            "state.on"
+          ],
+          "token_usage": [
+            "color.tile",
+            "color.accent",
+            "color.panel",
+            "color.text",
+            "color.border",
+            "spacing.row",
+            "radius.control",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "text-heavy"
+          ],
+          "layout_constraints": [
+            "track with sliding thumb",
+            "on uses accent fill"
+          ],
+          "responsive_behavior": "stays in inspector or settings body",
+          "accessibility_behavior": "switch with aria-checked",
+          "allowed_variation": "label only",
+          "unknowns": [
+            "motion of the thumb"
+          ],
+          "specimen": {
+            "element": "button",
+            "sample_content": [
+              "Enable Sound"
+            ],
+            "token_bindings": {
+              "background": "color.tile",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.row",
+              "font": "typography.body",
+              "accent": "color.accent"
+            },
+            "state_bindings": {
+              "state.on": {
+                "background": "color.accent",
+                "accent": "color.panel"
+              }
+            },
+            "layout": {
+              "flow": "horizontal",
+              "slot_order": [
+                "label",
+                "track",
+                "thumb"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.assistant-entry",
+          "role": "persistent assistant opener",
+          "maturity": "observed",
+          "anatomy": [
+            "mark",
+            "label"
+          ],
+          "required_parts": [
+            "label"
+          ],
+          "optional_parts": [
+            "mark"
+          ],
+          "allowed_children": [
+            "text",
+            "icon"
+          ],
+          "forbidden_children": [
+            "chat-transcript"
+          ],
+          "variants": [
+            "corner"
+          ],
+          "states": [
+            "state.default"
+          ],
+          "token_usage": [
+            "color.panel",
+            "color.text",
+            "color.border",
+            "spacing.row",
+            "radius.control",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "text-heavy"
+          ],
+          "layout_constraints": [
+            "floats at the lower trailing corner",
+            "does not replace sidebar navigation"
+          ],
+          "responsive_behavior": "remains in focus document",
+          "accessibility_behavior": "button that opens the assistant",
+          "allowed_variation": "label localization",
+          "unknowns": [
+            "open panel anatomy"
+          ],
+          "specimen": {
+            "element": "button",
+            "sample_content": [
+              "Assistant"
+            ],
+            "token_bindings": {
+              "background": "color.panel",
+              "text": "color.text",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.row",
+              "font": "typography.body"
+            },
+            "state_bindings": {},
+            "layout": {
+              "flow": "horizontal",
+              "slot_order": [
+                "mark",
+                "label"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.row"
+            }
+          }
+        },
+        {
+          "id": "component.primary-button",
+          "role": "high-emphasis action",
+          "maturity": "observed",
+          "anatomy": [
+            "label"
+          ],
+          "required_parts": [
+            "label"
+          ],
+          "optional_parts": [],
+          "allowed_children": [
+            "text"
+          ],
+          "forbidden_children": [
+            "icon-only"
+          ],
+          "variants": [
+            "filled",
+            "quiet"
+          ],
+          "states": [
+            "state.default",
+            "state.disabled",
+            "state.destructive"
+          ],
+          "token_usage": [
+            "color.text",
+            "color.panel",
+            "color.destructive",
+            "color.border",
+            "spacing.row",
+            "radius.control",
+            "border.hairline",
+            "typography.body"
+          ],
+          "content_archetypes": [
+            "text-heavy"
+          ],
+          "layout_constraints": [
+            "filled action uses near-black ink not accent blue",
+            "destructive stays text-only in Info"
+          ],
+          "responsive_behavior": "stays inside modal or inspector",
+          "accessibility_behavior": "button; disabled is not focus-activated",
+          "allowed_variation": "label",
+          "unknowns": [
+            "hover transition"
+          ],
+          "specimen": {
+            "element": "button",
+            "sample_content": [
+              "Share"
+            ],
+            "token_bindings": {
+              "background": "color.text",
+              "text": "color.panel",
+              "border": "color.border",
+              "border_width": "border.hairline",
+              "radius": "radius.control",
+              "padding": "spacing.row",
+              "font": "typography.body"
+            },
+            "state_bindings": {
+              "state.disabled": {
+                "background": "color.tile",
+                "text": "color.text-muted"
+              },
+              "state.destructive": {
+                "background": "color.panel",
+                "text": "color.destructive"
+              }
+            },
+            "layout": {
+              "flow": "horizontal",
+              "slot_order": [
+                "label"
+              ],
+              "alignment": "center",
+              "internal_gap": "spacing.row"
+            }
+          }
+        }
+      ],
+      "states": [
+        {
+          "id": "state.default",
+          "trigger": "initial rest",
+          "transition": "none observed",
+          "precedence": "base",
+          "mutual_exclusion": [
+            "state.disabled"
+          ],
+          "keyboard_behavior": "controls are focusable unless marked disabled",
+          "state_persistence": "none",
+          "visual_delta": "foundation tokens as bound",
+          "accessibility_semantics": "no extra selected announcement",
+          "certainty": "observed",
+          "visual_tokens": {}
+        },
+        {
+          "id": "state.selected",
+          "trigger": "explicit click or equivalent activation",
+          "transition": "unknown",
+          "precedence": "above default",
+          "mutual_exclusion": [
+            "state.disabled"
+          ],
+          "keyboard_behavior": "Enter or Space activates; selected option keeps aria-current or aria-selected",
+          "state_persistence": "session for nav, tab, and inspector mode",
+          "visual_delta": "white pill on sidebar; soft blue wash on chips",
+          "accessibility_semantics": "announce selected",
+          "certainty": "observed",
+          "visual_tokens": {
+            "background": "color.accent-soft"
+          }
+        },
+        {
+          "id": "state.placeholder",
+          "trigger": "empty page title slot",
+          "transition": "unknown",
+          "precedence": "content emptiness",
+          "mutual_exclusion": [],
+          "keyboard_behavior": "focus replaces placeholder with a caret",
+          "state_persistence": "until the title is named",
+          "visual_delta": "large muted title",
+          "accessibility_semantics": "text field with placeholder",
+          "certainty": "observed",
+          "visual_tokens": {
+            "text": "color.text-muted"
+          }
+        },
+        {
+          "id": "state.empty",
+          "trigger": "no documents in the index",
+          "transition": "none observed",
+          "precedence": "content emptiness",
+          "mutual_exclusion": [],
+          "keyboard_behavior": "index remains a region, not a trap",
+          "state_persistence": "until a document appears",
+          "visual_delta": "ghost card grid plus muted caption",
+          "accessibility_semantics": "status text",
+          "certainty": "observed",
+          "visual_tokens": {
+            "background": "color.surface",
+            "text": "color.text-muted"
+          }
+        },
+        {
+          "id": "state.on",
+          "trigger": "toggle activation",
+          "transition": "unknown",
+          "precedence": "above default",
+          "mutual_exclusion": [
+            "state.default"
+          ],
+          "keyboard_behavior": "Space flips the switch",
+          "state_persistence": "user preference",
+          "visual_delta": "track fills with accent",
+          "accessibility_semantics": "aria-checked true",
+          "certainty": "observed",
+          "visual_tokens": {
+            "background": "color.accent",
+            "accent": "color.panel"
+          }
+        },
+        {
+          "id": "state.disabled",
+          "trigger": "unavailable action",
+          "transition": "none",
+          "precedence": "blocks activation",
+          "mutual_exclusion": [
+            "state.selected",
+            "state.on"
+          ],
+          "keyboard_behavior": "skipped or announced as unavailable",
+          "state_persistence": "while the condition holds",
+          "visual_delta": "washed fill and muted text",
+          "accessibility_semantics": "aria-disabled",
+          "certainty": "observed",
+          "visual_tokens": {
+            "background": "color.tile",
+            "text": "color.text-muted"
+          }
+        },
+        {
+          "id": "state.destructive",
+          "trigger": "irreversible action affordance",
+          "transition": "none observed",
+          "precedence": "warning",
+          "mutual_exclusion": [],
+          "keyboard_behavior": "still activatable; confirm policy unknown",
+          "state_persistence": "none",
+          "visual_delta": "destructive text color only",
+          "accessibility_semantics": "button named with the destructive verb",
+          "certainty": "observed",
+          "visual_tokens": {
+            "text": "color.destructive"
+          }
+        }
+      ],
+      "responsive": {
+        "desktop": {
+          "preserved_regions": [
+            "sidebar",
+            "workspace",
+            "canvas",
+            "inspector",
+            "settings-nav",
+            "settings-body"
+          ],
+          "collapsed_regions": [],
+          "relocated_regions": [],
+          "priority_order": [
+            "sidebar",
+            "workspace",
+            "canvas",
+            "inspector",
+            "settings-nav",
+            "settings-body"
+          ],
+          "min_width": 1024
+        },
+        "compact": {
+          "preserved_regions": [
+            "sidebar",
+            "workspace",
+            "canvas",
+            "settings-nav",
+            "settings-body"
+          ],
+          "collapsed_regions": [
+            "inspector"
+          ],
+          "relocated_regions": [],
+          "priority_order": [
+            "sidebar",
+            "workspace",
+            "canvas",
+            "settings-nav",
+            "settings-body"
+          ],
+          "min_width": 640,
+          "max_width": 1023
+        },
+        "mobile": {
+          "preserved_regions": [
+            "workspace",
+            "canvas",
+            "settings-body"
+          ],
+          "collapsed_regions": [
+            "sidebar",
+            "inspector",
+            "settings-nav"
+          ],
+          "relocated_regions": [],
+          "priority_order": [
+            "workspace",
+            "canvas",
+            "settings-body"
+          ],
+          "max_width": 639
+        }
+      },
+      "content_archetypes": [
+        "text-heavy",
+        "image-led",
+        "table/data",
+        "mixed",
+        "link-preview",
+        "empty",
+        "loading",
+        "error"
+      ],
+      "agent_rules": [
+        "choose compositions before components",
+        "preserve unknown values as unknown",
+        "do not introduce generic dashboard cards or shadcn app chrome",
+        "do not treat craft.do landing heroes or marketing cards as product regions",
+        "do not promote document content, style-preset photos, or pricing art into tokens",
+        "keep accent blue for caret toggle and selection stroke only",
+        "selected sidebar items use a white pill not a saturated bar",
+        "inspector has only Insert Format Style Info",
+        "empty browse reuses a ghost card grid",
+        "collapse inspector before sidebar when width tightens",
+        "if a pattern is not in this system leave it unimplemented"
+      ],
+      "constraints": {
+        "forbidden_patterns": [
+          "generic dashboard cards",
+          "marketing hero as app chrome",
+          "invented neon accent",
+          "shadcn sidebar clone",
+          "treating style gallery photos as system components"
+        ],
+        "allowed_deviation": [
+          "substitute neutral document titles and previews",
+          "localize chrome labels",
+          "omit optional inspector"
+        ],
+        "known_unknowns": [
+          "hover transition",
+          "exact elevation blur",
+          "keyboard wrap behavior",
+          "caret inside title",
+          "motion of open and close",
+          "populated shared-document extras",
+          "motion of the thumb",
+          "open panel anatomy",
+          "exact typeface file",
+          "dark product chrome",
+          "phone chrome",
+          "Tasks and Calendar screens"
+        ],
+        "unsupported_behaviors": [
+          "unobserved hover animation",
+          "dark-mode token application to chrome",
+          "mobile bottom navigation",
+          "reconstructing landing-page sections as the editor"
+        ]
+      },
+      "agent_usable": false
+    },
+    "warnings": [],
+    "error": null
+  },
+  "stderr": ""
+}

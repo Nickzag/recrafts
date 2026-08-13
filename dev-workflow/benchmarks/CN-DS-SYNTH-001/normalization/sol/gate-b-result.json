@@ -1,0 +1,9 @@
+{
+  "status": "NOT_REQUALIFIED",
+  "reason": "Frozen Candidate did not parse/compile under exact runtime; source mutation is forbidden.",
+  "historical_input_only": {
+    "verdict": "UNKNOWN"
+  },
+  "parse_status": "failed",
+  "compile_status": "failed"
+}

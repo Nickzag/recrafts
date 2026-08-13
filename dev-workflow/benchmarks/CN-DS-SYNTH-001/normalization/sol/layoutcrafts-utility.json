@@ -1,0 +1,56 @@
+{
+  "status": "UNQUALIFIED",
+  "historical_claim": {
+    "run_id": "CN-DS-BENCH-001-SOL",
+    "LAYOUTCRAFTS_UTILITY": "PASS",
+    "pass_scope": "desktop light Craft-like notes/library/editor/settings surfaces",
+    "dimensions": [
+      {
+        "name": "token-completeness",
+        "status": "pass",
+        "reason": "role tokens cover neutral surfaces, text, accent, danger, spacing, typography, radius, border, elevation, icon, image and bounded motion"
+      },
+      {
+        "name": "component-anatomy",
+        "status": "pass",
+        "reason": "16 visible or strongly implied components are mapped; core components include anatomy, variants, states, token ties, content/layout rules and accessibility"
+      },
+      {
+        "name": "state-completeness",
+        "status": "pass-with-known-unknowns",
+        "reason": "observed selection, caret, active mode, toggle, modal, destructive, empty and rail-collapse states are defined; unsupported collaboration/error states are explicit"
+      },
+      {
+        "name": "composition-rules",
+        "status": "pass",
+        "reason": "Region topology, persistence, inspector scope, document width, library density modes, settings form and modal rules are implementation-ready"
+      },
+      {
+        "name": "responsive-semantics",
+        "status": "degraded-outside-scope",
+        "reason": "desktop collapse priority is usable, but mobile/iPad relocation is intentionally UNKNOWN"
+      },
+      {
+        "name": "agent-rules",
+        "status": "pass",
+        "reason": "surface recipes, allowed/forbidden moves, critique checklist and review protocol prevent generic SaaS drift"
+      },
+      {
+        "name": "unsupported-semantics",
+        "status": "pass",
+        "reason": "dark, mobile, collaboration, offline/error and exact native values are named rather than guessed"
+      },
+      {
+        "name": "remaining-redesign-risk",
+        "status": "low-in-pass-scope",
+        "reason": "Layoutcrafts can implement the desktop shell without redesigning topology; it must source new evidence for unsupported surfaces"
+      }
+    ],
+    "blocking_ambiguity": [],
+    "non_blocking_ambiguity": [
+      "Exact control heights and native point values require render calibration.",
+      "Dark and mobile variants require separate evidence and must not be inferred from this release."
+    ],
+    "candidate_artifact_sha256": "deb494a477c51c8cdc8c11b3d3fe386d8a8f08d4c300733af7e03b3c1972cd0f"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "cn-ds-synth.normalization-input/v1",
+  "candidate": "grok",
+  "source_bundle_sha256": "aa755847165d2a13570fff8ee4a1ddd59360f6e61bb865a1196fe359383cb49e",
+  "design_md_sha256": "0d6af543c075d9f41157a59fa8bfe95def6593388ace2779310ea92c1820528e",
+  "runtime_sha256": "da0ba9ee4012028d55e7e975140fabf7705b59a624b6b085d339dac77636efcf",
+  "mutated": false
+}

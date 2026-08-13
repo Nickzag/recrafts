@@ -1,0 +1,9 @@
+{
+  "runtime_tarball_sha256": "da0ba9ee4012028d55e7e975140fabf7705b59a624b6b085d339dac77636efcf",
+  "installation_root": "/private/tmp/cn-ds-runtime/package",
+  "dependency_install": "npm install --ignore-scripts",
+  "installed_packages": 9,
+  "candidate_sources_mutated": false,
+  "repository_mutated_by_install": false,
+  "note": "The exact tarball does not embed node_modules. Dependencies were installed only beside the extracted tarball in an isolated temporary directory. npm reported one moderate dependency vulnerability; no audit fix was applied."
+}

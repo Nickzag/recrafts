@@ -1,0 +1,10 @@
+{
+  "schema": "cn-ds-synth.layoutcrafts-input/v1",
+  "candidate_id": "cn-ds-synth-001-canonical-candidate",
+  "status": "candidate-awaiting-owner-review",
+  "agent_usable": false,
+  "authoring_source": "../canonical-candidate/design.md",
+  "visual_proof": "../canonical-candidate/preview.html",
+  "acceptance_authority": "Development Mainline / Product Owner",
+  "implementation_authorized": false
+}

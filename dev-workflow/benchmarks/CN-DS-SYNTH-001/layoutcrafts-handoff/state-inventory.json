@@ -1,0 +1,54 @@
+{
+  "schema": "cn-ds-synth.state-inventory/v1",
+  "candidate_id": "cn-ds-synth-001-canonical-candidate",
+  "states": [
+    {
+      "id": "state.default",
+      "trigger": "initial rest",
+      "certainty": "observed",
+      "accessibility_semantics": "no extra selected announcement"
+    },
+    {
+      "id": "state.selected",
+      "trigger": "explicit click or equivalent activation",
+      "certainty": "observed",
+      "accessibility_semantics": "announce selected"
+    },
+    {
+      "id": "state.placeholder",
+      "trigger": "empty page title slot",
+      "certainty": "observed",
+      "accessibility_semantics": "text field with placeholder"
+    },
+    {
+      "id": "state.empty",
+      "trigger": "no documents in the index",
+      "certainty": "observed",
+      "accessibility_semantics": "status text"
+    },
+    {
+      "id": "state.on",
+      "trigger": "toggle activation",
+      "certainty": "observed",
+      "accessibility_semantics": "aria-checked true"
+    },
+    {
+      "id": "state.disabled",
+      "trigger": "unavailable action",
+      "certainty": "observed",
+      "accessibility_semantics": "aria-disabled"
+    },
+    {
+      "id": "state.destructive",
+      "trigger": "irreversible action affordance",
+      "certainty": "observed",
+      "accessibility_semantics": "button named with the destructive verb"
+    },
+    {
+      "id": "state.loading",
+      "trigger": "collection data is pending",
+      "certainty": "observed",
+      "accessibility_semantics": "container exposes busy status and placeholders are hidden"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "cn-ds-synth.unsupported-semantics/v1",
+  "candidate_revision": "cn-ds-synth-001-canonical-candidate",
+  "items": [
+    { "semantic": "phone-topology", "status": "UNKNOWN", "fallback": "FORBIDDEN" },
+    { "semantic": "tablet-topology", "status": "UNKNOWN", "fallback": "FORBIDDEN" },
+    { "semantic": "responsive-breakpoints", "status": "IMPLEMENTATION_CANDIDATE_ONLY", "fallback": "BLOCK" },
+    { "semantic": "automatic-collapse-order", "status": "UNKNOWN", "fallback": "BLOCK" },
+    { "semantic": "dark-product-chrome", "status": "UNKNOWN", "fallback": "FORBIDDEN" },
+    { "semantic": "error-visual-state", "status": "UNKNOWN", "fallback": "BLOCK" },
+    { "semantic": "exact-font-files", "status": "UNKNOWN", "fallback": "SYSTEM_STACK" },
+    { "semantic": "shadow-motion-recipes", "status": "UNKNOWN", "fallback": "NO_UNEVIDENCED_DECORATION" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "cn-ds-synth.responsive-contract/v1",
+  "observed": {
+    "desktop_three_region_topology": true,
+    "explicit_focus_mode_can_collapse_side_regions": true
+  },
+  "unknown": [
+    "phone topology",
+    "tablet topology",
+    "exact breakpoints",
+    "automatic collapse order",
+    "narrow-width control relocation"
+  ],
+  "qualification_fixture": {
+    "desktop_min": 1024,
+    "compact_min": 640,
+    "compact_max": 1023,
+    "mobile_max": 639,
+    "authority": "Gate B viewport coverage only; not product implementation authority"
+  },
+  "forbidden_inference": ["bottom navigation", "drawer navigation", "inspector sheet", "automatic inspector-first collapse"]
+}
