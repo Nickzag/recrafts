@@ -29,3 +29,41 @@ jobs:
         run: npm run test:r013
       - name: Package inventory dry-run
         run: npm pack --json --dry-run > "$RUNNER_TEMP/npm-pack.json"
+
+  linux-installed-qualification:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Pack exact checkout
+        run: npm pack --json --pack-destination "$RUNNER_TEMP" > "$RUNNER_TEMP/npm-pack.json"
+      - name: Run installed-package Linux qualification
+        shell: bash
+        run: |
+          tarball="$(node -e "const fs=require('fs');const p=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/npm-pack.json'));process.stdout.write(process.env.RUNNER_TEMP+'/'+p[0].filename)")"
+          node scripts/run-r012-linux-qualification.mjs "$tarball" "$RUNNER_TEMP/r012-linux-evidence.json"
+          node scripts/validate-r012-linux-evidence.mjs "$RUNNER_TEMP/r012-linux-evidence.json"
+
+  darwin-installed-qualification:
+    needs: verify
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium
+      - name: Run R-013 Darwin installed qualification
+        run: npm run qualify:r013-darwin
