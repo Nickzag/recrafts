@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rebiu to Recrafts Handoff v1",
+  "type": "object",
+  "required": [
+    "schemaVersion", "target", "sourceSkill", "sourceSkillVersion", "referenceType",
+    "status", "intent", "fidelityDrivers", "sourceBound", "userLocks", "variables",
+    "uncertain", "referenceSet", "requestedOutputs", "preferences", "rebiuResume"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "rebiu.recrafts-handoff/v1"},
+    "target": {"const": "recrafts"},
+    "sourceSkill": {"const": "rebiu"},
+    "sourceSkillVersion": {"type": "string"},
+    "referenceType": {
+      "enum": ["layout_editorial", "ui_product", "poster_typographic", "information_graphic", "presentation", "document", "mixed"]
+    },
+    "status": {"const": "handoff-ready"},
+    "intent": {"type": "string"},
+    "fidelityDrivers": {"type": "array"},
+    "sourceBound": {"type": "array"},
+    "userLocks": {"type": "array"},
+    "variables": {"type": "array"},
+    "uncertain": {"type": "array"},
+    "referenceSet": {"type": "object"},
+    "requestedOutputs": {"type": "array"},
+    "preferences": {"type": "object"},
+    "rebiuResume": {"type": "object"}
+  }
+}
