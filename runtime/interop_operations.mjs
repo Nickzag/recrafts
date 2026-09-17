@@ -15,6 +15,7 @@ import { createSourceNeutralRealization } from "../realization/source_neutral_re
 import { validateSourceNeutralFidelity } from "./source_neutral_fidelity.mjs";
 import { prepareVisualRecovery, submitVisualObservations } from "./visual_recovery_a.mjs";
 import { DESIGN_OPERATIONS, executeDesignOperation } from "./design_system_runtime.mjs";
+import { attachRebiuHandoffContext, loadRebiuHandoff, validateHandoffIntake } from "./rebiu_handoff.mjs";
 
 const hashFile = async (file) => createHash("sha256").update(await readFile(file)).digest("hex");
 const artifact = async ({ type, file, outputRoot, mediaType, schemaVersion = "2.1.0" }) => ({ type, path: toArtifactPath({ file, outputRoot }), sha256: await hashFile(file), media_type: mediaType, schema_version: schemaVersion });
@@ -74,7 +75,12 @@ export async function executeOperation(request, workingRoot) {
     throw Object.assign(new Error("R-011R-A must be accepted before downstream recovery or adaptation operations are authorized"), { code: "R011_STAGE_BLOCKED" });
   }
   if (request.operation === "prepare-analysis") {
+    if (input.rebiu_handoff_file && !["1.1", "1.2"].includes(request.protocol_version)) {
+      throw Object.assign(new Error("rebiu.recrafts-handoff/v1 requires typed-source protocol 1.1 or 1.2"), { code: "HANDOFF_PROTOCOL_UNSUPPORTED" });
+    }
     if (request.protocol_version === "1.1" || request.protocol_version === "1.2") {
+      const handoffFile = input.rebiu_handoff_file ? await resolveSafeInput({ value: input.rebiu_handoff_file, workingRoot, allowedTypes: ["file"] }) : null;
+      const handoff = handoffFile ? await loadRebiuHandoff(handoffFile) : null;
       const typed = [];
       for (const source of input.sources ?? []) {
         if (!source || typeof source !== "object" || Array.isArray(source)) throw Object.assign(new Error("Protocol 1.1 requires typed source objects"), { code: "SCHEMA_VALIDATION_FAILED" });
@@ -83,12 +89,15 @@ export async function executeOperation(request, workingRoot) {
         else if (source.kind === "url") typed.push({ kind: "url", url: source.url, routes: source.routes, viewports: source.viewports, fixture: source.capture_fixture ? await resolveSafeInput({ value: source.capture_fixture, workingRoot, allowedTypes: ["file"] }) : null, captureRecord: source.browser_capture_record ? await resolveSafeInput({ value: source.browser_capture_record, workingRoot, allowedTypes: ["file"] }) : null });
         else throw Object.assign(new Error("Input kind must be image, image-set or url"), { code: "SCHEMA_VALIDATION_FAILED" });
       }
-      const localInputs = typed.flatMap((source) => source.file ? [source.file] : source.files ? source.files : source.fixture ? [source.fixture] : source.captureRecord ? [source.captureRecord] : []);
+      if (handoff) validateHandoffIntake({ handoff, sources: typed });
+      const localInputs = [...typed.flatMap((source) => source.file ? [source.file] : source.files ? source.files : source.fixture ? [source.fixture] : source.captureRecord ? [source.captureRecord] : []), ...(handoffFile ? [handoffFile] : [])];
       const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: localInputs });
       const result = await prepareEvidenceAnalysis({ sources: typed, outputDirectory: output });
-      const artifacts = await Promise.all(result.artifacts.map((file) => artifact({ type: path.basename(file, path.extname(file)), file: path.join(output, file), outputRoot: output, mediaType: file.endsWith(".md") ? "text/markdown" : "application/json", schemaVersion: "3.0.0" })));
+      const handoffAttachment = handoff ? await attachRebiuHandoffContext({ handoff, outputDirectory: output }) : null;
+      const resultArtifacts = [...result.artifacts, ...(handoffAttachment?.context_files ?? [])];
+      const artifacts = await Promise.all(resultArtifacts.map((file) => artifact({ type: path.basename(file, path.extname(file)), file: path.join(output, file), outputRoot: output, mediaType: file.endsWith(".md") ? "text/markdown" : "application/json", schemaVersion: "3.0.0" })));
       if (result.sources.some((source) => source.status === "blocked")) return { status: "completed_with_warnings", artifacts, validation: { prepared_analysis_id: result.prepared_analysis_id, capture_status: "blocked", semantic_analysis_completed: false }, warnings: ["URL capture was blocked; no Host analysis is requested for fabricated evidence"] };
-      return { status: "needs_host_action", artifacts, validation: { prepared_analysis_id: result.prepared_analysis_id, capture_status: result.capture_status, semantic_analysis_completed: false }, host_action: { type: "visual-analysis", instructions_file: "analysis/host-instructions.md", input_manifest: "analysis/input-manifest.json", evidence_bundle: "analysis/evidence-bundle.json", response_schema: "contracts/host-analysis.schema.json", required_capabilities: ["vision", "structured-output"] } };
+      return { status: "needs_host_action", artifacts, validation: { prepared_analysis_id: result.prepared_analysis_id, capture_status: result.capture_status, semantic_analysis_completed: false }, host_action: { type: "visual-analysis", instructions_file: "analysis/host-instructions.md", input_manifest: "analysis/input-manifest.json", evidence_bundle: "analysis/evidence-bundle.json", ...(handoffAttachment ? { context_files: handoffAttachment.context_files } : {}), response_schema: "contracts/host-analysis.schema.json", required_capabilities: ["vision", "structured-output"] } };
     }
     const sources = await Promise.all((input.sources ?? []).map((value) => resolveSafeInput({ value, workingRoot, allowedTypes: ["file"] })));
     const output = await resolveSafeOutput({ value: request.output_directory, workingRoot, inputs: sources });
