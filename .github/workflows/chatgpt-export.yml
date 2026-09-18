@@ -1,0 +1,22 @@
+name: ChatGPT Recrafts Export
+
+on:
+  push:
+    branches:
+      - chatgpt/recrafts-g25-review-fixes-20260918
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pack exact checkout
+        run: tar --exclude=.git -czf "$RUNNER_TEMP/recrafts-source.tgz" .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recrafts-source
+          path: ${{ runner.temp }}/recrafts-source.tgz
+          retention-days: 1
