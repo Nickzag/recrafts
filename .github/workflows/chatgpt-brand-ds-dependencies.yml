@@ -1,0 +1,30 @@
+name: Recrafts Brand DS Locked Dependencies
+on:
+  push:
+    branches: [chatgpt/recrafts-brand-ds-001-20261006]
+    paths: [.github/workflows/chatgpt-brand-ds-dependencies.yml]
+permissions:
+  contents: read
+jobs:
+  dependencies:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Export exact dependency tree only
+        run: |
+          mkdir -p "$RUNNER_TEMP/recrafts-dependencies"
+          npm ls --json > "$RUNNER_TEMP/recrafts-dependencies/npm-ls.json"
+          cp package-lock.json "$RUNNER_TEMP/recrafts-dependencies/package-lock.json"
+          tar -czf "$RUNNER_TEMP/recrafts-dependencies/node_modules.tgz" node_modules
+          cd "$RUNNER_TEMP/recrafts-dependencies"
+          sha256sum node_modules.tgz package-lock.json > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recrafts-brand-ds-locked-dependencies
+          path: ${{ runner.temp }}/recrafts-dependencies/
+          retention-days: 3
