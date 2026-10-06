@@ -1,4 +1,4 @@
-name: Recrafts Brand DS Locked Dependencies
+name: Recrafts Brand DS Locked Browser
 on:
   push:
     branches: [chatgpt/recrafts-brand-ds-001-20261006]
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 jobs:
-  dependencies:
+  browser:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -15,16 +15,15 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Export exact dependency tree only
+      - run: npx playwright install chromium --only-shell
+      - name: Export pinned browser binaries only
         run: |
-          mkdir -p "$RUNNER_TEMP/recrafts-dependencies"
-          npm ls --json > "$RUNNER_TEMP/recrafts-dependencies/npm-ls.json"
-          cp package-lock.json "$RUNNER_TEMP/recrafts-dependencies/package-lock.json"
-          tar -czf "$RUNNER_TEMP/recrafts-dependencies/node_modules.tgz" node_modules
-          cd "$RUNNER_TEMP/recrafts-dependencies"
-          sha256sum node_modules.tgz package-lock.json > SHA256SUMS.txt
+          mkdir -p "$RUNNER_TEMP/recrafts-browser"
+          tar -czf "$RUNNER_TEMP/recrafts-browser/browser-cache.tgz" -C "$HOME/.cache/ms-playwright" .
+          cd "$RUNNER_TEMP/recrafts-browser"
+          sha256sum browser-cache.tgz > SHA256SUMS.txt
       - uses: actions/upload-artifact@v4
         with:
-          name: recrafts-brand-ds-locked-dependencies
-          path: ${{ runner.temp }}/recrafts-dependencies/
+          name: recrafts-brand-ds-pinned-browser
+          path: ${{ runner.temp }}/recrafts-browser/
           retention-days: 3
